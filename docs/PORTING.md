@@ -151,7 +151,7 @@ out.
 | BRO-3203 Next.js 15 / React 19 upgrade                                     | already done                     | site started on Next 15.5 and React 19                                                              |
 | BRO-5592 / BRO-5565 stale tabs after a deploy (Skew Protection)            | applies, owner setting           | low traffic and few deploys, so low priority; Skew Protection is a Vercel project setting           |
 | BRO-5811 traced data snapshot for runtime re-renders                       | does not apply                   | static export, no runtime rendering                                                                 |
-| BRO-5529 each page's own link-preview card                                 | applies, handed to BRO-5960      | /methodology/ and /about/ had no og:image or twitter:image on 2026-10-22                            |
+| BRO-5529 each page's own link-preview card                                 | ported by BRO-5960               | found here, fixed in the SEO session (about, methodology, privacy)                                  |
 | BRO-5399 soft-404 and inherited canonical                                  | already done                     | every page sets its own canonical; the 404 page is noindex with no canonical                        |
 | BRO-5967 review markup against Google's snippet policy                     | already done                     | no Review or AggregateRating markup by design (README)                                              |
 | BRO-5978 ItemList items with wrong schema types                            | already done                     | ItemList items are plain ListItem with name and url                                                 |
@@ -170,5 +170,5 @@ out.
 | BRO-4525 scrub OAuth tokens from analytics                                 | does not apply                   | no sign-in                                                                                          |
 
 Counts: 28 items. 6 ported (one in part), 1 partly covered by the new page-size guard, 10 already
-done (one of them by BRO-5959), 2 handed to the SEO session BRO-5960, 1 left as an owner setting,
-8 do not apply.
+done (one of them by BRO-5959), 1 ported by the SEO session BRO-5960 after this review found it,
+1 left to BRO-5960's SEO plan, 1 left as an owner setting, 8 do not apply.
