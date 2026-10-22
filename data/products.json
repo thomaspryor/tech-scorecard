@@ -2364,6 +2364,13 @@
         "#f2f5fa",
         "#dce3f0"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-s26-fe/main.webp",
+      "thumb": "/images/products/galaxy-s26-fe/thumb.webp",
+      "alt": "Samsung Galaxy S26 FE, official Samsung press photo (cropped)",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-galaxy-s26-fe-delivering-latest-flagship-features-what-matters-most/"
     }
   },
   {
@@ -3477,6 +3484,13 @@
         "#F3F4F6",
         "#E1E4EA"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-tab-s12-ultra/main.webp",
+      "thumb": "/images/products/galaxy-tab-s12-ultra/thumb.webp",
+      "alt": "Samsung Galaxy Tab S12 Ultra, official Samsung press photo (cropped)",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-introduces-galaxy-tab-s12-series-ultimate-productivity-powerhouse-growth/"
     }
   },
   {
@@ -5921,7 +5935,7 @@
       },
       {
         "label": "Price",
-        "value": "$199 (US), \u00a3149 (UK)"
+        "value": "$199 (US), £149 (UK)"
       }
     ],
     "art": {

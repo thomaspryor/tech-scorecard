@@ -6,7 +6,7 @@ permission. Login-gated or blocked hubs (Nintendo, Razer, Dell, MSI, Sony, Motor
 The terms table below stays as the record of what each brand's pages actually say. Never use retailer, stock or review-site
 images, and only use an image when it is clearly the exact model: otherwise the drawing stays.
 
-Status: 56 of 84 products have a photo, the rest keep their drawing.
+Status: 58 of 84 products have a photo, the rest keep their drawing.
 
 ## How it works
 
@@ -70,7 +70,7 @@ subject, we changed only the background and framing, never the product:
 - Background removed (automatic segmentation, each result checked by eye, trimmed): iPad Pro M5, iPhone 17, Galaxy S26,
   S26+, S26 Ultra, Galaxy Z Flip 8, Oura Ring 5, Beats 360. Where removal damaged the product (iPhone 18 Pro, iPhone 17 Pro,
   MacBook Pro 14, Apple Watch Ultra 3 and 4) the original pixels are kept.
-- Cropped to the device only (side text cut off): Pixel 11 Pro, Pixel Watch 5.
+- Cropped to the device only (plain rectangle, text or other devices cut off): Pixel 11 Pro, Pixel Watch 5, Galaxy S26 FE, Galaxy Tab S12 Ultra.
 
 Brands whose terms forbid alteration would need these steps redone as resize-only.
 
@@ -106,6 +106,7 @@ Same as `image.sourceUrl` in `data/products.json`. Products not listed use the d
 | pixel-11                   | Google  | https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/                                                                   |
 | meta-ray-ban-display       | Meta    | https://www.meta.com/ai-glasses/meta-ray-ban-display/                                                                                              |
 | apple-watch-ultra-4        | Apple   | https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/                                                                          |
+| galaxy-s26-fe              | Samsung | https://news.samsung.com/us/samsung-galaxy-s26-fe-delivering-latest-flagship-features-what-matters-most/                                           |
 | galaxy-s26-plus            | Samsung | https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/                                                  |
 | galaxy-z-trifold           | Samsung | https://news.samsung.com/us/samsung-introducing-galaxy-z-trifold-shape-whats-next-mobile-innovation/                                               |
 | pixel-10a                  | Google  | https://blog.google/products-and-platforms/devices/pixel/google-pixel-10a/                                                                         |
@@ -113,6 +114,7 @@ Same as `image.sourceUrl` in `data/products.json`. Products not listed use the d
 | ipad-air-m4                | Apple   | https://www.apple.com/newsroom/2026/03/macbook-neo-iphone-17e-ipad-air-with-m4-and-more-are-now-available/                                         |
 | hp-omnibook-ultra-14-2026  | HP      | https://www.hp.com/us-en/newsroom/press-kits/2026/hpatces.html                                                                                     |
 | macbook-neo                | Apple   | https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/                                                                                   |
+| galaxy-tab-s12-ultra       | Samsung | https://news.samsung.com/us/samsung-introduces-galaxy-tab-s12-series-ultimate-productivity-powerhouse-growth/                                      |
 | galaxy-book6-pro           | Samsung | https://news.samsung.com/us/samsungs-powerful-galaxy-book6-series-available-march-11/                                                              |
 | galaxy-buds-4              | Samsung | https://news.samsung.com/us/samsung-unveils-galaxy-buds4-series-best-hi-fi-sound-enhanced-comfort-fit/                                             |
 | bose-qc-ultra-headphones-2 | Bose    | https://www.bose.com/pressroom/bose-unveils-the-next-generation-of-the-quietcomfort-ultra-headphones                                               |
@@ -139,6 +141,6 @@ Same as `image.sourceUrl` in `data/products.json`. Products not listed use the d
 
 Kept as drawings and why: Nintendo, Razer (login-gated); Dell, MSI, Sony, Motorola (press pages blocked);
 Nothing, Viture, Even Realities (no public press kit); and products where only lifestyle shots, multi-model collages or
-text banners were available (Galaxy S26 FE, A57, A37, Tab S12 Ultra, Fitbit Air, Zenbook A14 and A16, Zephyrus G14,
+text banners were available (Galaxy A57, A37, Fitbit Air, Pixel Watch 4, Zenbook A14 and A16, Zephyrus G14,
 MacBook Pro 16-inch, Kindle Scribe Colorsoft). Photos for Garmin, Meta, Valve and OnePlus come from the brand's own
 product pages when the newsroom had none; they are credited the same way.
