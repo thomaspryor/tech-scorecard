@@ -75,15 +75,9 @@
   .cat-filter { position: relative; }
   .cat-filter > input { position: absolute; opacity: 0; pointer-events: none; }
   .filter-labels label { @apply cursor-pointer rounded-pill border border-line bg-surface px-4 py-2.5 text-sm font-semibold text-ink-muted hover:border-line-strong; }
-  .f-all:checked ~ .filter-labels .lbl-all,
-  .f-phone:checked ~ .filter-labels .lbl-phone,
-  .f-foldable:checked ~ .filter-labels .lbl-foldable { @apply border-ink bg-ink text-white; }
-  .f-all:focus-visible ~ .filter-labels .lbl-all,
-  .f-phone:focus-visible ~ .filter-labels .lbl-phone,
-  .f-foldable:focus-visible ~ .filter-labels .lbl-foldable { @apply outline outline-2 outline-offset-2 outline-brand-ink; }
-  /* Show only the chosen category, so a new category never leaks into another filter */
-  .f-phone:checked ~ .cat-list > :not([data-cat='phone']),
-  .f-foldable:checked ~ .cat-list > :not([data-cat='foldable']) { display: none; }
+  .f-all:checked ~ .filter-labels .lbl-all { @apply border-ink bg-ink text-white; }
+  .f-all:focus-visible ~ .filter-labels .lbl-all { @apply outline outline-2 outline-offset-2 outline-brand-ink; }
+  /* Per-category rules are generated in src/app/page.tsx from the categories that exist. */
 
   details.more > summary { list-style: none; }
   details.more > summary::-webkit-details-marker { display: none; }

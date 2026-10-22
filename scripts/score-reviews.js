@@ -16,6 +16,7 @@ const { ratingToBand } = require('./lib/rating-band');
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
 const CACHE = path.join(ROOT, '.cache', 'review-text');
+const SCORE_CACHE = path.join(ROOT, '.cache', 'scores');
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
 const OPENAI_MODEL = 'gpt-5.4';
 const GEMINI_MODEL = 'gemini-3.1-pro-preview';
@@ -100,10 +101,17 @@ async function main() {
     if (!band) { console.error(`skip ${r.productId}/${r.outletId}: unparseable rating ${r.rating}`); continue; }
     const text = articleText(r.url);
     const p = prompt(r, products[r.productId], outlets[r.outletId], band, text);
-    const got = {};
+    // Model answers are cached per (url, rating, prompt), so parallel --dry-run passes
+    // can warm the cache and a final pass writes reviews.json in one go.
+    fs.mkdirSync(SCORE_CACHE, { recursive: true });
+    const key = crypto.createHash('md5').update(`${r.url}|${r.rating}|${OPENAI_MODEL}|${GEMINI_MODEL}|${p}`).digest('hex');
+    const cacheFile = path.join(SCORE_CACHE, `${key}.json`);
+    const got = fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, 'utf8')) : {};
     for (const [name, fn] of [['openai', askOpenAI], ['gemini', askGemini]]) {
+      if (got[name]) continue;
       try { const o = fn(p); if (o) got[name] = { score: clamp(o.score, band), reason: o.reason }; } catch (e) { console.error(`  ${name} failed: ${e.message.slice(0, 120)}`); }
     }
+    fs.writeFileSync(cacheFile, JSON.stringify(got));
     const vals = Object.values(got).map((g) => g.score);
     if (!vals.length) { console.error(`skip ${r.productId}/${r.outletId}: no model answered`); continue; }
     const score = clamp(vals.reduce((a, b) => a + b, 0) / vals.length, band);

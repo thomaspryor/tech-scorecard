@@ -29,8 +29,8 @@ for (const p of products) {
   if (!ISO.test(p.releaseDate)) errors.push(`product ${p.id}: bad releaseDate`);
   for (const k of ['criticsTake', 'loved', 'gripes', 'specs', 'art']) if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
   // The home filter and DeviceArt only know these values; add a new one there first.
-  if (!['phone', 'foldable'].includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
-  if (p.art && !['phone', 'foldable', 'flip'].includes(p.art.kind)) errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
+  if (!['phone', 'foldable', 'tablet', 'laptop', 'headphones', 'watch', 'console', 'wearable'].includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
+  if (p.art && !['phone', 'foldable', 'flip', 'tablet', 'laptop', 'headphones', 'earbuds', 'watch', 'console', 'glasses', 'headset'].includes(p.art.kind)) errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
 }
 
 const { ratingToBand } = require('./lib/rating-band');

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { getAllProducts, getProduct } from '@/lib/data';
 import { getScoreTier } from '@/config/score-buckets';
 import { TIER_WEIGHTS } from '@/config/scoring';
-import { formatDate, formatPrice, releaseLabel } from '@/lib/format';
+import { formatDate, formatPrice, releaseLabel, CATEGORY_PLURAL } from '@/lib/format';
 import { DeviceArt, MiniProductCard, OutletTierChip, ProductChips, ScoreBadge, ScoreBreakdownBar } from '@/components/product-cards';
 import { ReviewList } from '@/components/ReviewRow';
 
@@ -39,7 +39,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
       <nav aria-label="Breadcrumb" className="mb-4 text-sm text-ink-faint">
         <Link href="/" className="hover:text-ink">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/" className="hover:text-ink">Phones</Link>
+        <Link href="/" className="hover:text-ink">{CATEGORY_PLURAL[product.category]}</Link>
         <span className="mx-2">/</span>
         <span className="text-ink">{product.name}</span>
       </nav>

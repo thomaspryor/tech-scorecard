@@ -15,7 +15,18 @@ export function formatPrice(usd: number | null): string | null {
   return usd == null ? null : `$${usd.toLocaleString('en-US')}`;
 }
 
-export const CATEGORY_LABEL = { foldable: 'Foldable', phone: 'Phone' } as const;
+import type { Category } from './data-types';
+
+export const CATEGORY_LABEL: Record<Category, string> = {
+  phone: 'Phone', foldable: 'Foldable', tablet: 'Tablet', laptop: 'Laptop',
+  headphones: 'Headphones', watch: 'Watch', console: 'Console', wearable: 'Wearable',
+};
+export const CATEGORY_PLURAL: Record<Category, string> = {
+  phone: 'Phones', foldable: 'Foldables', tablet: 'Tablets', laptop: 'Laptops',
+  headphones: 'Headphones', watch: 'Watches', console: 'Consoles', wearable: 'Wearables',
+};
+/** Display order for filters. */
+export const CATEGORY_ORDER: Category[] = ['phone', 'foldable', 'tablet', 'laptop', 'headphones', 'watch', 'console', 'wearable'];
 
 
 /** Release-date line. Tense-neutral on purpose: the site is a static build. */

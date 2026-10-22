@@ -2,16 +2,21 @@ import Link from 'next/link';
 import { getAllProducts, getTotals } from '@/lib/data';
 import { MiniProductCard, ProductListCard } from '@/components/product-cards';
 import { Logo } from '@/components/Header';
+import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
 
-const FILTERS = [
-  { id: 'all', label: 'All' },
-  { id: 'phone', label: 'Phones' },
-  { id: 'foldable', label: 'Foldables' },
-] as const;
 
 export default function HomePage() {
   const products = getAllProducts();
   const totals = getTotals();
+  // Filters come from the categories that exist; the CSS for each is generated
+  // so a new category needs no stylesheet edit.
+  const present = CATEGORY_ORDER.filter((c) => products.some((p) => p.category === c));
+  const filters = [{ id: 'all', label: 'All' }, ...present.map((c) => ({ id: c, label: CATEGORY_PLURAL[c] }))];
+  const filterCss = present
+    .map((c) => `.f-${c}:checked ~ .filter-labels .lbl-${c}{background:#14141a;border-color:#14141a;color:#fff}`
+      + `.f-${c}:focus-visible ~ .filter-labels .lbl-${c}{outline:2px solid #94632e;outline-offset:2px}`
+      + `.f-${c}:checked ~ .cat-list > :not([data-cat='${c}']){display:none}`)
+    .join('');
   const newest = [...products].sort((a, b) => b.releaseDate.localeCompare(a.releaseDate)).slice(0, 8);
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6">
@@ -19,7 +24,7 @@ export default function HomePage() {
         <h1><Logo className="text-[clamp(32px,11vw,44px)] sm:text-7xl" beta="lg" /></h1>
         <p className="mt-4 text-xl text-ink-muted sm:text-2xl">Professional tech reviews, combined into one score.</p>
         <p className="mt-1 text-base text-ink-faint sm:text-lg">
-          {totals.products} phones and {totals.reviews} critic reviews from {totals.outlets} outlets so far. More gadgets and reviews are on the way.
+          {totals.products} products and {totals.reviews} critic reviews from {totals.outlets} outlets so far. More gadgets and reviews are on the way.
         </p>
         <p className="mt-3 max-w-[60ch] text-sm text-ink-muted">
           Each score is a weighted average of professional reviews, with bigger outlets counting more.{' '}
@@ -37,15 +42,16 @@ export default function HomePage() {
       </section>
 
       <section aria-labelledby="all" className="cat-filter">
+        <style>{filterCss}</style>
         <div className="mb-3 flex items-baseline justify-between">
-          <h2 id="all" className="text-lg font-bold">All Phones</h2>
+          <h2 id="all" className="text-lg font-bold">All Products</h2>
           <span className="section-label">Sorted by critic score</span>
         </div>
-        {FILTERS.map((f) => (
+        {filters.map((f) => (
           <input key={f.id} type="radio" name="cat" id={`cat-${f.id}`} className={`f-${f.id}`} defaultChecked={f.id === 'all'} />
         ))}
-        <div className="filter-labels mb-4 flex gap-2">
-          {FILTERS.map((f) => (
+        <div className="filter-labels mb-4 flex flex-wrap gap-2">
+          {filters.map((f) => (
             <label key={f.id} htmlFor={`cat-${f.id}`} className={`lbl-${f.id}`}>{f.label}</label>
           ))}
         </div>

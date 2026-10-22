@@ -1,4 +1,5 @@
-export type Category = 'foldable' | 'phone';
+export type Category = 'phone' | 'foldable' | 'tablet' | 'laptop' | 'headphones' | 'watch' | 'console' | 'wearable';
+export type ArtKind = 'phone' | 'foldable' | 'flip' | 'tablet' | 'laptop' | 'headphones' | 'earbuds' | 'watch' | 'console' | 'glasses' | 'headset';
 
 export interface Spec {
   label: string;
@@ -18,7 +19,7 @@ export interface Product {
   loved: string[];
   gripes: string[];
   specs: Spec[];
-  art: { kind: 'phone' | 'foldable' | 'flip'; body: string; accent: string; backdrop: [string, string] };
+  art: { kind: ArtKind; body: string; accent: string; backdrop: [string, string] };
 }
 
 export interface Review {
