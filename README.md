@@ -86,13 +86,14 @@ Requires Node 22 (`.nvmrc`). Python 3 is needed only for `verify-quotes.py`.
 ```sh
 npm ci
 npm run dev          # http://localhost:3000
-npm run check        # typecheck + lint + unit tests
+npm run check        # typecheck + lint + formatting + unit tests
+npm run format       # apply Prettier
 npm run build        # validates data/, then writes the static site to out/
 npx serve out        # preview the production build
 ```
 
-CI (`.github/workflows/ci.yml`) runs typecheck, lint, the unit tests and the build on every
-push and pull request.
+CI (`.github/workflows/ci.yml`) runs typecheck, lint, the Prettier check, the unit tests and the
+build on every push and pull request.
 
 | Script                                                    | What it does                                                                       |
 | --------------------------------------------------------- | ---------------------------------------------------------------------------------- |
