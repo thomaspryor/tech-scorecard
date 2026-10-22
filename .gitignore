@@ -5,3 +5,5 @@ preview/
 next-env.d.ts
 *.tsbuildinfo
 .cache/
+__pycache__/
+*.pyc

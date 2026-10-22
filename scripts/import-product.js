@@ -34,6 +34,8 @@ for (const f of files) {
     const clash = outlets.find((x) => x.id === o.id || (bare(x.domain) === bare(o.domain) && norm(x.name) === norm(o.name)));
     if (clash && clash.id === o.id && bare(clash.domain) !== bare(o.domain)) {
       // Same outlet publishing on another site (Digital Foundry on eurogamer.net): record the extra host.
+      // A different name under the same id is a mistake, not a second site.
+      if (norm(clash.name) !== norm(o.name)) throw new Error(`${f}: outlet id "${o.id}" is "${clash.name}" (${clash.domain}), not "${o.name}" (${o.domain})`);
       clash.altDomains = [...new Set([...(clash.altDomains || []), bare(o.domain)])];
     }
     if (!clash) outlets.push({ id: o.id, name: o.name, tier: o.tier, domain: o.domain });
@@ -45,7 +47,7 @@ for (const f of files) {
   // Provisional score: clamp into the rating's band until score-reviews.js places it by reading the review.
   for (const r of incoming) {
     const band = r.rating ? ratingToBand(r.rating) : null;
-    if (band) r.score = Math.min(band.ceiling, Math.max(band.floor, r.score));
+    if (band) r.score = Number.isFinite(r.score) ? Math.min(band.ceiling, Math.max(band.floor, r.score)) : Math.round((band.floor + band.ceiling) / 2);
   }
   if (appendOnly) {
     const have = new Set(reviews.filter((r) => r.productId === product.id).map((r) => r.outletId));

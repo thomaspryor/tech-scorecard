@@ -60,6 +60,7 @@ reviews.forEach((r, i) => {
     if (!r.rating) errors.push(`${at}: scoreSource "rating" needs a rating`);
     else if (!band) errors.push(`${at}: cannot parse rating "${r.rating}"`);
     else if (r.score < band.floor || r.score > band.ceiling) errors.push(`${at}: score ${r.score} is outside the ${r.rating} band ${band.floor}-${band.ceiling}`);
+    else if (r.scoreBand && (r.scoreBand[0] !== band.floor || r.scoreBand[1] !== band.ceiling)) errors.push(`${at}: stored scoreBand ${r.scoreBand} does not match the ${r.rating} band; re-run score-reviews.js`);
   }
   if (r.scoreSource === 'text' && r.rating) errors.push(`${at}: text-scored review must not carry a rating`);
   const words = (r.excerpt || '').trim().split(/\s+/).filter(Boolean).length;

@@ -36,9 +36,12 @@ function articleText(url) {
   const pages = [url];
   if (/gsmarena\.com/.test(url) && !/p\d+\.php$/.test(url)) for (let n = 2; n <= 9; n++) pages.push(url.replace('.php', `p${n}.php`));
   let text = '';
+  const reviewKey = path.basename(url).replace(/\.php$/, '');
   for (const u of pages) {
     let html = '';
-    try { html = curl(['-A', UA, u]); } catch { continue; }
+    // -f: an HTTP error (403, 404, 429) throws instead of returning an error page as "text".
+    try { html = curl(["-f", "-A", UA, u]); } catch { break; }
+    if (pages.length > 1 && u !== url && !html.includes(reviewKey)) break; // redirected off this review
     html = html.replace(/<(script|style|noscript|nav|footer|aside)\b[\s\S]*?<\/\1>/gi, ' ');
     const paras = [...html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
       .map((m) => m[1].replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&#8217;|&rsquo;/g, "'").replace(/&quot;|&#8220;|&#8221;|&ldquo;|&rdquo;/g, '"').replace(/\s+/g, ' ').trim())
@@ -46,7 +49,8 @@ function articleText(url) {
     if (pages.length > 1 && paras.length === 0 && u !== url) break;
     text += paras.join('\n') + '\n';
   }
-  fs.writeFileSync(file, text);
+  // Only cache a real article; a short or failed fetch is retried next run.
+  if (text.length > 800) fs.writeFileSync(file, text);
   return text;
 }
 
@@ -88,10 +92,21 @@ function askGemini(p) {
 
 const clamp = (v, b) => Math.min(b.ceiling, Math.max(b.floor, Math.round(v)));
 
+function validateOrRestore(backup) {
+  try {
+    execFileSync('node', [path.join(__dirname, 'validate-data.js')], { stdio: 'inherit' });
+  } catch {
+    fs.writeFileSync(path.join(DATA, 'reviews.json'), backup);
+    console.error('Validation failed: data/reviews.json restored.');
+    process.exit(1);
+  }
+}
+
 async function main() {
   const products = Object.fromEntries(JSON.parse(fs.readFileSync(path.join(DATA, 'products.json'), 'utf8')).map((p) => [p.id, p]));
   const outlets = Object.fromEntries(JSON.parse(fs.readFileSync(path.join(DATA, 'outlets.json'), 'utf8')).map((o) => [o.id, o]));
-  const reviews = JSON.parse(fs.readFileSync(path.join(DATA, 'reviews.json'), 'utf8'));
+  const backup = fs.readFileSync(path.join(DATA, 'reviews.json'), 'utf8');
+  const reviews = JSON.parse(backup);
   let todo = reviews.filter((r) => (!only || only.has(r.productId)) && (args.force || !r.modelScores));
   if (args.limit) todo = todo.slice(0, Number(args.limit));
   console.log(`scoring ${todo.length} reviews${args['dry-run'] ? ' (dry run)' : ''}`);
@@ -120,7 +135,10 @@ async function main() {
     if (!args['dry-run']) {
       r.score = score;
       r.scoreBand = [band.floor, band.ceiling];
-      r.modelScores = Object.fromEntries(Object.entries(got).map(([k, g]) => [k, g.score]));
+      // modelScores marks a review done, so only set it when both models answered;
+      // a one-model score is published but retried on the next run.
+      if (Object.keys(got).length === 2) r.modelScores = Object.fromEntries(Object.entries(got).map(([k, g]) => [k, g.score]));
+      else delete r.modelScores;
       r.scoreReason = (got.openai || got.gemini).reason;
       r.scoredFromFullText = text.length > 800;
       fs.writeFileSync(path.join(DATA, 'reviews.json'), JSON.stringify(reviews, null, 2) + '\n'); // checkpoint every review
@@ -128,6 +146,7 @@ async function main() {
   }
   const moved = changes.filter((c) => c.before !== c.after);
   const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
+  if (!args['dry-run'] && changes.length) validateOrRestore(backup);
   console.log(`\n${changes.length} scored, ${moved.length} changed; mean ${mean(changes.map((c) => c.before)).toFixed(1)} -> ${mean(changes.map((c) => c.after)).toFixed(1)}`);
 }
 
