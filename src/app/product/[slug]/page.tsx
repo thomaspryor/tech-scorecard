@@ -7,6 +7,9 @@ import { TIER_WEIGHTS, EARLY_SCORE_BELOW } from '@/config/scoring';
 import { formatDate, formatPrice, releaseLabel, CATEGORY_PLURAL } from '@/lib/format';
 import { DeviceArt, MiniProductCard, OutletTierChip, ProductChips, ScoreBadge, ScoreBreakdownBar } from '@/components/product-cards';
 import { ReviewList } from '@/components/ReviewRow';
+import { JsonLd } from '@/components/JsonLd';
+import { abs, breadcrumbLd, clip } from '@/lib/seo';
+import { MIN_PRODUCTS_FOR_CATEGORY_PAGE } from '@/config/seo';
 
 type Params = { slug: string };
 
@@ -17,9 +20,18 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const p = getProduct((await params).slug);
   if (!p) return {};
-  const score = p.criticScore != null ? ` ${Math.round(p.criticScore)}/100` : '';
-  const title = `${p.name} reviews:${score} critic score | Tech Scorecard`;
-  return { title, description: p.criticsTake, openGraph: { siteName: 'Tech Scorecard', type: 'website', title, description: p.criticsTake, url: `/product/${p.slug}/`, images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] } };
+  const score = p.criticScore != null ? Math.round(p.criticScore) : null;
+  const title = score != null ? `${p.name} reviews: ${score}/100 critic score` : `${p.name} reviews`;
+  const lead = score != null ? `${p.name} review score: ${score}/100 from ${p.reviewCount} professional reviews. ` : '';
+  const description = clip(`${lead}${p.criticsTake}`, 158);
+  const url = `/product/${p.slug}/`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { siteName: 'Tech Scorecard', type: 'website', title, description, url, images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] },
+    twitter: { card: 'summary_large_image', title, description },
+  };
 }
 
 export default async function ProductPage({ params }: { params: Promise<Params> }) {
@@ -34,12 +46,27 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     .sort((a, b) => Number(b.category === product.category) - Number(a.category === product.category))
     .slice(0, 4);
 
+  const categoryHasPage = getAllProducts().filter((p) => p.category === product.category).length >= MIN_PRODUCTS_FOR_CATEGORY_PAGE;
+  const crumbs = [
+    { name: 'Home', path: '/' },
+    ...(categoryHasPage ? [{ name: CATEGORY_PLURAL[product.category], path: `/category/${product.category}/` }] : []),
+    { name: product.name, path: `/product/${product.slug}/` },
+  ];
+  // No Review or AggregateRating markup: Google says not to mark up ratings aggregated from other sites.
+  const pageLd = [
+    breadcrumbLd(crumbs),
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: `${product.name} reviews`, url: abs(`/product/${product.slug}/`), about: { '@type': 'Thing', name: product.name } },
+  ];
+
   return (
     <div className="mx-auto max-w-3xl px-4 pb-4 pt-6 sm:px-6">
+      <JsonLd data={pageLd} />
       <nav aria-label="Breadcrumb" className="mb-4 text-sm text-ink-faint">
         <Link href="/" className="hover:text-ink">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/" className="hover:text-ink">{CATEGORY_PLURAL[product.category]}</Link>
+        {categoryHasPage
+          ? <Link href={`/category/${product.category}/`} className="hover:text-ink">{CATEGORY_PLURAL[product.category]}</Link>
+          : <Link href="/" className="hover:text-ink">{CATEGORY_PLURAL[product.category]}</Link>}
         <span className="mx-2">/</span>
         <span className="text-ink">{product.name}</span>
       </nav>

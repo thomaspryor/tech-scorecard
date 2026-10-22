@@ -2,7 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTotals } from '@/lib/data';
 
-export const metadata: Metadata = { title: 'About Tech Scorecard' };
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'Tech Scorecard is an independent review aggregator that combines professional tech reviews into one critic score, using the Broadway Scorecard method.',
+  alternates: { canonical: '/about/' },
+};
 
 export default function AboutPage() {
   const totals = getTotals();

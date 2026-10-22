@@ -3,7 +3,11 @@ import { TIER_DESCRIPTIONS, TIER_WEIGHTS, MIN_REVIEWS_FOR_SCORE } from '@/config
 import { SCORE_TIERS, GOLD_MIN, RECOMMENDED_MIN, WORTH_IT_MIN, MIXED_MIN } from '@/config/score-buckets';
 import { OutletTierChip } from '@/components/product-cards';
 
-export const metadata: Metadata = { title: 'How Tech Scorecard scores work' };
+export const metadata: Metadata = {
+  title: 'How Tech Scorecard scores work',
+  description: 'How we turn published tech reviews into one 0-100 critic score: outlet tiers, how star ratings become score bands, and how unrated reviews are scored.',
+  alternates: { canonical: '/methodology/' },
+};
 
 const RANGES = [
   ['gold', `${GOLD_MIN}-100`],

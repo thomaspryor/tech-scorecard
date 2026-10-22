@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Logo } from './Header';
+import { BEST_YEAR } from '@/config/seo';
 
 export function Footer() {
   return (
@@ -11,6 +12,7 @@ export function Footer() {
           Beta: we&apos;re still adding gadgets and reviews. Scores are tier-weighted averages of published reviews; excerpts link to the original articles.
         </p>
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-sm">
+          <Link href="/best/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">Best of {BEST_YEAR}</Link>
           <Link href="/methodology/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">Methodology</Link>
           <Link href="/about/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">About</Link>
           <Link href="/privacy/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">Privacy</Link>

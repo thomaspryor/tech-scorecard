@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'Privacy' };
+export const metadata: Metadata = {
+  title: 'Privacy',
+  description: 'What Tech Scorecard collects (privacy-friendly page-view analytics only) and what it does not.',
+  alternates: { canonical: '/privacy/' },
+};
 
 export default function PrivacyPage() {
   return (
