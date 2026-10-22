@@ -721,5 +721,341 @@
     "name": "Pokde.Net",
     "tier": 4,
     "domain": "pokde.net"
+  },
+  {
+    "id": "technerdo",
+    "name": "Technerdo",
+    "tier": 4,
+    "domain": "technerdo.com"
+  },
+  {
+    "id": "the-pc-enthusiast",
+    "name": "The PC Enthusiast",
+    "tier": 4,
+    "domain": "thepcenthusiast.com"
+  },
+  {
+    "id": "stereo-guide",
+    "name": "Stereo Guide",
+    "tier": 3,
+    "domain": "stereoguide.com"
+  },
+  {
+    "id": "rolling-stone",
+    "name": "Rolling Stone",
+    "tier": 2,
+    "domain": "rollingstone.com"
+  },
+  {
+    "id": "ecoustics",
+    "name": "eCoustics",
+    "tier": 4,
+    "domain": "ecoustics.com"
+  },
+  {
+    "id": "rock-paper-shotgun",
+    "name": "Rock Paper Shotgun",
+    "tier": 2,
+    "domain": "rockpapershotgun.com"
+  },
+  {
+    "id": "kotaku",
+    "name": "Kotaku",
+    "tier": 2,
+    "domain": "kotaku.com"
+  },
+  {
+    "id": "aftermath",
+    "name": "Aftermath",
+    "tier": 3,
+    "domain": "aftermath.site"
+  },
+  {
+    "id": "road-to-vr",
+    "name": "Road to VR",
+    "tier": 3,
+    "domain": "roadtovr.com"
+  },
+  {
+    "id": "xbox-tavern",
+    "name": "Xbox Tavern",
+    "tier": 4,
+    "domain": "xboxtavern.com"
+  },
+  {
+    "id": "polygon",
+    "name": "Polygon",
+    "tier": 2,
+    "domain": "polygon.com"
+  },
+  {
+    "id": "better-trail",
+    "name": "Better Trail",
+    "tier": 4,
+    "domain": "bettertrail.com"
+  },
+  {
+    "id": "runmorph",
+    "name": "RunMorph",
+    "tier": 4,
+    "domain": "runmorph.com"
+  },
+  {
+    "id": "breaking-eighty",
+    "name": "Breaking Eighty",
+    "tier": 4,
+    "domain": "breakingeighty.com"
+  },
+  {
+    "id": "mytrails",
+    "name": "MyTrails.com",
+    "tier": 4,
+    "domain": "mytrails.com"
+  },
+  {
+    "id": "samsung-magazine",
+    "name": "Samsung Magazine",
+    "tier": 4,
+    "domain": "samsungmagazine.eu"
+  },
+  {
+    "id": "radio-times",
+    "name": "Radio Times",
+    "tier": 3,
+    "domain": "radiotimes.com"
+  },
+  {
+    "id": "digital-spy",
+    "name": "Digital Spy",
+    "tier": 3,
+    "domain": "digitalspy.com"
+  },
+  {
+    "id": "gaming-trend",
+    "name": "Gaming Trend",
+    "tier": 3,
+    "domain": "gamingtrend.com"
+  },
+  {
+    "id": "retro-handhelds",
+    "name": "Retro Handhelds",
+    "tier": 4,
+    "domain": "retrohandhelds.gg"
+  },
+  {
+    "id": "ztgd",
+    "name": "Zero Thirty Gaming Dojo",
+    "tier": 4,
+    "domain": "ztgd.com"
+  },
+  {
+    "id": "how-to-geek",
+    "name": "How-To Geek",
+    "tier": 2,
+    "domain": "howtogeek.com"
+  },
+  {
+    "id": "mark-ellis-reviews",
+    "name": "Mark Ellis Reviews",
+    "tier": 4,
+    "domain": "markellisreviews.com"
+  },
+  {
+    "id": "spacebar",
+    "name": "Spacebar",
+    "tier": 4,
+    "domain": "spacebar.news"
+  },
+  {
+    "id": "recording-now",
+    "name": "Recording Now",
+    "tier": 4,
+    "domain": "recordingnow.com"
+  },
+  {
+    "id": "picky-audio",
+    "name": "Picky Audio",
+    "tier": 4,
+    "domain": "pickyaudio.com"
+  },
+  {
+    "id": "outside",
+    "name": "Outside",
+    "tier": 3,
+    "domain": "outsideonline.com"
+  },
+  {
+    "id": "cyclingnews",
+    "name": "Cyclingnews",
+    "tier": 3,
+    "domain": "cyclingnews.com"
+  },
+  {
+    "id": "road-cc",
+    "name": "road.cc",
+    "tier": 3,
+    "domain": "road.cc"
+  },
+  {
+    "id": "athletech-news",
+    "name": "Athletech News",
+    "tier": 4,
+    "domain": "athletechnews.com"
+  },
+  {
+    "id": "woman-and-home",
+    "name": "Woman & Home",
+    "tier": 3,
+    "domain": "womanandhome.com"
+  },
+  {
+    "id": "canadian-running-magazine",
+    "name": "Canadian Running Magazine",
+    "tier": 3,
+    "domain": "runningmagazine.ca"
+  },
+  {
+    "id": "mountaineer-journey",
+    "name": "Mountaineer Journey",
+    "tier": 4,
+    "domain": "mountaineerjourney.com"
+  },
+  {
+    "id": "run-to-the-finish",
+    "name": "RunToTheFinish",
+    "tier": 4,
+    "domain": "runtothefinish.com"
+  },
+  {
+    "id": "zelpio",
+    "name": "Zelpio",
+    "tier": 4,
+    "domain": "zelpio.com"
+  },
+  {
+    "id": "the-watches-geek",
+    "name": "The Watches Geek",
+    "tier": 4,
+    "domain": "thewatchesgeek.com"
+  },
+  {
+    "id": "android-faithful",
+    "name": "Android Faithful",
+    "tier": 4,
+    "domain": "androidfaithful.com"
+  },
+  {
+    "id": "serious-insights",
+    "name": "Serious Insights",
+    "tier": 4,
+    "domain": "seriousinsights.net"
+  },
+  {
+    "id": "the-gadgeteer",
+    "name": "The Gadgeteer",
+    "tier": 4,
+    "domain": "the-gadgeteer.com"
+  },
+  {
+    "id": "myfixguide",
+    "name": "MyFixGuide",
+    "tier": 4,
+    "domain": "myfixguide.com"
+  },
+  {
+    "id": "illgaming",
+    "name": "iLLGaming",
+    "tier": 4,
+    "domain": "illgaming.net"
+  },
+  {
+    "id": "sportskeeda",
+    "name": "Sportskeeda",
+    "tier": 4,
+    "domain": "sportskeeda.com"
+  },
+  {
+    "id": "lowyat",
+    "name": "Lowyat.NET",
+    "tier": 4,
+    "domain": "lowyat.net"
+  },
+  {
+    "id": "stark-insider",
+    "name": "Stark Insider",
+    "tier": 4,
+    "domain": "starkinsider.com"
+  },
+  {
+    "id": "purewow",
+    "name": "PureWow",
+    "tier": 4,
+    "domain": "purewow.com"
+  },
+  {
+    "id": "fstoppers",
+    "name": "Fstoppers",
+    "tier": 4,
+    "domain": "fstoppers.com"
+  },
+  {
+    "id": "gadgets-and-wearables",
+    "name": "Gadgets & Wearables",
+    "tier": 3,
+    "domain": "gadgetsandwearables.com"
+  },
+  {
+    "id": "yanko-design",
+    "name": "Yanko Design",
+    "tier": 4,
+    "domain": "yankodesign.com"
+  },
+  {
+    "id": "digit",
+    "name": "Digit",
+    "tier": 3,
+    "domain": "digit.in"
+  },
+  {
+    "id": "iphone-in-canada",
+    "name": "iPhone in Canada",
+    "tier": 4,
+    "domain": "iphoneincanada.ca"
+  },
+  {
+    "id": "reviews-org",
+    "name": "Reviews.org",
+    "tier": 3,
+    "domain": "reviews.org"
+  },
+  {
+    "id": "digital-reviews-network",
+    "name": "Digital Reviews Network",
+    "tier": 4,
+    "domain": "digitalreviews.net"
+  },
+  {
+    "id": "gamerevolution",
+    "name": "Game Revolution",
+    "tier": 3,
+    "domain": "gamerevolution.com"
+  },
+  {
+    "id": "gaming-nexus",
+    "name": "Gaming Nexus",
+    "tier": 4,
+    "domain": "gamingnexus.com"
+  },
+  {
+    "id": "analog-stick-gaming",
+    "name": "Analog Stick Gaming",
+    "tier": 4,
+    "domain": "analogstickgaming.com"
+  },
+  {
+    "id": "impulse-gamer",
+    "name": "Impulse Gamer",
+    "tier": 4,
+    "domain": "impulsegamer.com"
   }
 ]

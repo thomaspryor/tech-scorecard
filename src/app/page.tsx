@@ -23,8 +23,10 @@ export default function HomePage() {
         `.f-${c}:checked ~ .cat-list > :not([data-cat='${c}']){display:none}`,
     )
     .join('');
-  const byDate = [...products].sort(
-    (a, b) => b.releaseDate.localeCompare(a.releaseDate) || (b.criticScore ?? 0) - (a.criticScore ?? 0),
+  const dateRank = new Map(
+    [...products]
+      .sort((a, b) => b.releaseDate.localeCompare(a.releaseDate) || (b.criticScore ?? 0) - (a.criticScore ?? 0))
+      .map((p, i) => [p.id, i] as const),
   );
   const newest = [...products].sort((a, b) => b.releaseDate.localeCompare(a.releaseDate)).slice(0, 8);
   return (
@@ -92,17 +94,15 @@ export default function HomePage() {
             Newest
           </label>
         </div>
-        {/* Both orders are rendered; CSS shows one, so sorting works without JavaScript. */}
-        <div className="cat-list list-score flex flex-col gap-3">
-          {products.map((p) => (
-            <div key={p.id} data-cat={p.category}>
-              <ProductListCard product={p} />
-            </div>
-          ))}
-        </div>
-        <div className="cat-list list-date flex-col gap-3">
-          {byDate.map((p) => (
-            <div key={p.id} data-cat={p.category}>
+        {/* One list; CSS `order` re-sorts it, so sorting works without JavaScript and each card ships once. */}
+        <div className="cat-list flex flex-col gap-3">
+          {products.map((p, i) => (
+            <div
+              key={p.id}
+              data-cat={p.category}
+              className="list-item"
+              style={{ '--o-score': i, '--o-date': dateRank.get(p.id) } as React.CSSProperties}
+            >
               <ProductListCard product={p} />
             </div>
           ))}

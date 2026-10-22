@@ -127,17 +127,13 @@
   .by-date:focus-visible ~ .sort-labels .lbl-date {
     @apply outline outline-2 outline-brand-ink rounded;
   }
-  .sort-toggle .list-date {
-    display: none;
+  .list-item {
+    order: var(--o-score);
+    content-visibility: auto;
+    contain-intrinsic-size: auto 132px;
   }
-  .by-date:checked ~ .list-score {
-    display: none;
-  }
-  .by-date:checked ~ .list-date {
-    display: block;
-  }
-  .by-date:checked ~ .cat-list.list-date {
-    display: flex;
+  .by-date:checked ~ .cat-list > .list-item {
+    order: var(--o-date);
   }
 
   /* Home category filter: pure CSS radios, same approach as the sort toggle */

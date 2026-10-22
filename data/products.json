@@ -3385,5 +3385,2388 @@
         "#e3e6ec"
       ]
     }
+  },
+  {
+    "id": "sony-wf-1000xm6",
+    "slug": "sony-wf-1000xm6",
+    "name": "Sony WF-1000XM6",
+    "brand": "Sony",
+    "category": "headphones",
+    "releaseDate": "2026-02-12",
+    "launchPrice": 329.99,
+    "officialUrl": "https://electronics.sony.com/audio/headphones/truly-wireless/p/wf1000xm6-b",
+    "criticsTake": "Critics call the WF-1000XM6 Sony's best earbuds yet, with detailed, well-balanced sound, strong noise cancelling and improved call quality. Several reviewers say rivals from Apple and Bose now match or beat the ANC, and the larger housing and case make fit a sticking point. At $329.99 with battery life unchanged from the XM5, the upgrade is easiest to justify for XM4 owners and older.",
+    "loved": [
+      "Detailed, natural sound with a 10-band EQ",
+      "Strong noise cancelling and transparency",
+      "Better call quality than the XM5",
+      "Wide codec support including LDAC and LE Audio"
+    ],
+    "gripes": [
+      "Fit and seal can be fiddly, especially for smaller ears",
+      "Larger charging case",
+      "Battery life unchanged at about 8 hours",
+      "Price rose to $329.99",
+      "ANC trails Apple and Bose in some tests"
+    ],
+    "specs": [
+      {
+        "label": "Noise cancelling",
+        "value": "Adaptive ANC, QN3e processor"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 8 hours per charge, about 24 hours with case (ANC on)"
+      },
+      {
+        "label": "Quick charge",
+        "value": "Up to 60 minutes of playback from 3 minutes"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3, multipoint, Auracast"
+      },
+      {
+        "label": "Codecs",
+        "value": "SBC, AAC, LDAC, LC3"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX4"
+      },
+      {
+        "label": "EQ",
+        "value": "10-band in the Sony app"
+      },
+      {
+        "label": "Colors",
+        "value": "Black, Silver"
+      },
+      {
+        "label": "Price",
+        "value": "$329.99"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#1c1d20",
+      "accent": "#c4c7cc",
+      "backdrop": [
+        "#f4f5f7",
+        "#e1e3e8"
+      ]
+    }
+  },
+  {
+    "id": "bose-qc-ultra-headphones-2",
+    "slug": "bose-qc-ultra-headphones-2",
+    "name": "Bose QuietComfort Ultra Headphones (2nd Gen)",
+    "brand": "Bose",
+    "category": "headphones",
+    "releaseDate": "2025-10-02",
+    "launchPrice": 449,
+    "officialUrl": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html",
+    "criticsTake": "Critics call these the best noise-cancelling over-ear headphones available, with excellent comfort and a useful step up in battery life. The changes from the first generation are modest, and several reviewers say Sony, Sennheiser and Bowers & Wilkins now sound better. The $449 price also leaves the original model looking like the better deal for some buyers.",
+    "loved": [
+      "Class-leading noise cancellation",
+      "Very comfortable for long wear",
+      "Battery life up to 30 hours with ANC",
+      "Wired USB-C audio and charge-while-listening"
+    ],
+    "gripes": [
+      "Only a modest upgrade over the first generation",
+      "Rivals from Sony and Sennheiser sound better",
+      "Higher $449 price",
+      "Heavy reliance on the Bose app",
+      "Limited EQ and sound customization"
+    ],
+    "specs": [
+      {
+        "label": "Noise cancellation",
+        "value": "Bose adaptive ANC with CustomTune, Aware mode"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 30 hours with ANC (45 hours with ANC off, 23 with Immersive Audio)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.4 with aptX Adaptive"
+      },
+      {
+        "label": "Wired audio",
+        "value": "USB-C lossless (16-bit, up to 48 kHz)"
+      },
+      {
+        "label": "Spatial audio",
+        "value": "Bose Immersive Audio with new Cinema mode"
+      },
+      {
+        "label": "Weight",
+        "value": "250 g"
+      },
+      {
+        "label": "Colors",
+        "value": "Black, White Smoke, plus limited editions"
+      },
+      {
+        "label": "Price",
+        "value": "$449"
+      }
+    ],
+    "art": {
+      "kind": "headphones",
+      "body": "#1c1c1e",
+      "accent": "#8a8f98",
+      "backdrop": [
+        "#f4f4f6",
+        "#e3e5ea"
+      ]
+    }
+  },
+  {
+    "id": "steam-frame",
+    "slug": "steam-frame",
+    "name": "Valve Steam Frame (256GB)",
+    "brand": "Valve",
+    "category": "wearable",
+    "releaseDate": "2026-09-17",
+    "launchPrice": 1059,
+    "officialUrl": "https://store.steampowered.com/hardware/steamframe",
+    "criticsTake": "Critics praise the Steam Frame for its light, comfortable build and for wireless PC streaming through the included 6GHz dongle, and several call it the best PC VR headset available. The price, one to two hours of battery life, monochrome passthrough and unfinished standalone software hold it back. Scores run from 5/10 at The Verge to 4/5 at Tom's Hardware and Club386, and many reviewers point to the much cheaper Quest 3.",
+    "loved": [
+      "Light and comfortable at about 440 g",
+      "Reliable wireless PC streaming with the bundled dongle",
+      "Controllers double as a full gamepad",
+      "Plays Steam games standalone and by streaming"
+    ],
+    "gripes": [
+      "$1,059 starting price",
+      "Battery life of roughly one to two hours",
+      "Black-and-white passthrough",
+      "Bugs and patchy standalone game compatibility",
+      "Top strap and hand straps cost extra"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Dual 2160x2160 LCD, pancake lenses, 110 degree FOV"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "72-144Hz (144Hz experimental)"
+      },
+      {
+        "label": "Chip",
+        "value": "Qualcomm Snapdragon 8 Gen 3"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB LPDDR5X"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB or 1TB, plus microSD slot"
+      },
+      {
+        "label": "Battery",
+        "value": "21.6Wh, 45W USB-C charging"
+      },
+      {
+        "label": "Weight",
+        "value": "About 440 g with strap and battery"
+      },
+      {
+        "label": "Tracking",
+        "value": "Inside-out tracking, eye tracking, monochrome passthrough"
+      },
+      {
+        "label": "Price",
+        "value": "$1,059 (256GB), $1,299 (1TB)"
+      }
+    ],
+    "art": {
+      "kind": "headset",
+      "body": "#2a2c31",
+      "accent": "#5b8bd9",
+      "backdrop": [
+        "#f3f4f7",
+        "#e2e5ec"
+      ]
+    }
+  },
+  {
+    "id": "rog-xbox-ally-x",
+    "slug": "rog-xbox-ally-x",
+    "name": "Asus ROG Xbox Ally X",
+    "brand": "Asus",
+    "category": "console",
+    "releaseDate": "2025-10-16",
+    "launchPrice": 999,
+    "officialUrl": "https://rog.asus.com/gaming-handhelds/rog-ally/rog-xbox-ally-x-2025/",
+    "criticsTake": "Reviewers call the ROG Xbox Ally X the best Windows handheld available, with controller-style grips, strong Ryzen AI Z2 Extreme performance and an Xbox full screen mode that makes Windows far easier to use. The $999 price is the near-universal complaint, along with average battery life and a software layer that still lags and crashes at times. Most say owners of the older ROG Ally X have little reason to upgrade.",
+    "loved": [
+      "Comfortable, controller-style grips",
+      "Xbox full screen experience on Windows",
+      "Fast Ryzen AI Z2 Extreme chip with 24GB RAM",
+      "Bright 7-inch 1080p 120Hz screen"
+    ],
+    "gripes": [
+      "$999 price",
+      "Average battery life",
+      "Windows software still lags and crashes at times",
+      "Small gain over the ROG Ally X",
+      "Bulky and heavy at about 715g"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "7-inch 1080p IPS, 120Hz, VRR"
+      },
+      {
+        "label": "Chip",
+        "value": "AMD Ryzen AI Z2 Extreme"
+      },
+      {
+        "label": "Memory",
+        "value": "24GB LPDDR5X"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB PCIe SSD, microSD slot"
+      },
+      {
+        "label": "Battery",
+        "value": "80Wh"
+      },
+      {
+        "label": "Weight",
+        "value": "About 715g"
+      },
+      {
+        "label": "Software",
+        "value": "Windows 11 with Xbox full screen experience"
+      },
+      {
+        "label": "Price",
+        "value": "$999"
+      }
+    ],
+    "art": {
+      "kind": "console",
+      "body": "#1a1a1c",
+      "accent": "#2f3b2a",
+      "backdrop": [
+        "#f3f4f2",
+        "#e0e4dd"
+      ]
+    }
+  },
+  {
+    "id": "garmin-fenix-9-pro",
+    "slug": "garmin-fenix-9-pro",
+    "name": "Garmin Fenix 9 Pro",
+    "brand": "Garmin",
+    "category": "watch",
+    "releaseDate": "2026-08-28",
+    "launchPrice": 1099.99,
+    "officialUrl": "https://www.garmin.com/en-US/p/1962767/",
+    "criticsTake": "Critics call the Fenix 9 Pro Garmin's best outdoor watch, praising the all-titanium case, brighter AMOLED screen, accurate GPS and faster maps. Most treat it as an incremental update over the Fenix 8 Pro and advise owners of that model to skip it. Scores run from 7.7/10 at RunMorph to 5/5 at TechRadar, with price and GPS battery life as the common complaints.",
+    "loved": [
+      "All-titanium case with sapphire lens",
+      "Brighter AMOLED display, up to 3,000 nits",
+      "Accurate GPS and deep training and navigation tools",
+      "Faster maps and more storage"
+    ],
+    "gripes": [
+      "Starts at $1,099.99 and rises with size and inReach",
+      "Modest upgrade over the Fenix 8 Pro",
+      "GPS battery life is down on the Fenix 8 Pro, especially in the 43mm size",
+      "inReach needs a separate subscription and was clunky in some tests",
+      "Smartwatch software is basic next to Apple Watch or Galaxy Watch"
+    ],
+    "specs": [
+      {
+        "label": "Case",
+        "value": "Titanium with sapphire lens"
+      },
+      {
+        "label": "Sizes",
+        "value": "43mm, 47mm, 51mm"
+      },
+      {
+        "label": "Display",
+        "value": "AMOLED, up to 3,000 nits (416 x 416 on 43mm)"
+      },
+      {
+        "label": "Battery life",
+        "value": "43mm: up to 10 days smartwatch, 18 hours GPS"
+      },
+      {
+        "label": "Storage",
+        "value": "64GB"
+      },
+      {
+        "label": "Water resistance",
+        "value": "10 ATM"
+      },
+      {
+        "label": "Connectivity",
+        "value": "LTE-M; inReach satellite on inReach models"
+      },
+      {
+        "label": "Navigation",
+        "value": "Multiband GPS with built-in maps"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,099.99 (43mm, no inReach)"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#5a5f66",
+      "accent": "#0f1c2e",
+      "backdrop": [
+        "#f3f4f6",
+        "#e0e3e8"
+      ]
+    }
+  },
+  {
+    "id": "rog-xbox-ally",
+    "slug": "rog-xbox-ally",
+    "name": "Asus ROG Xbox Ally",
+    "brand": "Asus",
+    "category": "console",
+    "releaseDate": "2025-10-16",
+    "launchPrice": 599.99,
+    "officialUrl": "https://rog.asus.com/gaming-handhelds/rog-ally/rog-xbox-ally-2025/",
+    "criticsTake": "Critics like the comfortable Xbox-style grips, the 7-inch 120Hz display and the console-style Xbox full screen interface. Most say the Ryzen Z2 A chip performs about level with the Steam Deck OLED, so AAA games need lowered settings. At $599.99 many reviewers call it poor value next to the Steam Deck and the faster Ally X.",
+    "loved": [
+      "Comfortable contoured grips",
+      "Xbox full screen interface is easy to use",
+      "Bright 7-inch 1080p 120Hz VRR display",
+      "Quiet cooling and good speakers"
+    ],
+    "gripes": [
+      "Priced too high for its performance",
+      "Performance roughly matches or trails the Steam Deck OLED",
+      "Windows still clunky with touch and updates",
+      "Sleep and wake problems",
+      "Thumbsticks and buttons feel less durable than an Xbox controller"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "7-inch 1080p IPS touch, 120Hz, VRR"
+      },
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen Z2 A (RDNA 2, 8 CUs)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB LPDDR5-6400"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB M.2 2280 SSD, microSD slot"
+      },
+      {
+        "label": "Battery",
+        "value": "60Wh"
+      },
+      {
+        "label": "Weight",
+        "value": "670 g (1.48 lb)"
+      },
+      {
+        "label": "Ports",
+        "value": "2x USB-C (USB 3.2 Gen 2), microSD, 3.5mm jack"
+      },
+      {
+        "label": "Operating system",
+        "value": "Windows 11 Home with Xbox full screen experience"
+      },
+      {
+        "label": "Price",
+        "value": "$599.99"
+      }
+    ],
+    "art": {
+      "kind": "console",
+      "body": "#f2f2f0",
+      "accent": "#1c3a2a",
+      "backdrop": [
+        "#f1f6f2",
+        "#dde9e0"
+      ]
+    }
+  },
+  {
+    "id": "samsung-galaxy-xr",
+    "slug": "samsung-galaxy-xr",
+    "name": "Samsung Galaxy XR",
+    "brand": "Samsung",
+    "category": "wearable",
+    "releaseDate": "2025-10-21",
+    "launchPrice": 1799.99,
+    "officialUrl": "https://www.samsung.com/us/xr/galaxy-xr/galaxy-xr/explore/",
+    "criticsTake": "Critics praise the light, comfortable design and the sharp micro-OLED displays, and many like that it runs Android apps and costs about half as much as the Apple Vision Pro. They also point to short battery life, uneven eye and hand tracking, a thin library of XR apps and controllers that are not in the box. Most see an impressive first Android XR device that suits enthusiasts and early adopters at $1,799.99.",
+    "loved": [
+      "Light, comfortable forehead-rest design",
+      "Very sharp micro-OLED displays",
+      "Runs Android apps with the Play Store",
+      "Much cheaper than Apple Vision Pro"
+    ],
+    "gripes": [
+      "About 2 to 2.5 hours of battery on an external pack",
+      "Controllers not included",
+      "Eye and hand tracking less reliable than Vision Pro",
+      "Few apps built for XR",
+      "Passthrough not as sharp as rivals"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Dual micro-OLED, 3,552 x 3,840 per eye, up to 90Hz"
+      },
+      {
+        "label": "Field of view",
+        "value": "109 degrees horizontal"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon XR2+ Gen 2"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB"
+      },
+      {
+        "label": "Battery life",
+        "value": "About 2 hours general use, 2.5 hours video"
+      },
+      {
+        "label": "Weight",
+        "value": "545 g"
+      },
+      {
+        "label": "Software",
+        "value": "Android XR with Gemini"
+      },
+      {
+        "label": "Price",
+        "value": "$1,799.99"
+      }
+    ],
+    "art": {
+      "kind": "headset",
+      "body": "#c9ccd1",
+      "accent": "#2b3a67",
+      "backdrop": [
+        "#f3f4f7",
+        "#e1e4ec"
+      ]
+    }
+  },
+  {
+    "id": "even-realities-g2",
+    "slug": "even-realities-g2",
+    "name": "Even Realities G2",
+    "brand": "Even Realities",
+    "category": "wearable",
+    "releaseDate": "2025-11-12",
+    "launchPrice": 599,
+    "officialUrl": "https://www.evenrealities.com/products/g2",
+    "criticsTake": "Critics like the G2 as a light, camera-free pair of glasses that pass for ordinary eyewear, with a sharp green heads-up display and multi-day battery life. Reviewers are split on the software and controls, citing Bluetooth bugs, fiddly touch pads and a thin app ecosystem. At $599 before prescription lenses and the optional $249 R1 ring, many call it pricey.",
+    "loved": [
+      "Looks like regular glasses at about 36 g",
+      "Sharp, bright Micro-LED display",
+      "No camera for better privacy",
+      "Battery lasts about two days or more",
+      "Useful teleprompter, notifications and transcription"
+    ],
+    "gripes": [
+      "Touch controls on the temples are fiddly",
+      "Bluetooth disconnects and software bugs",
+      "Limited app ecosystem and rigid widgets",
+      "Expensive once the R1 ring and prescription lenses are added"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Dual monochrome green Micro-LED waveguide, 640x350, up to 1,200 nits"
+      },
+      {
+        "label": "Field of view",
+        "value": "27.5 degrees"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "60Hz"
+      },
+      {
+        "label": "Weight",
+        "value": "36 g (frames)"
+      },
+      {
+        "label": "Battery life",
+        "value": "About two days (per Tom's Guide and Trusted Reviews)"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.4, iOS and Android"
+      },
+      {
+        "label": "Durability",
+        "value": "IP65"
+      },
+      {
+        "label": "Camera and speakers",
+        "value": "None"
+      },
+      {
+        "label": "Price",
+        "value": "$599 (R1 ring $249 extra)"
+      }
+    ],
+    "art": {
+      "kind": "glasses",
+      "body": "#3d4a40",
+      "accent": "#6dffa8",
+      "backdrop": [
+        "#f1f6f2",
+        "#dbe8df"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-buds-4-pro",
+    "slug": "galaxy-buds-4-pro",
+    "name": "Samsung Galaxy Buds4 Pro",
+    "brand": "Samsung",
+    "category": "headphones",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 249,
+    "officialUrl": "https://www.samsung.com/us/audio-sound/galaxy-buds4-pro/",
+    "criticsTake": "Critics call the Buds4 Pro Samsung's best earbuds yet, with sound that reviewers rank alongside the AirPods Pro 3 and Sony WF-1000XM6 and noise cancellation that most find strong. The redesigned stem and metal finish are liked, and fit is comfortable for most. Battery life of about 6 hours with ANC, hard-to-swap tips and features that need a recent Galaxy phone keep the scores below the top tier.",
+    "loved": [
+      "Detailed, balanced sound",
+      "Strong noise cancellation",
+      "Comfortable, refined stem design",
+      "Rich feature set on Galaxy phones"
+    ],
+    "gripes": [
+      "Best features need a recent Galaxy phone",
+      "Battery life of roughly 6 hours with ANC",
+      "Fit can loosen during workouts",
+      "No true multipoint and only three tip sizes",
+      "Tactile controls feel laggy"
+    ],
+    "specs": [
+      {
+        "label": "Drivers",
+        "value": "2-way (woofer and tweeter)"
+      },
+      {
+        "label": "Noise cancellation",
+        "value": "Adaptive ANC"
+      },
+      {
+        "label": "Battery life (ANC on)",
+        "value": "Up to 6 hours, 26 hours with case"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "6.1"
+      },
+      {
+        "label": "Codecs",
+        "value": "SBC, AAC, LC3, Samsung SSC"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP57"
+      },
+      {
+        "label": "Colors",
+        "value": "White, Black, Pink Gold (Samsung.com exclusive)"
+      },
+      {
+        "label": "Price",
+        "value": "$249"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#1b1b1f",
+      "accent": "#c9ced6",
+      "backdrop": [
+        "#f3f4f7",
+        "#e3e6ec"
+      ]
+    }
+  },
+  {
+    "id": "pixel-watch-4",
+    "slug": "pixel-watch-4",
+    "name": "Google Pixel Watch 4",
+    "brand": "Google",
+    "category": "watch",
+    "releaseDate": "2025-10-09",
+    "launchPrice": 349.99,
+    "officialUrl": "https://store.google.com/product/pixel_watch_4",
+    "criticsTake": "Reviewers call the Pixel Watch 4 the best Wear OS watch and the best smartwatch for Android phones. The domed, brighter display, fast charging, dual-frequency GPS, Gemini wrist-raise gesture and repairable design draw the most praise. Critics fault the lack of sapphire glass, limits for serious athletes, and Fitbit features behind a paid Premium plan.",
+    "loved": [
+      "Bright domed 3,000-nit display",
+      "Fast charging and about two days of battery on the 45mm",
+      "Gemini wrist-raise gesture and Wear OS 6",
+      "Repairable design and dual-frequency GPS"
+    ],
+    "gripes": [
+      "Gorilla Glass 5 rather than sapphire",
+      "Not rugged and limited for serious athletes",
+      "Some Fitbit features need a Premium subscription",
+      "New proprietary charging dock",
+      "Gemini wake gesture can be finicky"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Actua 360 domed AMOLED, 320 ppi, up to 3,000 nits, Gorilla Glass 5"
+      },
+      {
+        "label": "Sizes",
+        "value": "41mm and 45mm"
+      },
+      {
+        "label": "Chip",
+        "value": "Qualcomm Snapdragon W5 Gen 2 with ML coprocessor"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "2GB RAM, 32GB storage"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 30 hours (41mm) or 40 hours (45mm) per Google; 15 hours from a 15-minute charge"
+      },
+      {
+        "label": "Weight",
+        "value": "31 g (41mm), 36.8 g (45mm)"
+      },
+      {
+        "label": "Water and dust",
+        "value": "IP68, 5ATM"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth, Wi-Fi, NFC, UWB, dual-frequency GPS, optional LTE, satellite SOS"
+      },
+      {
+        "label": "Price",
+        "value": "From $349.99 (41mm); 45mm from $399"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#2b2d31",
+      "accent": "#4a6fa5",
+      "backdrop": [
+        "#f4f6f9",
+        "#e1e7ef"
+      ]
+    }
+  },
+  {
+    "id": "lenovo-legion-go-2",
+    "slug": "lenovo-legion-go-2",
+    "name": "Lenovo Legion Go 2",
+    "brand": "Lenovo",
+    "category": "console",
+    "releaseDate": "2025-10-31",
+    "launchPrice": 1099,
+    "officialUrl": "https://www.lenovo.com/us/en/c/handheld-gaming-pcs/legion-go/",
+    "criticsTake": "Critics agree the 8.8-inch 144Hz OLED is the best screen on a handheld and that the detachable controllers, kickstand and Ryzen Z2 Extreme performance make it the most versatile Windows handheld. Reviewers hold back over the price, which starts at $1,099 and reaches $1,349 for the Z2 Extreme model, plus the weight of just over two pounds, short battery life and the rough fit of full Windows 11 on a handheld.",
+    "loved": [
+      "Best-in-class 8.8-inch 144Hz OLED display",
+      "Detachable controllers, kickstand and built-in touchpad",
+      "Strong Ryzen Z2 Extreme performance",
+      "Comfortable rounded grips and Hall effect sticks"
+    ],
+    "gripes": [
+      "Very expensive",
+      "Heavy and bulky at over two pounds",
+      "Short battery life under load",
+      "Windows 11 is awkward on a handheld",
+      "SSD not user-accessible, microSD only"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "8.8-inch OLED, 1920x1200, 144Hz VRR, up to 1,100 nits HDR"
+      },
+      {
+        "label": "Chip",
+        "value": "AMD Ryzen Z2 Extreme (Z2 on base model)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB (Z2) or 32GB (Z2 Extreme)"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB SSD, microSD UHS-II slot"
+      },
+      {
+        "label": "Battery",
+        "value": "74Wh with rapid charge"
+      },
+      {
+        "label": "Weight",
+        "value": "2.03 lb (920 g) with controllers"
+      },
+      {
+        "label": "Ports",
+        "value": "2x USB4 USB-C, microSD, 3.5mm audio"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,099.99 (Z2); $1,349.99 (Z2 Extreme)"
+      }
+    ],
+    "art": {
+      "kind": "console",
+      "body": "#2b2d31",
+      "accent": "#12151c",
+      "backdrop": [
+        "#f4f5f8",
+        "#e3e6ee"
+      ]
+    }
+  },
+  {
+    "id": "oakley-meta-vanguard",
+    "slug": "oakley-meta-vanguard",
+    "name": "Oakley Meta Vanguard",
+    "brand": "Oakley Meta",
+    "category": "wearable",
+    "releaseDate": "2025-10-21",
+    "launchPrice": 499,
+    "officialUrl": "https://www.meta.com/ai-glasses/oakley-meta-vanguard/",
+    "criticsTake": "Critics see the Vanguard as the best sport-focused smart glasses so far, with a centered 12MP camera, loud open-ear speakers and useful Garmin and Strava integration. Reviewers are split on whether it is worth $499, since battery life falls short of the nine-hour claim, the camera does not replace an action cam and the frame is heavy for everyday use. Privacy concerns around Meta's data terms and covert filming drew the harshest scores.",
+    "loved": [
+      "Centered 12MP camera with wide 122 degree view and POV footage",
+      "Loud, clear open-ear speakers",
+      "Garmin and Strava integration for live stats",
+      "Sturdy IP67 build with Prizm sunglass lenses"
+    ],
+    "gripes": [
+      "Real-world battery life well below the nine-hour claim",
+      "Heavy at about 66 g",
+      "$499 price",
+      "Camera quality does not replace an action cam",
+      "Privacy concerns and no prescription lens support"
+    ],
+    "specs": [
+      {
+        "label": "Camera",
+        "value": "12MP centered camera, 122 degree field of view, video up to 3K"
+      },
+      {
+        "label": "Audio",
+        "value": "Open-ear speakers, five-mic array"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 9 hours claimed; case adds about 36 hours (per Trusted Reviews)"
+      },
+      {
+        "label": "Charging",
+        "value": "50% in 20 minutes, full in 75 minutes (per Trusted Reviews)"
+      },
+      {
+        "label": "Weight",
+        "value": "About 66 g"
+      },
+      {
+        "label": "Durability",
+        "value": "IP67 dust and water resistance"
+      },
+      {
+        "label": "Lenses",
+        "value": "Oakley Prizm, swappable, no prescription or polarized option at launch"
+      },
+      {
+        "label": "Fitness integration",
+        "value": "Garmin and Strava"
+      },
+      {
+        "label": "Price",
+        "value": "$499"
+      }
+    ],
+    "art": {
+      "kind": "glasses",
+      "body": "#1A1A1A",
+      "accent": "#E8742A",
+      "backdrop": [
+        "#F6F3EF",
+        "#E9E4DD"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-watch-ultra-2",
+    "slug": "galaxy-watch-ultra-2",
+    "name": "Samsung Galaxy Watch Ultra 2",
+    "brand": "Samsung",
+    "category": "watch",
+    "releaseDate": "2026-08-07",
+    "launchPrice": 699.99,
+    "officialUrl": "https://www.samsung.com/us/watches/galaxy-watch-ultra2/",
+    "criticsTake": "Critics call the Galaxy Watch Ultra 2 Samsung's best smartwatch so far. The 5,000 nit display, Snapdragon Wear Elite speed, thinner case and bigger battery are the main upgrades. It is still large, costs $699.99, and some health features need a Samsung phone, which is why Android Central scored it lowest.",
+    "loved": [
+      "Very bright 5,000 nit display",
+      "Multi-day battery life",
+      "Slimmer, more comfortable case and band",
+      "Fast, smooth performance",
+      "Rugged build with 10ATM and IP69K"
+    ],
+    "gripes": [
+      "Still big and heavy on small wrists",
+      "Costs $699.99",
+      "ECG and blood pressure need a Samsung phone",
+      "Slow charging and picky about third-party chargers",
+      "Garmin is better for training and navigation"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "1.52-inch Super AMOLED, up to 5,000 nits, sapphire crystal"
+      },
+      {
+        "label": "Chip",
+        "value": "Qualcomm Snapdragon Wear Elite"
+      },
+      {
+        "label": "Battery",
+        "value": "800 mAh; Samsung rates up to 60 hours with always-on display"
+      },
+      {
+        "label": "Case",
+        "value": "47 mm titanium, 10.7 mm thick"
+      },
+      {
+        "label": "Water and dust",
+        "value": "10ATM, IP69K, EN13319 dive certified"
+      },
+      {
+        "label": "Durability",
+        "value": "MIL-STD-810H"
+      },
+      {
+        "label": "Colors",
+        "value": "Titanium Silver, Titanium Gray"
+      },
+      {
+        "label": "Price",
+        "value": "$699.99"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#8c9096",
+      "accent": "#1c2b3d",
+      "backdrop": [
+        "#f2f4f7",
+        "#dde2e9"
+      ]
+    }
+  },
+  {
+    "id": "garmin-forerunner-170",
+    "slug": "garmin-forerunner-170",
+    "name": "Garmin Forerunner 170",
+    "brand": "Garmin",
+    "category": "watch",
+    "releaseDate": "2026-05-15",
+    "launchPrice": 299.99,
+    "officialUrl": "https://www.garmin.com/en-US/p/1915560/",
+    "criticsTake": "Critics call the Forerunner 170 a capable, approachable running watch for new and mid-level runners. The AMOLED display, accurate tracking and new Training Readiness and Training Status tools earn praise. Most see it as a software update over the Forerunner 165 and point to the cheaper Forerunner 70 as the better value if the extras are not needed.",
+    "loved": [
+      "Bright AMOLED display",
+      "Accurate GPS and heart rate tracking",
+      "Training Readiness and Training Status added",
+      "Light 41 g design with Garmin Pay"
+    ],
+    "gripes": [
+      "Single-band GPS only",
+      "No triathlon or multisport mode",
+      "Battery life short of Garmin's claims in some tests",
+      "Costs more than the near-identical Forerunner 70",
+      "Mostly a software upgrade over the Forerunner 165"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "1.2-inch AMOLED touchscreen, 390 x 390, 5 buttons"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 10 days smartwatch mode, up to 20 hours GPS"
+      },
+      {
+        "label": "GPS",
+        "value": "Single-band GNSS"
+      },
+      {
+        "label": "Heart rate",
+        "value": "Wrist-based optical sensor"
+      },
+      {
+        "label": "Training tools",
+        "value": "Training Readiness, Training Status, HRV Status, running power"
+      },
+      {
+        "label": "Weight",
+        "value": "41 g"
+      },
+      {
+        "label": "Water rating",
+        "value": "5 ATM"
+      },
+      {
+        "label": "Music",
+        "value": "170 Music adds offline Spotify and Deezer; base model $299.99, Music $349.99"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#1c1c1e",
+      "accent": "#0b1a2b",
+      "backdrop": [
+        "#f4f5f7",
+        "#e3e7ec"
+      ]
+    }
+  },
+  {
+    "id": "garmin-forerunner-70",
+    "slug": "garmin-forerunner-70",
+    "name": "Garmin Forerunner 70",
+    "brand": "Garmin",
+    "category": "watch",
+    "releaseDate": "2026-05-15",
+    "launchPrice": 249.99,
+    "officialUrl": "https://www.garmin.com/en-US/p/1941179/",
+    "criticsTake": "Critics see the Forerunner 70 as a big upgrade on the Forerunner 55, adding a bright AMOLED screen and Garmin's Training Readiness and Quick Workout tools for $249.99. GPS and heart rate accuracy are praised even without multi-band GPS. Reviewers note the higher price than the Forerunner 55 and the missing altimeter, Garmin Pay and music.",
+    "loved": [
+      "Bright AMOLED display in a light, small case",
+      "Training Readiness and deep training tools at a budget price",
+      "Accurate single-band GPS and wrist heart rate",
+      "Up to 13 days of battery in smartwatch mode"
+    ],
+    "gripes": [
+      "Costs $50 more than the Forerunner 55",
+      "No barometric altimeter, so elevation data is less precise",
+      "No Garmin Pay or music storage",
+      "No multi-band GPS",
+      "No open water or triathlon modes"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "1.2-inch AMOLED touchscreen with buttons"
+      },
+      {
+        "label": "Case",
+        "value": "One size, about 40 g"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 13 days smartwatch, 16 hours all-systems GPS"
+      },
+      {
+        "label": "GPS",
+        "value": "Single-band GNSS"
+      },
+      {
+        "label": "Heart rate sensor",
+        "value": "Garmin Elevate Gen 4"
+      },
+      {
+        "label": "Water resistance",
+        "value": "5 ATM"
+      },
+      {
+        "label": "Altimeter",
+        "value": "None (GPS-based elevation)"
+      },
+      {
+        "label": "Smart features",
+        "value": "No Garmin Pay, no music storage"
+      },
+      {
+        "label": "Price",
+        "value": "$249.99"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#1c1c1e",
+      "accent": "#0b1a2b",
+      "backdrop": [
+        "#f5f6f8",
+        "#e4e7ec"
+      ]
+    }
+  },
+  {
+    "id": "pixel-buds-2a",
+    "slug": "pixel-buds-2a",
+    "name": "Google Pixel Buds 2a",
+    "brand": "Google",
+    "category": "headphones",
+    "releaseDate": "2025-10-09",
+    "launchPrice": 129,
+    "officialUrl": "https://store.google.com/product/pixel_buds_2a",
+    "criticsTake": "Critics like the small, comfortable fit and the addition of active noise cancellation at $129, and several call them a solid value for Pixel owners. Sound and noise cancelling are described as decent rather than class leading, and reviewers note missing perks such as wireless charging, on-bud volume control and iOS features. Several say the Pixel Buds Pro 2 or rival budget buds are better picks unless the 2a is discounted.",
+    "loved": [
+      "Small, comfortable fit",
+      "Active noise cancellation added at this price",
+      "Improved battery life over the A-Series",
+      "Hands-free Gemini on Pixel phones"
+    ],
+    "gripes": [
+      "No wireless charging",
+      "No on-bud volume control",
+      "ANC and call quality trail the Pixel Buds Pro 2",
+      "Many features need a Pixel phone",
+      "Price rose $30 over the A-Series"
+    ],
+    "specs": [
+      {
+        "label": "Noise cancellation",
+        "value": "Active noise cancellation and transparency mode"
+      },
+      {
+        "label": "Chip",
+        "value": "Google Tensor A1"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.4 with multipoint"
+      },
+      {
+        "label": "Codecs",
+        "value": "SBC and AAC"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 10 hours (ANC off), about 7 hours (ANC on); 20 hours with case"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP54 earbuds, IPX4 case"
+      },
+      {
+        "label": "Weight",
+        "value": "4.7 g per bud, 47.6 g case"
+      },
+      {
+        "label": "Charging",
+        "value": "USB-C only, no wireless charging"
+      },
+      {
+        "label": "Price",
+        "value": "$129"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#8f9a86",
+      "accent": "#b9c4b0",
+      "backdrop": [
+        "#f4f6f1",
+        "#e3e9dd"
+      ]
+    }
+  },
+  {
+    "id": "sony-linkbuds-clip",
+    "slug": "sony-linkbuds-clip",
+    "name": "Sony LinkBuds Clip",
+    "brand": "Sony",
+    "category": "headphones",
+    "releaseDate": "2026-01-21",
+    "launchPrice": 229.99,
+    "officialUrl": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wflc900-g",
+    "criticsTake": "Critics like the comfortable, secure clip-on fit, the light build and the app customization. Sound is the weak point: reviewers found thin bass and little isolation, and Engadget and T3 say Sony has not done enough to stand out from cheaper clip-on rivals. Scores range from 60 to 90, with most landing in the 60s and 70s.",
+    "loved": [
+      "Comfortable, secure clip-on fit",
+      "Light, well-made design",
+      "10-band EQ and customizable controls in the app",
+      "Good battery life for open earbuds"
+    ],
+    "gripes": [
+      "Thin bass and modest sound quality",
+      "No noise isolation by design",
+      "Priced at $229.99 against cheaper rivals",
+      "Missing some Sony features such as wear detection",
+      "Tragus tap controls and connectivity can be erratic"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Open-ear clip-on true wireless earbuds"
+      },
+      {
+        "label": "Driver",
+        "value": "10mm"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 9 hours per charge, 37 hours with case (Sony claim)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3, multipoint"
+      },
+      {
+        "label": "Codecs",
+        "value": "SBC, AAC"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX4"
+      },
+      {
+        "label": "Weight",
+        "value": "6.4 g per earbud"
+      },
+      {
+        "label": "Colors",
+        "value": "Black, Greige, Green, Lavender"
+      },
+      {
+        "label": "Price",
+        "value": "$229.99"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#1d1d20",
+      "accent": "#8a9a8c",
+      "backdrop": [
+        "#f4f5f6",
+        "#e4e7ea"
+      ]
+    }
+  },
+  {
+    "id": "thinkpad-x1-carbon-gen14",
+    "slug": "thinkpad-x1-carbon-gen14",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 14",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "releaseDate": "2026-03-24",
+    "launchPrice": 2139,
+    "officialUrl": "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/lenovo-thinkpad-x1-carbon-gen-14-aura-edition-14-inch-intel/len101t0159",
+    "criticsTake": "Reviewers call the Gen 14 one of the best business ultraportables. The redesigned Space Frame chassis weighs about 2.15 pounds, the keyboard is praised, and the OLED option is a highlight, with repairability that earned a 9/10 iFixit score. The main complaints are the price, soldered RAM and modest integrated graphics.",
+    "loved": [
+      "Ultralight 2.15 lb Space Frame chassis",
+      "Best-in-class keyboard and trackpad",
+      "Sharp 2.8K OLED option",
+      "Easier to repair, with a user-serviceable SSD and battery"
+    ],
+    "gripes": [
+      "Expensive, starting at $2,139",
+      "RAM is soldered and cannot be upgraded",
+      "Integrated graphics only suit office work",
+      "Base IPS screen is 60 Hz",
+      "No SD card slot"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14-inch 16:10, 1920x1200 IPS 60 Hz or 2880x1800 OLED 30-120 Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Intel Core Ultra (Panther Lake), Ultra 5 335 vPro to Ultra 7 365 vPro"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB or 64GB LPDDR5x, soldered"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB to 2TB M.2 SSD"
+      },
+      {
+        "label": "Battery",
+        "value": "58 Wh, over 13 hours rated by Lenovo"
+      },
+      {
+        "label": "Weight",
+        "value": "2.15 lb (0.977 kg)"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 4, USB-A, HDMI, 3.5 mm"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 7, Bluetooth 5.4"
+      },
+      {
+        "label": "Price",
+        "value": "From $2,139 (Core Ultra 5 335 vPro, 32GB, 256GB)"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#1c1c1e",
+      "accent": "#2f6fb5",
+      "backdrop": [
+        "#f4f5f7",
+        "#e1e5ea"
+      ]
+    }
+  },
+  {
+    "id": "rog-zephyrus-g14-2026",
+    "slug": "rog-zephyrus-g14-2026",
+    "name": "Asus ROG Zephyrus G14 (2026)",
+    "brand": "Asus",
+    "category": "laptop",
+    "releaseDate": "2026-05-22",
+    "launchPrice": 3599.99,
+    "officialUrl": "https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2026-gu405/",
+    "criticsTake": "Reviewers call the 2026 Zephyrus G14 one of the best compact gaming and creator laptops. The move to Intel Panther Lake brings much better battery life and cooler running, and the brighter 120Hz OLED and zero-throttling RTX 5070 Ti performance draw wide praise. The price is the main complaint, at about $3,600 list in the US, along with loud fans under load and soldered RAM.",
+    "loved": [
+      "Bright 2.8K 120Hz OLED display",
+      "Strong sustained performance with an RTX 5070 Ti",
+      "Much better battery life than the AMD model",
+      "Light, premium 14-inch build"
+    ],
+    "gripes": [
+      "Very high price, with US list around $3,600",
+      "Fans get loud under load",
+      "Soldered RAM and a single SSD slot",
+      "Touchpad uses a mechanical click and feels dated",
+      "Some configurations have only 8GB of VRAM"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14-inch 2880x1800 OLED, 120Hz, up to 1,100 nits peak HDR"
+      },
+      {
+        "label": "Chip",
+        "value": "Intel Core Ultra 9 386H (Panther Lake)"
+      },
+      {
+        "label": "Graphics",
+        "value": "Nvidia GeForce RTX 5070 Ti (115W) in the US launch model"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB LPDDR5X-8533, soldered"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB PCIe 4.0 SSD, single slot"
+      },
+      {
+        "label": "Battery life",
+        "value": "73Wh; Tom's Guide measured 8h32m of web browsing"
+      },
+      {
+        "label": "Weight",
+        "value": "3.31 lb (1.5 kg)"
+      },
+      {
+        "label": "Ports",
+        "value": "2x USB-C (DisplayPort, 100W PD), 2x USB-A 3.2 Gen 2, SD card reader"
+      },
+      {
+        "label": "Price",
+        "value": "$3,599.99 list (32GB, RTX 5070 Ti); some retailers sell a 16GB version for $3,199.99"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#55595f",
+      "accent": "#12233a",
+      "backdrop": [
+        "#f3f4f6",
+        "#e1e4e9"
+      ]
+    }
+  },
+  {
+    "id": "garmin-cirqa",
+    "slug": "garmin-cirqa",
+    "name": "Garmin Cirqa",
+    "brand": "Garmin",
+    "category": "wearable",
+    "releaseDate": "2026-07-24",
+    "launchPrice": 199.99,
+    "officialUrl": "https://www.garmin.com/en-US/newsroom/press-release/wearables-health/meet-cirqa-smart-band-the-screen-free-health-and-fitness-tracker-from-garmin/",
+    "criticsTake": "Critics like the Cirqa as a comfortable screenless tracker with long battery life and Garmin's reliable health data, and it needs no subscription. Reviewers rate it best for people already in the Garmin ecosystem. Scores run from 7.4/10 at Engadget to 4.5/5 at TechRadar, with price and paywalled coaching as the common complaints.",
+    "loved": [
+      "Battery life of about a week or more",
+      "Comfortable, discreet screenless design",
+      "Garmin Connect data without a mandatory subscription",
+      "Generally accurate auto-activity tracking"
+    ],
+    "gripes": [
+      "$199.99 is high next to the Fitbit Air",
+      "Coaching features sit behind the Connect+ paywall",
+      "No built-in GPS, so it relies on the phone",
+      "Somewhat bulky sensor and limited strap options",
+      "Less suited to interval training and swimming"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "None (screenless, vibration alerts)"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 10 days"
+      },
+      {
+        "label": "Water resistance",
+        "value": "5 ATM"
+      },
+      {
+        "label": "GPS",
+        "value": "Connected GPS only (uses phone)"
+      },
+      {
+        "label": "Health sensors",
+        "value": "Heart rate, Pulse Ox, skin temperature"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth and ANT+"
+      },
+      {
+        "label": "Sizes",
+        "value": "S-M and L-XL"
+      },
+      {
+        "label": "Subscription",
+        "value": "None required (Connect+ optional)"
+      },
+      {
+        "label": "Price",
+        "value": "$199.99"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#2a2b2e",
+      "accent": "#7fb7a4",
+      "backdrop": [
+        "#f4f6f5",
+        "#e2e8e5"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-a37",
+    "slug": "galaxy-a37",
+    "name": "Samsung Galaxy A37 5G",
+    "brand": "Samsung",
+    "category": "phone",
+    "releaseDate": "2026-04-09",
+    "launchPrice": 449,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-a37-5g/",
+    "criticsTake": "Critics call the Galaxy A37 5G a solid, dependable mid-range phone that changes little from the A36. The bright OLED screen, IP68 rating, battery life and six years of updates earn praise. Performance from the carried-over Exynos 1480 and the price lead several reviewers to point to rivals such as the Pixel 10a.",
+    "loved": [
+      "Bright 6.7-inch Super AMOLED display",
+      "Six years of OS and security updates",
+      "Strong battery life",
+      "IP68 and Gorilla Glass Victus+ build"
+    ],
+    "gripes": [
+      "Exynos 1480 performance is underwhelming",
+      "Little change from the A36",
+      "Weak ultra-wide camera",
+      "No wireless charging, 45W charger not included",
+      "Base model has only 128GB and no microSD slot"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7-inch FHD+ Super AMOLED, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Exynos 1480"
+      },
+      {
+        "label": "Memory",
+        "value": "6GB RAM / 128GB, or 8GB / 256GB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main (OIS) + 8MP ultra wide + 5MP macro"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP"
+      },
+      {
+        "label": "Battery",
+        "value": "5,000mAh, 45W wired charging"
+      },
+      {
+        "label": "Durability",
+        "value": "IP68, Gorilla Glass Victus+"
+      },
+      {
+        "label": "Software",
+        "value": "One UI 8.5, six OS updates"
+      },
+      {
+        "label": "Price",
+        "value": "$449 (128GB), $540 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#b9b5d6",
+      "accent": "#1f2a44",
+      "backdrop": [
+        "#f4f2fa",
+        "#e3e0f1"
+      ]
+    }
+  },
+  {
+    "id": "nothing-phone-4a-pro",
+    "slug": "nothing-phone-4a-pro",
+    "name": "Nothing Phone (4a) Pro",
+    "brand": "Nothing",
+    "category": "phone",
+    "releaseDate": "2026-03-27",
+    "launchPrice": 499,
+    "officialUrl": "https://us.nothing.tech/products/phone-4a-pro",
+    "criticsTake": "Critics praise the aluminum design, bright 144Hz display and the Glyph Matrix, and several single out the periscope zoom as rare at this price. Cameras are called inconsistent, video is weak, and battery life fell short of Nothing's claims in some tests. GSMArena questions whether it justifies the premium over the standard Phone (4a), and reviewers flag only three Android updates.",
+    "loved": [
+      "Aluminum unibody design",
+      "Bright 6.83-inch 144Hz AMOLED display",
+      "Periscope zoom at a mid-range price",
+      "Clean Nothing OS and useful Glyph Matrix"
+    ],
+    "gripes": [
+      "Inconsistent camera tuning and weak video",
+      "Ultra-wide camera is average",
+      "Only three major Android updates",
+      "No wireless charging",
+      "Modest step up from the cheaper Phone (4a)"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.83-inch LTPS flexible AMOLED, 2800 x 1260, 144Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Qualcomm Snapdragon 7 Gen 4"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB or 12GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB or 256GB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main, 8MP ultra-wide, 50MP periscope (3.5x)"
+      },
+      {
+        "label": "Battery",
+        "value": "5,080mAh, 50W wired charging, no wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "210 g"
+      },
+      {
+        "label": "Software",
+        "value": "Android 16, Nothing OS 4.1"
+      },
+      {
+        "label": "Price",
+        "value": "From $499 (8GB/128GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#d4d6d9",
+      "accent": "#14181f",
+      "backdrop": [
+        "#f6f6f7",
+        "#e6e8eb"
+      ]
+    }
+  },
+  {
+    "id": "kindle-scribe-colorsoft",
+    "slug": "kindle-scribe-colorsoft",
+    "name": "Amazon Kindle Scribe Colorsoft",
+    "brand": "Amazon",
+    "category": "tablet",
+    "releaseDate": "2025-12-10",
+    "launchPrice": 629.99,
+    "officialUrl": "https://www.amazon.com/dp/B0FC1WNVMX",
+    "criticsTake": "Reviewers call the 11-inch color E Ink Scribe the most refined large Kindle so far, with a good screen and a pen that feels comfortable. Nearly all of them balance that against the price, which starts at $629.99. Several say the paper-like writing feel and some software details fall short of the best E Ink notebooks.",
+    "loved": [
+      "Large, sharp 11-inch color E Ink screen",
+      "Comfortable included pen",
+      "Color works well for highlighting and sketching",
+      "Weeks of battery life"
+    ],
+    "gripes": [
+      "Very expensive",
+      "Software is somewhat sloppy",
+      "Writing feel is not as paper-like as rivals",
+      "No waterproofing",
+      "Large for everyday reading"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "11-inch Colorsoft E Ink, 300 ppi black and white, 150 ppi color"
+      },
+      {
+        "label": "Front light",
+        "value": "Adjustable warm light"
+      },
+      {
+        "label": "Storage",
+        "value": "32GB (64GB also sold)"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 8 weeks reading, up to 2 weeks writing"
+      },
+      {
+        "label": "Weight",
+        "value": "14.1 oz (400 g)"
+      },
+      {
+        "label": "Dimensions",
+        "value": "9.6 x 7.4 x 0.2 in"
+      },
+      {
+        "label": "Port",
+        "value": "USB-C"
+      },
+      {
+        "label": "Stylus",
+        "value": "Pen included"
+      },
+      {
+        "label": "Price",
+        "value": "$629.99 (32GB)"
+      }
+    ],
+    "art": {
+      "kind": "tablet",
+      "body": "#6b4a5a",
+      "accent": "#f1ede4",
+      "backdrop": [
+        "#f8f4f5",
+        "#eadfe3"
+      ]
+    }
+  },
+  {
+    "id": "macbook-pro-16-m5",
+    "slug": "macbook-pro-16-m5",
+    "name": "Apple MacBook Pro 16-inch (M5 Pro / M5 Max)",
+    "brand": "Apple",
+    "category": "laptop",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 2699,
+    "officialUrl": "https://www.apple.com/macbook-pro/",
+    "criticsTake": "Reviewers call the 16-inch MacBook Pro with M5 Pro and M5 Max the fastest and most capable pro laptop Apple has made, with a large CPU and GPU jump and battery life that lasts a full day or more. The design is unchanged from the M4 generation, and starting prices rose by $200. Notebookcheck and Engadget add that the M5 Max is limited by cooling and the 140W adapter, and that the notch and glossy chassis feel dated.",
+    "loved": [
+      "Large CPU and GPU gains over the M4 generation",
+      "Battery life that outlasts a workday",
+      "Bright Liquid Retina XDR display",
+      "Fast SSD, Thunderbolt 5, HDMI and SD slot"
+    ],
+    "gripes": [
+      "Starting price rose to $2,699",
+      "Design unchanged, including the notch",
+      "Heavy at about 4.7 lb",
+      "M5 Max throttles and drains the battery under sustained load",
+      "Top configurations get very expensive"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "16.2-inch Liquid Retina XDR, ProMotion 120Hz, 1,600 nits peak HDR, optional nano-texture"
+      },
+      {
+        "label": "Chip",
+        "value": "M5 Pro (18-core CPU, up to 20-core GPU) or M5 Max (18-core CPU, up to 40-core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "24GB base, up to 64GB (M5 Pro) or 128GB (M5 Max)"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB base, up to 8TB"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 24 hours video streaming (M5 Pro), 100Wh battery"
+      },
+      {
+        "label": "Weight",
+        "value": "4.7 lb (2.14 kg)"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 5, HDMI, SDXC, MagSafe 3, headphone jack"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 7, Bluetooth 6"
+      },
+      {
+        "label": "Price",
+        "value": "From $2,699 (M5 Pro); M5 Max from $3,899"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#2e2e32",
+      "accent": "#1c2a3e",
+      "backdrop": [
+        "#f2f2f4",
+        "#e1e2e6"
+      ]
+    }
+  },
+  {
+    "id": "pixel-11-pro-fold",
+    "slug": "pixel-11-pro-fold",
+    "name": "Google Pixel 11 Pro Fold",
+    "brand": "Google",
+    "category": "foldable",
+    "releaseDate": "2026-08-20",
+    "launchPrice": 1899,
+    "officialUrl": "https://store.google.com/product/pixel_11_pro_fold",
+    "criticsTake": "Critics call the Pixel 11 Pro Fold the best folding Pixel so far, with a lighter and thinner body, a brighter screen and strong Gemini features. Most still say it trails Samsung's foldables on battery life, charging speed and cameras. At $1,899, $100 more than last year, several reviewers say they would rather own a rival.",
+    "loved": [
+      "Lighter and thinner than the Pixel 10 Pro Fold",
+      "Bright displays and IP68 build",
+      "Clean software and useful Gemini features",
+      "16GB RAM and good multitasking"
+    ],
+    "gripes": [
+      "Battery life is mediocre and the battery shrank",
+      "Tensor G6 trails rivals in performance",
+      "Design is largely unchanged from last year",
+      "Crease is still visible",
+      "Price rose $100 to $1,899"
+    ],
+    "specs": [
+      {
+        "label": "Main display",
+        "value": "8-inch OLED"
+      },
+      {
+        "label": "Cover display",
+        "value": "6.5-inch OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "Google Tensor G6"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB RAM"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "48MP wide, 10.5MP ultrawide, 10.8MP 5x telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "4,806 mAh, 30W wired, 25W wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "239 g"
+      },
+      {
+        "label": "Thickness",
+        "value": "10.1 mm folded, 5.0 mm open"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,899 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "foldable",
+      "body": "#6f7560",
+      "accent": "#4f8df0",
+      "backdrop": [
+        "#f4f5ef",
+        "#e3e6d8"
+      ]
+    }
+  },
+  {
+    "id": "fitbit-air",
+    "slug": "fitbit-air",
+    "name": "Google Fitbit Air",
+    "brand": "Google",
+    "category": "wearable",
+    "releaseDate": "2026-05-26",
+    "launchPrice": 99.99,
+    "officialUrl": "https://store.google.com/product/google_fitbit_air",
+    "criticsTake": "Critics call the Fitbit Air an affordable, comfortable screenless tracker and the most credible Whoop alternative so far. Sleep and health tracking and a week of battery draw praise, and core features need no subscription. The Google Health app is the most common complaint, and reviewers say the device is weak for serious training and run tracking.",
+    "loved": [
+      "Very light and comfortable to wear day and night",
+      "$99.99 with core features free of subscription",
+      "About a week of battery life",
+      "Solid sleep and heart-rate based health tracking"
+    ],
+    "gripes": [
+      "Google Health app is buggy and messy",
+      "No built-in GPS, so run data is poor",
+      "Limited workout feedback and auto-detection",
+      "AI Health Coach needs a $9.99 per month Premium plan",
+      "Heart rate accuracy slips at high intensity"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "None (screenless band)"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 7 days"
+      },
+      {
+        "label": "Weight",
+        "value": "12 g with band (5.2 g tracker only)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "50 meters"
+      },
+      {
+        "label": "Sensors",
+        "value": "Heart rate, SpO2, skin temperature, accelerometer, gyroscope"
+      },
+      {
+        "label": "GPS",
+        "value": "None (uses phone GPS)"
+      },
+      {
+        "label": "Compatibility",
+        "value": "Android and iOS"
+      },
+      {
+        "label": "Premium plan",
+        "value": "$9.99 per month or $99 per year"
+      },
+      {
+        "label": "Price",
+        "value": "$99.99"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#2b2c31",
+      "accent": "#9fb8e8",
+      "backdrop": [
+        "#f4f5f8",
+        "#e1e4ec"
+      ]
+    }
+  },
+  {
+    "id": "beats-360",
+    "slug": "beats-360",
+    "name": "Beats 360",
+    "brand": "Beats",
+    "category": "headphones",
+    "releaseDate": "2026-09-22",
+    "launchPrice": 349.99,
+    "officialUrl": "https://www.beatsbydre.com/headphones/beats-360",
+    "criticsTake": "Reviewers call the Beats 360 the best over-ear headphones Beats has made, built for the gym with an IPX4 rating, swappable cushions and long battery life. Noise cancellation is good but trails Bose and Sony. Sound is bass-forward and several critics say rivals and the Studio Pro sound better, and the lack of wired listening is a common complaint.",
+    "loved": [
+      "IPX4 sweat and water resistance",
+      "Swappable, washable cushions and headbands",
+      "About 32 hours of battery life with ANC on",
+      "Comfortable, lightweight fit"
+    ],
+    "gripes": [
+      "No wired or lossless listening",
+      "Sound is bass-heavy and not for audiophiles",
+      "No wear detection or auto-pause",
+      "Noise cancellation trails Bose and Sony",
+      "Extra cushion kits cost $49.99 after the intro offer"
+    ],
+    "specs": [
+      {
+        "label": "Drivers",
+        "value": "40mm dual-magnet, Beats fourth-generation chip"
+      },
+      {
+        "label": "Noise cancellation",
+        "value": "Active noise cancellation with Transparency"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 32 hours with ANC and Spatial Audio on"
+      },
+      {
+        "label": "Fast charge",
+        "value": "5 minutes gives about 1 hour (USB-C)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX4"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3, no wired audio"
+      },
+      {
+        "label": "Weight",
+        "value": "About 295 g"
+      },
+      {
+        "label": "Colors",
+        "value": "Sky, Cloud, Black, Pink"
+      },
+      {
+        "label": "Price",
+        "value": "$349.99"
+      }
+    ],
+    "art": {
+      "kind": "headphones",
+      "body": "#1d1d1f",
+      "accent": "#e03a3e",
+      "backdrop": [
+        "#f6f3f3",
+        "#e6e0e0"
+      ]
+    }
+  },
+  {
+    "id": "zenbook-a16-x2",
+    "slug": "zenbook-a16-x2",
+    "name": "Asus Zenbook A16 (Snapdragon X2 Elite Extreme)",
+    "brand": "Asus",
+    "category": "laptop",
+    "releaseDate": "2026-04-07",
+    "launchPrice": 1699.99,
+    "officialUrl": "https://www.asus.com/us/laptops/for-home/zenbook/asus-zenbook-a16-ux3607/",
+    "criticsTake": "Critics praise the Snapdragon X2 Elite Extreme performance, the 3K OLED screen and the 2.65 lb weight for a 16-inch laptop. Opinions split on battery life and build: some reviewers report long endurance, while Tom's Hardware found about 10.5 hours and a flexing chassis. The $1,699.99 price, raised from an initial $1,599.99, and Windows on Arm compatibility are the other recurring caveats.",
+    "loved": [
+      "Fast, efficient Snapdragon X2 Elite Extreme",
+      "Bright 16-inch 3K 120Hz OLED touch display",
+      "Very light for a 16-inch laptop",
+      "48GB of RAM and 1TB SSD included"
+    ],
+    "gripes": [
+      "Chassis flexes and feels less premium than the price suggests",
+      "Battery life trails some rivals in lab tests",
+      "Windows on Arm app and game compatibility gaps",
+      "Price rose by $100 on launch day",
+      "Heavy preinstalled Asus software"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "16-inch 2880 x 1800 OLED, touch, 120 Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon X2 Elite Extreme (X2E-94-100), 18 cores"
+      },
+      {
+        "label": "Graphics",
+        "value": "Qualcomm Adreno X2-90"
+      },
+      {
+        "label": "Memory",
+        "value": "48GB LPDDR5x on package"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB PCIe 4.0 NVMe SSD"
+      },
+      {
+        "label": "Battery",
+        "value": "70Wh, 10 h 26 min in Tom's Hardware test"
+      },
+      {
+        "label": "Weight",
+        "value": "2.65 lbs (Asus)"
+      },
+      {
+        "label": "Ports",
+        "value": "2x USB4, USB-A, HDMI 2.1, SD, headphone jack"
+      },
+      {
+        "label": "Price",
+        "value": "$1,699.99"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#d8c8b0",
+      "accent": "#2a2f3a",
+      "backdrop": [
+        "#f6f1e8",
+        "#e9dfcc"
+      ]
+    }
+  },
+  {
+    "id": "oneplus-15r",
+    "slug": "oneplus-15r",
+    "name": "OnePlus 15R",
+    "brand": "OnePlus",
+    "category": "phone",
+    "releaseDate": "2026-01-08",
+    "launchPrice": 699.99,
+    "officialUrl": "https://www.oneplus.com/us/oneplus-15r",
+    "criticsTake": "Critics praise the OnePlus 15R for its 7,400mAh battery, which several reviewers say lasts two days, along with fast Snapdragon 8 Gen 5 performance and a 165Hz display. The main complaint is the camera setup, which drops the telephoto lens of the OnePlus 13R. Reviewers also note only four years of software updates and a price that sits close to the OnePlus 15.",
+    "loved": [
+      "Two-day battery life",
+      "Fast Snapdragon 8 Gen 5 performance",
+      "Bright 165Hz AMOLED display",
+      "Refined OxygenOS software"
+    ],
+    "gripes": [
+      "No telephoto lens",
+      "Cameras weaker than the OnePlus 13R",
+      "Only four years of software updates",
+      "No wireless charging",
+      "Price close to the OnePlus 15"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.83-inch 1272 x 2800 AMOLED, 165Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Gen 5"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB / 512GB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP wide + 8MP ultra-wide"
+      },
+      {
+        "label": "Front camera",
+        "value": "32MP"
+      },
+      {
+        "label": "Battery",
+        "value": "7,400mAh, 80W wired charging"
+      },
+      {
+        "label": "Weight",
+        "value": "213g / 219g"
+      },
+      {
+        "label": "Price",
+        "value": "$699.99 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#a9d6c3",
+      "accent": "#2f6f5e",
+      "backdrop": [
+        "#f1f8f5",
+        "#dcefe7"
+      ]
+    }
+  },
+  {
+    "id": "apple-watch-series-12",
+    "slug": "apple-watch-series-12",
+    "name": "Apple Watch Series 12",
+    "brand": "Apple",
+    "category": "watch",
+    "releaseDate": "2026-09-18",
+    "launchPrice": 399,
+    "officialUrl": "https://www.apple.com/apple-watch-series-12/",
+    "criticsTake": "Critics call the Series 12 the best mainline Apple Watch yet, led by a new heart rate sensor that samples every few seconds, a faster chip, a Readiness score and quicker charging. The design and 24 hour battery rating are unchanged, and several audio features were not available at launch. Reviewers advise Series 11 owners to skip it, while owners of a Series 9 or older get a bigger gain.",
+    "loved": [
+      "New heart rate sensing and HRV tracking",
+      "Faster S11-series chip",
+      "Daily Readiness score",
+      "Quicker charging at an unchanged $399 start"
+    ],
+    "gripes": [
+      "Same 24 hour battery rating",
+      "Design and display barely changed",
+      "Live Rewind and Siri Recap not available at launch",
+      "Small upgrade over the Series 11",
+      "Some units showed lag or resets (Macworld)"
+    ],
+    "specs": [
+      {
+        "label": "Sizes",
+        "value": "42mm and 46mm"
+      },
+      {
+        "label": "Chip",
+        "value": "S11-series"
+      },
+      {
+        "label": "Heart rate sensing",
+        "value": "New sensor system with readings about every five seconds"
+      },
+      {
+        "label": "Battery life",
+        "value": "About 24 hours"
+      },
+      {
+        "label": "Finishes",
+        "value": "Aluminum, titanium and ceramic, eight colors"
+      },
+      {
+        "label": "Software",
+        "value": "watchOS 27, Readiness score"
+      },
+      {
+        "label": "Price",
+        "value": "From $399 (42mm GPS); 46mm GPS $449; ceramic costs about $500 more per Engadget"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#ECEAE4",
+      "accent": "#0B1220",
+      "backdrop": [
+        "#F5F5F7",
+        "#E3E6EC"
+      ]
+    }
+  },
+  {
+    "id": "nothing-headphone-a",
+    "slug": "nothing-headphone-a",
+    "name": "Nothing Headphone (a)",
+    "brand": "Nothing",
+    "category": "headphones",
+    "releaseDate": "2026-03-05",
+    "launchPrice": 199,
+    "officialUrl": "https://nothing.tech/products/headphone-a",
+    "criticsTake": "Critics see the Headphone (a) as a stylish, long-lasting pair that costs about half as much as the Headphone (1). Battery life and the see-through design draw the most praise. Reviewers split on sound tuning and call the noise cancelling average, and several note cheaper materials than the flagship.",
+    "loved": [
+      "Distinctive semi-transparent design",
+      "Very long battery life",
+      "Tactile physical controls",
+      "Strong value under $200"
+    ],
+    "gripes": [
+      "Noise cancelling is only average",
+      "Plastic build feels cheaper than the Headphone (1)",
+      "Sound can be muddy or bass-heavy",
+      "Soft pouch instead of a hard case",
+      "Design is divisive"
+    ],
+    "specs": [
+      {
+        "label": "Drivers",
+        "value": "40mm"
+      },
+      {
+        "label": "Noise cancellation",
+        "value": "Adaptive active noise cancelling"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 75 hours with ANC on, up to 135 hours with ANC off"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.4"
+      },
+      {
+        "label": "Codecs",
+        "value": "LDAC, AAC, SBC"
+      },
+      {
+        "label": "Weight",
+        "value": "310 g"
+      },
+      {
+        "label": "Water and dust rating",
+        "value": "IP52"
+      },
+      {
+        "label": "Colors",
+        "value": "White, black, pink, yellow"
+      },
+      {
+        "label": "Price",
+        "value": "$199 (US), £149 (UK)"
+      }
+    ],
+    "art": {
+      "kind": "headphones",
+      "body": "#f1f1ef",
+      "accent": "#d71921",
+      "backdrop": [
+        "#f6f6f4",
+        "#e6e6e2"
+      ]
+    }
+  },
+  {
+    "id": "msi-claw-8-ex-ai-plus",
+    "slug": "msi-claw-8-ex-ai-plus",
+    "name": "MSI Claw 8 EX AI+",
+    "brand": "MSI",
+    "category": "console",
+    "releaseDate": "2026-06-23",
+    "launchPrice": 1799,
+    "officialUrl": "https://www.msi.com/Handheld/Claw-8-EX-AI-Plus-CG3EMX",
+    "criticsTake": "Reviewers call the Claw 8 EX AI+ the fastest and most power efficient Windows handheld they have tested, thanks to the Intel Arc G3 Extreme chip. Nearly all of them say the $1,799 price is hard to justify, especially without an OLED screen. Most recommend it only to enthusiasts or buyers who can wait for a sale.",
+    "loved": [
+      "Class-leading gaming performance from Intel Arc G3 Extreme",
+      "Comfortable Xbox-style grips",
+      "Strong efficiency and battery life",
+      "Upgraded haptics and Hall effect sticks"
+    ],
+    "gripes": [
+      "$1,799 price",
+      "IPS LCD instead of OLED",
+      "Heavy at about 785 g",
+      "Xbox full screen experience still unfinished",
+      "Limited XeSS 3 game support"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Intel Arc G3 Extreme"
+      },
+      {
+        "label": "Display",
+        "value": "8-inch IPS touchscreen, 500 nits"
+      },
+      {
+        "label": "Resolution",
+        "value": "1920 x 1200, up to 120Hz VRR"
+      },
+      {
+        "label": "Memory",
+        "value": "Up to 32GB LPDDR5x"
+      },
+      {
+        "label": "Storage",
+        "value": "Single M.2 NVMe SSD slot"
+      },
+      {
+        "label": "Battery",
+        "value": "80Wh"
+      },
+      {
+        "label": "Ports",
+        "value": "2x Thunderbolt 4, MicroSD Express, 3.5mm"
+      },
+      {
+        "label": "Weight",
+        "value": "785 g"
+      },
+      {
+        "label": "Price",
+        "value": "$1,799"
+      }
+    ],
+    "art": {
+      "kind": "console",
+      "body": "#5b3f8c",
+      "accent": "#1c2340",
+      "backdrop": [
+        "#f4f0fa",
+        "#e4daf2"
+      ]
+    }
+  },
+  {
+    "id": "viture-beast",
+    "slug": "viture-beast",
+    "name": "Viture Beast XR Glasses",
+    "brand": "Viture",
+    "category": "wearable",
+    "releaseDate": "2026-04-27",
+    "launchPrice": 549,
+    "officialUrl": "https://www.viture.com/beast",
+    "criticsTake": "Reviewers call the Beast the best XR glasses for gaming and video right now. They praise the bright 1920x1200 Sony micro-OLED panels, the 58 degree field of view, built-in 3DoF tracking and a comfortable build. Weak built-in audio, soft edges, fragile software and several features that arrived after launch are the common complaints.",
+    "loved": [
+      "Bright, vivid Sony micro-OLED image",
+      "Wide 58 degree field of view",
+      "Comfortable, light build",
+      "Built-in 3DoF screen anchoring"
+    ],
+    "gripes": [
+      "Built-in audio is lacking",
+      "Soft clarity at the corners and edges",
+      "Spacewalker software is buggy and inconsistent",
+      "Some advertised features (1200p, 120Hz, camera) missing at launch",
+      "Mobile Dock needed for Switch 2 and consoles"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Sony micro-OLED, 1920x1200 per eye"
+      },
+      {
+        "label": "Field of view",
+        "value": "58 degrees (174-inch virtual screen)"
+      },
+      {
+        "label": "Peak brightness",
+        "value": "Up to 1250 nits"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "120Hz"
+      },
+      {
+        "label": "Tracking",
+        "value": "Built-in 3DoF"
+      },
+      {
+        "label": "Dimming",
+        "value": "Electrochromic, 9 levels"
+      },
+      {
+        "label": "Connection",
+        "value": "USB-C"
+      },
+      {
+        "label": "Weight",
+        "value": "About 88 g"
+      },
+      {
+        "label": "Price",
+        "value": "$549"
+      }
+    ],
+    "art": {
+      "kind": "glasses",
+      "body": "#2b2d33",
+      "accent": "#4a90e2",
+      "backdrop": [
+        "#f4f6fa",
+        "#e3e8f1"
+      ]
+    }
+  },
+  {
+    "id": "oura-ring-5",
+    "slug": "oura-ring-5",
+    "name": "Oura Ring 5",
+    "brand": "Oura",
+    "category": "wearable",
+    "releaseDate": "2026-06-04",
+    "launchPrice": 399,
+    "officialUrl": "https://ouraring.com/",
+    "criticsTake": "Reviewers praise the Ring 5 for being about 40% smaller and lighter than the Ring 4, with comfort, sleep tracking and battery life all rated highly. Health and sleep data are close to the Ring 4, so most see it as a design refinement rather than a leap. The required subscription and basic sports tracking are the main complaints.",
+    "loved": [
+      "Much smaller, lighter and more comfortable than the Ring 4",
+      "Excellent sleep and health tracking",
+      "Battery life of six to nine days with fast charging",
+      "Looks like regular jewelry"
+    ],
+    "gripes": [
+      "Subscription needed for full features",
+      "Data and software much the same as the Ring 4",
+      "Basic sports and workout tracking",
+      "Some new features limited to certain regions",
+      "Higher starting price than the Ring 4"
+    ],
+    "specs": [
+      {
+        "label": "Dimensions",
+        "value": "6.09 mm wide, 2.28 mm thick"
+      },
+      {
+        "label": "Weight",
+        "value": "2 to 2.69 g depending on size"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 6 to 9 days"
+      },
+      {
+        "label": "Charging",
+        "value": "About 80 minutes (USB-C dock)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "5ATM, IP68"
+      },
+      {
+        "label": "Finishes",
+        "value": "Silver, Black, Stealth, Brushed Silver, Gold, Deep Rose"
+      },
+      {
+        "label": "Sizes",
+        "value": "6 to 13"
+      },
+      {
+        "label": "Subscription",
+        "value": "$5.99 per month"
+      },
+      {
+        "label": "Price",
+        "value": "$399 (Silver, Black); $499 premium finishes"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#2b2b2e",
+      "accent": "#c9a96e",
+      "backdrop": [
+        "#f5f3ef",
+        "#e6e1d8"
+      ]
+    }
   }
 ]
