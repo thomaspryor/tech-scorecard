@@ -1,6 +1,14 @@
 import Link from 'next/link';
 
-export function Logo({ className = '', beta = 'sm' }: { className?: string; beta?: 'sm' | 'lg' | false }) {
+export function Logo({
+  className = '',
+  beta = 'sm',
+  betaClassName = '',
+}: {
+  className?: string;
+  beta?: 'sm' | 'lg' | false;
+  betaClassName?: string;
+}) {
   // Beta pill sized like Broadway Scorecard's West End / Opera beta markers.
   const pill =
     beta === 'lg'
@@ -12,7 +20,7 @@ export function Logo({ className = '', beta = 'sm' }: { className?: string; beta
       <span className="text-brand-logo">Scorecard</span>
       {beta && (
         <span
-          className={`${pill} inline-block rounded border border-brand/40 leading-none bg-brand-muted align-middle font-bold uppercase tracking-wider text-brand-ink`}
+          className={`${pill} ${betaClassName} inline-block rounded border border-brand/40 leading-none bg-brand-muted align-middle font-bold uppercase tracking-wider text-brand-ink`}
         >
           Beta
         </span>
@@ -22,20 +30,26 @@ export function Logo({ className = '', beta = 'sm' }: { className?: string; beta
 }
 
 export function Header() {
+  // Fits one row down to 320px wide: below 360px the logo shrinks and drops its Beta pill
+  // (the homepage hero still shows it). Links are 44px tall for touch.
+  const link = 'inline-flex min-h-11 items-center hover:text-ink';
   return (
     <header className="sticky top-0 z-30 border-b border-line bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/">
-          <Logo className="text-xl min-[420px]:text-2xl sm:text-[28px]" />
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6">
+        <Link href="/" className="inline-flex min-h-11 items-center">
+          <Logo
+            className="text-lg min-[360px]:text-xl min-[420px]:text-2xl sm:text-[28px]"
+            betaClassName="max-[359px]:hidden"
+          />
         </Link>
-        <nav className="flex items-center gap-3 whitespace-nowrap text-sm font-medium text-ink-muted sm:gap-5">
-          <Link href="/" className="hidden hover:text-ink sm:inline">
+        <nav className="flex items-center gap-3 whitespace-nowrap text-[13px] font-medium text-ink-muted sm:gap-5 sm:text-sm">
+          <Link href="/" className={`${link} hidden sm:inline-flex`}>
             All products
           </Link>
-          <Link href="/methodology/" className="hover:text-ink">
+          <Link href="/methodology/" className={link}>
             Methodology
           </Link>
-          <Link href="/about/" className="hover:text-ink">
+          <Link href="/about/" className={link}>
             About
           </Link>
         </nav>
