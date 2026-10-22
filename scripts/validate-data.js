@@ -6,6 +6,8 @@ const fs = require('fs');
 const path = require('path');
 
 const errors = [];
+// One list for the validator and the site (src/lib/format.ts reads the same file).
+const CATS = require('../src/config/categories.json');
 const read = (f) => JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', f), 'utf8'));
 const products = read('products.json');
 const reviews = read('reviews.json');
@@ -28,9 +30,9 @@ for (const o of outlets) {
 for (const p of products) {
   if (!ISO.test(p.releaseDate)) errors.push(`product ${p.id}: bad releaseDate`);
   for (const k of ['criticsTake', 'loved', 'gripes', 'specs', 'art']) if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
-  // The home filter and DeviceArt only know these values; add a new one there first.
-  if (!['phone', 'foldable', 'tablet', 'laptop', 'headphones', 'watch', 'console', 'wearable'].includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
-  if (p.art && !['phone', 'foldable', 'flip', 'tablet', 'laptop', 'headphones', 'earbuds', 'watch', 'console', 'glasses', 'headset'].includes(p.art.kind)) errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
+  // Categories and art kinds come from src/config/categories.json (shared with the site).
+  if (!CATS.categories.includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
+  if (p.art && !CATS.artKinds.includes(p.art.kind)) errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
 }
 
 const { ratingToBand } = require('./lib/rating-band');

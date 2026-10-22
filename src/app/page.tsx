@@ -13,8 +13,8 @@ export default function HomePage() {
   const present = CATEGORY_ORDER.filter((c) => products.some((p) => p.category === c));
   const filters = [{ id: 'all', label: 'All' }, ...present.map((c) => ({ id: c, label: CATEGORY_PLURAL[c] }))];
   const filterCss = present
-    .map((c) => `.f-${c}:checked ~ .filter-labels .lbl-${c}{background:#14141a;border-color:#14141a;color:#fff}`
-      + `.f-${c}:focus-visible ~ .filter-labels .lbl-${c}{outline:2px solid #94632e;outline-offset:2px}`
+    .map((c) => `.f-${c}:checked ~ .filter-labels .lbl-${c}{background:var(--ink);border-color:var(--ink);color:#fff}`
+      + `.f-${c}:focus-visible ~ .filter-labels .lbl-${c}{outline:2px solid var(--brand-ink);outline-offset:2px}`
       + `.f-${c}:checked ~ .cat-list > :not([data-cat='${c}']){display:none}`)
     .join('');
   const byDate = [...products].sort((a, b) => b.releaseDate.localeCompare(a.releaseDate) || (b.criticScore ?? 0) - (a.criticScore ?? 0));

@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getAllProducts, getProduct } from '@/lib/data';
 import { getScoreTier } from '@/config/score-buckets';
-import { TIER_WEIGHTS } from '@/config/scoring';
+import { TIER_WEIGHTS, EARLY_SCORE_BELOW } from '@/config/scoring';
 import { formatDate, formatPrice, releaseLabel, CATEGORY_PLURAL } from '@/lib/format';
 import { DeviceArt, MiniProductCard, OutletTierChip, ProductChips, ScoreBadge, ScoreBreakdownBar } from '@/components/product-cards';
 import { ReviewList } from '@/components/ReviewRow';
@@ -162,6 +162,9 @@ function ScoreSummary({ product, tier }: { product: ReturnType<typeof getAllProd
         <Link href="/methodology/" className="underline underline-offset-2 hover:text-ink">How it works</Link>
       </p>
       {product.latestReviewDate && <p className="text-xs text-ink-faint">Latest review {formatDate(product.latestReviewDate)}</p>}
+      {product.reviewCount < EARLY_SCORE_BELOW && (
+        <p className="mt-1 text-xs font-semibold text-score-tepid">Early score: only {product.reviewCount} reviews so far</p>
+      )}
     </div>
   );
 }

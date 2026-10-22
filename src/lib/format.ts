@@ -16,6 +16,7 @@ export function formatPrice(usd: number | null): string | null {
 }
 
 import type { Category } from './data-types';
+import categories from '@/config/categories.json';
 
 export const CATEGORY_LABEL: Record<Category, string> = {
   phone: 'Phone', foldable: 'Foldable', tablet: 'Tablet', laptop: 'Laptop',
@@ -26,7 +27,8 @@ export const CATEGORY_PLURAL: Record<Category, string> = {
   headphones: 'Headphones', watch: 'Watches', console: 'Consoles', wearable: 'Wearables',
 };
 /** Display order for filters. */
-export const CATEGORY_ORDER: Category[] = ['phone', 'foldable', 'tablet', 'laptop', 'headphones', 'watch', 'console', 'wearable'];
+/** Display order for filters; the same list validate-data.js checks against. */
+export const CATEGORY_ORDER = categories.categories as Category[];
 
 
 /** Release-date line. Tense-neutral on purpose: the site is a static build. */

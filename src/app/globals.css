@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  :root { --ink: theme('colors.ink.DEFAULT'); --brand-ink: theme('colors.brand.ink'); }
   html { -webkit-font-smoothing: antialiased; }
   body { @apply bg-surface text-ink; }
   h1, h2, h3 { text-wrap: balance; }

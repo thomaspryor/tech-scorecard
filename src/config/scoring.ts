@@ -15,3 +15,6 @@ export const TIER_DESCRIPTIONS: Record<1 | 2 | 3 | 4, string> = {
 
 /** Minimum reviews before a product gets a score instead of TBD. */
 export const MIN_REVIEWS_FOR_SCORE = 5;
+
+/** Below this many reviews the product page labels the score as early. */
+export const EARLY_SCORE_BELOW = 10;
