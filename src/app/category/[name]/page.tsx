@@ -6,7 +6,7 @@ import { CATEGORY_ORDER, CATEGORY_PLURAL, isCategory } from '@/lib/format';
 import type { Category } from '@/lib/data-types';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbLd, clip, itemListLd } from '@/lib/seo';
+import { breadcrumbLd, clip, itemListLd, socialMeta } from '@/lib/seo';
 import { BEST_YEAR } from '@/config/seo';
 import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
@@ -43,15 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description,
     alternates: { canonical: url },
     robots: indexableCategories().includes(name) ? undefined : { index: false, follow: true },
-    openGraph: {
-      siteName: 'Tech Scorecard',
-      type: 'website',
-      title,
-      description,
-      url,
-      images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }],
-    },
-    twitter: { card: 'summary_large_image', title, description },
+    ...socialMeta(title, description, url),
   };
 }
 

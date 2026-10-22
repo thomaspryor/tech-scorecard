@@ -44,6 +44,11 @@ export default function MethodologyPage() {
           publishes no rating, the same two models score the verdict from 0 to 100, and the review is labeled
           &ldquo;Unrated, scored from text.&rdquo;
         </p>
+        <p className="mt-3 max-w-[65ch] text-sm leading-relaxed text-ink-muted">
+          A rating printed as a percentage, such as 88%, is already on our scale, so the models can move it at most 5
+          points either way. When a review page cannot be fetched, the models work from its quoted verdict instead of
+          the full article. If only one model answers, its placement is used until the other is retried.
+        </p>
       </section>
 
       <section className="card mt-4 p-5 sm:p-6">

@@ -4,7 +4,7 @@ import { getScoredProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_PLURAL } from '@/lib/format';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbLd, clip, itemListLd } from '@/lib/seo';
+import { breadcrumbLd, clip, itemListLd, socialMeta } from '@/lib/seo';
 import { BEST_YEAR } from '@/config/seo';
 import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
@@ -24,15 +24,7 @@ export function generateMetadata(): Metadata {
     title,
     description,
     alternates: { canonical: '/best/' },
-    openGraph: {
-      siteName: 'Tech Scorecard',
-      type: 'website',
-      title,
-      description,
-      url: '/best/',
-      images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }],
-    },
-    twitter: { card: 'summary_large_image', title, description },
+    ...socialMeta(title, description, '/best/'),
   };
 }
 

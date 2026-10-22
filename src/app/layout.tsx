@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/next';
 import { JsonLd } from '@/components/JsonLd';
 import { organizationLd, websiteLd } from '@/lib/seo';
-import { BING_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION, SITE_URL } from '@/config/seo';
+import { BING_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION, SITE_NAME, SITE_URL } from '@/config/seo';
 
 // Downloaded at build time and served from our own domain: no render-blocking request to Google.
 const inter = Inter({
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: { default: DEFAULT_TITLE, template: '%s | Tech Scorecard' },
   description: DEFAULT_DESCRIPTION,
   openGraph: {
-    siteName: 'Tech Scorecard',
+    siteName: SITE_NAME,
     type: 'website',
     locale: 'en_US',
     title: DEFAULT_TITLE,

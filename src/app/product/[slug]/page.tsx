@@ -16,7 +16,7 @@ import {
 } from '@/components/product-cards';
 import { ReviewList } from '@/components/ReviewRow';
 import { JsonLd } from '@/components/JsonLd';
-import { abs, breadcrumbLd, clip } from '@/lib/seo';
+import { abs, breadcrumbLd, clip, socialMeta } from '@/lib/seo';
 
 type Params = { slug: string };
 
@@ -36,15 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description,
     alternates: { canonical: url },
-    openGraph: {
-      siteName: 'Tech Scorecard',
-      type: 'website',
-      title,
-      description,
-      url,
-      images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }],
-    },
-    twitter: { card: 'summary_large_image', title, description },
+    ...socialMeta(title, description, url),
   };
 }
 
@@ -91,9 +83,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
             {CATEGORY_PLURAL[product.category]}
           </Link>
         ) : (
-          <Link href="/" className="hover:text-ink">
-            {CATEGORY_PLURAL[product.category]}
-          </Link>
+          <span>{CATEGORY_PLURAL[product.category]}</span>
         )}
         <span className="mx-2">/</span>
         <span className="text-ink">{product.name}</span>
@@ -185,7 +175,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
           </h2>
           <span className="text-xs text-ink-faint">{product.reviewCount} reviews</span>
         </div>
-        <div className="sort-toggle relative mt-3" role="radiogroup" aria-label="Sort reviews">
+        <div className="sort-toggle relative mt-3">
           <input
             type="radio"
             name={`sort-${product.slug}`}
@@ -271,7 +261,7 @@ function ScoreSummary({ product, tier }: { product: ComputedProduct; tier: Score
       {product.latestReviewDate && (
         <p className="text-xs text-ink-faint">Latest review {formatDate(product.latestReviewDate)}</p>
       )}
-      {product.reviewCount < EARLY_SCORE_BELOW && (
+      {product.criticScore != null && product.reviewCount < EARLY_SCORE_BELOW && (
         <p className="mt-1 text-xs font-semibold text-score-tepid">
           Early score: only {product.reviewCount} reviews so far
         </p>

@@ -29,7 +29,7 @@ export function ReviewRow({ review }: { review: ScoredReview }) {
                 className="font-medium text-ink-muted"
                 title={
                   review.scoreBand
-                    ? `A ${review.rating} rating means ${review.scoreBand[0]}-${review.scoreBand[1]}; placed at ${review.score} by reading the review`
+                    ? `A ${review.rating} rating means ${review.scoreBand[0]}-${review.scoreBand[1]}; placed at ${review.score} ${review.scoredFromFullText === false ? 'from the quoted verdict (full article unavailable)' : 'by reading the review'}`
                     : undefined
                 }
               >
