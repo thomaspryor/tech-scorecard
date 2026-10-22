@@ -27,7 +27,6 @@ Every review links to the original article.
 npm install
 npm run validate        # data checks (rating conversion, https urls, excerpt length, duplicates)
 npm run build           # static export to out/
-npm run preview:build   # one self-contained preview/index.html with hash navigation
 node scripts/import-product.js <file.json>  # add/replace a product: {product, reviews, newOutlets}
 node scripts/score-reviews.js --only=<id>  # place each review inside its rating band (OpenAI + Gemini read the review)
 python3 scripts/verify-quotes.py <id,...>   # every excerpt must appear word for word on its page

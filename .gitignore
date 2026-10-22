@@ -1,10 +1,26 @@
-node_modules
+# dependencies
+node_modules/
+
+# Next.js build output
 .next/
 out/
-preview/
 next-env.d.ts
 *.tsbuildinfo
+
+# test and tooling output
+coverage/
+.vercel/
+
+# pipeline caches: fetched article text and model answers (outlets' copyright, never committed)
 .cache/
+research/
+
+# Python
 __pycache__/
 *.pyc
-research/
+
+# local env and OS files
+.env*
+!.env.example
+.DS_Store
+*.log
