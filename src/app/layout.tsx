@@ -4,8 +4,16 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.thetechscorecard.com'),
   title: 'Tech Scorecard: every gadget, every review, one score',
   description: 'Tech Scorecard aggregates professional reviews of new phones and gadgets into one weighted critic score.',
+  openGraph: {
+    siteName: 'Tech Scorecard',
+    type: 'website',
+    title: 'Tech Scorecard: every gadget, every review, one score',
+    description: 'Every major tech review of the newest phones, averaged into one critic score.',
+  },
+  twitter: { card: 'summary_large_image' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

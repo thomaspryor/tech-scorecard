@@ -18,7 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const p = getProduct((await params).slug);
   if (!p) return {};
   const score = p.criticScore != null ? ` ${Math.round(p.criticScore)}/100` : '';
-  return { title: `${p.name} reviews:${score} critic score | Tech Scorecard`, description: p.criticsTake };
+  const title = `${p.name} reviews:${score} critic score | Tech Scorecard`;
+  return { title, description: p.criticsTake, openGraph: { title, description: p.criticsTake, url: `/product/${p.slug}/` } };
 }
 
 export default async function ProductPage({ params }: { params: Promise<Params> }) {
