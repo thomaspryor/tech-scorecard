@@ -51,7 +51,14 @@ export const organizationLd = {
 /** Every page that sets its own openGraph must also pass the image, or the site image is lost (Next does not deep-merge). */
 export function socialMeta(title: string, description: string, path: string) {
   return {
-    openGraph: { siteName: SITE_NAME, type: 'website' as const, title, description, url: path, images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] },
+    openGraph: {
+      siteName: SITE_NAME,
+      type: 'website' as const,
+      title,
+      description,
+      url: path,
+      images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }],
+    },
     twitter: { card: 'summary_large_image' as const, title, description },
   };
 }

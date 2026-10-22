@@ -5,7 +5,11 @@ import { getTotals } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'About',
-  ...socialMeta('About Tech Scorecard', 'An independent review aggregator that combines professional tech reviews into one critic score.', '/about/'),
+  ...socialMeta(
+    'About Tech Scorecard',
+    'An independent review aggregator that combines professional tech reviews into one critic score.',
+    '/about/',
+  ),
   description:
     'Tech Scorecard is an independent review aggregator that combines professional tech reviews into one critic score, using the Broadway Scorecard method.',
   alternates: { canonical: '/about/' },

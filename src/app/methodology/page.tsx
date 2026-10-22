@@ -6,7 +6,11 @@ import { OutletTierChip } from '@/components/product-cards';
 
 export const metadata: Metadata = {
   title: 'How scores work',
-  ...socialMeta('How Tech Scorecard scores work', 'How we turn published tech reviews into one 0-100 critic score.', '/methodology/'),
+  ...socialMeta(
+    'How Tech Scorecard scores work',
+    'How we turn published tech reviews into one 0-100 critic score.',
+    '/methodology/',
+  ),
   description:
     'How we turn published tech reviews into one 0-100 critic score: outlet tiers, how star ratings become score bands, and how unrated reviews are scored.',
   alternates: { canonical: '/methodology/' },
