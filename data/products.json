@@ -72,6 +72,13 @@
         "#f3f1fb",
         "#e0dcf2"
       ]
+    },
+    "image": {
+      "src": "/images/products/iphone-duo/main.webp",
+      "thumb": "/images/products/iphone-duo/thumb.webp",
+      "alt": "iPhone Duo, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/"
     }
   },
   {
@@ -137,6 +144,13 @@
         "#fbf3ef",
         "#efdcd6"
       ]
+    },
+    "image": {
+      "src": "/images/products/iphone-18-pro/main.webp",
+      "thumb": "/images/products/iphone-18-pro/thumb.webp",
+      "alt": "iPhone 18 Pro, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
     }
   },
   {
@@ -281,6 +295,13 @@
         "#f3f6f0",
         "#dfe7d8"
       ]
+    },
+    "image": {
+      "src": "/images/products/iphone-17/main.webp",
+      "thumb": "/images/products/iphone-17/thumb.webp",
+      "alt": "iPhone 17, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/09/apple-debuts-iphone-17/"
     }
   },
   {
@@ -348,6 +369,13 @@
         "#fdf4ee",
         "#f6dfcf"
       ]
+    },
+    "image": {
+      "src": "/images/products/iphone-17-pro/main.webp",
+      "thumb": "/images/products/iphone-17-pro/thumb.webp",
+      "alt": "iPhone 17 Pro, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/"
     }
   },
   {
@@ -419,6 +447,13 @@
         "#f1f6fb",
         "#dbe7f2"
       ]
+    },
+    "image": {
+      "src": "/images/products/iphone-air/main.webp",
+      "thumb": "/images/products/iphone-air/thumb.webp",
+      "alt": "iPhone Air, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/09/introducing-iphone-air-a-powerful-new-iphone-with-a-breakthrough-design/"
     }
   },
   {
@@ -703,6 +738,13 @@
         "#f3f4f7",
         "#e1e4ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/apple-vision-pro-m5/main.webp",
+      "thumb": "/images/products/apple-vision-pro-m5/thumb.webp",
+      "alt": "Apple Vision Pro (M5), official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/10/apple-vision-pro-upgraded-with-the-m5-chip-and-dual-knit-band/"
     }
   },
   {
@@ -774,6 +816,13 @@
         "#f3f4f7",
         "#e0e3ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/apple-watch-series-11/main.webp",
+      "thumb": "/images/products/apple-watch-series-11/thumb.webp",
+      "alt": "Apple Watch Series 11, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/09/apple-debuts-apple-watch-series-11-featuring-groundbreaking-health-insights/"
     }
   },
   {
@@ -841,6 +890,13 @@
         "#f6f3ee",
         "#e6e0d6"
       ]
+    },
+    "image": {
+      "src": "/images/products/apple-watch-ultra-3/main.webp",
+      "thumb": "/images/products/apple-watch-ultra-3/thumb.webp",
+      "alt": "Apple Watch Ultra 3, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/09/introducing-apple-watch-ultra-3/"
     }
   },
   {
@@ -1132,6 +1188,13 @@
         "#f4f4f6",
         "#e2e3e8"
       ]
+    },
+    "image": {
+      "src": "/images/products/ipad-pro-m5/main.webp",
+      "thumb": "/images/products/ipad-pro-m5/thumb.webp",
+      "alt": "iPad Pro (M5), official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/10/apple-introduces-the-powerful-new-ipad-pro-with-the-m5-chip/"
     }
   },
   {
@@ -1203,6 +1266,13 @@
         "#fcf2f5",
         "#f3dde4"
       ]
+    },
+    "image": {
+      "src": "/images/products/iphone-17e/main.webp",
+      "thumb": "/images/products/iphone-17e/thumb.webp",
+      "alt": "iPhone 17e, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/03/apple-introduces-iphone-17e/"
     }
   },
   {
@@ -1274,6 +1344,13 @@
         "#f1f5fa",
         "#dce6f2"
       ]
+    },
+    "image": {
+      "src": "/images/products/macbook-air-m5/main.webp",
+      "thumb": "/images/products/macbook-air-m5/thumb.webp",
+      "alt": "MacBook Air (M5, 2026), official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/"
     }
   },
   {
@@ -1345,6 +1422,13 @@
         "#f2f3f6",
         "#e0e3ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/macbook-pro-14-m5/main.webp",
+      "thumb": "/images/products/macbook-pro-14-m5/thumb.webp",
+      "alt": "MacBook Pro 14-inch (M5), official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/10/apple-unveils-new-14-inch-macbook-pro-powered-by-the-m5-chip/"
     }
   },
   {
@@ -1916,6 +2000,13 @@
         "#f4f6fa",
         "#e1e6ef"
       ]
+    },
+    "image": {
+      "src": "/images/products/airpods-pro-3/main.webp",
+      "thumb": "/images/products/airpods-pro-3/thumb.webp",
+      "alt": "AirPods Pro 3, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2025/09/introducing-airpods-pro-3-the-ultimate-audio-experience/"
     }
   },
   {
@@ -2129,6 +2220,13 @@
         "#f6f3ee",
         "#e6e0d6"
       ]
+    },
+    "image": {
+      "src": "/images/products/apple-watch-ultra-4/main.webp",
+      "thumb": "/images/products/apple-watch-ultra-4/thumb.webp",
+      "alt": "Apple Watch Ultra 4, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/"
     }
   },
   {
@@ -3067,6 +3165,13 @@
         "#f2f6fb",
         "#dde8f5"
       ]
+    },
+    "image": {
+      "src": "/images/products/ipad-air-m4/main.webp",
+      "thumb": "/images/products/ipad-air-m4/thumb.webp",
+      "alt": "iPad Air (M4), official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/03/macbook-neo-iphone-17e-ipad-air-with-m4-and-more-are-now-available/"
     }
   },
   {
@@ -3217,6 +3322,13 @@
         "#f3f5fa",
         "#e1e6f0"
       ]
+    },
+    "image": {
+      "src": "/images/products/macbook-neo/main.webp",
+      "thumb": "/images/products/macbook-neo/thumb.webp",
+      "alt": "MacBook Neo, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/"
     }
   },
   {
@@ -5390,6 +5502,13 @@
         "#f6f3f3",
         "#e6e0e0"
       ]
+    },
+    "image": {
+      "src": "/images/products/beats-360/main.webp",
+      "thumb": "/images/products/beats-360/thumb.webp",
+      "alt": "Beats 360, official Beats press photo",
+      "credit": "Beats",
+      "sourceUrl": "https://www.beatsbydre.com/company/press/beats-360"
     }
   },
   {
@@ -5595,6 +5714,13 @@
         "#F5F5F7",
         "#E3E6EC"
       ]
+    },
+    "image": {
+      "src": "/images/products/apple-watch-series-12/main.webp",
+      "thumb": "/images/products/apple-watch-series-12/thumb.webp",
+      "alt": "Apple Watch Series 12, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/"
     }
   },
   {
@@ -5958,7 +6084,14 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-10-22"
+    "autoAdded": "2026-10-22",
+    "image": {
+      "src": "/images/products/airpods-5/main.webp",
+      "thumb": "/images/products/airpods-5/thumb.webp",
+      "alt": "AirPods 5, official Apple press photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/"
+    }
   },
   {
     "id": "headphone-1-pro",
