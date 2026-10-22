@@ -525,6 +525,13 @@
         "#f3f1fa",
         "#e1ddf1"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-s26-ultra/main.webp",
+      "thumb": "/images/products/galaxy-s26-ultra/thumb.webp",
+      "alt": "Galaxy S26 Ultra, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/"
     }
   },
   {
@@ -667,6 +674,13 @@
         "#fdf3f6",
         "#f5dde4"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-z-flip-8/main.webp",
+      "thumb": "/images/products/galaxy-z-flip-8/thumb.webp",
+      "alt": "Galaxy Z Flip 8, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-galaxy-z-fold8-ultra-fold8-flip8-foldables-perfected-every-way-of-living/"
     }
   },
   {
@@ -1117,6 +1131,13 @@
         "#f1f6fb",
         "#dce8f4"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-s26/main.webp",
+      "thumb": "/images/products/galaxy-s26/thumb.webp",
+      "alt": "Samsung Galaxy S26, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/"
     }
   },
   {
@@ -1929,6 +1950,13 @@
         "#f2f5f9",
         "#dde5ef"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-watch-9/main.webp",
+      "thumb": "/images/products/galaxy-watch-9/thumb.webp",
+      "alt": "Galaxy Watch 9, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-whats-new-galaxy-watch9/"
     }
   },
   {
@@ -2365,6 +2393,13 @@
         "#f4f3fb",
         "#e2e0f1"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-s26-plus/main.webp",
+      "thumb": "/images/products/galaxy-s26-plus/thumb.webp",
+      "alt": "Samsung Galaxy S26+, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/"
     }
   },
   {
@@ -3471,6 +3506,13 @@
         "#f2f4f8",
         "#dfe4ee"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-book6-pro/main.webp",
+      "thumb": "/images/products/galaxy-book6-pro/thumb.webp",
+      "alt": "Samsung Galaxy Book6 Pro, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsungs-powerful-galaxy-book6-series-available-march-11/"
     }
   },
   {
@@ -3538,6 +3580,13 @@
         "#f4f5f7",
         "#e3e6ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-buds-4/main.webp",
+      "thumb": "/images/products/galaxy-buds-4/thumb.webp",
+      "alt": "Samsung Galaxy Buds4, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-unveils-galaxy-buds4-series-best-hi-fi-sound-enhanced-comfort-fit/"
     }
   },
   {
@@ -4200,6 +4249,13 @@
         "#f3f4f7",
         "#e3e6ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-buds-4-pro/main.webp",
+      "thumb": "/images/products/galaxy-buds-4-pro/thumb.webp",
+      "alt": "Samsung Galaxy Buds4 Pro, official Samsung press photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/us/samsung-week-discover-new-ways-live-smarter-exclusive-deals-rewards/"
     }
   },
   {
