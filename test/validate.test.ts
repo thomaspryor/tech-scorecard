@@ -266,6 +266,8 @@ describe('product image rules', () => {
     ['missing sourceUrl', { sourceUrl: '' }, /image\.sourceUrl is required/],
     ['http sourceUrl', { sourceUrl: 'http://example.com/x' }, /sourceUrl must be https/],
     ['wrong path', { src: '/x.png' }, /image\.src must be a \.webp/],
+    ['path escaping public/', { src: '/images/products/../../secret.webp' }, /image\.src must be a \.webp/],
+    ["another product's folder", { thumb: '/images/products/other-phone/thumb.webp' }, /image\.thumb must be a \.webp/],
   ])('rejects %s', (_n, patch, re) => {
     expect(errorsAfter((d) => void (d.products[0].image = { ...image, ...patch })).join('\n')).toMatch(re);
   });

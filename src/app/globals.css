@@ -110,7 +110,7 @@
     @apply inline-flex items-center px-2 py-0.5 rounded-pill text-[10px] font-bold tracking-wider uppercase border;
   }
 
-  /* Critic Scorecard sort toggle: pure CSS so it works in the static preview too */
+  /* Sort toggles (product reviews, home list): pure CSS radios, so they work without JavaScript */
   .sort-toggle input {
     position: absolute;
     opacity: 0;
@@ -127,6 +127,17 @@
   .by-date:focus-visible ~ .sort-labels .lbl-date {
     @apply outline outline-2 outline-brand-ink rounded;
   }
+  /* Product page: both review orders are rendered and CSS shows one. */
+  .sort-toggle > .list-date {
+    display: none;
+  }
+  .by-date:checked ~ .list-score {
+    display: none;
+  }
+  .by-date:checked ~ .list-date {
+    display: block;
+  }
+  /* Home page: one list, re-ordered with CSS `order` so each card ships once. */
   .list-item {
     order: var(--o-score);
     content-visibility: auto;

@@ -48,8 +48,9 @@ function validateImage(p, errors, publicDir) {
   for (const k of /** @type {const} */ (['src', 'thumb'])) {
     const f = img[k];
     if (!f) continue;
-    if (!f.startsWith('/images/products/') || !f.endsWith('.webp'))
-      errors.push(`product ${p.id}: image.${k} must be a .webp under /images/products/`);
+    // Exactly the layout add-product-image.js writes; also rules out "../" escaping public/.
+    if (!new RegExp(`^/images/products/${p.slug}/[a-z0-9-]+\\.webp$`).test(f))
+      errors.push(`product ${p.id}: image.${k} must be a .webp under /images/products/${p.slug}/`);
     else if (publicDir && !fs.existsSync(path.join(publicDir, f)))
       errors.push(`product ${p.id}: image.${k} file not found (${f})`);
   }
