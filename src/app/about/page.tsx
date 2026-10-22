@@ -1,14 +1,11 @@
 import type { Metadata } from 'next';
+import { socialMeta } from '@/lib/seo';
 import Link from 'next/link';
 import { getTotals } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'About',
-  openGraph: {
-    title: 'About Tech Scorecard',
-    description: 'An independent review aggregator that combines professional tech reviews into one critic score.',
-    url: '/about/',
-  },
+  ...socialMeta('About Tech Scorecard', 'An independent review aggregator that combines professional tech reviews into one critic score.', '/about/'),
   description:
     'Tech Scorecard is an independent review aggregator that combines professional tech reviews into one critic score, using the Broadway Scorecard method.',
   alternates: { canonical: '/about/' },

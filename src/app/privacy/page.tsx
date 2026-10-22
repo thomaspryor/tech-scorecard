@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
+import { socialMeta } from '@/lib/seo';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy',
-  openGraph: {
-    title: 'Privacy | Tech Scorecard',
-    description: 'What Tech Scorecard collects and what it does not.',
-    url: '/privacy/',
-  },
+  ...socialMeta('Privacy | Tech Scorecard', 'What Tech Scorecard collects and what it does not.', '/privacy/'),
   description: 'What Tech Scorecard collects (privacy-friendly page-view analytics only) and what it does not.',
   alternates: { canonical: '/privacy/' },
 };
