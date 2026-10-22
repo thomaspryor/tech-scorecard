@@ -6,7 +6,7 @@ credibility rests on every quote and score being traceable to a real review.
 1. **Research** (one subagent per product; Sonnet is fine). Brief: "Research brief" below.
    Output: `{product, reviews, newOutlets}` JSON. Gap-fill passes for missing outlets
    use `{productId, reviews}` (append mode).
-2. **Import**: `node scripts/import-product.js <file.json> [...]` (validates, rolls back on failure).
+2. **Import**: `node scripts/import-product.js <file.json> [...]` (validates the merged data in memory and writes nothing if it fails).
 3. **Verify quotes**: `python3 scripts/verify-quotes.py <id,id>`. Every MISS must be fixed or the
    review dropped. BLOCKED pages (403/429/timeouts) need a second check (WebFetch) or drop.
 4. **Score**: `node scripts/score-reviews.js --only=<id>` (needs OPENAI_API_KEY + GEMINI_API_KEY).
