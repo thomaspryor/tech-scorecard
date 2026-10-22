@@ -11,9 +11,10 @@ const config: Config = {
       colors: {
         score: {
           'must-see': '#FFD700',
-          great: '#16a34a',
-          good: '#0d9488',
-          tepid: '#d97706',
+          // Text shades: at least 4.5:1 on white, so small tier labels stay readable (WCAG AA).
+          great: '#15803d',
+          good: '#0f766e',
+          tepid: '#b45309',
           skip: '#dc2626',
           none: '#6b7280',
         },
@@ -35,7 +36,7 @@ const config: Config = {
         brand: {
           DEFAULT: '#d4a574',
           hover: '#c4956a',
-          ink: '#94632e',
+          ink: '#8a5a26', // 4.8:1 or better on white and on the brand-muted pill
           logo: '#b98048',
           muted: 'rgba(212, 165, 116, 0.18)',
         },

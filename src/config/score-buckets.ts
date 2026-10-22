@@ -14,7 +14,7 @@ export interface ScoreTier {
 }
 
 export const SCORE_TIERS: Record<TierKey, ScoreTier> = {
-  gold: { label: 'Critical Gold', blurb: 'Best in class. If you are buying one, buy this.', badgeClass: 'score-must-see', textClass: 'text-[#b8860b]' },
+  gold: { label: 'Critical Gold', blurb: 'Best in class. If you are buying one, buy this.', badgeClass: 'score-must-see', textClass: 'text-[#8b6508]' },
   recommended: { label: 'Recommended', blurb: 'A strong buy for most people.', badgeClass: 'score-great', textClass: 'text-score-great' },
   worthIt: { label: 'Worth a Look', blurb: 'Good, with caveats. Best if its strengths are your priorities.', badgeClass: 'score-good', textClass: 'text-score-good' },
   mixed: { label: 'Mixed', blurb: 'Critics are split.', badgeClass: 'score-tepid', textClass: 'text-score-tepid' },

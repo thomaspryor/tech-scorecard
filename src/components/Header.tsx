@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-line bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/" aria-label="Tech Scorecard home"><Logo className="text-xl min-[360px]:text-2xl sm:text-[28px]" /></Link>
+        <Link href="/"><Logo className="text-xl min-[360px]:text-2xl sm:text-[28px]" /></Link>
         <nav className="flex items-center gap-4 whitespace-nowrap text-sm font-medium text-ink-muted sm:gap-5">
           <Link href="/" className="hidden hover:text-ink sm:inline">All products</Link>
           <Link href="/methodology/" className="hover:text-ink">Methodology</Link>

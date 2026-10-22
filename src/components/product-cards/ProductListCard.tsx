@@ -6,8 +6,11 @@ import { DeviceArt } from './DeviceArt';
 import { ProductChips } from './ProductChips';
 import { ScoreBadge } from './ScoreBadge';
 
-/** [Thumbnail] [Info] [Score], same three-column card as Broadway Scorecard's ShowListCard. */
-export function ProductListCard({ product }: { product: ComputedProduct }) {
+/**
+ * [Thumbnail] [Info] [Score], same three-column card as Broadway Scorecard's ShowListCard.
+ * `heading` keeps the outline valid: h2 directly under a page h1, h3 under a section h2.
+ */
+export function ProductListCard({ product, heading: Heading = 'h3' }: { product: ComputedProduct; heading?: 'h2' | 'h3' }) {
   const tier = product.criticScore != null ? getScoreTier(product.criticScore) : null;
   const price = formatPrice(product.launchPrice);
   return (
@@ -16,7 +19,7 @@ export function ProductListCard({ product }: { product: ComputedProduct }) {
         <DeviceArt art={product.art} name={product.name} className="h-full w-full" />
       </div>
       <div className="min-w-0 flex-1">
-        <h3 className="line-clamp-2 text-lg font-bold leading-tight sm:text-xl">{product.name}</h3>
+        <Heading className="line-clamp-2 text-lg font-bold leading-tight sm:text-xl">{product.name}</Heading>
         <div className="mt-1.5"><ProductChips category={product.category} releaseDate={product.releaseDate} /></div>
         <p className="mt-2 text-sm text-ink-muted">
           {product.brand} · {formatDate(product.releaseDate)}

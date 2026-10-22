@@ -55,7 +55,7 @@ export default function BestPage() {
         {top.map((p, i) => (
           <li key={p.id} className="flex items-center gap-3">
             <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint" aria-label={`Rank ${i + 1}`}>{i + 1}</span>
-            <div className="min-w-0 flex-1"><ProductListCard product={p} /></div>
+            <div className="min-w-0 flex-1"><ProductListCard product={p} heading="h2" /></div>
           </li>
         ))}
       </ol>
