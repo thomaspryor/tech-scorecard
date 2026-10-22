@@ -7,7 +7,9 @@ on:
 
 # A new push to a pull request cancels its older run; every commit on main keeps its own result.
 concurrency:
-  group: ci-${{ github.event_name == 'pull_request' && github.ref || github.sha }}
+  # One run per branch: a newer commit cancels the older run, so a burst of commits
+  # never builds a queue (the account's runners are shared with other repos).
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
