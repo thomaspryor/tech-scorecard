@@ -2116,5 +2116,1274 @@
         "#e6e0d6"
       ]
     }
+  },
+  {
+    "id": "galaxy-s26-fe",
+    "slug": "galaxy-s26-fe",
+    "name": "Samsung Galaxy S26 FE",
+    "brand": "Samsung",
+    "category": "phone",
+    "releaseDate": "2026-09-04",
+    "launchPrice": 699,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-s26-fe/",
+    "criticsTake": "Critics call the Galaxy S26 FE a competent big-screen Samsung phone with a good display, solid main camera and seven years of updates. The faster Exynos 2500 is the one real upgrade over the S25 FE, and most reviewers say the higher price, 128GB base storage and weak ultra-wide and telephoto cameras make it hard to recommend over discounted older Galaxy models or cheaper rivals.",
+    "loved": [
+      "Bright 6.7-inch 120Hz AMOLED display",
+      "Seven years of OS and security updates",
+      "Reliable main camera in good light",
+      "Slim, light IP68 build"
+    ],
+    "gripes": [
+      "Almost identical to the S25 FE but pricier",
+      "Only 128GB base storage and 8GB RAM",
+      "Weak ultra-wide and telephoto cameras",
+      "Cheaper rivals and discounted S25/S26 offer more value",
+      "USB 2.0 port and no charger in the box"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7-inch FHD+ Dynamic AMOLED 2X, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Exynos 2500 (3nm)"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB base ($699), 256GB option"
+      },
+      {
+        "label": "Cameras",
+        "value": "50MP main, 12MP ultra-wide, 8MP 3x telephoto, 12MP selfie"
+      },
+      {
+        "label": "Battery",
+        "value": "4,900mAh, 45W wired, 15W wireless"
+      },
+      {
+        "label": "Software",
+        "value": "One UI 9 (Android 17), 7 years of updates"
+      },
+      {
+        "label": "Weight",
+        "value": "193g, IP68"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#5b6f9e",
+      "accent": "#2a3a5c",
+      "backdrop": [
+        "#f2f5fa",
+        "#dce3f0"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-s26-plus",
+    "slug": "galaxy-s26-plus",
+    "name": "Samsung Galaxy S26+",
+    "brand": "Samsung",
+    "category": "phone",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 1099,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-s26/",
+    "criticsTake": "Critics call the Galaxy S26+ a polished, fast flagship with a bright 6.7-inch display and strong AI features. Most reviews also say it is a small step over the S25+, with unchanged camera hardware and a $100 price increase. Several, including Android Central, Tom's Guide and Expert Reviews, suggest the S26 Ultra or the smaller S26 make more sense.",
+    "loved": [
+      "Bright, smooth 6.7-inch display",
+      "Fast performance and good thermals",
+      "Useful One UI 8.5 and Galaxy AI features",
+      "Seven years of software updates"
+    ],
+    "gripes": [
+      "Only a minor upgrade over the S25+",
+      "$100 price increase to $1,099",
+      "Camera hardware unchanged",
+      "Battery and charging trail rivals",
+      "Overshadowed by the S26 Ultra and the base S26"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7-inch Dynamic AMOLED 2X, 120Hz, up to 2,600 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "Exynos 2600 (Snapdragon 8 Elite Gen 5 for Galaxy in some units)"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB or 512GB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main, 12MP ultrawide, 10MP 3x telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "4,900 mAh, 45W wired charging"
+      },
+      {
+        "label": "Weight",
+        "value": "190 g"
+      },
+      {
+        "label": "Durability",
+        "value": "IP68, Gorilla Glass Victus 2"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,099 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#8c86c6",
+      "accent": "#1b2a4a",
+      "backdrop": [
+        "#f4f3fb",
+        "#e2e0f1"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-z-trifold",
+    "slug": "galaxy-z-trifold",
+    "name": "Samsung Galaxy Z TriFold",
+    "brand": "Samsung",
+    "category": "foldable",
+    "releaseDate": "2026-01-30",
+    "launchPrice": 2899,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-z-trifold/",
+    "criticsTake": "Critics see the TriFold as an impressive piece of engineering that turns a 6.5-inch phone into a roughly 10-inch tablet, with strong multitasking and Fold 7 level performance. The $2,899 price, the thick and heavy folded body and a niche audience hold back recommendations. PCMag also notes Samsung has stopped selling it, which limits who can buy one.",
+    "loved": [
+      "Near 10-inch tablet-size inner display",
+      "Strong multitasking and DeX support",
+      "Flagship Snapdragon performance",
+      "Solid hinge and premium build"
+    ],
+    "gripes": [
+      "Very high price",
+      "Thick and heavy when folded",
+      "Typing on the large display is awkward",
+      "Inconsistent third-party app scaling",
+      "Limited availability after Samsung stopped selling it"
+    ],
+    "specs": [
+      {
+        "label": "Main display",
+        "value": "9.96-inch Dynamic AMOLED 2X, 2160 x 1584, 120Hz"
+      },
+      {
+        "label": "Cover display",
+        "value": "6.5-inch, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Elite for Galaxy"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "16GB RAM, 512GB"
+      },
+      {
+        "label": "Cameras",
+        "value": "200MP main, 12MP ultra wide, 10MP 3x telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "5,600mAh"
+      },
+      {
+        "label": "Weight",
+        "value": "309 g"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP48"
+      },
+      {
+        "label": "Price",
+        "value": "$2,899"
+      }
+    ],
+    "art": {
+      "kind": "foldable",
+      "body": "#2b2d31",
+      "accent": "#1c3a5e",
+      "backdrop": [
+        "#f4f5f7",
+        "#e3e6ec"
+      ]
+    }
+  },
+  {
+    "id": "razr-2026",
+    "slug": "razr-2026",
+    "name": "Motorola Razr (2026)",
+    "brand": "Motorola",
+    "category": "foldable",
+    "releaseDate": "2026-05-21",
+    "launchPrice": 799,
+    "officialUrl": "https://www.motorola.com/us/en/p/phones/razr/razr-2026/pmipmjl44m7",
+    "criticsTake": "Critics call the base Razr the cheapest way into a flip phone and praise its design, cover screen and battery life. Most also say it changes little from the 2025 model while costing $100 more. Performance is only average and the three years of Android updates draw repeated complaints.",
+    "loved": [
+      "Stylish, durable design with IP48 rating",
+      "Useful cover screen with broad app support",
+      "Battery comfortably lasts a day",
+      "Lowest-priced flip phone in the US"
+    ],
+    "gripes": [
+      "$100 price increase to $799",
+      "Few changes from the 2025 model",
+      "Average performance from the Dimensity 7450X",
+      "Only 3 years of Android updates",
+      "Cameras are good but not top-tier"
+    ],
+    "specs": [
+      {
+        "label": "Main display",
+        "value": "6.9-inch Extreme AMOLED, foldable"
+      },
+      {
+        "label": "Cover display",
+        "value": "3.6-inch"
+      },
+      {
+        "label": "Chip",
+        "value": "MediaTek Dimensity 7450X"
+      },
+      {
+        "label": "Battery",
+        "value": "4,800 mAh, 30W wired and 15W wireless charging"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main + 50MP ultrawide"
+      },
+      {
+        "label": "Storage",
+        "value": "Up to 256GB"
+      },
+      {
+        "label": "Durability",
+        "value": "IP48 dust and splash protection"
+      },
+      {
+        "label": "Weight",
+        "value": "188 g"
+      },
+      {
+        "label": "Price",
+        "value": "$799.99"
+      }
+    ],
+    "art": {
+      "kind": "flip",
+      "body": "#5f6b78",
+      "accent": "#1f3a5f",
+      "backdrop": [
+        "#eef1f5",
+        "#dde3ea"
+      ]
+    }
+  },
+  {
+    "id": "moto-g-2026",
+    "slug": "moto-g-2026",
+    "name": "Motorola Moto G (2026)",
+    "brand": "Motorola",
+    "category": "phone",
+    "releaseDate": "2025-12-11",
+    "launchPrice": 199,
+    "officialUrl": "https://www.motorola.com/us/en/p/pmipmhz42mm",
+    "criticsTake": "Reviewers call the Moto G (2026) a dependable $199 phone with standout battery life, a stylish build and decent main-camera photos. Most also say it changes little from the 2025 model, with a 720p display, a slow Dimensity 6300 chip and a short two-year update promise. Scores range from 46 to 74, so critics are split on whether the price excuses the compromises.",
+    "loved": [
+      "Battery life, 19 hours 11 minutes in Tom's Guide's test",
+      "Attractive soft-touch back and Pantone colors",
+      "Solid main camera for the price",
+      "microSD slot and headphone jack"
+    ],
+    "gripes": [
+      "Low-resolution 720p display that is dim outdoors",
+      "Sluggish performance with 4GB of RAM",
+      "Only two OS updates and three years of security patches",
+      "Weak 2MP macro camera",
+      "Thin-sounding speakers",
+      "Little changed from the 2025 model"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7-inch LCD, 1604 x 720, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "MediaTek Dimensity 6300"
+      },
+      {
+        "label": "Memory",
+        "value": "4GB RAM (plus up to 8GB RAM Boost)"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB, microSD slot"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main + 2MP macro"
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh, 30W wired charging"
+      },
+      {
+        "label": "Weight",
+        "value": "202 g"
+      },
+      {
+        "label": "Durability",
+        "value": "IP52, Gorilla Glass 3"
+      },
+      {
+        "label": "Price",
+        "value": "$199.99 (128GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#b5307f",
+      "accent": "#20243a",
+      "backdrop": [
+        "#fbf1f7",
+        "#f1d6e6"
+      ]
+    }
+  },
+  {
+    "id": "razr-fold-2026",
+    "slug": "razr-fold-2026",
+    "name": "Motorola Razr Fold (2026)",
+    "brand": "Motorola",
+    "category": "foldable",
+    "releaseDate": "2026-05-21",
+    "launchPrice": 1899,
+    "officialUrl": "https://www.motorola.com/us/en/p/phones/razr/motorola-razr-fold/pmipmjj43my",
+    "criticsTake": "Critics call Motorola's first book-style foldable a strong debut and a serious rival to Samsung and Google. Reviewers single out its battery life, large bright displays, 3x telephoto camera and pen support. Common complaints are the weight and thickness, the large camera bump, bloated AI features, and a $1,899 price.",
+    "loved": [
+      "Class-leading battery life and fast charging",
+      "Large, bright 8.1-inch and 6.6-inch displays",
+      "Strong cameras including a 50MP 3x telephoto",
+      "Pen support and clean software"
+    ],
+    "gripes": [
+      "Thicker and heavier than the Galaxy Z Fold 7",
+      "Large camera bump",
+      "Moto AI features feel bloated or lackluster",
+      "Performance can feel held back under load",
+      "$1,899 price"
+    ],
+    "specs": [
+      {
+        "label": "Inner display",
+        "value": "8.1-inch pOLED (2484 x 2232)"
+      },
+      {
+        "label": "Cover display",
+        "value": "6.6-inch pOLED (2520 x 1080)"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Gen 5"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "16GB RAM, 512GB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main, 50MP ultrawide, 50MP 3x telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "6,000mAh; 80W wired, 50W wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "243 g"
+      },
+      {
+        "label": "Thickness",
+        "value": "About 4.6 mm open"
+      },
+      {
+        "label": "Water and dust resistance",
+        "value": "IP48 and IP49"
+      }
+    ],
+    "art": {
+      "kind": "foldable",
+      "body": "#1f2b4a",
+      "accent": "#5a86d6",
+      "backdrop": [
+        "#f1f4fb",
+        "#dbe3f3"
+      ]
+    }
+  },
+  {
+    "id": "pixel-10a",
+    "slug": "pixel-10a",
+    "name": "Google Pixel 10a",
+    "brand": "Google",
+    "category": "phone",
+    "releaseDate": "2026-03-05",
+    "launchPrice": 499,
+    "officialUrl": "https://store.google.com/us/product/pixel_10a",
+    "criticsTake": "Critics call the Pixel 10a a solid and dependable $499 Android phone that changes very little from the Pixel 9a. Reviewers praise the flat camera back, bright display, battery life, camera quality and seven years of updates. Several say the cheaper, discounted Pixel 9a is the better buy for anyone who can find one.",
+    "loved": [
+      "Flush camera back and comfortable design",
+      "Bright display, up to 3,000 nits",
+      "Strong battery life and 30W wired charging",
+      "Reliable main camera and useful AI features",
+      "Seven years of software updates"
+    ],
+    "gripes": [
+      "Almost no upgrades over the Pixel 9a",
+      "Same Tensor G4 chip as last year",
+      "No PixelSnap magnetic charging",
+      "No telephoto camera",
+      "Thick screen bezels"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3-inch OLED, up to 120Hz, 3,000 nits peak"
+      },
+      {
+        "label": "Chip",
+        "value": "Google Tensor G4"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB (256GB for $599)"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "48MP main + 13MP ultra wide"
+      },
+      {
+        "label": "Battery",
+        "value": "5,100mAh"
+      },
+      {
+        "label": "Charging",
+        "value": "30W wired, 15W wireless"
+      },
+      {
+        "label": "Durability",
+        "value": "IP68, Gorilla Glass 7i front"
+      },
+      {
+        "label": "Price",
+        "value": "$499"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#b9a7d8",
+      "accent": "#1f2a3a",
+      "backdrop": [
+        "#f7f3fb",
+        "#e7dff2"
+      ]
+    }
+  },
+  {
+    "id": "razer-blade-16-2026",
+    "slug": "razer-blade-16-2026",
+    "name": "Razer Blade 16 (2026)",
+    "brand": "Razer",
+    "category": "laptop",
+    "releaseDate": "2026-03-25",
+    "launchPrice": 3499.99,
+    "officialUrl": "https://www.razer.com/gaming-laptops/razer-blade-16",
+    "criticsTake": "Reviewers call the 2026 Blade 16 one of the best slim gaming laptops, with a bright 240Hz OLED screen, a premium aluminum build and much better battery life from the move to Intel Panther Lake. The chassis is largely unchanged from 2025, and the 25W Core Ultra 9 chip trails thicker rivals in multi-threaded work. Almost every review flags the price, which reaches about $4,900 for the RTX 5090 model, along with fan noise under load.",
+    "loved": [
+      "Bright 240Hz OLED display",
+      "Slim, well-built aluminum design",
+      "Much improved battery life",
+      "Strong RTX 5090 gaming performance"
+    ],
+    "gripes": [
+      "Very high price, nearly $5,000 as tested",
+      "Fans get loud under gaming load",
+      "Trails HX-class rivals in multi-threaded CPU work",
+      "Runs hot and noisy in games",
+      "No Ethernet port"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "16-inch 2560x1600 OLED, 240Hz, non-touch"
+      },
+      {
+        "label": "Chip",
+        "value": "Intel Core Ultra 9 386H (Panther Lake)"
+      },
+      {
+        "label": "Graphics",
+        "value": "Nvidia GeForce RTX 5070 Ti up to RTX 5090"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB or 64GB LPDDR5x"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB or 2TB PCIe 4.0 SSD, second M.2 2280 slot"
+      },
+      {
+        "label": "Battery",
+        "value": "90Wh; Tom's Hardware measured about 12h46m mixed use"
+      },
+      {
+        "label": "Weight",
+        "value": "2.14 kg (4.7 lb)"
+      },
+      {
+        "label": "Ports",
+        "value": "2x Thunderbolt 5, 3x USB-A, HDMI 2.1, SD card reader, 3.5mm audio"
+      },
+      {
+        "label": "Price",
+        "value": "From $3,499.99; about $4,899.99 for RTX 5090, 32GB, 2TB"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#1f2124",
+      "accent": "#1c4a3a",
+      "backdrop": [
+        "#f2f4f3",
+        "#dfe5e2"
+      ]
+    }
+  },
+  {
+    "id": "zenbook-a14-x2-elite",
+    "slug": "zenbook-a14-x2-elite",
+    "name": "Asus Zenbook A14 with Snapdragon X2 Elite",
+    "brand": "Asus",
+    "category": "laptop",
+    "releaseDate": "2026-04-07",
+    "launchPrice": 1149.99,
+    "officialUrl": "https://www.asus.com/us/laptops/for-home/zenbook/asus-zenbook-a14-ux3407/",
+    "criticsTake": "Critics like the sub-1 kg Ceraluminum chassis, the much faster Snapdragon X2 Elite CPU and battery life that runs well past a full day. The 60Hz 1920x1200 OLED panel draws repeated complaints. Reviewers also say the price rise over last year's model is hard to justify, and that the cheaper 2025 Zenbook A14 remains tempting.",
+    "loved": [
+      "Very light chassis of about 990 g",
+      "Big CPU gain from Snapdragon X2 Elite",
+      "Excellent battery life from the 70 Wh cell",
+      "Good port selection with USB-A and HDMI"
+    ],
+    "gripes": [
+      "Display is limited to 60Hz",
+      "1920x1200 resolution feels low for the price",
+      "Costs notably more than the 2025 model",
+      "Windows on Arm can still be finicky with some apps",
+      "Soldered RAM and PWM flicker on the OLED"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14-inch 1920x1200 OLED, 16:10, 60Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon X2 Elite, 18 cores, 80 TOPS NPU"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB or 32GB LPDDR5X (soldered)"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB or 1TB NVMe SSD"
+      },
+      {
+        "label": "Battery life",
+        "value": "70Wh; Asus claims 33+ hours of video playback"
+      },
+      {
+        "label": "Weight",
+        "value": "About 990 g"
+      },
+      {
+        "label": "Ports",
+        "value": "USB4 Type-C, USB-A, HDMI 2.1, SD card reader, audio combo"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 7"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,149.99 at US launch (16GB/512GB); later listed at $1,349.99"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#d9c9b0",
+      "accent": "#8fa6c4",
+      "backdrop": [
+        "#f6f1e8",
+        "#e9dfcc"
+      ]
+    }
+  },
+  {
+    "id": "pixel-10-pro-fold",
+    "slug": "pixel-10-pro-fold",
+    "name": "Google Pixel 10 Pro Fold",
+    "brand": "Google",
+    "category": "foldable",
+    "releaseDate": "2025-10-09",
+    "launchPrice": 1799,
+    "officialUrl": "https://store.google.com/product/pixel_10_pro_fold",
+    "criticsTake": "Critics call the Pixel 10 Pro Fold the most durable foldable yet, thanks to the first IP68 rating on a book-style fold, plus bright screens, Pixelsnap magnets and polished software. Most reviewers say it changes little from the Pixel 9 Pro Fold and trails the Galaxy Z Fold 7 in thinness, weight and speed. At $1,799 the verdicts range from solid to hard to recommend, with Engadget, Wired and Gizmodo pointing to Samsung as the better buy.",
+    "loved": [
+      "First foldable with an IP68 dust and water rating",
+      "Bright inner and outer displays",
+      "Polished Pixel software and AI features",
+      "Pixelsnap magnets and Qi2 wireless charging"
+    ],
+    "gripes": [
+      "Thick and heavy at 258 g next to the Galaxy Z Fold 7",
+      "Tensor G5 trails Snapdragon rivals in speed and gaming",
+      "Very few changes from the Pixel 9 Pro Fold",
+      "Cameras seen as average by several reviewers",
+      "Expensive at $1,799 for 256GB"
+    ],
+    "specs": [
+      {
+        "label": "Inner display",
+        "value": "8-inch foldable OLED, 120Hz, up to 3,000 nits"
+      },
+      {
+        "label": "Cover display",
+        "value": "6.4-inch OLED, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Google Tensor G5"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "16GB RAM, 256GB / 512GB / 1TB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "48MP main, 10.5MP ultrawide, 10.8MP 5x telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "5,015mAh, Qi2 wireless charging with Pixelsnap magnets"
+      },
+      {
+        "label": "Weight",
+        "value": "258 g"
+      },
+      {
+        "label": "Durability",
+        "value": "IP68 dust and water resistance"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,799"
+      }
+    ],
+    "art": {
+      "kind": "foldable",
+      "body": "#8d9094",
+      "accent": "#243447",
+      "backdrop": [
+        "#f4f5f7",
+        "#e3e6ea"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-a57",
+    "slug": "galaxy-a57",
+    "name": "Samsung Galaxy A57",
+    "brand": "Samsung",
+    "category": "phone",
+    "releaseDate": "2026-04-10",
+    "launchPrice": 549,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-a57-5g/",
+    "criticsTake": "Critics call the Galaxy A57 a polished, slim mid-ranger with a good screen, clean software and six years of updates. Most reviewers fault the $50 price increase over the Galaxy A56, middling Exynos 1680 performance and unremarkable cameras. Verdicts run from a solid buy to good but pricey, with several pointing to the Pixel 10a as better value.",
+    "loved": [
+      "Slim, light, IP68-rated build that feels premium",
+      "Bright 6.7-inch 120Hz AMOLED display",
+      "Clean One UI with six years of OS and security updates",
+      "Reliable 50MP main camera"
+    ],
+    "gripes": [
+      "$50 price hike over the Galaxy A56",
+      "Modest performance that struggles with demanding games",
+      "Weak 5MP macro camera and no telephoto",
+      "No wireless charging and a slow fingerprint sensor",
+      "Few meaningful upgrades over last year"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.7-inch Super AMOLED, 120Hz, 1900 nits peak"
+      },
+      {
+        "label": "Chip",
+        "value": "Samsung Exynos 1680"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB or 256GB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main (OIS) + 12MP ultra wide + 5MP macro"
+      },
+      {
+        "label": "Battery",
+        "value": "5,000 mAh, 45W wired charging, no wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "179 g, 6.9 mm thick, IP68"
+      },
+      {
+        "label": "Price",
+        "value": "From $549 (128GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#2b3a5c",
+      "accent": "#1c2430",
+      "backdrop": [
+        "#f1f4fa",
+        "#dde4f1"
+      ]
+    }
+  },
+  {
+    "id": "dell-xps-16-2026",
+    "slug": "dell-xps-16-2026",
+    "name": "Dell XPS 16 (2026)",
+    "brand": "Dell",
+    "category": "laptop",
+    "releaseDate": "2026-01-06",
+    "launchPrice": 1749,
+    "officialUrl": "https://www.dell.com/en-us/shop/dell-laptops/spd/xps16da16260",
+    "criticsTake": "Critics treat the 2026 XPS 16 as a strong return for the XPS name after Dell's 2025 rebrand. Reviewers praise the thin, light aluminum body, the tandem OLED display, Panther Lake performance and battery life. The shallow keyboard, the USB-C-only ports with no SD reader, integrated graphics only and a price that climbs quickly with OLED are the common complaints.",
+    "loved": [
+      "Thin, light design at about 3.65 lb",
+      "Tandem OLED display option",
+      "Strong Panther Lake performance and long battery life",
+      "Physical function row and good speakers"
+    ],
+    "gripes": [
+      "Shallow, cramped keyboard",
+      "Only three Thunderbolt 4 ports and no SD or microSD slot",
+      "No discrete graphics option",
+      "Expensive once configured with OLED",
+      "Soldered memory"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "16-inch; 3.2K (3200x2000) tandem OLED touch, 20-120Hz, or 2K (1920x1200) IPS non-touch, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Intel Core Ultra Series 3 (Panther Lake): Core Ultra 5 325 up to Core Ultra X7 358H"
+      },
+      {
+        "label": "Graphics",
+        "value": "Intel Arc B390 integrated on X7 models; no discrete GPU option"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB or more LPDDR5x, soldered"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB or more M.2 SSD (replaceable)"
+      },
+      {
+        "label": "Battery",
+        "value": "70Whr; Engadget measured 11 hours 53 minutes in PCMark 10 Modern Office"
+      },
+      {
+        "label": "Weight",
+        "value": "3.65 lb (1.66 kg) OLED, 3.85 lb LCD"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 4 (USB-C), headphone jack; no SD card reader"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,749.99; $2,349.99 as reviewed with OLED, X7 358H, 32GB, 1TB"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#5b5e63",
+      "accent": "#1c2a47",
+      "backdrop": [
+        "#f2f3f5",
+        "#e0e3e8"
+      ]
+    }
+  },
+  {
+    "id": "ipad-air-m4",
+    "slug": "ipad-air-m4",
+    "name": "Apple iPad Air M4 (11-inch)",
+    "brand": "Apple",
+    "category": "tablet",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 599,
+    "officialUrl": "https://www.apple.com/ipad-air/",
+    "criticsTake": "Critics call the M4 iPad Air a modest but welcome refresh and still the best iPad for most people. The M4 chip, 12GB of memory and Wi-Fi 7 arrive at the same $599 starting price, while the design, display and cameras are unchanged. Several reviewers say owners of the M3 Air have little reason to upgrade, but buyers coming from older iPads get a large jump.",
+    "loved": [
+      "Fast M4 chip with 12GB of memory",
+      "Same $599 starting price as last year",
+      "Wi-Fi 7 and fast cellular option",
+      "Light, slim design and Apple Pencil Pro support"
+    ],
+    "gripes": [
+      "Still a 60Hz LCD, no OLED or ProMotion",
+      "No Face ID",
+      "Battery life and cameras unchanged",
+      "Keyboard and Pencil accessories are pricey",
+      "Little reason to upgrade from the M3 Air"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "11-inch Liquid Retina LCD, 2360x1640, 60Hz, 500 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple M4, 8-core CPU, 9-core GPU"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB to 1TB"
+      },
+      {
+        "label": "Cameras",
+        "value": "12MP rear, 12MP Center Stage front"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, Bluetooth 6, optional 5G, USB-C"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 10 hours (Apple rating)"
+      },
+      {
+        "label": "Weight",
+        "value": "About 460 g"
+      },
+      {
+        "label": "Price",
+        "value": "From $599 (128GB) to $1,099 (1TB)"
+      }
+    ],
+    "art": {
+      "kind": "tablet",
+      "body": "#9db8d8",
+      "accent": "#3b82d6",
+      "backdrop": [
+        "#f2f6fb",
+        "#dde8f5"
+      ]
+    }
+  },
+  {
+    "id": "hp-omnibook-ultra-14-2026",
+    "slug": "hp-omnibook-ultra-14-2026",
+    "name": "HP OmniBook Ultra 14 (2026, Snapdragon X2)",
+    "brand": "HP",
+    "category": "laptop",
+    "releaseDate": "2026-04-02",
+    "launchPrice": 1899,
+    "officialUrl": "https://www.hp.com/us-en/shop/mdp/omnibook-ultra",
+    "criticsTake": "Reviewers praise the thin Stone Blue chassis, the 3K 120Hz OLED touchscreen, the keyboard and haptic touchpad, and quiet, fast Snapdragon X2 performance with long battery life. Windows Central and ITPro give it five stars. The main complaints are the high price of well-equipped configurations, a port selection with no USB-A or card reader, and a reflective screen.",
+    "loved": [
+      "Slim, sturdy design with a great keyboard and haptic touchpad",
+      "Bright 3K 120Hz OLED touchscreen",
+      "Fast, quiet performance on Snapdragon X2",
+      "Long battery life"
+    ],
+    "gripes": [
+      "High price once memory and storage are upgraded",
+      "No USB-A, HDMI or SD card reader",
+      "Glossy, reflective screen",
+      "Windows on Arm app and game compatibility gaps",
+      "Preinstalled bloatware"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14-inch 3K (2880x1800) OLED touch, 120Hz (base X2 Plus: 1920x1200, 60Hz)"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon X2 Plus or X2 Elite, up to 18 cores, 85 TOPS NPU"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB to 64GB LPDDR5x"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB to 2TB PCIe Gen5 SSD"
+      },
+      {
+        "label": "Battery life",
+        "value": "70Wh; HP claims up to 44 hours of video; Tom's Hardware measured 13h27m"
+      },
+      {
+        "label": "Weight",
+        "value": "2.81 lb (1.27 kg), 0.42 in thin"
+      },
+      {
+        "label": "Ports",
+        "value": "3x USB-C 40Gbps, 3.5mm jack; no USB-A or card reader"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, Bluetooth 5.4"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,899 (X2 Plus, 16GB); $2,399 with X2 Elite and 32GB"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#6F86A6",
+      "accent": "#1B2A4A",
+      "backdrop": [
+        "#EEF3F9",
+        "#D6E2F0"
+      ]
+    }
+  },
+  {
+    "id": "macbook-neo",
+    "slug": "macbook-neo",
+    "name": "Apple MacBook Neo",
+    "brand": "Apple",
+    "category": "laptop",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 599,
+    "officialUrl": "https://www.apple.com/macbook-neo/",
+    "criticsTake": "Critics call the MacBook Neo the best budget laptop available, praising its aluminum build, bright 13-inch display, keyboard and trackpad, and A18 Pro speed for everyday work. The common complaints are 8GB of memory, no keyboard backlight, slow secondary USB port and storage, and Touch ID reserved for the pricier model. Apple raised the starting price to $699 in June 2026, and reviewers still recommend it for students and light users.",
+    "loved": [
+      "Premium aluminum build for the price",
+      "Bright, sharp 13-inch display",
+      "Excellent keyboard and mechanical trackpad",
+      "Fast enough for everyday tasks, with strong battery life",
+      "Fun color choices"
+    ],
+    "gripes": [
+      "Only 8GB of memory, which is not upgradeable",
+      "No keyboard backlight",
+      "One USB-C port is slower USB 2.0, and there is no Thunderbolt",
+      "Touch ID only on the 512GB model",
+      "Base 256GB storage fills up fast"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "13-inch Liquid Retina, 500 nits, 60Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple A18 Pro, 6-core CPU, 5-core GPU"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB unified"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB SSD or 512GB with Touch ID"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 16 hours video playback (Apple); Tom's Guide measured 13h28m web surfing"
+      },
+      {
+        "label": "Weight",
+        "value": "2.7 lb"
+      },
+      {
+        "label": "Ports",
+        "value": "USB-C (USB 3), USB-C (USB 2), headphone jack"
+      },
+      {
+        "label": "Colors",
+        "value": "Silver, Indigo, Blush, Citrus"
+      },
+      {
+        "label": "Price",
+        "value": "$599 at launch ($499 education); $699 since June 2026"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#5a6a94",
+      "accent": "#4f8fe0",
+      "backdrop": [
+        "#f3f5fa",
+        "#e1e6f0"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-tab-s12-ultra",
+    "slug": "galaxy-tab-s12-ultra",
+    "name": "Samsung Galaxy Tab S12 Ultra",
+    "brand": "Samsung",
+    "category": "tablet",
+    "releaseDate": "2026-10-07",
+    "launchPrice": 1399.99,
+    "officialUrl": "https://www.samsung.com/us/tablets/galaxy-tab-s12/",
+    "criticsTake": "Critics call the Tab S12 Ultra the best large Android tablet, praising its 14.6-inch OLED screen, thin build and long battery life. Most also say it is a small update on the Tab S11 Ultra that costs $100 to $200 more, and that Android with DeX still falls short of a true laptop replacement. Several suggest the cheaper Tab S11 Ultra for most buyers.",
+    "loved": [
+      "14.6-inch OLED display",
+      "Very thin IP68 build",
+      "Long battery life",
+      "S Pen included in the box"
+    ],
+    "gripes": [
+      "Small upgrade over the Tab S11 Ultra",
+      "Price rose to $1,399.99",
+      "Android apps and DeX fall short of a laptop",
+      "Pro Keyboard costs extra",
+      "No charger in the box"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14.6-inch Dynamic AMOLED 2X, 2960 x 1848, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "MediaTek Dimensity 9500"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB (16GB on 1TB model)"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB base, up to 1TB, microSD"
+      },
+      {
+        "label": "Battery",
+        "value": "11,600mAh, 45W charging, up to 23 hours video (Samsung)"
+      },
+      {
+        "label": "Thickness",
+        "value": "5.1 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "1.52 lb (Wi-Fi model)"
+      },
+      {
+        "label": "Durability",
+        "value": "IP68, S Pen included"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,399.99 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "tablet",
+      "body": "#8E9196",
+      "accent": "#1F2A44",
+      "backdrop": [
+        "#F3F4F6",
+        "#E1E4EA"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-book6-pro",
+    "slug": "galaxy-book6-pro",
+    "name": "Samsung Galaxy Book6 Pro",
+    "brand": "Samsung",
+    "category": "laptop",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 1599.99,
+    "officialUrl": "https://www.samsung.com/us/computers/galaxy-book/galaxy-book6-pro/",
+    "criticsTake": "Critics call the Galaxy Book6 Pro one of the best thin Windows laptops of the year. The bright 120Hz AMOLED touchscreen, the Intel Panther Lake performance with surprisingly capable integrated graphics, and the long battery life earn the most praise. Price is the main complaint, along with a limited port selection, the dropped card reader and a keyboard some find shallow.",
+    "loved": [
+      "Bright 120Hz AMOLED touchscreen",
+      "Slim aluminum build",
+      "Strong Panther Lake performance, even in games",
+      "Long battery life"
+    ],
+    "gripes": [
+      "Expensive, especially the 16-inch configurations",
+      "Few ports and no card reader",
+      "Shallow or hollow-feeling keyboard",
+      "Preinstalled Samsung bloatware",
+      "PWM flicker on the OLED panel"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14-inch or 16-inch 2880x1800 Dynamic AMOLED 2X touchscreen, 120Hz adaptive, up to 1000 nits HDR"
+      },
+      {
+        "label": "Chip",
+        "value": "Intel Core Ultra Series 3 (Panther Lake), up to Core Ultra X7 358H"
+      },
+      {
+        "label": "Graphics",
+        "value": "Intel Arc integrated, up to Arc B390 on X7 models"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB or 32GB LPDDR5X"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB or 1TB SSD"
+      },
+      {
+        "label": "Battery life",
+        "value": "Samsung claims up to 30 hours of video playback; 78Wh battery in the 16-inch model"
+      },
+      {
+        "label": "Weight",
+        "value": "14-inch about 2.7 lb (1.24 kg); 16-inch about 3.5 lb (1.6 kg)"
+      },
+      {
+        "label": "Ports",
+        "value": "2x Thunderbolt 4, USB-A, HDMI 2.1, 3.5mm jack; no card reader"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,599.99 (Core Ultra 7, 14-inch); 16-inch reviewed unit $2,199.99 and up"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#8c8f96",
+      "accent": "#2f6fd6",
+      "backdrop": [
+        "#f2f4f8",
+        "#dfe4ee"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-buds-4",
+    "slug": "galaxy-buds-4",
+    "name": "Samsung Galaxy Buds4",
+    "brand": "Samsung",
+    "category": "headphones",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 179,
+    "officialUrl": "https://www.samsung.com/us/audio-sound/galaxy-buds4/",
+    "criticsTake": "Critics praise the warm, bass-heavy sound, the refreshed blade design and the Galaxy ecosystem features, and Tom's Guide says they beat the AirPods 4 with ANC on sound. The open, unsealed fit is the main problem: TechRadar, SoundGuys and Expert Reviews found them unstable in the ear, which also weakens noise cancelling. Several reviewers point buyers to the Buds4 Pro instead.",
+    "loved": [
+      "Rich, bass-forward sound",
+      "Refreshed metal-look blade design",
+      "Head gestures and Galaxy AI features",
+      "Good value against AirPods 4 ANC"
+    ],
+    "gripes": [
+      "Open fit does not stay put for many people",
+      "Weak noise cancelling",
+      "Battery of about 5 to 6 hours per charge",
+      "Best features need a Samsung phone",
+      "IP54 rating is a step down from the Buds3"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Open (unsealed) true wireless earbuds"
+      },
+      {
+        "label": "Noise cancelling",
+        "value": "Adaptive ANC (no silicone tips)"
+      },
+      {
+        "label": "Battery life",
+        "value": "6 hours buds (5 with ANC), 30 hours with case"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "6.1"
+      },
+      {
+        "label": "Codecs",
+        "value": "SSC-UHQ, SSC, AAC, SBC, LC3"
+      },
+      {
+        "label": "Durability",
+        "value": "IP54 (earbuds only)"
+      },
+      {
+        "label": "Colors",
+        "value": "Black, White"
+      },
+      {
+        "label": "Price",
+        "value": "$179"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#1f1f23",
+      "accent": "#8b95a5",
+      "backdrop": [
+        "#f4f5f7",
+        "#e3e6ec"
+      ]
+    }
   }
 ]

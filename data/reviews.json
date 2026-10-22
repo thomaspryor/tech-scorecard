@@ -10643,5 +10643,4026 @@
     },
     "scoreReason": "Impressive concept and execution, but high price, storage limits, and software quirks bring significant caveats.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "gsmarena",
+    "critic": null,
+    "url": "https://www.gsmarena.com/samsung_galaxy_s26_fe-review-2999p6.php",
+    "date": "2026-09-08",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy S26 FE is a difficult phone to sum up, mostly because there is very little actually wrong with it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Good, well-rounded phone, but overpriced and too similar to last year's model.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "tech-advisor",
+    "critic": "Luke Baker",
+    "url": "https://www.techadvisor.com/article/3233036/samsung-galaxy-s26-fe-review.html",
+    "date": "2026-09-15",
+    "rating": "3.5/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "The pricing, though, is a real problem. With just 128GB of storage at £699/$699, this phone is not a good value proposition.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Good software and basics, but overpriced, barely upgraded, and hard to recommend right now.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "trusted-reviews",
+    "critic": "Henry Burrell",
+    "url": "https://www.trustedreviews.com/reviews/samsung-galaxy-s26-fe",
+    "date": "2026-09-17",
+    "rating": "3.5/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy S26 FE is a solid phone with a great screen, reliable performance and seven years of updates, but ageing cameras, limited storage and strong competition make it hard to recommend.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Good basics, but repeated warnings about old cameras, poor value, and only buying discounted show major reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "techradar",
+    "critic": "Richard Priday",
+    "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-s26-fe-review",
+    "date": "2026-09-24",
+    "rating": "3.5/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "If you want a big display and long battery life from Samsung for less, then this is the model for you.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 71
+    },
+    "scoreReason": "Good big-screen Samsung with strong battery and performance, but price rise and weak extra cameras hurt value.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "android-central",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-s26-fe-review",
+    "date": "2026-10-06",
+    "rating": "3/5",
+    "score": 56,
+    "scoreSource": "rating",
+    "excerpt": "I want to emphasize that the Galaxy S26 FE is a great phone that I could absolutely use as my daily driver, despite its compromises.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 53
+    },
+    "scoreReason": "Good performance and software support, but weak value, cameras, screen compromises, and frequent advice to consider alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "itpro",
+    "critic": "Bobby Hellard",
+    "url": "https://www.itpro.com/hardware/mobile-phones/the-samsung-galaxy-s26-fe-is-a-decent-smartphone-for-work-but-its-missing-some-of-the-features-that-businesses-really-need",
+    "date": "2026-09-11",
+    "rating": "3.5/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "It's worth remembering that the S26 FE is a budget model, but it could have been so much more.",
+    "note": "Reviewed from a business-user perspective.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Strong display, battery, and main camera, but outdated chip, limited memory, and missing privacy features disappoint.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "expert-reviews",
+    "critic": "Ben Johnston",
+    "url": "https://www.expertreviews.co.uk/technology/phones/samsung-galaxy-s26-fe-review",
+    "date": "2026-09-18",
+    "rating": "3/5",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "Add strong competition from other brands in this price range, and the Galaxy S26 FE sinks like a stone.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 52
+    },
+    "scoreReason": "Competent phone, but pricing and value are poor; reviewer suggests waiting or buying something else.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "t3",
+    "critic": "Mike Lowe",
+    "url": "https://www.t3.com/tech/phones/samsung-galaxy-s26-fe-review",
+    "date": "2026-09-18",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "From the way it looks, to the way it performs, in isolation it's a great Android option – and, from that point of view, recommendable.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Good phone with solid design and performance, but price hike and tiny upgrades make it hard to recommend strongly.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "beebom",
+    "critic": "Anshuman Jain",
+    "url": "https://gadgets.beebom.com/reviews/samsung-galaxy-s26-fe-review",
+    "date": "2026-10-13",
+    "rating": "7.5/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "So, if you can find a better deal for the S26, I would recommend picking that instead.",
+    "note": "Review written around Indian pricing (Rs 79,999).",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 75
+    },
+    "scoreReason": "Good design, display, software, but old chip, heat, weaker cameras, and high price limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "itdaily",
+    "critic": "Jens Jonkers",
+    "url": "https://itdaily.com/reviews/workplace/samsung-galaxy-s26-fe/",
+    "date": "2026-10-16",
+    "rating": null,
+    "score": 59,
+    "scoreSource": "text",
+    "excerpt": "It is a good phone, but the limitations of previous devices have not been resolved.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 67,
+      "gemini": 50
+    },
+    "scoreReason": "Good everyday phone, but overpriced, barely improved, and weakened by poor night camera and lost features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "india-tv-news",
+    "critic": "Saumya Nigam",
+    "url": "https://www.indiatvnews.com/technology/reviews/samsung-galaxy-s26-fe-review-brilliant-camera-and-design-with-some-scope-for-improvements-2026-10-05-1056149",
+    "date": "2026-10-05",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "Samsung Galaxy S26 FE is an attractive choice for those who are looking for a uniform design and premium build.",
+    "note": "Review written around Indian pricing (about Rs 80,000).",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Premium design, smooth performance and strong cameras, but overheating, grainy low light and high price hurt appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "android-central",
+    "critic": "Derrek Lee",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-s26-plus-review",
+    "date": "2026-03-28",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy S26 Plus is by no means a bad phone, and One UI 8.5 makes it a joy to use thanks to a silky UI and tons of new and upgraded AI features.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent performance and software, but higher price and limited upgrades make it hard to strongly recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "techradar",
+    "critic": "Rami Tabari",
+    "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-s26-plus-review",
+    "date": "2026-04-05",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "That doesn't stop it from being a great smartphone, but we should have had more.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Great performance and display, but price hike, unchanged cameras, and middling battery add notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "tech-advisor",
+    "critic": "John McCann",
+    "url": "https://www.techadvisor.com/article/3080347/samsung-galaxy-s26-plus-review.html",
+    "date": "2026-03-06",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy S26+ has everything you'd want from a flagship; big screen, plenty of power, capable cameras, and some of the best AI on a phone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong all-round flagship, but pricey, iterative, and often outshone by rivals on value and cameras.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "trusted-reviews",
+    "critic": "Andrew Williams",
+    "url": "https://www.trustedreviews.com/reviews/samsung-galaxy-s26-plus",
+    "date": "2026-04-10",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "It may not be hugely ambitious on the tech front, but the day-to-day experience tempers the lack of progress here.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 78
+    },
+    "scoreReason": "Strong all-round phone with excellent camera and design, but battery life and value hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "expert-reviews",
+    "critic": "Ben Johnston",
+    "url": "https://www.expertreviews.co.uk/technology/phones/samsung-galaxy-s26-plus-review",
+    "date": "2026-04-14",
+    "rating": "3/5",
+    "score": 52,
+    "scoreSource": "rating",
+    "excerpt": "You'll be overpaying but end up with a solid phone that ticks the basic boxes well enough.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 51
+    },
+    "scoreReason": "Good screen and performance, but overpriced, barely improved, and most buyers are advised to skip it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "digital-trends",
+    "critic": "Moinak Pal",
+    "url": "https://www.digitaltrends.com/phones/samsung-s26-plus-review/",
+    "date": "2026-04-14",
+    "rating": "8/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "In isolation, the Galaxy S26 Plus is a perfectly fine smartphone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 81,
+      "gemini": 72
+    },
+    "scoreReason": "Strong display and performance, but too iterative, with weak camera progress and limited reasons to choose it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "notebookcheck",
+    "critic": "Marcus Herbrich",
+    "url": "https://www.notebookcheck.net/Will-the-Exynos-2600-save-the-unwanted-flagship-Samsung-Galaxy-S26-review.1272005.0.html",
+    "date": "2026-04-13",
+    "rating": "89%",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "It is therefore not surprising that upgrades to the Galaxy S25+ are very limited.",
+    "note": "Tested the Exynos 2600 version.",
+    "scoreBand": [
+      84,
+      94
+    ],
+    "modelScores": {
+      "openai": 89,
+      "gemini": 84
+    },
+    "scoreReason": "Very good overall, but stale upgrades, dated cameras and battery, and weak value limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "gsmarena",
+    "critic": null,
+    "url": "https://www.gsmarena.com/samsung_galaxy_s26_plus-review-2941p6.php",
+    "date": "2026-03-10",
+    "rating": null,
+    "score": 73,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy S26+ is a very easy phone to like and a surprisingly difficult one to recommend.",
+    "note": "Published by the GSMArena Team; no numeric score, so the score is an estimate of the verdict.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 74
+    },
+    "scoreReason": "Excellent phone overall, but hard to recommend at full price due to minimal upgrades and better alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "cnet",
+    "critic": "Abrar Al-Heeti",
+    "url": "https://www.cnet.com/tech/mobile/samsung-galaxy-z-trifold-review/",
+    "date": "2026-02-19",
+    "rating": "8.3/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Z TriFold is a spectacle.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 83
+    },
+    "scoreReason": "Impressive and enjoyable, but very niche, bulky closed, and prohibitively expensive for most buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "pcmag",
+    "critic": "Iyaz Akhtar",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-z-trifold",
+    "date": "2026-03-20",
+    "rating": null,
+    "score": 50,
+    "scoreSource": "text",
+    "excerpt": "The Samsung Galaxy Z TriFold stands out as an impressive piece of engineering, combining premium build quality, strong performance, and an expansive folding display.",
+    "note": "PCMag's numeric rating was not readable in the page source; score estimated from the verdict. PCMag does not recommend buying because Samsung stopped selling it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 45,
+      "gemini": 55
+    },
+    "scoreReason": "Impressive engineering, but too expensive, discontinued, and explicitly not recommended to buy.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "sammyguru",
+    "critic": "Jeff Springer",
+    "url": "https://sammyguru.com/galaxy-z-trifold-review/",
+    "date": "2026-02-19",
+    "rating": null,
+    "score": 83,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Z TriFold feels unapologetically futuristic, and after a few days it genuinely starts to feel like the future in your pocket (even if it’s a chunky one).",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Strong praise for innovation, display, performance, and usability, tempered by extreme price, bulk, and durability concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "hardwarezone",
+    "critic": "Liu Hongzuo",
+    "url": "https://www.hardwarezone.com.sg/mobile/smartphones/samsung-galaxy-z-trifold-review-specs-display-performance-imaging-battery-life",
+    "date": "2026-02-14",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "In comparison, the Galaxy Z TriFold has a relatively impressive debut, polished enough to flex its value proposition.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 80
+    },
+    "scoreReason": "Strong first-gen success with clear usefulness and polish, but expensive with design, audio, and software caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "geek-culture",
+    "critic": "Si Jia",
+    "url": "https://geekculture.co/samsung-galaxy-z-trifold-review/",
+    "date": "2026-03-25",
+    "rating": "8.1/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Z TriFold shows promise and is enjoyable to use, but its niche status and extremely hefty price tag make for a killer combo.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Strong performance and versatility, but bulk, quirks, and extreme price make it niche for most buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "can-buy-or-not",
+    "critic": "Aloysius Low",
+    "url": "https://www.canbuyornot.com/reviews/smartphones/samsung-galaxy-z-trifold-review-price/",
+    "date": "2026-01-27",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "The TriFold is a great device, but it's likely most of us won't even buying it this time around.",
+    "note": "Verdict label is 'Can Buy'; no numeric score.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Strong praise for the screen and experience, but bulk, clunkiness, missing features, and huge price temper it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "techgoondu",
+    "critic": "Alfred Siew",
+    "url": "https://www.techgoondu.com/2026/01/20/samsung-galaxy-z-trifold-review-a-mobile-marvel-for-the-curious-and-rich/",
+    "date": "2026-01-20",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "To be sure, it’s too expensive and likely only for a niche group of users with money to spare but Samsung has made quite a remarkable phone in the Galaxy Z TriFold.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 82
+    },
+    "scoreReason": "Very positive overall, praising design and productivity, with caveats about price, bulk, app optimisation, and opening hassle.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "android-central",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidcentral.com/phones/motorola/motorola-razr-2026-review",
+    "date": "2026-05-21",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr 2026 is still a great value at $800, and is arguably a better deal than its premium Plus and Ultra siblings.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 82
+    },
+    "scoreReason": "Strong value recommendation with notable performance and cover screen drawbacks, but overall clearly positive.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "cnet",
+    "critic": "David Lumb",
+    "url": "https://www.cnet.com/tech/mobile/motorola-razr-2026-review/",
+    "date": "2026-05-21",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr 2026 remains a good pick for the foldable-curious, and though it's gotten pricier, so have many other phones.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Well-designed and easy to recommend, but price hike, weak performance, and short software support hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "android-police",
+    "critic": "Andy Boxall",
+    "url": "https://www.androidpolice.com/motorola-razr-2026-razr-70-review/",
+    "date": "2026-05-24",
+    "rating": "6/10",
+    "score": 55,
+    "scoreSource": "rating",
+    "excerpt": "The only genuine reason to buy the Motorola Razr (2026) is its compact folding phone design, and the fact that it's the cheapest way to try out what is a great style.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 57,
+      "gemini": 52
+    },
+    "scoreReason": "Stylish foldable with great cover screen, but too many compromises and often better to skip or save longer.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "notebookcheck",
+    "critic": "Florian Schmitt",
+    "url": "https://www.notebookcheck.net/This-foldable-attracts-everyone-s-attention-Motorola-Razr-2026-Razr-70-smartphone-review.1308599.0.html",
+    "date": "2026-05-28",
+    "rating": "78%",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr 70 is just a minor update. It is still a very stylish and unusual foldable with which you can attract a lot of attention.",
+    "scoreBand": [
+      73,
+      83
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 73
+    },
+    "scoreReason": "Stylish and usable, but overpriced minor update with weak performance, middling battery, and better alternatives including its predecessor.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/2188755/motorola-razr-2026-review/",
+    "date": "2026-06-06",
+    "rating": null,
+    "score": 70,
+    "scoreSource": "text",
+    "excerpt": "Yes, but only if you're specifically looking for a flip phone at $800 or less.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 68
+    },
+    "scoreReason": "Good enough and likable for flip-phone fans, but overpriced with many compromises and weak value otherwise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "gsmarena",
+    "critic": "GSMArena Team",
+    "url": "https://www.gsmarena.com/motorola_razr_70-review-2971p6.php",
+    "date": "2026-06-19",
+    "rating": null,
+    "score": 76,
+    "scoreSource": "text",
+    "excerpt": "Until then, it remains a solid foldable that is held back more by its pricing than by any major flaw in the device itself.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 75
+    },
+    "scoreReason": "Liked the design, software and battery, but said the current price hurts its recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "techradar",
+    "critic": "John McCann",
+    "url": "https://www.techradar.com/phones/motorola-phones/motorola-razr-2026-review",
+    "date": "2026-08-17",
+    "rating": "4/5",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr 2026 is a great flip phone when compared to rival foldables of a similar price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 74
+    },
+    "scoreReason": "Strong foldable design, battery, and cover screen, but weak upgrades, middling performance, and value concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "toms-guide",
+    "critic": "Philip Michaels",
+    "url": "https://www.tomsguide.com/phones/motorola-phones/moto-g-2026-review-the-best-phone-for-less-than-usd200",
+    "date": "2025-12-11",
+    "rating": "3.5/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "If you don't want to spend much on your next phone, the Moto G (2026) fits the bill, as it costs less than $200.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent battery and good value, but dim display, weak performance, slow charging, and short software support.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "pcmag",
+    "critic": "Iyaz Akhtar",
+    "url": "https://www.pcmag.com/reviews/motorola-moto-g-2026",
+    "date": "2025-12-11",
+    "rating": "3.0/5",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "The 2026 Motorola Moto G is an affordable and attractive Android phone that handles the basics well enough.",
+    "note": "PCMag's page lists an MSRP of $299.99.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 52
+    },
+    "scoreReason": "Good battery and basics, but many flaws and a clear recommendation to buy another phone instead.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "gsmarena",
+    "critic": null,
+    "url": "https://www.gsmarena.com/motorola_moto_g_2026_g_play_2026-review-2925.php",
+    "date": "2026-02-09",
+    "rating": "3.7/5",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "Unfortunately, the Moto G (2026) and Moto G Play (2026) fall apart where it matters most.",
+    "note": "Joint review of Moto G (2026) and Moto G Play (2026); the outlet's score is published for the pair.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 71
+    },
+    "scoreReason": "Good battery and basics, but weak display, sluggish performance, and unreliable camera focus hurt recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "phonearena",
+    "critic": "Aleksandar Anastasov",
+    "url": "https://www.phonearena.com/reviews/motorola-moto-g-2026-review_id7799",
+    "date": "2025-12-16",
+    "rating": "4.6/10",
+    "score": 32,
+    "scoreSource": "rating",
+    "excerpt": "As a result, the Moto G (2026) barely covers the basics for a dependable everyday phone, and it falls short of rivals that offer more balanced hardware at a similar price.",
+    "scoreBand": [
+      31,
+      50
+    ],
+    "modelScores": {
+      "openai": 32,
+      "gemini": 31
+    },
+    "scoreReason": "Reviewer says it only barely handles basics and falls short versus similar-priced alternatives.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "cgmagonline",
+    "critic": "Joe Findlay",
+    "url": "https://www.cgmagonline.com/review/hardware/motorola-moto-g-2026-smartphone-review/",
+    "date": "2025-12-11",
+    "rating": "5.5/10",
+    "score": 55,
+    "scoreSource": "rating",
+    "excerpt": "The moto g - 2026 smartphone looks flashy and new, but is really a phone made up of old tech and it performs like it.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 54,
+      "gemini": 55
+    },
+    "scoreReason": "Decent budget choice for light users, but major performance limits and narrow recommendation keep it low.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/2025/12/motorola-moto-g-2026-review-the-budget-phone-that-actually-gets-it-right.html",
+    "date": "2025-12-11",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "For $199, Motorola delivers a phone that nails the basics without the frustrations that plague most budget devices.",
+    "note": "Page shows a star graphic that could not be read exactly; score estimated from the verdict.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for excellent basics and lack of frustrations at a low price, with no major negatives mentioned.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "androidguys",
+    "critic": "Scott Webster",
+    "url": "https://androidguys.com/news/motorola-moto-g-2026-review/",
+    "date": "2026-01-23",
+    "rating": null,
+    "score": 76,
+    "scoreSource": "text",
+    "excerpt": "The Moto G (2026) does not redefine the budget category, but it reinforces why the Moto G name still matters.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 75
+    },
+    "scoreReason": "Positive but reserved verdict; it strengthens the Moto G reputation without standing out or redefining its class.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "engadget",
+    "critic": "Sam Rutherford",
+    "url": "https://www.engadget.com/2172439/motorola-razr-fold-review/",
+    "date": "2026-05-14",
+    "rating": "8.8/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "Motorola might be a bit late when it comes to big foldables, but its first effort is a major success.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strong overall praise, but design, AI, accessories, and timing concerns keep enthusiasm somewhat tempered.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "trusted-reviews",
+    "critic": "Lewis Painter",
+    "url": "https://www.trustedreviews.com/reviews/motorola-razr-fold",
+    "date": "2026-06-04",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Razr Fold is a stylish and impressively polished first book-style foldable from Motorola, getting the big things right with lovely displays, a minimal crease, dependable battery life and a genuinely strong camera setup.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent debut with strong design, displays, battery and cameras, but AI clutter and limited performance hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "android-central",
+    "critic": "Derrek Lee",
+    "url": "https://www.androidcentral.com/phones/motorola/motorola-razr-fold-review",
+    "date": "2026-05-14",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The phone is gorgeous and speedy, with surprisingly great cameras, especially when zooming.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, battery, cameras, and performance, with notable but not dealbreaking AI and software concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "techradar",
+    "critic": "Lance Ulanoff",
+    "url": "https://www.techradar.com/phones/motorola-phones/motorola-razr-fold-2026-review",
+    "date": "2026-05-14",
+    "rating": "3.5/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr Fold 2026 is a solid start for Motorola's flagship fold ambitions.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Strong performance, screens, battery, and pen support, but design and camera processing flaws temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "toms-guide",
+    "critic": "John Velasco",
+    "url": "https://www.tomsguide.com/phones/motorola-phones/motorola-razr-fold-review",
+    "date": "2026-05-14",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "after testing it for a week, I’m convinced more than ever that it’s the closest thing to a laptop replacement I've used.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly enthusiastic, calls it the best foldable, with only minor software and display transition issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "9to5google",
+    "critic": "Ben Schoon",
+    "url": "https://9to5google.com/2026/06/09/motorola-razr-fold-review/",
+    "date": "2026-06-09",
+    "rating": "5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "at this exact moment in time, this is the best foldable you can buy in the US.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised as best US foldable, with timing and software concerns tempering enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "notebookcheck",
+    "critic": "Florian Schmitt",
+    "url": "https://www.notebookcheck.net/Is-Motorola-s-book-style-phone-debut-so-successful-that-Samsung-has-reason-to-worry-Razr-Fold-Smartphone-Review.1358081.0.html",
+    "date": "2026-08-02",
+    "rating": "86%",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "There is, however, something unique: the stylus.",
+    "scoreBand": [
+      81,
+      91
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 81
+    },
+    "scoreReason": "Good foldable with stylus and battery, but high price, PWM, heat, middling cameras, and update confusion hurt appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "t3",
+    "critic": "Chris Hall",
+    "url": "https://www.t3.com/tech/phones/motorola-razr-fold-review",
+    "date": "2026-08-07",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr phone is a great folding phone, with the battery life a clear advantage over Samsung's best, while the overall camera performance is decent.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value, battery and screens, but software bloat, heat issues and chunky design temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/2173035/motorola-razr-fold-review-2026-battery-book-style-foldable-camera-testing/",
+    "date": "2026-05-14",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "This is, simply put, the best book-style foldable you can buy today.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 83
+    },
+    "scoreReason": "Called the best book-style foldable available, with strong praise despite software, price, and camera caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/2182254/razr-fold-review/",
+    "date": "2026-05-27",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "Despite those issues, I found the Motorola Razr Fold to be the best foldable on the whole right now, even if the hardware differences are fairly minor.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended and called best overall foldable, despite price and some performance, software, and charging drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "androidguys",
+    "critic": "Scott Webster",
+    "url": "https://androidguys.com/reviews/phone-reviews/motorola-razr-fold/",
+    "date": "2026-05-15",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "The Motorola Razr Fold feels remarkably polished for a first-generation book-style foldable.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent first-gen foldable with practical design and battery life, but high price and support concerns temper praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "gsmarena",
+    "critic": "GSMArena Team",
+    "url": "https://www.gsmarena.com/motorola_razr_fold-review-2974p6.php",
+    "date": "2026-06-29",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "Overall, we wholeheartedly recommend putting the Motorola Razr Fold on your shortlists as it's one of the best phones out there.",
+    "note": "Page was blocked to direct download (HTTP 429); read via WebFetch.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended as one of the best, with minor caveats about video and not clearly beating rivals.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "toms-guide",
+    "critic": "John Velasco",
+    "url": "https://www.tomsguide.com/phones/google-pixel-phones/google-pixel-10a-review",
+    "date": "2026-03-04",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "However, it still manages a longer battery life, more AI features, and a new desktop mode that keeps it the champion of value phones for just $499.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Strong value and battery life, but too few hardware upgrades and little camera or performance progress.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "techradar",
+    "critic": "Jacob Krol",
+    "url": "https://www.techradar.com/phones/google-pixel-phones/google-pixel-10a-review",
+    "date": "2026-03-12",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "If you’re looking for a $499 Android phone that balances performance, AI features, and everyday usability, it remains one of the best options in its class.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value phone with excellent battery, display, and camera, but minimal upgrades and a few notable omissions.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "t3",
+    "critic": "Chris Hall",
+    "url": "https://www.t3.com/tech/phones/google-pixel-10a-review",
+    "date": "2026-03-12",
+    "rating": "5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "The new Pixel 10a remains one of the best in its class, with a smooth and clean Android software experience, a great camera, and excellent battery life.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent phone with standout software, camera, and battery, but minimal upgrades and cheaper predecessor temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "trusted-reviews",
+    "critic": "Lewis Painter",
+    "url": "https://www.trustedreviews.com/reviews/google-pixel-10a",
+    "date": "2026-03-04",
+    "rating": "4/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "While it’s definitely not worth the upgrade for current 9a users, it’s still a solid mid-range pick that keeps Google in the game for now.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Good all-round phone, but repetitive upgrades and frequent advice to buy the cheaper predecessor hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "amateur-photographer",
+    "critic": "Joshua Waller",
+    "url": "https://amateurphotographer.com/review/google-pixel-10a-review/",
+    "date": "2026-10-02",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The Google Pixel 10A is a good value option with a great set of features, but Google’s own phones offer strong competition – especially the 9A which is cheaper.",
+    "note": "Review published 2026-10-02, after a price cut.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Good photos and value, but dated hardware, weak zoom, no manual mode, and reviewer suggests older Pixels instead.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "pickr",
+    "critic": "Leigh Stark",
+    "url": "https://www.pickr.com.au/reviews/2026/google-pixel-10a/",
+    "date": "2026-03-04",
+    "rating": "4.3/5",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "While the 10a is a very boring device, it’s still an excellent device all the same.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Very good phone, but too similar to the cheaper predecessor to recommend without reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://www.pcmag.com/reviews/google-pixel-10a",
+    "date": "2026-03-13",
+    "rating": "4/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "With excellent cameras, a brighter screen, and strong AI features, the Pixel 10a remains one of the best values in midrange Android phones.",
+    "editorsChoice": true,
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong Editors' Choice praise and best-in-class value, with notable processor and battery reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "cnet",
+    "critic": "Mike Sorrentino",
+    "url": "https://www.cnet.com/tech/mobile/google-pixel-10a-review/",
+    "date": "2026-03-04",
+    "rating": "8.2/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "But unlike prior A-series Pixel phones, the Pixel 10A is missing a lot of the more signature features from the $799 Pixel 10.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 74
+    },
+    "scoreReason": "Good phone with useful switcher features, but too similar to last year and no longer an easy default pick.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "zdnet",
+    "critic": "Kerry Wan",
+    "url": "https://www.zdnet.com/article/google-pixel-10a-review/",
+    "date": "2026-03-04",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "That’s to say, the Google Pixel 10a continues the company’s streak of value-driven phones with smart and meaningful upgrades.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong midrange recommendation, but performance, storage value, and missing magnetic charging bring notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "expert-reviews",
+    "critic": "Ben Johnston",
+    "url": "https://www.expertreviews.co.uk/mobile-phones/google-pixel-10a-review",
+    "date": "2026-03-05",
+    "rating": "4/5",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "The bottom line is that it’s an exceedingly well-rounded phone that builds on the strengths of its predecessor, albeit in small ways.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 71
+    },
+    "scoreReason": "Excellent phone overall, but reviewer repeatedly calls it poor value and urges many buyers to wait for 9a discounts.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "wired",
+    "critic": "Julian Chokkattu",
+    "url": "https://www.wired.com/review/google-pixel-10a/",
+    "date": "2026-03-04",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "Even with minimal changes, the $499 Pixel 10a is a great pick for anyone hunting for a well-rounded smartphone while keeping price in mind.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended overall, but minor upgrades, okay battery, and sale-priced predecessor temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "android-police",
+    "critic": "Stephen Radochia",
+    "url": "https://www.androidpolice.com/google-pixel-10a-review/",
+    "date": "2026-03-15",
+    "rating": "9/10",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "It’s still the best phone you can buy new for $500, and it’s the device I’ll continue to recommend to casual users or people switching to Android for the first time.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 92
+    },
+    "scoreReason": "Strongly recommended as the best $500 phone, but limited upgrades and some charging concerns temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "pocket-lint",
+    "critic": "Craig Donaldson",
+    "url": "https://www.pocket-lint.com/google-pixel-10a-review/",
+    "date": "2026-03-04",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "If you're new to Google's Pixel lineup or have an older Android phone and are considering an upgrade, the Pixel 10a offers a compelling, well-rounded experience that's tough to beat at $500.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value with premium feel and battery life, but limited upgrades and a few notable omissions.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/Google-Pixel-10a-review-The-best-mid-range-smartphone-of-2026.1328484.0.html",
+    "date": "2026-06-25",
+    "rating": "85%",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "The Google Pixel 10a is a well-equipped mid-range smartphone.",
+    "note": "Score is Notebookcheck's overall rating, 85%.",
+    "scoreBand": [
+      80,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 84
+    },
+    "scoreReason": "Good, recommendable phone at discounted prices, but high MSRP, few upgrades, and several notable drawbacks temper praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "droid-life",
+    "critic": "Kellen",
+    "url": "https://www.droid-life.com/2026/03/04/google-pixel-10a-review-should-buy-it/",
+    "date": "2026-03-04",
+    "rating": null,
+    "scoreSource": "text",
+    "excerpt": "Recommending the Pixel 10a is pretty easy.",
+    "score": 79,
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Strong value with great battery, build, and software, but mediocre performance and few upgrades hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "9to5google",
+    "critic": "Will Sattelberg",
+    "url": "https://9to5google.com/2026/03/04/google-pixel-10a-review-better-than-youve-heard/",
+    "date": "2026-03-04",
+    "rating": null,
+    "scoreSource": "text",
+    "excerpt": "So despite how cynical this phone feels, despite a near-complete lack of improvements, can I still stand up and recommend the Pixel 10a? Of course I can.",
+    "score": 83,
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 84
+    },
+    "scoreReason": "Strongly recommended as a well-rounded midrange phone, despite minimal upgrades, blandness, and some hardware compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "thurrott",
+    "critic": "Paul Thurrott",
+    "url": "https://www.thurrott.com/mobile/android/google-pixel/334179/google-pixel-10a-review",
+    "date": "2026-03-25",
+    "rating": null,
+    "scoreSource": "text",
+    "excerpt": "The Pixel 10a is an incredible value. It’s a delightful smartphone with an affordable price and all the useful Pixel features that fans expect.",
+    "score": 87,
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Highly recommended affordable phone with great camera and software, but notable charging and future-proofing compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "toms-hardware",
+    "critic": "Brandon Hill",
+    "url": "https://www.tomshardware.com/laptops/gaming-laptops/razer-blade-16-2026-review",
+    "date": "2026-07-14",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Razer Blade 16 can hang with its peers in gaming performance, blows them away in battery life, but comes up short in multi-threaded productivity tasks.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Strong gaming laptop with standout battery life and design, but loud fans, weak multi-core performance, and very high price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/gaming-laptops/razer-blade-16-2026-review",
+    "date": "2026-05-09",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The Razer Blade 16 (2026) is a serious gaming powerhouse thanks to its beefy specs.",
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Superb performance and design earn strong praise; only high price, heat, and noise hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/razer-blade-16-2026-review-a-gaming-laptop-you-can-actually-call-portable-2000783170",
+    "date": "2026-07-09",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "Razer has fine-tuned its 16-inch Blade laptop, and now it offers great performance and a surprisingly solid battery life.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 82
+    },
+    "scoreReason": "Excellent portable gaming performance and battery life, but exorbitant price and some usability flaws hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "pc-gamer",
+    "critic": "Andy Edser",
+    "url": "https://www.pcgamer.com/hardware/gaming-laptops/razer-blade-16-2026-review/",
+    "date": "2026-08-03",
+    "rating": "86%",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Razer Blade 16 is still the most desirable gaming laptop money can buy.",
+    "scoreBand": [
+      81,
+      91
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 86
+    },
+    "scoreReason": "Excellent design, display, and portability, but steep pricing and weaker value clearly temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "techradar",
+    "critic": "Zak Storey",
+    "url": "https://www.techradar.com/computing/gaming-laptops/razer-blade-16-2026",
+    "date": "2026-09-30",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Its crisp OLED display and outstanding aesthetics back are particular highlights, and it's honestly only let down by an extraordinary price tag, and the lack of an Ethernet port.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Superb performance, display, and design, but extreme price and small omissions temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "itpro",
+    "critic": "Alun Taylor",
+    "url": "https://www.itpro.com/hardware/laptops/is-the-razer-blade16-the-best-laptop-in-the-world",
+    "date": "2026-07-29",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "The much-improved battery life, brighter display and transition to Thunderbolt 5 are all very welcome updates.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly praised for design, performance, display, and battery, with only minor webcam, touch, and price complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "cgmagonline",
+    "critic": "Matt Keith",
+    "url": "https://www.cgmagonline.com/review/hardware/razer-blade-16-2026-laptop",
+    "date": "2026-09-09",
+    "rating": "9/10",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "With excellent performance and form factor, the Razer Blade 16 2026 is the perfect blend of performance and portability.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise throughout, minor fan noise and battery-condition caveats, calls it favorite high-end gaming laptop.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "notebookcheck",
+    "critic": "Alexander Wätzel",
+    "url": "https://www.notebookcheck.net/Can-a-0-7-Inch-Laptop-Cool-a-160W-RTX-5090-Razer-Blade-16-2026-Put-to-the-Test.1368575.0.html",
+    "date": "2026-08-14",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "The 2026 Razer Blade 16 excels as a portable desktop replacement, though minor software quirks and a steep price tag slightly spoil the experience.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Highly refined thin gaming laptop with strong performance, but daily-driver issues and very high pricing temper praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "trusted-reviews",
+    "critic": "Reece Bithrey",
+    "url": "https://www.trustedreviews.com/reviews/asus-zenbook-a14-2026",
+    "date": "2026-04-07",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "The Asus Zenbook A14 (2026) is a beefy and super light Windows laptop that impresses with its potent internals from a new chip, immense endurance and a stylish look.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent performance, battery and portability, but price and merely okay screen limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "techradar",
+    "critic": "Lewis Maddison",
+    "url": "https://www.techradar.com/computing/laptops/asus-zenbook-a14-ux3407na-review",
+    "date": "2026-04-25",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "if you prize portability, you're unlikely to find a better 14-inch laptop for your needs.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent portability, battery, and overall performance, but high price and merely good display limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "toms-guide",
+    "critic": "Jason England",
+    "url": "https://www.tomsguide.com/computing/laptops/asus-zenbook-a14-a16-2026-review",
+    "date": "2026-04-07",
+    "rating": "3.5/5",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "The Asus Zenbook A14 and A16 are strong ultraportables with nice designs, stellar ergonomics and tasty OLED panels.",
+    "note": "Joint review of the Zenbook A14 and A16; the outlet's score is published for both. Page currently shows 3.5/5 after a US price increase.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 71
+    },
+    "scoreReason": "Strong design and performance, but price hikes and A16 battery issues heavily dampen the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "notebookcheck",
+    "critic": "Andreas Osthoff",
+    "url": "https://www.notebookcheck.net/Asus-Zenbook-A14-Laptop-Review-Snapdragon-X2-Elite-against-the-MacBook-Air-M5.1261944.0.html",
+    "date": "2026-04-07",
+    "rating": "88%",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "Zenbook A14 with Snapdragon X2 Elite is impressive, especially at $1149.",
+    "scoreBand": [
+      83,
+      93
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent performance, efficiency, portability, and value, but ARM app compatibility and loud performance mode temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "windows-central",
+    "critic": "Ben Wilson",
+    "url": "https://www.windowscentral.com/hardware/asus/asus-zenbook-a14-2026-review",
+    "date": "2026-07-05",
+    "rating": "4.5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "upgrading to the Snapdragon X2 Elite gave it a massive CPU performance bump, and Wi-Fi 7 is a nice upgrade if you own compatible hardware.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent lightweight laptop with strong performance and battery, but price and nearby Asus alternatives temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "ultrabookreview",
+    "critic": "Andrei Girbea",
+    "url": "https://www.ultrabookreview.com/75029-asus-zenbook-a14-x2elite-review/",
+    "date": "2026-04-27",
+    "rating": "4.25/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "It's a solid performer when needed, especially on the CPU side, and it can run quietly, cooly and efficiently when that's required instead.",
+    "note": "Page last updated 2026-08-21; original publish date used.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Strong complaints about price and support overshadow positives; recommendation feels cautious and limited.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "digital-trends",
+    "critic": "Vikhyaat Vivek",
+    "url": "https://www.digitaltrends.com/computing/asus-zenbook-a14-review/",
+    "date": "2026-08-24",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "A 60Hz FHD+ panel is the main thing keeping the A14 from becoming the ultraportable I would immediately switch to.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for portability, battery, and performance, but display and fixed RAM are notable drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "macsources",
+    "critic": "Maria Calderone",
+    "url": "https://macsources.com/asus-zenbook-a14-laptop-review/",
+    "date": "2026-08-04",
+    "rating": "9.3/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The ASUS Zenbook A14 delivers an impressive balance of portability, comfort, and performance.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise for display, keyboard, audio, and responsiveness, with only minor setup and materials caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "wccftech",
+    "critic": "Hassan Mujtaba",
+    "url": "https://wccftech.com/review/asus-zenbook-a14-snapdragon-x2-elite-extreme-laptop-review-shockingly-light-weight-fast-cpu/",
+    "date": "2026-06-10",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "This is one of the lightest 14\" laptops I have ever used.",
+    "note": "Unit reviewed has the Snapdragon X2 Elite Extreme chip; no numeric score published.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Very fast CPU, great battery and design, but GPU and some premium features lag behind.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "noobfeed",
+    "critic": "Tanvir Kabbo",
+    "url": "https://www.noobfeed.com/hardware/asus-zenbook-a14-review-snapdragon-x2-elite",
+    "date": "2026-04-09",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "The Zenbook A14 now offers a very light yet powerful computing experience.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 85
+    },
+    "scoreReason": "Very light with strong performance and battery, but noisy under load and display remains merely fine.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "engadget",
+    "critic": "Sam Rutherford",
+    "url": "https://www.engadget.com/mobile/smartphones/google-pixel-10-pro-fold-review-the-tankiest-foldable-170051471.html",
+    "date": "2025-10-08",
+    "rating": "88/100",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The addition of proper dust and water resistance on the Pixel 10 Pro Fold has removed one of the last two shortcomings of modern foldables, which is no mean feat.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 82
+    },
+    "scoreReason": "Strongly praised for cameras, durability, battery and software, but bulk, price and weaker performance limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "wired",
+    "critic": "Julian Chokkattu",
+    "url": "https://www.wired.com/review/google-pixel-10-pro-fold/",
+    "date": "2025-10-08",
+    "rating": "7/10",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "The Pixel 10 Pro Fold still doesn't quite feel like a “pro” smartphone, but that doesn’t make it any less fun to use.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Good foldable with useful Qi2 magnets, but pricey and missing too many pro features to strongly recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://www.pcmag.com/reviews/google-pixel-10-pro-fold",
+    "date": "2025-10-08",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Google Pixel 10 Pro Fold is a solid, though incremental, upgrade with brighter screens, improved durability, top-tier cameras, a new Tensor G5 chip, and advanced AI features.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong cameras, battery, and AI, but bulky design and weaker multitasking limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "toms-guide",
+    "critic": "Mark Spoonauer",
+    "url": "https://www.tomsguide.com/phones/google-pixel-phones/pixel-10-pro-fold-review",
+    "date": "2025-10-08",
+    "rating": "3.5/5",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "The Google Pixel 10 Pro Fold is a versatile foldable phone with impressively vibrant displays, a durable design and better battery life than the Samsung Galaxy Z Fold 7 for $200 less.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 74
+    },
+    "scoreReason": "Strong screen, battery and value, but bulky design and flawed AI make recommendation cautious.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "techradar",
+    "critic": "Philip Berne",
+    "url": "https://www.techradar.com/phones/google-pixel-phones/google-pixel-10-pro-fold-review",
+    "date": "2025-10-08",
+    "rating": "3.5/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "The Pixel 10 Pro Fold gets by on great looks, charming software personality, and a more durable build than any other foldable on the market.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 72
+    },
+    "scoreReason": "Great software and design, but price, weak cameras, bugs, and limited foldable features hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "gizmodo",
+    "critic": "Raymond Wong",
+    "url": "https://gizmodo.com/google-pixel-10-pro-fold-review-not-enough-when-samsung-galaxy-z-fold-7-exists-2000669716",
+    "date": "2025-10-08",
+    "rating": "3/5",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "The Pixel 10 Pro Fold is not a bad foldable.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 54,
+      "gemini": 52
+    },
+    "scoreReason": "Some refinements and battery gains, but repeated advice to get another foldable unless you really want Google AI.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "mashable",
+    "critic": "Alex Perry",
+    "url": "https://mashable.com/review/google-pixel-10-pro-fold",
+    "date": "2025-10-08",
+    "rating": "4/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "Google chose the wrong year to focus on incremental upgrades for its flagship foldable.",
+    "note": "Mashable's overall score is shown as 4 on its 5-point scale.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 71
+    },
+    "scoreReason": "Good battery, displays, performance, and cameras, but stale upgrades and awkward thicker design limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "trusted-reviews",
+    "critic": "Cam Bunton",
+    "url": "https://www.trustedreviews.com/reviews/google-pixel-10-pro-fold",
+    "date": "2025-10-08",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "But if you want a practical, reliable device that will survive the test of time, there’s an argument to be made that it’s the best of its kind on the market.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for durability, displays and software, but weight, mediocre cameras and value concerns hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "tech-advisor",
+    "critic": "Luke Baker",
+    "url": "https://www.techadvisor.com/article/2930018/google-pixel-10-pro-fold-review.html",
+    "date": "2025-10-08",
+    "rating": "4/5",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "It’s a good phone overall, but compared to the competition, especially the Galaxy Z Fold 7, the Pixel just feels a little outdated.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 73,
+      "gemini": 72
+    },
+    "scoreReason": "Good features and software, but outdated design, weak cameras, and reviewer would choose another foldable.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "t3",
+    "critic": "Mike Lowe",
+    "url": "https://www.t3.com/tech/phones/google-pixel-10-pro-fold-review",
+    "date": "2025-10-08",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "While I'm impressed with the Google Pixel 10 Pro Fold's overall offering, as its nips and tucks bring marginal gains over its predecessor, the key folding phone competitors have really put their foot on the gas during this past year.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 73
+    },
+    "scoreReason": "Strong foldable with useful strengths, but iterative updates and outdated cameras bring notable reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "android-police",
+    "critic": "Stephen Radochia",
+    "url": "https://www.androidpolice.com/google-pixel-10-pro-fold-review/",
+    "date": "2025-10-12",
+    "rating": "8.5/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "It’s not perfect, and it’s not the sexiest folding phone on the market, but it’ll stay in my pocket.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 85
+    },
+    "scoreReason": "Strong recommendation with notable weight, charging, and gaming caveats, but excellent battery, durability, and software win.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "expert-reviews",
+    "critic": "Ben Johnston",
+    "url": "https://www.expertreviews.co.uk/technology/phones/google-pixel-10-pro-fold-review",
+    "date": "2025-10-14",
+    "rating": "3/5",
+    "score": 52,
+    "scoreSource": "rating",
+    "excerpt": "So, while the Google Pixel 10 Pro Fold is broadly competent and noteworthy for its technical advancements, I can’t recommend it over either of the other options.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 51
+    },
+    "scoreReason": "Good durability and screens, but heavy design and weak battery make the reviewer tell most buyers to wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "phonearena",
+    "critic": "Peter Kostadinov",
+    "url": "https://www.phonearena.com/reviews/google-pixel-10-pro-fold-review_id7731",
+    "date": "2025-10-21",
+    "rating": "6.8/10",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "The Pixel 10 Pro Fold is a mixed bag. On paper and in real life, it's barely an improvement over the Pixel 9 Pro Fold.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 54,
+      "gemini": 52
+    },
+    "scoreReason": "Minor improvements and clear disappointment make it hard to recommend beyond cautious interest.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "android-central",
+    "critic": "Andrew Myrick",
+    "url": "https://www.androidcentral.com/phones/google-pixel/google-pixel-10-pro-fold-review",
+    "date": "2025-10-27",
+    "rating": "3.5/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "Google kept things simple with the Pixel 10 Pro Fold, introducing only minor aesthetic changes to a design that was already pretty premium.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 73
+    },
+    "scoreReason": "Good durability and battery, but bland upgrades, weak gaming, limited multitasking, and camera compromises hurt recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "techradar",
+    "critic": "Tom Bedford",
+    "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-a57-review",
+    "date": "2026-04-23",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy A57 has a good-looking display, a relatively slender body, and software that's clean and easy to use.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong screen, software, and battery, but poor value, weak cameras, and limited gaming hurt enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "toms-guide",
+    "critic": "Tom Pritchard",
+    "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-a57-review",
+    "date": "2026-04-18",
+    "rating": "4/5",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy A57 is a solid device and a worthy purchase for anyone seeking the Galaxy experience on a budget.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 73
+    },
+    "scoreReason": "Good battery, design, and software, but price hike, weak performance, and mixed cameras limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "trusted-reviews",
+    "critic": "Cam Bunton",
+    "url": "https://www.trustedreviews.com/reviews/samsung-galaxy-a57-5g",
+    "date": "2026-04-21",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy A57 5G nails the basics with a slim, premium-feeling design, a bright 6.7-inch AMOLED display and dependable all-round performance for everyday use.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong screen and design, but camera, battery, fingerprint sensor and storage pricing hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "tech-advisor",
+    "critic": "Jon Mundy",
+    "url": "https://www.techadvisor.com/article/3117374/samsung-galaxy-a57-review.html",
+    "date": "2026-04-21",
+    "rating": "3.5/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "We’re not thrilled with Samsung bumping up the price, given the relative lack of advancement and the existence of better-performing or more exciting rivals for less money.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 73
+    },
+    "scoreReason": "Pleasant, refined Samsung choice, but stale cameras and higher price bring strong reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "t3",
+    "critic": "Andrew Williams",
+    "url": "https://www.t3.com/tech/phones/samsung-galaxy-a57-review",
+    "date": "2026-04-22",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "I’ve enjoyed using the Galaxy A57 more than some of its more value-packed rivals because of that extra attention to the basics I notice every day.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Stylish and solid with good basics, but weak value, middling performance, and battery compromises temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "android-police",
+    "critic": "Andy Boxall",
+    "url": "https://www.androidpolice.com/samsung-galaxy-a57-review/",
+    "date": "2026-05-16",
+    "rating": "8.5/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "Yes, the Samsung Galaxy A57 is a great buy.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 85
+    },
+    "scoreReason": "Strong recommendation with notable performance and feature cutbacks, plus advice to check S25 FE deals first.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "expert-reviews",
+    "critic": "Ben Johnston",
+    "url": "https://www.expertreviews.co.uk/technology/phones/samsung-galaxy-a57-review",
+    "date": "2026-04-21",
+    "rating": "4/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "If you’re brand-agnostic, however, the Google Pixel 10a is better value overall.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Good design, battery and support, but weak cameras and better-value alternatives limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "gsmarena",
+    "critic": "GSMArena Team",
+    "url": "https://www.gsmarena.com/samsung_galaxy_a57-review-2950p6.php",
+    "date": "2026-04-08",
+    "rating": "4/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "The A57 is a good phone, all things considered, but not at that price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Balanced and polished with good cameras and battery, but strongly undercut by poor pricing and better alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/Samsung-Galaxy-A57-5G-Review-The-new-mid-range-favorite.1340192.0.html",
+    "date": "2026-07-12",
+    "rating": "82%",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy A57 5G is a thoroughly successful update to the A Series, but it remains surprisingly conservative compared to its predecessor.",
+    "scoreBand": [
+      77,
+      87
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 77
+    },
+    "scoreReason": "Well-built and reliable, but weak battery life and high price bring significant reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "android-headlines",
+    "critic": "Justin Diaz",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-a57-review",
+    "date": "2026-10-08",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "So for $549.99, I think yes, this is a phone you should definitely buy if you’re looking for something mid-range.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Reviewer strongly recommends buying it as a mid-range phone, indicating a very positive verdict.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "gadgetguy",
+    "critic": "Chris Button",
+    "url": "https://www.gadgetguy.com.au/samsung-galaxy-a57-review/",
+    "date": "2026-04-22",
+    "rating": "8.1/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "A Samsung Galaxy A57 is a good all-rounder Android phone in a more comfortable form factor that should last a good number of years.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 81
+    },
+    "scoreReason": "Positive all-round recommendation with durability praise, but wording is measured rather than highly enthusiastic.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "the-mobile-indian",
+    "critic": "Sandeep Budki",
+    "url": "https://themobileindian.com/reviews/samsung-galaxy-a57-5g-review-more-premium-more-polished-but-is-it-worth-the-price",
+    "date": "2026-05-11",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "For users who value reliability and ecosystem experience over benchmark scores, the Galaxy A57 makes a decent case.",
+    "note": "Page shows sub-scores (Design 9, Battery 8, Camera 8, Performance 8) but no overall score.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Refined, reliable phone with strong display, cameras and software, but overpriced with notable hardware compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "uswitch",
+    "critic": "Ernest Doku",
+    "url": "https://www.uswitch.com/mobiles/reviews/samsung-galaxy-a57/",
+    "date": "2026-04-19",
+    "rating": null,
+    "score": 81,
+    "scoreSource": "text",
+    "excerpt": "It offers a gorgeous Super AMOLED+ display, dependable battery life, and a highly capable main camera, all wrapped in a premium, ultra-slim design that makes a noticeable leap over the A56.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Very positive on design, display, support and camera, with minor performance and feature compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "engadget",
+    "critic": "Sam Rutherford",
+    "url": "https://www.engadget.com/computing/laptops/dell-xps-16-2026-review-return-of-the-king-130000906.html",
+    "date": "2026-03-17",
+    "rating": "86/100",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "The XPS 16 has nearly everything you want from a premium 16-inch productivity laptop and it's a worthy flagbearer for one of the most iconic notebook lines of all time.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended overall, with keyboard issues and high price as the main caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/laptops/dell-xps-16-2026-review",
+    "date": "2026-04-12",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "it’s still an overall phenomenal Windows laptop and a welcome return of the iconic brand.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise throughout, highly recommended overall, with only minor complaints about ports and slightly smaller screen.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "toms-hardware",
+    "critic": "Charles Jefferies",
+    "url": "https://www.tomshardware.com/laptops/ultrabooks-ultraportables/dell-xps-16-2026-review-da16260",
+    "date": "2026-05-06",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "If you can afford the asking price, this iconic laptop is a rewarding experience.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for design, display, battery, and performance, with notable concerns about price and limited ports.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "pcworld",
+    "critic": "Mark Knapp",
+    "url": "https://www.pcworld.com/article/3110951/dell-xps-16-2026-review.html",
+    "date": "2026-04-13",
+    "rating": "3/5",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "It’s a great-looking machine with some solid hardware, but other devices are much more practical, pleasant to use, and (often) more affordable.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 54,
+      "gemini": 52
+    },
+    "scoreReason": "Beautiful screen, audio, and battery, but awkward input, limited ports, high price, and mediocre performance hurt appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "gizmodo",
+    "critic": "Rami Tabari",
+    "url": "https://gizmodo.com/dell-xps-16-2026-review-almost-everything-i-could-have-asked-for-almost-2000757696",
+    "date": "2026-05-13",
+    "rating": "4/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "Don’t get me wrong, the XPS 16 offers some great features, from its design and display to its performance and battery life.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent screen, battery, and design, but keyboard flaws and high price make the recommendation cautious.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "makeuseof",
+    "critic": "Brady Snyder",
+    "url": "https://www.makeuseof.com/dell-xps-16-review/",
+    "date": "2026-07-16",
+    "rating": "8/10",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "Dell's premium 16-inch laptop still looks futuristic, but it's finally in a good way.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for design, display, and portability, with notable caveats on ports, keyboard, battery, and no GPU.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "notebookcheck",
+    "critic": "Allen Ngo",
+    "url": "https://www.notebookcheck.net/Dell-XPS-16-review-Two-steps-forward-one-step-back.1251724.0.html",
+    "date": "2026-03-20",
+    "rating": "84%",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "The 2026 XPS 16 sacrifices discrete GPU options for a leaner, lighter, quieter, longer-lasting and more efficient design.",
+    "note": "Tested the base Core Ultra 5 325 configuration with the 2K IPS display.",
+    "scoreBand": [
+      79,
+      89
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 84
+    },
+    "scoreReason": "Better design, battery life, and efficiency, but weak graphics, limited upgrades, and some usability compromises hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "techradar",
+    "critic": "Zak Storey",
+    "url": "https://www.techradar.com/computing/windows-laptops/dell-xps-16-2026",
+    "date": "2026-05-22",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "With outstanding battery life, a beautiful, crisp OLED display, an internal spec sheet that ticks nearly every box, and a design that takes your breath away, it's almost perfect.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 99
+    },
+    "scoreReason": "Extremely enthusiastic overall, with only minor complaints about ports, fingerprints, price, and storage.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "hothardware",
+    "critic": "Zak Killian",
+    "url": "https://hothardware.com/reviews/new-dell-xps-16-da16260-review",
+    "date": "2026-05-12",
+    "rating": "4.75/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "Dell’s XPS 16 (DA16260) for 2026 delivers the same impressive Panther Lake performance, class-leading efficiency, and clean, premium design as the 14\" model we previously reviewed.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise for performance, efficiency, and design, with no meaningful reservations in the excerpt.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "xda-developers",
+    "critic": "Joe Rice-Jones",
+    "url": "https://www.xda-developers.com/dell-xps-16-2026-review/",
+    "date": "2026-04-11",
+    "rating": "8.5/10",
+    "score": 90,
+    "scoreSource": "rating",
+    "excerpt": "The 3.2K tandem OLED screen is a joy to look at, the touchpad is there when you need it and not when you don't, and the keyboard might not be everyone's cup of tea, but that's okay.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 90
+    },
+    "scoreReason": "Strongly enthusiastic verdict with minimal caveats and a direct buy recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "techaeris",
+    "critic": "Alex Hernandez",
+    "url": "https://techaeris.com/2026/04/26/2026-dell-xps-16-review/",
+    "date": "2026-04-26",
+    "rating": "9.6/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The 2026 Dell XPS 16 is absolutely the best Windows ultrabook with svelte looks and big muscles to go head-to-head with the MacBook Pro.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Extremely enthusiastic best-in-class praise, with only minor complaints about price, ports, and some display tradeoffs.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "engadget",
+    "critic": "Nathan Ingraham",
+    "url": "https://www.engadget.com/mobile/tablets/ipad-air-m4-review-still-apples-best-overall-tablet-with-a-few-caveats-130000409.html",
+    "date": "2026-03-09",
+    "rating": "86/100",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The iPad Air isn't an exciting gadget at this point, but I still think it's the best iPad for most people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for most buyers, but enthusiasm is tempered by the outdated display and limited upgrades.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "zdnet",
+    "critic": "Maria Diaz",
+    "url": "https://www.zdnet.com/article/ipad-air-m4-review/",
+    "date": "2026-03-09",
+    "rating": "4/5",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "However, the iPad Air is the tablet I'd recommend for anyone willing to spend around $600, as it delivers the best performance value among mainstream tablets.",
+    "note": "Joint review of 11-inch and 13-inch models.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 89
+    },
+    "scoreReason": "Strongly recommended for $600 buyers, with only moderate caveats about who actually needs it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "mashable",
+    "critic": "Timothy Beck Werth",
+    "url": "https://mashable.com/review/ipad-air-m4-review-apple",
+    "date": "2026-03-09",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "It's hard to imagine a thinner or lighter tablet, and I think the 11- and 13-inch sizes are just right for most users.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent performance and design, but upgrades are minor and many users should choose cheaper options.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "toms-guide",
+    "critic": "Mike Prospero",
+    "url": "https://www.tomsguide.com/computing/ipads/apple-ipad-air-m4-review-small-tweaks-to-the-gold-standard",
+    "date": "2026-03-09",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The iPad Air M4 retains all of what we loved about the M3 iPad Air, but now has a speedier processor and Wi-Fi 7 — all while maintaining its same price.",
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended as the best tablet for most people, with familiar design and value caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "techradar",
+    "critic": "Jacob Krol",
+    "url": "https://www.techradar.com/tablets/ipad/embargoed-i-tested-the-ipad-air-with-m4-and-apple-just-stretched-the-value-of-the-air-even-further",
+    "date": "2026-03-09",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The iPad Air with M4 isn't a reinvention of the tablet, but it meaningfully improves what was already one of Apple’s best devices.",
+    "note": "Review is headlined and tested on the 13-inch iPad Air; the outlet's score is published for the 13-inch model.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for most buyers, with minor complaints about 60Hz screen and accessory costs.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "trusted-reviews",
+    "critic": "Max Parker",
+    "url": "https://www.trustedreviews.com/reviews/apple-ipad-air-m4",
+    "date": "2026-03-09",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Even though this is another minor spec-based upgrade for Apple’s mid-range tablet, the iPad Air M4 is still impressive.",
+    "note": "Joint review of 11-inch and 13-inch models.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for most people, but limited upgrade and dated 60Hz display hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/m4-ipad-air-review-the-better-ipad-is-now-really-that-good-2000730880",
+    "date": "2026-03-09",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "In 2026, it’s the best tablet just short of the iPad Pro.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for performance and usability, but expensive accessories, OS limits, and weak battery temper it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "tech-advisor",
+    "critic": "Britta O’Boyle",
+    "url": "https://www.techadvisor.com/article/3082064/apple-ipad-air-m4-review.html",
+    "date": "2026-03-09",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The design and display haven’t changed from the iPad Air (M3), and some long-standing omissions remain, but that doesn’t stop this from being the most compelling iPad Air yet.",
+    "note": "Joint review of 11-inch and 13-inch models.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise and best-in-range verdict, but notable complaints about display, Face ID, and charging.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "pocket-lint",
+    "critic": "Craig Donaldson",
+    "url": "https://www.pocket-lint.com/ipad-air-m4-review/",
+    "date": "2026-04-02",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "It's superfast, the display is gorgeous, and it keeps that thin, lightweight design that makes it so easy to carry around and slide into your backpack.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for older iPad owners, with notable complaints about no Face ID and 60Hz display.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "notebookcheck",
+    "critic": "Florian Schmitt",
+    "url": "https://www.notebookcheck.net/Apple-iPad-Air-11-2026-review-A-slim-tablet-with-Apple-M4-power.1270301.0.html",
+    "date": "2026-04-12",
+    "rating": "88%",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "While its new processor takes the tablet to new performance heights, and Apple has even lowered the price of its more expensive models by a few dollars, the rest of the device's changes are minor",
+    "scoreBand": [
+      83,
+      93
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Very capable and fairly priced, but mostly a minor update with display, battery, and iPadOS limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "t3",
+    "critic": "Mat Gallagher",
+    "url": "https://www.t3.com/tech/tablets/apple-ipad-air-m4-review-pro-performance-at-an-amateur-price",
+    "date": "2026-04-18",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "Still the best tablet option for most users, the iPad Air combines a hugely powerful chip and a great-looking screen – and does it for a very affordable price.",
+    "note": "Joint review of 11-inch and 13-inch models; the outlet's score is published for the 13-inch model.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended as the best iPad for most people, with only minor feature and value caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "cult-of-mac",
+    "critic": "David Snow",
+    "url": "https://www.cultofmac.com/reviews/m4-ipad-air-review",
+    "date": "2026-03-12",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "Ultimately, 13-inch iPad Air M4 is the most capable mid-range tablet Apple has ever made.",
+    "note": "Joint review of 11-inch and 13-inch models; the outlet's score is published for the 13-inch model.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 83
+    },
+    "scoreReason": "Strong praise for screen and performance, but upgrade value and Pencil compromises bring notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "dadnology",
+    "critic": "Patrick W.",
+    "url": "https://dadnology.com/tech-gadgets/apple-ipad-air-m4-review",
+    "date": "2026-07-09",
+    "rating": "5/5",
+    "score": 99,
+    "scoreSource": "rating",
+    "excerpt": "The iPad Air earns it by being the obvious right answer, every single day, without a single complaint.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 100
+    },
+    "scoreReason": "Overwhelming praise, daily-use enthusiasm, and almost no real complaints beyond storage advice.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "windows-central",
+    "critic": "Zac Bowden",
+    "url": "https://www.windowscentral.com/hardware/laptops/hp-omnibook-ultra-14-2026-snapdragon-x2-review",
+    "date": "2026-06-17",
+    "rating": "5/5",
+    "score": 100,
+    "scoreSource": "rating",
+    "excerpt": "Overall, I think the HP OmniBook Ultra is my new favorite Windows 11 PC in 2026 so far.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 99,
+      "gemini": 100
+    },
+    "scoreReason": "Overwhelming praise, calls it a favorite Windows laptop, with only minor nitpicks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "techaeris",
+    "critic": "Alex Hernandez",
+    "url": "https://techaeris.com/2026/07/07/hp-omnibook-ultra-14-review/",
+    "date": "2026-07-07",
+    "rating": "9.4/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The HP OmniBook Ultra 14 with Snapdragon X2 Elite is a lot of power wrapped in a beautiful chassis.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 96
+    },
+    "scoreReason": "Highly enthusiastic praise for design, performance, display, and battery, with compatibility, gaming, and price caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "toms-hardware",
+    "critic": "Brandon Hill",
+    "url": "https://www.tomshardware.com/laptops/hp-omnibook-ultra-14-snapdragon-x2-elite-2026-review",
+    "date": "2026-07-03",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "HP has built a solid foundation with the OmniBook Ultra and the Snapdragon X2 Elite SoC.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent performance and battery life, but high price, mediocre webcam, and missing Thunderbolt temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "toms-guide",
+    "critic": "Madeline Ricchiuto",
+    "url": "https://www.tomsguide.com/computing/laptops/hp-omnibook-ultra-14-2026-review",
+    "date": "2026-08-02",
+    "rating": "3.5/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "As far as premium laptops go, the OmniBook Ultra 14 does most things right.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Strong performance and premium design, but high price, weak ports, and ARM app compatibility issues hurt recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "thurrott",
+    "critic": "Paul Thurrott",
+    "url": "https://www.thurrott.com/mobile/copilot-pc/340107/hp-omnibook-ultra-14-snapdragon-x2-review",
+    "date": "2026-08-05",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "Aside from the sky-high pricing that's not HP's fault, the OmniBook Ultra 14 is a nearly flawless premium thin-and-light laptop that's ideal for productivity, developer, and creator workloads.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Nearly flawless laptop with superb battery, performance, design, and keyboard; main knocks are price and preinstalled junk.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "itpro",
+    "critic": "Alun Taylor",
+    "url": "https://itpro.com/hardware/laptops/all-hail-the-hp-omnibook-ultra-14-the-battery-life-king-of-compact-laptops",
+    "date": "2026-09-28",
+    "rating": "5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "As a versatile and capable daily driver, HP's cheapest Snapdragon X2-powered compact OmniBook Ultra takes some beating",
+    "note": "Reviewed the Snapdragon X2 Plus configuration; the outlet's score applies to the Snapdragon X2 model family. UK-oriented review.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong all-round recommendation with standout battery life, tempered mainly by a dim reflective screen outdoors.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "digital-trends",
+    "critic": "Vikhyaat Vivek",
+    "url": "https://www.digitaltrends.com/computing/hp-omnibook-ultra-14-snapdrgon-x2-plus-review/",
+    "date": "2026-10-04",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "A premium Windows laptop that gets the basics right, and looks good doing it.",
+    "note": "Reviewed the Snapdragon X2 Plus configuration; the outlet's score applies to the Snapdragon X2 model family.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Positive but restrained verdict praising design and fundamentals, without strong enthusiasm or standout claims.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "the-verge",
+    "critic": "Antonio G. Di Benedetto",
+    "url": "https://www.theverge.com/tech/891741/apple-macbook-neo-a18-pro-review",
+    "date": "2026-03-10",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The MacBook Neo zips through the light workloads it’s designed for.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise as the default budget laptop, with notable but clearly accepted compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "wired",
+    "critic": "Luke Larsen",
+    "url": "https://www.wired.com/review/apple-macbook-neo/",
+    "date": "2026-03-10",
+    "rating": "7/10",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "For the most part, Apple cut corners in the right places and made a MacBook its intended buyers will adore.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Strong budget pick with notable compromises in ports, RAM, and convenience features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "cnet",
+    "critic": "Matt Elliott",
+    "url": "https://www.cnet.com/tech/computing/apple-macbook-neo-review/",
+    "date": "2026-10-21",
+    "rating": "8.3/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "Even at its higher price, the MacBook Neo will still be the first new, non-hand-me-down MacBook for many.",
+    "note": "Updated review scored at the $699 price Apple moved to in June 2026.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 89
+    },
+    "scoreReason": "Strong value and design praise, but missing Touch ID and weaker battery and performance limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "engadget",
+    "critic": "Devindra Hardawar",
+    "url": "https://www.engadget.com/computing/laptops/macbook-neo-review-apple-puts-every-600-windows-pc-to-shame-130000878.html",
+    "date": "2026-03-10",
+    "rating": "90/100",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "It's so good, I think it'll make many people wonder why they've stuck with sub-par PCs for so long.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise and best-in-class value, with notable but audience-specific limits on RAM, storage, and gaming.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "zdnet",
+    "critic": "Kyle Kucharski",
+    "url": "https://www.zdnet.com/article/apple-macbook-neo-review/",
+    "date": "2026-03-10",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "Ultimately, the Neo is worth it only if you’re committed to using it for what it’s designed for: everyday tasks, internet browsing, media, and iPhone integrations.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Good value and battery life, but limited storage, basic performance, and durability concerns temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "pcmag",
+    "critic": "Joe Osborne",
+    "url": "https://www.pcmag.com/reviews/apple-macbook-neo",
+    "date": "2026-06-25",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "Apple's MacBook Neo rewrites the budget laptop playbook, with a higher-end build, a more advanced screen, longer battery life, and faster speeds than many laptops in its price range.",
+    "editorsChoice": true,
+    "note": "Page dated 2026-06-25 and lists the $699 price.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended for value, build, screen, and performance, with notable port and feature compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "toms-guide",
+    "critic": "Mark Spoonauer",
+    "url": "https://www.tomsguide.com/computing/macbooks/apple-macbook-neo-review",
+    "date": "2026-03-10",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "But overall no other laptop comes close to the Neo in terms of bang for your buck.",
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 98
+    },
+    "scoreReason": "Exceptional value and strong praise, with only manageable compromises for most buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "toms-hardware",
+    "critic": "Andrew E. Freedman",
+    "url": "https://www.tomshardware.com/laptops/macbooks/apple-macbook-neo-a18-pro-review",
+    "date": "2026-03-10",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The MacBook Neo is a spectacular budget laptop that should shock the PC industry.",
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for value and design, with notable but limited complaints about ports and keyboard backlight.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "macworld",
+    "critic": "Roman Loyola",
+    "url": "https://www.macworld.com/article/3081612/macbook-neo-a18-pro-review.html",
+    "date": "2026-03-10",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "It might cost a fraction of what Apple charges for the MacBook Pro, but it’s not a letdown; it’s a delight.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended as an excellent value, with notable but acceptable compromises for its budget role.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/laptops/apple-macbook-neo-review",
+    "date": "2026-03-18",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "It’s a no-brainer of a recommendation and, despite its few flaws, one of Apple’s greatest products to date.",
+    "editorsChoice": true,
+    "note": "Page shows a Best Buy badge.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended despite a few clear flaws, with exceptional value and enthusiastic closing praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "notebookcheck",
+    "critic": "Andreas Osthoff",
+    "url": "https://www.notebookcheck.net/Apple-MacBook-Neo-Review-Surprisingly-good-and-capable-laptop-for-599-with-one-big-flaw.1247679.0.html",
+    "date": "2026-03-14",
+    "rating": "86%",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The new MacBook Neo feels like a typical MacBook, which means you do not have to make any compromises in terms of chassis quality, typing experience and also the display.",
+    "scoreBand": [
+      81,
+      91
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 86
+    },
+    "scoreReason": "Strong value and quality, but clear compromises in ports, backlight, RAM, and battery at high brightness.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "trusted-reviews",
+    "critic": "Max Parker",
+    "url": "https://www.trustedreviews.com/reviews/apple-macbook-neo",
+    "date": "2026-07-17",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Who would have thought Apple would make the best budget around? I certainly didn’t. But it is.",
+    "note": "Updated review at the £699 UK price.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended budget laptop, but missing features and limited RAM/performance add notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "hothardware",
+    "critic": "Myriam Joire",
+    "url": "https://hothardware.com/reviews/apple-macbook-neo-review",
+    "date": "2026-07-02",
+    "rating": "4.5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "And for the vast majority of folks who need a laptop, the MacBook Neo gets the job done.",
+    "editorsChoice": true,
+    "note": "Long-term review; tested the $799 512GB model.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 95
+    },
+    "scoreReason": "Mildly positive verdict suggests competent mainstream choice, but lacks strong enthusiasm or broad recommendation.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "9to5mac",
+    "critic": "Chance Miller",
+    "url": "https://9to5mac.com/2026/03/10/macbook-neo-review/",
+    "date": "2026-03-10",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "At $599, MacBook Neo is an incredible value.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommends it to most people, praising value, build quality, and overall experience despite notable compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "engadget",
+    "critic": "Sam Rutherford",
+    "url": "https://www.engadget.com/2272526/samsung-galaxy-tab-s12-ultra-review/",
+    "date": "2026-09-30",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Even though it doesn't really have a proper rival, the Galaxy Tab S12 Ultra is the apex Android tablet.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised as the best Android tablet, with price, ports and OS limits as notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "pcmag",
+    "critic": "Kimberly Gedeon",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-tab-s12-ultra",
+    "date": "2026-09-30",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Despite its high price, if you're in the market for a high-end, productivity-focused Android tablet, the Galaxy Tab S12 Ultra is the best option and our Editors' Choice.",
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise and Editors' Choice, with minor caveats about price, cameras, and incremental upgrades.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/android-tablets/samsung-galaxy-tab-s12-ultra-review",
+    "date": "2026-09-30",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "Still, if you want a huge OLED Android tablet, this is the best one out there.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent screen and design, but price hike and weak laptop replacement claims add meaningful caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "trusted-reviews",
+    "critic": "Lewis Painter",
+    "url": "https://www.trustedreviews.com/reviews/samsung-galaxy-tab-s12-ultra",
+    "date": "2026-09-30",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Tab S12 Ultra is an outstanding big-screen Android tablet, combining a gorgeous 14.6-inch AMOLED display with slick performance, excellent S Pen support and a polished DeX experience.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent tablet with great screen and productivity, but high price and minor upgrades strongly limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/tablets-ereaders/samsung-galaxy-tab-s12-ultra-review",
+    "date": "2026-09-30",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "It's expensive, but better value than the equivalent iPad, and the inclusion of the S Pen in the box is a very nice bonus.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent hardware and value, but Android app limitations remain a major drawback.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "t3",
+    "critic": "Mike Lowe",
+    "url": "https://www.t3.com/tech/tablets/samsung-galaxy-tab-s12-ultra-review",
+    "date": "2026-10-09",
+    "rating": "4/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "Samsung continues to offer an unrivalled Android tablet experience in the Galaxy Tab S12 Ultra.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent Android tablet, but too similar to last year and hard to justify at the price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "gsmarena",
+    "critic": null,
+    "url": "https://www.gsmarena.com/samsung_galaxy_tab_s12_ultra-review-3005p6.php",
+    "date": "2026-10-14",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "The Tab S12 Ultra is the most versatile device we've tested lately.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Calls it the most versatile device tested lately, indicating an enthusiastic overall verdict.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-tab-s12-ultra-review",
+    "date": "2026-10-20",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Tab S12 Ultra is the first Ultra tablet where the performance finally feels worthy of the display.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise says performance finally matches the premium display, indicating a highly positive verdict.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/laptops/samsung-galaxy-book6-pro-review",
+    "date": "2026-02-03",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "It has a wonderful display, decent performance, impressive battery life and even a modicum of serious gaming capability, courtesy of that 12-core Intel Arc B390 integrated GPU.",
+    "note": "Tested the 16-inch model.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 86
+    },
+    "scoreReason": "Excellent screen, battery life and build, but high price and some weaker peripherals hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "notebookcheck",
+    "critic": "Andreas Osthoff",
+    "url": "https://www.notebookcheck.net/Samsung-Galaxy-Book6-Pro-Laptop-Review-Better-than-the-new-XPS-16.1257679.0.html",
+    "date": "2026-03-31",
+    "rating": "86%",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "Samsung finally uses brighter OLED screens for the new Galaxy Book6 Pro and the new 120 Hz touchscreen with up to 1200 nits peak brightness offers superb image quality.",
+    "note": "Tested the 16-inch Core Ultra 7 356H configuration.",
+    "scoreBand": [
+      81,
+      91
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 86
+    },
+    "scoreReason": "Excellent screen, build, quiet operation and battery, but weak base iGPU, PWM, removed features and high price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "trusted-reviews",
+    "critic": "Reece Bithrey",
+    "url": "https://www.trustedreviews.com/reviews/samsung-galaxy-book-6-pro",
+    "date": "2026-02-02",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Book 6 Pro is a sublime Windows ultrabook that's as stylish as it is powerful.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent ultrabook with standout design, screen, performance and battery, but price hike is a significant drawback.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "t3",
+    "critic": "Mike Lowe",
+    "url": "https://www.t3.com/tech/laptops/samsung-galaxy-book-6-pro-review",
+    "date": "2026-02-03",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "If you're shopping for a prestige Windows laptop, then you're unlikely to find anything more complete than the Galaxy Book 6 Pro.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 98
+    },
+    "scoreReason": "Outstanding all-round Windows laptop with only minor quibbles on bezel, touchpad size, and battery claims.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "techradar",
+    "critic": "Lewis Maddison",
+    "url": "https://www.techradar.com/computing/laptops/samsung-galaxy-book6-pro-review",
+    "date": "2026-04-01",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Book6 Pro ticks all the boxes for a high-end laptop.",
+    "note": "Tested the 16-inch model.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent display, design, and performance, but high price, heavy keyboard, limited ports, and average battery temper praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "creative-bloq",
+    "critic": "Ian Evenden",
+    "url": "https://www.creativebloq.com/tech/laptops/samsung-galaxy-book-6-pro-review-every-inch-the-professional",
+    "date": "2026-09-13",
+    "rating": "3.75/5",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "Samsung has created a rather beautiful pro-grade laptop, as long as you're fond of grey, that won't look out of place on conference tables or executive-toy-strewn desks in glass-fronted high-rise buildings.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 75
+    },
+    "scoreReason": "Elegant, light and well built, but pricey and too weak graphically for demanding creative work.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "cgmagonline",
+    "critic": "Joe Findlay",
+    "url": "https://www.cgmagonline.com/review/hardware/samsung-galaxy-book6-pro/",
+    "date": "2026-05-07",
+    "rating": "8.5/10",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Book6 Pro is a machine that doesn’t just look the part; it acts the part.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for design, display, audio, and performance, with notable price and GPU limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/laptops/samsung-galaxy-book-6-pro-review",
+    "date": "2026-01-30",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The performance and efficiency of Intel's Core Ultra Series 3 is astonishing, but when paired with the Galaxy Book 6 Pro's ultraportable design and beautiful OLED panel, you have what's already one of the best Windows laptops of 2026.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for performance, display, battery and portability, with minor bloatware and ecosystem caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "pcmag",
+    "critic": "John Loeffler",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-book6-pro",
+    "date": "2026-06-11",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "With a top-class display powered by a quick, power-sipping processor, the Samsung Galaxy Book6 Pro sits among the elite desktop-replacement laptops of the year as an excellently built and engineered machine.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent screen, battery, portability, and performance, with price and missing high-end features as main drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "smartprix",
+    "critic": "Deepak Rajawat",
+    "url": "https://smartprix.com/bytes/samsung-galaxy-book6-pro-review-a-screen-that-dazzles-a-package-that-mostly-delivers/",
+    "date": "2026-05-04",
+    "rating": "8.5/10",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "The battery easily lasts all day, gaming is impressive even without a separate GPU, and the build quality is excellent.",
+    "note": "Tested the 14-inch model (India pricing).",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for professionals, with price and keyboard as the main drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "itdaily",
+    "critic": "Michaël Aussems",
+    "url": "https://itdaily.com/reviews/workplace/samsung-galaxy-book6-pro-review/",
+    "date": "2026-05-20",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "The Samsung Galaxy Book6 Pro is an excellent 16-inch laptop for those seeking a powerful and stylish device that, despite the large screen, is still suitable for taking on the road.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent laptop with standout screen, performance, battery, and build, held back by slow charging and heavy bloatware.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-book6-pro",
+    "outletId": "t2-online",
+    "critic": "Mathures Paul",
+    "url": "https://t2online.in/tech/tech-reviews/samsung-galaxy-book6-pro-review--the-best-thin-and-light-windows-laptop-yet/2004551",
+    "date": "2026-04-08",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "Carved out of a solid block of aluminium, the Samsung Galaxy Book6 Pro is not just a handsome bit of kit — it’s arguably one of the finest Windows laptops for the modern office-goer.",
+    "note": "Tested the 14-inch model; The Telegraph (India) t2 section.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding display, portability, performance and battery life, with only minor complaints about missing SD slot and nonessential AI.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "toms-guide",
+    "critic": "Erin Bashford",
+    "url": "https://www.tomsguide.com/audio/earbuds/samsung-galaxy-buds-4-review",
+    "date": "2026-03-03",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Thanks to the warm, bass-heavy sound signature and supreme comfort, these $179 earbuds can easily go head-to-head with the big guns like AirPods 4 ANC.",
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Highly enthusiastic praise for sound and comfort, with notable ANC and ecosystem-switching drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "techradar",
+    "critic": "Tom Bedford",
+    "url": "https://www.techradar.com/audio/wireless-headphones/samsung-galaxy-buds-4-review",
+    "date": "2026-03-23",
+    "rating": "3/5",
+    "score": 55,
+    "scoreSource": "rating",
+    "excerpt": "Despite sounding and looking pretty good, the buds don't stay in the ear well, so they perform poorly even in everyday use cases.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 52
+    },
+    "scoreReason": "Good sound and features, but severe fit, battery, ANC, and value problems make it hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "engadget",
+    "critic": "Billy Steele",
+    "url": "https://www.engadget.com/audio/headphones/samsung-galaxy-buds-4-and-4-pro-review-impressive-audio-imperfect-anc-190000202.html",
+    "date": "2026-03-06",
+    "rating": "79/100",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Buds 4 offer good sound and the benefits of an open fit, but the ANC needs work.",
+    "note": "Joint review of Buds 4 and Buds 4 Pro; the Expert Score of 79 is for the standard Buds 4 (Pro scored 86).",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 79,
+      "gemini": 78
+    },
+    "scoreReason": "Good sound and Galaxy features, but weak ANC and limited appeal beyond Samsung users hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "soundguys",
+    "critic": "Adam Birney",
+    "url": "https://www.soundguys.com/samsung-galaxy-buds-4-review-154352/",
+    "date": "2026-03-13",
+    "rating": "6.2/10",
+    "score": 54,
+    "scoreSource": "rating",
+    "excerpt": "The unsealed design means fit is unreliable for many people, and without a stable fit, both sound quality and ANC suffer.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 56,
+      "gemini": 52
+    },
+    "scoreReason": "Good features and calls, but fit, ANC, and value concerns make most people better off skipping or waiting.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "expert-reviews",
+    "critic": "Andy White",
+    "url": "https://www.expertreviews.co.uk/technology/headphones-audio/samsung-galaxy-buds4-review",
+    "date": "2026-05-06",
+    "rating": null,
+    "score": 41,
+    "scoreSource": "text",
+    "excerpt": "Unless you’re dead set on semi-open Samsung earbuds, steer clear of the Buds4 and check out the Buds4 Pro instead",
+    "note": "Page structured data shows a rating of 3 with no stated scale, so no rating is recorded.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 42,
+      "gemini": 40
+    },
+    "scoreReason": "Good features and comfort, but poor fit, weak ANC, thin sound, and reviewer says hard pass.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/Precise-sound-smarter-than-ever-Samsung-Galaxy-Buds4-and-Buds4-Pro-review.1334399.0.html",
+    "date": "2026-07-04",
+    "rating": null,
+    "score": 76,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Buds4 stand out as straightforward all-arounders with a comfortable fit and solid sound tuning, though they clearly lag behind the Pro model in terms of ANC and sound detail.",
+    "note": "Joint review of Buds4 and Buds4 Pro; no numeric score published.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 74
+    },
+    "scoreReason": "Good everyday earbuds with comfortable fit and solid sound, but modest ANC, average battery, and Samsung-only features limit appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "consolecreatures",
+    "critic": "Matt Sowinski",
+    "url": "https://www.consolecreatures.com/samsung-galaxy-buds-4-review/",
+    "date": "2026-05-07",
+    "rating": "7/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "Overall, the Galaxy Buds 4 are great earbuds, but I can’t use them when sitting or walking slowly.",
+    "note": "Rating taken from the page's structured review data.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent sound and features, but the poor fit is a serious drawback for many users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "cgmagonline",
+    "critic": "Dayna Eileen",
+    "url": "https://www.cgmagonline.com/review/hardware/samsung-galaxy-buds4-earbuds/",
+    "date": "2026-04-11",
+    "rating": null,
+    "score": 73,
+    "scoreSource": "text",
+    "excerpt": "The Samsung Galaxy Buds4 are a good pair of earbuds that fall just short of being great.",
+    "note": "Page shows Review Score 7.5 with no stated scale, so no rating is recorded.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 70
+    },
+    "scoreReason": "Good sound, comfort, and ecosystem perks, but weak ANC, insecure fit, and high price add notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "pokde",
+    "critic": "Aiman Maulana",
+    "url": "https://pokde.net/review/samsung-galaxy-buds4-review",
+    "date": "2026-03-31",
+    "rating": "7.6/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Buds4 are an impressive entry-level option that outperform Apple’s AirPods 4 ANC in nearly every way.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for Android and Galaxy users, with notable ANC and ecosystem limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4",
+    "outletId": "sammyguru",
+    "critic": "David Buliga",
+    "url": "https://sammyguru.com/samsung-galaxy-buds-4-review/",
+    "date": "2026-04-20",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Buds 4 feel like a more thoughtful take on Samsung’s open earbuds.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Praised design, comfort, sound, and Galaxy features, with modest ANC, average battery, and fit limitations.",
+    "scoredFromFullText": true
   }
 ]

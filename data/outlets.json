@@ -595,5 +595,131 @@
     "name": "UploadVR",
     "tier": 3,
     "domain": "uploadvr.com"
+  },
+  {
+    "id": "beebom",
+    "name": "Beebom",
+    "tier": 4,
+    "domain": "beebom.com"
+  },
+  {
+    "id": "itdaily",
+    "name": "ITdaily",
+    "tier": 4,
+    "domain": "itdaily.com"
+  },
+  {
+    "id": "india-tv-news",
+    "name": "India TV News",
+    "tier": 3,
+    "domain": "indiatvnews.com"
+  },
+  {
+    "id": "geek-culture",
+    "name": "Geek Culture",
+    "tier": 4,
+    "domain": "geekculture.co"
+  },
+  {
+    "id": "techgoondu",
+    "name": "Techgoondu",
+    "tier": 4,
+    "domain": "techgoondu.com"
+  },
+  {
+    "id": "windows-central",
+    "name": "Windows Central",
+    "tier": 2,
+    "domain": "windowscentral.com"
+  },
+  {
+    "id": "ultrabookreview",
+    "name": "UltrabookReview",
+    "tier": 3,
+    "domain": "ultrabookreview.com"
+  },
+  {
+    "id": "macsources",
+    "name": "MacSources",
+    "tier": 4,
+    "domain": "macsources.com"
+  },
+  {
+    "id": "wccftech",
+    "name": "Wccftech",
+    "tier": 3,
+    "domain": "wccftech.com"
+  },
+  {
+    "id": "noobfeed",
+    "name": "NoobFeed",
+    "tier": 4,
+    "domain": "noobfeed.com"
+  },
+  {
+    "id": "gadgetguy",
+    "name": "Gadgetguy",
+    "tier": 3,
+    "domain": "gadgetguy.com.au"
+  },
+  {
+    "id": "the-mobile-indian",
+    "name": "The Mobile Indian",
+    "tier": 4,
+    "domain": "themobileindian.com"
+  },
+  {
+    "id": "uswitch",
+    "name": "Uswitch",
+    "tier": 4,
+    "domain": "uswitch.com"
+  },
+  {
+    "id": "xda-developers",
+    "name": "XDA",
+    "tier": 3,
+    "domain": "xda-developers.com"
+  },
+  {
+    "id": "techaeris",
+    "name": "Techaeris",
+    "tier": 4,
+    "domain": "techaeris.com"
+  },
+  {
+    "id": "dadnology",
+    "name": "Dadnology",
+    "tier": 4,
+    "domain": "dadnology.com"
+  },
+  {
+    "id": "smartprix",
+    "name": "Smartprix",
+    "tier": 4,
+    "domain": "smartprix.com"
+  },
+  {
+    "id": "journal-du-geek",
+    "name": "Journal du Geek",
+    "tier": 4,
+    "domain": "journaldugeek.com"
+  },
+  {
+    "id": "t2-online",
+    "name": "t2 (The Telegraph India)",
+    "tier": 4,
+    "domain": "t2online.in"
+  },
+  {
+    "id": "consolecreatures",
+    "name": "Console Creatures",
+    "tier": 4,
+    "domain": "consolecreatures.com"
+  },
+  {
+    "id": "pokde",
+    "name": "Pokde.Net",
+    "tier": 4,
+    "domain": "pokde.net"
   }
 ]
