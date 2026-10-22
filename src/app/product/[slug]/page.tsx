@@ -7,7 +7,7 @@ import type { ComputedProduct } from '@/lib/engine';
 import { TIER_WEIGHTS, EARLY_SCORE_BELOW } from '@/config/scoring';
 import { formatDate, formatPrice, releaseLabel, CATEGORY_PLURAL } from '@/lib/format';
 import {
-  DeviceArt,
+  ProductImage,
   MiniProductCard,
   OutletTierChip,
   ProductChips,
@@ -93,7 +93,12 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
       <section className="card p-4 sm:p-5">
         <div className="flex gap-4 sm:gap-6">
           <div className="w-28 shrink-0 overflow-hidden rounded-xl border border-line sm:w-44">
-            <DeviceArt art={product.art} name={product.name} className="aspect-[3/4] h-full w-full" />
+            <ProductImage product={product} variant="hero" priority className="aspect-[3/4] h-full w-full" />
+            {product.image && (
+              <p className="border-t border-line bg-white px-1.5 py-1 text-center text-[10px] text-ink-faint">
+                Image: {product.image.credit}
+              </p>
+            )}
           </div>
           <div className="min-w-0 flex-1">
             <ProductChips category={product.category} releaseDate={product.releaseDate} />

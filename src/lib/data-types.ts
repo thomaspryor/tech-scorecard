@@ -17,6 +17,15 @@ export interface Spec {
   value: string;
 }
 
+/** Official press photo, credited to the brand. See docs/IMAGES.md. */
+export interface ProductPhoto {
+  src: string; // WebP, about 800px wide, path under /images/products/
+  thumb: string; // smaller WebP for cards
+  alt: string;
+  credit: string; // e.g. "Samsung"
+  sourceUrl: string; // the brand page the photo came from
+}
+
 export interface Product {
   id: string;
   slug: string;
@@ -30,6 +39,7 @@ export interface Product {
   loved: string[];
   gripes: string[];
   specs: Spec[];
+  image?: ProductPhoto;
   art: { kind: ArtKind; body: string; accent: string; backdrop: [string, string] };
 }
 

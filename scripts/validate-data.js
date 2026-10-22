@@ -5,7 +5,11 @@ const { loadData, loadCategories } = require('./lib/data-files');
 const { validateData } = require('./lib/validate');
 
 const data = loadData();
-const errors = validateData({ ...data, categories: loadCategories() });
+const errors = validateData({
+  ...data,
+  categories: loadCategories(),
+  publicDir: require('path').join(__dirname, '..', 'public'),
+});
 
 for (const p of data.products) {
   const n = data.reviews.filter((r) => r.productId === p.id).length;

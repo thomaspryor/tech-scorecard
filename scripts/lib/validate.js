@@ -2,6 +2,8 @@
 // the importer and the tests all run exactly the same checks.
 // Guards the rules that keep scores honest: every review links to its source,
 // published ratings convert exactly, and excerpts stay short quotes.
+const fs = require('fs');
+const path = require('path');
 const { ratingToBand } = require('./rating-band');
 
 const MAX_EXCERPT_WORDS = 45;
@@ -32,12 +34,34 @@ function isHttpsUrl(s) {
 }
 
 /**
- * @param {import('./data-files').DataSet & {categories: {categories: string[], artKinds: string[]}}} data
+ * The optional press photo (docs/IMAGES.md): credit and source page are required,
+ * and when `publicDir` is given both files must exist on disk.
+ * @param {import('./data-files').DataSet['products'][number]} p
+ * @param {string[]} errors
+ * @param {string | undefined} publicDir
+ */
+function validateImage(p, errors, publicDir) {
+  const img = /** @type {Partial<import('../../src/lib/data-types').ProductPhoto>} */ (p.image);
+  for (const k of /** @type {const} */ (['src', 'thumb', 'alt', 'credit', 'sourceUrl']))
+    if (!img[k] || typeof img[k] !== 'string') errors.push(`product ${p.id}: image.${k} is required`);
+  if (img.sourceUrl && !isHttpsUrl(img.sourceUrl)) errors.push(`product ${p.id}: image.sourceUrl must be https`);
+  for (const k of /** @type {const} */ (['src', 'thumb'])) {
+    const f = img[k];
+    if (!f) continue;
+    if (!f.startsWith('/images/products/') || !f.endsWith('.webp'))
+      errors.push(`product ${p.id}: image.${k} must be a .webp under /images/products/`);
+    else if (publicDir && !fs.existsSync(path.join(publicDir, f)))
+      errors.push(`product ${p.id}: image.${k} file not found (${f})`);
+  }
+}
+
+/**
+ * @param {import('./data-files').DataSet & {categories: {categories: string[], artKinds: string[]}, publicDir?: string}} data
  * @param {{today?: string}} [opts] `today` (YYYY-MM-DD) bounds review dates; defaults to the current UTC date
  * @returns {string[]} human-readable errors; empty when the data is valid
  */
 function validateData(
-  { products, reviews, outlets, categories },
+  { products, reviews, outlets, categories, publicDir },
   { today = new Date().toISOString().slice(0, 10) } = {},
 ) {
   const errors = [];
@@ -70,6 +94,7 @@ function validateData(
     if (!categories.categories.includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
     if (p.art && !categories.artKinds.includes(p.art.kind))
       errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
+    if (p.image) validateImage(p, errors, publicDir);
   }
 
   const seen = new Set();

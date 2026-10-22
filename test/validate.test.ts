@@ -249,3 +249,30 @@ describe('isIsoDate', () => {
     expect(isIsoDate(s)).toBe(false),
   );
 });
+
+describe('product image rules', () => {
+  const image = {
+    src: '/images/products/test-phone/main.webp',
+    thumb: '/images/products/test-phone/thumb.webp',
+    alt: 'Test Phone',
+    credit: 'Test Brand',
+    sourceUrl: 'https://example.com/press/test-phone',
+  };
+  it('accepts a complete image', () => {
+    expect(errorsAfter((d) => void (d.products[0].image = image))).toEqual([]);
+  });
+  it.each<[string, Record<string, unknown>, RegExp]>([
+    ['missing credit', { credit: '' }, /image\.credit is required/],
+    ['missing sourceUrl', { sourceUrl: '' }, /image\.sourceUrl is required/],
+    ['http sourceUrl', { sourceUrl: 'http://example.com/x' }, /sourceUrl must be https/],
+    ['wrong path', { src: '/x.png' }, /image\.src must be a \.webp/],
+  ])('rejects %s', (_n, patch, re) => {
+    expect(errorsAfter((d) => void (d.products[0].image = { ...image, ...patch })).join('\n')).toMatch(re);
+  });
+  it('requires the files to exist when publicDir is set', () => {
+    const d = structuredClone(validData());
+    d.products[0].image = image;
+    const errors = validateData({ ...d, categories, publicDir: '/nonexistent' });
+    expect(errors.join('\n')).toMatch(/file not found/);
+  });
+});

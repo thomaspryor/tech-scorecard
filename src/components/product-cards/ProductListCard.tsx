@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { ComputedProduct } from '@/lib/engine';
 import { getScoreTier } from '@/config/score-buckets';
 import { formatDate, formatPrice } from '@/lib/format';
-import { DeviceArt } from './DeviceArt';
+import { ProductImage } from './ProductImage';
 import { ProductChips } from './ProductChips';
 import { ScoreBadge } from './ScoreBadge';
 
@@ -22,7 +22,7 @@ export function ProductListCard({
   return (
     <Link href={`/product/${product.slug}/`} className="card-interactive flex items-center gap-4 p-4 sm:gap-5 sm:p-5">
       <div className="h-[84px] w-[84px] shrink-0 overflow-hidden rounded-lg sm:h-28 sm:w-28">
-        <DeviceArt art={product.art} name={product.name} className="h-full w-full" />
+        <ProductImage product={product} />
       </div>
       <div className="min-w-0 flex-1">
         <Heading className="line-clamp-2 text-lg font-bold leading-tight sm:text-xl">{product.name}</Heading>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ComputedProduct } from '@/lib/engine';
-import { DeviceArt } from './DeviceArt';
+import { ProductImage } from './ProductImage';
 import { ScoreBadge } from './ScoreBadge';
 
 /** Poster tile with corner score, like Broadway Scorecard's MiniShowCard. */
@@ -8,7 +8,7 @@ export function MiniProductCard({ product }: { product: ComputedProduct }) {
   return (
     <Link href={`/product/${product.slug}/`} className="group block w-full">
       <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-line shadow-card transition-transform duration-200 group-hover:-translate-y-0.5">
-        <DeviceArt art={product.art} name={product.name} className="h-full w-full" />
+        <ProductImage product={product} />
         <div className="absolute bottom-2 right-2">
           <ScoreBadge score={product.criticScore} size="sm" />
         </div>
