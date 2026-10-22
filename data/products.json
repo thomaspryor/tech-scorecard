@@ -4376,13 +4376,6 @@
         "#f4f6f9",
         "#e1e7ef"
       ]
-    },
-    "image": {
-      "src": "/images/products/pixel-watch-4/main.webp",
-      "thumb": "/images/products/pixel-watch-4/thumb.webp",
-      "alt": "Google Pixel Watch 4, official Google press photo",
-      "credit": "Google",
-      "sourceUrl": "https://blog.google/products-and-platforms/devices/pixel/pixel-watch-4/"
     }
   },
   {
@@ -5928,7 +5921,7 @@
       },
       {
         "label": "Price",
-        "value": "$199 (US), £149 (UK)"
+        "value": "$199 (US), \u00a3149 (UK)"
       }
     ],
     "art": {

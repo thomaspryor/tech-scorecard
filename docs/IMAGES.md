@@ -6,7 +6,7 @@ permission. Login-gated or blocked hubs (Nintendo, Razer, Dell, MSI, Sony, Motor
 The terms table below stays as the record of what each brand's pages actually say. Never use retailer, stock or review-site
 images, and only use an image when it is clearly the exact model: otherwise the drawing stays.
 
-Status: 57 of 84 products have a photo, the rest keep their drawing.
+Status: 56 of 84 products have a photo, the rest keep their drawing.
 
 ## How it works
 
@@ -59,6 +59,21 @@ press@nothing.tech, press@ouraring.com, press@beatsbydre.com, press@meta.com), s
 product photo on a review page), and keep the reply. After that, flip the brand to ALLOWED here, with the
 reply's wording as the credit and restrictions.
 
+## Image processing
+
+Default: resize to WebP only. Where a press image had empty margins, a black background or a cutout-friendly
+subject, we changed only the background and framing, never the product:
+
+- Trimmed empty margins (lossless crop, 6% breathing room): most products with a plain white background.
+- Padded onto a 3:4 canvas in the photo's own background color: iPhone 18 Pro, iPhone 17 Pro, MacBook Pro 14-inch and
+  Apple Watch Ultra 4 (dark backgrounds).
+- Background removed (automatic segmentation, each result checked by eye, trimmed): iPad Pro M5, iPhone 17, Galaxy S26,
+  S26+, S26 Ultra, Galaxy Z Flip 8, Oura Ring 5, Beats 360. Where removal damaged the product (iPhone 18 Pro, iPhone 17 Pro,
+  MacBook Pro 14, Apple Watch Ultra 3 and 4) the original pixels are kept.
+- Cropped to the device only (side text cut off): Pixel 11 Pro, Pixel Watch 5.
+
+Brands whose terms forbid alteration would need these steps redone as resize-only.
+
 ## Source URLs per product
 
 Same as `image.sourceUrl` in `data/products.json`. Products not listed use the drawing.
@@ -107,7 +122,6 @@ Same as `image.sourceUrl` in `data/products.json`. Products not listed use the d
 | rog-xbox-ally              | ASUS    | https://press.asus.com/news/press-releases/rog-xbox-ally-handheld-gaming/                                                                          |
 | samsung-galaxy-xr          | Samsung | https://news.samsung.com/us/introducing-galaxy-xr-opening-new-worlds/                                                                              |
 | galaxy-buds-4-pro          | Samsung | https://news.samsung.com/us/samsung-week-discover-new-ways-live-smarter-exclusive-deals-rewards/                                                   |
-| pixel-watch-4              | Google  | https://blog.google/products-and-platforms/devices/pixel/pixel-watch-4/                                                                            |
 | lenovo-legion-go-2         | Lenovo  | https://news.lenovo.com/press-kits/innovation-world-2025/                                                                                          |
 | oakley-meta-vanguard       | Meta    | https://www.meta.com/ai-glasses/oakley-meta-vanguard/                                                                                              |
 | galaxy-watch-ultra-2       | Samsung | https://news.samsung.com/us/samsung-week-discover-new-ways-live-smarter-exclusive-deals-rewards/                                                   |
