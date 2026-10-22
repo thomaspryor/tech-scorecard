@@ -259,7 +259,18 @@ async function main() {
         .join(', ')}; text ${text.length} chars)`,
     );
     if (!args['dry-run']) {
-      r.score = score;
+      // A human adjudication outranks the models while it still fits the band; if the rating
+      // (and so the band) changed, the adjudication is dropped and the review needs a new look.
+      const keepAdjudication =
+        Number.isInteger(r.adjudicatedScore) && r.adjudicatedScore >= band.floor && r.adjudicatedScore <= band.ceiling;
+      if (!keepAdjudication && r.adjudicatedScore != null) {
+        console.log(
+          `  ${r.productId}/${r.outletId}: adjudication ${r.adjudicatedScore} no longer fits ${band.floor}-${band.ceiling}; dropped`,
+        );
+        delete r.adjudicatedScore;
+        delete r.adjudicationReason;
+      }
+      r.score = keepAdjudication ? r.adjudicatedScore : score;
       r.scoreBand = [band.floor, band.ceiling];
       // modelScores marks a review done, so only set it when both models answered;
       // a one-model score is published but retried on the next run.

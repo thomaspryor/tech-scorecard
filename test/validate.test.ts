@@ -278,3 +278,45 @@ describe('product image rules', () => {
     expect(errors.join('\n')).toMatch(/file not found/);
   });
 });
+
+describe('adjudicated scores', () => {
+  const adjudicate = (
+    d: ReturnType<typeof validData>,
+    score: number,
+    reason = 'Read the review; reservations dominate.',
+  ) => {
+    Object.assign(d.reviews[0], { score, adjudicatedScore: score, adjudicationReason: reason });
+  };
+
+  it('accepts an adjudicated score inside the band that is also the published score', () => {
+    const d = structuredClone(validData());
+    adjudicate(d, 92); // 9/10 band is 91-100
+    expect(validateData({ ...d, categories })).toEqual([]);
+  });
+
+  it('rejects one outside the band', () => {
+    const d = structuredClone(validData());
+    Object.assign(d.reviews[0], { adjudicatedScore: 85, adjudicationReason: 'x' });
+    expect(validateData({ ...d, categories }).join('\n')).toMatch(
+      /adjudicatedScore 85 must be an integer inside the band 91-100/,
+    );
+  });
+
+  it('rejects one that is not the published score', () => {
+    const d = structuredClone(validData());
+    Object.assign(d.reviews[0], { score: 93, adjudicatedScore: 95, adjudicationReason: 'x' });
+    expect(validateData({ ...d, categories }).join('\n')).toMatch(/score 93 must equal adjudicatedScore 95/);
+  });
+
+  it('requires a reason', () => {
+    const d = structuredClone(validData());
+    adjudicate(d, 92, ' ');
+    expect(validateData({ ...d, categories }).join('\n')).toMatch(/needs an adjudicationReason/);
+  });
+
+  it('allows the full 0-100 range for unrated reviews', () => {
+    const d = structuredClone(validData());
+    Object.assign(d.reviews[1], { score: 45, adjudicatedScore: 45, adjudicationReason: 'Says to skip it.' });
+    expect(validateData({ ...d, categories })).toEqual([]);
+  });
+});

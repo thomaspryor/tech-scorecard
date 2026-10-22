@@ -63,6 +63,10 @@ export interface Review {
   scoredFromFullText?: boolean;
   /** Set when the two models' placements differ by more than 15 points: worth a human check. */
   modelsDisagree?: boolean;
+  /** A person's placement after reading the review (used when the models disagree); it is the published score. */
+  adjudicatedScore?: number;
+  /** One line on why, required with adjudicatedScore. */
+  adjudicationReason?: string;
   /** Context a reader needs, e.g. a joint review whose score is for a sibling model. */
   note?: string;
 }

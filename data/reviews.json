@@ -982,7 +982,7 @@
     "url": "https://www.dailymail.com/sciencetech/article-16220005/iPhone-Duo-gimmick-foldable-revolution-SHIVALI-BEST.html",
     "date": "2026-10-21",
     "rating": null,
-    "score": 64,
+    "score": 63,
     "scoreSource": "text",
     "excerpt": "The iPhone Duo is a nifty gadget, but for me, it's just not as good as the iPhone 18 Pro.",
     "scoreBand": [
@@ -995,7 +995,9 @@
     },
     "scoreReason": "Good hybrid with useful multitasking, but high price, app issues, and compromises limit enthusiasm.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 63,
+    "adjudicationReason": "Likes the matte screen and Split View, but unoptimised apps and the price make the iPhone 18 Pro the better buy."
   },
   {
     "productId": "iphone-duo",
@@ -1046,7 +1048,7 @@
     "url": "https://petapixel.com/2026/10/21/iphone-duo-review-a-compromise-but-not-compromised/",
     "date": "2026-10-21",
     "rating": null,
-    "score": 84,
+    "score": 78,
     "scoreSource": "text",
     "excerpt": "On the one hand, it's a brilliantly designed phone that feels premium and invites you in like no other Apple handheld has before.",
     "scoreBand": [
@@ -1059,7 +1061,9 @@
     },
     "scoreReason": "Strong praise for design and premium feel suggests an enthusiastic overall verdict.",
     "scoredFromFullText": false,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 78,
+    "adjudicationReason": "Headline calls it a compromise but not compromised; positive with caveats. Page blocks fetching, judged from headline and quote."
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -2107,7 +2111,7 @@
     "url": "https://www.expertreviews.co.uk/technology/phones/apple-iphone-air-review",
     "date": "2025-10-08",
     "rating": "4/5",
-    "score": 80,
+    "score": 73,
     "scoreSource": "rating",
     "excerpt": "Despite its shortcomings, there is nothing fundamentally wrong with iPhone Air.",
     "scoreBand": [
@@ -2120,7 +2124,9 @@
     },
     "scoreReason": "Excellent design and performance, but poor value and limited camera make recommendation hesitant.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 73,
+    "adjudicationReason": "A 4/5 that the reviewer struggles to recommend, pointing buyers to the iPhone 17 or 17 Pro instead."
   },
   {
     "productId": "iphone-air",
@@ -2171,7 +2177,7 @@
     "url": "https://www.gsmarena.com/apple_iphone_air-review-2885.php",
     "date": "2025-09-25",
     "rating": null,
-    "score": 64,
+    "score": 62,
     "scoreSource": "text",
     "excerpt": "But even if you end up passing on the Air, there's no denying it's an impressive engineering feat.",
     "scoreBand": [
@@ -2184,7 +2190,9 @@
     },
     "scoreReason": "Impressive thin engineering, screen, performance and battery, but notable compromises, cheap feel, slow charging and limited camera versatility.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 62,
+    "adjudicationReason": "Impressive engineering, but a cheap-feeling build and one camera; most buyers are steered to the iPhone 17."
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -3432,7 +3440,7 @@
     "url": "https://arstechnica.com/gadgets/2025/11/where-apples-vision-pro-stands-today-post-m5-refresh/",
     "date": "2025-11-26",
     "rating": null,
-    "score": 64,
+    "score": 58,
     "scoreSource": "text",
     "excerpt": "I still like the Vision Pro, but I can tell it’s hanging on by a thread.",
     "note": "Long-term assessment of the platform after using the M5 refresh daily; no score published.",
@@ -3446,7 +3454,9 @@
     },
     "scoreReason": "Impressive hardware and some real strengths, but poor value, weak software support, and uncertain future.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 58,
+    "adjudicationReason": "Still likes it, but calls it a nonstarter for most people at $3,500 and hanging on by a thread."
   },
   {
     "productId": "apple-vision-pro-m5",
@@ -4868,7 +4878,7 @@
     "url": "https://www.gsmarena.com/samsung_galaxy_s26-review-2942p6.php",
     "date": "2026-03-12",
     "rating": null,
-    "score": 57,
+    "score": 50,
     "scoreSource": "text",
     "excerpt": "The vanilla S26 is also more than a few laps behind the competition in terms of camera hardware, battery technology and charging.",
     "note": "GSMArena publishes no editorial score; score is an estimate of the verdict. The 4.3 on the page is the reader rating.",
@@ -4882,7 +4892,9 @@
     },
     "scoreReason": "Good compact phone with software strengths, but weak value and hardware upgrades for the price.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 50,
+    "adjudicationReason": "Says your money is better spent elsewhere unless you are devoted to One UI."
   },
   {
     "productId": "galaxy-s26",
@@ -9369,7 +9381,7 @@
     "url": "https://www.uploadvr.com/meta-ray-ban-display-review/",
     "date": "2025-11-10",
     "rating": null,
-    "score": 66,
+    "score": 62,
     "scoreSource": "text",
     "excerpt": "In its current form, it's an amazing way to capture photos and videos without leaving the moment, and a great way to decide whether WhatsApp messages are worth your time without taking out your phone.",
     "note": "Unscored. Verdict recommends early adopters only and waiting for future generations for everyone else, so the score is an editorial estimate.",
@@ -9383,7 +9395,9 @@
     },
     "scoreReason": "Impressive first-gen features and novelty, but major connectivity, display, app, and usability limits temper enthusiasm.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 62,
+    "adjudicationReason": "Great for early adopters who accept the flaws; recommends everyone else wait for later generations."
   },
   {
     "productId": "apple-watch-ultra-4",
@@ -11083,7 +11097,7 @@
     "url": "https://www.pcmag.com/reviews/samsung-galaxy-z-trifold",
     "date": "2026-03-20",
     "rating": null,
-    "score": 59,
+    "score": 52,
     "scoreSource": "text",
     "excerpt": "The Samsung Galaxy Z TriFold stands out as an impressive piece of engineering, combining premium build quality, strong performance, and an expansive folding display.",
     "note": "PCMag's numeric rating was not readable in the page source; score estimated from the verdict. PCMag does not recommend buying because Samsung stopped selling it.",
@@ -11097,7 +11111,9 @@
     },
     "scoreReason": "Impressive engineering and versatility, but too expensive, discontinued, and ultimately not recommended to buy.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 52,
+    "adjudicationReason": "Praises the engineering but does not recommend buying it, and points readers to the Z Fold 7."
   },
   {
     "productId": "galaxy-z-trifold",
@@ -15464,7 +15480,7 @@
     "url": "https://kotaku.com/im-not-sure-about-valves-new-1000-vr-headset-2000734260",
     "date": "2026-09-14",
     "rating": null,
-    "score": 56,
+    "score": 47,
     "scoreSource": "text",
     "excerpt": "The Steam Frame doesn't feel like a VR headset that's ready for primetime, and it arrives at the worst moment, when tech prices are higher than ever and VR isn't in a good place.",
     "scoreBand": [
@@ -15477,7 +15493,9 @@
     },
     "scoreReason": "Excellent comfort and streaming, but high price, bugs, weak battery, and recommendation is hesitant.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 47,
+    "adjudicationReason": "Streaming impresses, but the price, battery and bugs make it hard to recommend to anyone."
   },
   {
     "productId": "steam-frame",
@@ -15738,7 +15756,7 @@
     "url": "https://www.polygon.com/rog-xbox-ally-x-review/",
     "date": "2025-10-15",
     "rating": null,
-    "score": 64,
+    "score": 55,
     "scoreSource": "text",
     "excerpt": "Windows still sucks as a gaming platform, and the \"Xbox full screen experience\" does not manage to mitigate or disguise this glaring issue anything like as well as it needs to.",
     "scoreBand": [
@@ -15751,7 +15769,9 @@
     },
     "scoreReason": "Strong concept and decent handheld, but overpriced, frustrating Windows experience, and underwhelming performance limit enthusiasm.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 55,
+    "adjudicationReason": "Competent but overpriced, and Windows makes it frustrating to use day to day."
   },
   {
     "productId": "rog-xbox-ally-x",
@@ -15760,7 +15780,7 @@
     "url": "https://www.rockpapershotgun.com/asus-rog-xbox-ally-x-review",
     "date": "2025-10-15",
     "rating": null,
-    "score": 56,
+    "score": 45,
     "scoreSource": "text",
     "excerpt": "Windows 11 just isn't that good as a handheld OS.",
     "scoreBand": [
@@ -15773,7 +15793,9 @@
     },
     "scoreReason": "Improved handheld Windows experience, but major bugs, mediocre battery, weaker screen, noisy controls and high price hurt it.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 45,
+    "adjudicationReason": "Would not buy one: bugs, screen, battery and price add up to giving it a miss."
   },
   {
     "productId": "garmin-fenix-9-pro",
@@ -16121,7 +16143,7 @@
     "url": "https://www.expertreviews.co.uk/technology/gaming/asus-rog-xbox-ally-review",
     "date": "2025-10-15",
     "rating": null,
-    "score": 64,
+    "score": 57,
     "scoreSource": "text",
     "excerpt": "With a different CPU, this could have been a real contender, but as it is, it's a little overpriced and underspecced.",
     "scoreBand": [
@@ -16134,7 +16156,9 @@
     },
     "scoreReason": "Excellent design and software, but weak performance and value limit recommendation.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 57,
+    "adjudicationReason": "Great design and software, but overpriced and underpowered next to the Steam Deck."
   },
   {
     "productId": "rog-xbox-ally",
@@ -20048,7 +20072,7 @@
     "url": "https://www.thurrott.com/smart-tech/338097/google-fitbit-air-review",
     "date": "2026-06-29",
     "rating": null,
-    "score": 64,
+    "score": 57,
     "scoreSource": "text",
     "excerpt": "I was really excited about the Fitbit Air, and there’s still a lot to like about the device, including the optional AI coach component.",
     "note": "Reviewer returned the Fitbit Air for an Apple Watch SE3 because of the Google Health app on iPhone.",
@@ -20062,7 +20086,9 @@
     },
     "scoreReason": "Good battery life and useful coaching, but app bugs, phone battery drain, and return decision hurt verdict.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 57,
+    "adjudicationReason": "Likes the battery and coach, but app bugs and phone battery drain led the reviewer to return it."
   },
   {
     "productId": "fitbit-air",

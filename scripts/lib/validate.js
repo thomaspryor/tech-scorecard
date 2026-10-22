@@ -139,6 +139,19 @@ function validateData(
     }
     if (r.scoreSource === 'text' && r.rating) errors.push(`${at}: text-scored review must not carry a rating`);
 
+    if (r.adjudicatedScore != null) {
+      // A person's placement replaces the models' average, under the same band rule.
+      const band = r.rating ? ratingToBand(r.rating) : { floor: 0, ceiling: 100 };
+      const a = r.adjudicatedScore;
+      if (!band || !Number.isInteger(a) || a < band.floor || a > band.ceiling)
+        errors.push(
+          `${at}: adjudicatedScore ${a} must be an integer inside the band${band ? ` ${band.floor}-${band.ceiling}` : ''}`,
+        );
+      else if (r.score !== a) errors.push(`${at}: score ${r.score} must equal adjudicatedScore ${a}`);
+      if (!r.adjudicationReason || !String(r.adjudicationReason).trim())
+        errors.push(`${at}: adjudicatedScore needs an adjudicationReason`);
+    }
+
     const text = (r.excerpt || '').trim();
     const words = text.split(/\s+/).filter(Boolean).length;
     const realWords = (text.match(/[\p{L}\p{N}]+/gu) || []).length;
