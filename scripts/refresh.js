@@ -6,7 +6,7 @@
 // A separate workflow step then runs verify-quotes.py and score-reviews.js, and only commits
 // when those pass (see .github/workflows/weekly-refresh.yml).
 //
-// Usage: node scripts/refresh.js [--max-products=25] [--max-new=2] [--only=id,id] [--no-launches] [--dry-run]
+// Usage: node scripts/refresh.js [--max-products=15] [--max-new=2] [--only=id,id] [--no-launches] [--dry-run]
 // Needs GEMINI_API_KEY (search + excerpt picking) and OPENAI_API_KEY (copy for new products).
 // Writes files in .cache/refresh/ in the import-product.js shapes and imports them unless --dry-run.
 const fs = require('fs');
@@ -32,7 +32,7 @@ const args = Object.fromEntries(
     return [k, v ?? true];
   }),
 );
-const MAX_PRODUCTS = Number(args['max-products'] || 25);
+const MAX_PRODUCTS = Number(args['max-products'] || 15);
 const MAX_NEW = Number(args['max-new'] ?? 2);
 const only = args.only ? new Set(String(args.only).split(',')) : null;
 

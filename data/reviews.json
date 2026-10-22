@@ -21433,5 +21433,131 @@
     },
     "scoreReason": "Best Oura yet and very good for discreet sleep tracking, but limited innovation and poor workout features.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-s26-plus",
+    "date": "2026-03-24",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The powerful Samsung Galaxy S26+ strikes a compelling balance between the pricier Ultra and the more affordable S26, thanks to its sharp screen and fast performance.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for screen, performance, cameras, and value, with some reservations about lineup overlap and limited upgrades.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "toms-guide",
+    "critic": "Richard Priday",
+    "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-s26-plus-review",
+    "date": "2026-03-18",
+    "rating": "4/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "So I ultimately have to declare the Galaxy S26 Plus a good phone - but one I won't recommend right away to many people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Strong phone, but price and positioning make it hard to recommend to most buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "wired",
+    "critic": "Julian Chokkattu",
+    "url": "https://www.wired.com/review/samsung-galaxy-s26-and-galaxy-s26-plus/",
+    "date": "2026-03-27",
+    "rating": "7/10",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy S26 and S26+ are perfectly fine flagships, but they just don't really raise the bar.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Good performance and battery, but bland upgrades, price increase, and many buyers should choose cheaper alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://au.pcmag.com/tablets/116652/apple-ipad-air-m4-2026",
+    "date": "2026-03-20",
+    "rating": "4/5",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "Apple's M4-powered iPad Air delivers powerful performance and future-proof connectivity in a sleek design, making it the best tablet for students and creators without breaking the bank.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strong recommendation and Editors' Choice, but several notable complaints about display, Face ID, and water resistance.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/2155967/google-pixel-10a-review/",
+    "date": "2026-04-24",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "That said, the Pixel 10a remains a great device — especially if Google's software experience and long-term update commitment are what matter most to you.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Great software and cameras, but minimal upgrades, old chip, and charging omissions limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/mar/05/google-pixel-10a-review-cheaper-android-camera-software-battery-life",
+    "date": "2026-03-05",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "The Pixel 10a is a great mid-range Android phone with almost all the trimmings of flagship devices but at two-thirds of the price.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Great phone with strong features, but poor value versus the cheaper, nearly identical predecessor.",
+    "scoredFromFullText": true
   }
 ]

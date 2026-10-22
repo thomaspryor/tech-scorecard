@@ -11,7 +11,7 @@ on:
     inputs:
       max_products:
         description: 'How many products to check for new reviews'
-        default: '25'
+        default: '15'
 
 concurrency:
   group: weekly-refresh
@@ -23,7 +23,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 170
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,7 +46,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: bash scripts/refresh-pipeline.sh --max-products=${{ inputs.max_products || '25' }}
+        run: bash scripts/refresh-pipeline.sh --max-products=${{ inputs.max_products || '15' }}
       - name: Commit if anything changed
         run: |
           git config user.name "tech-scorecard-bot"
