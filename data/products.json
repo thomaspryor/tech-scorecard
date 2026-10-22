@@ -603,6 +603,13 @@
         "#f3f5ef",
         "#dfe5d5"
       ]
+    },
+    "image": {
+      "src": "/images/products/pixel-11-pro/main.webp",
+      "thumb": "/images/products/pixel-11-pro/thumb.webp",
+      "alt": "Pixel 11 Pro, official Google press photo",
+      "credit": "Google",
+      "sourceUrl": "https://blog.google/products-and-platforms/devices/pixel/made-by-google-2026/"
     }
   },
   {
@@ -1665,6 +1672,13 @@
         "#f4f5f7",
         "#e1e4ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/oneplus-15/main.webp",
+      "thumb": "/images/products/oneplus-15/thumb.webp",
+      "alt": "OnePlus 15, official OnePlus press photo",
+      "credit": "OnePlus",
+      "sourceUrl": "https://www.oneplus.com/us/oneplus-15"
     }
   },
   {
@@ -1736,6 +1750,13 @@
         "#f3f5ef",
         "#e1e6d6"
       ]
+    },
+    "image": {
+      "src": "/images/products/pixel-watch-5/main.webp",
+      "thumb": "/images/products/pixel-watch-5/thumb.webp",
+      "alt": "Pixel Watch 5, official Google press photo",
+      "credit": "Google",
+      "sourceUrl": "https://blog.google/products-and-platforms/devices/pixel/made-by-google-2026/"
     }
   },
   {
@@ -1879,6 +1900,13 @@
         "#f2f4f7",
         "#dde3ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/valve-steam-machine/main.webp",
+      "thumb": "/images/products/valve-steam-machine/thumb.webp",
+      "alt": "Valve Steam Machine, official Valve press photo",
+      "credit": "Valve",
+      "sourceUrl": "https://store.steampowered.com/hardware/steammachine"
     }
   },
   {
@@ -2106,6 +2134,13 @@
         "#f3f4f6",
         "#e1e4ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/pixel-11/main.webp",
+      "thumb": "/images/products/pixel-11/thumb.webp",
+      "alt": "Pixel 11, official Google press photo",
+      "credit": "Google",
+      "sourceUrl": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/"
     }
   },
   {
@@ -2177,6 +2212,13 @@
         "#f2f4f7",
         "#dde3ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/meta-ray-ban-display/main.webp",
+      "thumb": "/images/products/meta-ray-ban-display/thumb.webp",
+      "alt": "Meta Ray-Ban Display, official Meta press photo",
+      "credit": "Meta",
+      "sourceUrl": "https://www.meta.com/ai-glasses/meta-ray-ban-display/"
     }
   },
   {
@@ -3803,6 +3845,13 @@
         "#f3f4f7",
         "#e2e5ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/steam-frame/main.webp",
+      "thumb": "/images/products/steam-frame/thumb.webp",
+      "alt": "Valve Steam Frame, official Valve press photo",
+      "credit": "Valve",
+      "sourceUrl": "https://store.steampowered.com/hardware/steamframe"
     }
   },
   {
@@ -4327,6 +4376,13 @@
         "#f4f6f9",
         "#e1e7ef"
       ]
+    },
+    "image": {
+      "src": "/images/products/pixel-watch-4/main.webp",
+      "thumb": "/images/products/pixel-watch-4/thumb.webp",
+      "alt": "Google Pixel Watch 4, official Google press photo",
+      "credit": "Google",
+      "sourceUrl": "https://blog.google/products-and-platforms/devices/pixel/pixel-watch-4/"
     }
   },
   {
@@ -4472,6 +4528,13 @@
         "#F6F3EF",
         "#E9E4DD"
       ]
+    },
+    "image": {
+      "src": "/images/products/oakley-meta-vanguard/main.webp",
+      "thumb": "/images/products/oakley-meta-vanguard/thumb.webp",
+      "alt": "Oakley Meta Vanguard, official Meta press photo",
+      "credit": "Meta",
+      "sourceUrl": "https://www.meta.com/ai-glasses/oakley-meta-vanguard/"
     }
   },
   {
@@ -4614,6 +4677,13 @@
         "#f4f5f7",
         "#e3e7ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/garmin-forerunner-170/main.webp",
+      "thumb": "/images/products/garmin-forerunner-170/thumb.webp",
+      "alt": "Garmin Forerunner 170, official Garmin press photo",
+      "credit": "Garmin",
+      "sourceUrl": "https://www.garmin.com/en-US/p/1915560/"
     }
   },
   {
@@ -4685,6 +4755,13 @@
         "#f5f6f8",
         "#e4e7ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/garmin-forerunner-70/main.webp",
+      "thumb": "/images/products/garmin-forerunner-70/thumb.webp",
+      "alt": "Garmin Forerunner 70, official Garmin press photo",
+      "credit": "Garmin",
+      "sourceUrl": "https://www.garmin.com/en-US/p/1941179/"
     }
   },
   {
@@ -4756,6 +4833,13 @@
         "#f4f6f1",
         "#e3e9dd"
       ]
+    },
+    "image": {
+      "src": "/images/products/pixel-buds-2a/main.webp",
+      "thumb": "/images/products/pixel-buds-2a/thumb.webp",
+      "alt": "Google Pixel Buds 2a, official Google press photo",
+      "credit": "Google",
+      "sourceUrl": "https://store.google.com/product/pixel_buds_2a"
     }
   },
   {
@@ -5707,6 +5791,13 @@
         "#f1f8f5",
         "#dcefe7"
       ]
+    },
+    "image": {
+      "src": "/images/products/oneplus-15r/main.webp",
+      "thumb": "/images/products/oneplus-15r/thumb.webp",
+      "alt": "OnePlus 15R, official OnePlus press photo",
+      "credit": "OnePlus",
+      "sourceUrl": "https://www.oneplus.com/us/oneplus-15r"
     }
   },
   {

@@ -1,12 +1,12 @@
 # Product images
 
 Owner decision 2026-10-22: use official press images with credit, and remove any on request. Scope: public
-press kits and newsroom pages that download without a login. Apple and Beats (Apple's terms require written
-permission) are excluded, and so are login-gated or blocked hubs (Nintendo, Razer, Dell, MSI, Sony, Motorola, Nothing).
+press kits and newsroom pages that download without a login. Apple and Beats are included after a direct owner approval the same day, although Apple's terms require written
+permission. Login-gated or blocked hubs (Nintendo, Razer, Dell, MSI, Sony, Motorola, Nothing) are skipped.
 The terms table below stays as the record of what each brand's pages actually say. Never use retailer, stock or review-site
 images, and only use an image when it is clearly the exact model: otherwise the drawing stays.
 
-Status: 17 of 84 products have a photo, the rest keep their drawing.
+Status: 57 of 84 products have a photo, the rest keep their drawing.
 
 ## How it works
 
@@ -65,32 +65,66 @@ Same as `image.sourceUrl` in `data/products.json`. Products not listed use the d
 
 | Slug                       | Credit  | Brand page                                                                                                                                         |
 | -------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| iphone-duo                 | Apple   | https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/                                                                                   |
+| iphone-18-pro              | Apple   | https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/                                                           |
 | galaxy-z-fold-8            | Samsung | https://news.samsung.com/us/samsung-making-most-new-galaxy-z-fold8/                                                                                |
+| iphone-17                  | Apple   | https://www.apple.com/newsroom/2025/09/apple-debuts-iphone-17/                                                                                     |
+| iphone-17-pro              | Apple   | https://www.apple.com/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/                                                          |
+| iphone-air                 | Apple   | https://www.apple.com/newsroom/2025/09/introducing-iphone-air-a-powerful-new-iphone-with-a-breakthrough-design/                                    |
+| galaxy-s26-ultra           | Samsung | https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/                                                  |
+| pixel-11-pro               | Google  | https://blog.google/products-and-platforms/devices/pixel/made-by-google-2026/                                                                      |
+| galaxy-z-flip-8            | Samsung | https://news.samsung.com/us/samsung-galaxy-z-fold8-ultra-fold8-flip8-foldables-perfected-every-way-of-living/                                      |
+| apple-vision-pro-m5        | Apple   | https://www.apple.com/newsroom/2025/10/apple-vision-pro-upgraded-with-the-m5-chip-and-dual-knit-band/                                              |
+| apple-watch-series-11      | Apple   | https://www.apple.com/newsroom/2025/09/apple-debuts-apple-watch-series-11-featuring-groundbreaking-health-insights/                                |
+| apple-watch-ultra-3        | Apple   | https://www.apple.com/newsroom/2025/09/introducing-apple-watch-ultra-3/                                                                            |
 | bose-qc-ultra-earbuds-2    | Bose    | https://www.bose.com/pressroom/bose-announces-the-quietcomfort-ultra-earbuds-2nd-gen                                                               |
+| galaxy-s26                 | Samsung | https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/                                                  |
+| ipad-pro-m5                | Apple   | https://www.apple.com/newsroom/2025/10/apple-introduces-the-powerful-new-ipad-pro-with-the-m5-chip/                                                |
+| iphone-17e                 | Apple   | https://www.apple.com/newsroom/2026/03/apple-introduces-iphone-17e/                                                                                |
+| macbook-air-m5             | Apple   | https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/                                                               |
+| macbook-pro-14-m5          | Apple   | https://www.apple.com/newsroom/2025/10/apple-unveils-new-14-inch-macbook-pro-powered-by-the-m5-chip/                                               |
+| oneplus-15                 | OnePlus | https://www.oneplus.com/us/oneplus-15                                                                                                              |
+| pixel-watch-5              | Google  | https://blog.google/products-and-platforms/devices/pixel/made-by-google-2026/                                                                      |
+| valve-steam-machine        | Valve   | https://store.steampowered.com/hardware/steammachine                                                                                               |
+| galaxy-watch-9             | Samsung | https://news.samsung.com/us/samsung-whats-new-galaxy-watch9/                                                                                       |
+| airpods-pro-3              | Apple   | https://www.apple.com/newsroom/2025/09/introducing-airpods-pro-3-the-ultimate-audio-experience/                                                    |
+| pixel-11                   | Google  | https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/                                                                   |
+| meta-ray-ban-display       | Meta    | https://www.meta.com/ai-glasses/meta-ray-ban-display/                                                                                              |
+| apple-watch-ultra-4        | Apple   | https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/                                                                          |
+| galaxy-s26-plus            | Samsung | https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/                                                  |
 | galaxy-z-trifold           | Samsung | https://news.samsung.com/us/samsung-introducing-galaxy-z-trifold-shape-whats-next-mobile-innovation/                                               |
 | pixel-10a                  | Google  | https://blog.google/products-and-platforms/devices/pixel/google-pixel-10a/                                                                         |
 | pixel-10-pro-fold          | Google  | https://blog.google/products-and-platforms/devices/pixel/google-pixel-10-pro-fold/                                                                 |
+| ipad-air-m4                | Apple   | https://www.apple.com/newsroom/2026/03/macbook-neo-iphone-17e-ipad-air-with-m4-and-more-are-now-available/                                         |
 | hp-omnibook-ultra-14-2026  | HP      | https://www.hp.com/us-en/newsroom/press-kits/2026/hpatces.html                                                                                     |
+| macbook-neo                | Apple   | https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/                                                                                   |
+| galaxy-book6-pro           | Samsung | https://news.samsung.com/us/samsungs-powerful-galaxy-book6-series-available-march-11/                                                              |
+| galaxy-buds-4              | Samsung | https://news.samsung.com/us/samsung-unveils-galaxy-buds4-series-best-hi-fi-sound-enhanced-comfort-fit/                                             |
 | bose-qc-ultra-headphones-2 | Bose    | https://www.bose.com/pressroom/bose-unveils-the-next-generation-of-the-quietcomfort-ultra-headphones                                               |
+| steam-frame                | Valve   | https://store.steampowered.com/hardware/steamframe                                                                                                 |
 | rog-xbox-ally-x            | ASUS    | https://press.asus.com/news/press-releases/rog-xbox-ally-handheld-gaming/                                                                          |
 | garmin-fenix-9-pro         | Garmin  | https://www.garmin.com/en-US/newsroom/press-release/outdoor/garmin-expands-its-flagship-performance-smartwatch-lineup-with-fenix9-and-fenix9-pro/  |
 | rog-xbox-ally              | ASUS    | https://press.asus.com/news/press-releases/rog-xbox-ally-handheld-gaming/                                                                          |
 | samsung-galaxy-xr          | Samsung | https://news.samsung.com/us/introducing-galaxy-xr-opening-new-worlds/                                                                              |
+| galaxy-buds-4-pro          | Samsung | https://news.samsung.com/us/samsung-week-discover-new-ways-live-smarter-exclusive-deals-rewards/                                                   |
+| pixel-watch-4              | Google  | https://blog.google/products-and-platforms/devices/pixel/pixel-watch-4/                                                                            |
 | lenovo-legion-go-2         | Lenovo  | https://news.lenovo.com/press-kits/innovation-world-2025/                                                                                          |
+| oakley-meta-vanguard       | Meta    | https://www.meta.com/ai-glasses/oakley-meta-vanguard/                                                                                              |
 | galaxy-watch-ultra-2       | Samsung | https://news.samsung.com/us/samsung-week-discover-new-ways-live-smarter-exclusive-deals-rewards/                                                   |
+| garmin-forerunner-170      | Garmin  | https://www.garmin.com/en-US/p/1915560/                                                                                                            |
+| garmin-forerunner-70       | Garmin  | https://www.garmin.com/en-US/p/1941179/                                                                                                            |
+| pixel-buds-2a              | Google  | https://store.google.com/product/pixel_buds_2a                                                                                                     |
 | thinkpad-x1-carbon-gen14   | Lenovo  | https://news.lenovo.com/press-kits/tech-world-ces-2026/                                                                                            |
 | garmin-cirqa               | Garmin  | https://www.garmin.com/en-US/newsroom/press-release/wearables-health/meet-cirqa-smart-band-the-screen-free-health-and-fitness-tracker-from-garmin/ |
 | pixel-11-pro-fold          | Google  | https://blog.google/products-and-platforms/devices/pixel/pixel-11-pro-fold/                                                                        |
+| beats-360                  | Beats   | https://www.beatsbydre.com/company/press/beats-360                                                                                                 |
+| oneplus-15r                | OnePlus | https://www.oneplus.com/us/oneplus-15r                                                                                                             |
+| apple-watch-series-12      | Apple   | https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/                                   |
 | oura-ring-5                | Oura    | https://ouraring.com/newsroom                                                                                                                      |
+| airpods-5                  | Apple   | https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/                           |
 
-Kept as drawings and why: Apple and Beats (excluded); Nintendo, Razer (login-gated); Dell, MSI, Sony, Motorola
-(press pages blocked); Nothing, Viture, Even Realities (no public press kit); Valve, OnePlus (press kits only cover older
-products); and individual products where only lifestyle shots, multi-model collages or an unverifiable model were available
-(most Samsung and Pixel phones and watches, Forerunner 70 and 170, Zenbooks, Zephyrus G14, Meta glasses, Kindle Scribe Colorsoft).
-
-## Weekly refresh
-
-`refresh.js` adds new products without an `image`, so they show the drawing, which is the safe default.
-For a brand marked ALLOWED, after the refresh run `scripts/add-product-image.js` for each new product
-(the image must come from that brand's own newsroom, per the table). This is manual on purpose: finding the
-right press image for a new product needs a person to confirm it is the right model.
+Kept as drawings and why: Nintendo, Razer (login-gated); Dell, MSI, Sony, Motorola (press pages blocked);
+Nothing, Viture, Even Realities (no public press kit); and products where only lifestyle shots, multi-model collages or
+text banners were available (Galaxy S26 FE, A57, A37, Tab S12 Ultra, Fitbit Air, Zenbook A14 and A16, Zephyrus G14,
+MacBook Pro 16-inch, Kindle Scribe Colorsoft). Photos for Garmin, Meta, Valve and OnePlus come from the brand's own
+product pages when the newsroom had none; they are credited the same way.
