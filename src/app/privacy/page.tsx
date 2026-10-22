@@ -38,8 +38,7 @@ export default function PrivacyPage() {
       <section className="card mt-4 p-5 sm:p-6">
         <h2 className="section-label">Other sites</h2>
         <p className="mt-3 max-w-[65ch] text-sm leading-relaxed">
-          The site loads its text font from Google Fonts. Every review links to the outlet that published it, and every
-          product links to its maker. Those sites have their own privacy policies.
+          Every review links to the outlet that published it, and every product links to its maker. Those sites have their own privacy policies.
         </p>
       </section>
 

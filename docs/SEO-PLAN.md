@@ -22,7 +22,7 @@ Problems found (fixed in the first push, see section 3):
 7. Home page title carried "(Beta)", which is a weak thing to show in search results.
 
 Open, lower priority (not fixed yet):
-- Render-blocking Google Fonts stylesheet (Lighthouse flags it). Moving to `next/font` would remove a request and help LCP on slow phones.
+- Render-blocking Google Fonts stylesheet (Lighthouse flagged it). Fixed: Inter is now self-hosted with `next/font`.
 - Low color contrast on a few muted text styles (accessibility 95-96).
 - Lighthouse flags `uses-long-cache-ttl` on a few non-hashed assets (such as the OG image).
 - Open Graph image is one generic image for every page.
