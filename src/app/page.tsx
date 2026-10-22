@@ -17,6 +17,7 @@ export default function HomePage() {
       + `.f-${c}:focus-visible ~ .filter-labels .lbl-${c}{outline:2px solid #94632e;outline-offset:2px}`
       + `.f-${c}:checked ~ .cat-list > :not([data-cat='${c}']){display:none}`)
     .join('');
+  const byDate = [...products].sort((a, b) => b.releaseDate.localeCompare(a.releaseDate) || (b.criticScore ?? 0) - (a.criticScore ?? 0));
   const newest = [...products].sort((a, b) => b.releaseDate.localeCompare(a.releaseDate)).slice(0, 8);
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6">
@@ -41,12 +42,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section aria-labelledby="all" className="cat-filter">
+      <section aria-labelledby="all" className="cat-filter sort-toggle">
         <style>{filterCss}</style>
-        <div className="mb-3 flex items-baseline justify-between">
-          <h2 id="all" className="text-lg font-bold">All Products</h2>
-          <span className="section-label">Sorted by critic score</span>
-        </div>
+        <h2 id="all" className="mb-3 text-lg font-bold">All Products</h2>
+        <input type="radio" name="home-sort" id="home-sort-score" className="by-score" defaultChecked />
+        <input type="radio" name="home-sort" id="home-sort-date" className="by-date" />
         {filters.map((f) => (
           <input key={f.id} type="radio" name="cat" id={`cat-${f.id}`} className={`f-${f.id}`} defaultChecked={f.id === 'all'} />
         ))}
@@ -55,8 +55,19 @@ export default function HomePage() {
             <label key={f.id} htmlFor={`cat-${f.id}`} className={`lbl-${f.id}`}>{f.label}</label>
           ))}
         </div>
-        <div className="cat-list flex flex-col gap-3">
+        <div className="sort-labels mb-3 flex items-center gap-3 text-xs font-semibold uppercase tracking-wider">
+          <span className="text-ink-faint">Sort:</span>
+          <label htmlFor="home-sort-score" className="lbl-score">Critic score</label>
+          <label htmlFor="home-sort-date" className="lbl-date">Newest</label>
+        </div>
+        {/* Both orders are rendered; CSS shows one, so sorting works without JavaScript. */}
+        <div className="cat-list list-score flex flex-col gap-3">
           {products.map((p) => (
+            <div key={p.id} data-cat={p.category}><ProductListCard product={p} /></div>
+          ))}
+        </div>
+        <div className="cat-list list-date flex-col gap-3">
+          {byDate.map((p) => (
             <div key={p.id} data-cat={p.category}><ProductListCard product={p} /></div>
           ))}
         </div>

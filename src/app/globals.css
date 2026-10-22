@@ -62,7 +62,7 @@
 
   /* Critic Scorecard sort toggle: pure CSS so it works in the static preview too */
   .sort-toggle input { position: absolute; opacity: 0; pointer-events: none; }
-  .sort-toggle label { @apply cursor-pointer text-sm text-ink-faint hover:text-ink; }
+  .sort-toggle .sort-labels label { @apply cursor-pointer text-ink-faint hover:text-ink; }
   .by-score:checked ~ .sort-labels .lbl-score,
   .by-date:checked ~ .sort-labels .lbl-date { @apply text-ink font-semibold; }
   .by-score:focus-visible ~ .sort-labels .lbl-score,
@@ -70,6 +70,7 @@
   .sort-toggle .list-date { display: none; }
   .by-date:checked ~ .list-score { display: none; }
   .by-date:checked ~ .list-date { display: block; }
+  .by-date:checked ~ .cat-list.list-date { display: flex; }
 
   /* Home category filter: pure CSS radios, same approach as the sort toggle */
   .cat-filter { position: relative; }

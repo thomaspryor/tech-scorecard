@@ -9568,5 +9568,1080 @@
     },
     "scoreReason": "Strong hardware praise, but repeated software bugs, crashes, and accuracy issues add notable caveats.",
     "scoredFromFullText": true
+  },
+  {
+    "outletId": "the-verge",
+    "critic": "Victoria Song",
+    "url": "https://www.theverge.com/smartwatch-review/778012/apple-watch-series-11-review-hypertension-5g-sleep-score-wearables-smartwatch",
+    "date": "2025-09-16",
+    "rating": "8/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "Even so, there’s value in being a dependable workhorse. For certain folks, the Series 11 is still the best option over the new SE 3 or the Ultra.",
+    "productId": "apple-watch-series-11",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 73
+    },
+    "scoreReason": "Great but unexciting, with modest upgrades and many people advised to skip upgrading this year.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Nina Raemont",
+    "url": "https://www.zdnet.com/article/apple-watch-series-11-review/",
+    "date": "2025-09-16",
+    "rating": "4.6/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Series 11 is ideal for you if you have already used a smartwatch and are ready for an upgrade.",
+    "note": "Date is the page's original_publish_date; the page was republished/updated 2026-03-25 with a deal headline.",
+    "productId": "apple-watch-series-11",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for upgrades, with praise for battery and health features, but Series 10 remains a viable cheaper option.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Stan Schroeder",
+    "url": "https://mashable.com/review/apple-watch-series-11",
+    "date": "2025-09-22",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Yes. Even if you already have a Series 10, which has nearly all the same features, the new Apple Watch Series 11 doesn’t require you to charge it mid-day in order to keep it going through the night.",
+    "productId": "apple-watch-series-11",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise for battery gains and comfort, but minimal upgrades and some weak new features.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/i-tested-the-apple-watch-ultra-3-and-its-like-a-land-rover-for-your-wrist/",
+    "date": "2025-09-23",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "With its two-day battery life and satellite-powered safety features, Apple's rugged new smartwatch is built for sensible thrill seekers who still want convenience.",
+    "note": "Page is labeled Review; CNET shows no numeric score, so score is an estimate of the verdict.",
+    "productId": "apple-watch-ultra-3",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strongly recommended for battery life and safety, with size and style limiting broader appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://www.pcmag.com/reviews/apple-watch-ultra-3",
+    "date": "2025-09-18",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Apple Watch Ultra 3 is even more well-connected than its predecessor, with a 5G modem and satellite support, bringing extra peace of mind to its target audience of outdoor enthusiasts.",
+    "note": "Original publish date 2025-09-18 (page later updated). PCMag Editors Choice went to the Series 11, not the Ultra 3.",
+    "productId": "apple-watch-ultra-3",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent battery and rugged features, but pricey and unnecessary for most compared with cheaper Apple watches.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "gizmodo",
+    "critic": "Raymond Wong",
+    "url": "https://gizmodo.com/apple-watch-ultra-3-review-biggest-is-best-except-if-its-not-2000663354",
+    "date": "2025-09-24",
+    "rating": "4/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "The Apple Watch Ultra 3 has the most features of any Apple smartwatch, but you may not need to buy it if you want two of its best features.",
+    "productId": "apple-watch-ultra-3",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 74
+    },
+    "scoreReason": "Strong smartwatch, but mostly iterative and many owners should skip upgrading or choose smaller, cheaper models.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "digital-trends",
+    "critic": "Nirave Gondhia",
+    "url": "https://www.digitaltrends.com/wearables/apple-watch-utra-3-review/",
+    "date": "2025-10-03",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "If you can handle the larger size, this is the best Apple Watch ever made.",
+    "editorsChoice": true,
+    "note": "Digital Trends shows an Editors Choice badge but no numeric score on the page; score is an estimate.",
+    "productId": "apple-watch-ultra-3",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Calls it the best Apple Watch ever made, with only a size-related caveat.",
+    "scoredFromFullText": false
+  },
+  {
+    "outletId": "wired",
+    "critic": "Parker Hall",
+    "url": "https://www.wired.com/review/bose-qc-ultra-2/",
+    "date": "2025-09-08",
+    "rating": "9/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "With slight, useful changes like wireless charging and better processing, these noise-canceling buds remain at the top of the pile.",
+    "productId": "bose-qc-ultra-earbuds-2",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended as the best noise-canceling earbuds, with only minor battery life and size caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://www.pcmag.com/reviews/bose-quietcomfort-ultra-earbuds-2nd-gen",
+    "date": "2025-08-27",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The second-gen Bose QuietComfort Ultra Earbuds produce warm and bright audio, charge wirelessly, and are unmatched in their ability to silence your surroundings, making them easy to recommend.",
+    "editorsChoice": true,
+    "productId": "bose-qc-ultra-earbuds-2",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Best-in-class noise cancellation and excellent sound, with only minor control, battery, and EQ drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Prakhar Khanna",
+    "url": "https://www.zdnet.com/article/bose-quietcomfort-ultra-earbuds-2-review/",
+    "date": "2025-10-16",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "If you’re looking for a pair of earbuds that fit well, sound great, deliver excellent ANC, and complete the feature set with an exceptional spatial audio experience, the Bose QC Ultra Earbuds 2 are an easy recommendation.",
+    "note": "Date is the page's original_publish_date; the page was republished/updated 2026-03-19.",
+    "productId": "bose-qc-ultra-earbuds-2",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent comfort, sound, ANC, and strong recommendation, but connectivity bugs and update issues hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Bethany Allard",
+    "url": "https://mashable.com/review/bose-quietcomfort-ultra-earbuds-2nd-gen",
+    "date": "2025-09-10",
+    "rating": "4.1/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "As a premium option, you'd be hard-pressed to find earbuds with a better combination of comfort and noise cancellation than the Bose QC Ultra earbuds (2nd gen).",
+    "productId": "bose-qc-ultra-earbuds-2",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Excellent ANC and comfort, but pricey with minor upgrades, average battery, and some connection quirks.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "cnet",
+    "critic": "Matt Elliott",
+    "url": "https://www.cnet.com/tech/computing/dell-xps-14-review-ultraportable-laptop/",
+    "date": "2026-08-01",
+    "rating": "8.1/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "With the XPS 14, a classic returns with a product worthy of its name and gives Dell a MacBook Pro alternative for Windows users.",
+    "productId": "dell-xps-14-2026",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 81
+    },
+    "scoreReason": "Strong praise for design, battery and performance, but price, ports and MacBook comparison temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Kyle Kucharski",
+    "url": "https://www.zdnet.com/article/dell-xps-14-2026-review/",
+    "date": "2026-03-06",
+    "rating": "4/5",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "The 2026 Dell XPS 14 is one of the most premium Windows PCs on the market right now, offering an experience that rivals the MacBook in performance, build quality, and battery life.",
+    "productId": "dell-xps-14-2026",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 84
+    },
+    "scoreReason": "Strong praise for design, battery, and overall experience, with notable limits in graphics, ports, keyboard, and price.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "the-verge",
+    "critic": "Dominic Preston",
+    "url": "https://www.theverge.com/tech/892311/samsung-galaxy-s26-plus-review-screen-battery-camera-software",
+    "date": "2026-03-11",
+    "rating": "7/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Samsung’s latest Galaxy S phones are going through the motions.",
+    "note": "Joint review of Galaxy S26 and S26 Plus; the 7/10 Verge Score is listed for the Galaxy S26.",
+    "productId": "galaxy-s26",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Good phones with solid battery and support, but stale updates, weak cameras, and little reason to upgrade.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "wired",
+    "critic": "Julian Chokkattu",
+    "url": "https://www.wired.com/review/samsung-galaxy-s26-and-galaxy-s26-plus/",
+    "date": "2026-03-27",
+    "rating": "7/10",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "Lack of fresh features and price increases make these two Samsung flagships feel rather bland.",
+    "note": "Joint review of Galaxy S26 and S26+.",
+    "productId": "galaxy-s26",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Good performance and battery, but bland upgrades, annoying omissions, and many buyers should consider cheaper alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "cnet",
+    "critic": "Abrar Al-Heeti",
+    "url": "https://www.cnet.com/tech/mobile/galaxy-z-fold-8-review-2/",
+    "date": "2026-08-07",
+    "rating": "8.6/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "Samsung's reimagined book-style foldable is compact and versatile, making it the ideal device for consuming all kinds of content. It's also just delightful to use.",
+    "productId": "galaxy-z-fold-8",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise and Editors’ Choice, but price, camera compromises, Qi2 omissions, and modest battery gains temper it.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "wired",
+    "critic": "Julian Chokkattu",
+    "url": "https://www.wired.com/review/samsung-galaxy-z-fold8-and-z-fold8-ultra/",
+    "date": "2026-08-16",
+    "rating": "8/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Fold8 really feels like the mainstream book-like folding smartphone anyone with a passing interest (and the cash) should finally consider.",
+    "note": "Joint review of Galaxy Z Fold8 and Z Fold8 Ultra, single 8/10 rating.",
+    "productId": "galaxy-z-fold-8",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for its design and usability, with price and camera limitations holding it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Prakhar Khanna",
+    "url": "https://www.zdnet.com/article/samsung-galaxy-z-fold-8-review/",
+    "date": "2026-08-07",
+    "rating": "4/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "If your usage involves reading, watching videos, and browsing the web – and you have the budget for it — the Galaxy Z Fold 8 is the best folding phone out there right now.",
+    "editorsChoice": true,
+    "productId": "galaxy-z-fold-8",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Highly recommended and fun to use, with notable camera, charging magnet, heat, and price drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Timothy Beck Werth",
+    "url": "https://mashable.com/tech/samsung-galaxy-z-fold-8",
+    "date": "2026-08-07",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The most exciting phone launch of the year (so far), the Galaxy Z Fold 8 represents a major step forward for Samsung — and for the foldable category as a whole.",
+    "productId": "galaxy-z-fold-8",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, screen, performance, and fun, with notable camera and price caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Timothy Beck Werth",
+    "url": "https://mashable.com/review/apple-m5-ipad-pro",
+    "date": "2025-10-21",
+    "rating": "4.6/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Apple's newest tablet is superpowered by M5 silicon, and it's truly a Pro device for power users.",
+    "note": "Reviews the 11-inch M5 iPad Pro",
+    "productId": "ipad-pro-m5",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, display, and power, but iterative upgrade and overkill for most users.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "gizmodo",
+    "critic": "Raymond Wong",
+    "url": "https://gizmodo.com/iphone-17-pro-max-review-practical-perfection-with-two-capital-ps-2000660140",
+    "date": "2025-09-17",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "Apple's iPhone 17 Pro and 17 Pro Max have everything you could want... so long as you're okay living in the company's walled garden.",
+    "note": "Joint review of iPhone 17 Pro and 17 Pro Max",
+    "productId": "iphone-17-pro",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 97
+    },
+    "scoreReason": "Glowing praise across performance, cameras, and battery, with only minor complaints about bulk and camera button.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Jason Hiner",
+    "url": "https://www.zdnet.com/article/apple-iphone-17-pro-max-review/",
+    "date": "2025-10-01",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "While I don't usually advise upgrading to the flagship iPhone if you have last year's model, there's one big factor to consider this year.",
+    "note": "Author says Pro and Pro Max reviews are combined into one story; focus is on the Pro Max; unrated, score estimated from text",
+    "productId": "iphone-17-pro",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strong upgrade with major battery, camera, and thermal gains, despite durability, software, and camera bump complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "gizmodo",
+    "critic": "Raymond Wong",
+    "url": "https://gizmodo.com/iphone-17e-review-so-much-more-bang-for-your-buck-2000730716",
+    "date": "2026-03-09",
+    "rating": "4/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "Apple addressed nearly every complaint about the iPhone 16e and kept the price the same. It's a good deal.",
+    "productId": "iphone-17e",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 88
+    },
+    "scoreReason": "Strong recommendation and much better value, with only moderate camera and feature compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Kerry Wan",
+    "url": "https://www.zdnet.com/article/i-tested-the-iphone-air-for-a-week-and-heres-why-17-pro-max-users-shouldnt-sleep-on-it/",
+    "date": "2025-09-26",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "The iPhone Air might not wow serious photographers, but its ultra-thin build and balanced feature set make it a great choice for those on the go.",
+    "note": "ZDNET's main iPhone Air evaluation (a week of testing with key takeaways and buying advice); no numeric rating shown.",
+    "productId": "iphone-air",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Praised for thin design and balanced experience, but battery, heat, and camera limits temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "cnet",
+    "critic": "Matt Elliott",
+    "url": "https://www.cnet.com/tech/computing/m5-macbook-air-review-13-inch-2026/",
+    "date": "2026-03-11",
+    "rating": "8/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "No longer Apple's MacBook entry point, the 13-inch Air is now a bit of a question mark for students, while the rest of us are probably better off with the larger Air.",
+    "productId": "macbook-air-m5",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 73
+    },
+    "scoreReason": "Strong performance and value upgrades, but reviewer says most buyers should pick the Neo or 15-inch Air.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "wired",
+    "critic": "Luke Larsen",
+    "url": "https://www.wired.com/review/macbook-air-m5/",
+    "date": "2026-03-19",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Set between the MacBook Neo and MacBook Pro, the M5 MacBook Air remains the laptop that I recommend for most people.",
+    "productId": "macbook-air-m5",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong overall recommendation, but limited upgrades and cheaper alternatives make the praise somewhat tempered.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "pcmag",
+    "critic": "Matthew Buzzi",
+    "url": "https://www.pcmag.com/reviews/apple-macbook-air-13-inch-2026-m5",
+    "date": "2026-03-14",
+    "rating": "4/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "Apple's 2026 MacBook Air is largely unchanged on the outside, but its exceptional build pairs up with an even faster M5 chip and a major storage upgrade to secure its spot as a top-value ultraportable.",
+    "note": "Original publish date 2026-03-14 (page updated 2026-06-25).",
+    "productId": "macbook-air-m5",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strong Editors' Choice praise, excellent value and performance, with minor complaints about unchanged design and aging display.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Kyle Kucharski",
+    "url": "https://www.zdnet.com/article/macbook-air-m5-review/",
+    "date": "2026-04-05",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "The Apple MacBook Air M5 marks an incremental upgrade over its predecessor, but it’s highly recommended for anyone with an M1 or older machine.",
+    "note": "Tested the 15-inch model.",
+    "productId": "macbook-air-m5",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 82
+    },
+    "scoreReason": "Strong recommendation for most buyers, with caveats about display, price, and limited upgrades for recent owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "cnet",
+    "critic": "Lori Grunin",
+    "url": "https://www.cnet.com/tech/computing/i-tested-the-m5-macbook-pro-14-its-gpu-performance-boost-is-real/",
+    "date": "2025-10-21",
+    "rating": "8.4/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "If you’re in the market and could use a general performance boost over your current base model MacBook or MacBook Pro across the board, you definitely won’t be disappointed by what the M5 MacBook Pro 14 delivers.",
+    "productId": "macbook-pro-14-m5",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent laptop, but reviewer says most people should skip upgrading and consider other MacBook configurations.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "wired",
+    "critic": "Luke Larsen",
+    "url": "https://www.wired.com/review/apple-macbook-pro-m5-14-inch/",
+    "date": "2025-10-21",
+    "rating": "8/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "You certainly won't hate yourself for buying this machine, but as long as you can buy a similarly-specced M4 Pro MacBook Pro for the same price, the lack of anything else new in the M5 MacBook Pro makes it a harder sell.",
+    "productId": "macbook-pro-14-m5",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent laptop with strong performance, but modest upgrades and many buyers should choose Air or wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Timothy Beck Werth",
+    "url": "https://mashable.com/review/apple-macbook-pro-m5-2025",
+    "date": "2025-10-21",
+    "rating": "4.5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "The M5 MacBook Pro is absolutely worth it for the right user, but one of many professional solutions Apple now offers.",
+    "productId": "macbook-pro-14-m5",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent performance and design, but iterative upgrade that many current Mac owners should skip.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/14-inch-macbook-pro-m5-review-new-soul-in-an-old-body-2000677593",
+    "date": "2025-10-27",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The new MacBook with M5 is still one of the best you can buy, especially at the base price.",
+    "productId": "macbook-pro-14-m5",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Excellent laptop with strong performance, but familiar design, thermal limits, and advice to wait temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "the-verge",
+    "critic": "Allison Johnson",
+    "url": "https://www.theverge.com/tech/937763/motorola-razr-ultra-2026-review-battery-camera",
+    "date": "2026-05-27",
+    "rating": "6/10",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "Despite its good looks, the Razr Ultra isn’t the best option for someone seeking the thrills of a modern flip phone. I’d feel much more comfortable recommending it for like, $1,200.",
+    "productId": "motorola-razr-ultra-2026",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 53
+    },
+    "scoreReason": "Beautiful and long-lasting, but overpriced, flawed cameras, bloatware, and weak recommendation make it easy to skip.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "engadget",
+    "critic": "Sam Rutherford",
+    "url": "https://www.engadget.com/2189996/motorola-razr-ultra-review/",
+    "date": "2026-06-09",
+    "rating": "8.5/10",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "It's a good phone and one of the top contenders for anyone considering a compact flip-style device. It looks great, has responsive performance and excellent battery life, plus a very cute and compact design.",
+    "productId": "motorola-razr-ultra-2026",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Strong flip phone with great battery and design, but steep price hike makes full-price purchase hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Cesar Cadenas",
+    "url": "https://www.zdnet.com/article/motorola-2026-razr-ultra-review/",
+    "date": "2026-05-21",
+    "rating": "4/5",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "While I've found the Razr Ultra to be a great phone, there's no getting around the fact that it is expensive.",
+    "productId": "motorola-razr-ultra-2026",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 73
+    },
+    "scoreReason": "Strong hardware and multimedia upgrades, but high price and some heat issues make it sale-only.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Timothy Beck Werth",
+    "url": "https://mashable.com/tech/motorola-razr-ultra-plus-review-foldable-phones",
+    "date": "2026-05-21",
+    "rating": "4.4/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "While the new $1,499.99 price tag is a major blow, the phone's feature set, display, and design are all elite for the category.",
+    "note": "Joint review of the Razr Ultra and Razr+ (2026); the page says it will be updated, and the verdict and score cover the Ultra.",
+    "productId": "motorola-razr-ultra-2026",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 88
+    },
+    "scoreReason": "Strong endorsement with enthusiasm for design, battery, and displays, tempered mainly by very high price and some durability concern.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "the-verge",
+    "critic": "Allison Johnson",
+    "url": "https://www.theverge.com/tech/818933/oneplus-15-review-battery-screen-camera",
+    "date": "2025-11-13",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "As I see it, this is a phone for the battery anxious.",
+    "productId": "oneplus-15",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Exceptional battery and strong basics, but software clutter, camera limits, and longevity concerns temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "cnet",
+    "critic": "David Lumb",
+    "url": "https://www.cnet.com/tech/mobile/i-tested-the-oneplus-15-and-its-massive-7300mah-battery-deserves-a-medal/",
+    "date": "2025-11-13",
+    "rating": "8.5/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "But its advantages outweigh its drawbacks. If, like most people, you just want the longest-lasting phone possible, the OnePlus 15 might be the best option for you.",
+    "productId": "oneplus-15",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent battery and performance, but cameras, heat, and shorter software support limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "engadget",
+    "critic": "Igor Bonifacic",
+    "url": "https://www.engadget.com/mobile/smartphones/oneplus-15-review-a-great-phone-if-photography-isnt-a-priority-143000489.html",
+    "date": "2025-11-13",
+    "rating": "87/100",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "If you don't mind a slightly underbaked camera, the OnePlus 15 is tremendous, offering among the best displays, performance and battery life you can find on a phone right now.",
+    "productId": "oneplus-15",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 82
+    },
+    "scoreReason": "Excellent performance and battery, but camera, design, support and value concerns make many buyers consider alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "wired",
+    "critic": "Julian Chokkattu",
+    "url": "https://www.wired.com/review/oneplus-15/",
+    "date": "2025-11-13",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "If your smartphone's camera takes a backseat, and you prioritize gaming or just not having to constantly charge your phone, I think the OnePlus 15 is a great alternative (and I'm glad we still have some alternatives) to the heavyweights.",
+    "productId": "oneplus-15",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent battery and performance, but cameras, software quirks, charging omissions, and shorter support temper the praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://www.pcmag.com/reviews/oneplus-15",
+    "date": "2026-05-29",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The OnePlus 15 holds its own against top Android flagships from Google and Samsung, delivering a sleek design, category-defining battery life, lightning-fast performance, cutting-edge specs, and a dash of AI—all at a refreshingly affordable price.",
+    "note": "Date is the page's 'Updated' / datePublished stamp (May 29, 2026); original publication may be earlier.",
+    "productId": "oneplus-15",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for battery, performance, display, and value, but cameras, AI, support, and availability hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Kerry Wan",
+    "url": "https://www.zdnet.com/article/oneplus-15-review/",
+    "date": "2026-02-18",
+    "rating": "4.3/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "At the same starting price of $899, the OnePlus 15 is the definitive option for mobile gamers, power users, and tech enthusiasts to close out the year.",
+    "productId": "oneplus-15",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 85
+    },
+    "scoreReason": "Strong recommendation for performance and battery, with meaningful camera and design compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Alex Perry",
+    "url": "https://mashable.com/review/oneplus-15",
+    "date": "2025-11-13",
+    "rating": "4.4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "OnePlus 15 is another in a long line of powerful, relatively affordable flagships for those who want to escape from the Apple-Google-Samsung triumvirate.",
+    "productId": "oneplus-15",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 88
+    },
+    "scoreReason": "Strong value, performance, battery, and cameras, with mostly minor complaints about bland design and limited AI appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "digital-trends",
+    "critic": "Shimul Sood",
+    "url": "https://www.digitaltrends.com/phones/google-pixel-11-review/",
+    "date": "2026-09-13",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "After a month in my pocket, the Pixel 11 has convinced me that a great phone doesn't have to be a big one, or uber expensive.",
+    "editorsChoice": true,
+    "note": "No overall score shown; score is the mean of the page's six category scores (8.5, 9, 8, 9.5, 8.5, 8 out of 10).",
+    "productId": "pixel-11",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for its compact size and value, with no visible major reservations in the excerpt.",
+    "scoredFromFullText": false
+  },
+  {
+    "outletId": "the-verge",
+    "critic": "Victoria Song",
+    "url": "https://www.theverge.com/tech/981957/google-pixel-watch-5-review-wearables-smartwatch",
+    "date": "2026-08-19",
+    "rating": "8/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Think of this as part one of the Pixel Watch 5 review as most of the new features aren’t out yet. That said, GPS rocks.",
+    "note": "Scored 8/10 but framed as a first part of the review because health features had not yet rolled out; headline: promising but not finished.",
+    "productId": "pixel-watch-5",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong Android smartwatch praise, but delayed key features and wait-to-buy advice add notable reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/sony-wh-1000xm6-review-hail-to-the-new-noise-canceling-king/",
+    "date": "2025-05-15",
+    "rating": "9.3/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "With the XM6, Sony has fixed the small design flaws of its predecessor while bumping up the overall performance. The result is a headphone that’s arguably edged just ahead of the competition and is now at the top of its class.",
+    "productId": "sony-wh-1000xm6",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 93
+    },
+    "scoreReason": "Top-of-class praise and strong recommendation, with price and upgrade-value caveats for current XM5 owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "zdnet",
+    "critic": "Jada Jones",
+    "url": "https://www.zdnet.com/article/sony-wh100xm6-review/",
+    "date": "2026-03-08",
+    "rating": "4.2/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "The latest Sony WH-1000XM6 prove that seemingly small and incremental changes between two generations of products can be impactful, useful, and largely felt.",
+    "editorsChoice": true,
+    "note": "Date is the review's schema datePublished (page reads 'Article updated on March 8, 2026'); original publication date not shown.",
+    "productId": "sony-wh-1000xm6",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 89
+    },
+    "scoreReason": "Strong praise and Editors' Choice, with minor comfort and app-control complaints plus little urgency to upgrade.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "mashable",
+    "critic": "Timothy Beck Werth",
+    "url": "https://mashable.com/review/sony-wh-1000xm6-headphones",
+    "date": "2025-05-15",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Add to that elite noise cancellation, a comfortable fit, and a travel-friendly design, and you have flagship headphones that justify their $450 price tag.",
+    "note": "Page shows a Mashable Choice Award badge.",
+    "productId": "sony-wh-1000xm6",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with excellent ANC and comfort, but pricey and only iterative over XM5.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "wired",
+    "critic": "Matt Kamen",
+    "url": "https://www.wired.com/review/valve-steam-machine/",
+    "date": "2026-07-17",
+    "rating": "5/10",
+    "score": 52,
+    "scoreSource": "rating",
+    "excerpt": "Great for indie darlings, but Sony, Microsoft, and Nintendo remain kings of TV gaming.",
+    "productId": "valve-steam-machine",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 52,
+      "gemini": 52
+    },
+    "scoreReason": "Appealing design and software, but poor value and disappointing gaming performance make most buyers better off waiting.",
+    "scoredFromFullText": true
+  },
+  {
+    "outletId": "pcmag",
+    "critic": "Matthew Buzzi",
+    "url": "https://www.pcmag.com/reviews/valve-steam-machine",
+    "date": "2026-07-25",
+    "rating": "3.5/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "Valve's Steam Machine delivers legit living room PC gaming, albeit with just-enough performance and some compatibility caveats.",
+    "productId": "valve-steam-machine",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Impressive concept and execution, but high price, storage limits, and software quirks bring significant caveats.",
+    "scoredFromFullText": true
   }
 ]
