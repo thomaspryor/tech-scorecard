@@ -54,7 +54,7 @@ Never port scoring-data changes or Broadway's data pipeline; this site has its o
 
 ## How Broadway flags a change for porting
 
-Broadway sessions are asked (Broadwayscore `CLAUDE.md`, "Tech Scorecard carry-over") to mark
+Broadway sessions are asked (Broadwayscore `cloud-memory/feedback_port_tech_flag.md`, indexed in `cloud-memory/MEMORY.md`; CLAUDE.md there is at its byte cap) to mark
 changes that are generic web improvements in one of two ways:
 
 - a commit message line `PORT-TECH: <what to carry over, one line>`, or
