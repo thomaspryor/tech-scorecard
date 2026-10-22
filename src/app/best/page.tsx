@@ -6,6 +6,7 @@ import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbLd, clip, itemListLd } from '@/lib/seo';
 import { BEST_YEAR } from '@/config/seo';
+import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
 const TOP_N = 10;
 
@@ -13,10 +14,10 @@ const rated = getScoredProducts;
 
 export function generateMetadata(): Metadata {
   const top = rated()[0];
-  if (!top) return { title: `Best-reviewed tech of ${BEST_YEAR}`, alternates: { canonical: '/best/' } };
-  const title = `Best-reviewed tech of ${BEST_YEAR}: top gadgets by critic score`;
+  if (!top) return { title: `Best-reviewed tech to buy in ${BEST_YEAR}`, alternates: { canonical: '/best/' } };
+  const title = `Best-reviewed tech to buy in ${BEST_YEAR}: top gadgets by critic score`;
   const description = clip(
-    `The ${TOP_N} best-reviewed gadgets of ${BEST_YEAR}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
+    `The ${TOP_N} best-reviewed gadgets to buy in ${BEST_YEAR}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   return {
@@ -48,7 +49,7 @@ export default function BestPage() {
             { name: `Best of ${BEST_YEAR}`, path: '/best/' },
           ]),
           itemListLd(
-            `Best-reviewed tech of ${BEST_YEAR}`,
+            `Best-reviewed tech to buy in ${BEST_YEAR}`,
             top.map((p) => ({ name: p.name, path: `/product/${p.slug}/` })),
           ),
         ]}
@@ -58,9 +59,9 @@ export default function BestPage() {
           Home
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-ink">Best of {BEST_YEAR}</span>
+        <span className="text-ink">Best to buy in {BEST_YEAR}</span>
       </nav>
-      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">Best-reviewed tech of {BEST_YEAR}</h1>
+      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">Best-reviewed tech to buy in {BEST_YEAR}</h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
         The {top.length} highest critic scores across every category we track, from{' '}
         {all.reduce((n, p) => n + p.reviewCount, 0)} professional reviews. A score is a weighted average of published
@@ -72,11 +73,12 @@ export default function BestPage() {
       <ol className="mt-6 space-y-3">
         {top.map((p, i) => (
           <li key={p.id} className="flex items-center gap-3">
-            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint" aria-label={`Rank ${i + 1}`}>
-              {i + 1}
-            </span>
+            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint">{i + 1}</span>
             <div className="min-w-0 flex-1">
               <ProductListCard product={p} heading="h2" />
+              {p.reviewCount < EARLY_SCORE_BELOW && (
+                <p className="mt-1 text-xs text-ink-faint">Early score: based on {p.reviewCount} reviews so far</p>
+              )}
             </div>
           </li>
         ))}

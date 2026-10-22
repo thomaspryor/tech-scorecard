@@ -8,6 +8,7 @@ import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbLd, clip, itemListLd } from '@/lib/seo';
 import { BEST_YEAR } from '@/config/seo';
+import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
 type Params = { name: string };
 
@@ -86,7 +87,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
       </nav>
 
       <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">
-        Best {plural} of {BEST_YEAR}, ranked by critic score
+        Best {plural} to buy in {BEST_YEAR}, ranked by critic score
       </h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
         Ranked by the weighted average of {reviews} professional reviews. The top rated is the {top.name} at{' '}
@@ -100,11 +101,12 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
       <ol className="mt-6 space-y-3">
         {list.map((p, i) => (
           <li key={p.id} className="flex items-center gap-3">
-            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint" aria-label={`Rank ${i + 1}`}>
-              {i + 1}
-            </span>
+            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint">{i + 1}</span>
             <div className="min-w-0 flex-1">
               <ProductListCard product={p} heading="h2" />
+              {p.reviewCount < EARLY_SCORE_BELOW && (
+                <p className="mt-1 text-xs text-ink-faint">Early score: based on {p.reviewCount} reviews so far</p>
+              )}
             </div>
           </li>
         ))}
