@@ -6,9 +6,19 @@
     "url": "https://www.engadget.com/2259790/apple-iphone-18-pro-review-cameras-performance-variable-aperture-siri-ai/",
     "date": "2026-09-16",
     "rating": "9/10",
-    "score": 90,
+    "score": 93,
     "scoreSource": "rating",
-    "excerpt": "If you care about the best cameras and performance from Apple's current product lineup, the iPhone 18 Pro series is the way to go."
+    "excerpt": "If you care about the best cameras and performance from Apple's current product lineup, the iPhone 18 Pro series is the way to go.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent cameras and performance, but iterative upgrades, higher price, and few must-have features temper enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -17,9 +27,19 @@
     "url": "https://www.theverge.com/tech/995945/iphone-18-pro-max-review-camera-aperture",
     "date": "2026-09-16",
     "rating": "8/10",
-    "score": 80,
+    "score": 79,
     "scoreSource": "rating",
-    "excerpt": "It's what we've come to expect from what was the flagship iPhone: excellent and utterly iterative."
+    "excerpt": "It's what we've come to expect from what was the flagship iPhone: excellent and utterly iterative.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent but highly iterative, with modest camera gains and clear advice to skip if you have last year’s model.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -28,10 +48,20 @@
     "url": "https://www.techradar.com/phones/iphone/iphone-18-pro-and-iphone-18-pro-max-review",
     "date": "2026-09-16",
     "rating": "5/5",
-    "score": 100,
+    "score": 96,
     "scoreSource": "rating",
     "excerpt": "The A20 Pro brings plenty of power, battery life is excellent, thermals are noticeably better, and Siri AI finally starts delivering on Apple's long-running promise.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 96
+    },
+    "scoreReason": "Highly enthusiastic overall, with only mild upgrade caveats for recent Pro owners and some Siri beta issues.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -40,9 +70,19 @@
     "url": "https://www.pcmag.com/reviews/apple-iphone-18-pro",
     "date": "2026-09-16",
     "rating": "4/5",
-    "score": 80,
+    "score": 82,
     "scoreSource": "rating",
-    "excerpt": "Apple's iPhone 18 Pro combines blazing performance, exceptional battery life, and professional-level cameras into a compact, hand-friendly frame."
+    "excerpt": "Apple's iPhone 18 Pro combines blazing performance, exceptional battery life, and professional-level cameras into a compact, hand-friendly frame.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for performance, battery, and cameras, but many should choose Pro Max or keep 17 Pro.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -51,10 +91,20 @@
     "url": "https://www.tomsguide.com/phones/iphones/iphone-18-pro-and-pro-max-review",
     "date": "2026-09-16",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "You have to pay $100 more for both Pro phones, and they're heavier than their predecessors, but overall these are easily the best phones money can buy.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Extremely positive overall, with price and weight as the main drawbacks and some AI limitations.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -63,9 +113,19 @@
     "url": "https://gizmodo.com/iphone-18-pro-and-18-pro-max-review-apple-is-just-flexing-now-2000812130",
     "date": "2026-09-16",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 98,
     "scoreSource": "rating",
-    "excerpt": "By almost every metric, the iPhone 18 Pros raise the ceiling of what a \"pro\" iPhone is even higher."
+    "excerpt": "By almost every metric, the iPhone 18 Pros raise the ceiling of what a \"pro\" iPhone is even higher.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 98
+    },
+    "scoreReason": "Overwhelming praise, says unequivocally yes and calls them the best phones despite minor flaws.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -74,9 +134,19 @@
     "url": "https://www.wired.com/review/apple-iphone-18-pro-and-iphone-18-pro-max/",
     "date": "2026-09-16",
     "rating": "9/10",
-    "score": 90,
+    "score": 93,
     "scoreSource": "rating",
-    "excerpt": "That said, if you're a Pro connoisseur, the iPhone 18 Pro ($1,199) and its bigger sibling, the 18 Pro Max ($1,299), are very good phones, despite the $100 price hike over last year's Pro models."
+    "excerpt": "That said, if you're a Pro connoisseur, the iPhone 18 Pro ($1,199) and its bigger sibling, the 18 Pro Max ($1,299), are very good phones, despite the $100 price hike over last year's Pro models.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent Pro phone with standout camera controls, but pricey and unnecessary for recent iPhone Pro owners.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -89,7 +159,17 @@
     "scoreSource": "rating",
     "excerpt": "If you're a creative type who enjoys manual camera controls, the 18 Pro or Pro Max belongs in your pocket.",
     "editorsChoice": true,
-    "note": "Joint review of the 18 Pro and 18 Pro Max; the outlet's score is published for the Pro Max."
+    "note": "Joint review of the 18 Pro and 18 Pro Max; the outlet's score is published for the Pro Max.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent cameras and battery, but high price and frequent advice to skip limit enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -98,10 +178,20 @@
     "url": "https://mashable.com/tech/iphone-18-pro-max-review",
     "date": "2026-09-16",
     "rating": "4.25/5",
-    "score": 85,
+    "score": 83,
     "scoreSource": "rating",
     "excerpt": "At first glance, the new iPhone 18 Pro and Pro Max look a lot like last year's models, and we wouldn't rush to upgrade if you have a 17 Pro.",
-    "note": "Joint review of the 18 Pro and 18 Pro Max; the outlet's score is published for the Pro Max."
+    "note": "Joint review of the 18 Pro and 18 Pro Max; the outlet's score is published for the Pro Max.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for battery, camera, and cooling, but limited upgrade appeal and higher price temper enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -110,9 +200,19 @@
     "url": "https://9to5mac.com/2026/09/16/iphone-18-pro-review/",
     "date": "2026-09-16",
     "rating": null,
-    "score": 85,
+    "score": 87,
     "scoreSource": "text",
-    "excerpt": "If the iPhone Duo is the new kid on the block, the iPhone 18 Pro is a familiar old friend, and I mean that in the best way possible."
+    "excerpt": "If the iPhone Duo is the new kid on the block, the iPhone 18 Pro is a familiar old friend, and I mean that in the best way possible.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for performance, battery, camera, and design, with weight, price, and weak upgrade case as caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -121,9 +221,19 @@
     "url": "https://www.trustedreviews.com/reviews/apple-iphone-18-pro",
     "date": "2026-10-06",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 94,
     "scoreSource": "rating",
-    "excerpt": "Small updates here and there make the iPhone 18 Pro an easy recommendation, even if it's more of a 'S' upgrade rather than a fully-fledged revolution."
+    "excerpt": "Small updates here and there make the iPhone 18 Pro an easy recommendation, even if it's more of a 'S' upgrade rather than a fully-fledged revolution.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 93
+    },
+    "scoreReason": "Strong all-round praise, but upgrades feel incremental and price makes waiting reasonable for some buyers.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -132,10 +242,20 @@
     "url": "https://www.whathifi.com/smartphones-tablets/smartphones/apple-iphone-18-pro",
     "date": "2026-10-08",
     "rating": "5/5",
-    "score": 100,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "The big upgrades lie elsewhere, but the iPhone 18 Pro is still a small improvement over its predecessor for movies and music, and a stunning portable AV device in its own right",
-    "note": "Audio and video focused review."
+    "note": "Audio and video focused review.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent AV performance and clear praise, but upgrades are slight and existing owners are told not to upgrade.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -144,9 +264,19 @@
     "url": "https://www.digitaltrends.com/phones/iphone-18-pro-review/",
     "date": "2026-10-18",
     "rating": "8/10",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "But after using this phone every day for over a month, none of those things have made me question my decision to upgrade."
+    "excerpt": "But after using this phone every day for over a month, none of those things have made me question my decision to upgrade.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong daily-use praise with notable AI and telephoto weaknesses, plus limited upgrade appeal for recent iPhone owners.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -155,9 +285,19 @@
     "url": "https://www.notebookcheck.net/Apple-iPhone-18-Pro-review-Compact-powerhouse-with-an-unresolved-weakness.1420103.0.html",
     "date": "2026-10-10",
     "rating": "90%",
-    "score": 90,
+    "score": 89,
     "scoreSource": "rating",
-    "excerpt": "The Apple iPhone 18 Pro proves to be an ambitious flagship smartphone in our review, packing maximum performance into a compact body."
+    "excerpt": "The Apple iPhone 18 Pro proves to be an ambitious flagship smartphone in our review, packing maximum performance into a compact body.",
+    "scoreBand": [
+      85,
+      95
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent compact flagship with strong performance, but notable display flicker, camera, cooling, battery, and price drawbacks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -166,9 +306,19 @@
     "url": "https://www.gsmarena.com/apple_iphone_18_pro-review-3003p6.php",
     "date": "2026-09-25",
     "rating": null,
-    "score": 82,
+    "score": 86,
     "scoreSource": "text",
-    "excerpt": "But if the budget allows and you are looking for a premium compact phone, the iPhone 18 Pro is definitely one of the best you can get right now."
+    "excerpt": "But if the budget allows and you are looking for a premium compact phone, the iPhone 18 Pro is definitely one of the best you can get right now.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent compact flagship with few flaws, but high price and incremental upgrades temper enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -177,9 +327,19 @@
     "url": "https://www.techadvisor.com/article/3251896/iphone-18-pro-review.html",
     "date": "2026-10-08",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 92,
     "scoreSource": "rating",
-    "excerpt": "It's a year of iterative upgrades for the iPhone 18 Pro, but that doesn't mean it's not a compelling package."
+    "excerpt": "It's a year of iterative upgrades for the iPhone 18 Pro, but that doesn't mean it's not a compelling package.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent phone, but reviewer repeatedly says most people should skip, save money, or wait.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -188,9 +348,19 @@
     "url": "https://www.expertreviews.co.uk/technology/phones/apple-iphone-18-pro-review",
     "date": "2026-10-01",
     "rating": "5/5",
-    "score": 100,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "The Apple iPhone 18 Pro isn't the flashiest phone Apple launched this year, but it is a superb one."
+    "excerpt": "The Apple iPhone 18 Pro isn't the flashiest phone Apple launched this year, but it is a superb one.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent all-round phone with minor flaws, but many should skip upgrading from recent models.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-18-pro",
@@ -199,9 +369,19 @@
     "url": "https://www.pickr.com.au/reviews/2026/apple-iphone-18-pro/",
     "date": "2026-10-19",
     "rating": "4.7/5",
-    "score": 94,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "The iPhone 18 Pro is a compact powerhouse and easy to recommend."
+    "excerpt": "The iPhone 18 Pro is a compact powerhouse and easy to recommend.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for performance and cameras, with battery and price as the main caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -210,9 +390,19 @@
     "url": "https://www.theverge.com/tech/972387/samsung-galaxy-z-fold-8-review",
     "date": "2026-07-29",
     "rating": "8/10",
-    "score": 80,
+    "score": 84,
     "scoreSource": "rating",
-    "excerpt": "If I was buying one of Samsung's new foldables, it would be this one."
+    "excerpt": "If I was buying one of Samsung's new foldables, it would be this one.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for the design and usability, with notable camera and price drawbacks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -223,7 +413,17 @@
     "rating": "8.9/10",
     "score": 89,
     "scoreSource": "rating",
-    "excerpt": "By switching up its design and really honing on what people use their phone for the most (aka gorging on games and videos), Samsung has made a brilliant foldable."
+    "excerpt": "By switching up its design and really honing on what people use their phone for the most (aka gorging on games and videos), Samsung has made a brilliant foldable.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strongly recommended with enthusiasm; main drawback is missing zoom camera and minor multitasking compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -232,10 +432,20 @@
     "url": "https://gizmodo.com/samsung-galaxy-z-fold-8-review-the-most-fun-phone-in-ages-2000792547",
     "date": "2026-08-06",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 98,
     "scoreSource": "rating",
     "excerpt": "Some apps still might not display correctly on both screens, but even so, I'm declaring the Z Fold 8 a home run.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 98
+    },
+    "scoreReason": "Rapturous praise with only minor drawbacks; strongly recommends it if you want this form factor.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -244,10 +454,20 @@
     "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-z-fold-8-review-wide-for-the-win",
     "date": "2026-07-29",
     "rating": "4/5",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
     "excerpt": "Overall, I'm a big fan of the Galaxy Z Fold 8.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly praised overall, but camera, durability and app support issues keep it from the top of range.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -256,9 +476,19 @@
     "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-z-fold-8-review",
     "date": "2026-08-03",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "The Galaxy Z Fold 8 is a shot in the arm for the foldables market."
+    "excerpt": "The Galaxy Z Fold 8 is a shot in the arm for the foldables market.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 94
+    },
+    "scoreReason": "Strong praise for design, screens, software and performance, with price, camera and battery caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -267,9 +497,19 @@
     "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-z-fold-8-review",
     "date": "2026-08-08",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "If there's one phone that I can see killing the flip phone and taking foldables truly mainstream, it's the Galaxy Z Fold 8."
+    "excerpt": "If there's one phone that I can see killing the flip phone and taking foldables truly mainstream, it's the Galaxy Z Fold 8.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Very enthusiastic overall, with notable compromises around gaming heat, app scaling, battery, and missing features.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -278,9 +518,19 @@
     "url": "https://9to5google.com/2026/07/31/samsung-galaxy-z-fold-8-review/",
     "date": "2026-07-31",
     "rating": null,
-    "score": 90,
+    "score": 77,
     "scoreSource": "text",
-    "excerpt": "The Galaxy Z Fold 8 is a peek into the future of foldables, of that I'm certainly convinced."
+    "excerpt": "The Galaxy Z Fold 8 is a peek into the future of foldables, of that I'm certainly convinced.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong praise for the new shape and overall experience, but cameras, battery, and price limit enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -289,9 +539,19 @@
     "url": "https://www.digitaltrends.com/phones/samsung-galaxy-z-fold-8-review/",
     "date": "2026-08-11",
     "rating": "8/10",
-    "score": 80,
+    "score": 83,
     "scoreSource": "rating",
-    "excerpt": "I've never used a foldable phone with as much fervor and daily joy as the Samsung Galaxy Z Fold 8."
+    "excerpt": "I've never used a foldable phone with as much fervor and daily joy as the Samsung Galaxy Z Fold 8.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strong recommendation for productivity and design, but price, cameras, and throttling bring notable caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -300,9 +560,19 @@
     "url": "https://www.trustedreviews.com/reviews/samsung-galaxy-z-fold-8",
     "date": "2026-07-29",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "It has compromises, especially around cameras, sustained performance and battery life, but it's still the Samsung foldable I'd choose."
+    "excerpt": "It has compromises, especially around cameras, sustained performance and battery life, but it's still the Samsung foldable I'd choose.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised design and usability, but camera, performance and battery compromises temper enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -311,9 +581,19 @@
     "url": "https://www.gsmarena.com/samsung_galaxy_z_fold8-review-2984.php",
     "date": "2026-07-29",
     "rating": null,
-    "score": 85,
+    "score": 84,
     "scoreSource": "text",
-    "excerpt": "Other than its underwhelming camera hardware, there is nothing really wrong with it."
+    "excerpt": "Other than its underwhelming camera hardware, there is nothing really wrong with it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Reviewer clearly likes the form factor, build and usability, with only minor design and accessory complaints.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -324,7 +604,17 @@
     "rating": null,
     "score": 88,
     "scoreSource": "text",
-    "excerpt": "Overall, I think Samsung's Galaxy Z Fold 8 is a fresh and exciting take on the book-style foldable, and it's easily become my favorite foldable I've ever used."
+    "excerpt": "Overall, I think Samsung's Galaxy Z Fold 8 is a fresh and exciting take on the book-style foldable, and it's easily become my favorite foldable I've ever used.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 85
+    },
+    "scoreReason": "Enthusiastic praise for design and usability, with price and camera compromises preventing a higher score.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -333,9 +623,19 @@
     "url": "https://www.stuff.tv/review/samsung-galaxy-z-fold8-review/",
     "date": "2026-07-27",
     "rating": "4/5",
-    "score": 80,
+    "score": 83,
     "scoreSource": "rating",
-    "excerpt": "The Galaxy Z Fold8 is the first of a new breed of book-style foldable that excels at entertainment."
+    "excerpt": "The Galaxy Z Fold8 is the first of a new breed of book-style foldable that excels at entertainment.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Very positive on the form factor and experience, but price, software quirks, cameras and value hold it back.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -344,9 +644,19 @@
     "url": "https://www.t3.com/tech/phones/samsung-galaxy-z-fold-8-review",
     "date": "2026-07-28",
     "rating": "5/5",
-    "score": 100,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "Much as the Galaxy Z Fold 8's passport-sized form could have proved a floundering move for Samsung, it's opened new borders – and represents the future of foldables."
+    "excerpt": "Much as the Galaxy Z Fold 8's passport-sized form could have proved a floundering move for Samsung, it's opened new borders – and represents the future of foldables.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Highly enthusiastic about a transformative foldable, with notable but non-dealbreaking price, software, heat, and camera compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -355,9 +665,19 @@
     "url": "https://www.expertreviews.co.uk/technology/phones/samsung-galaxy-z-fold-8-review",
     "date": "2026-07-29",
     "rating": "4/5",
-    "score": 80,
+    "score": 74,
     "scoreSource": "rating",
-    "excerpt": "I wish I could wholeheartedly recommend the Galaxy Z Fold 8."
+    "excerpt": "I wish I could wholeheartedly recommend the Galaxy Z Fold 8.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Great new design, but missing key premium features makes the recommendation cautious and limited.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -366,9 +686,19 @@
     "url": "https://www.whathifi.com/smartphones-tablets/smartphones/samsung-galaxy-z-fold-8",
     "date": "2026-08-18",
     "rating": "5/5",
-    "score": 100,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "The Galaxy Z Fold 8 is the most compelling folding phone we've tested, thanks to its superb picture quality, more durable and uniform display, and new content-friendly aspect ratio"
+    "excerpt": "The Galaxy Z Fold 8 is the most compelling folding phone we've tested, thanks to its superb picture quality, more durable and uniform display, and new content-friendly aspect ratio",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Highly enthusiastic praise for display and foldable design, with only minor audio and price caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -377,9 +707,19 @@
     "url": "https://www.techadvisor.com/article/3200568/samsung-galaxy-z-fold-8-review.html",
     "date": "2026-08-03",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 93,
     "scoreSource": "rating",
-    "excerpt": "The Z Fold 8 is a truly exciting phone that feels different from anything I have used before."
+    "excerpt": "The Z Fold 8 is a truly exciting phone that feels different from anything I have used before.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 92
+    },
+    "scoreReason": "Highly positive and excited, but camera, cover screen, heat, and software quirks bring notable caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -390,7 +730,17 @@
     "rating": "8.8/10",
     "score": 88,
     "scoreSource": "rating",
-    "excerpt": "So even though the Duo is Apple's first attempt at a device like this, there's no doubt Ternus and company have made a first-class foldable."
+    "excerpt": "So even though the Duo is Apple's first attempt at a device like this, there's no doubt Ternus and company have made a first-class foldable.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong recommendation despite weight, price, and app optimization issues; reviewer says it was worth the wait.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -399,9 +749,19 @@
     "url": "https://www.theverge.com/tech/1015028/iphone-duo-review",
     "date": "2026-10-21",
     "rating": "7/10",
-    "score": 70,
+    "score": 73,
     "scoreSource": "rating",
-    "excerpt": "It’s incomplete as a product, but complete enough as an idea that you can see where things are going."
+    "excerpt": "It’s incomplete as a product, but complete enough as an idea that you can see where things are going.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 72
+    },
+    "scoreReason": "Fun early-adopter device, but expensive, frustrating, and easy for most people to skip or wait.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -410,9 +770,19 @@
     "url": "https://www.wired.com/review/apple-iphone-duo/",
     "date": "2026-10-21",
     "rating": "7/10",
-    "score": 70,
+    "score": 77,
     "scoreSource": "rating",
-    "excerpt": "Apple made an astonishingly good first foldable. Now iOS and third-party apps need time to catch up."
+    "excerpt": "Apple made an astonishingly good first foldable. Now iOS and third-party apps need time to catch up.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong hardware and battery praise, but app support and advice to wait add notable reservations.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -421,9 +791,19 @@
     "url": "https://www.cnet.com/tech/mobile/iphone-duo-review/",
     "date": "2026-10-21",
     "rating": "8.7/10",
-    "score": 87,
+    "score": 89,
     "scoreSource": "rating",
-    "excerpt": "The iPhone Duo took its time getting here, but it’s made quite an entrance."
+    "excerpt": "The iPhone Duo took its time getting here, but it’s made quite an entrance.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strongly recommended with Editors' Choice, despite high price and a few notable first-gen compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -432,10 +812,20 @@
     "url": "https://www.tomsguide.com/phones/iphones/apple-iphone-duo-review",
     "date": "2026-10-21",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
     "excerpt": "The iPhone Duo is the best designed foldable phone I’ve ever tested, with a sturdy and premium build and a nano-texture display that hides the crease.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strong enthusiasm and recommendation, with notable app optimization and camera compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -444,9 +834,19 @@
     "url": "https://www.techradar.com/phones/iphone/apple-iphone-duo-review",
     "date": "2026-10-21",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "But, for Apple fans who've been eagerly awaiting the Cupertino tech giant's entry into the folding space, there is no other or better choice."
+    "excerpt": "But, for Apple fans who've been eagerly awaiting the Cupertino tech giant's entry into the folding space, there is no other or better choice.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent first foldable with standout design and screens, but pricey with notable Face ID, app, and camera compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -455,9 +855,19 @@
     "url": "https://gizmodo.com/iphone-duo-review-2000827502",
     "date": "2026-10-21",
     "rating": "4/5",
-    "score": 80,
+    "score": 82,
     "scoreSource": "rating",
-    "excerpt": "Even at two grand, it has the potential to upend mobile as we know it."
+    "excerpt": "Even at two grand, it has the potential to upend mobile as we know it.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly positive on design, software, performance, and battery, with notable camera and multitasking limitations.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -466,10 +876,20 @@
     "url": "https://www.pcmag.com/reviews/apple-iphone-duo",
     "date": "2026-10-21",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
     "excerpt": "The iPhone Duo overcomes Apple's late start by delivering the best hardware, performance, and battery life of any foldable phone on the market.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise throughout, with minor camera and software caveats but a clear enthusiastic recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -478,9 +898,19 @@
     "url": "https://mashable.com/tech/apple-iphone-duo-review",
     "date": "2026-10-21",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "Apple's iPhone Duo is an exciting new type of iPhone that proves the foldable form factor isn't a novelty."
+    "excerpt": "Apple's iPhone Duo is an exciting new type of iPhone that proves the foldable form factor isn't a novelty.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Highly enthusiastic praise, calling it exciting and worth it, despite notable app, camera, and price compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -489,9 +919,19 @@
     "url": "https://9to5mac.com/2026/10/21/iphone-duo-review/",
     "date": "2026-10-21",
     "rating": null,
-    "score": 82,
+    "score": 79,
     "scoreSource": "text",
-    "excerpt": "The iPhone Duo is a glimpse at the future of the iPhone, and that future is foldable."
+    "excerpt": "The iPhone Duo is a glimpse at the future of the iPhone, and that future is foldable.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Strong praise for design and usability, with notable caveats on price, Touch ID, cameras, and software.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -500,9 +940,19 @@
     "url": "https://www.popularmechanics.com/technology/gadgets/a74192937/apple-iphone-duo-review/",
     "date": "2026-10-21",
     "rating": null,
-    "score": 92,
+    "score": 96,
     "scoreSource": "text",
-    "excerpt": "The iPhone Duo is easily the most exciting phone of the year."
+    "excerpt": "The iPhone Duo is easily the most exciting phone of the year.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Calls it best in class, worth the price, and a generation ahead despite minor camera and battery caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -511,9 +961,19 @@
     "url": "https://www.gq-magazine.co.uk/article/apples-pound2000-iphone-duo-has-ruined-normal-phones-for-me",
     "date": "2026-10-21",
     "rating": null,
-    "score": 90,
+    "score": 92,
     "scoreSource": "text",
-    "excerpt": "The more I use the Duo, the less I want to go back to a normal iPhone."
+    "excerpt": "The more I use the Duo, the less I want to go back to a normal iPhone.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Enthusiastic about design, screen and usability, with only price, Touch ID and camera compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -522,9 +982,19 @@
     "url": "https://www.dailymail.com/sciencetech/article-16220005/iPhone-Duo-gimmick-foldable-revolution-SHIVALI-BEST.html",
     "date": "2026-10-21",
     "rating": null,
-    "score": 60,
+    "score": 64,
     "scoreSource": "text",
-    "excerpt": "The iPhone Duo is a nifty gadget, but for me, it's just not as good as the iPhone 18 Pro."
+    "excerpt": "The iPhone Duo is a nifty gadget, but for me, it's just not as good as the iPhone 18 Pro.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 55
+    },
+    "scoreReason": "Impressive design and multitasking, but pricey with app compatibility issues and not better than the Pro.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -533,9 +1003,19 @@
     "url": "https://www.cnn.com/2026/10/21/tech/apple-iphone-duo-review",
     "date": "2026-10-21",
     "rating": null,
-    "score": 70,
+    "score": 72,
     "scoreSource": "text",
-    "excerpt": "My advice? Wait until developers have had more time to optimize their apps before you decide."
+    "excerpt": "My advice? Wait until developers have had more time to optimize their apps before you decide.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Exciting and compelling design, but high price and poor app optimization make it a wait-and-see buy.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -544,9 +1024,19 @@
     "url": "https://www.gbnews.com/tech/iphone-duo-review",
     "date": "2026-10-21",
     "rating": null,
-    "score": 82,
+    "score": 84,
     "scoreSource": "text",
-    "excerpt": "iPhone Duo is the best foldable money can buy. But that doesn't mean it's the best smartphone for most people."
+    "excerpt": "iPhone Duo is the best foldable money can buy. But that doesn't mean it's the best smartphone for most people.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Highly polished and best foldable available, but expensive with camera, app support, and usability compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-duo",
@@ -555,9 +1045,19 @@
     "url": "https://petapixel.com/2026/10/21/iphone-duo-review-a-compromise-but-not-compromised/",
     "date": "2026-10-21",
     "rating": null,
-    "score": 70,
+    "score": 84,
     "scoreSource": "text",
-    "excerpt": "On the one hand, it's a brilliantly designed phone that feels premium and invites you in like no other Apple handheld has before."
+    "excerpt": "On the one hand, it's a brilliantly designed phone that feels premium and invites you in like no other Apple handheld has before.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 75
+    },
+    "scoreReason": "Strong praise for design, premium feel, and appeal suggests an enthusiastic overall verdict.",
+    "scoredFromFullText": false
   },
   {
     "productId": "galaxy-z-fold-8",
@@ -566,9 +1066,19 @@
     "url": "https://www.pcmag.com/reviews/samsung-galaxy-z-fold-8",
     "date": "2026-07-29",
     "rating": "4/5",
-    "score": 80,
+    "score": 87,
     "scoreSource": "rating",
-    "excerpt": "The Samsung Galaxy Z Fold 8 sets a new standard for book-style foldables by pairing a squatter, video-friendly inner display with excellent battery life, quick performance, and genuinely helpful AI features, making it the foldable to beat."
+    "excerpt": "The Samsung Galaxy Z Fold 8 sets a new standard for book-style foldables by pairing a squatter, video-friendly inner display with excellent battery life, quick performance, and genuinely helpful AI features, making it the foldable to beat.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise and Editors' Choice, with notable concerns about price and missing telephoto camera.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -577,9 +1087,19 @@
     "url": "https://www.theverge.com/tech/779568/iphone-17-review-apple-best-features",
     "date": "2025-09-17",
     "rating": "8/10",
-    "score": 80,
+    "score": 88,
     "scoreSource": "rating",
-    "excerpt": "If you just want a great iPhone, and you don’t want to miss out on anything major, the iPhone 17 is finally that phone."
+    "excerpt": "If you just want a great iPhone, and you don’t want to miss out on anything major, the iPhone 17 is finally that phone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong endorsement for most buyers, with minor camera, heat, and AI complaints.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -588,10 +1108,20 @@
     "url": "https://www.cnet.com/tech/mobile/apple-iphone-17-review/",
     "date": "2025-09-17",
     "rating": "9.1/10",
-    "score": 91,
+    "score": 96,
     "scoreSource": "rating",
     "excerpt": "It’s a solid all-around device for most people who want something reliable and capable without breaking the bank.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 96
+    },
+    "scoreReason": "Strong recommendation with Editors' Choice, lots of praise, only minor upgrade caveats for iPhone 16 owners.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -600,9 +1130,19 @@
     "url": "https://www.engadget.com/mobile/smartphones/iphone-17-review-closer-to-pro-110055511.html",
     "date": "2025-09-18",
     "rating": "91/100",
-    "score": 91,
+    "score": 98,
     "scoreSource": "rating",
-    "excerpt": "With the most significant update in years, the iPhone 17 is an easy choice for an upgrade for most people."
+    "excerpt": "With the most significant update in years, the iPhone 17 is an easy choice for an upgrade for most people.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 100
+    },
+    "scoreReason": "Strong recommendation with lots of praise; only notable drawback is the 6.3-inch size preference.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -611,9 +1151,19 @@
     "url": "https://www.wired.com/review/apple-iphone-17/",
     "date": "2025-09-23",
     "rating": "9/10",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "But at $799, it remains the iPhone most people should buy, especially considering its cameras and battery life have a leg up over the pricier iPhone Air."
+    "excerpt": "But at $799, it remains the iPhone most people should buy, especially considering its cameras and battery life have a leg up over the pricier iPhone Air.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for most buyers, with caveats about zoom, gaming limits, and modest year-over-year upgrades.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -622,9 +1172,19 @@
     "url": "https://www.techradar.com/phones/iphone/apple-iphone-17-review",
     "date": "2025-09-17",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "This is the iPhone most people should buy, especially since it keeps the same starting price with double the storage."
+    "excerpt": "This is the iPhone most people should buy, especially since it keeps the same starting price with double the storage.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 96
+    },
+    "scoreReason": "Strongly recommended for most buyers, with mild upgrade and battery caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -633,10 +1193,20 @@
     "url": "https://www.tomsguide.com/phones/iphones/apple-iphone-17-review",
     "date": "2025-09-17",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "With so many changes and upgrades, the iPhone 17 proves that it's the phone most people should get, thanks to new features like a 120Hz refresh rate, faster charging, brighter screen, double the storage, and a slick selfie camera",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong value and clear recommendation, with notable AI and zoom shortcomings keeping it from the top.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -645,10 +1215,20 @@
     "url": "https://www.pcmag.com/reviews/apple-iphone-17",
     "date": "2025-09-17",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 98,
     "scoreSource": "rating",
     "excerpt": "The iPhone 17 is the best iPhone for most people, bar none.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 99
+    },
+    "scoreReason": "Strong Editors' Choice praise and best-for-most recommendation, with only minor caveats and limited upgrade urgency for recent owners.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -657,9 +1237,19 @@
     "url": "https://gizmodo.com/iphone-17-review-the-best-iphone-value-in-years-2000661144",
     "date": "2025-09-18",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "The iPhone 17 offers the best bang for buck in an iPhone. It's a value proposition that'll last for at least five years."
+    "excerpt": "The iPhone 17 offers the best bang for buck in an iPhone. It's a value proposition that'll last for at least five years.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong value praise, but advises many recent iPhone owners to skip upgrading.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -668,9 +1258,19 @@
     "url": "https://mashable.com/review/apple-iphone-17-review",
     "date": "2025-10-18",
     "rating": "4/5",
-    "score": 80,
+    "score": 85,
     "scoreSource": "rating",
-    "excerpt": "It's the iPhone that makes the most sense for most people."
+    "excerpt": "It's the iPhone that makes the most sense for most people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for most people, with design blandness and Air temptation as notable caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -679,9 +1279,19 @@
     "url": "https://www.macworld.com/article/2925527/iphone-17-review.html",
     "date": "2025-10-01",
     "rating": "4/5",
-    "score": 80,
+    "score": 87,
     "scoreSource": "rating",
-    "excerpt": "If you’re looking for a high-class blend of performance and value, this is the phone to go for."
+    "excerpt": "If you’re looking for a high-class blend of performance and value, this is the phone to go for.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for value, screen, battery, and performance, with modest upgrade and camera caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -690,9 +1300,19 @@
     "url": "https://www.trustedreviews.com/reviews/apple-iphone-17",
     "date": "2026-01-20",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "The iPhone 17 is the easiest base-level iPhone to recommend in years."
+    "excerpt": "The iPhone 17 is the easiest base-level iPhone to recommend in years.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended with major upgrades, but some Pro-only camera and AI limitations remain.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -701,9 +1321,19 @@
     "url": "https://www.techadvisor.com/article/2941896/apple-iphone-17-review.html",
     "date": "2025-10-17",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "If you’re mulling over an upgrade, this is the time to do it, and this is the model to get."
+    "excerpt": "If you’re mulling over an upgrade, this is the time to do it, and this is the model to get.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise on value, screen, performance and battery, with moderate camera and AI drawbacks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -712,9 +1342,19 @@
     "url": "https://www.expertreviews.co.uk/technology/phones/apple-iphone-17-review",
     "date": "2026-01-28",
     "rating": "5/5",
-    "score": 100,
+    "score": 99,
     "scoreSource": "rating",
-    "excerpt": "The Apple iPhone 17 is the iPhone most people should buy."
+    "excerpt": "The Apple iPhone 17 is the iPhone most people should buy.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 100
+    },
+    "scoreReason": "Highly enthusiastic, calls it the iPhone most people should buy, with only minor camera and charging caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -723,9 +1363,19 @@
     "url": "https://www.gsmarena.com/apple_iphone_17-review-2886p7.php",
     "date": "2025-09-26",
     "rating": null,
-    "score": 88,
+    "score": 85,
     "scoreSource": "text",
-    "excerpt": "It is also by far the easiest iPhone to recommend in the 2025 lineup. It's not like it's flawless, but none of the downsides are actually deal-breakers."
+    "excerpt": "It is also by far the easiest iPhone to recommend in the 2025 lineup. It's not like it's flawless, but none of the downsides are actually deal-breakers.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended as the best standard iPhone yet, despite some notable but non-dealbreaking drawbacks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -734,9 +1384,19 @@
     "url": "https://www.notebookcheck.net/Apple-iPhone-17-smartphone-review-The-best-iPhone-of-the-year-is-unbelievably-close-to-an-iPhone-Pro.1129296.0.html",
     "date": "2025-10-01",
     "rating": "88%",
-    "score": 88,
+    "score": 89,
     "scoreSource": "rating",
-    "excerpt": "The Apple iPhone 17 comes closer to the Pro models than ever before and is therefore likely to be the most interesting new iPhone for many buyers."
+    "excerpt": "The Apple iPhone 17 comes closer to the Pro models than ever before and is therefore likely to be the most interesting new iPhone for many buyers.",
+    "scoreBand": [
+      83,
+      93
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for upgrades, with notable but not dealbreaking limits in charging, USB speed, and connectivity.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -745,9 +1405,19 @@
     "url": "https://www.stuff.tv/review/apple-iphone-17-review/",
     "date": "2025-10-22",
     "rating": "5/5",
-    "score": 100,
+    "score": 98,
     "scoreSource": "rating",
-    "excerpt": "Almost no compromises. Boring? Sure. Brilliant? Absolutely."
+    "excerpt": "Almost no compromises. Boring? Sure. Brilliant? Absolutely.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended as the best iPhone for most people, with only modest camera and software complaints",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -756,9 +1426,19 @@
     "url": "https://www.t3.com/tech/iphones/iphone-17-review",
     "date": "2025-12-22",
     "rating": "5/5",
-    "score": 100,
+    "score": 99,
     "scoreSource": "rating",
-    "excerpt": "Apple has really nailed it this year with the iPhone 17."
+    "excerpt": "Apple has really nailed it this year with the iPhone 17.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 100
+    },
+    "scoreReason": "Strongly enthusiastic, calls it the best base iPhone yet, with only minor telephoto-focused caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17",
@@ -767,9 +1447,19 @@
     "url": "https://www.whathifi.com/smartphones-tablets/apple-iphone-17",
     "date": "2025-10-14",
     "rating": "5/5",
-    "score": 100,
+    "score": 97,
     "scoreSource": "rating",
-    "excerpt": "The iPhone 17’s new display steals the show thanks to its improved brightness and support for up to 120Hz variable refresh rates"
+    "excerpt": "The iPhone 17’s new display steals the show thanks to its improved brightness and support for up to 120Hz variable refresh rates",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended for display and AV quality, with only minor caveats on value and AI.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -778,10 +1468,20 @@
     "url": "https://www.theverge.com/tech/779265/iphone-17-pro-max-review",
     "date": "2025-09-17",
     "rating": "8/10",
-    "score": 80,
+    "score": 74,
     "scoreSource": "rating",
     "excerpt": "The iPhone 17 Pro and Pro Max are the best iPhones if you’re after the longest battery life, best cameras, and the most power from Apple’s 2025 lineup.",
-    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score."
+    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 72
+    },
+    "scoreReason": "Strong hardware, but modest upgrades and repeated advice that most people should buy the regular iPhone instead.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -790,10 +1490,20 @@
     "url": "https://www.engadget.com/mobile/smartphones/iphone-17-pro-and-pro-max-review-an-impactful-redesign-120002202.html",
     "date": "2025-09-17",
     "rating": "93/100",
-    "score": 93,
+    "score": 97,
     "scoreSource": "rating",
     "excerpt": "The iPhone 17 Pro and Pro Max are a significant update from previous models, and I haven't felt this excited by a new generation of iPhones in a very long time.",
-    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score."
+    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Strong enthusiasm for major upgrades, with only modest battery and value caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -802,10 +1512,20 @@
     "url": "https://www.wired.com/review/apple-iphone-17-pro-and-iphone-17-pro-max/",
     "date": "2025-09-17",
     "rating": "9/10",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
     "excerpt": "But when you actually experience these individual improvements, they combine to become more than the sum of their parts.",
-    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score."
+    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised across design, battery, performance, and cameras, with only minor photo and upgrade caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -814,11 +1534,21 @@
     "url": "https://www.cnet.com/tech/mobile/apple-iphone-17-pro-iphone-17-pro-max-review/",
     "date": "2025-09-17",
     "rating": "9.2/10",
-    "score": 92,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "The iPhone 17 Pro and 17 Pro Max are two of the best phones you can buy, which is why they received a CNET Editors’ Choice award.",
     "editorsChoice": true,
-    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score; hands-on testing centers on the Pro Max."
+    "note": "Joint review of iPhone 17 Pro and iPhone 17 Pro Max with one score; hands-on testing centers on the Pro Max.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for battery, cameras and design, but many recent Pro owners are told to skip.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -827,9 +1557,19 @@
     "url": "https://www.tomsguide.com/phones/iphones/apple-iphone-17-pro-review",
     "date": "2025-09-17",
     "rating": "4/5",
-    "score": 80,
+    "score": 79,
     "scoreSource": "rating",
-    "excerpt": "Yes, it's smaller than its Pro Max sibling, but the iPhone 17 Pro gets all the same upgrades that make it a stellar flagship..."
+    "excerpt": "Yes, it's smaller than its Pro Max sibling, but the iPhone 17 Pro gets all the same upgrades that make it a stellar flagship...",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent redesign, performance, and cameras, but price hike, weak AI, and preference for Pro Max soften recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -838,9 +1578,19 @@
     "url": "https://www.techradar.com/phones/iphone/apple-iphone-17-pro-review",
     "date": "2025-09-17",
     "rating": "4.75/5",
-    "score": 95,
+    "score": 97,
     "scoreSource": "rating",
-    "excerpt": "The iPhone 17 Pro features Apple's fastest processor and best camera array ever."
+    "excerpt": "The iPhone 17 Pro features Apple's fastest processor and best camera array ever.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 95
+    },
+    "scoreReason": "Overwhelming praise for design, cameras, performance, and battery, with only minor software and heat caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -849,9 +1599,19 @@
     "url": "https://www.pcmag.com/reviews/apple-iphone-17-pro",
     "date": "2025-09-19",
     "rating": "4/5",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "The $1,099 Apple iPhone 17 Pro is a pocket powerhouse."
+    "excerpt": "The $1,099 Apple iPhone 17 Pro is a pocket powerhouse.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for size, speed, cameras, and battery, but many people are steered to the cheaper iPhone 17.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -860,9 +1620,19 @@
     "url": "https://arstechnica.com/gadgets/2025/10/apple-iphone-17-pro-review-come-for-the-camera-stay-for-the-battery/",
     "date": "2025-10-03",
     "rating": null,
-    "score": 80,
+    "score": 78,
     "scoreSource": "text",
-    "excerpt": "If your iPhone is your main or only camera, the iPhone 17 Pro is for you."
+    "excerpt": "If your iPhone is your main or only camera, the iPhone 17 Pro is for you.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Excellent camera and battery, but design flaws and limited appeal keep it from broader enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -871,9 +1641,19 @@
     "url": "https://9to5mac.com/2025/09/17/iphone-17-pro-review/",
     "date": "2025-09-17",
     "rating": null,
-    "score": 88,
+    "score": 94,
     "scoreSource": "text",
-    "excerpt": "It’s exactly what the “best” iPhone Apple sells should be."
+    "excerpt": "It’s exactly what the “best” iPhone Apple sells should be.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for performance, thermals, cameras, battery, and feel, with only minor design criticisms.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -882,9 +1662,19 @@
     "url": "https://www.trustedreviews.com/reviews/apple-iphone-17-pro",
     "date": "2025-12-18",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "The iPhone 17 Pro ticks a lot of boxes and does a lot of stuff very, very well."
+    "excerpt": "The iPhone 17 Pro ticks a lot of boxes and does a lot of stuff very, very well.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended overall, but design doubts, weak AI and limited upgrade from 16 Pro temper enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -893,10 +1683,20 @@
     "url": "https://www.pocket-lint.com/iphone-17-pro-review/",
     "date": "2025-09-24",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 92,
     "scoreSource": "rating",
     "excerpt": "The new look is undeniably controversial, but it's grown on me over the past few days.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 91
+    },
+    "scoreReason": "Strong camera and design praise, but upgrades feel minor and many recent iPhone owners should skip it.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -905,9 +1705,19 @@
     "url": "https://www.t3.com/tech/iphones/iphone-17-pro-review",
     "date": "2025-10-16",
     "rating": "5/5",
-    "score": 100,
+    "score": 99,
     "scoreSource": "rating",
-    "excerpt": "Apple’s flagship iPhone model is at the top of its game."
+    "excerpt": "Apple’s flagship iPhone model is at the top of its game.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 100
+    },
+    "scoreReason": "Strongly enthusiastic review with only minor caveats on battery and some camera crop limitations.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -916,9 +1726,19 @@
     "url": "https://www.techadvisor.com/article/2942715/apple-iphone-17-pro-review.html",
     "date": "2025-10-21",
     "rating": "4/5",
-    "score": 80,
+    "score": 78,
     "scoreSource": "rating",
-    "excerpt": "The biggest problem the iPhone 17 Pro has is how brilliant the regular iPhone 17 is for a lot less money."
+    "excerpt": "The biggest problem the iPhone 17 Pro has is how brilliant the regular iPhone 17 is for a lot less money.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent phone, but repeated value doubts and many readers are steered toward the cheaper regular model.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -927,9 +1747,19 @@
     "url": "https://www.expertreviews.co.uk/technology/phones/apple-iphone-17-pro-review",
     "date": "2025-10-15",
     "rating": "5/5",
-    "score": 100,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "For me, the iPhone 17 Pro is the phone to buy of this current crop of iPhones, despite the ugly redesign."
+    "excerpt": "For me, the iPhone 17 Pro is the phone to buy of this current crop of iPhones, despite the ugly redesign.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended despite ugly design, with excellent battery life, performance and compact flagship appeal.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -938,9 +1768,19 @@
     "url": "https://www.notebookcheck.net/Apple-iPhone-17-Pro-review-Faster-longer-further-Is-that-enough.1140998.0.html",
     "date": "2025-10-19",
     "rating": "90%",
-    "score": 90,
+    "score": 89,
     "scoreSource": "rating",
-    "excerpt": "The iPhone 17 Pro is a powerful but very expensive premium update that scores highly with a better display, camera, and battery, but disappoints with the switch from titanium to more scratch-prone aluminum..."
+    "excerpt": "The iPhone 17 Pro is a powerful but very expensive premium update that scores highly with a better display, camera, and battery, but disappoints with the switch from titanium to more scratch-prone aluminum...",
+    "scoreBand": [
+      85,
+      95
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 88
+    },
+    "scoreReason": "Strong performance, display, battery and cameras, but several notable drawbacks keep enthusiasm in check.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -949,9 +1789,19 @@
     "url": "https://www.gsmarena.com/apple_iphone_17_pro-review-2887.php",
     "date": "2025-09-30",
     "rating": null,
-    "score": 78,
+    "score": 82,
     "scoreSource": "text",
-    "excerpt": "Ultimately, it's an excellent premium package with huge sales numbers in its future - it's just that we're not exactly feeling it."
+    "excerpt": "Ultimately, it's an excellent premium package with huge sales numbers in its future - it's just that we're not exactly feeling it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 76
+    },
+    "scoreReason": "Very positive overall, praising battery, charging, display, performance and feel despite design and speaker drawbacks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-17-pro",
@@ -960,10 +1810,20 @@
     "url": "https://www.whathifi.com/smartphones-tablets/smartphones/apple-iphone-17-pro",
     "date": "2026-08-28",
     "rating": "5/5",
-    "score": 100,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "The iPhone 17 Pro is an outstanding portable movie and music player, with a superb screen, excellent sound and small but meaningful improvements over its predecessor.",
-    "note": "Audio and video focused review."
+    "note": "Audio and video focused review.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Best iPhone yet for AV, but upgrades are modest and many 16 Pro owners should skip.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -972,9 +1832,19 @@
     "url": "https://www.theverge.com/tech/779588/apple-iphone-air-review-battery-camera",
     "date": "2025-09-17",
     "rating": "7/10",
-    "score": 70,
+    "score": 74,
     "scoreSource": "rating",
-    "excerpt": "But you don’t get a dramatically thinner phone without giving up a few things. And those things, boiled down to two categories, are battery life and camera versatility."
+    "excerpt": "But you don’t get a dramatically thinner phone without giving up a few things. And those things, boiled down to two categories, are battery life and camera versatility.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 73
+    },
+    "scoreReason": "Impressive thinness, but battery and camera compromises make it a niche choice many should skip.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -983,9 +1853,19 @@
     "url": "https://www.wired.com/review/apple-iphone-air/",
     "date": "2025-09-17",
     "rating": "7/10",
-    "score": 70,
+    "score": 73,
     "scoreSource": "rating",
-    "excerpt": "The ultra-thin iPhone Air is better than you’d expect, but it’s still too high a price to pay for a slim frame."
+    "excerpt": "The ultra-thin iPhone Air is better than you’d expect, but it’s still too high a price to pay for a slim frame.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 73,
+      "gemini": 72
+    },
+    "scoreReason": "Impressive design, but overpriced with weak battery and limited camera; most people should buy another iPhone.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -994,9 +1874,19 @@
     "url": "https://www.cnet.com/tech/mobile/apple-iphone-air-review/",
     "date": "2025-09-17",
     "rating": "8.6/10",
-    "score": 86,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "And yet, despite those grievances, the iPhone Air truly does feel like a breath of fresh air."
+    "excerpt": "And yet, despite those grievances, the iPhone Air truly does feel like a breath of fresh air.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for design and feel, but camera, speakers, charging and price bring notable compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1007,7 +1897,17 @@
     "rating": "86/100",
     "score": 86,
     "scoreSource": "rating",
-    "excerpt": "It might not be the most affordable iPhone or the one with the most cameras, but for anyone who puts a premium on style and sleekness, the iPhone Air is without a doubt Apple's coolest handset in years."
+    "excerpt": "It might not be the most affordable iPhone or the one with the most cameras, but for anyone who puts a premium on style and sleekness, the iPhone Air is without a doubt Apple's coolest handset in years.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 86
+    },
+    "scoreReason": "Highly praised for design and performance, but price and single camera keep it from stronger recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1016,9 +1916,19 @@
     "url": "https://www.tomsguide.com/phones/iphones/iphone-air-review",
     "date": "2025-09-17",
     "rating": "3.5/5",
-    "score": 70,
+    "score": 79,
     "scoreSource": "rating",
-    "excerpt": "The iPhone Air delivers remarkable performance in a super thin and light design that’s very durable."
+    "excerpt": "The iPhone Air delivers remarkable performance in a super thin and light design that’s very durable.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Impressive design and speed, but expensive with notable camera, battery, and feature compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1027,9 +1937,19 @@
     "url": "https://www.techradar.com/phones/iphone/apple-iphone-air-review",
     "date": "2025-09-17",
     "rating": "4/5",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "Battery life is solid if not class-leading, and the single 48MP camera limits flexibility, but for those who value design and portability above all else it’s sexy and stunning"
+    "excerpt": "Battery life is solid if not class-leading, and the single 48MP camera limits flexibility, but for those who value design and portability above all else it’s sexy and stunning",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Stylish and exciting with strong screen and performance, but camera and battery compromises limit the recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1038,9 +1958,19 @@
     "url": "https://www.pcmag.com/reviews/apple-iphone-air",
     "date": "2025-09-17",
     "rating": "4/5",
-    "score": 80,
+    "score": 79,
     "scoreSource": "rating",
-    "excerpt": "The Apple iPhone Air is an exciting phone that favors design and aesthetics over features and raw performance."
+    "excerpt": "The Apple iPhone Air is an exciting phone that favors design and aesthetics over features and raw performance.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 73
+    },
+    "scoreReason": "Striking design and strong basics, but reviewer says most buyers should get the cheaper regular iPhone 17.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1049,9 +1979,19 @@
     "url": "https://gizmodo.com/iphone-air-review-a-magic-sheet-of-glass-with-expected-tradeoffs-2000659864",
     "date": "2025-09-17",
     "rating": "4/5",
-    "score": 80,
+    "score": 82,
     "scoreSource": "rating",
-    "excerpt": "Apple's thinnest phone ever is a marvel of engineering, but it comes with tradeoffs to the camera and battery life that may not be acceptable for everyone."
+    "excerpt": "Apple's thinnest phone ever is a marvel of engineering, but it comes with tradeoffs to the camera and battery life that may not be acceptable for everyone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Strong admiration for the design, with notable battery and camera compromises that limit broader recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1060,9 +2000,19 @@
     "url": "https://www.macworld.com/article/2926985/iphone-air-review-a-whole-lot-less-for-a-whole-lot-more.html",
     "date": "2025-10-06",
     "rating": "3.5/5",
-    "score": 70,
+    "score": 72,
     "scoreSource": "rating",
-    "excerpt": "The thin design makes this phone feel like the future, but Apple had to make compromises to achieve it that certainly affect your day-to-day use."
+    "excerpt": "The thin design makes this phone feel like the future, but Apple had to make compromises to achieve it that certainly affect your day-to-day use.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Futuristic design impresses, but battery, camera, speaker, and value issues make it hard to recommend.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1071,9 +2021,19 @@
     "url": "https://www.trustedreviews.com/reviews/apple-iphone-air",
     "date": "2025-10-09",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 93,
     "scoreSource": "rating",
-    "excerpt": "The iPhone Air is Apple’s most interesting, fun and likely divisive phone in a decade."
+    "excerpt": "The iPhone Air is Apple’s most interesting, fun and likely divisive phone in a decade.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 92
+    },
+    "scoreReason": "Highly enthusiastic about design and feel, but major camera and battery compromises limit broader recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1082,9 +2042,19 @@
     "url": "https://www.techadvisor.com/article/2945442/apple-iphone-air-review.html",
     "date": "2025-10-17",
     "rating": "3.5/5",
-    "score": 70,
+    "score": 72,
     "scoreSource": "rating",
-    "excerpt": "I’ve enjoyed using the iPhone Air more than I expected to, but there are too many downsides to recommend it to most people."
+    "excerpt": "I’ve enjoyed using the iPhone Air more than I expected to, but there are too many downsides to recommend it to most people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Beautiful design and strong screen and performance, but reviewer says most people should skip it.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1093,9 +2063,19 @@
     "url": "https://www.stuff.tv/review/apple-iphone-air-review/",
     "date": "2025-10-14",
     "rating": "4/5",
-    "score": 80,
+    "score": 74,
     "scoreSource": "rating",
-    "excerpt": "Beautifully and painstakingly designed – but there’s a reason we love having several cameras on our flagship phones nowadays."
+    "excerpt": "Beautifully and painstakingly designed – but there’s a reason we love having several cameras on our flagship phones nowadays.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Stunning design and performance, but camera and battery compromises make many buyers better off elsewhere.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1104,9 +2084,19 @@
     "url": "https://www.t3.com/tech/iphones/apple-iphone-air-review",
     "date": "2025-09-20",
     "rating": "4/5",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "If you've been patiently waiting the return of slim and lightweight phones for the last decade, you will love the iPhone Air."
+    "excerpt": "If you've been patiently waiting the return of slim and lightweight phones for the last decade, you will love the iPhone Air.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for design, battery and performance, but camera limits and niche appeal keep it from higher.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1115,9 +2105,19 @@
     "url": "https://www.expertreviews.co.uk/technology/phones/apple-iphone-air-review",
     "date": "2025-10-08",
     "rating": "4/5",
-    "score": 80,
+    "score": 77,
     "scoreSource": "rating",
-    "excerpt": "Despite its shortcomings, there is nothing fundamentally wrong with iPhone Air."
+    "excerpt": "Despite its shortcomings, there is nothing fundamentally wrong with iPhone Air.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 71
+    },
+    "scoreReason": "Beautiful design and strong performance, but high price and clear advice to buy other iPhones hurt enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1126,9 +2126,19 @@
     "url": "https://www.pocket-lint.com/iphone-air-review/",
     "date": "2025-10-07",
     "rating": "3.5/5",
-    "score": 70,
+    "score": 73,
     "scoreSource": "rating",
-    "excerpt": "The key question surrounding the phone is whether its technical trade-offs are worth its very cool-looking aesthetic -- and the answer to that question is difficult to parse."
+    "excerpt": "The key question surrounding the phone is whether its technical trade-offs are worth its very cool-looking aesthetic -- and the answer to that question is difficult to parse.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 72
+    },
+    "scoreReason": "Striking design and strong performance, but camera, battery, and value issues make it niche.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1137,9 +2147,19 @@
     "url": "https://www.notebookcheck.net/Apple-iPhone-Air-review-The-thinnest-smartphone-packs-a-ton-of-power.1152091.0.html",
     "date": "2025-10-31",
     "rating": "87%",
-    "score": 87,
+    "score": 83,
     "scoreSource": "rating",
-    "excerpt": "Overall, the Air remains a bold design choice with noticeable compromises, impressing us more with its form than its function."
+    "excerpt": "Overall, the Air remains a bold design choice with noticeable compromises, impressing us more with its form than its function.",
+    "scoreBand": [
+      82,
+      92
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Premium thin design, but many compromises in battery, camera, sound, features, and value limit recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "iphone-air",
@@ -1148,9 +2168,19 @@
     "url": "https://www.gsmarena.com/apple_iphone_air-review-2885.php",
     "date": "2025-09-25",
     "rating": null,
-    "score": 70,
+    "score": 62,
     "scoreSource": "text",
-    "excerpt": "But even if you end up passing on the Air, there's no denying it's an impressive engineering feat."
+    "excerpt": "But even if you end up passing on the Air, there's no denying it's an impressive engineering feat.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 65
+    },
+    "scoreReason": "Praised design and premium features, but major concerns about single camera and very small battery.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1159,9 +2189,19 @@
     "url": "https://www.theverge.com/tech/893936/samsung-galaxy-s26-ultra-review-show-off",
     "date": "2026-03-14",
     "rating": "8/10",
-    "score": 80,
+    "score": 85,
     "scoreSource": "rating",
-    "excerpt": "This is still a phone for a self-selecting group of people, but I’m happy to report that fans of the series are finally getting an update that’s worthy of the name."
+    "excerpt": "This is still a phone for a self-selecting group of people, but I’m happy to report that fans of the series are finally getting an update that’s worthy of the name.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 84
+    },
+    "scoreReason": "Strong praise for meaningful upgrades and standout privacy display, with price and size as main caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1170,11 +2210,21 @@
     "url": "https://www.cnet.com/tech/mobile/galaxy-s26-ultra-review/",
     "date": "2026-03-12",
     "rating": "9.3/10",
-    "score": 93,
+    "score": 96,
     "scoreSource": "rating",
     "excerpt": "The built-in Privacy Display is a practical and innovative feature, the battery life is outstanding, and the cameras continue to shine while adding a few new, useful AI capabilities.",
     "editorsChoice": true,
-    "note": "Review first published March 12, 2026 and updated May 18, 2026, when CNET added its Editors' Choice award."
+    "note": "Review first published March 12, 2026 and updated May 18, 2026, when CNET added its Editors' Choice award.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise, Editors' Choice, excellent battery and useful features, but upgrade value and a few omissions temper it.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1183,9 +2233,19 @@
     "url": "https://www.engadget.com/mobile/smartphones/samsung-galaxy-s26-ultra-review-the-stealth-upgrade-140000629.html",
     "date": "2026-03-05",
     "rating": "9/10",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "So while it won't hit you over the head with monumental changes year over year, it's subtly one of the best Ultras we've gotten in the past half-decade."
+    "excerpt": "So while it won't hit you over the head with monumental changes year over year, it's subtly one of the best Ultras we've gotten in the past half-decade.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended overall, with modest year-over-year changes and missing magnets as the main caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1194,9 +2254,19 @@
     "url": "https://www.wired.com/review/samsung-galaxy-s26-ultra/",
     "date": "2026-03-14",
     "rating": "8/10",
-    "score": 80,
+    "score": 83,
     "scoreSource": "rating",
-    "excerpt": "Now I wish every smartphone had a built-in privacy display."
+    "excerpt": "Now I wish every smartphone had a built-in privacy display.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent phone with standout privacy screen, but iterative upgrade and missing Qi2 temper enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1205,10 +2275,20 @@
     "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-s26-ultra-review",
     "date": "2026-03-06",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "The Galaxy S26 Ultra is the best Android phone yet with a truly innovative and useful Privacy Display.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended as best Android phone, with notable but not dealbreaking design and battery concerns.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1217,9 +2297,19 @@
     "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-s26-ultra-review",
     "date": "2026-03-02",
     "rating": "4.75/5",
-    "score": 95,
+    "score": 97,
     "scoreSource": "rating",
-    "excerpt": "Sure, there might be too many AI options on board but, overall, the S26 Ultra is a winner and easily one of the best smartphones of the year."
+    "excerpt": "Sure, there might be too many AI options on board but, overall, the S26 Ultra is a winner and easily one of the best smartphones of the year.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 98
+    },
+    "scoreReason": "Outstanding Android flagship with unique features, great cameras and battery, but overloaded AI and some gimmicks disappoint.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1228,10 +2318,20 @@
     "url": "https://www.pcmag.com/reviews/samsung-galaxy-s26-ultra",
     "date": "2026-03-13",
     "rating": "4/5",
-    "score": 80,
+    "score": 85,
     "scoreSource": "rating",
     "excerpt": "The S26 Ultra is an excellent phone for creatives who want an S Pen stylus and the absolute best cameras, and is our Editors' Choice for flagship Android phones.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 84
+    },
+    "scoreReason": "Strong recommendation with standout cameras and features, but notable screen and battery compromises.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1240,10 +2340,20 @@
     "url": "https://www.zdnet.com/article/samsung-galaxy-s26-ultra-review/",
     "date": "2026-03-17",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "The Samsung Galaxy S26 Ultra is one of the best all-around flagship phones that you can buy right now.",
-    "note": "First published March 17, 2026; the page shows an update dated April 6, 2026."
+    "note": "First published March 17, 2026; the page shows an update dated April 6, 2026.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended overall, but iterative upgrade, comfort issues, and inconsistent AI temper enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1252,9 +2362,19 @@
     "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-s26-ultra-review",
     "date": "2026-03-18",
     "rating": "4/5",
-    "score": 80,
+    "score": 77,
     "scoreSource": "rating",
-    "excerpt": "Some may consider Privacy Display a parlor trick or a gimmick, but Samsung's latest display innovation is genuinely useful in the right situation."
+    "excerpt": "Some may consider Privacy Display a parlor trick or a gimmick, but Samsung's latest display innovation is genuinely useful in the right situation.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong software and unique privacy feature praised, but hardware, battery, display comfort, and pricing draw major criticism.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1263,11 +2383,21 @@
     "url": "https://www.digitaltrends.com/phones/samsung-galaxy-s26-ultra-review/",
     "date": "2026-06-06",
     "rating": "9/10",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
     "excerpt": "The Galaxy S26 Ultra doesn’t reinvent anything. What it does is take the established Ultra formula and tighten every screw.",
     "note": "Long-term review published after four months of testing.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong endorsement for a polished refinement, with mild caveat that it lacks major innovation.",
+    "scoredFromFullText": false
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1276,10 +2406,20 @@
     "url": "https://gizmodo.com/samsung-galaxy-s26-ultra-review-a-more-private-screen-only-goes-so-far-2000755056",
     "date": "2026-06-25",
     "rating": "4/5",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
     "excerpt": "The Galaxy S26 Ultra is once again Samsung's best non-folding smartphone and our favorite flagship Android phone of 2026 so far, but it lacks any standout feature.",
-    "note": "Review published after several months of testing."
+    "note": "Review published after several months of testing.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent all-around phone, but reviewer felt indifferent and says the headline feature is nonessential.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1288,9 +2428,19 @@
     "url": "https://www.trustedreviews.com/reviews/samsung-galaxy-s26-ultra",
     "date": "2026-03-10",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "The Galaxy S26 Ultra is a classic Samsung “safe” upgrade; not that exciting, but undeniably still polished."
+    "excerpt": "The Galaxy S26 Ultra is a classic Samsung “safe” upgrade; not that exciting, but undeniably still polished.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 94
+    },
+    "scoreReason": "Excellent all-rounder with standout screen and performance, but battery life and aging cameras limit enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1299,9 +2449,19 @@
     "url": "https://www.techadvisor.com/article/3081359/samsung-galaxy-s26-ultra-review.html",
     "date": "2026-03-09",
     "rating": "4.5/5",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "It’s not a game-changing update, but Samsung does just enough to keep things interesting with the S26 Ultra."
+    "excerpt": "It’s not a game-changing update, but Samsung does just enough to keep things interesting with the S26 Ultra.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for daily experience and features, with modest upgrade concerns and a few hardware drawbacks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1310,9 +2470,19 @@
     "url": "https://www.stuff.tv/review/samsung-galaxy-s26-ultra-review/",
     "date": "2026-03-06",
     "rating": "5/5",
-    "score": 100,
+    "score": 95,
     "scoreSource": "rating",
-    "excerpt": "While not an extensive generational overhaul, the Galaxy S26 Ultra remains the Android of choice for power users."
+    "excerpt": "While not an extensive generational overhaul, the Galaxy S26 Ultra remains the Android of choice for power users.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong overall praise, but notable battery, AI and camera progression caveats keep it from the very top.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1321,9 +2491,19 @@
     "url": "https://www.t3.com/tech/phones/samsung-galaxy-s26-ultra-review",
     "date": "2026-03-03",
     "rating": "5/5",
-    "score": 100,
+    "score": 96,
     "scoreSource": "rating",
-    "excerpt": "The Galaxy S26 Ultra is ultimately a finessing of Android's finest, delivering an impressive world-first in Privacy Display."
+    "excerpt": "The Galaxy S26 Ultra is ultimately a finessing of Android's finest, delivering an impressive world-first in Privacy Display.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended overall, with minor AI, battery, and camera caveats plus limited upgrade appeal.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1332,9 +2512,19 @@
     "url": "https://www.expertreviews.co.uk/technology/phones/samsung-galaxy-s26-ultra-full-review",
     "date": "2026-02-25",
     "rating": "4/5",
-    "score": 80,
+    "score": 88,
     "scoreSource": "rating",
-    "excerpt": "It is a shame to see Samsung falling behind in the battery life stakes after leading the pack for the past few years, but even still, the stamina remains excellent."
+    "excerpt": "It is a shame to see Samsung falling behind in the battery life stakes after leading the pack for the past few years, but even still, the stamina remains excellent.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for performance, cameras and display; price and battery concerns stop it short of top marks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1343,9 +2533,19 @@
     "url": "https://www.gsmarena.com/samsung_galaxy_s26_ultra-review-2939p6.php",
     "date": "2026-03-06",
     "rating": null,
-    "score": 80,
+    "score": 72,
     "scoreSource": "text",
-    "excerpt": "Despite the relatively modest hardware upgrades, the Galaxy S26 Ultra still manages to bring a few meaningful improvements."
+    "excerpt": "Despite the relatively modest hardware upgrades, the Galaxy S26 Ultra still manages to bring a few meaningful improvements.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Overall positive but restrained; modest upgrades noted, with only a few meaningful improvements highlighted.",
+    "scoredFromFullText": false
   },
   {
     "productId": "galaxy-s26-ultra",
@@ -1354,9 +2554,19 @@
     "url": "https://www.pocket-lint.com/samsung-galaxy-s26-ultra-review/",
     "date": "2026-04-10",
     "rating": null,
-    "score": 86,
+    "score": 88,
     "scoreSource": "text",
-    "excerpt": "Honestly, if Samsung had added magnets for Qi2 and bumped up the battery a bit, I'd call this the perfect Android phone."
+    "excerpt": "Honestly, if Samsung had added magnets for Qi2 and bumped up the battery a bit, I'd call this the perfect Android phone.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 89
+    },
+    "scoreReason": "Very positive overall, praising performance, design, display, and cameras despite minor complaints and limited upgrade appeal.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1365,9 +2575,19 @@
     "url": "https://www.theverge.com/tech/981713/google-pixel-11-pro-review",
     "date": "2026-08-19",
     "rating": "8/10",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "But if you’re looking for a phone with the best voice-to-text on the market, great cameras with good built-in style, and solid hardware, the Pixel 11 Pro delivers."
+    "excerpt": "But if you’re looking for a phone with the best voice-to-text on the market, great cameras with good built-in style, and solid hardware, the Pixel 11 Pro delivers.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong cameras and useful tools, but headline AI features disappoint and hardware upgrades are minor.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1376,10 +2596,20 @@
     "url": "https://www.wired.com/review/google-pixel-11-pro-and-pixel-11-pro-xl/",
     "date": "2026-08-19",
     "rating": "7/10",
-    "score": 70,
+    "score": 75,
     "scoreSource": "rating",
     "excerpt": "All in all, the Pixel 11 Pro models are yet another strong entry that deliver the camera prowess expected of a Pixel and the software smarts.",
-    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both."
+    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 74
+    },
+    "scoreReason": "Great cameras and smart software, but weak battery, poor gaming, and cheaper Pixels make it harder to recommend.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1388,9 +2618,19 @@
     "url": "https://www.cnet.com/tech/mobile/google-pixel-11-pro-review/",
     "date": "2026-08-19",
     "rating": "8/10",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "It all adds up to the Pixel 11 Pro being one of the most refined phones Google has ever made."
+    "excerpt": "It all adds up to the Pixel 11 Pro being one of the most refined phones Google has ever made.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong refinement and camera praise, but weak battery and minor upgrades make it a measured recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1399,9 +2639,19 @@
     "url": "https://www.engadget.com/2240038/google-pixel-11-pro-review-gemini-ai-camera-samples/",
     "date": "2026-08-19",
     "rating": "9/10",
-    "score": 90,
+    "score": 93,
     "scoreSource": "rating",
-    "excerpt": "It looks and feels great, takes great pictures in all kinds of lighting conditions and offers plenty of useful tools."
+    "excerpt": "It looks and feels great, takes great pictures in all kinds of lighting conditions and offers plenty of useful tools.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent compact Android phone, but price hike and several AI features feel unnecessary or undercooked.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1410,10 +2660,20 @@
     "url": "https://www.tomsguide.com/phones/google-pixel-phones/google-pixel-11-pro-pro-xl-review",
     "date": "2026-08-19",
     "rating": "3/5",
-    "score": 60,
+    "score": 53,
     "scoreSource": "rating",
     "excerpt": "The Pixel 11 Pro and Pro XL are not bad phones by any means, but there's a lot to be desired about the kind of upgrades Google has added to its latest flagships.",
-    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both."
+    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 54,
+      "gemini": 52
+    },
+    "scoreReason": "Good cameras and AI, but overpriced with minimal upgrades, weak battery, poor performance, and many should buy last year’s model.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1424,7 +2684,17 @@
     "rating": "4/5",
     "score": 80,
     "scoreSource": "rating",
-    "excerpt": "Overall, the Pixel 11 Pro is a solid phone that doesn't move the Pixel line too far forward."
+    "excerpt": "Overall, the Pixel 11 Pro is a solid phone that doesn't move the Pixel line too far forward.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 73
+    },
+    "scoreReason": "Strong overall praise, but iterative upgrades, higher price, and weak upgrade case for recent Pixel owners.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1433,9 +2703,19 @@
     "url": "https://www.pcmag.com/reviews/google-pixel-11-pro",
     "date": "2026-08-19",
     "rating": "4/5",
-    "score": 80,
+    "score": 79,
     "scoreSource": "rating",
-    "excerpt": "The Google Pixel 11 Pro is a highly pocketable Android phone that shines with its brilliantly bright screen, standout camera features, and forward-thinking AI, making it a compelling flagship despite its higher price and modest chip speed."
+    "excerpt": "The Google Pixel 11 Pro is a highly pocketable Android phone that shines with its brilliantly bright screen, standout camera features, and forward-thinking AI, making it a compelling flagship despite its higher price and modest chip speed.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 80
+    },
+    "scoreReason": "Great screen, cameras, and AI, but higher price, weak performance gains, and owners should skip upgrading.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1444,10 +2724,20 @@
     "url": "https://www.androidcentral.com/phones/google-pixel/google-pixel-11-pro-review",
     "date": "2026-08-19",
     "rating": "3/5",
-    "score": 60,
+    "score": 53,
     "scoreSource": "rating",
     "excerpt": "Aside from this one amazing feature, however, the cost of these Pixels far outweighs the benefits.",
-    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both."
+    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 52
+    },
+    "scoreReason": "Strong feature praise, but major price and hardware concerns make it hard to recommend",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1456,10 +2746,20 @@
     "url": "https://www.androidpolice.com/google-pixel-11-pro-review/",
     "date": "2026-09-03",
     "rating": "9/10",
-    "score": 90,
+    "score": 96,
     "scoreSource": "rating",
     "excerpt": "Google’s back to its old self with the Pixel 11 Pro, and provided you ignore all the surrounding fluff, you’ll get yourself a superb smartphone.",
-    "editorsChoice": true
+    "editorsChoice": true,
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with standout camera and software, despite weak AI extras and a few hardware quirks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1468,9 +2768,19 @@
     "url": "https://www.trustedreviews.com/reviews/google-pixel-11-pro",
     "date": "2026-08-19",
     "rating": "4/5",
-    "score": 80,
+    "score": 73,
     "scoreSource": "rating",
-    "excerpt": "The Pixel 11 Pro is a mixed bag, but still a strong Android phone for those who want a smaller device."
+    "excerpt": "The Pixel 11 Pro is a mixed bag, but still a strong Android phone for those who want a smaller device.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 72
+    },
+    "scoreReason": "Strong small Android phone, but poor gaming, heat, slow charging and value issues make waiting sensible.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1479,9 +2789,19 @@
     "url": "https://www.techadvisor.com/article/3236030/google-pixel-11-pro-review.html",
     "date": "2026-09-18",
     "rating": "3.5/5",
-    "score": 70,
+    "score": 72,
     "scoreSource": "rating",
-    "excerpt": "But at the same time, the everyday experience is badly hamstrung, while the headline new HiLight feature is a waste of space."
+    "excerpt": "But at the same time, the everyday experience is badly hamstrung, while the headline new HiLight feature is a waste of space.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 73,
+      "gemini": 71
+    },
+    "scoreReason": "Excellent camera and design, but bugs, weak battery and high price make it hard to recommend.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1490,10 +2810,20 @@
     "url": "https://www.gsmarena.com/google_pixel_11_pro-review-2996p6.php",
     "date": "2026-09-06",
     "rating": null,
-    "score": 75,
+    "score": 77,
     "scoreSource": "text",
     "excerpt": "Ultimately, the Pixel 11 Pro is the best version yet of Google's compact flagship formula, but it isn't the best compact flagship on hardware or value alone.",
-    "note": "GSMArena publishes no score; bylined GSMArena Team. Score estimated from the verdict page."
+    "note": "GSMArena publishes no score; bylined GSMArena Team. Score estimated from the verdict page.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong praise for Google’s best compact flagship yet, but clear reservations about hardware and value.",
+    "scoredFromFullText": false
   },
   {
     "productId": "pixel-11-pro",
@@ -1502,10 +2832,20 @@
     "url": "https://gizmodo.com/google-pixel-11-pro-review-2000800535",
     "date": "2026-08-19",
     "rating": "3.5/5",
-    "score": 70,
+    "score": 75,
     "scoreSource": "rating",
     "excerpt": "As a whole, the phones check off almost every box you’d want in a flagship except performance, especially if you’re buying into the AI-centric future where Gemini is able to do more for you.",
-    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both."
+    "note": "Joint review of the Pixel 11 Pro and Pixel 11 Pro XL with one score for both.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 73
+    },
+    "scoreReason": "Good cameras and design, but weak performance, AI limitations, bugs, and price increases bring major caveats.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1516,7 +2856,17 @@
     "rating": null,
     "score": 86,
     "scoreSource": "text",
-    "excerpt": "With just shy of two days battery life, a decent chip and quality software, the Pixel 11 Pro is a great pocketable phone."
+    "excerpt": "With just shy of two days battery life, a decent chip and quality software, the Pixel 11 Pro is a great pocketable phone.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 86
+    },
+    "scoreReason": "Excellent compact phone with superb camera and software, but pricey and only a modest upgrade.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1525,9 +2875,19 @@
     "url": "https://www.t3.com/tech/phones/google-pixel-11-pro-review",
     "date": "2026-08-19",
     "rating": "4/5",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "For me, however, it's just the majority of everything else about the Pixel 11 Pro that's so on point – and proves that Google's decade-long venture in the Android hardware space still proves its worth."
+    "excerpt": "For me, however, it's just the majority of everything else about the Pixel 11 Pro that's so on point – and proves that Google's decade-long venture in the Android hardware space still proves its worth.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent cameras, design and software, but weak battery and underwhelming AI feature noticeably limit enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1539,7 +2899,17 @@
     "score": 84,
     "scoreSource": "rating",
     "excerpt": "It's just a rock-solid Android phone with a really great photography suite.",
-    "note": "Mashable Southeast Asia edition. The page's score box renders '42' and its JSON-LD gives 21 with bestRating 5; both correspond to 4.2/5."
+    "note": "Mashable Southeast Asia edition. The page's score box renders '42' and its JSON-LD gives 21 with bestRating 5; both correspond to 4.2/5.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 82
+    },
+    "scoreReason": "Strong camera praise and solid overall recommendation, tempered by high price and a gimmicky feature.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1548,9 +2918,19 @@
     "url": "https://www.popularmechanics.com/technology/gear/a73463184/google-pixel-11-pro-android-smartphone-review/",
     "date": "2026-08-19",
     "rating": null,
-    "score": 88,
+    "score": 87,
     "scoreSource": "text",
-    "excerpt": "Its instantly recognizable design, phenomenal camera, and strong all-around performance help it stay in the lead of the Android race."
+    "excerpt": "Its instantly recognizable design, phenomenal camera, and strong all-around performance help it stay in the lead of the Android race.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent phone with superb camera and strong recommendation, but iterative updates and limited new features hold it back.",
+    "scoredFromFullText": true
   },
   {
     "productId": "pixel-11-pro",
@@ -1559,10 +2939,20 @@
     "url": "https://www.standard.co.uk/shopping/esbest/gadgets-tech/phones/google-pixel-11-phone-review-b1294847.html",
     "date": "2026-08-27",
     "rating": null,
-    "score": 88,
+    "score": 89,
     "scoreSource": "text",
     "excerpt": "All this adds up to a powerful, fast, deeply attractive smartphone that does everything well and some things, like effortless photography, better than most rivals.",
-    "note": "Reviewer tested the Pixel 11 Pro and Pixel 11 Pro XL together; no score published."
+    "note": "Reviewer tested the Pixel 11 Pro and Pixel 11 Pro XL together; no score published.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise for design, cameras and AI, with minor concerns about missing features and ordinary battery life.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1571,9 +2961,19 @@
     "url": "https://www.theverge.com/tech/986033/samsung-galaxy-z-flip-8-review",
     "date": "2026-08-29",
     "rating": "8/10",
-    "score": 80,
+    "score": 77,
     "scoreSource": "rating",
-    "excerpt": "Modest as the Z Flip 8’s hardware upgrades are, it feels like a turning point for Samsung, which is mostly done trying to limit the ways people use the cover screen."
+    "excerpt": "Modest as the Z Flip 8’s hardware upgrades are, it feels like a turning point for Samsung, which is mostly done trying to limit the ways people use the cover screen.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong cover screen improvements, but pricey minor upgrade with dust concerns and many should buy last year’s model.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1582,9 +2982,19 @@
     "url": "https://www.cnet.com/tech/mobile/galaxy-z-flip-8-review-i-adore-the-thin-look-but-not-the-price/",
     "date": "2026-08-03",
     "rating": "8/10",
-    "score": 80,
+    "score": 77,
     "scoreSource": "rating",
-    "excerpt": "Samsung’s $1,200 Galaxy Z Flip 8 is easily the best-looking flip phone I’ve tested."
+    "excerpt": "Samsung’s $1,200 Galaxy Z Flip 8 is easily the best-looking flip phone I’ve tested.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent design and performance, but price, battery, and camera shortcomings make the recommendation cautious.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1593,9 +3003,19 @@
     "url": "https://www.pcmag.com/reviews/samsung-galaxy-z-flip-8",
     "date": "2026-08-05",
     "rating": "4/5",
-    "score": 80,
+    "score": 79,
     "scoreSource": "rating",
-    "excerpt": "The Galaxy Z Flip 8 pairs a conservative approach to design with real gains in software and usability, resulting in Samsung's most refined flip phone yet."
+    "excerpt": "The Galaxy Z Flip 8 pairs a conservative approach to design with real gains in software and usability, resulting in Samsung's most refined flip phone yet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Strong overall flip phone, but iterative upgrade, higher price, and skip recommendation for current Flip 7 owners.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1604,9 +3024,19 @@
     "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-z-flip-8-review",
     "date": "2026-08-01",
     "rating": "3.5/5",
-    "score": 70,
+    "score": 73,
     "scoreSource": "rating",
-    "excerpt": "With a $100 price increase, the Samsung Galaxy Z Flip 8 makes for a tough sell considering how it feels merely iterative."
+    "excerpt": "With a $100 price increase, the Samsung Galaxy Z Flip 8 makes for a tough sell considering how it feels merely iterative.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 72
+    },
+    "scoreReason": "Strong performance, but pricey and too iterative; most upgraders should skip unless coming from much older phones.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1618,7 +3048,17 @@
     "score": 84,
     "scoreSource": "rating",
     "excerpt": "The Galaxy Z Flip 8 would be an excellent phone for a stylish, on-trend young person that doesn't need a 200MP camera.",
-    "note": "Read on Mashable's Southeast Asia edition (no US mashable.com URL found in the site's sitemaps). Its score box prints the Mashable Score as \"42\" (4.2 out of 5); Notebookcheck's review index lists it as 84%."
+    "note": "Read on Mashable's Southeast Asia edition (no US mashable.com URL found in the site's sitemaps). Its score box prints the Mashable Score as \"42\" (4.2 out of 5); Notebookcheck's review index lists it as 84%.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 84
+    },
+    "scoreReason": "Strong recommendation for most buyers, with notable camera and price concerns limiting enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1627,9 +3067,19 @@
     "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-z-flip-8-review",
     "date": "2026-08-23",
     "rating": "4/5",
-    "score": 80,
+    "score": 75,
     "scoreSource": "rating",
-    "excerpt": "The Galaxy Z Flip 8 is good, but it's not $1,200 good."
+    "excerpt": "The Galaxy Z Flip 8 is good, but it's not $1,200 good.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Strong software and performance, but overpriced with too few upgrades and only conditional recommendation.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1638,9 +3088,19 @@
     "url": "https://www.techadvisor.com/article/3219620/samsung-galaxy-z-flip-8-review.html",
     "date": "2026-08-25",
     "rating": "4/5",
-    "score": 80,
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "The hardware updates aren’t game-changing, but the new Flip is slimmer, offers better performance and battery life, and Samsung now gives users more control over the outer screen."
+    "excerpt": "The hardware updates aren’t game-changing, but the new Flip is slimmer, offers better performance and battery life, and Samsung now gives users more control over the outer screen.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong improvements and solid battery, but cameras, charging, price, and remaining compromises limit enthusiasm.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1649,9 +3109,19 @@
     "url": "https://www.popularmechanics.com/technology/gadgets/a73365642/samsung-galaxy-z-flip8-smartphone-review/",
     "date": "2026-08-12",
     "rating": null,
-    "score": 84,
+    "score": 85,
     "scoreSource": "text",
-    "excerpt": "Despite a really strong challenge from Motorola this year, I still think the Samsung Galaxy Z Flip8 is the best flip-style smartphone of the year."
+    "excerpt": "Despite a really strong challenge from Motorola this year, I still think the Samsung Galaxy Z Flip8 is the best flip-style smartphone of the year.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Calls it the best flip phone available, praising performance and design despite modest upgrades and a weaker secondary camera.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1663,7 +3133,17 @@
     "score": 80,
     "scoreSource": "text",
     "excerpt": "The Galaxy Z Flip8 turned out to be a solid compact foldable with excellent screens, powerful hardware and good cameras.",
-    "note": "Reviewed by the GSMArena Team. The 4.3 shown on the page is the user rating, not an editorial score; the review tested the Exynos 2600 model."
+    "note": "Reviewed by the GSMArena Team. The 4.3 shown on the page is the user rating, not an editorial score; the review tested the Exynos 2600 model.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Strong overall praise for screens, battery, feel and value, despite stale cameras and thermal throttling.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1672,10 +3152,20 @@
     "url": "https://www.notebookcheck.net/Ultra-lightweight-smartphone-powerhouse-with-a-6-9-inch-OLED-screen-Samsung-Galaxy-Z-Flip-8-review.1398173.0.html",
     "date": "2026-09-13",
     "rating": "86%",
-    "score": 86,
+    "score": 83,
     "scoreSource": "rating",
     "excerpt": "Anyone who enjoys taking selfies with a smartphone will be hard-pressed to find a better compact phone than Samsung’s Flip8, thanks to its small front-facing OLED screen.",
-    "note": "Tested the Exynos 2600 model."
+    "note": "Tested the Exynos 2600 model.",
+    "scoreBand": [
+      81,
+      91
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Best flip available, but upgrades are tiny and battery, charging, dust protection, and PWM remain notable drawbacks.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1684,10 +3174,20 @@
     "url": "https://www.hardwarezone.com.sg/mobile/smartphones/samsung-galaxy-z-flip8-review-singapore-price-specs-buy",
     "date": "2026-08-20",
     "rating": null,
-    "score": 82,
+    "score": 78,
     "scoreSource": "text",
     "excerpt": "The improvements might look small, but they all come together to make the Z Flip8 arguably the best foldable clamshell phone you can buy.",
-    "note": "Singapore review of the Exynos 2600 model."
+    "note": "Singapore review of the Exynos 2600 model.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Strongly praises portability and usability, but notes minor upgrades, old cameras, slow charging, and limited upgrade appeal.",
+    "scoredFromFullText": true
   },
   {
     "productId": "galaxy-z-flip-8",
@@ -1696,8 +3196,18 @@
     "url": "https://www.bgr.com/2292418/galaxy-z-flip-8-review/",
     "date": "2026-10-21",
     "rating": null,
-    "score": 78,
+    "score": 74,
     "scoreSource": "text",
-    "excerpt": "The Galaxy Z Flip 8 is Samsung's most polished clamshell foldable, but probably not its most exciting."
+    "excerpt": "The Galaxy Z Flip 8 is Samsung's most polished clamshell foldable, but probably not its most exciting.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Good polished flip phone with useful upgrades, but overpriced and too unchanged for recent owners.",
+    "scoredFromFullText": true
   }
 ]
