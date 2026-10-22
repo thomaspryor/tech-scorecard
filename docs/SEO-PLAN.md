@@ -55,6 +55,7 @@ All in `src/`, pushed to main:
 - New `/category/<name>/` pages (8 categories, titled "Best <Plural> 2026: ranked by critic score"), ranked lists built only from existing data, `ItemList` and `BreadcrumbList` JSON-LD. Categories with fewer than 2 products (tablets today) are `noindex, follow` and left out of the sitemap until they have more.
 - New `/best/` page: the 10 highest critic scores overall, links to each category page.
 - Internal links: home page "Best of 2026" section, footer "Best of 2026" link, category pages cross-link each other.
+- "Best of 2026" spans launches from Oct 2025 to Oct 2026 (the data window), not only 2026 releases.
 - Sitemap now lists home, `/best/`, indexable categories, methodology, about and all products.
 - Footer link from Broadway Scorecard and West End Scorecard (one shared footer component, followed link, wording "From the makers of Broadway Scorecard").
 

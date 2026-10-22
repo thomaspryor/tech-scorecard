@@ -4,7 +4,8 @@ import { SCORE_TIERS, GOLD_MIN, RECOMMENDED_MIN, WORTH_IT_MIN, MIXED_MIN } from 
 import { OutletTierChip } from '@/components/product-cards';
 
 export const metadata: Metadata = {
-  title: 'How Tech Scorecard scores work',
+  title: 'How scores work',
+  openGraph: { title: 'How Tech Scorecard scores work', description: 'How we turn published tech reviews into one 0-100 critic score.', url: '/methodology/' },
   description: 'How we turn published tech reviews into one 0-100 critic score: outlet tiers, how star ratings become score bands, and how unrated reviews are scored.',
   alternates: { canonical: '/methodology/' },
 };

@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getAllProducts } from '@/lib/data';
+import { getAllProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
 import type { Category } from '@/lib/data-types';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbLd, clip, itemListLd } from '@/lib/seo';
-import { BEST_YEAR, MIN_PRODUCTS_FOR_CATEGORY_PAGE } from '@/config/seo';
+import { BEST_YEAR } from '@/config/seo';
 
 type Params = { name: string };
 
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description,
     alternates: { canonical: url },
-    robots: list.length < MIN_PRODUCTS_FOR_CATEGORY_PAGE ? { index: false, follow: true } : undefined,
+    robots: indexableCategories().includes(name) ? undefined : { index: false, follow: true },
     openGraph: { siteName: 'Tech Scorecard', type: 'website', title, description, url, images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] },
     twitter: { card: 'summary_large_image', title, description },
   };
@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
   const { list, reviews, top } = summary(name);
   if (!top) notFound();
   const plural = CATEGORY_PLURAL[name];
-  const others = CATEGORY_ORDER.filter((c) => c !== name && productsIn(c).length >= MIN_PRODUCTS_FOR_CATEGORY_PAGE);
+  const others = indexableCategories().filter((c) => c !== name);
   const path = `/category/${name}/`;
 
   return (
@@ -72,7 +72,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
 
       <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">Best {plural} of {BEST_YEAR}, ranked by critic score</h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
-        {list.length} {plural.toLowerCase()} ranked by the weighted average of {reviews} professional reviews.
+        Ranked by the weighted average of {reviews} professional reviews.
         The top rated is the {top.name} at {Math.round(top.criticScore!)}/100. Each score blends reviews from major tech outlets, with bigger outlets
         counting more; every review links to the original article.{' '}
         <Link href="/methodology/" className="font-semibold text-brand-ink underline underline-offset-2">How scores work</Link>

@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getAllProducts, getTotals } from '@/lib/data';
+import { getAllProducts, getTotals, indexableCategories } from '@/lib/data';
 import { MiniProductCard, ProductListCard } from '@/components/product-cards';
 import { Logo } from '@/components/Header';
 import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
-import { BEST_YEAR, MIN_PRODUCTS_FOR_CATEGORY_PAGE } from '@/config/seo';
+import { BEST_YEAR } from '@/config/seo';
 
 
 export const metadata: Metadata = { alternates: { canonical: '/' } };
@@ -81,7 +81,7 @@ export default function HomePage() {
         <h2 id="best" className="mb-3 text-lg font-bold">Best of {BEST_YEAR}</h2>
         <ul className="flex flex-wrap gap-2 text-sm">
           <li><Link href="/best/" className="inline-flex min-h-11 items-center rounded-full border border-line px-4 font-semibold hover:border-ink">Best-reviewed overall</Link></li>
-          {present.filter((c) => products.filter((p) => p.category === c).length >= MIN_PRODUCTS_FOR_CATEGORY_PAGE).map((c) => (
+          {indexableCategories().map((c) => (
             <li key={c}><Link href={`/category/${c}/`} className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink">Best {CATEGORY_PLURAL[c].toLowerCase()}</Link></li>
           ))}
         </ul>

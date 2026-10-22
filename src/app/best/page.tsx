@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getAllProducts } from '@/lib/data';
-import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
+import { getAllProducts, indexableCategories } from '@/lib/data';
+import { CATEGORY_PLURAL } from '@/lib/format';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbLd, clip, itemListLd } from '@/lib/seo';
-import { BEST_YEAR, MIN_PRODUCTS_FOR_CATEGORY_PAGE } from '@/config/seo';
+import { BEST_YEAR } from '@/config/seo';
 
 const TOP_N = 10;
 
@@ -15,6 +15,7 @@ function rated() {
 
 export function generateMetadata(): Metadata {
   const top = rated()[0];
+  if (!top) return { title: `Best-reviewed tech of ${BEST_YEAR}`, alternates: { canonical: '/best/' } };
   const title = `Best-reviewed tech of ${BEST_YEAR}: top gadgets by critic score`;
   const description = clip(
     `The ${TOP_N} best-reviewed gadgets of ${BEST_YEAR}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore!)}/100.`,
@@ -32,7 +33,7 @@ export function generateMetadata(): Metadata {
 export default function BestPage() {
   const all = rated();
   const top = all.slice(0, TOP_N);
-  const cats = CATEGORY_ORDER.filter((c) => all.filter((p) => p.category === c).length >= MIN_PRODUCTS_FOR_CATEGORY_PAGE);
+  const cats = indexableCategories();
   return (
     <div className="mx-auto max-w-3xl px-4 pb-4 pt-6 sm:px-6">
       <JsonLd

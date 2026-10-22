@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getAllProducts, getProduct } from '@/lib/data';
+import { getAllProducts, getProduct, indexableCategories } from '@/lib/data';
 import { getScoreTier } from '@/config/score-buckets';
 import { TIER_WEIGHTS, EARLY_SCORE_BELOW } from '@/config/scoring';
 import { formatDate, formatPrice, releaseLabel, CATEGORY_PLURAL } from '@/lib/format';
@@ -9,7 +9,6 @@ import { DeviceArt, MiniProductCard, OutletTierChip, ProductChips, ScoreBadge, S
 import { ReviewList } from '@/components/ReviewRow';
 import { JsonLd } from '@/components/JsonLd';
 import { abs, breadcrumbLd, clip } from '@/lib/seo';
-import { MIN_PRODUCTS_FOR_CATEGORY_PAGE } from '@/config/seo';
 
 type Params = { slug: string };
 
@@ -46,7 +45,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     .sort((a, b) => Number(b.category === product.category) - Number(a.category === product.category))
     .slice(0, 4);
 
-  const categoryHasPage = getAllProducts().filter((p) => p.category === product.category).length >= MIN_PRODUCTS_FOR_CATEGORY_PAGE;
+  const categoryHasPage = indexableCategories().includes(product.category);
   const crumbs = [
     { name: 'Home', path: '/' },
     ...(categoryHasPage ? [{ name: CATEGORY_PLURAL[product.category], path: `/category/${product.category}/` }] : []),
