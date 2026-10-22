@@ -26,6 +26,8 @@ npm install
 npm run validate        # data checks (rating conversion, https urls, excerpt length, duplicates)
 npm run build           # static export to out/
 npm run preview:build   # one self-contained preview/index.html with hash navigation
+node scripts/import-product.js <file.json>  # add/replace a product: {product, reviews, newOutlets}
 ```
 
-Review data was gathered on 2026-10-21 from the outlets' own review pages.
+Review data was gathered in October 2026 from the outlets' own review pages; every quote was
+re-checked word for word against the live page before import.

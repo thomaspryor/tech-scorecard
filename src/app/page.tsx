@@ -24,7 +24,7 @@ export default function HomePage() {
 
       <section aria-labelledby="newest" className="pb-10">
         <h2 id="newest" className="mb-3 text-lg font-bold">Newest Releases</h2>
-        <div className="-mx-4 flex snap-x gap-3 overflow-x-auto px-4 pb-2 sm:-mx-6 sm:gap-4 sm:px-6">
+        <div className="-mx-4 flex snap-x scroll-px-4 gap-3 overflow-x-auto px-4 pb-2 sm:-mx-6 sm:scroll-px-6 sm:gap-4 sm:px-6">
           {newest.map((p) => (
             <div key={p.id} className="w-32 shrink-0 snap-start sm:w-40"><MiniProductCard product={p} /></div>
           ))}

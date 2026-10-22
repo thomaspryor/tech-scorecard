@@ -204,5 +204,356 @@
         "#d9e3f3"
       ]
     }
+  },
+  {
+    "id": "iphone-17",
+    "slug": "iphone-17",
+    "name": "iPhone 17",
+    "brand": "Apple",
+    "category": "phone",
+    "releaseDate": "2025-09-19",
+    "launchPrice": 799,
+    "officialUrl": "https://www.apple.com/iphone-17/",
+    "criticsTake": "Critics call the iPhone 17 the best base iPhone in years and the model most people should buy. The 120Hz always-on display, 256GB of base storage at an unchanged $799 price, the Center Stage selfie camera and long battery life drew wide praise. Reviewers still point to the missing telephoto lens, a design that looks like the iPhone 16, USB 2.0 data speeds and heat under heavy load.",
+    "loved": [
+      "120Hz ProMotion display with always-on mode",
+      "256GB base storage at the same $799 price",
+      "Center Stage 18MP selfie camera",
+      "Long battery life and faster charging"
+    ],
+    "gripes": [
+      "No telephoto lens for zoom",
+      "Design barely changed from the iPhone 16",
+      "USB 2.0 data speeds",
+      "Gets warm under heavy load",
+      "Apple Intelligence still feels unfinished"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3-inch OLED, ProMotion up to 120Hz, Always-On"
+      },
+      {
+        "label": "Chip",
+        "value": "A19 (6-core CPU, 5-core GPU)"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "48MP Fusion main + 48MP Fusion ultra wide (2x optical-quality crop, no telephoto)"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage camera"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 30 hours video playback; 50% in 20 minutes with a 40W adapter"
+      },
+      {
+        "label": "Charging",
+        "value": "USB-C (USB 2 speeds); MagSafe and Qi2 wireless up to 25W"
+      },
+      {
+        "label": "Weight",
+        "value": "177 g"
+      },
+      {
+        "label": "Durability",
+        "value": "IP68, Ceramic Shield 2 front"
+      },
+      {
+        "label": "Storage/Price",
+        "value": "256GB ($799) or 512GB ($999) at launch"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#aab89c",
+      "accent": "#3b6e5c",
+      "backdrop": [
+        "#f3f6f0",
+        "#dfe7d8"
+      ]
+    }
+  },
+  {
+    "id": "iphone-17-pro",
+    "slug": "iphone-17-pro",
+    "name": "iPhone 17 Pro",
+    "brand": "Apple",
+    "category": "phone",
+    "releaseDate": "2025-09-19",
+    "launchPrice": 1099,
+    "officialUrl": "https://support.apple.com/en-us/125090",
+    "criticsTake": "Critics praise the iPhone 17 Pro for its long battery life, its versatile triple 48MP cameras with a sharper 4x telephoto, and a vapor chamber that keeps the A19 Pro cooler under load. The aluminum unibody and wide camera plateau split opinion, and several reviewers note it is heavier than before. The Verge, Ars Technica, PCMag and Tech Advisor all say the cheaper iPhone 17, which shares its 120Hz screen, is the better buy for most people.",
+    "loved": [
+      "Excellent battery life",
+      "Versatile 48MP cameras with 4x and 8x telephoto",
+      "Center Stage front camera",
+      "Fast A19 Pro that runs cooler under load"
+    ],
+    "gripes": [
+      "Divisive aluminum design and camera plateau",
+      "Heavier than its predecessor",
+      "Starting price rose $100 to $1,099",
+      "The regular iPhone 17 is better value",
+      "Modest upgrade over the iPhone 16 Pro"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3-inch OLED, ProMotion up to 120Hz, 3,000 nits peak outdoor"
+      },
+      {
+        "label": "Chip",
+        "value": "A19 Pro with vapor chamber cooling, 12GB RAM"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "48MP main + 48MP ultra wide + 48MP 4x telephoto (8x optical-quality)"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 33 hours video playback; 50% in 20 minutes with a 40W adapter"
+      },
+      {
+        "label": "Weight",
+        "value": "206 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminum unibody, Ceramic Shield 2 front, IP68"
+      },
+      {
+        "label": "Storage/Price",
+        "value": "256GB $1,099, 512GB $1,299, 1TB $1,499"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#d9672b",
+      "accent": "#3a6fa8",
+      "backdrop": [
+        "#fdf4ee",
+        "#f6dfcf"
+      ]
+    }
+  },
+  {
+    "id": "iphone-air",
+    "slug": "iphone-air",
+    "name": "iPhone Air",
+    "brand": "Apple",
+    "category": "phone",
+    "releaseDate": "2025-09-19",
+    "launchPrice": 999,
+    "officialUrl": "https://www.apple.com/iphone-air/",
+    "criticsTake": "Critics agree the design is the iPhone Air's main strength: at 5.64 mm and 165 g it is easy to hold for long periods, and its titanium frame held up in reviewers' drop and bend tests. The cost is a single rear camera, a mono speaker, slower charging and battery life that trails the rest of the iPhone 17 lineup. Most reviewers say it suits people who value thinness above all, and that the cheaper iPhone 17 or the 17 Pro is the better buy for everyone else.",
+    "loved": [
+      "Extremely thin and light, comfortable to hold for long periods",
+      "Durable titanium frame that resists bending",
+      "Bright 6.5-inch ProMotion display",
+      "Fast A19 Pro performance"
+    ],
+    "gripes": [
+      "Only one rear camera, with no ultrawide or telephoto",
+      "Battery life behind other iPhone 17 models",
+      "Mono speaker sounds thin",
+      "Slow charging and USB 2.0 data speeds",
+      "Hard to justify at $999 next to the iPhone 17 and 17 Pro"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.5-inch OLED, ProMotion up to 120Hz, 3000 nits peak (outdoor)"
+      },
+      {
+        "label": "Chip",
+        "value": "A19 Pro (6-core CPU, 5-core GPU)"
+      },
+      {
+        "label": "Rear camera",
+        "value": "48MP Fusion main (single lens, 2x optical-quality crop)"
+      },
+      {
+        "label": "Front camera",
+        "value": "18MP Center Stage"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 27 hours video playback; 50% in 30 minutes with 20W"
+      },
+      {
+        "label": "Thickness",
+        "value": "5.64 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "165 g"
+      },
+      {
+        "label": "Build",
+        "value": "Titanium frame, Ceramic Shield 2 front, IP68"
+      },
+      {
+        "label": "Storage/Price",
+        "value": "256GB $999, 512GB $1,199, 1TB $1,399"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#b9cfe0",
+      "accent": "#2f6fa8",
+      "backdrop": [
+        "#f1f6fb",
+        "#dbe7f2"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-s26-ultra",
+    "slug": "galaxy-s26-ultra",
+    "name": "Galaxy S26 Ultra",
+    "brand": "Samsung",
+    "category": "phone",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 1299.99,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/",
+    "criticsTake": "Critics call the Galaxy S26 Ultra a modest update, yet most still rank it among the best Android phones you can buy. The new Privacy Display, which hides the screen from people nearby, draws near-universal praise, along with faster charging, top performance and a slimmer, lighter body. The unchanged 5,000mAh battery, missing Qi2 magnets and small camera changes keep it from feeling like a big step up from the S25 Ultra.",
+    "loved": [
+      "Privacy Display that hides the screen from onlookers",
+      "Fast Snapdragon 8 Elite Gen 5 performance",
+      "Faster 60W wired and 25W wireless charging",
+      "Slimmer, lighter body with rounded corners"
+    ],
+    "gripes": [
+      "No Qi2 magnets for magnetic charging",
+      "Battery still 5,000mAh",
+      "Only minor camera upgrades",
+      "Big camera bump makes it rock on a table",
+      "Some Galaxy AI features feel unconvincing"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.9-inch QHD+ Dynamic AMOLED 2X, 120Hz, 2,600 nits peak, built-in Privacy Display"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Elite Gen 5 for Galaxy"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "200MP main + 50MP ultra wide + 50MP 5x telephoto + 10MP 3x telephoto"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP"
+      },
+      {
+        "label": "Battery",
+        "value": "5,000mAh; 60W wired, 25W wireless charging"
+      },
+      {
+        "label": "Weight",
+        "value": "214 g"
+      },
+      {
+        "label": "Build",
+        "value": "Aluminum frame, IP68, built-in S Pen"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB or 512GB (12GB RAM), 1TB (16GB RAM)"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,299.99 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#4b4278",
+      "accent": "#7d6fd0",
+      "backdrop": [
+        "#f3f1fa",
+        "#e1ddf1"
+      ]
+    }
+  },
+  {
+    "id": "pixel-11-pro",
+    "slug": "pixel-11-pro",
+    "name": "Google Pixel 11 Pro",
+    "brand": "Google",
+    "category": "phone",
+    "releaseDate": "2026-08-20",
+    "launchPrice": 1099,
+    "officialUrl": "https://store.google.com/us/product/pixel_11_pro?hl=en-US",
+    "criticsTake": "Critics call the Pixel 11 Pro a refined but small update to the Pixel 10 Pro. Reviewers praise its compact build, bright display, strong cameras and new software such as Magic Capture and Rambler voice typing. Most also fault the $100 higher US starting price, less RAM on the base model, weak gaming performance, middling battery life and the HiLight notification light, so Tom's Guide and Android Central suggest the Pixel 10 Pro may be the better buy.",
+    "loved": [
+      "Compact, well-built design in a rare 6.3-inch size",
+      "Very bright display",
+      "Strong cameras, with Magic Capture and faster Night Sight",
+      "Rambler voice typing and other useful Gemini features"
+    ],
+    "gripes": [
+      "Starting price up $100 in the US now that the 128GB model is gone",
+      "Base model drops to 12GB of RAM",
+      "Weak GPU and gaming performance from Tensor G6",
+      "Battery life only average",
+      "HiLight notification light feels like a gimmick"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3-inch LTPO OLED, 1280 x 2856, 1-120Hz, up to 3600 nits peak"
+      },
+      {
+        "label": "Chip",
+        "value": "Google Tensor G6"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP wide + 48MP ultrawide + 48MP 5x telephoto"
+      },
+      {
+        "label": "Front camera",
+        "value": "42MP with autofocus"
+      },
+      {
+        "label": "Battery",
+        "value": "4,850 mAh; 30W wired, 25W Pixelsnap (Qi2.2) wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "204 g (7.2 oz)"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB RAM (256GB) or 16GB RAM (512GB and 1TB)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP68"
+      },
+      {
+        "label": "Storage/Price",
+        "value": "$1,099 (256GB), $1,219 (512GB), $1,449 (1TB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#5f6650",
+      "accent": "#8fb4e0",
+      "backdrop": [
+        "#f3f5ef",
+        "#dfe5d5"
+      ]
+    }
   }
 ]
