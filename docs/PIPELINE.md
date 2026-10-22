@@ -25,6 +25,24 @@ Lessons from the first 30 products (2026-10-22):
 - Skip hands-on/first-look pieces, video-only reviews, non-English editions and reviews of sibling models
   (joint reviews are fine with a `note`).
 
+## Weekly refresh (automatic)
+
+`.github/workflows/weekly-refresh.yml` runs every Monday (and on demand from the Actions tab) and calls
+`scripts/refresh-pipeline.sh`:
+
+1. `scripts/refresh.js` asks Gemini (with Google Search) for review URLs of products already on the site,
+   then reads each page itself: rating, critic and date come from the page's JSON-LD, and the quote must
+   appear word for word in the page text. Only outlets in `data/outlets.json` are accepted. It also looks
+   for launches from the last 45 days and adds one only when 6 or more reviews pass these checks
+   (card text is written from the review texts only, with `autoAdded` set on the product).
+2. `verify-quotes.py` re-checks every new quote; a MISS or unreadable page drops that review.
+3. `score-reviews.js` band-scores everything new (OpenAI + Gemini).
+4. `npm run build` validates the data. The workflow commits `data/` to main only if all of that passed.
+
+Needs repo secrets `OPENAI_API_KEY` and `GEMINI_API_KEY`. `data/refresh-state.json` remembers when each
+product was last checked, so each run covers the least recently checked products first.
+Local dry run: `node scripts/refresh.js --only=<id> --dry-run`.
+
 ---
 
 # Research brief (give this to each research subagent)
