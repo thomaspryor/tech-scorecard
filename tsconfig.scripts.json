@@ -1,0 +1,13 @@
+{
+  // Type-checks the pipeline's shared modules and small CLIs (plain JS + JSDoc) against
+  // src/lib/data-types.ts. Run by `npm run typecheck`.
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "checkJs": true, "noEmit": true, "incremental": false, "types": ["node"] },
+  "include": [
+    "scripts/lib/*.js",
+    "scripts/import-product.js",
+    "scripts/validate-data.js",
+    "scripts/check-page-size.js",
+    "src/lib/data-types.ts"
+  ]
+}

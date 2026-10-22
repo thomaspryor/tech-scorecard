@@ -17,7 +17,7 @@ if (!paths.length) {
 const files = paths.map((f) => ({ label: f, content: JSON.parse(fs.readFileSync(f, 'utf8')) }));
 const { data, errors, messages } = importAll(loadData(DATA_DIR), files, loadCategories());
 for (const m of messages) console.log(m);
-if (errors.length) {
+if (!data || errors.length) {
   console.error(`\n${errors.length} error(s), data/ left unchanged:\n- ${errors.join('\n- ')}`);
   process.exit(1);
 }

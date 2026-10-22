@@ -7,7 +7,12 @@ const path = require('path');
 const PAGE_FAIL_BYTES = 1_800_000;
 const PAGE_WARN_BYTES = 1_000_000;
 
-/** Every .html file under dir, as paths relative to dir. */
+/**
+ * Every .html file under dir, as paths relative to dir.
+ * @param {string} dir
+ * @param {string} [rel]
+ * @returns {string[]}
+ */
 function listHtml(dir, rel = '') {
   return fs.readdirSync(path.join(dir, rel), { withFileTypes: true }).flatMap((e) => {
     const r = path.join(rel, e.name);
@@ -16,7 +21,11 @@ function listHtml(dir, rel = '') {
   });
 }
 
-/** [{file, bytes}] -> {over: [...], near: [...]} sorted largest first. */
+/**
+ * [{file, bytes}] -> {over: [...], near: [...]} sorted largest first.
+ * @template {{bytes: number}} P
+ * @param {P[]} pages
+ */
 function checkPageSizes(pages, fail = PAGE_FAIL_BYTES, warn = PAGE_WARN_BYTES) {
   const sorted = [...pages].sort((a, b) => b.bytes - a.bytes);
   return {

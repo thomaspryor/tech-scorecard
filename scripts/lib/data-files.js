@@ -10,6 +10,7 @@ const DATA_DIR = path.join(ROOT, 'data');
 /** @typedef {import('../../src/lib/data-types').Outlet} Outlet */
 /** @typedef {{products: Product[], reviews: Review[], outlets: Outlet[]}} DataSet */
 
+/** @type {Record<keyof DataSet, string>} */
 const DATA_FILES = { products: 'products.json', reviews: 'reviews.json', outlets: 'outlets.json' };
 
 function loadCategories() {
@@ -18,10 +19,9 @@ function loadCategories() {
 
 /** @returns {DataSet} */
 function loadData(dir = DATA_DIR) {
-  const out = {};
-  for (const [key, file] of Object.entries(DATA_FILES))
-    out[key] = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
-  return out;
+  /** @param {string} file */
+  const read = (file) => JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+  return { products: read(DATA_FILES.products), reviews: read(DATA_FILES.reviews), outlets: read(DATA_FILES.outlets) };
 }
 
 /**
@@ -30,8 +30,8 @@ function loadData(dir = DATA_DIR) {
  * @param {Partial<DataSet>} data
  */
 function writeData(dir, data) {
-  for (const [key, file] of Object.entries(DATA_FILES)) {
-    if (data[key]) fs.writeFileSync(path.join(dir, file), JSON.stringify(data[key], null, 2) + '\n');
+  for (const key of /** @type {(keyof DataSet)[]} */ (Object.keys(DATA_FILES))) {
+    if (data[key]) fs.writeFileSync(path.join(dir, DATA_FILES[key]), JSON.stringify(data[key], null, 2) + '\n');
   }
 }
 

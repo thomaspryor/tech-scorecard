@@ -8,7 +8,7 @@ const { PAGE_FAIL_BYTES, PAGE_WARN_BYTES, listHtml, checkPageSizes } = require('
 const OUT = path.join(__dirname, '..', 'out');
 const pages = listHtml(OUT).map((file) => ({ file, bytes: fs.statSync(path.join(OUT, file)).size }));
 const { over, near } = checkPageSizes(pages);
-const kb = (b) => `${Math.round(b / 1000)}kB`;
+const kb = (/** @type {number} */ b) => `${Math.round(b / 1000)}kB`;
 
 const largest = [...pages].sort((a, b) => b.bytes - a.bytes)[0];
 console.log(`page size: ${pages.length} pages, largest ${largest.file} at ${kb(largest.bytes)}`);

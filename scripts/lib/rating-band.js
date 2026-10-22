@@ -5,7 +5,11 @@
 //   A printed percentage ("90%") is already a score: +/- 5 points.
 const PERCENT_BAND_HALF_WIDTH = 5;
 
-/** "4.5/5", "8 out of 10", "4 stars", "90%" -> {floor, ceiling} or null when unparseable. */
+/**
+ * "4.5/5", "8 out of 10", "4 stars", "90%" -> {floor, ceiling} or null when unparseable.
+ * @param {string | null | undefined} rating
+ * @returns {{floor: number, ceiling: number} | null}
+ */
 function ratingToBand(rating) {
   if (!rating) return null;
   const s = String(rating).trim();

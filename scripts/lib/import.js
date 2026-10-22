@@ -11,12 +11,16 @@ const { validateData } = require('./validate');
  * @property {import('./data-files').Outlet[]} [newOutlets]
  */
 
-const bare = (d) => d.replace(/^www\./, '');
-const normName = (n) => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+const bare = (/** @type {string} */ d) => d.replace(/^www\./, '');
+const normName = (/** @type {string} */ n) => n.toLowerCase().replace(/[^a-z0-9]/g, '');
 
 /**
  * Register newOutlets, reusing an existing outlet when it is the same one under another id.
  * Mutates `outlets` and the outletIds of `incoming`.
+ * @param {import('./data-files').Outlet[]} outlets
+ * @param {import('./data-files').Outlet[]} newOutlets
+ * @param {import('./data-files').Review[]} incoming
+ * @param {string} label file name for error messages
  */
 function mergeOutlets(outlets, newOutlets, incoming, label) {
   for (const o of newOutlets) {
@@ -47,6 +51,8 @@ function mergeOutlets(outlets, newOutlets, incoming, label) {
 /**
  * Provisional score for a rated review: clamp into the rating's band (or take the band's
  * midpoint) until score-reviews.js places it by reading the review.
+ * @param {import('./data-files').Review} review
+ * @returns {number}
  */
 function provisionalScore(review) {
   const band = review.rating ? ratingToBand(review.rating) : null;

@@ -11,15 +11,17 @@ const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const ISO_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 /** Real calendar dates only: "2026-13-40" fails even though it matches the pattern. */
+/** @param {unknown} s @returns {s is string} */
 function isIsoDate(s) {
   if (typeof s !== 'string' || !ISO_RE.test(s)) return false;
   const d = new Date(`${s}T00:00:00Z`);
   return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s;
 }
 
-const bareHost = (d) => d.replace(/^www\./, '');
+const bareHost = (/** @type {string} */ d) => d.replace(/^www\./, '');
 
 /** True for a parseable https URL with no whitespace ("https://x.com:99999" is not parseable). */
+/** @param {unknown} s @returns {s is string} */
 function isHttpsUrl(s) {
   if (typeof s !== 'string' || /\s/.test(s)) return false;
   try {
@@ -42,11 +44,13 @@ function validateData(
   const outletsById = new Map(outlets.map((o) => [o.id, o]));
   const productIds = new Set(products.map((p) => p.id));
 
-  for (const [label, ids] of [
+  /** @type {[string, string[]][]} */
+  const idLists = [
     ['product id', products.map((p) => p.id)],
     ['product slug', products.map((p) => p.slug)],
     ['outlet id', outlets.map((o) => o.id)],
-  ]) {
+  ];
+  for (const [label, ids] of idLists) {
     const dupes = ids.filter((x, i) => ids.indexOf(x) !== i);
     if (dupes.length) errors.push(`duplicate ${label}: ${[...new Set(dupes)].join(', ')}`);
   }
@@ -57,8 +61,9 @@ function validateData(
 
   for (const p of products) {
     if (!isIsoDate(p.releaseDate)) errors.push(`product ${p.id}: bad releaseDate`);
-    for (const k of ['name', 'brand', 'criticsTake', 'art']) if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
-    for (const k of ['loved', 'gripes', 'specs'])
+    for (const k of /** @type {const} */ (['name', 'brand', 'criticsTake', 'art']))
+      if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
+    for (const k of /** @type {const} */ (['loved', 'gripes', 'specs']))
       if (!Array.isArray(p[k]) || p[k].length === 0) errors.push(`product ${p.id}: ${k} must be a non-empty list`);
     if (!SLUG_RE.test(p.slug || '')) errors.push(`product ${p.id}: slug must be lowercase words joined by hyphens`);
     if (p.officialUrl != null && !isHttpsUrl(p.officialUrl)) errors.push(`product ${p.id}: officialUrl must be https`);

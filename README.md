@@ -41,7 +41,8 @@ docs/             PIPELINE.md (how to add products), SEO-PLAN.md
 
 ## Data model
 
-Types live in `src/lib/data-types.ts`; the scripts reference the same types through JSDoc.
+Types live in `src/lib/data-types.ts`; the scripts reference the same types through JSDoc, and
+`tsconfig.scripts.json` checks them.
 
 | File                 | One record is                      | Key fields                                                                                                                                                                                                                         |
 | -------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -136,7 +137,9 @@ In short:
   only.
 - **Plain JavaScript in `scripts/`.** The pipeline scripts run with plain `node`, with no build
   step. Their logic lives in small pure modules under `scripts/lib/`, typed with JSDoc against
-  the TypeScript types and covered by the unit tests.
+  the TypeScript types, type-checked by `npm run typecheck` (`tsconfig.scripts.json`) and covered
+  by the unit tests. The two networked scripts, `score-reviews.js` and `refresh.js`, are not yet
+  under `checkJs`.
 
 ## Known limitations
 
