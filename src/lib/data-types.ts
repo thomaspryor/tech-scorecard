@@ -49,4 +49,6 @@ export interface Outlet {
   name: string;
   tier: 1 | 2 | 3 | 4;
   domain: string;
+  /** Other sites the outlet publishes reviews on. */
+  altDomains?: string[];
 }

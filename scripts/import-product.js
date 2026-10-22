@@ -24,9 +24,13 @@ for (const f of files) {
   if (!product || !product.id || !Array.isArray(incoming)) throw new Error(`${f}: needs product.id and reviews[]`);
   for (const o of newOutlets) {
     const bare = (d) => d.replace(/^www\./, '');
-    const clash = outlets.find((x) => x.id === o.id || bare(x.domain) === bare(o.domain));
+    // Same id, or the same outlet under another id (same name and site). Two outlets can share
+    // a site (Digital Foundry and Eurogamer both on eurogamer.net), so a site alone is not a match.
+    const norm = (n) => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const clash = outlets.find((x) => x.id === o.id || (bare(x.domain) === bare(o.domain) && norm(x.name) === norm(o.name)));
     if (clash && clash.id === o.id && bare(clash.domain) !== bare(o.domain)) {
-      throw new Error(`${f}: outlet id "${o.id}" already exists with domain ${clash.domain}, not ${o.domain}`);
+      // Same outlet publishing on another site (Digital Foundry on eurogamer.net): record the extra host.
+      clash.altDomains = [...new Set([...(clash.altDomains || []), bare(o.domain)])];
     }
     if (!clash) outlets.push({ id: o.id, name: o.name, tier: o.tier, domain: o.domain });
     else if (clash.id !== o.id) {

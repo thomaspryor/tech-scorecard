@@ -47,8 +47,9 @@ reviews.forEach((r, i) => {
   else if (outletIds.has(r.outletId)) {
     // The link must go to the outlet the review is credited to (catches a swapped or pasted-wrong URL).
     const host = new URL(r.url).hostname.replace(/^www\./, '');
-    const domain = outlets.find((o) => o.id === r.outletId).domain;
-    if (host !== domain && !host.endsWith(`.${domain}`)) errors.push(`${at}: url host ${host} is not ${domain}`);
+    const outlet = outlets.find((o) => o.id === r.outletId);
+    const domains = [outlet.domain, ...(outlet.altDomains || [])];
+    if (!domains.some((d) => host === d || host.endsWith(`.${d}`))) errors.push(`${at}: url host ${host} is not ${domains.join(' or ')}`);
   }
   if (!ISO.test(r.date || '')) errors.push(`${at}: bad date`);
   if (!(Number.isInteger(r.score) && r.score >= 0 && r.score <= 100)) errors.push(`${at}: score must be an integer 0-100`);
