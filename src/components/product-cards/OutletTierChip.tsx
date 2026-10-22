@@ -3,12 +3,14 @@ import { TIER_WEIGHTS } from '@/config/scoring';
 /** "T1 ▂▄▆█" chip, same idea as Broadway Scorecard's OutletTierChip. */
 export function OutletTierChip({ tier }: { tier: 1 | 2 | 3 | 4 }) {
   const bars = 5 - tier;
+  const label = `Tier ${tier} outlet, weighted ${Math.round(TIER_WEIGHTS[tier] * 100)}%`;
+  // title is mouse-only; the sr-only copy gives screen readers the same words (Broadway BRO-4881).
   return (
     <span
       className="inline-flex items-center gap-1 rounded border border-line px-1.5 py-[1px] text-[10px] font-bold text-ink-muted"
-      title={`Tier ${tier} outlet, weighted ${Math.round(TIER_WEIGHTS[tier] * 100)}%`}
+      title={label}
     >
-      T{tier}
+      <span aria-hidden="true">T{tier}</span>
       <span className="flex items-end gap-[1.5px]" aria-hidden="true">
         {[1, 2, 3, 4].map((i) => (
           <span
@@ -18,6 +20,7 @@ export function OutletTierChip({ tier }: { tier: 1 | 2 | 3 | 4 }) {
           />
         ))}
       </span>
+      <span className="sr-only">{label}</span>
     </span>
   );
 }
