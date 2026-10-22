@@ -25,6 +25,7 @@ export function Header() {
         <nav className="flex items-center gap-4 whitespace-nowrap text-sm font-medium text-ink-muted sm:gap-5">
           <Link href="/" className="hidden hover:text-ink sm:inline">All products</Link>
           <Link href="/methodology/" className="hover:text-ink">Methodology</Link>
+          <Link href="/about/" className="hover:text-ink">About</Link>
         </nav>
       </div>
     </header>
