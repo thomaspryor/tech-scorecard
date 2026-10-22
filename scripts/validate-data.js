@@ -33,16 +33,7 @@ for (const p of products) {
   if (p.art && !['phone', 'foldable', 'flip'].includes(p.art.kind)) errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
 }
 
-/** "4.5/5" -> 90, "9/10" -> 90, "4 stars" (out of 5) -> 80. null when the format is not numeric. */
-function ratingToScore(rating) {
-  const frac = rating.match(/^(\d+(?:\.\d+)?)\s*(?:\/|out of)\s*(\d+(?:\.\d+)?)(?:\s*stars?)?$/i);
-  if (frac) return Math.round((parseFloat(frac[1]) / parseFloat(frac[2])) * 100);
-  const pct = rating.match(/^(\d+(?:\.\d+)?)\s*%$/);
-  if (pct) return Math.round(parseFloat(pct[1]));
-  const stars = rating.match(/^(\d(?:\.\d)?)\s*stars?$/i);
-  if (stars) return Math.round((parseFloat(stars[1]) / 5) * 100);
-  return null;
-}
+const { ratingToBand } = require('./lib/rating-band');
 
 const seen = new Set();
 reviews.forEach((r, i) => {
@@ -63,12 +54,11 @@ reviews.forEach((r, i) => {
   if (!(Number.isInteger(r.score) && r.score >= 0 && r.score <= 100)) errors.push(`${at}: score must be an integer 0-100`);
   if (!['rating', 'text'].includes(r.scoreSource)) errors.push(`${at}: scoreSource must be rating|text`);
   if (r.scoreSource === 'rating') {
+    // A published rating is a band (Broadway Scorecard rule); the score must sit inside it.
+    const band = r.rating ? ratingToBand(r.rating) : null;
     if (!r.rating) errors.push(`${at}: scoreSource "rating" needs a rating`);
-    else {
-      const expected = ratingToScore(r.rating);
-      if (expected == null) errors.push(`${at}: cannot parse rating "${r.rating}"`);
-      else if (expected !== r.score) errors.push(`${at}: rating ${r.rating} converts to ${expected}, not ${r.score}`);
-    }
+    else if (!band) errors.push(`${at}: cannot parse rating "${r.rating}"`);
+    else if (r.score < band.floor || r.score > band.ceiling) errors.push(`${at}: score ${r.score} is outside the ${r.rating} band ${band.floor}-${band.ceiling}`);
   }
   if (r.scoreSource === 'text' && r.rating) errors.push(`${at}: text-scored review must not carry a rating`);
   const words = (r.excerpt || '').trim().split(/\s+/).filter(Boolean).length;

@@ -25,9 +25,13 @@ export default function MethodologyPage() {
       <section className="card mt-8 p-5 sm:p-6">
         <h2 className="section-label">1. Each review becomes a number</h2>
         <p className="mt-3 max-w-[65ch] text-sm leading-relaxed">
-          When an outlet publishes a score we convert it straight to 100 points: 4.5/5 is 90, 8/10 is 80.
-          When an outlet publishes no score, we read the verdict and score the text, and the review is labeled
-          &ldquo;Unrated, scored from text&rdquo; so you can tell the difference.
+          A published rating sets a range, the same rule Broadway Scorecard uses for star ratings: 4.5/5 or 9/10
+          and up lands between 91 and 100, 3.5/5 to 4/5 (7/10 to 8.9/10) between 71 and 90, and lower ratings in
+          lower ranges. Two AI models (from OpenAI and Google) then read the full review and place it inside that
+          range: near the top when the reviewer is enthusiastic, near the bottom when the rating comes with big
+          reservations. The review&apos;s score is the average of the two, and it can never leave the range the outlet
+          set. When an outlet publishes no rating, the same two models score the verdict from 0 to 100, and the
+          review is labeled &ldquo;Unrated, scored from text.&rdquo;
         </p>
       </section>
 

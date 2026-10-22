@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
+const { ratingToBand } = require('./lib/rating-band');
 
 const DATA = path.join(__dirname, '..', 'data');
 const load = (f) => JSON.parse(fs.readFileSync(path.join(DATA, f), 'utf8'));
@@ -33,9 +34,14 @@ for (const f of files) {
       for (const r of incoming) if (r.outletId === o.id) r.outletId = clash.id;
     }
   }
+  // Provisional score: clamp into the rating's band until score-reviews.js places it by reading the review.
+  for (const r of incoming) {
+    const band = r.rating ? ratingToBand(r.rating) : null;
+    if (band) r.score = Math.min(band.ceiling, Math.max(band.floor, r.score));
+  }
   products = products.filter((p) => p.id !== product.id).concat(product);
   reviews = reviews.filter((r) => r.productId !== product.id).concat(incoming.map((r) => ({ ...r, productId: product.id })));
-  console.log(`${product.id}: ${incoming.length} reviews`);
+  console.log(`${product.id}: ${incoming.length} reviews (now run: node scripts/score-reviews.js --only=${product.id})`);
 }
 
 // Write, validate, and roll back on failure so bad data never stays on disk.

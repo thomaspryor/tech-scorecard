@@ -32,6 +32,13 @@ export interface Review {
   scoreSource: 'rating' | 'text';
   excerpt: string;
   editorsChoice?: boolean;
+  /** [floor, ceiling] the published rating allows (scripts/lib/rating-band.js). */
+  scoreBand?: [number, number];
+  /** Each model's placement inside the band; the score is their average. */
+  modelScores?: Record<string, number>;
+  /** One-line reason for the placement, in our words. */
+  scoreReason?: string;
+  scoredFromFullText?: boolean;
   /** Context a reader needs, e.g. a joint review whose score is for a sibling model. */
   note?: string;
 }

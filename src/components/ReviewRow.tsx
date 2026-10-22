@@ -22,7 +22,12 @@ export function ReviewRow({ review }: { review: ScoredReview }) {
           <span className="text-ink-faint">
             {review.critic ? `By ${review.critic}` : 'Staff review'}
             {' · '}
-            {review.rating ? <span className="font-medium text-ink-muted">Rated {review.rating}</span> : <span title="This outlet does not publish a score; we scored the review's verdict from its text.">Unrated, scored from text</span>}
+            {review.rating ? (
+              <span className="font-medium text-ink-muted"
+                title={review.scoreBand ? `A ${review.rating} rating means ${review.scoreBand[0]}-${review.scoreBand[1]}; placed at ${review.score} by reading the review` : undefined}>
+                Rated {review.rating}
+              </span>
+            ) : <span title="This outlet does not publish a score; we scored the review's verdict from its text.">Unrated, scored from text</span>}
           </span>
           <a href={review.url} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-brand-ink hover:underline">

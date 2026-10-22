@@ -15,8 +15,10 @@ iPhone Duo, iPhone 18 Pro and Samsung Galaxy Z Fold 8.
 | `src/components/show-cards/` (ScoreBadge, ShowListCard, MiniShowCard, ScoreBreakdownBar, OutletTierChip) | `src/components/product-cards/` |
 | `/show/[slug]` | `/product/[slug]` |
 
-Scores: a published rating converts straight to 100 points (4.5/5 = 90). Unrated
-reviews are scored from the verdict text and labeled "Unrated, scored from text".
+Scores: a published rating is a band, as on Broadway Scorecard (>= 90% of scale -> 91-100,
+>= 70% -> 71-90, ...; scripts/lib/rating-band.js). Two models read the full review and place it
+inside the band; the score is their average. Unrated reviews are scored 0-100 the same way and
+labeled "Unrated, scored from text".
 Every review links to the original article.
 
 ## Commands
@@ -27,6 +29,7 @@ npm run validate        # data checks (rating conversion, https urls, excerpt le
 npm run build           # static export to out/
 npm run preview:build   # one self-contained preview/index.html with hash navigation
 node scripts/import-product.js <file.json>  # add/replace a product: {product, reviews, newOutlets}
+node scripts/score-reviews.js --only=<id>  # place each review inside its rating band (OpenAI + Gemini read the review)
 python3 scripts/verify-quotes.py <id,...>   # every excerpt must appear word for word on its page
 ```
 
