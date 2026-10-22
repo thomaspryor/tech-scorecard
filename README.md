@@ -36,7 +36,7 @@ scripts/
   lib/            pure modules shared by the scripts and the tests
 test/             Vitest unit tests
 data/             products.json, reviews.json, outlets.json
-docs/             PIPELINE.md (how to add products), SEO-PLAN.md, PORTING.md (carrying Broadway Scorecard fixes over)
+docs/             PIPELINE.md (how to add products), SEO-PLAN.md, PORTING.md (carrying Broadway Scorecard fixes over), IMAGES.md (press photo terms per brand)
 ```
 
 ## Data model
