@@ -20,7 +20,12 @@ const BANNED_PHRASES = new RegExp(
 // `${a} – ${b}` range stays typographic.
 const SPACED_EN_DASH = /(?:^|\s)–(?:\s|$)/;
 
-/** Why a piece of copy breaks the rules, or null when it is fine. */
+/**
+ * Why a piece of copy breaks the rules, or null when it is fine.
+ * @param {string} text
+ * @param {{allowSpacedEnDash?: boolean}} [opts]
+ * @returns {string | null}
+ */
 function copyProblem(text, { allowSpacedEnDash = false } = {}) {
   if (EM_DASH.test(text)) return 'em dash';
   if (!allowSpacedEnDash && SPACED_EN_DASH.test(text)) return 'spaced en dash';
@@ -28,6 +33,7 @@ function copyProblem(text, { allowSpacedEnDash = false } = {}) {
   return m ? `"${m[0]}"` : null;
 }
 
+/** @param {import('typescript').Node} node */
 function isConsoleArg(node) {
   for (let p = node.parent; p; p = p.parent) {
     if (ts.isCallExpression(p)) {
@@ -38,10 +44,17 @@ function isConsoleArg(node) {
   return false;
 }
 
-/** "file:line: problem: text" for each renderable string in a .ts/.tsx file that breaks the rules. */
+/**
+ * "file:line: problem: text" for each renderable string in a .ts/.tsx file that breaks the rules.
+ * @param {string} file
+ * @param {string} [root]
+ * @returns {string[]}
+ */
 function sourceCopyViolations(file, root = process.cwd()) {
   const src = ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+  /** @type {string[]} */
   const hits = [];
+  /** @param {import('typescript').Node} node */
   const visit = (node) => {
     const template =
       ts.isNoSubstitutionTemplateLiteral(node) ||
@@ -63,7 +76,11 @@ function sourceCopyViolations(file, root = process.cwd()) {
   return hits;
 }
 
-/** "productId.field: problem: text" for the written copy in products.json (criticsTake, loved, gripes). */
+/**
+ * "productId.field: problem: text" for the written copy in products.json (criticsTake, loved, gripes).
+ * @param {Pick<import('../../src/lib/data-types').Product, 'id' | 'criticsTake' | 'loved' | 'gripes'>[]} products
+ * @returns {string[]}
+ */
 function productCopyViolations(products) {
   return products.flatMap((p) =>
     [
@@ -76,9 +93,10 @@ function productCopyViolations(products) {
   );
 }
 
+/** @param {string} dir @returns {string[]} */
 function listTsFiles(dir) {
   return fs
-    .readdirSync(dir, { recursive: true })
+    .readdirSync(dir, { recursive: true, encoding: 'utf8' })
     .filter((f) => /\.tsx?$/.test(f))
     .map((f) => path.join(dir, f));
 }
