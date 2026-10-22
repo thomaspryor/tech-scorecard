@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getAllProducts, getTotals, indexableCategories } from '@/lib/data';
+import { getAllProducts, getTotals, indexableCategories, isScored } from '@/lib/data';
 import { MiniProductCard, ProductListCard } from '@/components/product-cards';
 import { Logo } from '@/components/Header';
 import { ListSort } from '@/components/ListSort';
@@ -24,12 +24,15 @@ export default function HomePage() {
         `.f-${c}:checked ~ .cat-list > :not([data-cat='${c}']){display:none}`,
     )
     .join('');
-  const dateRank = new Map(
-    [...products]
-      .sort((a, b) => b.releaseDate.localeCompare(a.releaseDate) || (b.criticScore ?? 0) - (a.criticScore ?? 0))
-      .map((p, i) => [p.id, i] as const),
+  // `products` is sorted by score. The list renders newest first, so scoreRank keeps the CSS/JS score order.
+  const byDate = [...products].sort(
+    (a, b) => b.releaseDate.localeCompare(a.releaseDate) || (b.criticScore ?? 0) - (a.criticScore ?? 0),
   );
-  const newest = [...products].sort((a, b) => b.releaseDate.localeCompare(a.releaseDate)).slice(0, 8);
+  const scoreRank = new Map(products.map((p, i) => [p.id, i] as const));
+  const cutoff = new Date();
+  cutoff.setFullYear(cutoff.getFullYear() - 1);
+  const since = cutoff.toISOString().slice(0, 10);
+  const topRecent = products.filter((p) => isScored(p) && p.releaseDate >= since).slice(0, 8);
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6">
       <section className="pb-8 pt-12 sm:pt-16">
@@ -49,12 +52,12 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section aria-labelledby="newest" className="pb-10">
-        <h2 id="newest" className="mb-3 text-lg font-bold">
-          Newest Releases
+      <section aria-labelledby="top-recent" className="pb-10">
+        <h2 id="top-recent" className="mb-3 text-lg font-bold">
+          Top gadgets of the last 12 months
         </h2>
         <div className="-mx-4 flex snap-x scroll-px-4 gap-3 overflow-x-auto px-4 pb-2 sm:-mx-6 sm:scroll-px-6 sm:gap-4 sm:px-6">
-          {newest.map((p) => (
+          {topRecent.map((p) => (
             <div key={p.id} className="w-32 shrink-0 snap-start sm:w-40">
               <MiniProductCard product={p} />
             </div>
@@ -67,8 +70,8 @@ export default function HomePage() {
         <h2 id="all" className="mb-3 text-lg font-bold">
           All Products
         </h2>
-        <input type="radio" name="home-sort" id="home-sort-score" className="by-score" defaultChecked />
-        <input type="radio" name="home-sort" id="home-sort-date" className="by-date" />
+        <input type="radio" name="home-sort" id="home-sort-score" className="by-score" />
+        <input type="radio" name="home-sort" id="home-sort-date" className="by-date" defaultChecked />
         {filters.map((f) => (
           <input
             key={f.id}
@@ -88,24 +91,24 @@ export default function HomePage() {
         </div>
         <div className="sort-labels mb-3 flex items-center gap-3 text-xs font-semibold uppercase tracking-wider">
           <span className="text-ink-faint">Sort:</span>
-          <label htmlFor="home-sort-score" className="lbl-score">
-            Critic score
-          </label>
           <label htmlFor="home-sort-date" className="lbl-date">
             Newest
+          </label>
+          <label htmlFor="home-sort-score" className="lbl-score">
+            Critic score
           </label>
         </div>
         {/* One list, each card shipped once. ListSort moves the cards so DOM, keyboard and screen-reader
             order match the chosen sort; without JavaScript, CSS `order` still sorts it visually. */}
         <div id="all-products" className="cat-list flex flex-col gap-3">
-          {products.map((p, i) => (
+          {byDate.map((p, i) => (
             <div
               key={p.id}
               data-cat={p.category}
               className="list-item"
-              data-o-score={i}
-              data-o-date={dateRank.get(p.id)}
-              style={{ '--o-score': i, '--o-date': dateRank.get(p.id) } as React.CSSProperties}
+              data-o-score={scoreRank.get(p.id)}
+              data-o-date={i}
+              style={{ '--o-score': scoreRank.get(p.id), '--o-date': i } as React.CSSProperties}
             >
               <ProductListCard product={p} />
             </div>
