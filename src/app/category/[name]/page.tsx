@@ -32,9 +32,9 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { list, reviews, top } = summary(name);
   if (!top) return {};
   const plural = CATEGORY_PLURAL[name];
-  const title = `Best ${plural} ${BEST_YEAR}: ranked by critic score`;
+  const title = `Best ${plural} to buy in ${BEST_YEAR}: ranked by critic score`;
   const description = clip(
-    `The best ${plural.toLowerCase()} of ${BEST_YEAR} by critic score: ${list.length} ranked from ${reviews} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
+    `The best ${plural.toLowerCase()} to buy in ${BEST_YEAR} by critic score: ${list.length} ranked from ${reviews} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   const url = `/category/${name}/`;
@@ -65,7 +65,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
             { name: plural, path },
           ]),
           itemListLd(
-            `Best ${plural} ${BEST_YEAR}`,
+            `Best ${plural} to buy in ${BEST_YEAR}`,
             list.map((p) => ({ name: p.name, path: `/product/${p.slug}/` })),
           ),
         ]}
@@ -125,7 +125,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
                 href="/best/"
                 className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
               >
-                Best of {BEST_YEAR} overall
+                Best to buy in {BEST_YEAR} overall
               </Link>
             </li>
           </ul>

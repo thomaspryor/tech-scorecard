@@ -111,7 +111,7 @@ export default function HomePage() {
 
       <section aria-labelledby="best" className="pb-4 pt-10">
         <h2 id="best" className="mb-3 text-lg font-bold">
-          Best of {BEST_YEAR}
+          Best to buy in {BEST_YEAR}
         </h2>
         <ul className="flex flex-wrap gap-2 text-sm">
           <li>

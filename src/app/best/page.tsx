@@ -38,7 +38,7 @@ export default function BestPage() {
         data={[
           breadcrumbLd([
             { name: 'Home', path: '/' },
-            { name: `Best of ${BEST_YEAR}`, path: '/best/' },
+            { name: `Best to buy in ${BEST_YEAR}`, path: '/best/' },
           ]),
           itemListLd(
             `Best-reviewed tech to buy in ${BEST_YEAR}`,

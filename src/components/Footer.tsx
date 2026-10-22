@@ -14,7 +14,7 @@ export function Footer() {
         </p>
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-sm">
           <Link href="/best/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">
-            Best of {BEST_YEAR}
+            Best to buy in {BEST_YEAR}
           </Link>
           <Link
             href="/methodology/"
