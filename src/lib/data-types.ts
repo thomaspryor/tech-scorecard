@@ -61,6 +61,8 @@ export interface Review {
   /** One-line reason for the placement, in our words. */
   scoreReason?: string;
   scoredFromFullText?: boolean;
+  /** Set when the two models' placements differ by more than 15 points: worth a human check. */
+  modelsDisagree?: boolean;
   /** Context a reader needs, e.g. a joint review whose score is for a sibling model. */
   note?: string;
 }
