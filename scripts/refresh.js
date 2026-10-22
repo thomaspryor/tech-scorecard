@@ -170,6 +170,9 @@ function jsonLd(html) {
   return found;
 }
 
+/** Reviews usually publish a week or two before the on-sale date. */
+const daysBefore = (iso, n) => new Date(Date.parse(iso) - n * 864e5).toISOString().slice(0, 10);
+
 const hostOf = (u) => {
   try {
     return new URL(u).hostname.replace(/^www\./, '');
@@ -220,7 +223,7 @@ function buildReview(product, url) {
   const text = pageText(html);
   if (text.length < 1500) return { skip: 'page too short' };
   const ld = jsonLd(html);
-  if (!ld.date || ld.date > TODAY || ld.date < product.releaseDate)
+  if (!ld.date || ld.date > TODAY || ld.date < daysBefore(product.releaseDate, 21))
     return { skip: `date ${ld.date || 'missing'} outside launch..today` };
   const answer = parseJson(
     gemini(`You help a review aggregator. Product: ${product.name} (${product.brand}).

@@ -58,7 +58,7 @@ Prioritize: The Verge, Wired, CNET, Engadget, WSJ, Tom's Guide, TechRadar, PCMag
 Each review object (exact keys):
 {"productId": "<id>", "outletId": "<id from outlets.json, or a new id>", "critic": "Name" or null, "url": "https://...", "date": "YYYY-MM-DD", "rating": "4.5/5" | "8/10" | "90%" | null, "score": int, "scoreSource": "rating"|"text", "excerpt": "verbatim sentence, aim for 40 words or fewer (the validator rejects over 45 or under 3)", "editorsChoice": true (only if the page shows the award; else omit), "note": "..." (optional)}
 
-- rating is the outlet's own published score, written as "a/b" or "NN%". score = round(a/b*100). Unrated: rating null, scoreSource "text", score = your estimate of the verdict (90+ rave, 80-89 very positive, 70-79 positive with caveats, 60-69 mixed-positive, 50-59 mixed, <50 negative).
+- rating is the outlet's own published score, written as "a/b" or "NN%". score = round(a/b\*100). Unrated: rating null, scoreSource "text", score = your estimate of the verdict (90+ rave, 80-89 very positive, 70-79 positive with caveats, 60-69 mixed-positive, 50-59 mixed, <50 negative).
 - url host must be the outlet's own domain.
 
 ## Product object (exact keys)

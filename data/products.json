@@ -5768,5 +5768,149 @@
         "#e6e1d8"
       ]
     }
+  },
+  {
+    "id": "airpods-5",
+    "slug": "airpods-5",
+    "name": "AirPods 5",
+    "brand": "Apple",
+    "category": "headphones",
+    "releaseDate": "2026-09-18",
+    "launchPrice": 129,
+    "officialUrl": "https://www.apple.com/airpods/",
+    "criticsTake": "Reviewers agree the AirPods 5 improve on the AirPods 4 with better sound, stronger active noise cancellation, and wider feature access because ANC is now on both models. The main reservations are the open-fit design, which is very dependent on ear shape, and the small gap between the $129 and $149 versions that makes the pricier model easier to recommend.",
+    "loved": [
+      "Improved sound quality",
+      "Stronger ANC on both models",
+      "IP57 dust and water resistance",
+      "Volume swipes and wireless charging on the pricier case"
+    ],
+    "gripes": [
+      "Fit is hit-or-miss",
+      "Battery life is so-so for the category",
+      "Human voices and higher tones still get through ANC",
+      "Base model misses useful extras for only $20 less",
+      "No advanced hearing health features"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $129"
+      },
+      {
+        "label": "Design",
+        "value": "Open-fit earbuds with no silicone tips"
+      },
+      {
+        "label": "Noise cancellation",
+        "value": "Active noise cancellation on both AirPods 5 models"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple H2 chip"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP57 dust and water resistance"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Charging case options",
+        "value": "USB-C case or wireless charging case"
+      },
+      {
+        "label": "Wireless charging",
+        "value": "Qi or Apple Watch charger on the wireless charging case model"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 4 hours with ANC on the $129 model, slightly more than 5 hours with ANC on the wireless charging case model, with up to 20 or 22 hours total including the case"
+      }
+    ],
+    "art": {
+      "kind": "headphones",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-10-22"
+  },
+  {
+    "id": "headphone-1-pro",
+    "slug": "headphone-1-pro",
+    "name": "Headphone (1) Pro",
+    "brand": "Nothing",
+    "category": "headphones",
+    "releaseDate": "2026-09-29",
+    "launchPrice": 399,
+    "officialUrl": "https://nothing.tech/",
+    "criticsTake": "Reviewers agree the Headphone (1) Pro improves on earlier Nothing over-ears with better sound, stronger noise canceling, and a more premium design. They also point to a standout feature set that includes USB-C audio, physical controls, and a Flat mode or parametric EQ options. The main recurring complaint is the hard case, with some reviewers also noting fit, weight, or clamping pressure issues.",
+    "loved": [
+      "Detailed, dynamic sound",
+      "Effective ANC",
+      "USB-C audio and broad connectivity",
+      "Physical controls and useful Flat mode"
+    ],
+    "gripes": [
+      "Bulky impractical case",
+      "Fit or seal can affect sound and ANC",
+      "Slightly heavy",
+      "Noticeable clamping force",
+      "No storage for cables in case"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $399"
+      },
+      {
+        "label": "Drivers",
+        "value": "Triple-driver design"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 6.1"
+      },
+      {
+        "label": "Audio codecs",
+        "value": "SBC, AAC, LDAC"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 68 hours, or 30 hours with ANC on"
+      },
+      {
+        "label": "Wired audio",
+        "value": "USB-C audio and 3.5 mm jack"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP52"
+      },
+      {
+        "label": "Weight",
+        "value": "327 g"
+      },
+      {
+        "label": "Colors",
+        "value": "Black or white"
+      }
+    ],
+    "art": {
+      "kind": "headphones",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-10-22"
   }
 ]

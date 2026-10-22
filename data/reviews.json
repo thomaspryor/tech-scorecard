@@ -21559,5 +21559,320 @@
     },
     "scoreReason": "Great phone with strong features, but poor value versus the cheaper, nearly identical predecessor.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "engadget",
+    "critic": "Billy Steele",
+    "url": "https://www.engadget.com/2261751/apple-airpods-5-review/",
+    "date": "2026-09-18",
+    "rating": "8.8/10",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "While I may have a big gripe with the overall product strategy, that shouldn't detract from the fact that the $149 AirPods 5 is still an impressive set of open-wear earbuds.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for sound, ANC and value, with notable frustration about the confusing two-model lineup.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "toms-guide",
+    "critic": "Erin Bashford",
+    "url": "https://www.tomsguide.com/audio/airpods/apple-airpods-5-review",
+    "date": "2026-09-18",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "While the battery life is abysmal, the sound quality, comfort, fit, smart features, and ANC make up for it for casual users.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for sound, value, comfort, and ANC, with battery life as the main significant drawback.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "soundguys",
+    "critic": "Christian Thomas",
+    "url": "https://www.soundguys.com/apple-airpods-5-review-163483/",
+    "date": "2026-09-22",
+    "rating": "6.4/10",
+    "score": 56,
+    "scoreSource": "rating",
+    "excerpt": "After spending a few days with both versions of the AirPods 5, I’ve arrived at one conclusion: you’ll either love them or hate them, for one reason nobody talks about enough — how they fit your ears.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 57,
+      "gemini": 55
+    },
+    "scoreReason": "Good features and best open-ear ANC, but fit dependence, comfort issues, short battery, and skip advice add reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "what-hi-fi",
+    "critic": "Kashfia Kabir",
+    "url": "https://www.whathifi.com/headphones/wireless-earbuds/apple-airpods-5-with-wireless-charging-case",
+    "date": "2026-10-20",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "If you want great noise-blocking qualities in an eartip-less design and want Apple-only features without paying for the flagship, these will suit you perfectly",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong ANC and Apple features impress, but weak battery life and only good-not-great sound hold them back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/oct/13/apple-airpods-5-review-the-best-open-fit-earbuds-yet",
+    "date": "2026-10-13",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "The AirPods 5 take the comfortable open-fit design of their predecessors and upgrade the sound and noise cancelling to rival many plugged-in earbuds with silicone tips, which is quite a feat.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 85
+    },
+    "scoreReason": "Very strong praise for sound, comfort and ANC, with battery, repairability and Apple-only drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "trusted-reviews",
+    "critic": "Max Parker",
+    "url": "https://www.trustedreviews.com/reviews/apple-airpods-5",
+    "date": "2026-09-25",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The AirPods 5 are a winner.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with notable fit and battery drawbacks, but clear praise for sound, ANC and value.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "gsmarena",
+    "critic": "Prasad",
+    "url": "https://www.gsmarena.com/apple_airpods_5_review-news-75101.php",
+    "date": "2026-10-19",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "The AirPods 5 have all the modern features and conveniences that you can think of and at no point feel like they don't justify their price tag.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong features and value for open-ear fans, but battery life and design limitations hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "business-insider",
+    "critic": "Tyler Hayes",
+    "url": "https://www.businessinsider.com/guides/tech/apple-airpods-5-review",
+    "date": "2026-09-28",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "With better ANC, improved sound, and competitive pricing, they're the most compelling standard AirPods Apple has made yet.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 92
+    },
+    "scoreReason": "Strong praise for ANC, sound, value, and overall best standard AirPods, with only minor caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "soundguys",
+    "critic": "Christian Thomas",
+    "url": "https://www.soundguys.com/nothing-headphone-1-pro-review-163291/",
+    "date": "2026-10-15",
+    "rating": "8.4/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "If you’re a tech-obsessed music lover, the Nothing Headphone (1) Pro is one of those purchases that could make you very happy given the right circumstances.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Feature-rich and appealing, but fit, ANC consistency, and sound quality concerns limit the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/nothing-headphone-1-pro-review/",
+    "date": "2026-09-29",
+    "rating": "8.6/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The original Headphone 1 didn't quite deliver on its promise of matching Sony's, Bose's and Apple's flagship models while costing less, but the Headphone 1 Pro is now a legitimate premium noise-canceling contender.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong sound and features, but comfort, ANC, case, and price keep recommendation measured.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "toms-guide",
+    "critic": "Nikita Achanta",
+    "url": "https://www.tomsguide.com/audio/over-ear-headphones/nothing-headphone-1-pro-review",
+    "date": "2026-10-12",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "For anyone who wants a competent pair of headphones that look good and sound even better, the Headphone (1) Pro are a no-brainer.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong sound, comfort and design praise, but mediocre ANC and awkward case temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "techradar",
+    "critic": "Becky Scarrott",
+    "url": "https://www.techradar.com/audio/wireless-headphones/nothing-headphone-1-pro-review",
+    "date": "2026-09-29",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Sonically, there are marginal gains to be had over the Headphone (a) but depending on the music you most enjoy, you may actually prefer the (much) cheaper product from Nothing's own catalog for expanse and excitement.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Very good sound and ANC, but heavy case, weak battery life, and awkward value hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/Three-drivers-for-a-Hallelujah-Nothing-Headphone-1-Pro-review.1421890.0.html",
+    "date": "2026-10-12",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "With the Headphone (1) Pro, Nothing delivers an all-around excellent pair of over-ear headphones.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent sound, features, transparency, and battery life, with minor ANC, comfort, and wired-use drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/2271316/nothing-headphone-1-pro-review/",
+    "date": "2026-09-29",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "I think the Headphone (a) is the better overall value, but these headphones are quite good for what they are.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Very good sound and ANC, but value concerns and a few design annoyances hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "mark-ellis-reviews",
+    "critic": "Mark Ellis",
+    "url": "https://markellisreviews.com/reviews/nothing-headphone-1-pro-review/",
+    "date": "2026-10-08",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "If you want lively, customisable sound, great ANC, and a genuinely different product at a fair price, these are well worth considering.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Strong praise for sound, ANC, comfort, and value, with the badly designed case as main drawback.",
+    "scoredFromFullText": true
   }
 ]
