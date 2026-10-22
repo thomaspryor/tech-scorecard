@@ -72,7 +72,11 @@ readers. In code:
    never move a review outside what the outlet published. Using two models from different
    vendors reduces the effect of either one's quirks. Reviews without a rating are scored
    0-100 from the text the same way and labelled "Unrated, scored from text" on the site.
-   Answers are cached in `.cache/` (gitignored) keyed by URL, rating, models and prompt.
+   The article goes into the prompt fenced as untrusted data, with an instruction to ignore
+   anything in it that is not the reviewer's verdict, so a page cannot steer its own score.
+   When the two placements differ by more than 15 points the review keeps the average but is
+   marked `modelsDisagree`, and the run summary lists it for a human check. Answers are cached
+   in `.cache/` (gitignored) keyed by URL, rating, models and prompt.
 3. **Outlets are weighted by tier** (`src/config/scoring.ts`): tier 1 counts 1.0, tier 2
    0.75, tier 3 0.4, tier 4 0.2. The product score is the weighted mean
    `sum(score × weight) / sum(weight)` (`computeCriticScore` in `src/lib/engine.ts`), shown
