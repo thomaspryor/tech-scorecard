@@ -10,8 +10,8 @@ let cache: ComputedProduct[] | null = null;
 
 export function getAllProducts(): ComputedProduct[] {
   if (!cache) {
-    cache = (productsJson as Product[])
-      .map((p) => computeProduct(p, reviewsJson as Review[], outlets))
+    cache = (productsJson as unknown as Product[])
+      .map((p) => computeProduct(p, reviewsJson as unknown as Review[], outlets))
       .sort((a, b) => (b.criticScore ?? -1) - (a.criticScore ?? -1));
   }
   return cache;
