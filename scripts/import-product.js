@@ -20,8 +20,12 @@ let reviews = load('reviews.json');
 const outlets = load('outlets.json');
 
 for (const f of files) {
-  const { product, reviews: incoming, newOutlets = [] } = JSON.parse(fs.readFileSync(f, 'utf8'));
-  if (!product || !product.id || !Array.isArray(incoming)) throw new Error(`${f}: needs product.id and reviews[]`);
+  const parsed = JSON.parse(fs.readFileSync(f, 'utf8'));
+  const { reviews: incoming, newOutlets = [] } = parsed;
+  // Add-reviews mode: {productId, reviews} appends to an existing product and keeps what is there.
+  const appendOnly = !parsed.product && parsed.productId;
+  const product = parsed.product || products.find((p) => p.id === parsed.productId);
+  if (!product || !product.id || !Array.isArray(incoming)) throw new Error(`${f}: needs product.id (or an existing productId) and reviews[]`);
   for (const o of newOutlets) {
     const bare = (d) => d.replace(/^www\./, '');
     // Same id, or the same outlet under another id (same name and site). Two outlets can share
@@ -42,6 +46,13 @@ for (const f of files) {
   for (const r of incoming) {
     const band = r.rating ? ratingToBand(r.rating) : null;
     if (band) r.score = Math.min(band.ceiling, Math.max(band.floor, r.score));
+  }
+  if (appendOnly) {
+    const have = new Set(reviews.filter((r) => r.productId === product.id).map((r) => r.outletId));
+    const added = incoming.filter((r) => !have.has(r.outletId));
+    reviews = reviews.concat(added.map((r) => ({ ...r, productId: product.id })));
+    console.log(`${product.id}: +${added.length} reviews (${incoming.length - added.length} already present)`);
+    continue;
   }
   products = products.filter((p) => p.id !== product.id).concat(product);
   reviews = reviews.filter((r) => r.productId !== product.id).concat(incoming.map((r) => ({ ...r, productId: product.id })));
