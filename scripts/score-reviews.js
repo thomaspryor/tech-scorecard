@@ -24,8 +24,9 @@ const GEMINI_MODEL = 'gemini-3.1-pro-preview';
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 const only = args.only ? new Set(String(args.only).split(',')) : null;
 
-function curl(argv, input) {
-  return execFileSync('curl', ['-sL', '-m', '90', ...argv], { input, maxBuffer: 64 * 1024 * 1024, encoding: 'utf8' });
+/** Article fetches only; model calls use fetch (see postJson). */
+function curl(argv) {
+  return execFileSync('curl', ['-sL', '-m', '90', ...argv], { maxBuffer: 64 * 1024 * 1024, encoding: 'utf8' });
 }
 
 /** Article paragraphs as plain text (multi-page GSMArena reviews are joined). Cached per URL. */
@@ -76,17 +77,34 @@ function parseJson(s) {
   try { const o = JSON.parse(m[0]); return Number.isFinite(o.score) ? o : null; } catch { return null; }
 }
 
-function askOpenAI(p) {
-  const req = JSON.stringify({ model: OPENAI_MODEL, messages: [{ role: 'user', content: p }], response_format: { type: 'json_object' } });
-  const out = JSON.parse(curl(['https://api.openai.com/v1/chat/completions', '-H', 'Content-Type: application/json', '-H', `Authorization: Bearer ${process.env.OPENAI_API_KEY}`, '-d', '@-'], req));
-  if (out.error) throw new Error(`openai: ${out.error.message}`);
+// Model calls use fetch with the key in a header: a key on a curl command line can be
+// read from the process list and is echoed in execFileSync's error message.
+async function postJson(url, headers, body) {
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...headers },
+    body: JSON.stringify(body),
+    signal: AbortSignal.timeout(90_000),
+  });
+  const out = await res.json().catch(() => ({}));
+  if (!res.ok || out.error) throw new Error(`HTTP ${res.status}: ${out.error?.message ?? res.statusText}`);
+  return out;
+}
+
+async function askOpenAI(p) {
+  const out = await postJson('https://api.openai.com/v1/chat/completions', { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` }, {
+    model: OPENAI_MODEL,
+    messages: [{ role: 'user', content: p }],
+    response_format: { type: 'json_object' },
+  });
   return parseJson(out.choices?.[0]?.message?.content);
 }
 
-function askGemini(p) {
-  const req = JSON.stringify({ contents: [{ role: 'user', parts: [{ text: p }] }], generationConfig: { temperature: 0, responseMimeType: 'application/json' } });
-  const out = JSON.parse(curl([`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`, '-H', 'Content-Type: application/json', '-d', '@-'], req));
-  if (out.error) throw new Error(`gemini: ${out.error.message}`);
+async function askGemini(p) {
+  const out = await postJson(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`, { 'x-goog-api-key': process.env.GEMINI_API_KEY }, {
+    contents: [{ role: 'user', parts: [{ text: p }] }],
+    generationConfig: { temperature: 0, responseMimeType: 'application/json' },
+  });
   return parseJson((out.candidates?.[0]?.content?.parts || []).map((x) => x.text || '').join(''));
 }
 
@@ -124,7 +142,7 @@ async function main() {
     const got = fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, 'utf8')) : {};
     for (const [name, fn] of [['openai', askOpenAI], ['gemini', askGemini]]) {
       if (got[name]) continue;
-      try { const o = fn(p); if (o) got[name] = { score: clamp(o.score, band), reason: o.reason }; } catch (e) { console.error(`  ${name} failed: ${e.message.slice(0, 120)}`); }
+      try { const o = await fn(p); if (o) got[name] = { score: clamp(o.score, band), reason: o.reason }; } catch (e) { console.error(`  ${name} failed: ${e.message.slice(0, 120)}`); }
     }
     fs.writeFileSync(cacheFile, JSON.stringify(got));
     const vals = Object.values(got).map((g) => g.score);
@@ -150,4 +168,12 @@ async function main() {
   console.log(`\n${changes.length} scored, ${moved.length} changed; mean ${mean(changes.map((c) => c.before)).toFixed(1)} -> ${mean(changes.map((c) => c.after)).toFixed(1)}`);
 }
 
-main();
+if (require.main === module) {
+  if (!process.env.OPENAI_API_KEY || !process.env.GEMINI_API_KEY) console.warn('OPENAI_API_KEY or GEMINI_API_KEY is not set; only cached answers will be used.');
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
+
+module.exports = { askOpenAI, askGemini, parseJson, prompt };
