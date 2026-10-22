@@ -6,7 +6,6 @@ import { Logo } from '@/components/Header';
 import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
 import { BEST_YEAR } from '@/config/seo';
 
-
 export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function HomePage() {

@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getAllProducts, getProduct, indexableCategories } from '@/lib/data';
-import { getScoreTier } from '@/config/score-buckets';
+import { getScoreTier, type ScoreTier } from '@/config/score-buckets';
+import type { ComputedProduct } from '@/lib/engine';
 import { TIER_WEIGHTS, EARLY_SCORE_BELOW } from '@/config/scoring';
 import { formatDate, formatPrice, releaseLabel, CATEGORY_PLURAL } from '@/lib/format';
 import { DeviceArt, MiniProductCard, OutletTierChip, ProductChips, ScoreBadge, ScoreBreakdownBar } from '@/components/product-cards';
@@ -178,7 +179,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
   );
 }
 
-function ScoreSummary({ product, tier }: { product: ReturnType<typeof getAllProducts>[number]; tier: ReturnType<typeof getScoreTier> | null }) {
+function ScoreSummary({ product, tier }: { product: ComputedProduct; tier: ScoreTier | null }) {
   return (
     <div className="min-w-0">
       <p className={`text-xl font-bold sm:text-2xl ${tier?.textClass ?? 'text-ink-faint'}`}>{tier?.label ?? 'Not Yet Rated'}</p>

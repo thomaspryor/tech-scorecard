@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getAllProducts, indexableCategories } from '@/lib/data';
+import { getScoredProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_PLURAL } from '@/lib/format';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
@@ -9,16 +9,14 @@ import { BEST_YEAR } from '@/config/seo';
 
 const TOP_N = 10;
 
-function rated() {
-  return getAllProducts().filter((p) => p.criticScore != null);
-}
+const rated = getScoredProducts;
 
 export function generateMetadata(): Metadata {
   const top = rated()[0];
   if (!top) return { title: `Best-reviewed tech of ${BEST_YEAR}`, alternates: { canonical: '/best/' } };
   const title = `Best-reviewed tech of ${BEST_YEAR}: top gadgets by critic score`;
   const description = clip(
-    `The ${TOP_N} best-reviewed gadgets of ${BEST_YEAR}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore!)}/100.`,
+    `The ${TOP_N} best-reviewed gadgets of ${BEST_YEAR}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   return {

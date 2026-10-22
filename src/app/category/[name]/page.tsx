@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getAllProducts, indexableCategories } from '@/lib/data';
-import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
+import { getScoredProducts, indexableCategories } from '@/lib/data';
+import { CATEGORY_ORDER, CATEGORY_PLURAL, isCategory } from '@/lib/format';
 import type { Category } from '@/lib/data-types';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
@@ -12,7 +12,7 @@ import { BEST_YEAR } from '@/config/seo';
 type Params = { name: string };
 
 function productsIn(category: Category) {
-  return getAllProducts().filter((p) => p.category === category && p.criticScore != null);
+  return getScoredProducts().filter((p) => p.category === category);
 }
 
 export function generateStaticParams(): Params[] {
@@ -26,14 +26,14 @@ function summary(category: Category) {
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
-  const name = (await params).name as Category;
-  if (!CATEGORY_ORDER.includes(name)) return {};
+  const { name } = await params;
+  if (!isCategory(name)) return {};
   const { list, reviews, top } = summary(name);
   if (!top) return {};
   const plural = CATEGORY_PLURAL[name];
   const title = `Best ${plural} ${BEST_YEAR}: ranked by critic score`;
   const description = clip(
-    `The best ${plural.toLowerCase()} of ${BEST_YEAR} by critic score: ${list.length} ranked from ${reviews} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore!)}/100.`,
+    `The best ${plural.toLowerCase()} of ${BEST_YEAR} by critic score: ${list.length} ranked from ${reviews} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   const url = `/category/${name}/`;
@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 }
 
 export default async function CategoryPage({ params }: { params: Promise<Params> }) {
-  const name = (await params).name as Category;
-  if (!CATEGORY_ORDER.includes(name)) notFound();
+  const { name } = await params;
+  if (!isCategory(name)) notFound();
   const { list, reviews, top } = summary(name);
   if (!top) notFound();
   const plural = CATEGORY_PLURAL[name];
@@ -73,7 +73,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
       <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">Best {plural} of {BEST_YEAR}, ranked by critic score</h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
         Ranked by the weighted average of {reviews} professional reviews.
-        The top rated is the {top.name} at {Math.round(top.criticScore!)}/100. Each score blends reviews from major tech outlets, with bigger outlets
+        The top rated is the {top.name} at {Math.round(top.criticScore)}/100. Each score blends reviews from major tech outlets, with bigger outlets
         counting more; every review links to the original article.{' '}
         <Link href="/methodology/" className="font-semibold text-brand-ink underline underline-offset-2">How scores work</Link>
       </p>

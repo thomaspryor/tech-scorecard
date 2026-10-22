@@ -1,9 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { getAllProducts, indexableCategories } from '@/lib/data';
+import { SITE_URL as BASE } from '@/config/seo';
 
 export const dynamic = 'force-static';
-
-const BASE = 'https://www.thetechscorecard.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

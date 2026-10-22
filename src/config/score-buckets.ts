@@ -6,7 +6,14 @@ export const MIXED_MIN = 55;
 
 export type TierKey = 'gold' | 'recommended' | 'worthIt' | 'mixed' | 'miss';
 
-export const SCORE_TIERS: Record<TierKey, { label: string; blurb: string; badgeClass: string; textClass: string }> = {
+export interface ScoreTier {
+  label: string;
+  blurb: string;
+  badgeClass: string;
+  textClass: string;
+}
+
+export const SCORE_TIERS: Record<TierKey, ScoreTier> = {
   gold: { label: 'Critical Gold', blurb: 'Best in class. If you are buying one, buy this.', badgeClass: 'score-must-see', textClass: 'text-[#b8860b]' },
   recommended: { label: 'Recommended', blurb: 'A strong buy for most people.', badgeClass: 'score-great', textClass: 'text-score-great' },
   worthIt: { label: 'Worth a Look', blurb: 'Good, with caveats. Best if its strengths are your priorities.', badgeClass: 'score-good', textClass: 'text-score-good' },
@@ -23,7 +30,7 @@ export function getTierKey(score: number): TierKey {
   return 'miss';
 }
 
-export function getScoreTier(score: number) {
+export function getScoreTier(score: number): ScoreTier {
   return SCORE_TIERS[getTierKey(score)];
 }
 
