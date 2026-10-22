@@ -137,7 +137,8 @@ In short:
   locally and on Vercel, so bad data cannot deploy.
 - **Interaction without JavaScript.** Category filters and sort toggles are radio inputs styled
   with CSS, and "show more reviews" is a `<details>` element, so pages work before or without
-  hydration. Analytics is Vercel Web Analytics, which sets no cookies.
+  hydration. Analytics is Vercel Web Analytics plus PostHog in cookieless mode (loaded on idle,
+  no recordings or surveys), so neither sets cookies.
 - **No `Review` or `AggregateRating` structured data.** Google's guidelines say not to mark up
   ratings aggregated from other sites, so product pages carry breadcrumb and `WebPage` JSON-LD
   only.

@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy',
   ...socialMeta('Privacy | Tech Scorecard', 'What Tech Scorecard collects and what it does not.', '/privacy/'),
-  description: 'What Tech Scorecard collects (privacy-friendly page-view analytics only) and what it does not.',
+  description: 'What Tech Scorecard collects (cookieless visit and click analytics only) and what it does not.',
   alternates: { canonical: '/privacy/' },
 };
 
@@ -25,6 +25,11 @@ export default function PrivacyPage() {
           not follow you across other websites. It records things like the page visited, the country, the type of device
           and browser, and where the visit came from. It does not record your name, email address or any personal
           profile.
+        </p>
+        <p className="mt-3 max-w-[65ch] text-sm leading-relaxed">
+          We also use PostHog to see which links and buttons people use, so we can tell what is working. It runs in
+          cookieless mode: nothing is stored in your browser, IP addresses are discarded, and visits are not tied to a
+          personal profile. It does not record your screen or what you type.
         </p>
       </section>
 

@@ -141,7 +141,7 @@ out.
 | Broadway change                                                            | Verdict                          | Why                                                                                                 |
 | -------------------------------------------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------- |
 | BRO-5985 performance audit (2026-10-22, open): Supabase in the root layout | does not apply                   | no Supabase or auth here                                                                            |
-| BRO-5985: PostHog surveys and recorder loaded for everyone                 | does not apply                   | analytics is Vercel Web Analytics only (one small same-origin script)                               |
+| BRO-5985: PostHog surveys and recorder loaded for everyone                 | applied                          | PostHog loads on idle with `disable_session_recording` and `disable_surveys` set                    |
 | BRO-5985: only the LCP image should get fetchpriority=high                 | does not apply                   | no `<img>` on any page; device art is inline SVG                                                    |
 | BRO-5985: oversized poster images                                          | does not apply                   | no raster images besides the 61kB Open Graph card                                                   |
 | BRO-5985: JS growth hidden by a stale performance baseline                 | applies, partly done             | page-size guard added; a JS budget is not needed yet (8 small chunks, Lighthouse 98-99)             |
