@@ -376,5 +376,224 @@
     "name": "HardwareZone",
     "tier": 3,
     "domain": "hardwarezone.com.sg"
+  },
+  {
+    "id": "cult-of-mac",
+    "name": "Cult of Mac",
+    "tier": 3,
+    "domain": "cultofmac.com"
+  },
+  {
+    "id": "man-of-many",
+    "name": "Man of Many",
+    "tier": 4,
+    "domain": "manofmany.com"
+  },
+  {
+    "id": "cgmagonline",
+    "name": "CGMagazine",
+    "tier": 4,
+    "domain": "cgmagonline.com"
+  },
+  {
+    "id": "outdoorgearlab",
+    "name": "OutdoorGearLab",
+    "tier": 3,
+    "domain": "outdoorgearlab.com"
+  },
+  {
+    "id": "the-5k-runner",
+    "name": "The 5K Runner",
+    "tier": 4,
+    "domain": "the5krunner.com"
+  },
+  {
+    "id": "trail-and-kale",
+    "name": "Trail and Kale",
+    "tier": 4,
+    "domain": "trailandkale.com"
+  },
+  {
+    "id": "soundguys",
+    "name": "SoundGuys",
+    "tier": 3,
+    "domain": "soundguys.com"
+  },
+  {
+    "id": "hothardware",
+    "name": "HotHardware",
+    "tier": 3,
+    "domain": "hothardware.com"
+  },
+  {
+    "id": "pocket-tactics",
+    "name": "Pocket Tactics",
+    "tier": 4,
+    "domain": "pockettactics.com"
+  },
+  {
+    "id": "techgearlab",
+    "name": "TechGearLab",
+    "tier": 3,
+    "domain": "techgearlab.com"
+  },
+  {
+    "id": "pcworld",
+    "name": "PCWorld",
+    "tier": 2,
+    "domain": "pcworld.com"
+  },
+  {
+    "id": "reviewed",
+    "name": "Reviewed",
+    "tier": 3,
+    "domain": "reviewed.com"
+  },
+  {
+    "id": "amateur-photographer",
+    "name": "Amateur Photographer",
+    "tier": 3,
+    "domain": "amateurphotographer.com"
+  },
+  {
+    "id": "digital-camera-world",
+    "name": "Digital Camera World",
+    "tier": 3,
+    "domain": "digitalcameraworld.com"
+  },
+  {
+    "id": "thurrott",
+    "name": "Thurrott.com",
+    "tier": 3,
+    "domain": "thurrott.com"
+  },
+  {
+    "id": "itpro",
+    "name": "ITPro",
+    "tier": 3,
+    "domain": "itpro.com"
+  },
+  {
+    "id": "creative-bloq",
+    "name": "Creative Bloq",
+    "tier": 3,
+    "domain": "creativebloq.com"
+  },
+  {
+    "id": "makeuseof",
+    "name": "MakeUseOf",
+    "tier": 3,
+    "domain": "makeuseof.com"
+  },
+  {
+    "id": "the-shortcut",
+    "name": "The Shortcut",
+    "tier": 4,
+    "domain": "theshortcut.com"
+  },
+  {
+    "id": "androidguys",
+    "name": "AndroidGuys",
+    "tier": 4,
+    "domain": "androidguys.com"
+  },
+  {
+    "id": "ign",
+    "name": "IGN",
+    "tier": 2,
+    "domain": "ign.com"
+  },
+  {
+    "id": "gamesradar",
+    "name": "GamesRadar+",
+    "tier": 2,
+    "domain": "gamesradar.com"
+  },
+  {
+    "id": "pc-gamer",
+    "name": "PC Gamer",
+    "tier": 2,
+    "domain": "pcgamer.com"
+  },
+  {
+    "id": "digital-foundry",
+    "name": "Digital Foundry",
+    "tier": 2,
+    "domain": "eurogamer.net",
+    "altDomains": [
+      "digitalfoundry.net"
+    ]
+  },
+  {
+    "id": "droid-life",
+    "name": "Droid-Life",
+    "tier": 3,
+    "domain": "droid-life.com"
+  },
+  {
+    "id": "dc-rainmaker",
+    "name": "DC Rainmaker",
+    "tier": 3,
+    "domain": "dcrainmaker.com"
+  },
+  {
+    "id": "musictech",
+    "name": "MusicTech",
+    "tier": 3,
+    "domain": "musictech.com"
+  },
+  {
+    "id": "eurogamer",
+    "name": "Eurogamer",
+    "tier": 2,
+    "domain": "eurogamer.net"
+  },
+  {
+    "id": "pcgamesn",
+    "name": "PCGamesN",
+    "tier": 3,
+    "domain": "pcgamesn.com"
+  },
+  {
+    "id": "gamersnexus",
+    "name": "GamersNexus",
+    "tier": 3,
+    "domain": "gamersnexus.net"
+  },
+  {
+    "id": "club386",
+    "name": "Club386",
+    "tier": 3,
+    "domain": "club386.com"
+  },
+  {
+    "id": "sammyguru",
+    "name": "SammyGuru",
+    "tier": 4,
+    "domain": "sammyguru.com"
+  },
+  {
+    "id": "powerup",
+    "name": "PowerUp!",
+    "tier": 4,
+    "domain": "powerup-gaming.com"
+  },
+  {
+    "id": "can-buy-or-not",
+    "name": "Can Buy or Not",
+    "tier": 4,
+    "domain": "canbuyornot.com"
+  },
+  {
+    "id": "eftm",
+    "name": "EFTM",
+    "tier": 4,
+    "domain": "eftm.com"
+  },
+  {
+    "id": "uploadvr",
+    "name": "UploadVR",
+    "tier": 3,
+    "domain": "uploadvr.com"
   }
 ]

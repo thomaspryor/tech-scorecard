@@ -488,7 +488,7 @@
   {
     "id": "pixel-11-pro",
     "slug": "pixel-11-pro",
-    "name": "Google Pixel 11 Pro",
+    "name": "Pixel 11 Pro",
     "brand": "Google",
     "category": "phone",
     "releaseDate": "2026-08-20",
@@ -624,6 +624,1496 @@
       "backdrop": [
         "#fdf3f6",
         "#f5dde4"
+      ]
+    }
+  },
+  {
+    "id": "apple-vision-pro-m5",
+    "slug": "apple-vision-pro-m5",
+    "name": "Apple Vision Pro (M5)",
+    "brand": "Apple",
+    "category": "wearable",
+    "releaseDate": "2025-10-22",
+    "launchPrice": 3499,
+    "officialUrl": "https://www.apple.com/apple-vision-pro/",
+    "criticsTake": "Critics see the M5 refresh as a better version of the same headset. The faster chip, sharper rendering and the bundled Dual Knit Band make it steadier and more comfortable to wear, but the price, the weight and the thin app library keep it a niche product. Scores range from 6/10 at The Verge to 4.5/5 at TechRadar, and Engadget calls it better suited to developers than consumers.",
+    "loved": [
+      "Dual Knit Band balances the weight and is more comfortable",
+      "M5 chip keeps performance steady with many windows open",
+      "Sharper, smoother displays with up to 120Hz",
+      "Movies, Mac Virtual Display and immersive video"
+    ],
+    "gripes": [
+      "$3,499 launch price",
+      "Still heavy, with an external battery pack",
+      "Roughly 2.5 hours of general use per charge",
+      "Few major apps and little spatial content",
+      "Little reason for owners of the M2 model to upgrade"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Micro-OLED, 23 million pixels total, up to 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple M5 plus R1 sensor chip"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB, 512GB or 1TB"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 2.5 hours general use, 3 hours video (external battery)"
+      },
+      {
+        "label": "Weight",
+        "value": "750 to 800 g headset, plus 353 g battery"
+      },
+      {
+        "label": "Headband",
+        "value": "Dual Knit Band included"
+      },
+      {
+        "label": "Input",
+        "value": "Eye, hand and voice control; PS VR2 controllers supported"
+      },
+      {
+        "label": "Software",
+        "value": "visionOS 26"
+      },
+      {
+        "label": "Price",
+        "value": "From $3,499 at launch (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "headset",
+      "body": "#c9ccd2",
+      "accent": "#4a5f9c",
+      "backdrop": [
+        "#f3f4f7",
+        "#e1e4ea"
+      ]
+    }
+  },
+  {
+    "id": "apple-watch-series-11",
+    "slug": "apple-watch-series-11",
+    "name": "Apple Watch Series 11",
+    "brand": "Apple",
+    "category": "watch",
+    "releaseDate": "2025-09-19",
+    "launchPrice": 399,
+    "officialUrl": "https://www.apple.com/apple-watch-series-11/",
+    "criticsTake": "Critics call the Series 11 a refinement of an already excellent smartwatch. Longer battery life (up to 24 hours), a tougher Ion-X screen, 5G and hypertension alerts earn praise, and Wired and CNET both score it 9/10. Several reviewers, including Macworld, T3 and Digital Trends, say Series 10 owners can skip it and that the cheaper SE 3 suits many buyers.",
+    "loved": [
+      "Battery life now rated up to 24 hours",
+      "Tougher Ion-X glass, twice as scratch resistant",
+      "Hypertension alerts and Sleep Score",
+      "Accurate heart rate and GPS tracking"
+    ],
+    "gripes": [
+      "Barely changed from the Series 10",
+      "Battery still needs charging daily",
+      "Works only with an iPhone",
+      "Cheaper Apple Watch SE 3 is almost as good",
+      "Few Series 11-exclusive features"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Always-on LTPO3 OLED, up to 2,000 nits, Ion-X glass"
+      },
+      {
+        "label": "Sizes",
+        "value": "42mm and 46mm, 9.7mm thick"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple S10 (same as Series 10)"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 24 hours; 38 hours in Low Power Mode"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Optional 5G cellular, Bluetooth 5.3, Wi-Fi, UWB"
+      },
+      {
+        "label": "Case and weight",
+        "value": "Aluminum or titanium; 30.3g (42mm), 37.8g (46mm)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "WR50"
+      },
+      {
+        "label": "Health",
+        "value": "Hypertension notifications, Sleep Score"
+      },
+      {
+        "label": "Price",
+        "value": "From $399 (42mm GPS); $429 (46mm GPS); cellular from $499"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#4b4c52",
+      "accent": "#14161b",
+      "backdrop": [
+        "#f3f4f7",
+        "#e0e3ea"
+      ]
+    }
+  },
+  {
+    "id": "apple-watch-ultra-3",
+    "slug": "apple-watch-ultra-3",
+    "name": "Apple Watch Ultra 3",
+    "brand": "Apple",
+    "category": "watch",
+    "releaseDate": "2025-09-19",
+    "launchPrice": 799,
+    "officialUrl": "https://www.apple.com/watch/compare/",
+    "criticsTake": "Critics call the Ultra 3 the best Apple Watch for outdoor use and the best all-round smartwatch for iPhone owners. The larger, brighter display, longer battery life, 5G and satellite messaging draw praise, and OutdoorGearLab and Tom's Guide gave it their top awards. Several reviewers also call it a small step up from the Ultra 2 and point to the $799 price and the bulk.",
+    "loved": [
+      "Largest, brightest Apple Watch display, up to 3000 nits",
+      "Up to 42 hours of battery, 72 in Low Power Mode",
+      "Satellite SOS and messaging plus 5G",
+      "Rugged titanium build and reliable GPS tracking"
+    ],
+    "gripes": [
+      "Small upgrade over the Ultra 2",
+      "Expensive at $799",
+      "Big and heavy, especially on thin wrists",
+      "Battery and training tools trail Garmin",
+      "Works only with iPhone"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "49mm Always-On wide-angle LTPO3 OLED, up to 3000 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "S10 with 64GB storage"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 42 hours; up to 72 hours in Low Power Mode"
+      },
+      {
+        "label": "Connectivity",
+        "value": "GPS, 5G cellular, satellite SOS and messaging"
+      },
+      {
+        "label": "Case",
+        "value": "Titanium, 49mm by 44mm by 12mm"
+      },
+      {
+        "label": "Weight",
+        "value": "63.0 g (natural titanium), 63.1 g (black titanium)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "100 meters"
+      },
+      {
+        "label": "Price",
+        "value": "From $799"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#c4baa9",
+      "accent": "#f26b21",
+      "backdrop": [
+        "#f6f3ee",
+        "#e6e0d6"
+      ]
+    }
+  },
+  {
+    "id": "bose-qc-ultra-earbuds-2",
+    "slug": "bose-qc-ultra-earbuds-2",
+    "name": "Bose QuietComfort Ultra Earbuds (2nd Gen)",
+    "brand": "Bose",
+    "category": "headphones",
+    "releaseDate": "2025-09-10",
+    "launchPrice": 299,
+    "officialUrl": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html",
+    "criticsTake": "Critics call these the best noise-cancelling earbuds you can buy, with active noise cancellation that most reviewers say tops every rival. The second generation adds wireless charging, better call quality and smoother adaptive noise control at the same $299 price as the original. Reviewers describe the update as modest, and nearly all of them knock the six-hour battery life.",
+    "loved": [
+      "Class-leading noise cancellation",
+      "Clearer calls with AI noise suppression",
+      "Wireless charging case added",
+      "Punchy, balanced sound with a spatial Immersive Audio mode"
+    ],
+    "gripes": [
+      "Battery life still tops out at 6 hours (4 with Immersive Audio)",
+      "Only a small step up from the first generation",
+      "Earbuds are large and conspicuous",
+      "Limited three-band EQ",
+      "Sound is less detailed than the Technics EAH-AZ100"
+    ],
+    "specs": [
+      {
+        "label": "Noise cancelling",
+        "value": "Adaptive ANC with ActiveSense; Quiet, Aware and Immersion modes"
+      },
+      {
+        "label": "Battery (earbuds)",
+        "value": "Up to 6 hours (4 hours with Immersive Audio)"
+      },
+      {
+        "label": "Charging case",
+        "value": "Three extra charges, wireless charging built in, USB-C"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3 with multipoint"
+      },
+      {
+        "label": "Codecs",
+        "value": "SBC, AAC, aptX Adaptive"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX4"
+      },
+      {
+        "label": "Weight",
+        "value": "0.016 lb (about 7 g) per bud"
+      },
+      {
+        "label": "Calls",
+        "value": "SpeechClarity AI noise suppression, eight microphones"
+      },
+      {
+        "label": "Price",
+        "value": "$299"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#1f1f22",
+      "accent": "#5b2a4a",
+      "backdrop": [
+        "#f6f4f7",
+        "#e6e1e8"
+      ]
+    }
+  },
+  {
+    "id": "dell-xps-14-2026",
+    "slug": "dell-xps-14-2026",
+    "name": "Dell XPS 14 (2026)",
+    "brand": "Dell",
+    "category": "laptop",
+    "releaseDate": "2026-02-08",
+    "launchPrice": 1599,
+    "officialUrl": "https://www.dell.com/en-us/shop/dell-laptops/xps-14-laptop-2026/spd/xps-da14260-laptop",
+    "criticsTake": "Critics call the 2026 XPS 14 a strong return to form after Dell's 2025 rebrand. Reviewers praise the lighter aluminum body, the physical function row, the tandem OLED option and the Panther Lake performance, with battery life well above earlier XPS models. The shallow keyboard, the three-port selection with no microSD slot, and prices that climb quickly with the OLED configuration are the common complaints.",
+    "loved": [
+      "Thin, light aluminum design at about 3 lb",
+      "Tandem OLED display option",
+      "Strong Intel Panther Lake performance, even in games",
+      "Physical function row and marked touchpad edges"
+    ],
+    "gripes": [
+      "Shallow, error-prone keyboard",
+      "Only three Thunderbolt 4 ports and no microSD slot",
+      "Expensive once configured with OLED and more memory",
+      "Screen shrank from 14.5 to 14 inches",
+      "Soldered RAM"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14-inch; 2.8K (2880x1800) tandem OLED touch, 20-120Hz, or 2K (1920x1200) IPS non-touch, 1-120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Intel Core Ultra Series 3 (Panther Lake): Core Ultra 5 325 up to Core Ultra X7 358H"
+      },
+      {
+        "label": "Graphics",
+        "value": "Intel Arc B390 on X7 models; Intel integrated graphics on Core Ultra 5/7 355"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB or 32GB LPDDR5x, soldered"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB or 1TB M.2 SSD (replaceable)"
+      },
+      {
+        "label": "Battery",
+        "value": "70Whr; Wired measured 20 hours of video playback on the OLED model"
+      },
+      {
+        "label": "Weight",
+        "value": "3.0 lb (1.36 kg) OLED, 3.05 lb LCD"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 4 (USB-C), headphone jack; no microSD slot"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,599.99; $2,199.99 for the OLED, X7, 32GB, 1TB model"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#5b5e63",
+      "accent": "#1c2a47",
+      "backdrop": [
+        "#f2f3f5",
+        "#e0e3e8"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-s26",
+    "slug": "galaxy-s26",
+    "name": "Galaxy S26",
+    "brand": "Samsung",
+    "category": "phone",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 899.99,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-s26/",
+    "criticsTake": "Critics call the Galaxy S26 the best compact Android phone, with a bright 6.3-inch screen, fast performance and a light 167 g body. Most also say it is a small step up from the S25 and that the $100 price increase to $899 is hard to justify, with Engadget and Digital Trends pointing to dated cameras and slow 25W charging.",
+    "loved": [
+      "Bright, smooth 6.3-inch display",
+      "Light, slim compact design",
+      "Fast Snapdragon performance in the US",
+      "Seven years of OS and security updates"
+    ],
+    "gripes": [
+      "Price rose $100 to $899",
+      "Only 25W wired charging",
+      "No built-in Qi2 magnets",
+      "Camera hardware unchanged from the S25",
+      "Small upgrade over last year's model"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3-inch Dynamic AMOLED 2X, 120Hz, up to 2,600 nits peak"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Elite Gen 5 for Galaxy (US); Exynos 2600 in many other markets"
+      },
+      {
+        "label": "Memory/Storage",
+        "value": "12GB RAM; 256GB or 512GB"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main + 12MP ultra wide + 10MP 3x telephoto"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP"
+      },
+      {
+        "label": "Battery",
+        "value": "4,300mAh; 25W wired, 15W wireless charging"
+      },
+      {
+        "label": "Weight",
+        "value": "167 g, 7.2 mm thick"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP68"
+      },
+      {
+        "label": "Price",
+        "value": "From $899.99 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#a9c4df",
+      "accent": "#4a78b5",
+      "backdrop": [
+        "#f1f6fb",
+        "#dce8f4"
+      ]
+    }
+  },
+  {
+    "id": "ipad-pro-m5",
+    "slug": "ipad-pro-m5",
+    "name": "iPad Pro (M5)",
+    "brand": "Apple",
+    "category": "tablet",
+    "releaseDate": "2025-10-22",
+    "launchPrice": 999,
+    "officialUrl": "https://www.apple.com/ipad-pro/",
+    "criticsTake": "Critics call the M5 iPad Pro the best tablet available, led by its Tandem OLED display, thin build and much improved iPadOS 26 windowing. Most say it is a small step from the M4 model, with CPU gains of about 10 to 15 percent and bigger graphics gains, so M4 owners have little reason to upgrade. The price and the need to buy a keyboard and Pencil separately draw the most criticism, and several reviewers point buyers to the iPad Air.",
+    "loved": [
+      "Tandem OLED display",
+      "Very fast M5 chip, especially graphics and AI",
+      "Thin, light, premium build",
+      "iPadOS 26 windowing and multitasking"
+    ],
+    "gripes": [
+      "Very expensive, with accessories sold separately",
+      "Small upgrade over the M4 model",
+      "Only one USB-C (Thunderbolt/USB 4) port",
+      "Design unchanged from last year",
+      "iPadOS still more limited than macOS"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "13-inch (or 11-inch) Tandem OLED, ProMotion 10-120Hz, 1,600 nits peak HDR"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple M5 (9-core CPU on 256/512GB, 10-core on 1/2TB), 10-core GPU"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB (256/512GB models), 16GB (1/2TB models)"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB, 512GB, 1TB or 2TB"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, Bluetooth 6, optional 5G (C1X modem)"
+      },
+      {
+        "label": "Port",
+        "value": "One Thunderbolt / USB 4"
+      },
+      {
+        "label": "Thickness and weight",
+        "value": "5.1 mm and 1.28 lb (13-inch Wi-Fi model)"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day; PCMag measured 8 hours 11 minutes on the 13-inch"
+      },
+      {
+        "label": "Price",
+        "value": "From $999 (11-inch) and $1,299 (13-inch) at launch"
+      }
+    ],
+    "art": {
+      "kind": "tablet",
+      "body": "#2b2b2e",
+      "accent": "#0e1624",
+      "backdrop": [
+        "#f4f4f6",
+        "#e2e3e8"
+      ]
+    }
+  },
+  {
+    "id": "iphone-17e",
+    "slug": "iphone-17e",
+    "name": "iPhone 17e",
+    "brand": "Apple",
+    "category": "phone",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 599,
+    "officialUrl": "https://www.apple.com/iphone-17e/",
+    "criticsTake": "Critics call the iPhone 17e a clear step up from the 16e, mainly for MagSafe, 256GB of base storage and the A19 chip, all at an unchanged $599. Reviewers praise its speed and battery life, but the 60Hz display, notch and single rear camera draw repeated complaints. The Verge, Engadget and PCMag say the $799 iPhone 17 is the better buy if you can stretch the budget.",
+    "loved": [
+      "MagSafe finally on the budget iPhone",
+      "256GB base storage at the same $599",
+      "A19 chip performance close to the iPhone 17",
+      "Long battery life and compact, light body"
+    ],
+    "gripes": [
+      "60Hz display with no always-on option",
+      "Single rear camera, no ultrawide",
+      "Notch and thick bezels instead of Dynamic Island",
+      "Wired charging is still slow",
+      "The $799 iPhone 17 is a better phone for $200 more"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.1-inch OLED, 2532 x 1170, 60Hz, 1,200 nits peak"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple A19, C1X modem"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB or 512GB"
+      },
+      {
+        "label": "Rear camera",
+        "value": "48MP Fusion main (includes 2x crop zoom), no ultrawide"
+      },
+      {
+        "label": "Front camera",
+        "value": "12MP TrueDepth with Face ID"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 26 hours video playback"
+      },
+      {
+        "label": "Charging",
+        "value": "USB-C, 15W Qi2 wireless with MagSafe"
+      },
+      {
+        "label": "Weight",
+        "value": "169 g"
+      },
+      {
+        "label": "Price",
+        "value": "From $599 (256GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#e8bfcb",
+      "accent": "#1c1f2a",
+      "backdrop": [
+        "#fcf2f5",
+        "#f3dde4"
+      ]
+    }
+  },
+  {
+    "id": "macbook-air-m5",
+    "slug": "macbook-air-m5",
+    "name": "MacBook Air (M5, 2026)",
+    "brand": "Apple",
+    "category": "laptop",
+    "releaseDate": "2026-03-11",
+    "launchPrice": 1099,
+    "officialUrl": "https://www.apple.com/macbook-air/",
+    "criticsTake": "Critics call the M5 MacBook Air a faster version of an already excellent laptop. They praise the speed, battery life, keyboard and the doubled 512GB starting storage, and most still name it the best Mac for most people. The main complaints are the $100 price increase, an unchanged design with a 60Hz display and a notch, and a cheaper MacBook Neo that makes the case for M4 owners to upgrade hard to see.",
+    "loved": [
+      "Fast M5 chip in a silent, fanless body",
+      "Long battery life, up to 18 hours of video",
+      "Base storage doubled to 512GB with a faster SSD",
+      "Excellent keyboard, trackpad and build quality"
+    ],
+    "gripes": [
+      "$100 more than the M4 Air",
+      "Design, 60Hz display and notch unchanged",
+      "Small gain over the M4, little reason to upgrade",
+      "Cheaper MacBook Neo undercuts it",
+      "Fanless chassis throttles under sustained load"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "13.6-inch Liquid Retina, 500 nits, P3 wide color, 60Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple M5, 10-core CPU, 8-core GPU (10-core GPU optional)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB unified, up to 32GB"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD, up to 4TB"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 18 hours video playback (Apple)"
+      },
+      {
+        "label": "Weight",
+        "value": "2.7 lb"
+      },
+      {
+        "label": "Ports",
+        "value": "MagSafe 3, two Thunderbolt 4, headphone jack"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 7, Bluetooth 6 (Apple N1)"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,099 (13-inch)"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#a9bdd3",
+      "accent": "#4a7fd6",
+      "backdrop": [
+        "#f1f5fa",
+        "#dce6f2"
+      ]
+    }
+  },
+  {
+    "id": "macbook-pro-14-m5",
+    "slug": "macbook-pro-14-m5",
+    "name": "MacBook Pro 14-inch (M5)",
+    "brand": "Apple",
+    "category": "laptop",
+    "releaseDate": "2025-10-22",
+    "launchPrice": 1599,
+    "officialUrl": "https://www.apple.com/macbook-pro/",
+    "criticsTake": "Critics call the M5 14-inch MacBook Pro a very good laptop in an unchanged body. The faster GPU, much faster SSD and long battery life earn praise, and it keeps the $1,599 starting price. Reviewers say owners of the M4 model have little reason to upgrade, and some wish for a redesign, Wi-Fi 7 and cheaper memory and storage upgrades.",
+    "loved": [
+      "Noticeably faster GPU and SSD than the M4 model",
+      "Excellent battery life",
+      "Bright mini-LED display, with a nano-texture option",
+      "Same $1,599 starting price as last year"
+    ],
+    "gripes": [
+      "Design is unchanged from the previous generations",
+      "Memory and storage upgrades are expensive",
+      "Still on Wi-Fi 6E and Thunderbolt 4",
+      "Single fan can get loud under heavy load",
+      "Power adapter not included in some regions"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14.2-inch Liquid Retina XDR mini-LED, 3024 x 1964, up to 120Hz, nano-texture option"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple M5, 10-core CPU, 10-core GPU"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB, configurable to 24GB or 32GB"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD, configurable up to 4TB"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 24 hours video streaming (Apple)"
+      },
+      {
+        "label": "Weight",
+        "value": "3.4 lb (1.55 kg)"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 4, HDMI, SDXC slot, headphone jack, MagSafe 3"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 6E, Bluetooth 5.3"
+      },
+      {
+        "label": "Price",
+        "value": "From $1,599 (16GB/512GB)"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#2e2f33",
+      "accent": "#4a78b0",
+      "backdrop": [
+        "#f2f3f6",
+        "#e0e3ea"
+      ]
+    }
+  },
+  {
+    "id": "motorola-razr-ultra-2026",
+    "slug": "motorola-razr-ultra-2026",
+    "name": "Motorola Razr Ultra (2026)",
+    "brand": "Motorola",
+    "category": "foldable",
+    "releaseDate": "2026-05-21",
+    "launchPrice": 1499,
+    "officialUrl": "https://www.motorola.com/us/en/p/phones/razr/razr-ultra-2026/pmipmjk44m3",
+    "criticsTake": "Critics call the 2026 Razr Ultra one of the best flip phones available, with a premium design, a useful cover screen, strong performance and a 5,000mAh battery. Nearly every reviewer objects to the $200 price increase to $1,499 for an unchanged chip, an almost identical body and modest camera gains. Several suggest the 2025 model or waiting for a discount.",
+    "loved": [
+      "Alcantara and wood veneer finishes",
+      "Large, fully functional 4-inch cover screen",
+      "Class-leading battery life for a flip phone",
+      "Fast 68W wired charging",
+      "Strong performance and 50MP cameras"
+    ],
+    "gripes": [
+      "$200 price increase to $1,499",
+      "Same Snapdragon 8 Elite chip and near-identical design as 2025",
+      "Only three OS updates",
+      "Small camera and battery gains over the 2025 model",
+      "Software bloat and AI clutter"
+    ],
+    "specs": [
+      {
+        "label": "Main display",
+        "value": "7-inch LTPO AMOLED, 165Hz, up to 5,000 nits"
+      },
+      {
+        "label": "Cover display",
+        "value": "4-inch LTPO AMOLED, 165Hz, Gorilla Glass-Ceramic 3"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Elite"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "16GB RAM, 512GB (256GB option)"
+      },
+      {
+        "label": "Cameras",
+        "value": "50MP main, 50MP ultra wide, 50MP selfie"
+      },
+      {
+        "label": "Battery",
+        "value": "5,000mAh silicon-carbon, 68W wired, 30W wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "7.02 oz (about 199 g)"
+      },
+      {
+        "label": "Durability",
+        "value": "IP48 water and dust resistance"
+      },
+      {
+        "label": "Price",
+        "value": "$1,499.99"
+      }
+    ],
+    "art": {
+      "kind": "flip",
+      "body": "#44508e",
+      "accent": "#8fb4ea",
+      "backdrop": [
+        "#f2f4fb",
+        "#dde2f3"
+      ]
+    }
+  },
+  {
+    "id": "nintendo-switch-2",
+    "slug": "nintendo-switch-2",
+    "name": "Nintendo Switch 2",
+    "brand": "Nintendo",
+    "category": "console",
+    "releaseDate": "2025-06-05",
+    "launchPrice": 449.99,
+    "officialUrl": "https://www.nintendo.com/us/gaming-systems/switch-2/",
+    "criticsTake": "Critics call the Switch 2 a thorough upgrade over the original: a bigger, sharper 120Hz screen, far stronger performance and magnetic Joy-Con 2 controllers, with near-universal backward compatibility. Reviewers see it as a refinement more than a generational leap, and the main complaints are short handheld battery life, a thin launch lineup beyond Mario Kart World and a higher price. Most advise existing Switch owners that the upgrade is easy to justify only if they play handheld often.",
+    "loved": [
+      "Larger, sharper 7.9-inch 1080p screen with HDR10 and 120Hz VRR",
+      "Big jump in performance, with 4K output when docked",
+      "Magnetic Joy-Con 2 with mouse mode",
+      "Plays most original Switch games, often better",
+      "GameChat and smoother system software"
+    ],
+    "gripes": [
+      "Short, variable handheld battery life",
+      "LCD is a step back from the OLED model in contrast and motion",
+      "Costs $449.99, much more than the original Switch",
+      "Thin launch lineup of exclusives",
+      "256GB of storage fills quickly and needs microSD Express cards to expand"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "7.9-inch LCD, 1920x1080, HDR10, VRR up to 120Hz"
+      },
+      {
+        "label": "Processor",
+        "value": "Custom NVIDIA processor"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB UFS, expandable with microSD Express cards"
+      },
+      {
+        "label": "Battery life",
+        "value": "Approx. 2 to 6.5 hours (5220mAh)"
+      },
+      {
+        "label": "Weight",
+        "value": "0.88 lb handheld; 1.18 lb with Joy-Con 2"
+      },
+      {
+        "label": "TV output",
+        "value": "Up to 4K at 60fps; 120fps at 1080p/1440p; HDR10 VRR"
+      },
+      {
+        "label": "Controllers",
+        "value": "Joy-Con 2 with magnetic attachment and mouse sensor"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 6, Bluetooth, 2 USB-C ports"
+      },
+      {
+        "label": "Price",
+        "value": "$449.99 console only"
+      }
+    ],
+    "art": {
+      "kind": "console",
+      "body": "#1c1d22",
+      "accent": "#2b3a55",
+      "backdrop": [
+        "#f3f3f6",
+        "#e1e3ec"
+      ]
+    }
+  },
+  {
+    "id": "oneplus-15",
+    "slug": "oneplus-15",
+    "name": "OnePlus 15",
+    "brand": "OnePlus",
+    "category": "phone",
+    "releaseDate": "2025-12-17",
+    "launchPrice": 899,
+    "officialUrl": "https://www.oneplus.com/us/oneplus-15",
+    "criticsTake": "Critics call the OnePlus 15 one of the best-value flagships of the year, led by a 7,300mAh battery that lasts about two days and a Snapdragon 8 Elite Gen 5 that tops the performance charts. Reviewers split on the camera, which several say trails Pixel, Galaxy and iPhone rivals, and many find the redesign generic and OxygenOS 16 too close to iOS. Heat under load and a four-year OS update promise draw the other complaints.",
+    "loved": [
+      "About two days of battery life",
+      "Fast Snapdragon 8 Elite Gen 5 and 165Hz display",
+      "Durable IP69K build with fast charging",
+      "Flagship features for under $900"
+    ],
+    "gripes": [
+      "Camera and zoom trail rivals",
+      "Generic design and no Alert Slider",
+      "Runs hot and throttles under heavy load",
+      "Only four years of OS updates",
+      "No Qi2 magnets"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.78-inch flat LTPO OLED, 1272 x 2772, 1-165Hz, up to 1,800 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "Qualcomm Snapdragon 8 Elite Gen 5"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "12GB + 256GB or 16GB + 512GB (US)"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main + 50MP ultra wide + 50MP 3.5x telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "7,300mAh, about two days typical use"
+      },
+      {
+        "label": "Charging",
+        "value": "80W wired (US), 50W wireless, no Qi2 magnets"
+      },
+      {
+        "label": "Weight",
+        "value": "211 g"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP68, IP69 and IP69K"
+      },
+      {
+        "label": "Price",
+        "value": "From $899 (256GB); $999 for 16GB + 512GB"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#17181a",
+      "accent": "#3b6fd1",
+      "backdrop": [
+        "#f4f5f7",
+        "#e1e4ea"
+      ]
+    }
+  },
+  {
+    "id": "pixel-watch-5",
+    "slug": "pixel-watch-5",
+    "name": "Pixel Watch 5",
+    "brand": "Google",
+    "category": "watch",
+    "releaseDate": "2026-08-20",
+    "launchPrice": 399,
+    "officialUrl": "https://store.google.com/product/pixel_watch_5",
+    "criticsTake": "Critics call the Pixel Watch 5 the best smartwatch for Android, praising its domed display, fast charging, accurate GPS and detailed health coaching. Most describe it as a small step over the Pixel Watch 4 that costs $50 more, and CNET, Android Central, Expert Reviews and Tech Advisor say Pixel Watch 4 owners can skip it. Several health features were still missing at launch.",
+    "loved": [
+      "Domed Actua 360 display and comfortable aluminum build",
+      "Fast charging and about two days of battery on the 45mm",
+      "More accurate GPS and heart rate tracking",
+      "Polished Wear OS 7 with useful Gemini and health coaching"
+    ],
+    "gripes": [
+      "Hardware is nearly unchanged from the Pixel Watch 4",
+      "Starting price rose to $399",
+      "Some health features were not ready at launch",
+      "Gemini on the wrist can be hit or miss",
+      "Best coaching features need Google Health Premium"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "1.2-inch (41mm) or 1.4-inch (45mm) Actua 360 AMOLED, up to 3,000 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "Qualcomm Snapdragon W5 Gen 2 Accelerated"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "3GB RAM, 64GB storage"
+      },
+      {
+        "label": "Software",
+        "value": "Wear OS 7 with Gemini"
+      },
+      {
+        "label": "Battery life",
+        "value": "Rated up to 30 hours (41mm) or 40 hours (45mm); fast charging"
+      },
+      {
+        "label": "Weight",
+        "value": "31 g (41mm) or about 37 g (45mm)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "5ATM and IP68"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi and Bluetooth, optional 4G LTE"
+      },
+      {
+        "label": "Price",
+        "value": "From $399 (41mm), $429 (45mm); LTE adds $100"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#5b6446",
+      "accent": "#8ab4f8",
+      "backdrop": [
+        "#f3f5ef",
+        "#e1e6d6"
+      ]
+    }
+  },
+  {
+    "id": "sony-wh-1000xm6",
+    "slug": "sony-wh-1000xm6",
+    "name": "Sony WH-1000XM6",
+    "brand": "Sony",
+    "category": "headphones",
+    "releaseDate": "2025-05-15",
+    "launchPrice": 449.99,
+    "officialUrl": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-b",
+    "criticsTake": "Reviewers call the WH-1000XM6 Sony's best noise-cancelling headphones yet, with stronger ANC, a more balanced sound and a folding design that returns after the XM5. Most describe it as a refinement of the XM5 rather than a leap, and several rank its noise cancelling above Bose. The $449.99 price, 30-hour battery life and lack of USB audio keep a few reviewers from giving it top marks.",
+    "loved": [
+      "Class-leading noise cancelling",
+      "Clearer, more balanced sound than the XM5",
+      "Folding design and slimmer case are back",
+      "Light, comfortable fit for long sessions",
+      "Strong call quality and a feature-rich app"
+    ],
+    "gripes": [
+      "$50 price increase over the XM5",
+      "Battery life unchanged at 30 hours with ANC on",
+      "No audio over USB-C",
+      "No water resistance rating",
+      "Some find the clamp firm and the hinges less sturdy"
+    ],
+    "specs": [
+      {
+        "label": "Drivers",
+        "value": "30mm carbon composite dynamic"
+      },
+      {
+        "label": "Noise cancelling",
+        "value": "12 microphones, QN3 processor"
+      },
+      {
+        "label": "Battery life",
+        "value": "30 hours (ANC on), 40 hours (ANC off)"
+      },
+      {
+        "label": "Quick charge",
+        "value": "3 minutes for 3 hours of playback"
+      },
+      {
+        "label": "Weight",
+        "value": "254 g"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3, LDAC, AAC, SBC, LC3, multipoint"
+      },
+      {
+        "label": "Wired audio",
+        "value": "3.5mm cable (no USB audio)"
+      },
+      {
+        "label": "Water resistance",
+        "value": "None"
+      },
+      {
+        "label": "Price",
+        "value": "$449.99"
+      }
+    ],
+    "art": {
+      "kind": "headphones",
+      "body": "#1c1c1e",
+      "accent": "#6b7280",
+      "backdrop": [
+        "#f4f5f7",
+        "#e3e6ea"
+      ]
+    }
+  },
+  {
+    "id": "valve-steam-machine",
+    "slug": "valve-steam-machine",
+    "name": "Valve Steam Machine",
+    "brand": "Valve",
+    "category": "console",
+    "releaseDate": "2026-06-30",
+    "launchPrice": 1049,
+    "officialUrl": "https://store.steampowered.com/hardware/steammachine",
+    "criticsTake": "Reviewers praise the Steam Machine's tiny, near-silent cube design and the polished SteamOS living-room interface. Most agree that the $1,049 starting price is hard to justify for a GPU that lands near a PS5 or an RTX 3060, and several say it would make more sense at $700 or less. The verdict is mixed: a lovable but niche living-room PC rather than a console replacement.",
+    "loved": [
+      "Tiny, quiet cube design",
+      "SteamOS works well on a TV",
+      "Runs cool with little fan noise",
+      "Plays a large Steam library from the couch"
+    ],
+    "gripes": [
+      "$1,049 price is too high for the performance",
+      "8GB of video memory limits newer games",
+      "4K gaming often needs low settings or upscaling",
+      "Early software bugs and sleep problems",
+      "Steam Controller sold separately"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "Semi-custom AMD Zen 4, 6 cores / 12 threads, up to 4.8GHz"
+      },
+      {
+        "label": "Graphics",
+        "value": "Semi-custom AMD RDNA 3, 28 CUs, 8GB GDDR6"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB DDR5"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB or 2TB, plus microSD slot"
+      },
+      {
+        "label": "Ports",
+        "value": "HDMI 2.0, DisplayPort 1.4, 1 USB-C, 4 USB-A, Gigabit Ethernet"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 6E, Bluetooth 5.3"
+      },
+      {
+        "label": "Size",
+        "value": "About 6 in (160 mm) cube, 2.6 kg"
+      },
+      {
+        "label": "Operating system",
+        "value": "SteamOS"
+      },
+      {
+        "label": "Price",
+        "value": "$1,049 (512GB), $1,349 (2TB)"
+      }
+    ],
+    "art": {
+      "kind": "console",
+      "body": "#2a2c30",
+      "accent": "#1b9bf0",
+      "backdrop": [
+        "#f2f4f7",
+        "#dde3ec"
+      ]
+    }
+  },
+  {
+    "id": "galaxy-watch-9",
+    "slug": "galaxy-watch-9",
+    "name": "Galaxy Watch 9",
+    "brand": "Samsung",
+    "category": "watch",
+    "releaseDate": "2026-08-07",
+    "launchPrice": 379.99,
+    "officialUrl": "https://www.samsung.com/us/watches/galaxy-watch9/",
+    "criticsTake": "Reviewers call the Galaxy Watch 9 a solid, comfortable Wear OS watch and a modest update to the Watch 8. The new Snapdragon Wear Elite chip makes it noticeably faster and the health tracking is thorough, but battery life stays around a day and a half and several health features only work with Samsung phones. Many reviewers say Watch 8 owners can skip it and others should compare it with the Pixel Watch.",
+    "loved": [
+      "Fast, smooth performance from the new Snapdragon Wear Elite chip",
+      "Bright display that reads well in sunlight",
+      "Comfortable, lightweight design",
+      "Broad health and fitness tracking with no paywall"
+    ],
+    "gripes": [
+      "Battery life is still about a day to a day and a half",
+      "Slow charging",
+      "ECG, blood pressure and sleep apnea features need a Samsung phone",
+      "Little changed from the Watch 8 and $30 more",
+      "Some reviewers found the health metrics overwhelming"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "1.34-inch (40mm) or 1.47-inch (44mm) Super AMOLED, up to 3,000 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "Qualcomm Snapdragon Wear Elite"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "2GB RAM, 32GB storage"
+      },
+      {
+        "label": "Software",
+        "value": "Wear OS 7 with One UI 9 Watch"
+      },
+      {
+        "label": "Battery",
+        "value": "390mAh (40mm), 445mAh (44mm); Samsung claims up to 30 hours with always-on display"
+      },
+      {
+        "label": "Charging",
+        "value": "10W wired"
+      },
+      {
+        "label": "Durability",
+        "value": "5ATM, IP68, MIL-STD-810H"
+      },
+      {
+        "label": "Compatibility",
+        "value": "Android 13 or later phones only; some health features need a Samsung phone"
+      },
+      {
+        "label": "Price",
+        "value": "From $379.99 (40mm) and $409 (44mm)"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#3a3d42",
+      "accent": "#6cc4ff",
+      "backdrop": [
+        "#f2f5f9",
+        "#dde5ef"
+      ]
+    }
+  },
+  {
+    "id": "airpods-pro-3",
+    "slug": "airpods-pro-3",
+    "name": "AirPods Pro 3",
+    "brand": "Apple",
+    "category": "headphones",
+    "releaseDate": "2025-09-19",
+    "launchPrice": 249,
+    "officialUrl": "https://www.apple.com/airpods-pro/",
+    "criticsTake": "Critics call the AirPods Pro 3 the best AirPods yet. Noise cancellation draws the most praise (PCMag, ZDNET, Expert Reviews), along with a more secure foam-tipped fit, heart rate sensing and about eight hours of listening per charge, all at the same $249 as the AirPods Pro 2. Complaints are small: no EQ, several features that need an iPhone, and a sound upgrade that Pocket-lint calls marginal.",
+    "loved": [
+      "Class-leading noise cancellation",
+      "More secure, comfortable foam-tipped fit",
+      "Built-in heart rate sensing for workouts",
+      "Up to 8 hours per charge, same $249 price"
+    ],
+    "gripes": [
+      "No EQ controls",
+      "Best features need an iPhone",
+      "Total battery with the case dropped to 24 hours",
+      "Live Translation needs refining",
+      "Sound upgrade over AirPods Pro 2 is modest"
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple H2"
+      },
+      {
+        "label": "Noise control",
+        "value": "Active Noise Cancellation, Transparency, Adaptive Audio"
+      },
+      {
+        "label": "Battery (earbuds)",
+        "value": "Up to 8 hours with ANC on"
+      },
+      {
+        "label": "Battery (with case)",
+        "value": "Up to 24 hours"
+      },
+      {
+        "label": "Water and dust resistance",
+        "value": "IP57"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3, AAC and SBC codecs"
+      },
+      {
+        "label": "Weight",
+        "value": "5.6 g per earbud"
+      },
+      {
+        "label": "Health features",
+        "value": "Heart rate sensing, Hearing Test, Hearing Aid"
+      },
+      {
+        "label": "Price",
+        "value": "$249"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#f4f4f6",
+      "accent": "#9db4d1",
+      "backdrop": [
+        "#f4f6fa",
+        "#e1e6ef"
+      ]
+    }
+  },
+  {
+    "id": "pixel-11",
+    "slug": "pixel-11",
+    "name": "Pixel 11",
+    "brand": "Google",
+    "category": "phone",
+    "releaseDate": "2026-08-20",
+    "launchPrice": 899,
+    "officialUrl": "https://store.google.com/us/product/pixel_11?hl=en-US",
+    "criticsTake": "Critics call the Pixel 11 a polished but small update to the Pixel 10. Reviewers praise the compact build, the brighter display, the improved main camera, faster Qi2.2 wireless charging and useful Gemini features such as Magic Capture, and several rate it a better buy than the Pro models. Most also fault the $100 higher starting price, the near-identical hardware, average gaming performance and the missing HiLight light, so Tom's Guide and ZDNET suggest a discounted Pixel 10 or a deal may be the smarter purchase.",
+    "loved": [
+      "Compact, well-built design with a slimmer camera bar",
+      "Brighter display that is easy to read outdoors",
+      "Strong main camera and handy tools like Magic Capture",
+      "Faster 25W Qi2.2 wireless charging and double the base storage"
+    ],
+    "gripes": [
+      "Starting price up $100 to $899",
+      "Very few hardware changes from the Pixel 10",
+      "Tensor G6 trails rivals in raw performance and gaming",
+      "Battery life only average in some tests",
+      "Not much reason to upgrade from a Pixel 10"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3-inch Actua OLED, 2424 x 1080, up to 120Hz, 3,000 nits peak"
+      },
+      {
+        "label": "Chip",
+        "value": "Google Tensor G6, 12GB RAM"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "48MP main + 13MP ultrawide + 10.8MP 5x telephoto"
+      },
+      {
+        "label": "Front camera",
+        "value": "10.5MP with autofocus"
+      },
+      {
+        "label": "Battery",
+        "value": "4,985 mAh; 30W wired, 25W Qi2.2 magnetic wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "197 g"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP68"
+      },
+      {
+        "label": "Software",
+        "value": "Android 17, up to 7 years of updates"
+      },
+      {
+        "label": "Price",
+        "value": "From $899 (256GB), $1,019 (512GB)"
+      }
+    ],
+    "art": {
+      "kind": "phone",
+      "body": "#2a2c30",
+      "accent": "#8fb4e0",
+      "backdrop": [
+        "#f3f4f6",
+        "#e1e4ea"
+      ]
+    }
+  },
+  {
+    "id": "meta-ray-ban-display",
+    "slug": "meta-ray-ban-display",
+    "name": "Meta Ray-Ban Display",
+    "brand": "Meta",
+    "category": "wearable",
+    "releaseDate": "2025-09-30",
+    "launchPrice": 799,
+    "officialUrl": "https://www.meta.com/ai-glasses/meta-ray-ban-display/",
+    "criticsTake": "Critics agree the Neural Band wristband and the bright, readable in-lens display are the standout parts, and several call these the most advanced smart glasses available. Reviewers also found the frames heavy and chunky, the app selection thin and tied to Meta's ecosystem, and battery life short. Scores run from 5/10 at The Verge to 7/10 at CNET, and most reviewers advise the cheaper display-free Ray-Ban Meta unless you want to be an early adopter.",
+    "loved": [
+      "Neural Band gestures are accurate and easy to learn",
+      "Bright, sharp full-color display in the right lens",
+      "Camera viewfinder and live captions are genuinely useful",
+      "Looks like an oversized pair of ordinary Ray-Bans"
+    ],
+    "gripes": [
+      "Heavy and chunky at 69 g",
+      "Few third-party apps and a closed Meta ecosystem",
+      "About 6 hours of battery at best, plus a band to charge",
+      "Single-lens display can feel jarring",
+      "Costs $799, more than twice the display-free Ray-Ban Meta"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Monocular color waveguide in the right lens, 600 x 600, 20 degree field of view, 90Hz, up to 5,000 nits"
+      },
+      {
+        "label": "Input",
+        "value": "Meta Neural Band EMG wristband, included"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP with 3x zoom, 1080p+ video at 30 fps"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 6 hours mixed use (glasses); up to 18 hours (Neural Band)"
+      },
+      {
+        "label": "Weight",
+        "value": "69 g"
+      },
+      {
+        "label": "Storage",
+        "value": "32GB"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX4 glasses, IPX7 Neural Band"
+      },
+      {
+        "label": "Lenses",
+        "value": "Transitions, prescriptions from -4.00 to +4.00"
+      },
+      {
+        "label": "Price",
+        "value": "$799 including Neural Band"
+      }
+    ],
+    "art": {
+      "kind": "glasses",
+      "body": "#1b1b1f",
+      "accent": "#59c4e6",
+      "backdrop": [
+        "#f2f4f7",
+        "#dde3ea"
+      ]
+    }
+  },
+  {
+    "id": "apple-watch-ultra-4",
+    "slug": "apple-watch-ultra-4",
+    "name": "Apple Watch Ultra 4",
+    "brand": "Apple",
+    "category": "watch",
+    "releaseDate": "2026-09-18",
+    "launchPrice": 799,
+    "officialUrl": "https://www.apple.com/apple-watch-ultra-4/",
+    "criticsTake": "Critics call the Apple Watch Ultra 4 the best Apple Watch yet, led by a new Health Sensing System with continuous heart rate tracking, the Readiness score and battery life of up to 50 hours. The design, display and $799 price are unchanged, so most reviewers say Ultra 3 owners can skip it. Wired and Expert Reviews note that the cheaper Series 12 shares most of the new health features.",
+    "loved": [
+      "Up to 50 hours of battery life, with 15-minute fast charging",
+      "New Health Sensing System with continuous heart rate and HRV tracking",
+      "Daily Readiness score",
+      "Same $799 price as the Ultra 3"
+    ],
+    "gripes": [
+      "Design and display unchanged from the Ultra 3",
+      "Only one large 49mm case size",
+      "Series 12 shares most of the new health features for much less",
+      "Some headline features, such as Audio Intelligence, were not available at launch",
+      "Modest upgrade for Ultra 3 owners"
+    ],
+    "specs": [
+      {
+        "label": "Case",
+        "value": "49mm titanium, natural or black"
+      },
+      {
+        "label": "Display",
+        "value": "Always-On LTPO3 wide-angle OLED, up to 3,000 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "S11"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 50 hours normal use; 18 hours workout tracking"
+      },
+      {
+        "label": "Fast charging",
+        "value": "15 minutes for up to 18 hours of use"
+      },
+      {
+        "label": "Water resistance",
+        "value": "WR100 (100 meters)"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G cellular and satellite emergency communications"
+      },
+      {
+        "label": "Weight",
+        "value": "About 63 g"
+      },
+      {
+        "label": "Price",
+        "value": "From $799"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#c4baa9",
+      "accent": "#f26b21",
+      "backdrop": [
+        "#f6f3ee",
+        "#e6e0d6"
       ]
     }
   }
