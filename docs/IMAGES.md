@@ -1,9 +1,12 @@
 # Product images
 
-Status (2026-10-22): the plumbing is live, but **no product has a press photo yet**. Every product still
-shows its drawing (`DeviceArt`). The terms check below found no brand whose terms let a third-party
-review site use its press images, apart from one narrow case (Google) that does not cover any product we list.
-Never use retailer, stock or review-site images.
+Owner decision 2026-10-22: use official press images with credit, and remove any on request. Scope: public
+press kits and newsroom pages that download without a login. Apple and Beats (Apple's terms require written
+permission) are excluded, and so are login-gated or blocked hubs (Nintendo, Razer, Dell, MSI, Sony, Motorola, Nothing).
+The terms table below stays as the record of what each brand's pages actually say. Never use retailer, stock or review-site
+images, and only use an image when it is clearly the exact model: otherwise the drawing stays.
+
+Status: 17 of 84 products have a photo, the rest keep their drawing.
 
 ## How it works
 
@@ -58,7 +61,32 @@ reply's wording as the credit and restrictions.
 
 ## Source URLs per product
 
-None yet. When a photo is added, list `slug | brand page URL | credit` here (the same URL goes in `image.sourceUrl`).
+Same as `image.sourceUrl` in `data/products.json`. Products not listed use the drawing.
+
+| Slug                       | Credit  | Brand page                                                                                                                                         |
+| -------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| galaxy-z-fold-8            | Samsung | https://news.samsung.com/us/samsung-making-most-new-galaxy-z-fold8/                                                                                |
+| bose-qc-ultra-earbuds-2    | Bose    | https://www.bose.com/pressroom/bose-announces-the-quietcomfort-ultra-earbuds-2nd-gen                                                               |
+| galaxy-z-trifold           | Samsung | https://news.samsung.com/us/samsung-introducing-galaxy-z-trifold-shape-whats-next-mobile-innovation/                                               |
+| pixel-10a                  | Google  | https://blog.google/products-and-platforms/devices/pixel/google-pixel-10a/                                                                         |
+| pixel-10-pro-fold          | Google  | https://blog.google/products-and-platforms/devices/pixel/google-pixel-10-pro-fold/                                                                 |
+| hp-omnibook-ultra-14-2026  | HP      | https://www.hp.com/us-en/newsroom/press-kits/2026/hpatces.html                                                                                     |
+| bose-qc-ultra-headphones-2 | Bose    | https://www.bose.com/pressroom/bose-unveils-the-next-generation-of-the-quietcomfort-ultra-headphones                                               |
+| rog-xbox-ally-x            | ASUS    | https://press.asus.com/news/press-releases/rog-xbox-ally-handheld-gaming/                                                                          |
+| garmin-fenix-9-pro         | Garmin  | https://www.garmin.com/en-US/newsroom/press-release/outdoor/garmin-expands-its-flagship-performance-smartwatch-lineup-with-fenix9-and-fenix9-pro/  |
+| rog-xbox-ally              | ASUS    | https://press.asus.com/news/press-releases/rog-xbox-ally-handheld-gaming/                                                                          |
+| samsung-galaxy-xr          | Samsung | https://news.samsung.com/us/introducing-galaxy-xr-opening-new-worlds/                                                                              |
+| lenovo-legion-go-2         | Lenovo  | https://news.lenovo.com/press-kits/innovation-world-2025/                                                                                          |
+| galaxy-watch-ultra-2       | Samsung | https://news.samsung.com/us/samsung-week-discover-new-ways-live-smarter-exclusive-deals-rewards/                                                   |
+| thinkpad-x1-carbon-gen14   | Lenovo  | https://news.lenovo.com/press-kits/tech-world-ces-2026/                                                                                            |
+| garmin-cirqa               | Garmin  | https://www.garmin.com/en-US/newsroom/press-release/wearables-health/meet-cirqa-smart-band-the-screen-free-health-and-fitness-tracker-from-garmin/ |
+| pixel-11-pro-fold          | Google  | https://blog.google/products-and-platforms/devices/pixel/pixel-11-pro-fold/                                                                        |
+| oura-ring-5                | Oura    | https://ouraring.com/newsroom                                                                                                                      |
+
+Kept as drawings and why: Apple and Beats (excluded); Nintendo, Razer (login-gated); Dell, MSI, Sony, Motorola
+(press pages blocked); Nothing, Viture, Even Realities (no public press kit); Valve, OnePlus (press kits only cover older
+products); and individual products where only lifestyle shots, multi-model collages or an unverifiable model were available
+(most Samsung and Pixel phones and watches, Forerunner 70 and 170, Zenbooks, Zephyrus G14, Meta glasses, Kindle Scribe Colorsoft).
 
 ## Weekly refresh
 

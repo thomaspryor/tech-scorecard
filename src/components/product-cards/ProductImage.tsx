@@ -29,7 +29,7 @@ export function ProductImage({
   if (!image) return <DeviceArt art={product.art} name={product.name} className={className} />;
   const { width, height } = SIZE[variant];
   return (
-    <div className={`${className} bg-[#f4f4f6]`}>
+    <div className={`${className} bg-white`}>
       {/* eslint-disable-next-line @next/next/no-img-element -- static export, files are pre-sized WebP */}
       <img
         src={variant === 'hero' ? image.src : image.thumb}

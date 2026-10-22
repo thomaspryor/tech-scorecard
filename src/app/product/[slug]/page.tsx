@@ -92,12 +92,12 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
       {/* Hero card */}
       <section className="card p-4 sm:p-5">
         <div className="flex gap-4 sm:gap-6">
-          <div className="w-28 shrink-0 overflow-hidden rounded-xl border border-line sm:w-44">
-            <ProductImage product={product} variant="hero" priority className="aspect-[3/4] h-full w-full" />
+          <div className="w-28 shrink-0 sm:w-44">
+            <div className="overflow-hidden rounded-xl border border-line">
+              <ProductImage product={product} variant="hero" priority className="aspect-[3/4] w-full" />
+            </div>
             {product.image && (
-              <p className="border-t border-line bg-white px-1.5 py-1 text-center text-[10px] text-ink-faint">
-                Image: {product.image.credit}
-              </p>
+              <p className="mt-1 text-center text-[11px] text-ink-faint">Image: {product.image.credit}</p>
             )}
           </div>
           <div className="min-w-0 flex-1">
