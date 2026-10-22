@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "prebuild": "node scripts/validate-data.js",
+    "postbuild": "node scripts/check-page-size.js",
     "validate": "node scripts/validate-data.js",
     "typecheck": "tsc --noEmit",
     "lint": "next lint --dir src --dir scripts --dir test",
