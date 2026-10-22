@@ -1,5 +1,5 @@
-// Thresholds copied from Broadway Scorecard (scripts/lib/score-tiers.js).
-export const GOLD_MIN = 83;
+// Tiers follow Broadway Scorecard (scripts/lib/score-tiers.js), except Critical Gold starts at 85 (owner, 2026-10-22).
+export const GOLD_MIN = 85;
 export const RECOMMENDED_MIN = 75;
 export const WORTH_IT_MIN = 65;
 export const MIXED_MIN = 55;
