@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getAllProducts, getTotals, indexableCategories } from '@/lib/data';
 import { MiniProductCard, ProductListCard } from '@/components/product-cards';
 import { Logo } from '@/components/Header';
+import { ListSort } from '@/components/ListSort';
 import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
 import { BEST_YEAR } from '@/config/seo';
 
@@ -94,19 +95,23 @@ export default function HomePage() {
             Newest
           </label>
         </div>
-        {/* One list; CSS `order` re-sorts it, so sorting works without JavaScript and each card ships once. */}
-        <div className="cat-list flex flex-col gap-3">
+        {/* One list, each card shipped once. ListSort moves the cards so DOM, keyboard and screen-reader
+            order match the chosen sort; without JavaScript, CSS `order` still sorts it visually. */}
+        <div id="all-products" className="cat-list flex flex-col gap-3">
           {products.map((p, i) => (
             <div
               key={p.id}
               data-cat={p.category}
               className="list-item"
+              data-o-score={i}
+              data-o-date={dateRank.get(p.id)}
               style={{ '--o-score': i, '--o-date': dateRank.get(p.id) } as React.CSSProperties}
             >
               <ProductListCard product={p} />
             </div>
           ))}
         </div>
+        <ListSort listId="all-products" dateRadioId="home-sort-date" />
       </section>
 
       <section aria-labelledby="best" className="pb-4 pt-10">
