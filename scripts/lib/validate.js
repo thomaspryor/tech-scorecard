@@ -5,6 +5,9 @@
 const { ratingToBand } = require('./rating-band');
 
 const MAX_EXCERPT_WORDS = 45;
+/** Fewer real words than this is not a quote ("..." would otherwise match any page). */
+const MIN_EXCERPT_WORDS = 3;
+const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const ISO_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 /** Real calendar dates only: "2026-13-40" fails even though it matches the pattern. */
@@ -16,11 +19,25 @@ function isIsoDate(s) {
 
 const bareHost = (d) => d.replace(/^www\./, '');
 
+/** True for a parseable https URL with no whitespace ("https://x.com:99999" is not parseable). */
+function isHttpsUrl(s) {
+  if (typeof s !== 'string' || /\s/.test(s)) return false;
+  try {
+    return new URL(s).protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
 /**
  * @param {import('./data-files').DataSet & {categories: {categories: string[], artKinds: string[]}}} data
+ * @param {{today?: string}} [opts] `today` (YYYY-MM-DD) bounds review dates; defaults to the current UTC date
  * @returns {string[]} human-readable errors; empty when the data is valid
  */
-function validateData({ products, reviews, outlets, categories }) {
+function validateData(
+  { products, reviews, outlets, categories },
+  { today = new Date().toISOString().slice(0, 10) } = {},
+) {
   const errors = [];
   const outletsById = new Map(outlets.map((o) => [o.id, o]));
   const productIds = new Set(products.map((p) => p.id));
@@ -40,8 +57,11 @@ function validateData({ products, reviews, outlets, categories }) {
 
   for (const p of products) {
     if (!isIsoDate(p.releaseDate)) errors.push(`product ${p.id}: bad releaseDate`);
-    for (const k of ['criticsTake', 'loved', 'gripes', 'specs', 'art'])
-      if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
+    for (const k of ['name', 'brand', 'criticsTake', 'art']) if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
+    for (const k of ['loved', 'gripes', 'specs'])
+      if (!Array.isArray(p[k]) || p[k].length === 0) errors.push(`product ${p.id}: ${k} must be a non-empty list`);
+    if (!SLUG_RE.test(p.slug || '')) errors.push(`product ${p.id}: slug must be lowercase words joined by hyphens`);
+    if (p.officialUrl != null && !isHttpsUrl(p.officialUrl)) errors.push(`product ${p.id}: officialUrl must be https`);
     if (!categories.categories.includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
     if (p.art && !categories.artKinds.includes(p.art.kind))
       errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
@@ -58,7 +78,7 @@ function validateData({ products, reviews, outlets, categories }) {
     if (seen.has(key)) errors.push(`${at}: duplicate outlet for product`);
     seen.add(key);
 
-    if (!/^https:\/\/[^\s]+$/.test(r.url || '')) errors.push(`${at}: url must be https`);
+    if (!isHttpsUrl(r.url)) errors.push(`${at}: url must be a valid https URL`);
     else if (outlet) {
       // The link must go to the outlet the review is credited to (catches a swapped or pasted-wrong URL).
       const host = bareHost(new URL(r.url).hostname);
@@ -68,6 +88,7 @@ function validateData({ products, reviews, outlets, categories }) {
     }
 
     if (!isIsoDate(r.date)) errors.push(`${at}: bad date`);
+    else if (r.date > today) errors.push(`${at}: date ${r.date} is in the future`);
     if (!(Number.isInteger(r.score) && r.score >= 0 && r.score <= 100))
       errors.push(`${at}: score must be an integer 0-100`);
     if (!['rating', 'text'].includes(r.scoreSource)) errors.push(`${at}: scoreSource must be rating|text`);
@@ -81,18 +102,20 @@ function validateData({ products, reviews, outlets, categories }) {
         errors.push(`${at}: score ${r.score} is outside the ${r.rating} band ${band.floor}-${band.ceiling}`);
       else if (r.scoreBand && (r.scoreBand[0] !== band.floor || r.scoreBand[1] !== band.ceiling)) {
         errors.push(
-          `${at}: stored scoreBand ${r.scoreBand} does not match the ${r.rating} band; re-run score-reviews.js`,
+          `${at}: stored scoreBand ${r.scoreBand} does not match the ${r.rating} band; run score-reviews.js --only=${r.productId}`,
         );
       }
     }
     if (r.scoreSource === 'text' && r.rating) errors.push(`${at}: text-scored review must not carry a rating`);
 
-    const words = (r.excerpt || '').trim().split(/\s+/).filter(Boolean).length;
-    if (words === 0 || words > MAX_EXCERPT_WORDS)
-      errors.push(`${at}: excerpt must be 1-${MAX_EXCERPT_WORDS} words (has ${words})`);
+    const text = (r.excerpt || '').trim();
+    const words = text.split(/\s+/).filter(Boolean).length;
+    const realWords = (text.match(/[\p{L}\p{N}]+/gu) || []).length;
+    if (realWords < MIN_EXCERPT_WORDS || words > MAX_EXCERPT_WORDS)
+      errors.push(`${at}: excerpt must be ${MIN_EXCERPT_WORDS}-${MAX_EXCERPT_WORDS} words (has ${words})`);
   });
 
   return errors;
 }
 
-module.exports = { validateData, isIsoDate, MAX_EXCERPT_WORDS };
+module.exports = { validateData, isIsoDate, isHttpsUrl, MAX_EXCERPT_WORDS, MIN_EXCERPT_WORDS };

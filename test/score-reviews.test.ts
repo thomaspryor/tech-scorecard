@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { askGemini, askOpenAI, parseJson } from '../scripts/score-reviews';
+import { askGemini, askOpenAI, needsScoring, parseJson } from '../scripts/score-reviews';
+import { review } from './fixtures';
 
 const OPENAI_KEY = 'sk-test-openai-0123456789';
 const GEMINI_KEY = 'AIza-test-gemini-0123456789';
@@ -50,5 +51,24 @@ describe('model calls', () => {
     const err = await askOpenAI('prompt').catch((e: Error) => e);
     expect(String(err)).toMatch(/HTTP 401: Incorrect API key/);
     expect(String(err)).not.toContain(OPENAI_KEY);
+  });
+});
+
+describe('needsScoring', () => {
+  const done = { modelScores: { openai: 93, gemini: 94 }, scoreBand: [91, 100] as [number, number] };
+
+  it('skips reviews both models already placed', () => {
+    expect(needsScoring(review({ rating: '9/10', ...done }))).toBe(false);
+    expect(needsScoring(review({ rating: null, scoreSource: 'text', modelScores: { openai: 70, gemini: 72 } }))).toBe(
+      false,
+    );
+  });
+
+  it('picks up unscored reviews', () => {
+    expect(needsScoring(review({ rating: '9/10' }))).toBe(true);
+  });
+
+  it('picks up reviews whose rating changed since they were placed', () => {
+    expect(needsScoring(review({ rating: '4/5', ...done }))).toBe(true);
   });
 });

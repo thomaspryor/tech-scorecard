@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check that every review excerpt appears word for word on the outlet's page.
 
-Usage: python3 scripts/verify-quotes.py [product-id,product-id ...]   (default: all)
+Usage: python3 scripts/verify-quotes.py [product-id[,product-id] ...]   (default: all)
 Prints FULL / MISS per review and exits 1 if any page loaded but lacks its quote.
 Pages that block scripted fetches (403/429) are reported as BLOCKED, not failures;
 check those by hand. Multi-page reviews (GSMArena ...p2.php to p9.php) are followed.
@@ -46,6 +46,9 @@ def candidates(url):
 
 def check(r):
     want = norm(r['excerpt']).rstrip('.!?…')
+    if len(re.findall(r'\w+', want)) < 3:
+        # An empty or punctuation-only excerpt is "in" every page; never count it as found.
+        return 'MISS', r, 'excerpt too short to verify'
     first_code = None
     for u in candidates(r['url']):
         code, page = fetch(u)
@@ -57,7 +60,8 @@ def check(r):
 
 
 def main():
-    ids = set(sys.argv[1].split(',')) if len(sys.argv) > 1 else None
+    # Ids may be comma- or space-separated: "a,b", "a b" or "a,b c".
+    ids = {i for arg in sys.argv[1:] for i in arg.split(',') if i} or None
     reviews = [r for r in json.loads((ROOT / 'data/reviews.json').read_text()) if not ids or r['productId'] in ids]
     with ThreadPoolExecutor(8) as pool:
         results = list(pool.map(check, reviews))

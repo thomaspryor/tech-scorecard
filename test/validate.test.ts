@@ -84,7 +84,7 @@ describe('validateData', () => {
       (d) => {
         d.reviews[0].url = 'http://www.theverge.com/r';
       },
-      /url must be https/,
+      /url must be a valid https URL/,
     ],
     [
       "url on another outlet's site",
@@ -161,7 +161,7 @@ describe('validateData', () => {
       (d) => {
         d.reviews[0].excerpt = '  ';
       },
-      /excerpt must be 1-45 words \(has 0\)/,
+      /excerpt must be 3-45 words \(has 0\)/,
     ],
     [
       'excerpt too long',
@@ -169,6 +169,48 @@ describe('validateData', () => {
         d.reviews[0].excerpt = 'word '.repeat(46);
       },
       /has 46/,
+    ],
+    [
+      'punctuation-only excerpt',
+      (d) => {
+        d.reviews[0].excerpt = '... …';
+      },
+      /excerpt must be 3-45 words/,
+    ],
+    [
+      'unparseable url',
+      (d) => {
+        d.reviews[0].url = 'https://theverge.com:99999/x';
+      },
+      /url must be a valid https URL/,
+    ],
+    [
+      'review dated after today',
+      (d) => {
+        d.reviews[0].date = '2099-01-01';
+      },
+      /date 2099-01-01 is in the future/,
+    ],
+    [
+      'empty loved list',
+      (d) => {
+        d.products[0].loved = [];
+      },
+      /loved must be a non-empty list/,
+    ],
+    [
+      'bad slug',
+      (d) => {
+        d.products[0].slug = 'Test Phone';
+      },
+      /slug must be lowercase words joined by hyphens/,
+    ],
+    [
+      'http officialUrl',
+      (d) => {
+        d.products[0].officialUrl = 'http://acme.com/phone';
+      },
+      /officialUrl must be https/,
     ],
   ])('rejects %s', (_name, edit, pattern) => {
     const errors = errorsAfter(edit);

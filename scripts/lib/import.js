@@ -96,10 +96,17 @@ function applyImport(data, file, label = 'import') {
     };
   }
 
+  // Replace mode drops every existing review of the product, including ones added later by
+  // append files. Name them so a re-import never loses reviews silently.
+  const keep = new Set(tagged.map((r) => r.outletId));
+  const dropped = reviews.filter((r) => r.productId === product.id && !keep.has(r.outletId)).map((r) => r.outletId);
   reviews = reviews.filter((r) => r.productId !== product.id).concat(tagged);
+  const droppedNote = dropped.length
+    ? `; REMOVED ${dropped.length} existing reviews not in the file: ${dropped.join(', ')}`
+    : '';
   return {
     data: { products: products.filter((p) => p.id !== product.id).concat(product), outlets, reviews },
-    message: `${product.id}: ${incoming.length} reviews (now run: node scripts/score-reviews.js --only=${product.id})`,
+    message: `${product.id}: ${incoming.length} reviews${droppedNote} (now run: node scripts/score-reviews.js --only=${product.id})`,
   };
 }
 

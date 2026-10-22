@@ -30,7 +30,7 @@ describe('applyImport: replace mode', () => {
     expect(next.products[0].name).toBe('Test Phone (renamed)');
     expect(next.reviews).toHaveLength(1); // the old CNET review is gone
     expect(next.reviews[0]).toMatchObject({ productId: 'test-phone', score: 95 });
-    expect(message).toMatch(/test-phone: 1 reviews/);
+    expect(message).toMatch(/test-phone: 1 reviews; REMOVED 1 existing reviews not in the file: cnet/);
   });
 
   it('does not mutate its input', () => {
@@ -132,7 +132,7 @@ describe('importAll', () => {
     };
     const res = importAll(validData(), [good, bad], categories);
     expect(res.data).toBeUndefined();
-    expect(res.errors.join('\n')).toMatch(/url must be https/);
+    expect(res.errors.join('\n')).toMatch(/url must be a valid https URL/);
     expect(res.messages).toHaveLength(2);
   });
 });

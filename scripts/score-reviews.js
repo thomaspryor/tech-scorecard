@@ -155,6 +155,15 @@ function validateOrRestore(backup) {
   }
 }
 
+/** Not yet placed by both models, or placed inside a band the current rating no longer maps to. */
+function needsScoring(r) {
+  if (!r.modelScores) return true;
+  const band = r.rating ? ratingToBand(r.rating) : null;
+  return !!(band && r.scoreBand && (r.scoreBand[0] !== band.floor || r.scoreBand[1] !== band.ceiling));
+}
+
+const API_KEYS = { openai: 'OPENAI_API_KEY', gemini: 'GEMINI_API_KEY' };
+
 async function main() {
   const products = Object.fromEntries(
     JSON.parse(fs.readFileSync(path.join(DATA, 'products.json'), 'utf8')).map((p) => [p.id, p]),
@@ -164,7 +173,7 @@ async function main() {
   );
   const backup = fs.readFileSync(path.join(DATA, 'reviews.json'), 'utf8');
   const reviews = JSON.parse(backup);
-  let todo = reviews.filter((r) => (!only || only.has(r.productId)) && (args.force || !r.modelScores));
+  let todo = reviews.filter((r) => (!only || only.has(r.productId)) && (args.force || needsScoring(r)));
   if (args.limit) todo = todo.slice(0, Number(args.limit));
   console.log(`scoring ${todo.length} reviews${args['dry-run'] ? ' (dry run)' : ''}`);
   const changes = [];
@@ -189,7 +198,7 @@ async function main() {
       ['openai', askOpenAI],
       ['gemini', askGemini],
     ]) {
-      if (got[name]) continue;
+      if (got[name] || !process.env[API_KEYS[name]]) continue;
       try {
         const o = await fn(p);
         if (o) got[name] = { score: clamp(o.score, band), reason: o.reason };
@@ -242,11 +251,13 @@ async function main() {
 
 if (require.main === module) {
   if (!process.env.OPENAI_API_KEY || !process.env.GEMINI_API_KEY)
-    console.warn('OPENAI_API_KEY or GEMINI_API_KEY is not set; only cached answers will be used.');
+    console.warn(
+      'OPENAI_API_KEY or GEMINI_API_KEY is not set: that model is skipped and only its cached answers are used.',
+    );
   main().catch((e) => {
     console.error(e);
     process.exit(1);
   });
 }
 
-module.exports = { askOpenAI, askGemini, parseJson, prompt };
+module.exports = { askOpenAI, askGemini, needsScoring, parseJson, prompt };
