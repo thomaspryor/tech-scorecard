@@ -1,0 +1,7 @@
+# Generated or machine-written files: data/*.json is written by the pipeline scripts.
+data/
+package-lock.json
+.next/
+out/
+.cache/
+research/

@@ -6,6 +6,7 @@ Domain bought 2026-10-22, so it starts with no authority and no history.
 ## 1. Audit findings (live crawl, 34 URLs, Playwright + Lighthouse)
 
 Already fine:
+
 - Apex `thetechscorecard.com` 308-redirects to `https://www.thetechscorecard.com/`; `http` redirects to `https`. One host, no duplicate.
 - Every page returned 200, has one `<h1>`, a viewport tag and a unique title.
 - `robots.txt` allows everything and points at the sitemap; `sitemap.xml` listed all pages.
@@ -13,6 +14,7 @@ Already fine:
 - Product pages already have about 540 words each of real text (critics' take, loved/gripes, per-review excerpts) and 49-55 links.
 
 Problems found (fixed in the first push, see section 3):
+
 1. No `<link rel="canonical">` on any page (34 of 34).
 2. No structured data on any page (34 of 34).
 3. Meta descriptions up to 518 characters (Google shows about 155). Methodology and home shared one description.
@@ -22,6 +24,7 @@ Problems found (fixed in the first push, see section 3):
 7. Home page title carried "(Beta)", which is a weak thing to show in search results.
 
 Open, lower priority (not fixed yet):
+
 - Render-blocking Google Fonts stylesheet (Lighthouse flagged it). Fixed: Inter is now self-hosted with `next/font`.
 - Low color contrast on a few muted text styles (accessibility 95-96).
 - Lighthouse flags `uses-long-cache-ttl` on a few non-hashed assets (such as the OG image).
@@ -37,6 +40,7 @@ Honest limit: this was a desk read, not a rank-tracking study. No search-volume 
 - The big tech outlets (The Verge, CNET, Tom's Guide, TechRadar) own "<product> review" because the original review is theirs.
 
 Where a brand-new aggregator can realistically compete:
+
 - Aggregator wording the originals do not use: "<product> review score", "<product> critic score", "<product> reviews roundup", "is the <product> worth it".
 - Long-tail "best <category> 2026" and "best-reviewed <category>", especially narrow ones (foldables, smartwatches, handheld consoles).
 - Newly released products in the first weeks, before authority pages settle.
@@ -47,6 +51,7 @@ Not realistic in the first months: head terms such as "best phones 2026" or "iPh
 ## 3. What was shipped (technical and on-site)
 
 All in `src/`, pushed to main:
+
 - `src/config/seo.ts`: site URL, name, `BEST_YEAR`, thin-page threshold, and empty slots for the Google and Bing verification tokens.
 - `src/lib/seo.ts` and `src/components/JsonLd.tsx`: helpers for descriptions (clipped to about 155 characters at a word boundary) and JSON-LD.
 - Root layout: title template (`%s | Tech Scorecard`), default title and description without "Beta", `WebSite` and `Organization` JSON-LD, verification tags (emitted only when a token is set).
@@ -60,18 +65,21 @@ All in `src/`, pushed to main:
 - Footer link from Broadway Scorecard and West End Scorecard (one shared footer component, followed link, wording "From the makers of Broadway Scorecard").
 
 ### Structured data policy (checked against Google's review snippet docs, 2026-10-22)
+
 Google's review snippet guidelines say: "Don't aggregate reviews or ratings from other websites." Tech Scorecard's score is built from other sites' reviews, so the pages emit no `AggregateRating`, no `Review` and no `ratingValue`. The score still appears in titles, descriptions and page text. Do not add rating markup later without re-reading that page; the risk is a manual action, not just an ignored snippet.
 `Product` markup is also left out on purpose: Google requires an offer, review or rating on it, and the site has no first-party reviews.
 
 ## 4. Prioritized plan
 
 ### Now (this week)
+
 1. Verify the site in Google Search Console and Bing Webmaster Tools (owner steps below), submit `sitemap.xml`.
 2. Request indexing for `/`, `/best/`, the 7 indexable category pages and the 5 newest products via the URL Inspection tool.
 3. Keep the Broadway Scorecard and West End Scorecard footer links (done): they give the new domain its first crawl path from an established site.
 4. After the sibling card (BRO-5959) adds products, re-check `npm run build` output: titles under about 65 characters, descriptions about 155, one canonical each.
 
 ### Next (weeks 2 to 6)
+
 5. Add a "newest reviews" or changelog block on the home page so crawlers see fresh content, and set real `lastModified` dates per page in the sitemap.
 6. Per-product Open Graph images (name + score) so shared links look specific.
 7. Move fonts to `next/font`; fix the contrast warnings.
@@ -80,6 +88,7 @@ Google's review snippet guidelines say: "Don't aggregate reviews or ratings from
 10. Earn first links honestly: Broadway Scorecard's own pages where relevant, a post about the method, directories and communities where the owner is already active.
 
 ### Later (months)
+
 11. Keep every new product on the same day as release, because a freshly released product's "review score" queries have little competition.
 12. Watch Search Console queries; double down on the pages that get impressions, fold or noindex the ones that stay unindexed.
 13. Only consider rating markup if Google's policy changes, and only after reading the then-current docs.
@@ -96,6 +105,7 @@ Google's review snippet guidelines say: "Don't aggregate reviews or ratings from
 Verification needs a token only the owner's Google or Microsoft account can generate, so it cannot be shipped ahead of time. The site is ready: pasting the token into `src/config/seo.ts` and pushing adds the meta tag.
 
 Google Search Console:
+
 1. Open https://search.google.com/search-console and sign in with the account that should own the site.
 2. Add property, choose **URL prefix**, enter `https://www.thetechscorecard.com/`.
 3. Choose the **HTML tag** method and copy the `content="..."` value (just the token).
@@ -103,6 +113,7 @@ Google Search Console:
 5. In Sitemaps, submit `sitemap.xml`.
 
 Bing Webmaster Tools:
+
 1. Open https://www.bing.com/webmasters and sign in.
 2. Choose **Import from Google Search Console** once the Google property is verified. This verifies Bing automatically and needs no second tag.
 3. If importing is not offered, add the site manually, pick the **HTML Meta Tag** method, and put the `content` value in `BING_SITE_VERIFICATION` in `src/config/seo.ts`.

@@ -22,7 +22,9 @@ function mergeOutlets(outlets, newOutlets, incoming, label) {
   for (const o of newOutlets) {
     // Same id, or the same outlet under another id (same name and site). Two outlets can share
     // a site (Digital Foundry and Eurogamer both on eurogamer.net), so a site alone is not a match.
-    const clash = outlets.find((x) => x.id === o.id || (bare(x.domain) === bare(o.domain) && normName(x.name) === normName(o.name)));
+    const clash = outlets.find(
+      (x) => x.id === o.id || (bare(x.domain) === bare(o.domain) && normName(x.name) === normName(o.name)),
+    );
     if (!clash) {
       outlets.push({ id: o.id, name: o.name, tier: o.tier, domain: o.domain });
     } else if (clash.id === o.id) {
@@ -30,7 +32,9 @@ function mergeOutlets(outlets, newOutlets, incoming, label) {
       // Same outlet publishing on another site: record the extra host.
       // A different name under the same id is a mistake, not a second site.
       if (normName(clash.name) !== normName(o.name)) {
-        throw new Error(`${label}: outlet id "${o.id}" is "${clash.name}" (${clash.domain}), not "${o.name}" (${o.domain})`);
+        throw new Error(
+          `${label}: outlet id "${o.id}" is "${clash.name}" (${clash.domain}), not "${o.name}" (${o.domain})`,
+        );
       }
       clash.altDomains = [...new Set([...(clash.altDomains || []), bare(o.domain)])];
     } else {
@@ -47,7 +51,9 @@ function mergeOutlets(outlets, newOutlets, incoming, label) {
 function provisionalScore(review) {
   const band = review.rating ? ratingToBand(review.rating) : null;
   if (!band) return review.score;
-  return Number.isFinite(review.score) ? Math.min(band.ceiling, Math.max(band.floor, review.score)) : Math.round((band.floor + band.ceiling) / 2);
+  return Number.isFinite(review.score)
+    ? Math.min(band.ceiling, Math.max(band.floor, review.score))
+    : Math.round((band.floor + band.ceiling) / 2);
 }
 
 /**
@@ -71,7 +77,8 @@ function applyImport(data, file, label = 'import') {
 
   const appendOnly = !file.product && !!file.productId;
   const product = file.product ? structuredClone(file.product) : products.find((p) => p.id === file.productId);
-  if (!product || !product.id || !Array.isArray(incoming)) throw new Error(`${label}: needs product.id (or an existing productId) and reviews[]`);
+  if (!product || !product.id || !Array.isArray(incoming))
+    throw new Error(`${label}: needs product.id (or an existing productId) and reviews[]`);
 
   mergeOutlets(outlets, file.newOutlets || [], incoming, label);
   for (const r of incoming) {

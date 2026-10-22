@@ -1,4 +1,16 @@
 {
   "categories": ["phone", "foldable", "tablet", "laptop", "headphones", "watch", "console", "wearable"],
-  "artKinds": ["phone", "foldable", "flip", "tablet", "laptop", "headphones", "earbuds", "watch", "console", "glasses", "headset"]
+  "artKinds": [
+    "phone",
+    "foldable",
+    "flip",
+    "tablet",
+    "laptop",
+    "headphones",
+    "earbuds",
+    "watch",
+    "console",
+    "glasses",
+    "headset"
+  ]
 }

@@ -9,12 +9,21 @@ const SIZE = {
 
 export function ScoreBadge({ score, size = 'md' }: { score: number | null; size?: keyof typeof SIZE }) {
   if (score == null) {
-    return <div className={`score-badge score-none ${SIZE[size]}`} title="Not enough critic reviews yet">TBD</div>;
+    return (
+      <div className={`score-badge score-none ${SIZE[size]}`} title="Not enough critic reviews yet">
+        TBD
+      </div>
+    );
   }
   const rounded = Math.round(score);
   const tier = getScoreTier(rounded);
   return (
-    <div className={`score-badge ${tier.badgeClass} ${SIZE[size]}`} role="img" title={tier.label} aria-label={`Score ${rounded}, ${tier.label}`}>
+    <div
+      className={`score-badge ${tier.badgeClass} ${SIZE[size]}`}
+      role="img"
+      title={tier.label}
+      aria-label={`Score ${rounded}, ${tier.label}`}
+    >
       {rounded}
     </div>
   );

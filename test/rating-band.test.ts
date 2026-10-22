@@ -37,7 +37,10 @@ describe('ratingToBand', () => {
     expect(ratingToBand('2%')).toEqual({ floor: 0, ceiling: 7 });
   });
 
-  it.each([null, undefined, '', 'A+', 'Editors Choice', '6/5', '6 stars', '4/0', '-1/5', '4.5'])('rejects %s', (rating) => {
-    expect(ratingToBand(rating as string)).toBeNull();
-  });
+  it.each([null, undefined, '', 'A+', 'Editors Choice', '6/5', '6 stars', '4/0', '-1/5', '4.5'])(
+    'rejects %s',
+    (rating) => {
+      expect(ratingToBand(rating as string)).toBeNull();
+    },
+  );
 });

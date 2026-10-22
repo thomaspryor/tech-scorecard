@@ -43,11 +43,11 @@ docs/             PIPELINE.md (how to add products), SEO-PLAN.md
 
 Types live in `src/lib/data-types.ts`; the scripts reference the same types through JSDoc.
 
-| File | One record is | Key fields |
-|---|---|---|
-| `data/products.json` | a product | `id`, `slug`, `category`, `releaseDate`, `launchPrice`, `criticsTake`, `loved[]`, `gripes[]`, `specs[]`, `art` (colors for the drawn device illustration) |
-| `data/reviews.json` | one outlet's review of one product | `productId`, `outletId`, `url`, `date`, `rating` (as published, e.g. `"4.5/5"`, or `null`), `score` (0-100), `scoreSource` (`rating` or `text`), `excerpt` (verbatim, at most 45 words), `scoreBand`, `modelScores`, `scoreReason` |
-| `data/outlets.json` | a publication | `id`, `name`, `tier` (1-4), `domain`, `altDomains[]` |
+| File                 | One record is                      | Key fields                                                                                                                                                                                                                         |
+| -------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data/products.json` | a product                          | `id`, `slug`, `category`, `releaseDate`, `launchPrice`, `criticsTake`, `loved[]`, `gripes[]`, `specs[]`, `art` (colors for the drawn device illustration)                                                                          |
+| `data/reviews.json`  | one outlet's review of one product | `productId`, `outletId`, `url`, `date`, `rating` (as published, e.g. `"4.5/5"`, or `null`), `score` (0-100), `scoreSource` (`rating` or `text`), `excerpt` (verbatim, at most 45 words), `scoreBand`, `modelScores`, `scoreReason` |
+| `data/outlets.json`  | a publication                      | `id`, `name`, `tier` (1-4), `domain`, `altDomains[]`                                                                                                                                                                               |
 
 `scripts/lib/validate.js` enforces the rules that keep the data honest, and the build refuses
 to run if any fail: unique ids and slugs, known categories, real calendar dates, https links
@@ -94,14 +94,14 @@ npx serve out        # preview the production build
 CI (`.github/workflows/ci.yml`) runs typecheck, lint, the unit tests and the build on every
 push and pull request.
 
-| Script | What it does |
-|---|---|
-| `npm run validate` | Data checks only (also runs automatically before `build`) |
-| `npm test` | Vitest: rating bands, tier weights and boundaries, validator rules, importer merge |
-| `node scripts/import-product.js <file.json>...` | Merge researched products into `data/` |
-| `python3 scripts/verify-quotes.py [id,...]` | Fetch each review page and confirm the excerpt appears word for word |
-| `node scripts/score-reviews.js --only=<id>` | Place reviews inside their bands (needs `OPENAI_API_KEY`, `GEMINI_API_KEY`) |
-| `python3 scripts/drop-reviews.py <productId/outletId>...` | Remove reviews, e.g. after a failed quote check |
+| Script                                                    | What it does                                                                       |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `npm run validate`                                        | Data checks only (also runs automatically before `build`)                          |
+| `npm test`                                                | Vitest: rating bands, tier weights and boundaries, validator rules, importer merge |
+| `node scripts/import-product.js <file.json>...`           | Merge researched products into `data/`                                             |
+| `python3 scripts/verify-quotes.py [id,...]`               | Fetch each review page and confirm the excerpt appears word for word               |
+| `node scripts/score-reviews.js --only=<id>`               | Place reviews inside their bands (needs `OPENAI_API_KEY`, `GEMINI_API_KEY`)        |
+| `python3 scripts/drop-reviews.py <productId/outletId>...` | Remove reviews, e.g. after a failed quote check                                    |
 
 ## Adding a product
 

@@ -36,7 +36,11 @@ describe('applyImport: replace mode', () => {
   it('does not mutate its input', () => {
     const data = validData();
     const before = JSON.stringify(data);
-    const file = { product: product(), reviews: [review({ score: 10 })], newOutlets: [outlet({ id: 'wired', name: 'Wired', domain: 'wired.com' })] };
+    const file = {
+      product: product(),
+      reviews: [review({ score: 10 })],
+      newOutlets: [outlet({ id: 'wired', name: 'Wired', domain: 'wired.com' })],
+    };
     const fileBefore = JSON.stringify(file);
     applyImport(data, file);
     expect(JSON.stringify(data)).toBe(before);
@@ -44,7 +48,9 @@ describe('applyImport: replace mode', () => {
   });
 
   it('rejects a file with neither a product nor a known productId', () => {
-    expect(() => applyImport(validData(), { productId: 'ghost', reviews: [] }, 'f.json')).toThrow(/f.json: needs product.id/);
+    expect(() => applyImport(validData(), { productId: 'ghost', reviews: [] }, 'f.json')).toThrow(
+      /f.json: needs product.id/,
+    );
     expect(() => applyImport(validData(), { product: product() } as never, 'f.json')).toThrow(/reviews\[\]/);
   });
 });
@@ -82,7 +88,10 @@ describe('applyImport: outlets', () => {
   });
 
   it('keeps two outlets that share a site but have different names', () => {
-    const file = { ...base(), newOutlets: [outlet({ id: 'verge-deals', name: 'Verge Deals', domain: 'theverge.com' })] };
+    const file = {
+      ...base(),
+      newOutlets: [outlet({ id: 'verge-deals', name: 'Verge Deals', domain: 'theverge.com' })],
+    };
     const { data: next } = applyImport(validData(), file);
     expect(next.outlets.map((o) => o.id)).toContain('verge-deals');
   });
@@ -90,7 +99,10 @@ describe('applyImport: outlets', () => {
   it('records a second site for the same outlet as an alternate domain', () => {
     const file = { ...base(), newOutlets: [outlet({ domain: 'www.vox.com' })] };
     const { data: next } = applyImport(validData(), file);
-    expect(next.outlets.find((o) => o.id === 'the-verge')).toMatchObject({ domain: 'theverge.com', altDomains: ['vox.com'] });
+    expect(next.outlets.find((o) => o.id === 'the-verge')).toMatchObject({
+      domain: 'theverge.com',
+      altDomains: ['vox.com'],
+    });
   });
 
   it('refuses an existing id reused for a different outlet', () => {
@@ -101,7 +113,12 @@ describe('applyImport: outlets', () => {
 
 describe('importAll', () => {
   it('returns the merged data when the result validates', () => {
-    const files = [{ label: 'a.json', content: { productId: 'test-phone', reviews: [review({ outletId: 'cnet', url: 'https://www.cnet.com/x' })] } }];
+    const files = [
+      {
+        label: 'a.json',
+        content: { productId: 'test-phone', reviews: [review({ outletId: 'cnet', url: 'https://www.cnet.com/x' })] },
+      },
+    ];
     const res = importAll({ ...validData(), reviews: [] }, files, categories);
     expect(res.errors).toEqual([]);
     expect(res.data?.reviews).toHaveLength(1);
@@ -109,7 +126,10 @@ describe('importAll', () => {
 
   it('returns errors and no data when any file leaves the data invalid, so nothing is written', () => {
     const good = { label: 'good.json', content: { product: product({ id: 'p2', slug: 'p2' }), reviews: [] } };
-    const bad = { label: 'bad.json', content: { productId: 'p2', reviews: [review({ outletId: 'cnet', url: 'http://cnet.com/x' })] } };
+    const bad = {
+      label: 'bad.json',
+      content: { productId: 'p2', reviews: [review({ outletId: 'cnet', url: 'http://cnet.com/x' })] },
+    };
     const res = importAll(validData(), [good, bad], categories);
     expect(res.data).toBeUndefined();
     expect(res.errors.join('\n')).toMatch(/url must be https/);

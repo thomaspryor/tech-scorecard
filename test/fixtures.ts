@@ -47,6 +47,15 @@ export function validData() {
   return {
     products: [product()],
     outlets: [outlet(), outlet({ id: 'cnet', name: 'CNET', domain: 'cnet.com' })],
-    reviews: [review(), review({ outletId: 'cnet', url: 'https://www.cnet.com/reviews/test-phone/', rating: null, scoreSource: 'text', score: 80 })],
+    reviews: [
+      review(),
+      review({
+        outletId: 'cnet',
+        url: 'https://www.cnet.com/reviews/test-phone/',
+        rating: null,
+        scoreSource: 'text',
+        score: 80,
+      }),
+    ],
   };
 }

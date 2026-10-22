@@ -9,10 +9,16 @@ import { organizationLd, websiteLd } from '@/lib/seo';
 import { BING_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION, SITE_URL } from '@/config/seo';
 
 // Downloaded at build time and served from our own domain: no render-blocking request to Google.
-const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], display: 'swap', variable: '--font-inter' });
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 const DEFAULT_TITLE = 'Tech Scorecard: tech reviews combined into one critic score';
-const DEFAULT_DESCRIPTION = 'Professional reviews of new phones, laptops, headphones, watches and more, combined into one weighted 0-100 critic score. Every review links to the original.';
+const DEFAULT_DESCRIPTION =
+  'Professional reviews of new phones, laptops, headphones, watches and more, combined into one weighted 0-100 critic score. Every review links to the original.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

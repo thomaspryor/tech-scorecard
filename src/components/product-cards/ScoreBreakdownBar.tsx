@@ -6,10 +6,16 @@ export function ScoreBreakdownBar({ breakdown }: { breakdown: Record<TierKey, nu
   const present = TIER_ORDER.filter((k) => breakdown[k] > 0);
   return (
     <div>
-      <div className="flex h-2 w-full overflow-hidden rounded-full bg-surface-overlay" role="img"
-        aria-label={present.map((k) => `${breakdown[k]} ${BREAKDOWN_LABELS[k].label}`).join(', ')}>
+      <div
+        className="flex h-2 w-full overflow-hidden rounded-full bg-surface-overlay"
+        role="img"
+        aria-label={present.map((k) => `${breakdown[k]} ${BREAKDOWN_LABELS[k].label}`).join(', ')}
+      >
         {present.map((k) => (
-          <div key={k} style={{ width: `${(breakdown[k] / total) * 100}%`, backgroundColor: BREAKDOWN_LABELS[k].color }} />
+          <div
+            key={k}
+            style={{ width: `${(breakdown[k] / total) * 100}%`, backgroundColor: BREAKDOWN_LABELS[k].color }}
+          />
         ))}
       </div>
       <div className="mt-1.5 flex flex-wrap justify-between gap-x-4 gap-y-1 text-xs text-ink-muted">

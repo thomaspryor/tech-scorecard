@@ -8,7 +8,10 @@ export default function NotFound() {
       <p className="mx-auto mt-3 max-w-[50ch] leading-relaxed text-ink-muted">
         The link may be old, or the gadget may not be on the site yet. Try the full list instead.
       </p>
-      <Link href="/" className="mt-6 inline-flex min-h-11 items-center rounded-pill bg-ink px-6 text-sm font-semibold text-white hover:opacity-90">
+      <Link
+        href="/"
+        className="mt-6 inline-flex min-h-11 items-center rounded-pill bg-ink px-6 text-sm font-semibold text-white hover:opacity-90"
+      >
         See all products
       </Link>
     </div>

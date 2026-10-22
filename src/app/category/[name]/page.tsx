@@ -42,7 +42,14 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description,
     alternates: { canonical: url },
     robots: indexableCategories().includes(name) ? undefined : { index: false, follow: true },
-    openGraph: { siteName: 'Tech Scorecard', type: 'website', title, description, url, images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] },
+    openGraph: {
+      siteName: 'Tech Scorecard',
+      type: 'website',
+      title,
+      description,
+      url,
+      images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }],
+    },
     twitter: { card: 'summary_large_image', title, description },
   };
 }
@@ -60,41 +67,73 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
     <div className="mx-auto max-w-3xl px-4 pb-4 pt-6 sm:px-6">
       <JsonLd
         data={[
-          breadcrumbLd([{ name: 'Home', path: '/' }, { name: plural, path }]),
-          itemListLd(`Best ${plural} ${BEST_YEAR}`, list.map((p) => ({ name: p.name, path: `/product/${p.slug}/` }))),
+          breadcrumbLd([
+            { name: 'Home', path: '/' },
+            { name: plural, path },
+          ]),
+          itemListLd(
+            `Best ${plural} ${BEST_YEAR}`,
+            list.map((p) => ({ name: p.name, path: `/product/${p.slug}/` })),
+          ),
         ]}
       />
       <nav aria-label="Breadcrumb" className="mb-4 text-sm text-ink-faint">
-        <Link href="/" className="hover:text-ink">Home</Link>
+        <Link href="/" className="hover:text-ink">
+          Home
+        </Link>
         <span className="mx-2">/</span>
         <span className="text-ink">{plural}</span>
       </nav>
 
-      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">Best {plural} of {BEST_YEAR}, ranked by critic score</h1>
+      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">
+        Best {plural} of {BEST_YEAR}, ranked by critic score
+      </h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
-        Ranked by the weighted average of {reviews} professional reviews.
-        The top rated is the {top.name} at {Math.round(top.criticScore)}/100. Each score blends reviews from major tech outlets, with bigger outlets
+        Ranked by the weighted average of {reviews} professional reviews. The top rated is the {top.name} at{' '}
+        {Math.round(top.criticScore)}/100. Each score blends reviews from major tech outlets, with bigger outlets
         counting more; every review links to the original article.{' '}
-        <Link href="/methodology/" className="font-semibold text-brand-ink underline underline-offset-2">How scores work</Link>
+        <Link href="/methodology/" className="font-semibold text-brand-ink underline underline-offset-2">
+          How scores work
+        </Link>
       </p>
 
       <ol className="mt-6 space-y-3">
         {list.map((p, i) => (
           <li key={p.id} className="flex items-center gap-3">
-            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint" aria-label={`Rank ${i + 1}`}>{i + 1}</span>
-            <div className="min-w-0 flex-1"><ProductListCard product={p} heading="h2" /></div>
+            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint" aria-label={`Rank ${i + 1}`}>
+              {i + 1}
+            </span>
+            <div className="min-w-0 flex-1">
+              <ProductListCard product={p} heading="h2" />
+            </div>
           </li>
         ))}
       </ol>
 
       {others.length > 0 && (
         <section className="mt-10" aria-labelledby="more-cats">
-          <h2 id="more-cats" className="mb-3 text-lg font-bold">More categories</h2>
+          <h2 id="more-cats" className="mb-3 text-lg font-bold">
+            More categories
+          </h2>
           <ul className="flex flex-wrap gap-2 text-sm">
             {others.map((c) => (
-              <li key={c}><Link href={`/category/${c}/`} className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink">{CATEGORY_PLURAL[c]}</Link></li>
+              <li key={c}>
+                <Link
+                  href={`/category/${c}/`}
+                  className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
+                >
+                  {CATEGORY_PLURAL[c]}
+                </Link>
+              </li>
             ))}
-            <li><Link href="/best/" className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink">Best of {BEST_YEAR} overall</Link></li>
+            <li>
+              <Link
+                href="/best/"
+                className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
+              >
+                Best of {BEST_YEAR} overall
+              </Link>
+            </li>
           </ul>
         </section>
       )}

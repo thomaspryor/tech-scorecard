@@ -11,6 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...indexableCategories().map((c) => ({ url: `${BASE}/category/${c}/` })),
     { url: `${BASE}/methodology/` },
     { url: `${BASE}/about/` },
-    ...getAllProducts().map((p) => ({ url: `${BASE}/product/${p.slug}/`, lastModified: p.latestReviewDate ?? undefined })),
+    ...getAllProducts().map((p) => ({
+      url: `${BASE}/product/${p.slug}/`,
+      lastModified: p.latestReviewDate ?? undefined,
+    })),
   ];
 }

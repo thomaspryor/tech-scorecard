@@ -1,5 +1,16 @@
 export type Category = 'phone' | 'foldable' | 'tablet' | 'laptop' | 'headphones' | 'watch' | 'console' | 'wearable';
-export type ArtKind = 'phone' | 'foldable' | 'flip' | 'tablet' | 'laptop' | 'headphones' | 'earbuds' | 'watch' | 'console' | 'glasses' | 'headset';
+export type ArtKind =
+  | 'phone'
+  | 'foldable'
+  | 'flip'
+  | 'tablet'
+  | 'laptop'
+  | 'headphones'
+  | 'earbuds'
+  | 'watch'
+  | 'console'
+  | 'glasses'
+  | 'headset';
 
 export interface Spec {
   label: string;

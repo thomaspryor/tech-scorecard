@@ -19,7 +19,8 @@ function loadCategories() {
 /** @returns {DataSet} */
 function loadData(dir = DATA_DIR) {
   const out = {};
-  for (const [key, file] of Object.entries(DATA_FILES)) out[key] = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+  for (const [key, file] of Object.entries(DATA_FILES))
+    out[key] = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
   return out;
 }
 

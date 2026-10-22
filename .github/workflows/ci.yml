@@ -28,6 +28,8 @@ jobs:
         run: npm run typecheck
       - name: Lint
         run: npm run lint
+      - name: Formatting
+        run: npm run format:check
       - name: Unit tests
         run: npm test
       - name: Build (validates data, then static export)

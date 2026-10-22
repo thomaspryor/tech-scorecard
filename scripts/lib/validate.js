@@ -40,9 +40,11 @@ function validateData({ products, reviews, outlets, categories }) {
 
   for (const p of products) {
     if (!isIsoDate(p.releaseDate)) errors.push(`product ${p.id}: bad releaseDate`);
-    for (const k of ['criticsTake', 'loved', 'gripes', 'specs', 'art']) if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
+    for (const k of ['criticsTake', 'loved', 'gripes', 'specs', 'art'])
+      if (!p[k]) errors.push(`product ${p.id}: missing ${k}`);
     if (!categories.categories.includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
-    if (p.art && !categories.artKinds.includes(p.art.kind)) errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
+    if (p.art && !categories.artKinds.includes(p.art.kind))
+      errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
   }
 
   const seen = new Set();
@@ -61,11 +63,13 @@ function validateData({ products, reviews, outlets, categories }) {
       // The link must go to the outlet the review is credited to (catches a swapped or pasted-wrong URL).
       const host = bareHost(new URL(r.url).hostname);
       const domains = [outlet.domain, ...(outlet.altDomains || [])].map(bareHost);
-      if (!domains.some((d) => host === d || host.endsWith(`.${d}`))) errors.push(`${at}: url host ${host} is not ${domains.join(' or ')}`);
+      if (!domains.some((d) => host === d || host.endsWith(`.${d}`)))
+        errors.push(`${at}: url host ${host} is not ${domains.join(' or ')}`);
     }
 
     if (!isIsoDate(r.date)) errors.push(`${at}: bad date`);
-    if (!(Number.isInteger(r.score) && r.score >= 0 && r.score <= 100)) errors.push(`${at}: score must be an integer 0-100`);
+    if (!(Number.isInteger(r.score) && r.score >= 0 && r.score <= 100))
+      errors.push(`${at}: score must be an integer 0-100`);
     if (!['rating', 'text'].includes(r.scoreSource)) errors.push(`${at}: scoreSource must be rating|text`);
 
     if (r.scoreSource === 'rating') {
@@ -73,15 +77,19 @@ function validateData({ products, reviews, outlets, categories }) {
       const band = r.rating ? ratingToBand(r.rating) : null;
       if (!r.rating) errors.push(`${at}: scoreSource "rating" needs a rating`);
       else if (!band) errors.push(`${at}: cannot parse rating "${r.rating}"`);
-      else if (r.score < band.floor || r.score > band.ceiling) errors.push(`${at}: score ${r.score} is outside the ${r.rating} band ${band.floor}-${band.ceiling}`);
+      else if (r.score < band.floor || r.score > band.ceiling)
+        errors.push(`${at}: score ${r.score} is outside the ${r.rating} band ${band.floor}-${band.ceiling}`);
       else if (r.scoreBand && (r.scoreBand[0] !== band.floor || r.scoreBand[1] !== band.ceiling)) {
-        errors.push(`${at}: stored scoreBand ${r.scoreBand} does not match the ${r.rating} band; re-run score-reviews.js`);
+        errors.push(
+          `${at}: stored scoreBand ${r.scoreBand} does not match the ${r.rating} band; re-run score-reviews.js`,
+        );
       }
     }
     if (r.scoreSource === 'text' && r.rating) errors.push(`${at}: text-scored review must not carry a rating`);
 
     const words = (r.excerpt || '').trim().split(/\s+/).filter(Boolean).length;
-    if (words === 0 || words > MAX_EXCERPT_WORDS) errors.push(`${at}: excerpt must be 1-${MAX_EXCERPT_WORDS} words (has ${words})`);
+    if (words === 0 || words > MAX_EXCERPT_WORDS)
+      errors.push(`${at}: excerpt must be 1-${MAX_EXCERPT_WORDS} words (has ${words})`);
   });
 
   return errors;

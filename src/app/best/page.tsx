@@ -23,7 +23,14 @@ export function generateMetadata(): Metadata {
     title,
     description,
     alternates: { canonical: '/best/' },
-    openGraph: { siteName: 'Tech Scorecard', type: 'website', title, description, url: '/best/', images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] },
+    openGraph: {
+      siteName: 'Tech Scorecard',
+      type: 'website',
+      title,
+      description,
+      url: '/best/',
+      images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }],
+    },
     twitter: { card: 'summary_large_image', title, description },
   };
 }
@@ -36,34 +43,58 @@ export default function BestPage() {
     <div className="mx-auto max-w-3xl px-4 pb-4 pt-6 sm:px-6">
       <JsonLd
         data={[
-          breadcrumbLd([{ name: 'Home', path: '/' }, { name: `Best of ${BEST_YEAR}`, path: '/best/' }]),
-          itemListLd(`Best-reviewed tech of ${BEST_YEAR}`, top.map((p) => ({ name: p.name, path: `/product/${p.slug}/` }))),
+          breadcrumbLd([
+            { name: 'Home', path: '/' },
+            { name: `Best of ${BEST_YEAR}`, path: '/best/' },
+          ]),
+          itemListLd(
+            `Best-reviewed tech of ${BEST_YEAR}`,
+            top.map((p) => ({ name: p.name, path: `/product/${p.slug}/` })),
+          ),
         ]}
       />
       <nav aria-label="Breadcrumb" className="mb-4 text-sm text-ink-faint">
-        <Link href="/" className="hover:text-ink">Home</Link>
+        <Link href="/" className="hover:text-ink">
+          Home
+        </Link>
         <span className="mx-2">/</span>
         <span className="text-ink">Best of {BEST_YEAR}</span>
       </nav>
       <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">Best-reviewed tech of {BEST_YEAR}</h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
-        The {top.length} highest critic scores across every category we track, from {all.reduce((n, p) => n + p.reviewCount, 0)} professional reviews.
-        A score is a weighted average of published reviews.{' '}
-        <Link href="/methodology/" className="font-semibold text-brand-ink underline underline-offset-2">How scores work</Link>
+        The {top.length} highest critic scores across every category we track, from{' '}
+        {all.reduce((n, p) => n + p.reviewCount, 0)} professional reviews. A score is a weighted average of published
+        reviews.{' '}
+        <Link href="/methodology/" className="font-semibold text-brand-ink underline underline-offset-2">
+          How scores work
+        </Link>
       </p>
       <ol className="mt-6 space-y-3">
         {top.map((p, i) => (
           <li key={p.id} className="flex items-center gap-3">
-            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint" aria-label={`Rank ${i + 1}`}>{i + 1}</span>
-            <div className="min-w-0 flex-1"><ProductListCard product={p} heading="h2" /></div>
+            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint" aria-label={`Rank ${i + 1}`}>
+              {i + 1}
+            </span>
+            <div className="min-w-0 flex-1">
+              <ProductListCard product={p} heading="h2" />
+            </div>
           </li>
         ))}
       </ol>
       <section className="mt-10" aria-labelledby="by-cat">
-        <h2 id="by-cat" className="mb-3 text-lg font-bold">Best by category</h2>
+        <h2 id="by-cat" className="mb-3 text-lg font-bold">
+          Best by category
+        </h2>
         <ul className="flex flex-wrap gap-2 text-sm">
           {cats.map((c) => (
-            <li key={c}><Link href={`/category/${c}/`} className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink">Best {CATEGORY_PLURAL[c].toLowerCase()}</Link></li>
+            <li key={c}>
+              <Link
+                href={`/category/${c}/`}
+                className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
+              >
+                Best {CATEGORY_PLURAL[c].toLowerCase()}
+              </Link>
+            </li>
           ))}
         </ul>
       </section>

@@ -83,7 +83,7 @@ describe('computeProduct', () => {
     review({ productId: 'other', outletId: 'a', score: 10, date: '2026-10-01' }),
   ];
 
-  it('only uses the product\'s own reviews and attaches outlet and weight', () => {
+  it("only uses the product's own reviews and attaches outlet and weight", () => {
     const cp = computeProduct(p, reviews, outlets);
     expect(cp.reviewCount).toBe(5);
     expect(cp.reviews.every((r) => r.productId === 'p1')).toBe(true);
@@ -110,6 +110,8 @@ describe('computeProduct', () => {
   });
 
   it('fails loudly on a review from an unknown outlet', () => {
-    expect(() => computeProduct(p, [review({ productId: 'p1', outletId: 'nope' })], outlets)).toThrow(/Unknown outlet "nope"/);
+    expect(() => computeProduct(p, [review({ productId: 'p1', outletId: 'nope' })], outlets)).toThrow(
+      /Unknown outlet "nope"/,
+    );
   });
 });

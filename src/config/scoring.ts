@@ -8,7 +8,7 @@ export const TIER_WEIGHTS: Record<1 | 2 | 3 | 4, number> = {
 
 export const TIER_DESCRIPTIONS: Record<1 | 2 | 3 | 4, string> = {
   1: 'Major national outlets with full-time reviews staff (The Verge, WSJ, CNET, Engadget, Wired)',
-  2: 'Large dedicated tech publications (Tom\'s Guide, TechRadar, PCMag, ZDNET, Digital Trends)',
+  2: "Large dedicated tech publications (Tom's Guide, TechRadar, PCMag, ZDNET, Digital Trends)",
   3: 'Specialist outlets and general-interest publications (GSMArena, Pocket-lint, Popular Mechanics, Daily Mail)',
   4: 'Blogs, newsletters and smaller outlets',
 };

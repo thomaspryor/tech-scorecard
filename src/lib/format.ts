@@ -20,12 +20,24 @@ export function formatPrice(usd: number | null): string | null {
 }
 
 export const CATEGORY_LABEL: Record<Category, string> = {
-  phone: 'Phone', foldable: 'Foldable', tablet: 'Tablet', laptop: 'Laptop',
-  headphones: 'Headphones', watch: 'Watch', console: 'Console', wearable: 'Wearable',
+  phone: 'Phone',
+  foldable: 'Foldable',
+  tablet: 'Tablet',
+  laptop: 'Laptop',
+  headphones: 'Headphones',
+  watch: 'Watch',
+  console: 'Console',
+  wearable: 'Wearable',
 };
 export const CATEGORY_PLURAL: Record<Category, string> = {
-  phone: 'Phones', foldable: 'Foldables', tablet: 'Tablets', laptop: 'Laptops',
-  headphones: 'Headphones', watch: 'Watches', console: 'Consoles', wearable: 'Wearables',
+  phone: 'Phones',
+  foldable: 'Foldables',
+  tablet: 'Tablets',
+  laptop: 'Laptops',
+  headphones: 'Headphones',
+  watch: 'Watches',
+  console: 'Consoles',
+  wearable: 'Wearables',
 };
 /** Display order for filters; the same list validate-data.js checks against. */
 export const CATEGORY_ORDER = categories.categories as Category[];

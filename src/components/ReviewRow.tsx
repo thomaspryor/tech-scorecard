@@ -12,7 +12,9 @@ export function ReviewRow({ review }: { review: ScoredReview }) {
           <span className="font-bold">{review.outlet.name}</span>
           <OutletTierChip tier={review.outlet.tier} />
           {review.editorsChoice && (
-            <span className="rounded bg-amber-100 px-1.5 py-[1px] text-[11px] font-semibold text-amber-800">★ Editors&apos; Choice</span>
+            <span className="rounded bg-amber-100 px-1.5 py-[1px] text-[11px] font-semibold text-amber-800">
+              ★ Editors&apos; Choice
+            </span>
           )}
           <span className="ml-auto text-xs text-ink-faint">{formatDate(review.date)}</span>
         </div>
@@ -23,14 +25,28 @@ export function ReviewRow({ review }: { review: ScoredReview }) {
             {review.critic ? `By ${review.critic}` : 'Staff review'}
             {' · '}
             {review.rating ? (
-              <span className="font-medium text-ink-muted"
-                title={review.scoreBand ? `A ${review.rating} rating means ${review.scoreBand[0]}-${review.scoreBand[1]}; placed at ${review.score} by reading the review` : undefined}>
+              <span
+                className="font-medium text-ink-muted"
+                title={
+                  review.scoreBand
+                    ? `A ${review.rating} rating means ${review.scoreBand[0]}-${review.scoreBand[1]}; placed at ${review.score} by reading the review`
+                    : undefined
+                }
+              >
                 Rated {review.rating}
               </span>
-            ) : <span title="This outlet does not publish a score; we scored the review's verdict from its text.">Unrated, scored from text</span>}
+            ) : (
+              <span title="This outlet does not publish a score; we scored the review's verdict from its text.">
+                Unrated, scored from text
+              </span>
+            )}
           </span>
-          <a href={review.url} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-brand-ink hover:underline">
+          <a
+            href={review.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-brand-ink hover:underline"
+          >
             Full review <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -46,14 +62,18 @@ export function ReviewList({ reviews }: { reviews: ScoredReview[] }) {
   const rest = reviews.slice(VISIBLE);
   return (
     <div>
-      {head.map((r) => <ReviewRow key={`${r.outletId}|${r.url}`} review={r} />)}
+      {head.map((r) => (
+        <ReviewRow key={`${r.outletId}|${r.url}`} review={r} />
+      ))}
       {rest.length > 0 && (
         <details className="more">
           <summary className="mt-2 cursor-pointer rounded-xl border border-line bg-surface-overlay py-3 text-center text-sm font-semibold text-brand-ink hover:border-line-strong">
             <span className="more-closed">Show {rest.length} more reviews ▾</span>
             <span className="more-open">Show fewer ▴</span>
           </summary>
-          {rest.map((r) => <ReviewRow key={`${r.outletId}|${r.url}`} review={r} />)}
+          {rest.map((r) => (
+            <ReviewRow key={`${r.outletId}|${r.url}`} review={r} />
+          ))}
         </details>
       )}
     </div>

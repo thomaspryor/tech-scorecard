@@ -9,13 +9,31 @@ export function Footer() {
         <Logo className="text-xl" />
         <p>Professional tech reviews, combined into one score.</p>
         <p className="text-xs text-ink-faint">
-          Beta: we&apos;re still adding gadgets and reviews. Scores are tier-weighted averages of published reviews; excerpts link to the original articles.
+          Beta: we&apos;re still adding gadgets and reviews. Scores are tier-weighted averages of published reviews;
+          excerpts link to the original articles.
         </p>
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-sm">
-          <Link href="/best/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">Best of {BEST_YEAR}</Link>
-          <Link href="/methodology/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">Methodology</Link>
-          <Link href="/about/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">About</Link>
-          <Link href="/privacy/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">Privacy</Link>
+          <Link href="/best/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">
+            Best of {BEST_YEAR}
+          </Link>
+          <Link
+            href="/methodology/"
+            className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink"
+          >
+            Methodology
+          </Link>
+          <Link
+            href="/about/"
+            className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink"
+          >
+            About
+          </Link>
+          <Link
+            href="/privacy/"
+            className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink"
+          >
+            Privacy
+          </Link>
         </nav>
       </div>
     </footer>

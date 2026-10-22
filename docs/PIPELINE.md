@@ -16,6 +16,7 @@ credibility rests on every quote and score being traceable to a real review.
    Verify on https://www.thetechscorecard.com.
 
 Lessons from the first 30 products (2026-10-22):
+
 - Subagent WebSearch budgets run out; tell researchers to guess outlet URLs directly
   (curl + JSON-LD `ratingValue`/`bestRating`/`author`/`datePublished`) and to use WebSearch sparingly.
   A second gap-fill pass for The Verge, CNET, Wired, PCMag, ZDNET, Mashable, Engadget, Tom's Guide,
@@ -33,14 +34,17 @@ Tech Scorecard aggregates professional reviews into one tier-weighted 0-100 crit
 Existing files for reference (read them, do not edit): /home/user/tech-scorecard/data/products.json (shape of a product), data/reviews.json (shape of a review), data/outlets.json (outlet ids + tiers).
 
 ## Collect 12-18 professional reviews of the product
+
 Prioritize: The Verge, Wired, CNET, Engadget, WSJ, Tom's Guide, TechRadar, PCMag, ZDNET, Mashable, Gizmodo, Digital Trends, Android Central / 9to5Mac / 9to5Google / Macworld, Trusted Reviews, Tech Advisor, Expert Reviews, GSMArena, Pocket-lint, Stuff, T3, What Hi-Fi?, Notebookcheck. Only include a review if you opened the outlet's page (or the outlet's own RSS/JSON-LD). Skip video-only reviews. If an outlet reviewed two models jointly with one score, include it with a "note". If the score is clearly for a sibling model, add note "Joint review of X and Y; the outlet's score is published for Y."
 
 Each review object (exact keys):
 {"productId": "<id>", "outletId": "<id from outlets.json, or a new id>", "critic": "Name" or null, "url": "https://...", "date": "YYYY-MM-DD", "rating": "4.5/5" | "8/10" | "90%" | null, "score": int, "scoreSource": "rating"|"text", "excerpt": "verbatim sentence, max 40 words", "editorsChoice": true (only if the page shows the award; else omit), "note": "..." (optional)}
+
 - rating is the outlet's own published score, written as "a/b" or "NN%". score = round(a/b*100). Unrated: rating null, scoreSource "text", score = your estimate of the verdict (90+ rave, 80-89 very positive, 70-79 positive with caveats, 60-69 mixed-positive, 50-59 mixed, <50 negative).
 - url host must be the outlet's own domain.
 
 ## Product object (exact keys)
+
 {"id","slug" (same as id),"name","brand","category": one of "phone", "foldable", "tablet", "laptop", "headphones", "watch", "console", "wearable","releaseDate":"YYYY-MM-DD" (US on-sale date),"launchPrice": number (USD base model),"officialUrl": manufacturer product page you opened,
 "criticsTake": 2-3 plain sentences summarizing the critical consensus (no em dashes, no "not X but Y", no hype words),
 "loved": 3-4 short strings, "gripes": 3-5 short strings (things several reviewers said),
@@ -48,6 +52,7 @@ Each review object (exact keys):
 "art": {"kind": same as category (use "foldable" for book folds, "flip" for clamshells, "earbuds" for in-ear audio, "glasses" for smart glasses, "headset" for VR/AR headsets), "body": "<hex of a real launch color>", "accent": "<hex screen color>", "backdrop": ["<very light hex>", "<light hex>"]}}
 
 ## Output
+
 Write ONE file: research/<id>.json (gitignored scratch folder) containing
 {"product": {...}, "reviews": [...], "newOutlets": [{"id","name","tier": 1-4,"domain"}], "sourceNotes": ["how each review was verified, one line each"]}
 Tiers: 1 = major national outlets with full-time reviews staff (Verge, WSJ, CNET, Engadget, Wired, NYT); 2 = large tech publications (Tom's Guide, TechRadar, PCMag, ZDNET, Digital Trends, Mashable, Gizmodo, CNN, Guardian...); 3 = specialist + general-interest (GSMArena, Pocket-lint, Notebookcheck, Daily Mail...); 4 = blogs/small.
@@ -55,6 +60,7 @@ Then validate: `python3 -c "import json;d=json.load(open('<file>'));print(len(d[
 Final reply to me: under 80 words: product name, release date, price, number of reviews, any problems. Do not paste the JSON.
 
 ## Extra rules for this batch
+
 - Category-appropriate outlets are fine (e.g. RTINGS, SoundGuys and What Hi-Fi? for audio; IGN, GameSpot, Eurogamer and Digital Foundry for consoles; Laptop Mag, Notebookcheck and Tom's Hardware for laptops; DC Rainmaker for watches; UploadVR and Road to VR for headsets). Add any outlet not in outlets.json to newOutlets with a sensible tier.
 - Product pages from the outlet only; skip "hands-on", "first look" and video-only pieces. A review must give a final verdict.
 - If the product as named does not exist or has fewer than 6 published reviews, pick the closest widely reviewed real product (e.g. the prior generation) and say so in your final reply.

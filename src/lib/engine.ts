@@ -30,7 +30,11 @@ export function computeCriticScore(reviews: ScoredReview[]): number | null {
   return den === 0 ? null : num / den;
 }
 
-export function computeProduct(product: Product, allReviews: Review[], outlets: Record<string, Outlet>): ComputedProduct {
+export function computeProduct(
+  product: Product,
+  allReviews: Review[],
+  outlets: Record<string, Outlet>,
+): ComputedProduct {
   const reviews: ScoredReview[] = allReviews
     .filter((r) => r.productId === product.id)
     .map((r) => {
