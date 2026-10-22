@@ -364,5 +364,17 @@
     "name": "GB News",
     "tier": 4,
     "domain": "gbnews.com"
+  },
+  {
+    "id": "bgr",
+    "name": "BGR",
+    "tier": 3,
+    "domain": "bgr.com"
+  },
+  {
+    "id": "hardwarezone",
+    "name": "HardwareZone",
+    "tier": 3,
+    "domain": "hardwarezone.com.sg"
   }
 ]

@@ -555,5 +555,76 @@
         "#dfe5d5"
       ]
     }
+  },
+  {
+    "id": "galaxy-z-flip-8",
+    "slug": "galaxy-z-flip-8",
+    "name": "Galaxy Z Flip 8",
+    "brand": "Samsung",
+    "category": "foldable",
+    "releaseDate": "2026-08-07",
+    "launchPrice": 1199.99,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-z-flip8/",
+    "criticsTake": "Critics call the Galaxy Z Flip 8 Samsung's most refined flip phone, with a thinner and lighter build, fast Snapdragon performance in the US model and a cover screen that now runs full apps more easily. Most reviews also note that the cameras, battery size and slow charging are unchanged from the Flip 7. The $100 price increase leads The Verge, CNET, Android Central and Tom's Guide to tell Flip 7 owners to skip it.",
+    "loved": [
+      "Thinner, lighter build that slips easily into a pocket",
+      "More capable cover screen with easier access to full apps",
+      "Fast Snapdragon 8 Elite Gen 5 performance in the US model",
+      "Sharp main camera and hands-free FlexCam shooting"
+    ],
+    "gripes": [
+      "$100 more than the Flip 7 at $1,199.99",
+      "Same cameras as last year, with no telephoto",
+      "Same 4,300mAh battery and slow 25W charging",
+      "Few real upgrades over the Flip 7",
+      "Still only IP48 dust resistance"
+    ],
+    "specs": [
+      {
+        "label": "Inner display",
+        "value": "6.9-inch Dynamic AMOLED 2X, 2520 x 1080, 1-120Hz, up to 2,600 nits"
+      },
+      {
+        "label": "Cover display",
+        "value": "4.1-inch Super AMOLED FlexWindow, 120Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Elite Gen 5 for Galaxy (US); Exynos 2600 in other regions"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP wide + 12MP ultra wide (no telephoto)"
+      },
+      {
+        "label": "Front camera",
+        "value": "10MP on the inner screen"
+      },
+      {
+        "label": "Battery",
+        "value": "4,300mAh silicon-carbon, 25W wired, 15W wireless"
+      },
+      {
+        "label": "Weight",
+        "value": "180 g"
+      },
+      {
+        "label": "Thickness",
+        "value": "6.1 mm unfolded; IP48"
+      },
+      {
+        "label": "Storage/Price",
+        "value": "12GB RAM; 256GB from $1,199.99, or 512GB"
+      }
+    ],
+    "art": {
+      "kind": "flip",
+      "body": "#eebac6",
+      "accent": "#c9728d",
+      "backdrop": [
+        "#fdf3f6",
+        "#f5dde4"
+      ]
+    }
   }
 ]

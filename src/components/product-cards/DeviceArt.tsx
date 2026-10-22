@@ -11,7 +11,23 @@ export function DeviceArt({ art, name, className = '' }: { art: Product['art']; 
       <rect width="300" height="400" fill={art.backdrop[0]} />
       <path d="M0 400 L300 120 L300 400 Z" fill={art.backdrop[1]} />
       <ellipse cx="150" cy="352" rx="110" ry="10" fill="#000" opacity="0.10" />
-      {art.kind === 'foldable' ? (
+      {art.kind === 'flip' ? (
+        <g>
+          {/* open clamshell: tall screen with a horizontal hinge */}
+          <rect x="62" y="56" width="108" height="276" rx="20" fill={art.body} />
+          <rect x="68" y="62" width="96" height="264" rx="15" fill="#14141c" />
+          <path d="M68 77 a15 15 0 0 1 15 -15 H164 V190 L68 300 Z" fill={art.accent} opacity="0.85" />
+          <line x1="68" y1="194" x2="164" y2="194" stroke="#fff" strokeOpacity="0.2" strokeWidth="1.5" />
+          <circle cx="116" cy="74" r="3.5" fill="#0b0b10" />
+          {/* closed: square with cover screen */}
+          <rect x="150" y="176" width="112" height="138" rx="20" fill={art.body} stroke="#000" strokeOpacity="0.08" />
+          <rect x="158" y="184" width="96" height="84" rx="14" fill="#14141c" />
+          <rect x="158" y="184" width="96" height="84" rx="14" fill={art.accent} opacity="0.35" />
+          <circle cx="176" cy="202" r="9" fill="#0b0b10" stroke="#3a3a44" strokeWidth="2.5" />
+          <circle cx="200" cy="202" r="9" fill="#0b0b10" stroke="#3a3a44" strokeWidth="2.5" />
+          <rect x="150" y="296" width="112" height="6" fill="#000" opacity="0.10" />
+        </g>
+      ) : art.kind === 'foldable' ? (
         <g>
           <rect x="52" y="92" width="172" height="232" rx="16" fill={art.body} />
           <rect x="58" y="98" width="160" height="220" rx="11" fill="#14141c" />

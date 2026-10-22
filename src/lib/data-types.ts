@@ -18,7 +18,7 @@ export interface Product {
   loved: string[];
   gripes: string[];
   specs: Spec[];
-  art: { kind: 'phone' | 'foldable'; body: string; accent: string; backdrop: [string, string] };
+  art: { kind: 'phone' | 'foldable' | 'flip'; body: string; accent: string; backdrop: [string, string] };
 }
 
 export interface Review {
