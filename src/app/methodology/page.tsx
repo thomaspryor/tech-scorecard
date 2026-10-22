@@ -49,11 +49,11 @@ export default function MethodologyPage() {
         <h2 className="section-label">3. The score sets the label</h2>
         <ul className="mt-3 space-y-2 text-sm">
           {RANGES.map(([key, range]) => (
-            <li key={key} className="flex items-center gap-3">
+            <li key={key} className="flex flex-wrap items-center gap-x-3 gap-y-1">
               <span className={`score-badge ${SCORE_TIERS[key].badgeClass} h-8 w-8 rounded-md text-xs`}>{range.split('-')[0]}</span>
               <span className="w-28 shrink-0 font-semibold">{SCORE_TIERS[key].label}</span>
               <span className="w-16 shrink-0 tabular-nums text-ink-faint">{range}</span>
-              <span className="min-w-0 text-ink-muted">{SCORE_TIERS[key].blurb}</span>
+              <span className="min-w-0 basis-full pl-11 text-ink-muted sm:basis-auto sm:flex-1 sm:pl-0">{SCORE_TIERS[key].blurb}</span>
             </li>
           ))}
         </ul>

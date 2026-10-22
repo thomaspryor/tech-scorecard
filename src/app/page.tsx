@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getAllProducts, getTotals } from '@/lib/data';
 import { MiniProductCard, ProductListCard } from '@/components/product-cards';
 import { Logo } from '@/components/Header';
@@ -15,10 +16,14 @@ export default function HomePage() {
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6">
       <section className="pb-8 pt-12 sm:pt-16">
-        <h1><Logo className="text-5xl sm:text-7xl" /></h1>
-        <p className="mt-4 text-xl text-ink-muted sm:text-2xl">Every gadget. Every review. One score.</p>
+        <h1><Logo className="text-[clamp(32px,11vw,44px)] sm:text-7xl" beta="lg" /></h1>
+        <p className="mt-4 text-xl text-ink-muted sm:text-2xl">Professional tech reviews, combined into one score.</p>
         <p className="mt-1 text-base text-ink-faint sm:text-lg">
-          {totals.products} products. {totals.reviews} critic reviews from {totals.outlets} outlets. And counting.
+          {totals.products} phones and {totals.reviews} critic reviews from {totals.outlets} outlets so far. More gadgets and reviews are on the way.
+        </p>
+        <p className="mt-3 max-w-[60ch] text-sm text-ink-muted">
+          Each score is a weighted average of professional reviews, with bigger outlets counting more.{' '}
+          <Link href="/methodology/" className="font-semibold text-brand-ink underline underline-offset-2">How scores work</Link>
         </p>
       </section>
 
@@ -39,7 +44,7 @@ export default function HomePage() {
         {FILTERS.map((f) => (
           <input key={f.id} type="radio" name="cat" id={`cat-${f.id}`} className={`f-${f.id}`} defaultChecked={f.id === 'all'} />
         ))}
-        <div className="filter-labels mb-4 flex gap-2" role="radiogroup" aria-label="Filter by type">
+        <div className="filter-labels mb-4 flex gap-2">
           {FILTERS.map((f) => (
             <label key={f.id} htmlFor={`cat-${f.id}`} className={`lbl-${f.id}`}>{f.label}</label>
           ))}

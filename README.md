@@ -1,6 +1,6 @@
 # Tech Scorecard (proof of concept)
 
-Every gadget. Every review. One score. A light-theme port of the Broadway Scorecard
+Professional tech reviews, combined into one score (beta). A light-theme port of the Broadway Scorecard
 layout and scoring method to tech reviews, starting with three phones:
 iPhone Duo, iPhone 18 Pro and Samsung Galaxy Z Fold 8.
 

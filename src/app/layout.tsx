@@ -5,13 +5,13 @@ import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.thetechscorecard.com'),
-  title: 'Tech Scorecard: every gadget, every review, one score',
-  description: 'Tech Scorecard aggregates professional reviews of new phones and gadgets into one weighted critic score.',
+  title: 'Tech Scorecard (Beta): tech reviews, one score',
+  description: 'Tech Scorecard (beta) combines professional reviews of new phones into one weighted critic score.',
   openGraph: {
     siteName: 'Tech Scorecard',
     type: 'website',
-    title: 'Tech Scorecard: every gadget, every review, one score',
-    description: 'Every major tech review of the newest phones, averaged into one critic score.',
+    title: 'Tech Scorecard (Beta): tech reviews, one score',
+    description: 'Reviews of the newest phones from major tech outlets, combined into one critic score. In beta, with more gadgets on the way.',
   },
   twitter: { card: 'summary_large_image' },
 };

@@ -22,7 +22,11 @@ for (const f of files) {
   const { product, reviews: incoming, newOutlets = [] } = JSON.parse(fs.readFileSync(f, 'utf8'));
   if (!product || !product.id || !Array.isArray(incoming)) throw new Error(`${f}: needs product.id and reviews[]`);
   for (const o of newOutlets) {
-    const clash = outlets.find((x) => x.id === o.id || x.domain === o.domain);
+    const bare = (d) => d.replace(/^www\./, '');
+    const clash = outlets.find((x) => x.id === o.id || bare(x.domain) === bare(o.domain));
+    if (clash && clash.id === o.id && bare(clash.domain) !== bare(o.domain)) {
+      throw new Error(`${f}: outlet id "${o.id}" already exists with domain ${clash.domain}, not ${o.domain}`);
+    }
     if (!clash) outlets.push({ id: o.id, name: o.name, tier: o.tier, domain: o.domain });
     else if (clash.id !== o.id) {
       // Same domain under another id: point the reviews at the existing outlet.
@@ -34,7 +38,15 @@ for (const f of files) {
   console.log(`${product.id}: ${incoming.length} reviews`);
 }
 
+// Write, validate, and roll back on failure so bad data never stays on disk.
+const backup = Object.fromEntries(['products.json', 'reviews.json', 'outlets.json'].map((f) => [f, fs.readFileSync(path.join(DATA, f), 'utf8')]));
 save('products.json', products);
 save('reviews.json', reviews);
 save('outlets.json', outlets);
-execFileSync('node', [path.join(__dirname, 'validate-data.js')], { stdio: 'inherit' });
+try {
+  execFileSync('node', [path.join(__dirname, 'validate-data.js')], { stdio: 'inherit' });
+} catch {
+  for (const [f, text] of Object.entries(backup)) fs.writeFileSync(path.join(DATA, f), text);
+  console.error('Validation failed: data/ restored to its previous state.');
+  process.exit(1);
+}

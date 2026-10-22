@@ -66,7 +66,7 @@
   .by-score:checked ~ .sort-labels .lbl-score,
   .by-date:checked ~ .sort-labels .lbl-date { @apply text-ink font-semibold; }
   .by-score:focus-visible ~ .sort-labels .lbl-score,
-  .by-date:focus-visible ~ .sort-labels .lbl-date { @apply outline outline-2 outline-brand rounded; }
+  .by-date:focus-visible ~ .sort-labels .lbl-date { @apply outline outline-2 outline-brand-ink rounded; }
   .sort-toggle .list-date { display: none; }
   .by-date:checked ~ .list-score { display: none; }
   .by-date:checked ~ .list-date { display: block; }
@@ -74,15 +74,16 @@
   /* Home category filter: pure CSS radios, same approach as the sort toggle */
   .cat-filter { position: relative; }
   .cat-filter > input { position: absolute; opacity: 0; pointer-events: none; }
-  .filter-labels label { @apply cursor-pointer rounded-pill border border-line bg-surface px-4 py-1.5 text-sm font-semibold text-ink-muted hover:border-line-strong; }
+  .filter-labels label { @apply cursor-pointer rounded-pill border border-line bg-surface px-4 py-2.5 text-sm font-semibold text-ink-muted hover:border-line-strong; }
   .f-all:checked ~ .filter-labels .lbl-all,
   .f-phone:checked ~ .filter-labels .lbl-phone,
   .f-foldable:checked ~ .filter-labels .lbl-foldable { @apply border-ink bg-ink text-white; }
   .f-all:focus-visible ~ .filter-labels .lbl-all,
   .f-phone:focus-visible ~ .filter-labels .lbl-phone,
-  .f-foldable:focus-visible ~ .filter-labels .lbl-foldable { @apply outline outline-2 outline-offset-2 outline-brand; }
-  .f-phone:checked ~ .cat-list [data-cat='foldable'],
-  .f-foldable:checked ~ .cat-list [data-cat='phone'] { display: none; }
+  .f-foldable:focus-visible ~ .filter-labels .lbl-foldable { @apply outline outline-2 outline-offset-2 outline-brand-ink; }
+  /* Show only the chosen category, so a new category never leaks into another filter */
+  .f-phone:checked ~ .cat-list > :not([data-cat='phone']),
+  .f-foldable:checked ~ .cat-list > :not([data-cat='foldable']) { display: none; }
 
   details.more > summary { list-style: none; }
   details.more > summary::-webkit-details-marker { display: none; }

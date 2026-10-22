@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!p) return {};
   const score = p.criticScore != null ? ` ${Math.round(p.criticScore)}/100` : '';
   const title = `${p.name} reviews:${score} critic score | Tech Scorecard`;
-  return { title, description: p.criticsTake, openGraph: { title, description: p.criticsTake, url: `/product/${p.slug}/`, images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] } };
+  return { title, description: p.criticsTake, openGraph: { siteName: 'Tech Scorecard', type: 'website', title, description: p.criticsTake, url: `/product/${p.slug}/`, images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] } };
 }
 
 export default async function ProductPage({ params }: { params: Promise<Params> }) {
