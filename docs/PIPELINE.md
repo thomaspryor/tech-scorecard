@@ -12,7 +12,7 @@ credibility rests on every quote and score being traceable to a real review.
 4. **Score**: `node scripts/score-reviews.js --only=<id>` (needs OPENAI_API_KEY + GEMINI_API_KEY).
    For many products run one `--dry-run --only=<id>` per product in parallel to warm
    `.cache/scores`, then one plain `node scripts/score-reviews.js` to write everything.
-5. **Photo (optional)**: only for a brand marked ALLOWED in `docs/IMAGES.md`, run `node scripts/add-product-image.js`. Otherwise the drawing stays.
+5. **Photo (optional)**: run `node scripts/add-product-image.js` with a photo from the brand's own newsroom or product page (see `docs/IMAGES.md`). Without one the site shows a plain brand tile.
 6. **Build + push**: `npm run build` (prebuild runs validate-data), push main; Vercel deploys in ~1 min.
    Verify on https://www.thetechscorecard.com.
 

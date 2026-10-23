@@ -1067,6 +1067,13 @@
         "#f2f3f5",
         "#e0e3e8"
       ]
+    },
+    "image": {
+      "src": "/images/products/dell-xps-14-2026/main.webp",
+      "thumb": "/images/products/dell-xps-14-2026/thumb.webp",
+      "alt": "Dell XPS 14 (2026), product photo",
+      "credit": "Dell",
+      "sourceUrl": "https://www.dell.com/en-us/shop/dell-laptops/xps-14/spd/xps-da14260-laptop"
     }
   },
   {
@@ -1529,6 +1536,13 @@
         "#f2f4fb",
         "#dde2f3"
       ]
+    },
+    "image": {
+      "src": "/images/products/motorola-razr-ultra-2026/main.webp",
+      "thumb": "/images/products/motorola-razr-ultra-2026/thumb.webp",
+      "alt": "Motorola Razr Ultra (2026), product photo",
+      "credit": "Motorola",
+      "sourceUrl": "https://www.motorola.com/us/en/p/phones/razr/razr-ultra-2026/pmipmjk44m3"
     }
   },
   {
@@ -1836,6 +1850,13 @@
         "#f4f5f7",
         "#e3e6ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/sony-wh-1000xm6/main.webp",
+      "thumb": "/images/products/sony-wh-1000xm6/thumb.webp",
+      "alt": "Sony WH-1000XM6, product photo",
+      "credit": "Sony",
+      "sourceUrl": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-b"
     }
   },
   {
@@ -2605,6 +2626,13 @@
         "#eef1f5",
         "#dde3ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/razr-2026/main.webp",
+      "thumb": "/images/products/razr-2026/thumb.webp",
+      "alt": "Motorola Razr (2026), product photo",
+      "credit": "Motorola",
+      "sourceUrl": "https://www.motorola.com/us/en/p/phones/razr/razr-2026/pmipmjl44m7"
     }
   },
   {
@@ -2677,6 +2705,13 @@
         "#fbf1f7",
         "#f1d6e6"
       ]
+    },
+    "image": {
+      "src": "/images/products/moto-g-2026/main.webp",
+      "thumb": "/images/products/moto-g-2026/thumb.webp",
+      "alt": "Motorola Moto G (2026), product photo",
+      "credit": "Motorola",
+      "sourceUrl": "https://www.motorola.com/us/en/p/pmipmhz42mm"
     }
   },
   {
@@ -2748,6 +2783,13 @@
         "#f1f4fb",
         "#dbe3f3"
       ]
+    },
+    "image": {
+      "src": "/images/products/razr-fold-2026/main.webp",
+      "thumb": "/images/products/razr-fold-2026/thumb.webp",
+      "alt": "Motorola Razr Fold (2026), product photo",
+      "credit": "Motorola",
+      "sourceUrl": "https://www.motorola.com/us/en/p/phones/razr/motorola-razr-fold/pmipmjj43my"
     }
   },
   {
@@ -3206,6 +3248,13 @@
         "#f2f3f5",
         "#e0e3e8"
       ]
+    },
+    "image": {
+      "src": "/images/products/dell-xps-16-2026/main.webp",
+      "thumb": "/images/products/dell-xps-16-2026/thumb.webp",
+      "alt": "Dell XPS 16 (2026), product photo",
+      "credit": "Dell",
+      "sourceUrl": "https://www.dell.com/en-us/shop/dell-laptops/spd/xps16da16260"
     }
   },
   {
@@ -3742,6 +3791,13 @@
         "#f4f5f7",
         "#e1e3e8"
       ]
+    },
+    "image": {
+      "src": "/images/products/sony-wf-1000xm6/main.webp",
+      "thumb": "/images/products/sony-wf-1000xm6/thumb.webp",
+      "alt": "Sony WF-1000XM6, product photo",
+      "credit": "Sony",
+      "sourceUrl": "https://electronics.sony.com/audio/headphones/truly-wireless/p/wf1000xm6-b"
     }
   },
   {
@@ -4960,6 +5016,13 @@
         "#f4f5f6",
         "#e4e7ea"
       ]
+    },
+    "image": {
+      "src": "/images/products/sony-linkbuds-clip/main.webp",
+      "thumb": "/images/products/sony-linkbuds-clip/thumb.webp",
+      "alt": "Sony LinkBuds Clip, product photo",
+      "credit": "Sony",
+      "sourceUrl": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wflc900-g"
     }
   },
   {
@@ -5343,6 +5406,13 @@
         "#f6f6f7",
         "#e6e8eb"
       ]
+    },
+    "image": {
+      "src": "/images/products/nothing-phone-4a-pro/main.webp",
+      "thumb": "/images/products/nothing-phone-4a-pro/thumb.webp",
+      "alt": "Nothing Phone (4a) Pro, product photo",
+      "credit": "Nothing",
+      "sourceUrl": "https://us.nothing.tech/products/phone-4a-pro"
     }
   },
   {
@@ -6030,6 +6100,13 @@
         "#f6f6f4",
         "#e6e6e2"
       ]
+    },
+    "image": {
+      "src": "/images/products/nothing-headphone-a/main.webp",
+      "thumb": "/images/products/nothing-headphone-a/thumb.webp",
+      "alt": "Nothing Headphone (a), product photo",
+      "credit": "Nothing",
+      "sourceUrl": "https://nothing.tech/products/headphone-a"
     }
   },
   {
@@ -6101,6 +6178,13 @@
         "#f4f0fa",
         "#e4daf2"
       ]
+    },
+    "image": {
+      "src": "/images/products/msi-claw-8-ex-ai-plus/main.webp",
+      "thumb": "/images/products/msi-claw-8-ex-ai-plus/thumb.webp",
+      "alt": "MSI Claw 8 EX AI+, product photo",
+      "credit": "MSI",
+      "sourceUrl": "https://www.msi.com/Handheld/Claw-8-EX-AI-Plus-CG3EMX"
     }
   },
   {
@@ -6408,6 +6492,13 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-10-22"
+    "autoAdded": "2026-10-22",
+    "image": {
+      "src": "/images/products/headphone-1-pro/main.webp",
+      "thumb": "/images/products/headphone-1-pro/thumb.webp",
+      "alt": "Nothing Headphone (1) Pro, product photo",
+      "credit": "Nothing",
+      "sourceUrl": "https://us.nothing.tech/products/headphone-1-pro"
+    }
   }
 ]
