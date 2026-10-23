@@ -1601,6 +1601,13 @@
         "#f3f3f6",
         "#e1e3ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/nintendo-switch-2/main.webp",
+      "thumb": "/images/products/nintendo-switch-2/thumb.webp",
+      "alt": "Nintendo Switch 2, product photo",
+      "credit": "Nintendo",
+      "sourceUrl": "https://www.nintendo.com/us/gaming-systems/switch-2/features/"
     }
   },
   {
@@ -2891,6 +2898,13 @@
         "#f2f4f3",
         "#dfe5e2"
       ]
+    },
+    "image": {
+      "src": "/images/products/razer-blade-16-2026/main.webp",
+      "thumb": "/images/products/razer-blade-16-2026/thumb.webp",
+      "alt": "Razer Blade 16 (2026), product photo",
+      "credit": "Razer",
+      "sourceUrl": "https://www.razer.com/gaming-laptops/razer-blade-16"
     }
   },
   {
@@ -4245,6 +4259,13 @@
         "#f1f6f2",
         "#dbe8df"
       ]
+    },
+    "image": {
+      "src": "/images/products/even-realities-g2/main.webp",
+      "thumb": "/images/products/even-realities-g2/thumb.webp",
+      "alt": "Even Realities G2, product photo",
+      "credit": "Even Realities",
+      "sourceUrl": "https://www.evenrealities.com/products/g2"
     }
   },
   {
@@ -5358,6 +5379,13 @@
         "#f8f4f5",
         "#eadfe3"
       ]
+    },
+    "image": {
+      "src": "/images/products/kindle-scribe-colorsoft/main.webp",
+      "thumb": "/images/products/kindle-scribe-colorsoft/thumb.webp",
+      "alt": "Amazon Kindle Scribe Colorsoft, product photo",
+      "credit": "Amazon",
+      "sourceUrl": "https://www.aboutamazon.com/news/devices/new-amazon-kindle-scribe-color"
     }
   },
   {
@@ -5429,6 +5457,13 @@
         "#f2f2f4",
         "#e1e2e6"
       ]
+    },
+    "image": {
+      "src": "/images/products/macbook-pro-16-m5/main.webp",
+      "thumb": "/images/products/macbook-pro-16-m5/thumb.webp",
+      "alt": "Apple MacBook Pro 16-inch (M5 Pro / M5 Max), product photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/shop/buy-mac/macbook-pro/16-inch"
     }
   },
   {
@@ -6088,6 +6123,13 @@
         "#f4f6fa",
         "#e3e8f1"
       ]
+    },
+    "image": {
+      "src": "/images/products/viture-beast/main.webp",
+      "thumb": "/images/products/viture-beast/thumb.webp",
+      "alt": "Viture Beast XR Glasses, product photo",
+      "credit": "Viture",
+      "sourceUrl": "https://www.viture.com/beast"
     }
   },
   {
