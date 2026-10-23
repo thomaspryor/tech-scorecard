@@ -2976,6 +2976,13 @@
         "#f6f1e8",
         "#e9dfcc"
       ]
+    },
+    "image": {
+      "src": "/images/products/zenbook-a14-x2-elite/main.webp",
+      "thumb": "/images/products/zenbook-a14-x2-elite/thumb.webp",
+      "alt": "Asus Zenbook A14 with Snapdragon X2 Elite, product photo",
+      "credit": "ASUS",
+      "sourceUrl": "https://www.asus.com/us/laptops/for-home/zenbook/asus-zenbook-a14-ux3407/"
     }
   },
   {
@@ -3121,6 +3128,13 @@
         "#f1f4fa",
         "#dde4f1"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-a57/main.webp",
+      "thumb": "/images/products/galaxy-a57/thumb.webp",
+      "alt": "Samsung Galaxy A57, product photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://www.samsung.com/us/smartphones/galaxy-a57-5g/"
     }
   },
   {
@@ -4411,6 +4425,13 @@
         "#f4f6f9",
         "#e1e7ef"
       ]
+    },
+    "image": {
+      "src": "/images/products/pixel-watch-4/main.webp",
+      "thumb": "/images/products/pixel-watch-4/thumb.webp",
+      "alt": "Google Pixel Watch 4, product photo",
+      "credit": "Google",
+      "sourceUrl": "https://store.google.com/product/pixel_watch_4"
     }
   },
   {
@@ -5088,6 +5109,13 @@
         "#f3f4f6",
         "#e1e4e9"
       ]
+    },
+    "image": {
+      "src": "/images/products/rog-zephyrus-g14-2026/main.webp",
+      "thumb": "/images/products/rog-zephyrus-g14-2026/thumb.webp",
+      "alt": "Asus ROG Zephyrus G14 (2026), product photo",
+      "credit": "ASUS",
+      "sourceUrl": "https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2026-gu405/"
     }
   },
   {
@@ -5237,6 +5265,13 @@
         "#f4f2fa",
         "#e3e0f1"
       ]
+    },
+    "image": {
+      "src": "/images/products/galaxy-a37/main.webp",
+      "thumb": "/images/products/galaxy-a37/thumb.webp",
+      "alt": "Samsung Galaxy A37 5G, product photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://www.samsung.com/us/smartphones/galaxy-a37-5g/"
     }
   },
   {
@@ -5613,6 +5648,13 @@
         "#f4f5f8",
         "#e1e4ec"
       ]
+    },
+    "image": {
+      "src": "/images/products/fitbit-air/main.webp",
+      "thumb": "/images/products/fitbit-air/thumb.webp",
+      "alt": "Google Fitbit Air, product photo",
+      "credit": "Google",
+      "sourceUrl": "https://store.google.com/product/google_fitbit_air"
     }
   },
   {
@@ -5762,6 +5804,13 @@
         "#f6f1e8",
         "#e9dfcc"
       ]
+    },
+    "image": {
+      "src": "/images/products/zenbook-a16-x2/main.webp",
+      "thumb": "/images/products/zenbook-a16-x2/thumb.webp",
+      "alt": "Asus Zenbook A16 Snapdragon X2 Elite Extreme, product photo",
+      "credit": "ASUS",
+      "sourceUrl": "https://www.asus.com/us/laptops/for-home/zenbook/asus-zenbook-a16-ux3607/"
     }
   },
   {
