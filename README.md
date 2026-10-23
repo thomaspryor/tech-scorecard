@@ -44,11 +44,11 @@ docs/             PIPELINE.md (how to add products), SEO-PLAN.md, PORTING.md (ca
 Types live in `src/lib/data-types.ts`; the scripts reference the same types through JSDoc, and
 `tsconfig.scripts.json` checks them.
 
-| File                 | One record is                      | Key fields                                                                                                                                                                                                                         |
-| -------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `data/products.json` | a product                          | `id`, `slug`, `category`, `releaseDate`, `launchPrice`, `criticsTake`, `loved[]`, `gripes[]`, `specs[]`, `art` (colors for the drawn device illustration)                                                                          |
-| `data/reviews.json`  | one outlet's review of one product | `productId`, `outletId`, `url`, `date`, `rating` (as published, e.g. `"4.5/5"`, or `null`), `score` (0-100), `scoreSource` (`rating` or `text`), `excerpt` (verbatim, at most 45 words), `scoreBand`, `modelScores`, `scoreReason` |
-| `data/outlets.json`  | a publication                      | `id`, `name`, `tier` (1-4), `domain`, `altDomains[]`                                                                                                                                                                               |
+| File                 | One record is                      | Key fields                                                                                                                                                                                                                          |
+| -------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data/products.json` | a product                          | `id`, `slug`, `category`, `releaseDate`, `launchPrice`, `criticsTake`, `loved[]`, `gripes[]`, `specs[]`, `art` (legacy colors from the old drawn illustration, no longer shown), `image` (optional press photo, see docs/IMAGES.md) |
+| `data/reviews.json`  | one outlet's review of one product | `productId`, `outletId`, `url`, `date`, `rating` (as published, e.g. `"4.5/5"`, or `null`), `score` (0-100), `scoreSource` (`rating` or `text`), `excerpt` (verbatim, at most 45 words), `scoreBand`, `modelScores`, `scoreReason`  |
+| `data/outlets.json`  | a publication                      | `id`, `name`, `tier` (1-4), `domain`, `altDomains[]`                                                                                                                                                                                |
 
 `scripts/lib/validate.js` enforces the rules that keep the data honest, and the build refuses
 to run if any fail: unique ids and slugs, known categories, real calendar dates, https links

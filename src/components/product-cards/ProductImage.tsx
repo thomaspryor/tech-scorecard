@@ -1,5 +1,4 @@
 import type { Product } from '@/lib/data-types';
-import { DeviceArt } from './DeviceArt';
 
 type Variant = 'hero' | 'thumb';
 
@@ -11,7 +10,7 @@ const SIZE: Record<Variant, { width: number; height: number }> = {
 };
 
 /**
- * The brand's press photo when the product has one, otherwise the drawn device.
+ * The brand's press photo when the product has one, otherwise a plain tile with the brand name.
  * `priority` marks the page's largest image (LCP); everything else loads lazily.
  */
 export function ProductImage({
@@ -20,13 +19,22 @@ export function ProductImage({
   priority = false,
   className = 'h-full w-full',
 }: {
-  product: Pick<Product, 'art' | 'name' | 'image'>;
+  product: Pick<Product, 'brand' | 'name' | 'image'>;
   variant?: Variant;
   priority?: boolean;
   className?: string;
 }) {
   const { image } = product;
-  if (!image) return <DeviceArt art={product.art} name={product.name} className={className} />;
+  if (!image)
+    return (
+      <div
+        role="img"
+        aria-label={`${product.name}, no photo yet`}
+        className={`${className} flex items-center justify-center bg-[#f4f4f6] p-2 text-center text-xs font-semibold uppercase tracking-wide text-ink-faint`}
+      >
+        {product.brand}
+      </div>
+    );
   const { width, height } = SIZE[variant];
   return (
     <div className={`${className} bg-white`}>
