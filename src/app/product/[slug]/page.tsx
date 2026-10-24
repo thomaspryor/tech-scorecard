@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description,
     alternates: { canonical: url },
-    ...socialMeta(title, description, url),
+    ...socialMeta(title, description, url, `${url}opengraph-image`),
   };
 }
 
