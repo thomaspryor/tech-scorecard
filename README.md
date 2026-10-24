@@ -168,8 +168,3 @@ In short:
 Review excerpts are short quotations from the credited publications and link to the original
 articles; they remain the property of their publishers. Full article text fetched for scoring
 is cached locally only and never committed.
-
-## License
-
-The code in this repository is MIT licensed (see `LICENSE`). The license covers the code
-only, not the review data, scores, outlet tiers or product images.
