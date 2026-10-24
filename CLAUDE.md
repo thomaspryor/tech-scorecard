@@ -11,6 +11,8 @@ The owner is not technical and does not review code, read diffs, or merge PRs. T
 3. Merge it yourself (squash) once green. Do not leave a draft or "waiting on review". This overrides the default of leaving PRs as drafts.
 4. Confirm the production deploy is READY on Vercel, not just that GitHub passed.
 5. Report in plain English: what changed, what the owner will see, anything they need to do (usually nothing). No PR jargon.
+6. For anything beyond a trivial edit, run `/ship-check` before pushing, then `/what-else` and `/wrap-up` at the end (commands in `.claude/commands/`).
+7. Your last line is always one of: `SAFE TO ARCHIVE`, `KEEP OPEN: <what you wait on>`, or `ACTION NEEDED FROM YOU: <one sentence>`. Use SAFE TO ARCHIVE only when it is merged, live and verified.
 
 ## Rules
 - Never publish unverified review scores or quotes. Every review links to the original (see `/methodology`).
