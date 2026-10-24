@@ -11,5 +11,5 @@ export const MIN_PRODUCTS_FOR_CATEGORY_PAGE = 2;
  * (HTML tag method, the content="..." value) or Bing Webmaster Tools here and
  * push. Empty means no tag is emitted. See docs/SEO-PLAN.md.
  */
-export const GOOGLE_SITE_VERIFICATION = '';
+export const GOOGLE_SITE_VERIFICATION = 'JDB7pNbIL03m08KK2SBrbhjOdUwYKm4bV3N1Glc5Bzo';
 export const BING_SITE_VERIFICATION = '';
