@@ -271,6 +271,7 @@ async function main() {
   fs.mkdirSync(OUT, { recursive: true });
   /** @type {string[]} */
   const files = [];
+  let failures = 0;
   // 1. New reviews for existing products: newest and least recently checked first.
   /** @param {Product} p */
   const recent = (p) =>
@@ -291,6 +292,7 @@ async function main() {
         reviews.filter((r) => r.productId === p.id),
       );
     } catch (e) {
+      failures++;
       console.error(`  failed: ${errText(e)}`);
       continue;
     }
@@ -310,9 +312,11 @@ async function main() {
         files.push(f);
       }
     } catch (e) {
+      failures++;
       console.error(`launch search failed: ${errText(e)}`);
     }
   }
+  if (failures) throw new Error(`Refresh incomplete: ${failures} search step(s) failed; no imports applied.`);
   console.log(`\n${files.length} import file(s)`);
   if (args['dry-run'] || !files.length) {
     if (!args['dry-run']) fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
