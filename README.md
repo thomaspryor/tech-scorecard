@@ -18,7 +18,7 @@ data/*.json  ──►  scripts/validate-data.js  ──►  next build (static 
 research ─► import-product.js ─► verify-quotes.py ─► score-reviews.js
 ```
 
-- **No server and no database.** The site is a Next.js 15 App Router project built with
+- **No server and no database.** The site is a Next.js 16 App Router project built with
   `output: 'export'`. Every page is static HTML generated at build time from the JSON files in
   `data/`. Vercel deploys each push to `main` in about a minute.
 - **Data is the source of truth.** Scores are never stored per product; `src/lib/engine.ts`
