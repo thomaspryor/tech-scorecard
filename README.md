@@ -162,8 +162,6 @@ In short:
   with curl; sites that block scripted requests fall back to the excerpt or need a manual check.
 - **Static means stale until rebuilt.** Scores update when the data changes and the site is
   redeployed, not in real time.
-- **`next lint` is deprecated** in Next.js 15.5. Moving to the ESLint CLI with a flat config is
-  a planned upgrade.
 
 ## Content
 

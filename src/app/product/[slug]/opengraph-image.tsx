@@ -62,7 +62,6 @@ export default async function Image({ params }: { params: Promise<Params> }) {
         }}
       >
         {photo ? (
-          // eslint-disable-next-line @next/next/no-img-element
           <img src={photo} alt="" style={{ maxWidth: 380, maxHeight: 494, objectFit: 'contain' }} />
         ) : (
           <div style={{ fontSize: 120, fontWeight: 800, color: '#a1a1aa' }}>{p.brand.slice(0, 2)}</div>
