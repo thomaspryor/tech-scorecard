@@ -145,8 +145,10 @@ In short:
 - **Plain JavaScript in `scripts/`.** The pipeline scripts run with plain `node`, with no build
   step. Their logic lives in small pure modules under `scripts/lib/`, typed with JSDoc against
   the TypeScript types, type-checked by `npm run typecheck` (`tsconfig.scripts.json`) and covered
-  by the unit tests. The two networked scripts, `score-reviews.js` and `refresh.js`, are not yet
-  under `checkJs`.
+  by the unit tests. Page fetching and HTML-to-text live in `scripts/lib/page.js` and the model
+  APIs in `scripts/lib/models.js`, shared by `score-reviews.js` and `refresh.js`; model calls use
+  `fetch` with the key in a header, never on a command line. `verify-quotes.py` keeps its own
+  Python copy of the quote normalization, kept in step with `normQuote` in `page.js`.
 
 ## Known limitations
 

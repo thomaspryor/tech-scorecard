@@ -8,6 +8,8 @@
     "scripts/import-product.js",
     "scripts/validate-data.js",
     "scripts/check-page-size.js",
+    "scripts/score-reviews.js",
+    "scripts/refresh.js",
     "src/lib/data-types.ts"
   ]
 }

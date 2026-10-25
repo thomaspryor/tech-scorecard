@@ -41,6 +41,8 @@ export interface Product {
   specs: Spec[];
   image?: ProductPhoto;
   art: { kind: ArtKind; body: string; accent: string; backdrop: [string, string] };
+  /** YYYY-MM-DD, set when scripts/refresh.js added the product as a new launch. */
+  autoAdded?: string;
 }
 
 export interface Review {

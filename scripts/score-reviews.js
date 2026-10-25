@@ -12,16 +12,22 @@ const path = require('path');
 const crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const { ratingToBand } = require('./lib/rating-band');
+const { DATA_DIR, loadData } = require('./lib/data-files');
+const { fetchPage, articleParagraphs, reviewPages } = require('./lib/page');
+const { OPENAI_MODEL, GEMINI_MODEL, openaiText, geminiText, parseJsonReply } = require('./lib/models');
+
+/** @typedef {import('../src/lib/data-types').Review} Review */
+/** @typedef {import('../src/lib/data-types').Product} Product */
+/** @typedef {import('../src/lib/data-types').Outlet} Outlet */
+/** @typedef {{floor: number, ceiling: number}} Band */
+/** @typedef {{score: number, reason?: string}} Placement */
 
 const ROOT = path.join(__dirname, '..');
-const DATA = path.join(ROOT, 'data');
+const DATA = DATA_DIR;
 const CACHE = path.join(ROOT, '.cache', 'review-text');
 const SCORE_CACHE = path.join(ROOT, '.cache', 'scores');
-const UA =
-  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
-const OPENAI_MODEL = 'gpt-5.4';
-const GEMINI_MODEL = 'gemini-3.1-pro-preview';
 
+/** @type {Record<string, string | true>} */
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
     const [k, v] = a.replace(/^--/, '').split('=');
@@ -30,43 +36,23 @@ const args = Object.fromEntries(
 );
 const only = args.only ? new Set(String(args.only).split(',')) : null;
 
-/** Article fetches only; model calls use fetch (see postJson). */
-function curl(argv) {
-  return execFileSync('curl', ['-sL', '-m', '90', ...argv], { maxBuffer: 64 * 1024 * 1024, encoding: 'utf8' });
-}
-
-/** Article paragraphs as plain text (multi-page GSMArena reviews are joined). Cached per URL. */
+/** Article paragraphs as plain text (multi-page GSMArena reviews are joined). Cached per URL. @param {string} url */
 function articleText(url) {
   fs.mkdirSync(CACHE, { recursive: true });
   const file = path.join(CACHE, crypto.createHash('md5').update(url).digest('hex') + '.txt');
   if (fs.existsSync(file)) return fs.readFileSync(file, 'utf8');
-  const pages = [url];
-  if (/gsmarena\.com/.test(url) && !/p\d+\.php$/.test(url))
-    for (let n = 2; n <= 9; n++) pages.push(url.replace('.php', `p${n}.php`));
+  const pages = reviewPages(url);
   let text = '';
   const reviewKey = path.basename(url).replace(/\.php$/, '');
   for (const u of pages) {
     let html = '';
-    // -f: an HTTP error (403, 404, 429) throws instead of returning an error page as "text".
     try {
-      html = curl(['-f', '-A', UA, u]);
+      html = fetchPage(u);
     } catch {
       break;
     }
     if (pages.length > 1 && u !== url && !html.includes(reviewKey)) break; // redirected off this review
-    html = html.replace(/<(script|style|noscript|nav|footer|aside)\b[\s\S]*?<\/\1>/gi, ' ');
-    const paras = [...html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
-      .map((m) =>
-        m[1]
-          .replace(/<[^>]+>/g, '')
-          .replace(/&nbsp;/g, ' ')
-          .replace(/&amp;/g, '&')
-          .replace(/&#8217;|&rsquo;/g, "'")
-          .replace(/&quot;|&#8220;|&#8221;|&ldquo;|&rdquo;/g, '"')
-          .replace(/\s+/g, ' ')
-          .trim(),
-      )
-      .filter((p) => p.length > 40);
+    const paras = articleParagraphs(html);
     if (pages.length > 1 && paras.length === 0 && u !== url) break;
     text += paras.join('\n') + '\n';
   }
@@ -78,6 +64,13 @@ function articleText(url) {
 const FENCE_OPEN = '<<<REVIEW_TEXT';
 const FENCE_CLOSE = 'REVIEW_TEXT>>>';
 
+/**
+ * @param {Review} r
+ * @param {Pick<Product, 'name' | 'brand'>} product
+ * @param {Pick<Outlet, 'name'>} outlet
+ * @param {Band} band
+ * @param {string} text the article, or '' when it could not be read
+ */
 function prompt(r, product, outlet, band, text) {
   const rated = !!r.rating;
   const head = `You score one professional tech review for a review aggregator.
@@ -111,7 +104,7 @@ const DISAGREEMENT_THRESHOLD = 15;
  * Combine the models' placements: their mean, clamped to the band. `disagree` is true when
  * both answered and they differ by more than DISAGREEMENT_THRESHOLD points.
  * @param {Record<string, {score: number}>} got
- * @param {{floor: number, ceiling: number}} band
+ * @param {Band} band
  */
 function combine(got, band) {
   const vals = Object.values(got).map((g) => g.score);
@@ -121,58 +114,25 @@ function combine(got, band) {
   return { score, disagree };
 }
 
+/**
+ * The model's placement from its reply, or null when the reply holds no numeric score.
+ * @param {unknown} s
+ * @returns {Placement | null}
+ */
 function parseJson(s) {
-  const m = String(s || '').match(/\{[\s\S]*\}/);
-  if (!m) return null;
-  try {
-    const o = JSON.parse(m[0]);
-    return Number.isFinite(o.score) ? o : null;
-  } catch {
-    return null;
-  }
+  const o = parseJsonReply(s);
+  return o && Number.isFinite(o.score) ? o : null;
 }
 
-// Model calls use fetch with the key in a header: a key on a curl command line can be
-// read from the process list and is echoed in execFileSync's error message.
-async function postJson(url, headers, body) {
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', ...headers },
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(90_000),
-  });
-  const out = await res.json().catch(() => ({}));
-  if (!res.ok || out.error) throw new Error(`HTTP ${res.status}: ${out.error?.message ?? res.statusText}`);
-  return out;
-}
+/** @param {string} p */
+const askOpenAI = async (p) => parseJson(await openaiText(p));
+/** @param {string} p */
+const askGemini = async (p) => parseJson(await geminiText(p));
 
-async function askOpenAI(p) {
-  const out = await postJson(
-    'https://api.openai.com/v1/chat/completions',
-    { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
-    {
-      model: OPENAI_MODEL,
-      messages: [{ role: 'user', content: p }],
-      response_format: { type: 'json_object' },
-    },
-  );
-  return parseJson(out.choices?.[0]?.message?.content);
-}
-
-async function askGemini(p) {
-  const out = await postJson(
-    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`,
-    { 'x-goog-api-key': process.env.GEMINI_API_KEY },
-    {
-      contents: [{ role: 'user', parts: [{ text: p }] }],
-      generationConfig: { temperature: 0, responseMimeType: 'application/json' },
-    },
-  );
-  return parseJson((out.candidates?.[0]?.content?.parts || []).map((x) => x.text || '').join(''));
-}
-
+/** @param {number} v @param {Band} b */
 const clamp = (v, b) => Math.min(b.ceiling, Math.max(b.floor, Math.round(v)));
 
+/** @param {string} backup reviews.json as it was before this run */
 function validateOrRestore(backup) {
   try {
     execFileSync('node', [path.join(__dirname, 'validate-data.js')], { stdio: 'inherit' });
@@ -183,23 +143,26 @@ function validateOrRestore(backup) {
   }
 }
 
-/** Not yet placed by both models, or placed inside a band the current rating no longer maps to. */
+/** Not yet placed by both models, or placed inside a band the current rating no longer maps to. @param {Review} r */
 function needsScoring(r) {
   if (!r.modelScores) return true;
   const band = r.rating ? ratingToBand(r.rating) : null;
   return !!(band && r.scoreBand && (r.scoreBand[0] !== band.floor || r.scoreBand[1] !== band.ceiling));
 }
 
-const API_KEYS = { openai: 'OPENAI_API_KEY', gemini: 'GEMINI_API_KEY' };
+const API_KEYS = /** @type {const} */ ({ openai: 'OPENAI_API_KEY', gemini: 'GEMINI_API_KEY' });
+/** @type {[keyof typeof API_KEYS, (p: string) => Promise<Placement | null>][]} */
+const MODELS = [
+  ['openai', askOpenAI],
+  ['gemini', askGemini],
+];
 
 async function main() {
-  const products = Object.fromEntries(
-    JSON.parse(fs.readFileSync(path.join(DATA, 'products.json'), 'utf8')).map((p) => [p.id, p]),
-  );
-  const outlets = Object.fromEntries(
-    JSON.parse(fs.readFileSync(path.join(DATA, 'outlets.json'), 'utf8')).map((o) => [o.id, o]),
-  );
+  const data = loadData();
+  const products = Object.fromEntries(data.products.map((p) => [p.id, p]));
+  const outlets = Object.fromEntries(data.outlets.map((o) => [o.id, o]));
   const backup = fs.readFileSync(path.join(DATA, 'reviews.json'), 'utf8');
+  /** @type {Review[]} */
   const reviews = JSON.parse(backup);
   let todo = reviews.filter((r) => (!only || only.has(r.productId)) && (args.force || needsScoring(r)));
   if (args.limit) todo = todo.slice(0, Number(args.limit));
@@ -221,17 +184,15 @@ async function main() {
       .update(`${r.url}|${r.rating}|${OPENAI_MODEL}|${GEMINI_MODEL}|${p}`)
       .digest('hex');
     const cacheFile = path.join(SCORE_CACHE, `${key}.json`);
+    /** @type {Record<string, Placement>} */
     const got = fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, 'utf8')) : {};
-    for (const [name, fn] of [
-      ['openai', askOpenAI],
-      ['gemini', askGemini],
-    ]) {
+    for (const [name, fn] of MODELS) {
       if (got[name] || !process.env[API_KEYS[name]]) continue;
       try {
         const o = await fn(p);
         if (o) got[name] = { score: clamp(o.score, band), reason: o.reason };
       } catch (e) {
-        console.error(`  ${name} failed: ${e.message.slice(0, 120)}`);
+        console.error(`  ${name} failed: ${String(/** @type {Error} */ (e).message).slice(0, 120)}`);
       }
     }
     fs.writeFileSync(cacheFile, JSON.stringify(got));
@@ -261,16 +222,20 @@ async function main() {
     if (!args['dry-run']) {
       // A human adjudication outranks the models while it still fits the band; if the rating
       // (and so the band) changed, the adjudication is dropped and the review needs a new look.
+      const adjudicated = r.adjudicatedScore;
       const keepAdjudication =
-        Number.isInteger(r.adjudicatedScore) && r.adjudicatedScore >= band.floor && r.adjudicatedScore <= band.ceiling;
-      if (!keepAdjudication && r.adjudicatedScore != null) {
+        typeof adjudicated === 'number' &&
+        Number.isInteger(adjudicated) &&
+        adjudicated >= band.floor &&
+        adjudicated <= band.ceiling;
+      if (!keepAdjudication && adjudicated != null) {
         console.log(
-          `  ${r.productId}/${r.outletId}: adjudication ${r.adjudicatedScore} no longer fits ${band.floor}-${band.ceiling}; dropped`,
+          `  ${r.productId}/${r.outletId}: adjudication ${adjudicated} no longer fits ${band.floor}-${band.ceiling}; dropped`,
         );
         delete r.adjudicatedScore;
         delete r.adjudicationReason;
       }
-      r.score = keepAdjudication ? r.adjudicatedScore : score;
+      r.score = keepAdjudication ? adjudicated : score;
       r.scoreBand = [band.floor, band.ceiling];
       // modelScores marks a review done, so only set it when both models answered;
       // a one-model score is published but retried on the next run.
@@ -292,7 +257,7 @@ async function main() {
     );
     for (const c of flagged) console.log(`  ${c.id} ${c.rating || 'unrated'}: ${c.models.join(' vs ')} -> ${c.after}`);
   }
-  const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
+  const mean = (/** @type {number[]} */ a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
   if (!args['dry-run'] && changes.length) validateOrRestore(backup);
   console.log(
     `\n${changes.length} scored, ${moved.length} changed; mean ${mean(changes.map((c) => c.before)).toFixed(1)} -> ${mean(changes.map((c) => c.after)).toFixed(1)}`,
