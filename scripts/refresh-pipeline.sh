@@ -14,7 +14,7 @@ IDS=$(cat "$OUT/touched.txt")
 python3 scripts/verify-quotes.py "$IDS" > "$OUT/verify.txt" || true
 cat "$OUT/verify.txt"
 DROP=$(grep -E '^(MISS|BLOCKED)' "$OUT/verify.txt" | awk '{print $2}' | grep -Fxf "$OUT/added.txt" || true)
-[ -z "$DROP" ] || python3 scripts/drop-reviews.py $DROP
+[ -z "$DROP" ] || node scripts/drop-reviews.js $DROP
 
 # A product added by the refresh needs at least 6 reviews left, or it is removed again.
 node -e "

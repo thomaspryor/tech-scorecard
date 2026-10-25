@@ -102,15 +102,15 @@ npx serve out        # preview the production build
 CI (`.github/workflows/ci.yml`) runs typecheck, lint, the Prettier check, the unit tests and the
 build on every push and pull request.
 
-| Script                                                    | What it does                                                                          |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `npm run validate`                                        | Data checks only (also runs automatically before `build`)                             |
-| `npm test`                                                | Vitest: rating bands, tier weights and boundaries, validator rules, importer merge    |
-| `node scripts/import-product.js <file.json>...`           | Merge researched products into `data/`                                                |
-| `python3 scripts/verify-quotes.py [id,...]`               | Fetch each review page and confirm the excerpt appears word for word                  |
-| `node scripts/score-reviews.js --only=<id>`               | Place reviews inside their bands (needs `OPENAI_API_KEY`, `GEMINI_API_KEY`)           |
-| `python3 scripts/drop-reviews.py <productId/outletId>...` | Remove reviews, e.g. after a failed quote check                                       |
-| `bash scripts/refresh-pipeline.sh`                        | Weekly refresh: find new reviews and launches, verify, score, build (see PIPELINE.md) |
+| Script                                                 | What it does                                                                          |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| `npm run validate`                                     | Data checks only (also runs automatically before `build`)                             |
+| `npm test`                                             | Vitest: rating bands, tier weights and boundaries, validator rules, importer merge    |
+| `node scripts/import-product.js <file.json>...`        | Merge researched products into `data/`                                                |
+| `python3 scripts/verify-quotes.py [id,...]`            | Fetch each review page and confirm the excerpt appears word for word                  |
+| `node scripts/score-reviews.js --only=<id>`            | Place reviews inside their bands (needs `OPENAI_API_KEY`, `GEMINI_API_KEY`)           |
+| `node scripts/drop-reviews.js <productId/outletId>...` | Remove reviews, e.g. after a failed quote check (validates first)                     |
+| `bash scripts/refresh-pipeline.sh`                     | Weekly refresh: find new reviews and launches, verify, score, build (see PIPELINE.md) |
 
 ## Adding a product
 
