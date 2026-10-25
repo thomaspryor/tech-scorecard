@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
-      "source": "/product/:slug/opengraph-image",
+      "source": "/product/:slug/opengraph-image/",
       "headers": [{ "key": "Content-Type", "value": "image/png" }]
     },
     {
