@@ -12,7 +12,7 @@ export function ReviewRow({ review }: { review: ScoredReview }) {
           <span className="font-bold">{review.outlet.name}</span>
           <OutletTierChip tier={review.outlet.tier} />
           {review.editorsChoice && (
-            <span className="rounded bg-amber-100 px-1.5 py-[1px] text-[11px] font-semibold text-amber-800">
+            <span className="rounded-sm bg-amber-100 px-1.5 py-px text-[11px] font-semibold text-amber-800">
               ★ Editors&apos; Choice
             </span>
           )}

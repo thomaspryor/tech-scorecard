@@ -25,7 +25,9 @@ export function ProductListCard({
         <ProductImage product={product} />
       </div>
       <div className="min-w-0 flex-1">
-        <Heading className="line-clamp-2 text-lg font-bold leading-tight sm:text-xl">{product.name}</Heading>
+        <Heading className="line-clamp-2 text-lg font-bold leading-tight sm:text-xl sm:leading-7">
+          {product.name}
+        </Heading>
         <div className="mt-1.5">
           <ProductChips category={product.category} releaseDate={product.releaseDate} />
         </div>

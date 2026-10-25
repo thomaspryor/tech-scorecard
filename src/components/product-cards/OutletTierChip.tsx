@@ -7,7 +7,7 @@ export function OutletTierChip({ tier }: { tier: 1 | 2 | 3 | 4 }) {
   // title is mouse-only; the sr-only copy gives screen readers the same words (Broadway BRO-4881).
   return (
     <span
-      className="inline-flex items-center gap-1 rounded border border-line px-1.5 py-[1px] text-[10px] font-bold text-ink-muted"
+      className="inline-flex items-center gap-1 rounded-sm border border-line px-1.5 py-px text-[10px] font-bold text-ink-muted"
       title={label}
     >
       <span aria-hidden="true">T{tier}</span>

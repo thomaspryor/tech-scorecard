@@ -84,8 +84,9 @@ Plain English, no em dashes. Never invent data or results.
    a. Flagged: gh api "repos/thomaspryor/Broadwayscore/commits?sha=main&since=<date>&per_page=100&page=N"
       (page by hand: --paginate is refused by the proxy), keep commits whose message has a
       "PORT-TECH:" line; Linear issues with label "port-tech" completed since <date>.
-   b. Unflagged: the same API with &path=src, &path=next.config.js, &path=tailwind.config.ts,
-      &path=public, &path=vercel.json; skip data-only and pipeline commits. Read the message and
+   b. Unflagged: the same API with &path=src, &path=next.config.js, &path=tailwind.config.ts
+      (this repo is on Tailwind 4: its theme tokens live in the `@theme` block of
+      src/app/globals.css), &path=public, &path=vercel.json; skip data-only and pipeline commits. Read the message and
       file list of any commit about performance, SEO, structured data, Open Graph, sitemap,
       robots, canonical, accessibility, focus, touch targets, mobile widths, security headers,
       fonts, images, framework upgrades, or the shared card/badge/chip components.

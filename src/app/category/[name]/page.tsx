@@ -78,7 +78,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
         <span className="text-ink">{plural}</span>
       </nav>
 
-      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">
+      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl sm:leading-10">
         Best {plural} to buy in {BEST_YEAR}, ranked by critic score
       </h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">

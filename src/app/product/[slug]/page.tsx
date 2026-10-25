@@ -94,7 +94,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         <div className="flex gap-4 sm:gap-6">
           <div className="w-28 shrink-0 sm:w-44">
             <div className="overflow-hidden rounded-xl border border-line">
-              <ProductImage product={product} variant="hero" priority className="aspect-[3/4] w-full" />
+              <ProductImage product={product} variant="hero" priority className="aspect-3/4 w-full" />
             </div>
             {product.image && (
               <p className="mt-1 text-center text-[11px] text-ink-faint">Image: {product.image.credit}</p>
@@ -102,7 +102,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
           </div>
           <div className="min-w-0 flex-1">
             <ProductChips category={product.category} releaseDate={product.releaseDate} />
-            <h1 className="mt-2 text-2xl font-extrabold leading-tight sm:text-4xl">{product.name}</h1>
+            <h1 className="mt-2 text-2xl font-extrabold leading-tight sm:text-4xl sm:leading-10">{product.name}</h1>
             <p className="mt-1.5 text-sm text-ink-muted sm:text-base">
               {product.brand}
               {price && <> · From {price}</>}

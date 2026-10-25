@@ -21,7 +21,7 @@ export function ScoreBreakdownBar({ breakdown }: { breakdown: Record<TierKey, nu
       <div className="mt-1.5 flex flex-wrap justify-between gap-x-4 gap-y-1 text-xs text-ink-muted">
         {present.map((k) => (
           <span key={k} className="inline-flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-sm" style={{ backgroundColor: BREAKDOWN_LABELS[k].color }} />
+            <span className="h-2 w-2 rounded-xs" style={{ backgroundColor: BREAKDOWN_LABELS[k].color }} />
             {breakdown[k]} {BREAKDOWN_LABELS[k].label}
           </span>
         ))}

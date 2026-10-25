@@ -1,11 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Class names are read from src/ only, like the old tailwind.config.ts content glob. */
+@import 'tailwindcss' source('../');
+
+/* Design tokens: same names as Broadway Scorecard's theme, light values. Each one becomes
+   utilities (bg-ink, text-score-great, rounded-card, shadow-card...) and a CSS variable. */
+@theme {
+  --font-sans: var(--font-inter), Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  --color-score-must-see: #ffd700;
+  /* Text shades: at least 4.5:1 on white, so small tier labels stay readable (WCAG AA). */
+  --color-score-great: #15803d;
+  --color-score-good: #0f766e;
+  --color-score-tepid: #b45309;
+  --color-score-skip: #dc2626;
+  --color-score-none: #6b7280;
+
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-surface-overlay: #f5f5f7;
+  --color-surface-elevated: #ffffff;
+
+  --color-ink: #14141a;
+  --color-ink-muted: #5b5b66;
+  --color-ink-faint: #6b6b77;
+
+  --color-line: #e6e6ec;
+  --color-line-strong: #d4d4dc;
+
+  --color-brand: #d4a574;
+  --color-brand-hover: #c4956a;
+  --color-brand-ink: #8a5a26; /* 4.8:1 or better on white and on the brand-muted pill */
+  --color-brand-logo: #b98048;
+  --color-brand-muted: rgba(212, 165, 116, 0.18);
+
+  --color-status-open: #059669;
+  --color-status-open-bg: rgba(16, 185, 129, 0.12);
+  --color-status-new: #7c3aed;
+  --color-status-new-bg: rgba(124, 58, 237, 0.1);
+
+  /* The few default palette colors the site uses, pinned to their Tailwind 3 values
+     (Tailwind 4's defaults are slightly different oklch colors). */
+  --color-amber-100: #fef3c7;
+  --color-amber-800: #92400e;
+  --color-sky-50: #f0f9ff;
+  --color-sky-200: #bae6fd;
+  --color-sky-800: #075985;
+
+  /* Tailwind 3's fixed line heights for the text sizes. Tailwind 4's are unitless, so a child
+     with a smaller font (the tier chips inside text-xs rows) would get a shorter line. */
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+
+  --radius-card: 1rem;
+  --radius-badge: 0.625rem;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 1px 2px rgba(20, 20, 26, 0.04), 0 4px 16px rgba(20, 20, 26, 0.05);
+  --shadow-card-hover: 0 2px 4px rgba(20, 20, 26, 0.06), 0 10px 28px rgba(20, 20, 26, 0.09);
+}
 
 @layer base {
+  /* Tailwind 3's default border color; Tailwind 4 defaults to currentcolor. */
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #e5e7eb;
+  }
   :root {
-    --ink: theme('colors.ink.DEFAULT');
-    --brand-ink: theme('colors.brand.ink');
+    /* Short names for the per-category filter rules generated in src/app/page.tsx. */
+    --ink: var(--color-ink);
+    --brand-ink: var(--color-brand-ink);
   }
   html {
     -webkit-font-smoothing: antialiased;
@@ -22,11 +93,11 @@
 
 @layer components {
   /* Card component (Broadway Scorecard .card, light) */
-  .card {
+  .card,
+  .card-interactive {
     @apply bg-surface-raised rounded-card shadow-card border border-line;
   }
   .card-interactive {
-    @apply card;
     transition:
       transform 0.2s ease-out,
       box-shadow 0.2s ease-out,

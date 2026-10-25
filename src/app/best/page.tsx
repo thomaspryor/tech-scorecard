@@ -53,7 +53,9 @@ export default function BestPage() {
         <span className="mx-2">/</span>
         <span className="text-ink">Best to buy in {BEST_YEAR}</span>
       </nav>
-      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl">Best-reviewed tech to buy in {BEST_YEAR}</h1>
+      <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl sm:leading-10">
+        Best-reviewed tech to buy in {BEST_YEAR}
+      </h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
         The {top.length} highest critic scores across every category we track, from{' '}
         {all.reduce((n, p) => n + p.reviewCount, 0)} professional reviews. A score is a weighted average of published

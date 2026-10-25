@@ -7,7 +7,7 @@ import { ScoreBadge } from './ScoreBadge';
 export function MiniProductCard({ product }: { product: ComputedProduct }) {
   return (
     <Link href={`/product/${product.slug}/`} className="group block w-full">
-      <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-line shadow-card transition-transform duration-200 group-hover:-translate-y-0.5">
+      <div className="relative aspect-3/4 overflow-hidden rounded-xl border border-line shadow-card transition-transform duration-200 group-hover:-translate-y-0.5">
         <ProductImage product={product} />
         <div className="absolute bottom-2 right-2">
           <ScoreBadge score={product.criticScore} size="sm" />
