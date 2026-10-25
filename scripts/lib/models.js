@@ -21,7 +21,15 @@ async function postJson(url, headers, body, timeoutMs = 90_000) {
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(timeoutMs),
   });
-  const out = await res.json().catch(() => ({}));
+  const text = await res.text();
+  let out;
+  try {
+    out = JSON.parse(text);
+  } catch {
+    // A cut-off or HTML reply is an error, never an empty answer: an empty answer would
+    // read as "no reviews found" and mark the product as checked.
+    throw new Error(`HTTP ${res.status}: ${res.ok ? 'reply is not JSON' : res.statusText}`);
+  }
   if (!res.ok || out.error) throw new Error(`HTTP ${res.status}: ${out.error?.message ?? res.statusText}`);
   return out;
 }

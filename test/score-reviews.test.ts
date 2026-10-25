@@ -46,6 +46,14 @@ describe('model calls', () => {
     expect((init.headers as Record<string, string>)['x-goog-api-key']).toBe(GEMINI_KEY);
   });
 
+  it('treats a reply that is not JSON as an error, not an empty answer', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response('<html>502 Bad Gateway</html>', { status: 200 })),
+    );
+    await expect(askGemini('prompt')).rejects.toThrow(/HTTP 200: reply is not JSON/);
+  });
+
   it('reports API errors without the key', async () => {
     mockFetch(401, { error: { message: 'Incorrect API key provided' } });
     const err = await askOpenAI('prompt').catch((e: Error) => e);
