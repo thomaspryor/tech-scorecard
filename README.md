@@ -171,5 +171,8 @@ is cached locally only and never committed.
 
 ## License
 
-The code in this repository is MIT licensed (see `LICENSE`). The license covers the code
-only, not the review data, scores, outlet tiers or product images.
+The code in this repository is MIT licensed (see `LICENSE`). The license covers the source code
+only. It does not cover the review data, scores, outlet tiers or product images: review excerpts
+are short quotations that remain the property of their publishers, product press photos remain
+the property of their manufacturers, and the compiled review data and scores are not licensed for
+reuse (ask first).
