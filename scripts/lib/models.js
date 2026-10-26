@@ -62,8 +62,12 @@ async function openaiText(prompt) {
 async function geminiText(prompt, { search = false, timeoutMs } = {}) {
   /** @type {Record<string, unknown> & {generationConfig: Record<string, unknown>}} */
   const body = { contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature: 0 } };
-  if (search) body.tools = [{ google_search: {} }];
-  else body.generationConfig.responseMimeType = 'application/json';
+  if (search) {
+    body.tools = [{ google_search: {} }];
+    // Discovery returns candidates, not scores. Bound reasoning latency so
+    // grounded searches can finish within the four-minute request window.
+    body.generationConfig.thinkingConfig = { thinkingLevel: 'low' };
+  } else body.generationConfig.responseMimeType = 'application/json';
   const out = await postJson(
     `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`,
     { 'x-goog-api-key': process.env.GEMINI_API_KEY ?? '' },
