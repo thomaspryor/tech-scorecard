@@ -28,9 +28,19 @@ export default function AboutPage() {
       <section className="card mt-8 p-5 sm:p-6">
         <h2 className="section-label">Who runs it</h2>
         <p className="mt-3 max-w-[65ch] text-sm leading-relaxed">
-          Tech Scorecard is an independent project. It uses the same scoring method as Broadway Scorecard, a review
-          aggregator for theater, applied to phones, laptops, headphones, watches and other devices. It is not owned by,
-          paid by or affiliated with any gadget maker or review outlet.
+          Tech Scorecard is an independent project run by Tom. It uses the same scoring method as Broadway Scorecard, a
+          review aggregator for theater, applied to phones, laptops, headphones, watches and other devices. It is not
+          owned by, paid by or affiliated with any gadget maker or review outlet.
+        </p>
+        <p className="mt-3 max-w-[65ch] text-sm leading-relaxed">
+          Questions, corrections or a review we missed? Email Tom at{' '}
+          <a
+            href="mailto:tom@thetechscorecard.com"
+            className="font-semibold text-brand-ink underline underline-offset-2"
+          >
+            tom@thetechscorecard.com
+          </a>
+          .
         </p>
       </section>
 
