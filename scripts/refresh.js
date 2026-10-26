@@ -29,7 +29,7 @@ const STATE_FILE = path.join(DATA_DIR, 'refresh-state.json');
 const TODAY = new Date().toISOString().slice(0, 10);
 const MIN_REVIEWS_NEW_PRODUCT = 6;
 /** Gemini answers (search grounding above all) can take minutes. */
-const GEMINI_TIMEOUT_MS = 240_000;
+const GEMINI_TIMEOUT_MS = 600_000;
 
 /** @type {Record<string, string | true>} */
 const args = Object.fromEntries(
@@ -186,14 +186,28 @@ const slug = (s) =>
     .replace(/^-|-$/g, '');
 
 /**
+ * geminiText, tried a second time when the first call fails (a search call occasionally times out on a busy runner).
+ * @param {string} prompt
+ * @param {{search?: boolean, timeoutMs?: number}} opts
+ */
+async function geminiTextRetry(prompt, opts) {
+  try {
+    return await geminiText(prompt, opts);
+  } catch (e) {
+    console.error(`  Gemini call failed (${e instanceof Error ? e.message.slice(0, 80) : e}), trying once more`);
+    return geminiText(prompt, opts);
+  }
+}
+
+/**
  * New launches: find them, collect reviews, and only keep products that reach the review minimum.
  * @returns {Promise<{product: Product, reviews: Review[], newOutlets: []}[]>}
  */
 async function newLaunches() {
-  const known = products.map((p) => p.name).join('; ');
-  const text = await geminiText(
+  // Products already on the site are filtered out in code below, so the prompt stays short and the search fast.
+  const text = await geminiTextRetry(
     `Today is ${TODAY}. Using search, list up to 6 consumer gadgets that went on sale in the US within the last 45 days and already have several professional reviews from major tech outlets.
-Categories allowed: ${CATEGORIES.categories.join(', ')}. Skip anything already on this list: ${known}.
+Categories allowed: ${CATEGORIES.categories.join(', ')}.
 Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate":"YYYY-MM-DD","launchPrice":<USD number>,"officialUrl":"https://..."}]. Use only facts you saw in search results.`,
     { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
   );
