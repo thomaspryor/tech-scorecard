@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getScoredProducts, indexableCategories } from '@/lib/data';
+import { bestYear, getScoredProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_PLURAL } from '@/lib/format';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbLd, clip, itemListLd, socialMeta } from '@/lib/seo';
-import { BEST_YEAR } from '@/config/seo';
+import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta } from '@/lib/seo';
 import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
 const TOP_N = 10;
@@ -14,14 +13,14 @@ const rated = getScoredProducts;
 
 export function generateMetadata(): Metadata {
   const top = rated()[0];
-  if (!top) return { title: `Best-reviewed tech to buy in ${BEST_YEAR}`, alternates: { canonical: '/best/' } };
-  const title = `Best-reviewed tech to buy in ${BEST_YEAR}: top gadgets by critic score`;
+  if (!top) return { title: `Best-reviewed tech to buy in ${bestYear()}`, alternates: { canonical: '/best/' } };
+  const title = `Best-reviewed tech to buy in ${bestYear()}: top gadgets by critic score`;
   const description = clip(
-    `The ${TOP_N} best-reviewed gadgets to buy in ${BEST_YEAR}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
+    `The ${TOP_N} best-reviewed gadgets to buy in ${bestYear()}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   return {
-    title,
+    title: fitTitle([title, `Best-reviewed tech to buy in ${bestYear()}`]),
     description,
     alternates: { canonical: '/best/' },
     ...socialMeta(title, description, '/best/'),
@@ -38,10 +37,10 @@ export default function BestPage() {
         data={[
           breadcrumbLd([
             { name: 'Home', path: '/' },
-            { name: `Best to buy in ${BEST_YEAR}`, path: '/best/' },
+            { name: `Best to buy in ${bestYear()}`, path: '/best/' },
           ]),
           itemListLd(
-            `Best-reviewed tech to buy in ${BEST_YEAR}`,
+            `Best-reviewed tech to buy in ${bestYear()}`,
             top.map((p) => ({ name: p.name, path: `/product/${p.slug}/` })),
           ),
         ]}
@@ -51,10 +50,10 @@ export default function BestPage() {
           Home
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-ink">Best to buy in {BEST_YEAR}</span>
+        <span className="text-ink">Best to buy in {bestYear()}</span>
       </nav>
       <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl sm:leading-10">
-        Best-reviewed tech to buy in {BEST_YEAR}
+        Best-reviewed tech to buy in {bestYear()}
       </h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
         The {top.length} highest critic scores across every category we track, from{' '}

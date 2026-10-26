@@ -1,6 +1,6 @@
 # SEO plan and audit (2026-10-22, card BRO-5960)
 
-Site: https://www.thetechscorecard.com (Next.js static export on Vercel, 30 products, 499 reviews).
+Site: https://www.thetechscorecard.com (Next.js static export on Vercel). Written 2026-10-22 at 30 products and 499 reviews; 84 products by 2026-10-26.
 Domain bought 2026-10-22, so it starts with no authority and no history.
 
 ## 1. Audit findings (live crawl, 34 URLs, Playwright + Lighthouse)
@@ -52,12 +52,12 @@ Not realistic in the first months: head terms such as "best phones 2026" or "iPh
 
 All in `src/`, pushed to main:
 
-- `src/config/seo.ts`: site URL, name, `BEST_YEAR`, thin-page threshold, and empty slots for the Google and Bing verification tokens.
+- `src/config/seo.ts`: site URL, name, title suffix and length limit, thin-page threshold, and empty slots for the Google and Bing verification tokens.
 - `src/lib/seo.ts` and `src/components/JsonLd.tsx`: helpers for descriptions (clipped to about 155 characters at a word boundary) and JSON-LD.
 - Root layout: title template (`%s | Tech Scorecard`), default title and description without "Beta", `WebSite` and `Organization` JSON-LD, verification tags (emitted only when a token is set).
 - Every page sets its own canonical (static pages, product, category, best). A canonical is deliberately not set in the layout, because children would inherit it.
 - Product pages: title `"<name> reviews: <score>/100 critic score"`, description led by the score and review count, `BreadcrumbList` and `WebPage` JSON-LD, breadcrumb now links to the category page.
-- New `/category/<name>/` pages (8 categories, titled "Best <Plural> 2026: ranked by critic score"), ranked lists built only from existing data, `ItemList` and `BreadcrumbList` JSON-LD. Categories with fewer than 2 products (tablets today) are `noindex, follow` and left out of the sitemap until they have more.
+- New `/category/<name>/` pages (8 categories, titled "Best <Plural> 2026: ranked by critic score"), ranked lists built only from existing data, `ItemList` and `BreadcrumbList` JSON-LD. Categories with fewer than 2 scored products are `noindex, follow` and left out of the sitemap until they have more (all 8 are indexed as of 2026-10-26).
 - New `/best/` page: the 10 highest critic scores overall, links to each category page.
 - Internal links: home page "Best of 2026" section, footer "Best of 2026" link, category pages cross-link each other.
 - "Best of 2026" spans launches from Oct 2025 to Oct 2026 (the data window), not only 2026 releases.
@@ -70,6 +70,20 @@ Google's review snippet guidelines say: "Don't aggregate reviews or ratings from
 `Product` markup is also left out on purpose: Google requires an offer, review or rating on it, and the site has no first-party reviews.
 
 ## 4. Prioritized plan
+
+Status 2026-10-26 (from the SEO audit that day):
+
+- Step 4 done: `fitTitle` (`src/lib/seo.ts`) keeps product, category and /best/ titles within 65 characters,
+  dropping the " | Tech Scorecard" suffix only when a long product name needs it. A test checks every product.
+- Step 5 half done: the sitemap has real `lastmod` for home, /best/ and categories (newest review), and product
+  JSON-LD has `dateModified`. The home "newest reviews" block is still open.
+- Step 6 done: per-product share images. Their URL now keeps its trailing slash (the slashless one redirected).
+- The year in "Best ... to buy in" titles comes from the data (`bestYear()` in `src/lib/data.ts`): it moves to a
+  new year once 10 reviews are dated in it.
+- IndexNow (the key file is live in `public/`) is not wired up: a ping from the weekly workflow would have to wait
+  for the Vercel deploy, and that wait was judged more likely to send the owner false alarms than to help.
+  It only reaches Bing and Yandex, which read the sitemap anyway. Revisit if Bing indexing lags.
+- Steps 8 and 9 are open.
 
 ### Now (this week)
 

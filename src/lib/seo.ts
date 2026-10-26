@@ -1,4 +1,4 @@
-import { SITE_NAME, SITE_URL } from '@/config/seo';
+import { MAX_TITLE_LENGTH, SITE_NAME, SITE_URL, TITLE_SUFFIX } from '@/config/seo';
 
 /** Absolute URL for a site path such as "/product/x/". */
 export function abs(path: string): string {
@@ -11,6 +11,16 @@ export function clip(text: string, max = 155): string {
   if (t.length <= max) return t;
   const cut = t.slice(0, max - 1);
   return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '')}…`;
+}
+
+/**
+ * The page title to set, from candidates in order of preference (most descriptive first): the first
+ * that fits with the site suffix, else the first that fits on its own (without the suffix), else the last.
+ */
+export function fitTitle(candidates: string[], max = MAX_TITLE_LENGTH): string | { absolute: string } {
+  const withSuffix = candidates.find((c) => c.length + TITLE_SUFFIX.length <= max);
+  if (withSuffix) return withSuffix;
+  return { absolute: candidates.find((c) => c.length <= max) ?? candidates[candidates.length - 1] };
 }
 
 export type Crumb = { name: string; path: string };
