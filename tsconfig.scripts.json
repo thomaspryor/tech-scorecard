@@ -8,6 +8,7 @@
     "scripts/import-product.js",
     "scripts/validate-data.js",
     "scripts/check-page-size.js",
+    "scripts/check-prefetch.js",
     "scripts/drop-reviews.js",
     "scripts/drop-thin-products.js",
     "scripts/drop-unscored.js",

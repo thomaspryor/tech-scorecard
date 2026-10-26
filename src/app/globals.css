@@ -198,6 +198,10 @@
   .by-date:focus-visible ~ .sort-labels .lbl-date {
     @apply outline outline-2 outline-brand-ink rounded;
   }
+  /* Product reviews sort only with JavaScript (ListSort): keep the controls' space but hide them until it runs. */
+  .js-sort:not([data-ready]) .sort-labels {
+    visibility: hidden;
+  }
   /* Home page: one list, re-ordered with CSS `order` so each card ships once. */
   .list-item {
     order: var(--o-score);

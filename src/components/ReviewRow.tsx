@@ -91,9 +91,8 @@ export function ReviewList({ reviews, id, dateRadioId }: { reviews: ScoredReview
       )}
       <ListSort
         listId={`${id}-head`}
-        restId={rest.length ? `${id}-rest` : undefined}
-        visible={VISIBLE}
         dateRadioId={dateRadioId}
+        fold={rest.length ? { id: `${id}-rest`, visible: VISIBLE } : undefined}
       />
     </div>
   );

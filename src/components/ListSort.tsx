@@ -16,26 +16,28 @@ export function sortByRank<T extends { dataset: DOMStringMap }>(items: T[], key:
  * Keeps a list's DOM order in step with the chosen sort. CSS `order` alone re-sorts items
  * visually, but keyboard and screen-reader order would not follow (WCAG 2.4.3).
  * Items are moved, not re-rendered, so the HTML still ships one copy of each.
- * With `restId`, the first `visible` items stay in the list and the others move to the rest
- * container (the product page's "Show more reviews" fold), so the fold always holds the tail
- * of the chosen order. The home list also has a CSS `order` fallback for visitors without JavaScript.
+ * With `fold`, the first `fold.visible` items stay in the list and the others move to the fold's
+ * container (the product page's "Show more reviews"), so the fold always holds the tail of the
+ * chosen order. Once mounted it marks the enclosing `.sort-toggle` with data-ready, so a list that
+ * has no CSS fallback can hide its sort controls until they work (see `.js-sort` in globals.css).
  */
 export function ListSort({
   listId,
   dateRadioId,
-  restId,
-  visible = Infinity,
+  fold,
 }: {
   listId: string;
   dateRadioId: string;
-  restId?: string;
-  visible?: number;
+  fold?: { id: string; visible: number };
 }) {
+  const foldId = fold?.id;
+  const visible = fold?.visible ?? Infinity;
   useEffect(() => {
     const list = document.getElementById(listId);
-    const rest = restId ? document.getElementById(restId) : null;
+    const rest = foldId ? document.getElementById(foldId) : null;
     const dateRadio = document.getElementById(dateRadioId) as HTMLInputElement | null;
     if (!list || !dateRadio) return;
+    dateRadio.closest('.sort-toggle')?.setAttribute('data-ready', '');
     const radios = [...document.querySelectorAll<HTMLInputElement>(`input[name="${dateRadio.name}"]`)];
     const apply = () => {
       const items = [...list.children, ...(rest?.children ?? [])] as HTMLElement[];
@@ -46,6 +48,6 @@ export function ListSort({
     radios.forEach((r) => r.addEventListener('change', apply));
     apply(); // the browser may restore the other sort on back/forward navigation
     return () => radios.forEach((r) => r.removeEventListener('change', apply));
-  }, [listId, dateRadioId, restId, visible]);
+  }, [listId, dateRadioId, foldId, visible]);
   return null;
 }

@@ -179,7 +179,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
           </h2>
           <span className="text-xs text-ink-faint">{product.reviewCount} reviews</span>
         </div>
-        <div className="sort-toggle relative mt-3">
+        <div className="sort-toggle js-sort relative mt-3">
           <input
             type="radio"
             name={`sort-${product.slug}`}

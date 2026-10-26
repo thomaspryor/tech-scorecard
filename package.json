@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "prebuild": "node scripts/validate-data.js",
-    "postbuild": "node scripts/check-page-size.js",
+    "postbuild": "node scripts/check-page-size.js && node scripts/check-prefetch.js",
     "validate": "node scripts/validate-data.js",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.scripts.json",
     "lint": "eslint --max-warnings=0 src scripts test",
