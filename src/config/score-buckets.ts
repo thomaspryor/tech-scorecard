@@ -1,8 +1,10 @@
-// Tiers follow Broadway Scorecard (scripts/lib/score-tiers.js), except Critical Gold starts at 85 (owner, 2026-10-22).
-export const GOLD_MIN = 85;
-export const RECOMMENDED_MIN = 75;
-export const WORTH_IT_MIN = 65;
-export const MIXED_MIN = 55;
+// Tech critics rate high (83% of published ratings are 8/10 or better, median product score 84 vs Broadway's 73),
+// so every cutoff sits 5-10 points above Broadway's (owner, 2026-10-26). Gold = 90+ matches the "rave" line in
+// docs/PIPELINE.md and covers about 18% of products, close to Broadway's share.
+export const GOLD_MIN = 90;
+export const RECOMMENDED_MIN = 80;
+export const WORTH_IT_MIN = 70;
+export const MIXED_MIN = 60;
 
 export type TierKey = 'gold' | 'recommended' | 'worthIt' | 'mixed' | 'miss';
 
