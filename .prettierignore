@@ -5,3 +5,5 @@ package-lock.json
 out/
 .cache/
 research/
+# Claude commands, agents and skills, copied from Broadway Scorecard (vendored code included).
+.claude/
