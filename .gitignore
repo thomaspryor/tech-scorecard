@@ -24,3 +24,5 @@ __pycache__/
 !.env.example
 .DS_Store
 *.log
+# The last30days skill vendors its own node_modules (synced from Broadwayscore); keep it tracked.
+!.claude/skills/**/node_modules/
