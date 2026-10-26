@@ -18,7 +18,7 @@ it.each(['product', 'launch', 'none'])('reports %s search failure without import
   const before = readFileSync(join(dir, 'data/reviews.json'), 'utf8');
   writeFileSync(
     join(dir, 'mock.cjs'),
-    `let calls=0; global.fetch=async()=>{calls++; const fail=${JSON.stringify(failure)}==='product'?calls===1:${JSON.stringify(failure)}==='launch'?calls===2:false; return new Response(JSON.stringify(fail?{error:{message:'API key not valid'}}:{candidates:[{content:{parts:[{text:'[]'}]}}]}),{status:fail?400:200});};`,
+    `let calls=0; global.fetch=async()=>{calls++; const fail=${JSON.stringify(failure)}==='product'?calls===1:${JSON.stringify(failure)}==='launch'?calls>=2:false; return new Response(JSON.stringify(fail?{error:{message:'API key not valid'}}:{candidates:[{content:{parts:[{text:'[]'}]}}]}),{status:fail?400:200});};`,
   );
   const run = spawnSync(
     process.execPath,
