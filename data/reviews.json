@@ -22669,5 +22669,152 @@
     },
     "scoreReason": "Good smartwatch with strong features and design, but weak battery and sensor inconsistencies limit recommendation.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/mobile/samsung-galaxy-watch-ultra-2-review-better-battery-better-galaxy-watch/",
+    "date": "2026-08-04",
+    "rating": "8.2/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "If you're looking for a step up in your Galaxy Watch experience and are willing to pay a premium for battery life and durability, this won't disappoint.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 82
+    },
+    "scoreReason": "Strongly praised for battery, durability and accuracy, but price and some unfinished features limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-watch-ultra-2",
+    "date": "2026-08-10",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Watch Ultra 2 is the most capable smartwatch in Samsung's lineup, justifying its premium price with massive upgrades in endurance, screen visibility, and ruggedness.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for battery, durability, and display, but pricey, bulky, and unnecessary for most users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "zdnet",
+    "critic": "Nina Raemont",
+    "url": "https://www.zdnet.com/article/samsung-galaxy-watch-ultra-2-review/",
+    "date": "2026-07-22",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Watch Ultra 2 is a great option for someone shopping for their first rugged Android smartwatch, looking to spend more for a longer battery life, a brighter, visible display, and comprehensive health and activity tracking features.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong Android rugged watch with bright display and battery gains, but bulky design and some unfinished features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "sammobile",
+    "critic": "Max Jambor",
+    "url": "https://www.sammobile.com/samsung/galaxy-watch-ultra-2/review/",
+    "date": "2026-08-01",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "This is Samsung’s most complete and capable smartwatch yet and feels worthy of the Ultra name.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Calls it Samsung’s most complete, capable smartwatch and worthy of the Ultra name.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/samsung/samsung-galaxy-watch-ultra-2-review",
+    "date": "2026-07-24",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "If you're an Android user seeking a top-tier, fully-featured premium smartwatch with genuine multi-day battery endurance, stunning display quality, and accurate workout tracking, the Samsung Galaxy Watch Ultra 2 stands comfortably at the very top of its class.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent battery, display, comfort and tracking, with minor navigation and ecosystem limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/2026/08/samsung-galaxy-watch-ultra-2-review-faster-chip-bigger-battery-and-the-smartest-health-tracking-yet.html",
+    "date": "2026-08-10",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "But at $699, a few frustrating tradeoffs mean it’s not a slam dunk for everyone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong performance and health features, but high price, weak battery gains, and very slow charging hurt appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-cirqa",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/garmin/garmin-cirqa-smart-band-review",
+    "date": "2026-09-18",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "If you're already bought into Garmin's ecosystem and want a screenless option for the hours you're not wearing a proper GPS watch, this is a well-executed answer to a real problem.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Accurate, comfortable, and good value for Garmin users, but limited software and niche appeal hurt it.",
+    "scoredFromFullText": true
   }
 ]
