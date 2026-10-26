@@ -45,7 +45,6 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
   if (!product) notFound();
   const tier = product.criticScore != null ? getScoreTier(product.criticScore) : null;
   const price = formatPrice(product.launchPrice);
-  const byDate = [...product.reviews].sort((a, b) => b.date.localeCompare(a.date) || b.score - a.score);
   // Same category first, then by score; four is enough to compare.
   const others = getAllProducts()
     .filter((p) => p.id !== product.id)
@@ -180,7 +179,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
           </h2>
           <span className="text-xs text-ink-faint">{product.reviewCount} reviews</span>
         </div>
-        <div className="sort-toggle relative mt-3">
+        <div className="sort-toggle js-sort relative mt-3">
           <input
             type="radio"
             name={`sort-${product.slug}`}
@@ -207,11 +206,12 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
               </span>
             ))}
           </div>
-          <div className="list-score mt-1">
-            <ReviewList reviews={product.reviews} />
-          </div>
-          <div className="list-date mt-1">
-            <ReviewList reviews={byDate} />
+          <div className="mt-1">
+            <ReviewList
+              reviews={product.reviews}
+              id={`reviews-${product.slug}`}
+              dateRadioId={`sort-date-${product.slug}`}
+            />
           </div>
         </div>
         <div className="mt-3 border-t border-line pt-3 text-xs">

@@ -198,15 +198,9 @@
   .by-date:focus-visible ~ .sort-labels .lbl-date {
     @apply outline outline-2 outline-brand-ink rounded;
   }
-  /* Product page: both review orders are rendered and CSS shows one. */
-  .sort-toggle > .list-date {
-    display: none;
-  }
-  .by-date:checked ~ .list-score {
-    display: none;
-  }
-  .by-date:checked ~ .list-date {
-    display: block;
+  /* Product reviews sort only with JavaScript (ListSort): keep the controls' space but hide them until it runs. */
+  .js-sort:not([data-ready]) .sort-labels {
+    visibility: hidden;
   }
   /* Home page: one list, re-ordered with CSS `order` so each card ships once. */
   .list-item {
