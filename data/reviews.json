@@ -21913,5 +21913,26 @@
     },
     "scoreReason": "Strong sound, ANC and comfort, but the case is a significant flaw and controls are slightly overdone.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-tab-s12-ultra/review/",
+    "date": "2026-10-17",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "Samsung has made an appealing tablet for people who know they want a very large Android tablet.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Appealing large Android tablet, clearly recommended for buyers specifically wanting this oversized form factor.",
+    "scoredFromFullText": false
   }
 ]
