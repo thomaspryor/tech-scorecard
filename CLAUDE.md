@@ -13,7 +13,7 @@ The owner is not technical and does not review code, read diffs, or merge PRs. T
 3. Merge it yourself (squash) once green. Do not leave a draft or "waiting on review". This overrides the default of leaving PRs as drafts.
 4. Confirm the production deploy is READY on Vercel, not just that GitHub passed.
 5. Report in plain English: what changed, what the owner will see, anything they need to do (usually nothing). No PR jargon.
-6. For anything beyond a trivial edit, run `/ship-check` before pushing, then `/what-else` and `/wrap-up` at the end. `/plan-review`, `/second-opinion`, `/did-it-work`, `/right-problem`, `/plan-tasks` and `/last30days` are here too (`.claude/commands/`, `.claude/skills/`, copied from Broadwayscore since cloud sessions only see a repo's own `.claude/`).
+6. For anything beyond a trivial edit, run `/ship-check` before pushing, then `/what-else` and `/wrap-up` at the end. `/plan-review`, `/second-opinion`, `/did-it-work`, `/right-problem`, `/plan-tasks` and `/last30days` are here too (`.claude/commands/`, `.claude/skills/`, copied from Broadwayscore since cloud sessions only see a repo's own `.claude/`). A daily job (`sync-claude-skills.yml`) keeps the copies current; edit them in Broadwayscore, not here. The synced list is in `scripts/lib/claude-sync.js`.
 7. Your last line is always one of: `SAFE TO ARCHIVE`, `KEEP OPEN: <what you wait on>`, or `ACTION NEEDED FROM YOU: <one sentence>`. Use SAFE TO ARCHIVE only when it is merged, live and verified.
 
 ## Rules
