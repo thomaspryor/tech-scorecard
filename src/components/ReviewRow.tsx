@@ -1,10 +1,11 @@
 import type { ScoredReview } from '@/lib/engine';
 import { formatDate } from '@/lib/format';
 import { OutletMark, OutletTierChip, ScoreBadge } from './product-cards';
+import { ListSort } from './ListSort';
 
 export function ReviewRow({ review }: { review: ScoredReview }) {
   return (
-    <article className="flex gap-3 border-b border-line py-4 last:border-b-0 sm:gap-4">
+    <article className="flex gap-3 py-4 sm:gap-4">
       <ScoreBadge score={review.score} size="review" />
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
@@ -57,25 +58,43 @@ export function ReviewRow({ review }: { review: ScoredReview }) {
 
 const VISIBLE = 6;
 
-export function ReviewList({ reviews }: { reviews: ScoredReview[] }) {
-  const head = reviews.slice(0, VISIBLE);
+/**
+ * The reviews, rendered once in score order (`reviews` arrives sorted by score). ListSort re-orders them
+ * when the date radio is picked, keeping the first VISIBLE in view and the rest in the fold.
+ */
+export function ReviewList({ reviews, id, dateRadioId }: { reviews: ScoredReview[]; id: string; dateRadioId: string }) {
+  const dateRank = new Map(
+    [...reviews].sort((a, b) => b.date.localeCompare(a.date) || b.score - a.score).map((r, i) => [r, i] as const),
+  );
+  const row = (r: ScoredReview, i: number) => (
+    <div
+      key={`${r.outletId}|${r.url}`}
+      className="border-b border-line last:border-b-0"
+      data-o-score={i}
+      data-o-date={dateRank.get(r)}
+    >
+      <ReviewRow review={r} />
+    </div>
+  );
   const rest = reviews.slice(VISIBLE);
   return (
     <div>
-      {head.map((r) => (
-        <ReviewRow key={`${r.outletId}|${r.url}`} review={r} />
-      ))}
+      <div id={`${id}-head`}>{reviews.slice(0, VISIBLE).map(row)}</div>
       {rest.length > 0 && (
         <details className="more">
           <summary className="mt-2 cursor-pointer rounded-xl border border-line bg-surface-overlay py-3 text-center text-sm font-semibold text-brand-ink hover:border-line-strong">
             <span className="more-closed">Show {rest.length} more reviews ▾</span>
             <span className="more-open">Show fewer ▴</span>
           </summary>
-          {rest.map((r) => (
-            <ReviewRow key={`${r.outletId}|${r.url}`} review={r} />
-          ))}
+          <div id={`${id}-rest`}>{rest.map((r, i) => row(r, i + VISIBLE))}</div>
         </details>
       )}
+      <ListSort
+        listId={`${id}-head`}
+        restId={rest.length ? `${id}-rest` : undefined}
+        visible={VISIBLE}
+        dateRadioId={dateRadioId}
+      />
     </div>
   );
 }

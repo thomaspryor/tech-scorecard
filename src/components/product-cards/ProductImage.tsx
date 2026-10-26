@@ -11,7 +11,7 @@ const SIZE: Record<Variant, { width: number; height: number }> = {
 
 /**
  * The brand's press photo when the product has one, otherwise a plain tile with the brand name.
- * `priority` marks the page's largest image (LCP); everything else loads lazily.
+ * `priority` loads the image straight away (the product page hero); everything else loads lazily.
  */
 export function ProductImage({
   product,
@@ -36,19 +36,26 @@ export function ProductImage({
       </div>
     );
   const { width, height } = SIZE[variant];
+  const img = (
+    // eslint-disable-next-line @next/next/no-img-element -- static export, files are pre-sized WebP
+    <img
+      src={variant === 'hero' ? image.src : image.thumb}
+      // The hero slot is 112px wide on phones and 176px from sm up: small screens can take the thumbnail.
+      srcSet={variant === 'hero' ? `${image.thumb} 300w, ${image.src} 800w` : undefined}
+      sizes={variant === 'hero' ? '(min-width: 640px) 176px, 112px' : undefined}
+      alt={image.alt}
+      width={width}
+      height={height}
+      loading={priority ? 'eager' : 'lazy'}
+      decoding={priority ? 'sync' : 'async'}
+      className="h-full w-full object-contain"
+    />
+  );
   return (
     <div className={`${className} bg-white`}>
-      {/* eslint-disable-next-line @next/next/no-img-element -- static export, files are pre-sized WebP */}
-      <img
-        src={variant === 'hero' ? image.src : image.thumb}
-        alt={image.alt}
-        width={width}
-        height={height}
-        loading={priority ? 'eager' : 'lazy'}
-        fetchPriority={priority ? 'high' : undefined}
-        decoding={priority ? 'sync' : 'async'}
-        className="h-full w-full object-contain"
-      />
+      {/* React turns an eager <img> into a preload hint in the page's prefetch data, so every product link
+          scrolled past would download that product's photo. Inside <picture> it emits no hint. */}
+      {priority ? <picture className="contents">{img}</picture> : img}
     </div>
   );
 }

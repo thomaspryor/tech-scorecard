@@ -14,7 +14,7 @@ tile with the brand name (`ProductImage`).
 - `Product.image` is optional: `{ src, thumb, alt, credit, sourceUrl }` (`src/lib/data-types.ts`).
 - `ProductImage` (`src/components/product-cards/ProductImage.tsx`) renders the photo with explicit
   width and height on a light 3:4 tile (`object-contain`), lazy loaded, and falls back to a plain brand-name tile
-  when `image` is missing. The product page hero passes `priority` (eager, `fetchpriority=high`) and shows
+  when `image` is missing. The product page hero passes `priority` (eager, wrapped in `<picture>` so React adds no preload hint to every product link's prefetch, with a `srcset` so phones get the 300px file) and shows
   a small "Image: <credit>" line.
 - `scripts/validate-data.js` fails the build if an image lacks `credit`, `alt` or an https `sourceUrl`,
   or if its WebP files are not in `public/images/products/`.

@@ -13,24 +13,39 @@ export function sortByRank<T extends { dataset: DOMStringMap }>(items: T[], key:
 }
 
 /**
- * Keeps the home list's DOM order in step with the chosen sort. CSS `order` alone re-sorts
- * the cards visually, but keyboard and screen-reader order would stay by score (WCAG 2.4.3).
- * The cards are moved, not re-rendered, so the HTML still ships one copy of each. Without
- * JavaScript the CSS `order` fallback still sorts visually.
+ * Keeps a list's DOM order in step with the chosen sort. CSS `order` alone re-sorts items
+ * visually, but keyboard and screen-reader order would not follow (WCAG 2.4.3).
+ * Items are moved, not re-rendered, so the HTML still ships one copy of each.
+ * With `restId`, the first `visible` items stay in the list and the others move to the rest
+ * container (the product page's "Show more reviews" fold), so the fold always holds the tail
+ * of the chosen order. The home list also has a CSS `order` fallback for visitors without JavaScript.
  */
-export function ListSort({ listId, dateRadioId }: { listId: string; dateRadioId: string }) {
+export function ListSort({
+  listId,
+  dateRadioId,
+  restId,
+  visible = Infinity,
+}: {
+  listId: string;
+  dateRadioId: string;
+  restId?: string;
+  visible?: number;
+}) {
   useEffect(() => {
     const list = document.getElementById(listId);
+    const rest = restId ? document.getElementById(restId) : null;
     const dateRadio = document.getElementById(dateRadioId) as HTMLInputElement | null;
     if (!list || !dateRadio) return;
     const radios = [...document.querySelectorAll<HTMLInputElement>(`input[name="${dateRadio.name}"]`)];
     const apply = () => {
-      const items = [...list.children] as HTMLElement[];
-      list.append(...sortByRank(items, dateRadio.checked ? 'date' : 'score'));
+      const items = [...list.children, ...(rest?.children ?? [])] as HTMLElement[];
+      const sorted = sortByRank(items, dateRadio.checked ? 'date' : 'score');
+      list.append(...(rest ? sorted.slice(0, visible) : sorted));
+      rest?.append(...sorted.slice(visible));
     };
     radios.forEach((r) => r.addEventListener('change', apply));
-    apply(); // the browser may restore "Newest" on back/forward navigation
+    apply(); // the browser may restore the other sort on back/forward navigation
     return () => radios.forEach((r) => r.removeEventListener('change', apply));
-  }, [listId, dateRadioId]);
+  }, [listId, dateRadioId, restId, visible]);
   return null;
 }
