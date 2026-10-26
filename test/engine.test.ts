@@ -46,7 +46,7 @@ describe('getTierKey boundaries', () => {
   it.each([
     [100, 'gold'],
     [GOLD_MIN, 'gold'],
-    [GOLD_MIN - 0.5, 'gold'], // rounds up to 85: the badge shows 85, so the label must agree
+    [GOLD_MIN - 0.5, 'gold'], // rounds up to 90: the badge shows 85, so the label must agree
     [GOLD_MIN - 0.51, 'recommended'],
     [GOLD_MIN - 1, 'recommended'],
     [RECOMMENDED_MIN, 'recommended'],
@@ -61,7 +61,7 @@ describe('getTierKey boundaries', () => {
   });
 
   it('uses the thresholds documented on the methodology page', () => {
-    expect([GOLD_MIN, RECOMMENDED_MIN, WORTH_IT_MIN, MIXED_MIN]).toEqual([85, 75, 65, 55]);
+    expect([GOLD_MIN, RECOMMENDED_MIN, WORTH_IT_MIN, MIXED_MIN]).toEqual([90, 80, 70, 60]);
   });
 });
 
@@ -97,7 +97,7 @@ describe('computeProduct', () => {
 
   it('counts the breakdown, rated reviews and the latest date', () => {
     const cp = computeProduct(p, reviews, outlets);
-    expect(cp.breakdown).toEqual({ gold: 3, recommended: 0, worthIt: 1, mixed: 0, miss: 1 });
+    expect(cp.breakdown).toEqual({ gold: 1, recommended: 2, worthIt: 1, mixed: 0, miss: 1 });
     expect(cp.ratedCount).toBe(3);
     expect(cp.latestReviewDate).toBe('2026-09-20');
     expect(cp.criticScore).toBeCloseTo((88 + 92 * 0.75 + 70 * 0.4 + 50 * 0.2 + 88) / (1 + 0.75 + 0.4 + 0.2 + 1), 10);

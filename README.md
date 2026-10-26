@@ -83,8 +83,8 @@ readers. In code:
    0.75, tier 3 0.4, tier 4 0.2. The product score is the weighted mean
    `sum(score × weight) / sum(weight)` (`computeCriticScore` in `src/lib/engine.ts`), shown
    once there are at least 5 reviews. It is stored unrounded and rounded once for display.
-4. **The rounded score sets the label** (`src/config/score-buckets.ts`): Critical Gold 85+,
-   Recommended 75-84, Worth a Look 65-74, Mixed 55-64, Critical Miss below 55.
+4. **The rounded score sets the label** (`src/config/score-buckets.ts`): Critical Gold 90+,
+   Recommended 80-89, Worth a Look 70-79, Mixed 60-69, Critical Miss below 60.
 
 ## Running it
 

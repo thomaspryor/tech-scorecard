@@ -20,7 +20,7 @@ The owner is not technical and does not review code, read diffs, or merge PRs. T
 
 - Never publish unverified review scores or quotes. Every review links to the original (see `/methodology`).
 - Product photos follow docs/IMAGES.md (official press photos, credited).
-- Score tiers live in `src/config/score-buckets.ts`; Critical Gold starts at 85.
+- Score tiers live in `src/config/score-buckets.ts`; Critical Gold starts at 90 (tiers 90/80/70/60, recalibrated 2026-10-26 from the score distribution).
 - Share images: product pages have a generated card at `src/app/product/[slug]/opengraph-image.tsx`. Messaging apps cache previews per URL, so test with `?v=N` on the link.
 - SEO notes: docs/SEO-PLAN.md. Data changes run `npm run validate` first.
 
