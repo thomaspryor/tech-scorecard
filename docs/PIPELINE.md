@@ -36,9 +36,18 @@ Lessons from the first 30 products (2026-10-22):
    appear word for word in the page text. Only outlets in `data/outlets.json` are accepted. It also looks
    for launches from the last 45 days and adds one only when 6 or more reviews pass these checks
    (card text is written from the review texts only, with `autoAdded` set on the product).
+   A candidate is skipped when it matches a product already on the site (same name with or without the
+   brand, "+" spelled out so S26 and S26+ stay apart) or when at least half of its reviews are pages already on the site.
+   The card must pass the copy rules (`scripts/lib/copy-voice.js`); a card that breaks them is asked for once more.
+   Each import file is validated on its own, so one bad file is rejected without losing the rest.
 2. `verify-quotes.py` re-checks every new quote; a MISS or unreadable page drops that review.
-3. `score-reviews.js` band-scores everything new (OpenAI + Gemini).
-4. `npm run build` validates the data. The workflow commits `data/` to main only if all of that passed.
+3. `score-reviews.js` band-scores everything new (OpenAI + Gemini), twice so a missing model answer is
+   asked again. A new review still without two model scores is dropped (`drop-unscored.js`) and found
+   again next week; a new product left under 6 reviews is removed (`drop-thin-products.js`).
+4. `npm run build` validates the data, copy rules included. The workflow commits `data/` to main only if it passed.
+5. Anything that went wrong (a failed launch search, more than a third of product searches failing, a
+   rejected import, or a failed run) opens or updates a GitHub issue labelled `refresh-failed`, which
+   emails the owner. The next clean run closes it.
 
 Needs repo secrets `OPENAI_API_KEY` and `GEMINI_API_KEY`. `data/refresh-state.json` remembers when each
 product was last checked, so each run covers the least recently checked products first.
@@ -48,7 +57,7 @@ Local dry run: `node scripts/refresh.js --only=<id> --dry-run`.
 
 # Research brief (give this to each research subagent)
 
-Tech Scorecard aggregates professional reviews into one tier-weighted 0-100 critic score (like Rotten Tomatoes/Metacritic). Today is 2026-10-22. REAL data only: never invent a quote, rating, author, date, price or spec. Use WebSearch (mode "extended" when needed) and WebFetch (or `curl -sL -A "<browser UA>"` + read JSON-LD when WebFetch fails) to open each review page.
+Tech Scorecard aggregates professional reviews into one tier-weighted 0-100 critic score (like Rotten Tomatoes/Metacritic). Use today's date when judging what is new. REAL data only: never invent a quote, rating, author, date, price or spec. Use WebSearch (mode "extended" when needed) and WebFetch (or `curl -sL -A "<browser UA>"` + read JSON-LD when WebFetch fails) to open each review page.
 
 Existing files for reference (read them, do not edit): /home/user/tech-scorecard/data/products.json (shape of a product), data/reviews.json (shape of a review), data/outlets.json (outlet ids + tiers).
 
@@ -83,4 +92,4 @@ Final reply to me: under 80 words: product name, release date, price, number of 
 - Category-appropriate outlets are fine (e.g. RTINGS, SoundGuys and What Hi-Fi? for audio; IGN, GameSpot, Eurogamer and Digital Foundry for consoles; Laptop Mag, Notebookcheck and Tom's Hardware for laptops; DC Rainmaker for watches; UploadVR and Road to VR for headsets). Add any outlet not in outlets.json to newOutlets with a sensible tier.
 - Product pages from the outlet only; skip "hands-on", "first look" and video-only pieces. A review must give a final verdict.
 - If the product as named does not exist or has fewer than 6 published reviews, pick the closest widely reviewed real product (e.g. the prior generation) and say so in your final reply.
-- Today is 2026-10-22: never use a review dated after today.
+- Never use a review dated after today.

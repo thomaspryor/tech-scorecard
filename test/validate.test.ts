@@ -23,6 +23,16 @@ describe('validateData', () => {
 
   it.each<[string, (d: Data) => void, RegExp]>([
     ['duplicate product id', (d) => d.products.push(product({ slug: 'other' })), /duplicate product id: test-phone/],
+    [
+      'em dash in written copy',
+      (d) => (d.products[0].criticsTake = 'Fast — and cheap.'),
+      /copy rule: test-phone.criticsTake: em dash/,
+    ],
+    [
+      'banned phrase in a gripe',
+      (d) => (d.products[0].gripes = ['A robust build']),
+      /copy rule: test-phone.gripes\[0\]: "robust"/,
+    ],
     ['duplicate slug', (d) => d.products.push(product({ id: 'other' })), /duplicate product slug/],
     ['duplicate outlet id', (d) => d.outlets.push(outlet()), /duplicate outlet id/],
     [

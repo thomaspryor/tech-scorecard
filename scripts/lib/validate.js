@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ratingToBand } = require('./rating-band');
+const { productCopyViolations } = require('./copy-voice');
 
 const MAX_EXCERPT_WORDS = 45;
 /** Fewer real words than this is not a quote ("..." would otherwise match any page). */
@@ -97,6 +98,9 @@ function validateData(
       errors.push(`product ${p.id}: unknown art.kind "${p.art.kind}"`);
     if (p.image) validateImage(p, errors, publicDir);
   }
+  // The owner's voice rules for written copy (no em dashes, no stock AI phrases). Checked here, not only
+  // in the tests, because the weekly refresh writes launch cards and its commits do not run CI.
+  for (const v of productCopyViolations(products)) errors.push(`copy rule: ${v}`);
 
   const seen = new Set();
   reviews.forEach((r, i) => {

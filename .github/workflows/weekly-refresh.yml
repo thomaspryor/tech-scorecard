@@ -2,7 +2,9 @@ name: Weekly refresh
 
 # Every Monday: look for new reviews of products already on the site and for new launches,
 # check every quote against the outlet's page, score with two models, build, and commit
-# only if every step passes. Vercel deploys the commit like any other push to main.
+# only if the build passes. Vercel deploys the commit like any other push to main.
+# A single bad item is dropped rather than failing the week; whatever went wrong opens a GitHub
+# issue (which emails the owner), and the next clean run closes it.
 # Needs two repository secrets: OPENAI_API_KEY and GEMINI_API_KEY.
 on:
   schedule:
@@ -19,6 +21,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   refresh:
@@ -43,6 +46,9 @@ jobs:
           fi
       - run: npm ci
       - name: Find, verify, score and build
+        id: pipeline
+        # Shorter than the job limit, so a hang ends as a normal failure and the alert step has time to run.
+        timeout-minutes: 160
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -59,3 +65,50 @@ jobs:
           git commit -m "Weekly refresh: new reviews and launches ($(date -u +%Y-%m-%d))"
           git pull --rebase origin main
           git push origin HEAD:main
+      - name: Fail if part of the run went wrong
+        run: |
+          if [ -s .cache/refresh/problems.txt ]; then
+            cat .cache/refresh/problems.txt
+            echo "::error::The rest of the run was committed, but these need a look."
+            exit 1
+          fi
+      - name: Open or update the alert issue
+        if: failure() || cancelled()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PIPELINE: ${{ steps.pipeline.outcome }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create refresh-failed --color B60205 --description "Weekly refresh needs a look" --force
+          {
+            echo "The weekly update of thetechscorecard.com hit a problem on $(date -u +%Y-%m-%d)."
+            echo
+            if [ "$PIPELINE" = success ]; then
+              echo "The site is still up. Everything that passed every check was published; the rest was left out."
+            else
+              echo "The site is still up and unchanged: nothing from this week's run was published."
+            fi
+            echo
+            if [ -s .cache/refresh/problems.txt ]; then
+              echo "What went wrong:"
+              sed 's/^/- /' .cache/refresh/problems.txt
+              echo
+            fi
+            echo "To fix it, start a Claude Code session on this repository and paste this link: $RUN_URL"
+          } > alert.md
+          OPEN=$(gh issue list --label refresh-failed --state open --json number --jq '.[0].number')
+          if [ -n "$OPEN" ]; then
+            gh issue comment "$OPEN" --body-file alert.md
+          else
+            gh issue create --title "Weekly update needs a look" --label refresh-failed --body-file alert.md
+          fi
+      - name: Close the alert issue after a clean run
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          for n in $(gh issue list --label refresh-failed --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "The weekly update ran cleanly on $(date -u +%Y-%m-%d). Closing."
+          done

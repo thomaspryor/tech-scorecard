@@ -3,16 +3,25 @@
 // Uses Gemini with Google Search grounding to FIND candidate review URLs only. Everything
 // that reaches data/ is read from the outlet's own page: rating, critic and date come from
 // the page's JSON-LD, and the quote must appear word for word in the page text.
-// A separate workflow step then runs verify-quotes.py and score-reviews.js, and only commits
-// when those pass (see .github/workflows/weekly-refresh.yml).
+// refresh-pipeline.sh then runs verify-quotes.py and score-reviews.js. Each import file is applied
+// on its own, so one bad file is rejected without losing the rest of the week; anything that went
+// wrong is listed in .cache/refresh/problems.txt and the workflow alerts on it after committing.
 //
 // Usage: node scripts/refresh.js [--max-products=15] [--max-new=2] [--only=id,id] [--no-launches] [--dry-run]
 // Needs GEMINI_API_KEY (search + excerpt picking) and OPENAI_API_KEY (copy for new products).
 // Writes files in .cache/refresh/ in the import-product.js shapes and imports them unless --dry-run.
 const fs = require('fs');
 const path = require('path');
-const { execFileSync } = require('child_process');
-const { DATA_DIR, loadData, loadCategories } = require('./lib/data-files');
+const { DATA_DIR, loadData, loadCategories, writeData } = require('./lib/data-files');
+const { importEach } = require('./lib/import');
+const { productCopyViolations } = require('./lib/copy-voice');
+const {
+  MIN_REVIEWS_NEW_PRODUCT,
+  LAUNCH_WINDOW_DAYS,
+  isRenamedDuplicate,
+  knownProduct,
+  sharedReviewUrls,
+} = require('./lib/launches');
 const { UA, curl, fetchPage, pageText, containsQuote, jsonLd, hostOf } = require('./lib/page');
 const { openaiText, geminiText, parseJsonReply } = require('./lib/models');
 
@@ -27,7 +36,8 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, '.cache', 'refresh');
 const STATE_FILE = path.join(DATA_DIR, 'refresh-state.json');
 const TODAY = new Date().toISOString().slice(0, 10);
-const MIN_REVIEWS_NEW_PRODUCT = 6;
+/** More failed product searches than this share of the queue is reported as a problem, not just a warning. */
+const MAX_FAILED_SHARE = 1 / 3;
 /** Gemini answers (search grounding above all) can take minutes. */
 const GEMINI_TIMEOUT_MS = 600_000;
 
@@ -42,7 +52,7 @@ const MAX_PRODUCTS = Number(args['max-products'] || 15);
 const MAX_NEW = Number(args['max-new'] ?? 2);
 const only = args.only ? new Set(String(args.only).split(',')) : null;
 
-const CATEGORIES = /** @type {{categories: Category[]}} */ (loadCategories());
+const CATEGORIES = /** @type {{categories: Category[], artKinds: string[]}} */ (loadCategories());
 const { products, reviews, outlets } = loadData();
 /** Product id -> date it was last checked (YYYY-MM-DD). @type {Record<string, string>} */
 const state = fs.existsSync(STATE_FILE) ? JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')) : {};
@@ -206,7 +216,7 @@ async function geminiTextRetry(prompt, opts) {
 async function newLaunches() {
   // Products already on the site are filtered out in code below, so the prompt stays short and the search fast.
   const text = await geminiTextRetry(
-    `Today is ${TODAY}. Using search, list up to 6 consumer gadgets that went on sale in the US within the last 45 days and already have several professional reviews from major tech outlets.
+    `Today is ${TODAY}. Using search, list up to 6 consumer gadgets that went on sale in the US within the last ${LAUNCH_WINDOW_DAYS} days and already have several professional reviews from major tech outlets.
 Categories allowed: ${CATEGORIES.categories.join(', ')}.
 Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate":"YYYY-MM-DD","launchPrice":<USD number>,"officialUrl":"https://..."}]. Use only facts you saw in search results.`,
     { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
@@ -219,6 +229,7 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
       CATEGORIES.categories.includes(c.category) &&
       /^\d{4}-\d{2}-\d{2}$/.test(c.releaseDate) &&
       c.releaseDate <= TODAY &&
+      c.releaseDate >= daysBefore(TODAY, LAUNCH_WINDOW_DAYS) &&
       Number.isFinite(c.launchPrice) &&
       /^https:\/\//.test(c.officialUrl || ''),
   );
@@ -227,7 +238,11 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
   for (const c of found) {
     if (made.length >= MAX_NEW) break;
     const id = slug(c.name);
-    if (products.some((p) => p.id === id || p.name.toLowerCase() === c.name.toLowerCase())) continue;
+    const dup = knownProduct({ ...c, id }, [...products, ...made.map((m) => m.product)]);
+    if (dup) {
+      console.log(`launch candidate ${c.name}: already on the site as ${dup.id}`);
+      continue;
+    }
     console.log(`new launch candidate: ${c.name}`);
     try {
       curl(['-f', '-o', '/dev/null', '-A', UA, c.officialUrl]);
@@ -237,21 +252,32 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
     }
     const probe = { ...c, id };
     const revs = await collectReviews(probe, []);
+    // Name matching misses renames ("MacBook Air M5" vs "MacBook Air (M5, 2026)"); the same review pages do not.
+    const shared = sharedReviewUrls(
+      revs.map((r) => r.url),
+      reviews,
+    );
+    if (isRenamedDuplicate(shared, revs.length)) {
+      console.log('  its reviews are already on the site under another product, skipped');
+      continue;
+    }
     if (revs.length < MIN_REVIEWS_NEW_PRODUCT) {
       console.log(`  only ${revs.length} verified reviews, need ${MIN_REVIEWS_NEW_PRODUCT}`);
       continue;
     }
     const texts = revs
       .slice(0, 8)
-      .map((r) => `SOURCE ${r.outletId}: ${pageText(fetchPage(r.url)).slice(0, 6000)}`)
+      .map((r) => {
+        try {
+          return `SOURCE ${r.outletId}: ${pageText(fetchPage(r.url)).slice(0, 6000)}`;
+        } catch {
+          return ''; // the review itself was already verified; the card just has one source fewer
+        }
+      })
+      .filter(Boolean)
       .join('\n\n');
-    const copy = parseJsonReply(
-      await openaiText(`Write the summary card for ${c.name} (${c.brand}) using ONLY facts stated in the review texts below. Never add a spec, price or claim that is not in the texts. No em dashes. No "not X but Y" phrasing, no hype words.
-Return JSON: {"criticsTake": "2-3 plain sentences on the critical consensus", "loved": [3-4 short strings], "gripes": [3-5 short strings], "specs": [{"label":"","value":""} 7-9 items a buyer of this category cares about, each stated in the texts, plus {"label":"Price","value":"From $${c.launchPrice}"}]}
-
-${texts}`),
-    );
-    if (!copy || !copy.criticsTake || !Array.isArray(copy.specs) || copy.specs.length < 5) {
+    const copy = await writeCard(c, texts);
+    if (!copy) {
       console.log('  could not write the card, skipped');
       continue;
     }
@@ -277,6 +303,46 @@ ${texts}`),
   return made;
 }
 
+/**
+ * The launch card, written by OpenAI from the review texts only. Asked a second time, with the problem
+ * named, when the first answer breaks the copy rules (scripts/lib/copy-voice.js), which validation enforces.
+ * @param {{name: string, brand: string, launchPrice: number}} c
+ * @param {string} texts
+ * @returns {Promise<Pick<Product, 'criticsTake' | 'loved' | 'gripes' | 'specs'> | null>}
+ */
+async function writeCard(c, texts) {
+  let fix = '';
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const copy = parseJsonReply(
+      await openaiText(`Write the summary card for ${c.name} (${c.brand}) using ONLY facts stated in the review texts below. Never add a spec, price or claim that is not in the texts. No em dashes. No "not X but Y" phrasing, no hype words. Never use: truly, genuinely, delve, robust, leverage, unlock, tapestry, realm, deep dive, moreover, furthermore, additionally, serves as, worth noting, "it's not just".${fix}
+Return JSON: {"criticsTake": "2-3 plain sentences on the critical consensus", "loved": [3-4 short strings], "gripes": [3-5 short strings], "specs": [{"label":"","value":""} 7-9 items a buyer of this category cares about, each stated in the texts, plus {"label":"Price","value":"From $${c.launchPrice}"}]}
+
+${texts}`),
+    );
+    const strings = (/** @type {unknown} */ a) =>
+      Array.isArray(a) && a.length > 0 && a.every((x) => typeof x === 'string' && x.trim());
+    if (
+      !copy ||
+      typeof copy.criticsTake !== 'string' ||
+      !copy.criticsTake.trim() ||
+      !strings(copy.loved) ||
+      !strings(copy.gripes) ||
+      !Array.isArray(copy.specs) ||
+      copy.specs.length < 5 ||
+      !copy.specs.every(
+        (/** @type {{label?: unknown, value?: unknown} | null} */ s) =>
+          s && typeof s.label === 'string' && typeof s.value === 'string',
+      )
+    )
+      return null;
+    const broken = productCopyViolations([{ id: 'card', ...copy }]);
+    if (!broken.length) return copy;
+    fix = ` Your last answer broke these rules, fix them: ${broken.join('; ')}.`;
+    console.log(`  card broke the copy rules (${broken.join('; ')})${attempt ? '' : ', asking again'}`);
+  }
+  return null;
+}
+
 /** @param {unknown} e */
 const errText = (e) => String(/** @type {Error} */ (e).message).slice(0, 160);
 
@@ -285,7 +351,10 @@ async function main() {
   fs.mkdirSync(OUT, { recursive: true });
   /** @type {string[]} */
   const files = [];
-  let failures = 0;
+  /** Things the workflow should alert on once the good part of the run is committed. @type {string[]} */
+  const problems = [];
+  let failedProducts = 0;
+  let launchFailed = false;
   // 1. New reviews for existing products: newest and least recently checked first.
   /** @param {Product} p */
   const recent = (p) =>
@@ -306,7 +375,7 @@ async function main() {
         reviews.filter((r) => r.productId === p.id),
       );
     } catch (e) {
-      failures++;
+      failedProducts++;
       console.error(`  failed: ${errText(e)}`);
       continue;
     }
@@ -326,21 +395,46 @@ async function main() {
         files.push(f);
       }
     } catch (e) {
-      failures++;
+      launchFailed = true;
       console.error(`launch search failed: ${errText(e)}`);
+      problems.push(`The search for new launches failed: ${errText(e)}`);
     }
   }
-  if (failures) throw new Error(`Refresh incomplete: ${failures} search step(s) failed; no imports applied.`);
+  const steps = queue.length + (args['no-launches'] || only ? 0 : 1);
+  const failures = failedProducts + Number(launchFailed);
+  // Nothing worked (a revoked key or an API outage): fail now, there is nothing to commit.
+  if (steps && failures === steps)
+    throw new Error(`Refresh incomplete: all ${failures} search step(s) failed; no imports applied.`);
+  if (failedProducts > queue.length * MAX_FAILED_SHARE)
+    problems.push(`${failedProducts} of ${queue.length} product searches failed (see the run log).`);
+  else if (failedProducts) console.log(`::warning::${failedProducts} product search(es) failed; retried next week`);
+
   console.log(`\n${files.length} import file(s)`);
-  if (args['dry-run'] || !files.length) {
-    if (!args['dry-run']) fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
-    return;
-  }
-  execFileSync('node', [path.join(__dirname, 'import-product.js'), ...files], { stdio: 'inherit' });
-  fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
-  // What the later steps should check and score: product ids, and the exact reviews added.
+  const writeOut = () => {
+    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
+    if (problems.length) fs.writeFileSync(path.join(OUT, 'problems.txt'), problems.join('\n') + '\n');
+  };
+  if (args['dry-run']) return;
+  if (!files.length) return writeOut();
   /** @type {{productId?: string, product?: Product, reviews: Review[]}[]} */
-  const parsed = files.map((f) => JSON.parse(fs.readFileSync(f, 'utf8')));
+  const contents = files.map((f) => JSON.parse(fs.readFileSync(f, 'utf8')));
+  const res = importEach(
+    loadData(DATA_DIR),
+    files.map((f, i) => ({ label: path.basename(f), content: contents[i] })),
+    CATEGORIES,
+  );
+  for (const m of res.messages) console.log(m);
+  for (const r of res.rejected) {
+    console.error(`rejected ${r.label}:\n- ${r.errors.join('\n- ')}`);
+    problems.push(`An import was rejected by the data checks (${r.label}): ${r.errors.slice(0, 3).join('; ')}`);
+    // A rejected product is checked again next week rather than skipped for a full cycle.
+    const id = contents[files.findIndex((f) => path.basename(f) === r.label)].productId;
+    if (id) delete state[id];
+  }
+  if (res.applied.length) writeData(DATA_DIR, res.data);
+  writeOut();
+  // What the later steps should check and score: product ids, and the exact reviews added.
+  const parsed = contents.filter((_, i) => res.applied.includes(path.basename(files[i])));
   /** @param {(typeof parsed)[number]} m */
   const idOf = (m) => m.productId || m.product?.id;
   fs.writeFileSync(path.join(OUT, 'touched.txt'), [...new Set(parsed.map(idOf))].join(','));
