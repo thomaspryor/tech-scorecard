@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { applyImport, importAll, provisionalScore } from '../scripts/lib/import';
+import { applyImport, importAll, importEach, provisionalScore } from '../scripts/lib/import';
 import { categories, outlet, product, review, validData } from './fixtures';
 
 describe('provisionalScore', () => {
@@ -134,5 +134,38 @@ describe('importAll', () => {
     expect(res.data).toBeUndefined();
     expect(res.errors.join('\n')).toMatch(/url must be a valid https URL/);
     expect(res.messages).toHaveLength(2);
+  });
+});
+
+describe('importEach', () => {
+  it('rejects only the bad file and keeps the others', () => {
+    const good = {
+      label: 'good.json',
+      content: {
+        productId: 'test-phone',
+        reviews: [review({ outletId: 'wired', url: 'https://www.wired.com/review/test-phone' })],
+      },
+    };
+    const bad = {
+      label: 'bad.json',
+      content: {
+        product: product({ id: 'new-phone', slug: 'new-phone', criticsTake: 'Great — mostly.' }),
+        reviews: [],
+      },
+    };
+    const base = validData();
+    const data = { ...base, outlets: [...base.outlets, outlet({ id: 'wired', name: 'Wired', domain: 'wired.com' })] };
+    const res = importEach(data, [bad, good], categories);
+    expect(res.applied).toEqual(['good.json']);
+    expect(res.rejected.map((r) => r.label)).toEqual(['bad.json']);
+    expect(res.rejected[0].errors.join()).toMatch(/em dash/);
+    expect(res.data.reviews.map((r) => r.outletId).sort()).toEqual(['cnet', 'the-verge', 'wired']);
+    expect(res.data.products.map((p) => p.id)).toEqual(['test-phone']);
+  });
+
+  it('rejects a file that cannot be applied at all', () => {
+    const res = importEach(validData(), [{ label: 'x.json', content: { productId: 'nope', reviews: [] } }], categories);
+    expect(res.applied).toEqual([]);
+    expect(res.rejected[0].errors[0]).toMatch(/needs product.id/);
   });
 });

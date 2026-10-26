@@ -136,4 +136,39 @@ function importAll(data, files, categories) {
   return errors.length ? { errors, messages } : { data: next, errors, messages };
 }
 
-module.exports = { applyImport, importAll, mergeOutlets, provisionalScore };
+/**
+ * Apply files one at a time, keeping each one only if the data set is still valid with it.
+ * One malformed file (a bad launch card, say) is rejected without costing the others.
+ * @param {DataSet} data
+ * @param {{label: string, content: ImportFile}[]} files
+ * @param {{categories: string[], artKinds: string[]}} categories
+ * @returns {{data: DataSet, applied: string[], rejected: {label: string, errors: string[]}[], messages: string[]}}
+ */
+function importEach(data, files, categories) {
+  let next = data;
+  /** @type {string[]} */
+  const applied = [];
+  /** @type {{label: string, errors: string[]}[]} */
+  const rejected = [];
+  /** @type {string[]} */
+  const messages = [];
+  for (const file of files) {
+    let res;
+    try {
+      res = importAll(next, [file], categories);
+    } catch (e) {
+      rejected.push({ label: file.label, errors: [String(/** @type {Error} */ (e).message)] });
+      continue;
+    }
+    if (!res.data) {
+      rejected.push({ label: file.label, errors: res.errors });
+      continue;
+    }
+    next = res.data;
+    applied.push(file.label);
+    messages.push(...res.messages);
+  }
+  return { data: next, applied, rejected, messages };
+}
+
+module.exports = { applyImport, importAll, importEach, mergeOutlets, provisionalScore };

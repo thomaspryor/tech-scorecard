@@ -6,7 +6,10 @@
 // quotes and are never checked.
 const fs = require('fs');
 const path = require('path');
-const ts = require('typescript');
+// Loaded on first use: the data check (validate.js) needs only copyProblem, not the TypeScript parser.
+/** @type {typeof import('typescript') | undefined} */
+let tsModule;
+const tsLib = () => (tsModule ??= require('typescript'));
 
 // JSX text keeps HTML entities undecoded, so &mdash; needs its own alternative.
 const EM_DASH = /—|&mdash;|&#8212;|&#x2014;|\\u2014/i;
@@ -35,6 +38,7 @@ function copyProblem(text, { allowSpacedEnDash = false } = {}) {
 
 /** @param {import('typescript').Node} node */
 function isConsoleArg(node) {
+  const ts = tsLib();
   for (let p = node.parent; p; p = p.parent) {
     if (ts.isCallExpression(p)) {
       const e = p.expression;
@@ -51,6 +55,7 @@ function isConsoleArg(node) {
  * @returns {string[]}
  */
 function sourceCopyViolations(file, root = process.cwd()) {
+  const ts = tsLib();
   const src = ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
   /** @type {string[]} */
   const hits = [];
@@ -85,10 +90,11 @@ function productCopyViolations(products) {
   return products.flatMap((p) =>
     [
       ['criticsTake', p.criticsTake],
-      ...(p.loved ?? []).map((s, i) => [`loved[${i}]`, s]),
-      ...(p.gripes ?? []).map((s, i) => [`gripes[${i}]`, s]),
+      // Shape errors are reported by validate.js; here a malformed field is just skipped, never a crash.
+      ...(Array.isArray(p.loved) ? p.loved : []).map((s, i) => [`loved[${i}]`, s]),
+      ...(Array.isArray(p.gripes) ? p.gripes : []).map((s, i) => [`gripes[${i}]`, s]),
     ]
-      .filter(([, text]) => text && copyProblem(text))
+      .filter(([, text]) => typeof text === 'string' && copyProblem(text))
       .map(([field, text]) => `${p.id}.${field}: ${copyProblem(text)}: ${text.slice(0, 90)}`),
   );
 }
