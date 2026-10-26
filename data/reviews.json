@@ -21976,5 +21976,698 @@
     },
     "scoreReason": "Great design, comfort, and controls, but disappointing sound seriously hurts value at this price.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/beats-360-headphones-review-sports-modular-design/",
+    "date": "2026-09-22",
+    "rating": "8.4/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "If you prefer over-ear headphones to earbuds for sports and exercise, these Beats are worth the investment.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 84
+    },
+    "scoreReason": "Strong praise for sound, ANC and calls, with notable missing features and high launch price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "zdnet",
+    "critic": "Jada Jones",
+    "url": "https://www.zdnet.com/tech/beats-360-review/",
+    "date": "2026-09-22",
+    "rating": "4.3/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "So, if you're ready to give up your true wireless earbuds, pick up the Beats 360.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for innovative, versatile design and upgrades, with only notable caveats on sound tuning and class-leading ANC.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "recording-now",
+    "critic": "Odi Productions",
+    "url": "https://recordingnow.com/blog/beats-360-review/",
+    "date": "2026-09-24",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The Beats 360 exceeded my expectations and is worthy of its $350 price tag, as it is a legit AirPods Max 2 contender and a complete evolution over the mediocre previous-generation Beats Studio Pro.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strongly positive overall: worthy price, practical daily driver, but sound and ANC trail class leaders.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "t3",
+    "critic": "Mat Gallagher",
+    "url": "https://www.t3.com/tech/iphones/iphone-18-pro-review",
+    "date": "2026-10-05",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone 18 Pro is without doubt the most powerful and best-performing iPhone to date.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly enthusiastic overall, with only minor camera and battery caveats for some upgraders.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "slashgear",
+    "critic": "Chris Davies",
+    "url": "https://www.slashgear.com/2265844/apple-iphone-18-pro-review/",
+    "date": "2026-09-22",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The rough edges of last year's Pro-branded iPhone have been smoothed out, with just enough that's new — and new hardware — to add the necessary sparkle.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strongly favorable overall, praising refinement, cameras, cooling, and value despite high price and modest upgrade appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/oct/05/apple-iphone-18-pro-review-battery-life-screen-siri-camera-variable-aperture-ios-27",
+    "date": "2026-10-05",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The iPhone 18 Pro is an iterative upgrade on an already great device from last year.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent compact phone with great battery, screen and cameras, but iterative and expensive.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-4",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/oct/23/apple-watch-ultra-4-review-longer-battery-life-health-tracking",
+    "date": "2026-10-23",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "That makes the Ultra 4 a great Apple Watch, just not a significant upgrade on those that came before.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent smartwatch with useful improvements, but too similar to last year and missing promised features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-4",
+    "outletId": "techradar",
+    "critic": "Jacob Krol",
+    "url": "https://www.techradar.com/health-fitness/smartwatches/apple-watch-ultra-4-review",
+    "date": "2026-10-23",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Apple Watch Ultra 4 is a fantastic refinement of Apple's rugged smartwatch, with excellent battery life, responsive performance, and the new Readiness Score standing out as one of my favorite additions.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent refinement with standout health features and battery life, but upgrades feel incremental for Ultra 3 owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "techradar",
+    "critic": "Jacob Krol",
+    "url": "https://www.techradar.com/health-fitness/smartwatches/apple-watch-series-12-review",
+    "date": "2026-10-23",
+    "rating": "5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "The Apple Watch Series 12 is a worthwhile upgrade for anyone using a Series 9 or older, with Readiness Score and improved health sensing making everyday tracking more useful.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent health features and performance, with only modest upgrade appeal and some overnight battery concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://uk.pcmag.com/migrated-99802-smartwatches/167373/apple-watch-series-12",
+    "date": "2026-09-17",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "A true leap forward, the Apple Watch Series 12 pairs two-day battery life and redesigned health sensors with fast, contextual Siri AI, making it an exceptional value.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 96
+    },
+    "scoreReason": "Major upgrade with strong praise, minor bugs and a few pending features keep it from the top.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "zdnet",
+    "critic": "Nina Raemont",
+    "url": "https://www.zdnet.com/tech/apple-watch-series-12-review-finally-the-health-tracker-ive-been-waiting-for/",
+    "date": "2026-09-24",
+    "rating": "5/5",
+    "score": 99,
+    "scoreSource": "rating",
+    "excerpt": "The Apple Watch Series 12 is as good as a highly accurate smartwatch can get.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 99
+    },
+    "scoreReason": "Strongly recommends it as the best Apple Watch, with only minor comfort and privacy caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "mashable",
+    "critic": "Priya Singh",
+    "url": "https://in.mashable.com/apple/114644/apple-watch-series-12-review-apples-best-upgrades-are-hiding-in-plain-sight",
+    "date": "2026-10-06",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "But if you're upgrading from an older model, Series 12 feels polished, dependable and increasingly good at turning all that health data into something you can actually use.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Polished and dependable with useful health improvements, but expensive and not essential for recent owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/apple/apple-watch-series-12-review",
+    "date": "2026-10-20",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The Series 12 is an outstanding smartwatch, and still the best choice for most iPhone owners.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Best for iPhone users with strong praise, but notable concerns about battery, display, and unfinished features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://www.pcmag.com/reviews/apple-airpods-5",
+    "date": "2026-09-17",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "If you're looking for an affordable set of earphones for your new iPhone 18 Pro or Pro Max, the AirPods 5 are our Editors' Choice and should be at the top of your list.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with Editors' Choice; only minor battery and codec complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-s26-fe/review/",
+    "date": "2026-09-14",
+    "rating": null,
+    "score": 55,
+    "scoreSource": "text",
+    "excerpt": "The problem is that most of this was also true of the Galaxy S25 FE, and the S26 FE's $100 price increase isn't backed by enough substantial upgrades.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 55,
+      "gemini": 55
+    },
+    "scoreReason": "Good overall, but price hike and limited upgrades make the verdict only mildly favorable.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "engadget",
+    "critic": "Mat Smith",
+    "url": "https://www.engadget.com/2260026/samsung-galaxy-s26-fe-review/",
+    "date": "2026-09-18",
+    "rating": "6.7/10",
+    "score": 52,
+    "scoreSource": "rating",
+    "excerpt": "Barring retail discounts and holiday sales, I'd suggest looking at older Galaxy S devices before the S26 FE.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 52,
+      "gemini": 52
+    },
+    "scoreReason": "Some nice features, but weak value, sluggish camera, middling battery, and the reviewer says to buy older Galaxies instead.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "toms-guide",
+    "critic": "Tom Pritchard",
+    "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-s26-fe-review-the-perfect-cure-for-samsungs-recent-price-hike-frenzy",
+    "date": "2026-10-04",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy S26 FE may seem like an awkwardly placed phone at first glance, but it actually slots in between the Galaxy S26 and Galaxy A57 quite neatly - especially now the former's price has increased.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 78
+    },
+    "scoreReason": "Good value and premium feel, but weak performance and limited upgrades temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-fenix-9-pro",
+    "outletId": "mountaineer-journey",
+    "critic": "Tyler",
+    "url": "https://mountaineerjourney.com/blog/garmin-fenix-9-review",
+    "date": "2026-09-14",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "Overall, the Garmin Fenix 9 is one of our top-rated GPS watches of 2026; just be sure you're using the watch to its full extent, and it is well worth its price tag.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 89,
+      "gemini": 89
+    },
+    "scoreReason": "Excellent accuracy, navigation, battery, and features, but high price and bulk keep it from true rave.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/google-pixel-11-pro-review-3703549/",
+    "date": "2026-09-05",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "However, Google's proven formula of outstanding hardware, phenomenal cameras, and best-in-class Android software make it a phone I'll happily keep in my pocket for a while to come.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation despite notable flaws; especially praised software, cameras, design, and daily experience.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-5",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/google-pixel-watch-5-45mm-review",
+    "date": "2026-08-24",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "If you’re already in the Pixel ecosystem, or even just an Android user looking for the most polished smartwatch experience out there, the Pixel Watch 5 is an easy recommendation.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 98
+    },
+    "scoreReason": "Highly enthusiastic, easy recommendation, with only minor complaints about display material and some AI extras.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11",
+    "outletId": "android-authority",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidauthority.com/google-pixel-11-review-3709371/",
+    "date": "2026-09-24",
+    "rating": "7/10",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "I hoped this would be the year I could wholly recommend Pixels without any asterisks, but that isn’t the case with the Pixel 11.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 72
+    },
+    "scoreReason": "Great software, camera, and battery, but overheating and lag make the recommendation heavily qualified.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11",
+    "outletId": "techradar",
+    "critic": "Cas Kulk",
+    "url": "https://global.techradar.com/nl-nl/phones/google-pixel-phones/google-pixel-11-review-nl",
+    "date": "2026-08-21",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "Dit is over het algemeen een erg fijne telefoon om te gebruiken, maar helaas is het wel een teleurstellende upgrade.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Great software and cameras, but disappointing upgrade, weak gaming performance, and some buyers should skip upgrading.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11",
+    "outletId": "slashgear",
+    "critic": "Chris Burns",
+    "url": "https://www.slashgear.com/2240079/google-pixel-11-review-smartphone/",
+    "date": "2026-08-19",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "It's a delightful phone that's well worth the asking price.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent, delightful, ideal-feeling phone strongly recommended, though upgrades over recent Pixels are minor.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro-fold",
+    "outletId": "cnet",
+    "critic": "Abrar Al-Heeti",
+    "url": "https://www.cnet.com/tech/mobile/google-pixel-11-pro-fold-review/",
+    "date": "2026-08-20",
+    "rating": "8.4/10",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "Most importantly, you get a foldable that feels remarkably ordinary when you need it to, and a little more special when you open it up - assuming you remember to do so.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 84
+    },
+    "scoreReason": "Strong first-foldable pick with durability, battery and cameras, but pricey with limited multitasking and modest upgrades.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro-fold",
+    "outletId": "zdnet",
+    "critic": "Kerry Wan",
+    "url": "https://www.zdnet.com/article/google-pixel-11-pro-fold-review/",
+    "date": "2026-08-19",
+    "rating": "3.5/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "The subtle changes are nice, but not enough to justify spending $1,900 on Google&#039;s latest foldable phone when better alternatives exist.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 71
+    },
+    "scoreReason": "Praised durability, display, and speed, but high price, weak battery, and limited improvements make it hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro-fold",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://www.pcmag.com/reviews/google-pixel-11-pro-fold",
+    "date": "2026-08-24",
+    "rating": "3.5/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "The Google Pixel 11 Pro Fold leans into AI and camera strength rather than multitasking chops, and the result is a polished folding phone built for daily use.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Great cameras and AI, but weak performance, middling battery, and owners should skip upgrading.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-fold-8",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-z-fold-8/review/",
+    "date": "2026-08-02",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Z Fold 8 isn't perfect, but it's compact, light, practical, and extremely enjoyable to use.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Very enjoyable, compact, light, and practical, though clearly not perfect.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-z-fold-8",
+    "outletId": "android-authority",
+    "critic": "Hadlee Simons",
+    "url": "https://www.androidauthority.com/samsung-galaxy-z-fold-8-review-3708629/",
+    "date": "2026-09-26",
+    "rating": "8/10",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "This is exactly the design I want in a foldable, but I can't shake the feeling I'm better off waiting for the Z Fold 9.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Loved the form factor and battery, but major omissions and advice to wait temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-fold-8",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/aug/10/samsung-galaxy-z-fold-8-review-folding-phone",
+    "date": "2026-08-10",
+    "rating": null,
+    "score": 68,
+    "scoreSource": "text",
+    "excerpt": "The Fold 8 is better than some of the original attempts at the passport folder shapes, but there are many good a reasons book-style folding phones evolved into candy bar shapes over the last eight years.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 60
+    },
+    "scoreReason": "Impressive performance, software and battery, but awkward shape, high price and camera compromises limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-fold-8",
+    "outletId": "sammyguru",
+    "critic": "Josh Skinner",
+    "url": "https://sammyguru.com/samsung-galaxy-z-fold-8-review/",
+    "date": "2026-09-03",
+    "rating": "9/10",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "If the compact foldable shape appeals to you, nothing else delivers it this well, as long as you can accept weak cameras and the loss of Flex Mode.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 92
+    },
+    "scoreReason": "Strong recommendation for its unique form factor, with notable camera and Flex Mode compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-fold-8",
+    "outletId": "gadgetguy",
+    "critic": "Alice Clarke",
+    "url": "https://www.gadgetguy.com.au/samsung-galaxy-z-fold-8-review/",
+    "date": "2026-07-31",
+    "rating": "9/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "This is the best folding phone on the market for most people.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 96
+    },
+    "scoreReason": "Strongly enthusiastic favorite, with only minor camera, heat, and price caveats for specific users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-flip-8",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-z-flip-8/review/",
+    "date": "2026-09-18",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "But as a complete package, the Galaxy Z Flip 8 shows just how polished and practical a modern flip phone can be.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise for its polished, practical complete package, with no major criticism in the excerpt.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-watch-9",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/samsung/samsung-galaxy-watch-9-review",
+    "date": "2026-09-06",
+    "rating": null,
+    "score": 70,
+    "scoreSource": "text",
+    "excerpt": "Ultimately, this is a great smartwatch for people upgrading from a much older Galaxy Watch to consider, but it's not quite polished enough to unseat the Pixel Watch as the best mid-range pick for Android users.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 68
+    },
+    "scoreReason": "Good smartwatch with strong features and design, but weak battery and sensor inconsistencies limit recommendation.",
+    "scoredFromFullText": true
   }
 ]
