@@ -23,6 +23,24 @@ export function fitTitle(candidates: string[], max = MAX_TITLE_LENGTH): string |
   return { absolute: candidates.find((c) => c.length <= max) ?? candidates[candidates.length - 1] };
 }
 
+/** Title candidates per page type, most descriptive first, for fitTitle. The first is also the share-card title. */
+export const titleCandidates = {
+  product: (name: string, score: number | null) =>
+    score != null
+      ? [`${name} reviews: ${score}/100 critic score`, `${name} reviews: ${score}/100`, `${name} reviews`]
+      : [`${name} reviews`],
+  category: (plural: string, year: number) => [
+    `Best ${plural} to buy in ${year}: ranked by critic score`,
+    `Best ${plural} ${year}: ranked by critic score`,
+    `Best ${plural} to buy in ${year}`,
+  ],
+  best: (year: number) => [
+    `Best-reviewed tech to buy in ${year}: top gadgets by critic score`,
+    `Best-reviewed tech of ${year} by critic score`,
+    `Best-reviewed tech to buy in ${year}`,
+  ],
+};
+
 export type Crumb = { name: string; path: string };
 
 export function breadcrumbLd(crumbs: Crumb[]) {

@@ -4,7 +4,7 @@ import { bestYear, getScoredProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_PLURAL } from '@/lib/format';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta } from '@/lib/seo';
+import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta, titleCandidates } from '@/lib/seo';
 import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
 const TOP_N = 10;
@@ -14,13 +14,14 @@ const rated = getScoredProducts;
 export function generateMetadata(): Metadata {
   const top = rated()[0];
   if (!top) return { title: `Best-reviewed tech to buy in ${bestYear()}`, alternates: { canonical: '/best/' } };
-  const title = `Best-reviewed tech to buy in ${bestYear()}: top gadgets by critic score`;
+  const titles = titleCandidates.best(bestYear());
+  const title = titles[0];
   const description = clip(
     `The ${TOP_N} best-reviewed gadgets to buy in ${bestYear()}, ranked by critic score across ${rated().reduce((n, p) => n + p.reviewCount, 0)} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   return {
-    title: fitTitle([title, `Best-reviewed tech to buy in ${bestYear()}`]),
+    title: fitTitle(titles),
     description,
     alternates: { canonical: '/best/' },
     ...socialMeta(title, description, '/best/'),

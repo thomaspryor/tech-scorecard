@@ -6,7 +6,7 @@ import { CATEGORY_ORDER, CATEGORY_PLURAL, isCategory } from '@/lib/format';
 import type { Category } from '@/lib/data-types';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta } from '@/lib/seo';
+import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta, titleCandidates } from '@/lib/seo';
 import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
 type Params = { name: string };
@@ -31,14 +31,15 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { list, reviews, top } = summary(name);
   if (!top) return {};
   const plural = CATEGORY_PLURAL[name];
-  const title = `Best ${plural} to buy in ${bestYear()}: ranked by critic score`;
+  const titles = titleCandidates.category(plural, bestYear());
+  const title = titles[0];
   const description = clip(
     `The best ${plural.toLowerCase()} to buy in ${bestYear()} by critic score: ${list.length} ranked from ${reviews} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   const url = `/category/${name}/`;
   return {
-    title: fitTitle([title, `Best ${plural} to buy in ${bestYear()}`]),
+    title: fitTitle(titles),
     description,
     alternates: { canonical: url },
     robots: indexableCategories().includes(name) ? undefined : { index: false, follow: true },

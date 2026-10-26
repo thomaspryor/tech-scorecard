@@ -57,7 +57,7 @@ All in `src/`, pushed to main:
 - Root layout: title template (`%s | Tech Scorecard`), default title and description without "Beta", `WebSite` and `Organization` JSON-LD, verification tags (emitted only when a token is set).
 - Every page sets its own canonical (static pages, product, category, best). A canonical is deliberately not set in the layout, because children would inherit it.
 - Product pages: title `"<name> reviews: <score>/100 critic score"`, description led by the score and review count, `BreadcrumbList` and `WebPage` JSON-LD, breadcrumb now links to the category page.
-- New `/category/<name>/` pages (8 categories, titled "Best <Plural> 2026: ranked by critic score"), ranked lists built only from existing data, `ItemList` and `BreadcrumbList` JSON-LD. Categories with fewer than 2 scored products are `noindex, follow` and left out of the sitemap until they have more (all 8 are indexed as of 2026-10-26).
+- New `/category/<name>/` pages (8 categories, titled "Best <Plural> to buy in <year>: ranked by critic score", shortened by `fitTitle`), ranked lists built only from existing data, `ItemList` and `BreadcrumbList` JSON-LD. Categories with fewer than 2 scored products are `noindex, follow` and left out of the sitemap until they have more (all 8 are indexed as of 2026-10-26).
 - New `/best/` page: the 10 highest critic scores overall, links to each category page.
 - Internal links: home page "Best of 2026" section, footer "Best of 2026" link, category pages cross-link each other.
 - "Best of 2026" spans launches from Oct 2025 to Oct 2026 (the data window), not only 2026 releases.
