@@ -1,8 +1,10 @@
 /** Single place for site-wide SEO constants. */
 export const SITE_URL = 'https://www.thetechscorecard.com';
 export const SITE_NAME = 'Tech Scorecard';
-/** Year used in "best of" titles. Bump when the data moves to a new year. */
-export const BEST_YEAR = 2026;
+/** Appended to every page title by the root layout's title template. */
+export const TITLE_SUFFIX = ` | ${SITE_NAME}`;
+/** Longest <title> before search results usually cut it off. */
+export const MAX_TITLE_LENGTH = 65;
 /** A category page is indexed and listed in the sitemap only with at least this many products. */
 export const MIN_PRODUCTS_FOR_CATEGORY_PAGE = 2;
 

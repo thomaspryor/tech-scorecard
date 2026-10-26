@@ -1,4 +1,4 @@
-import { SITE_NAME, SITE_URL } from '@/config/seo';
+import { MAX_TITLE_LENGTH, SITE_NAME, SITE_URL, TITLE_SUFFIX } from '@/config/seo';
 
 /** Absolute URL for a site path such as "/product/x/". */
 export function abs(path: string): string {
@@ -12,6 +12,34 @@ export function clip(text: string, max = 155): string {
   const cut = t.slice(0, max - 1);
   return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '')}…`;
 }
+
+/**
+ * The page title to set, from candidates in order of preference (most descriptive first): the first
+ * that fits with the site suffix, else the first that fits on its own (without the suffix), else the last.
+ */
+export function fitTitle(candidates: string[], max = MAX_TITLE_LENGTH): string | { absolute: string } {
+  const withSuffix = candidates.find((c) => c.length + TITLE_SUFFIX.length <= max);
+  if (withSuffix) return withSuffix;
+  return { absolute: candidates.find((c) => c.length <= max) ?? candidates[candidates.length - 1] };
+}
+
+/** Title candidates per page type, most descriptive first, for fitTitle. The first is also the share-card title. */
+export const titleCandidates = {
+  product: (name: string, score: number | null) =>
+    score != null
+      ? [`${name} reviews: ${score}/100 critic score`, `${name} reviews: ${score}/100`, `${name} reviews`]
+      : [`${name} reviews`],
+  category: (plural: string, year: number) => [
+    `Best ${plural} to buy in ${year}: ranked by critic score`,
+    `Best ${plural} ${year}: ranked by critic score`,
+    `Best ${plural} to buy in ${year}`,
+  ],
+  best: (year: number) => [
+    `Best-reviewed tech to buy in ${year}: top gadgets by critic score`,
+    `Best-reviewed tech of ${year} by critic score`,
+    `Best-reviewed tech to buy in ${year}`,
+  ],
+};
 
 export type Crumb = { name: string; path: string };
 

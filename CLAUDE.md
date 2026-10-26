@@ -1,6 +1,6 @@
 # Tech Scorecard
 
-Static Next.js site (`output: 'export'`) that combines professional tech reviews into one critic score. Production: https://www.thetechscorecard.com. Sister project: Broadway Scorecard (`thomaspryor/Broadwayscore`), which shares the score tiers.
+Static Next.js site (`output: 'export'`) that combines professional tech reviews into one critic score. Production: https://www.thetechscorecard.com. Sister project: Broadway Scorecard (`thomaspryor/Broadwayscore`); tier names are shared, cutoffs are not (see below).
 
 ## Who you work for
 

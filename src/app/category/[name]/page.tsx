@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getScoredProducts, indexableCategories } from '@/lib/data';
+import { bestYear, getScoredProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_ORDER, CATEGORY_PLURAL, isCategory } from '@/lib/format';
 import type { Category } from '@/lib/data-types';
 import { ProductListCard } from '@/components/product-cards';
 import { JsonLd } from '@/components/JsonLd';
-import { breadcrumbLd, clip, itemListLd, socialMeta } from '@/lib/seo';
-import { BEST_YEAR } from '@/config/seo';
+import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta, titleCandidates } from '@/lib/seo';
 import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
 type Params = { name: string };
@@ -32,14 +31,15 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { list, reviews, top } = summary(name);
   if (!top) return {};
   const plural = CATEGORY_PLURAL[name];
-  const title = `Best ${plural} to buy in ${BEST_YEAR}: ranked by critic score`;
+  const titles = titleCandidates.category(plural, bestYear());
+  const title = titles[0];
   const description = clip(
-    `The best ${plural.toLowerCase()} to buy in ${BEST_YEAR} by critic score: ${list.length} ranked from ${reviews} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
+    `The best ${plural.toLowerCase()} to buy in ${bestYear()} by critic score: ${list.length} ranked from ${reviews} professional reviews. Top rated: ${top.name} at ${Math.round(top.criticScore)}/100.`,
     158,
   );
   const url = `/category/${name}/`;
   return {
-    title,
+    title: fitTitle(titles),
     description,
     alternates: { canonical: url },
     robots: indexableCategories().includes(name) ? undefined : { index: false, follow: true },
@@ -65,7 +65,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
             { name: plural, path },
           ]),
           itemListLd(
-            `Best ${plural} to buy in ${BEST_YEAR}`,
+            `Best ${plural} to buy in ${bestYear()}`,
             list.map((p) => ({ name: p.name, path: `/product/${p.slug}/` })),
           ),
         ]}
@@ -79,7 +79,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
       </nav>
 
       <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl sm:leading-10">
-        Best {plural} to buy in {BEST_YEAR}, ranked by critic score
+        Best {plural} to buy in {bestYear()}, ranked by critic score
       </h1>
       <p className="mt-3 max-w-[65ch] leading-relaxed text-ink-muted">
         Ranked by the weighted average of {reviews} professional reviews. The top rated is the {top.name} at{' '}
@@ -125,7 +125,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
                 href="/best/"
                 className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
               >
-                Best to buy in {BEST_YEAR} overall
+                Best to buy in {bestYear()} overall
               </Link>
             </li>
           </ul>

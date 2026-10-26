@@ -16,7 +16,7 @@ import {
 } from '@/components/product-cards';
 import { ReviewList } from '@/components/ReviewRow';
 import { JsonLd } from '@/components/JsonLd';
-import { abs, breadcrumbLd, clip, socialMeta } from '@/lib/seo';
+import { abs, breadcrumbLd, clip, fitTitle, socialMeta, titleCandidates } from '@/lib/seo';
 
 type Params = { slug: string };
 
@@ -28,15 +28,17 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const p = getProduct((await params).slug);
   if (!p) return {};
   const score = p.criticScore != null ? Math.round(p.criticScore) : null;
-  const title = score != null ? `${p.name} reviews: ${score}/100 critic score` : `${p.name} reviews`;
+  const titles = titleCandidates.product(p.name, score);
   const lead = score != null ? `${p.name} review score: ${score}/100 from ${p.reviewCount} professional reviews. ` : '';
   const description = clip(`${lead}${p.criticsTake}`, 158);
   const url = `/product/${p.slug}/`;
   return {
-    title,
+    title: fitTitle(titles),
     description,
     alternates: { canonical: url },
-    ...socialMeta(title, description, url, `${url}opengraph-image`),
+    // Share cards have no length limit, so they keep the full title. The image URL keeps its trailing
+    // slash: without it Vercel answers with a redirect, which some link-preview scrapers do not follow.
+    ...socialMeta(titles[0], description, url, `${url}opengraph-image/`),
   };
 }
 
@@ -66,6 +68,8 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
       name: `${product.name} reviews`,
       url: abs(`/product/${product.slug}/`),
       about: { '@type': 'Thing', name: product.name },
+      ...(product.latestReviewDate ? { dateModified: product.latestReviewDate } : {}),
+      ...(product.image ? { primaryImageOfPage: abs(product.image.src) } : {}),
     },
   ];
 

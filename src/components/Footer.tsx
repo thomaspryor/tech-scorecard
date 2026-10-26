@@ -1,6 +1,6 @@
 import Link from 'next/link';
+import { bestYear } from '@/lib/data';
 import { Logo } from './Header';
-import { BEST_YEAR } from '@/config/seo';
 
 export function Footer() {
   return (
@@ -14,7 +14,7 @@ export function Footer() {
         </p>
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-sm">
           <Link href="/best/" className="inline-flex min-h-11 items-center underline underline-offset-2 hover:text-ink">
-            Best to buy in {BEST_YEAR}
+            Best to buy in {bestYear()}
           </Link>
           <Link
             href="/methodology/"

@@ -47,6 +47,28 @@ export function getScoredProducts(): ScoredProduct[] {
   return getAllProducts().filter(isScored);
 }
 
+/** Newest review date (YYYY-MM-DD) across `products`. */
+export function latestReviewDate(products: ComputedProduct[] = getAllProducts()): string | undefined {
+  return products.reduce<string | undefined>(
+    (max, p) => (p.latestReviewDate && (!max || p.latestReviewDate > max) ? p.latestReviewDate : max),
+    undefined,
+  );
+}
+
+/** A new year needs this many reviews before "best to buy in" titles move to it, so one early review cannot flip them. */
+export const BEST_YEAR_MIN_REVIEWS = 10;
+
+/** The year in "Best ... to buy in YEAR": the year of the BEST_YEAR_MIN_REVIEWS-th newest review date. */
+export function bestYearFrom(dates: string[]): number {
+  const newest = [...dates].sort().reverse();
+  const pick = newest[BEST_YEAR_MIN_REVIEWS - 1] ?? newest[newest.length - 1];
+  return pick ? Number(pick.slice(0, 4)) : new Date().getUTCFullYear();
+}
+
+export function bestYear(): number {
+  return bestYearFrom(getAllProducts().flatMap((p) => p.reviews.map((r) => r.date)));
+}
+
 /** Categories whose page is indexed and linked: at least MIN_PRODUCTS_FOR_CATEGORY_PAGE scored products. One rule for sitemap, links and noindex. */
 export function indexableCategories(): Category[] {
   const scored = getScoredProducts();

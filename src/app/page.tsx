@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getAllProducts, getTotals, indexableCategories, isScored } from '@/lib/data';
+import { bestYear, getAllProducts, getTotals, indexableCategories, isScored } from '@/lib/data';
 import { MiniProductCard, ProductListCard } from '@/components/product-cards';
 import { Logo } from '@/components/Header';
 import { ListSort } from '@/components/ListSort';
 import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
-import { BEST_YEAR } from '@/config/seo';
 
 export const metadata: Metadata = { alternates: { canonical: '/' } };
 
@@ -36,10 +35,11 @@ export default function HomePage() {
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6">
       <section className="pb-8 pt-12 sm:pt-16">
-        <h1>
+        <div>
           <Logo className="text-[clamp(32px,11vw,44px)] sm:text-7xl" beta="lg" />
-        </h1>
-        <p className="mt-4 text-xl text-ink-muted sm:text-2xl">Professional tech reviews, combined into one score.</p>
+        </div>
+        {/* The tagline is the page's h1: it says what the site is, where the logo would read "TechScorecardBeta". */}
+        <h1 className="mt-4 text-xl text-ink-muted sm:text-2xl">Professional tech reviews, combined into one score.</h1>
         <p className="mt-1 text-base text-ink-faint sm:text-lg">
           {totals.products} products and {totals.reviews} critic reviews from {totals.outlets} outlets so far. More
           gadgets and reviews are on the way.
@@ -119,7 +119,7 @@ export default function HomePage() {
 
       <section aria-labelledby="best" className="pb-4 pt-10">
         <h2 id="best" className="mb-3 text-lg font-bold">
-          Best to buy in {BEST_YEAR}
+          Best to buy in {bestYear()}
         </h2>
         <ul className="flex flex-wrap gap-2 text-sm">
           <li>
