@@ -21934,5 +21934,47 @@
     },
     "scoreReason": "Appealing large Android tablet, clearly recommended for buyers specifically wanting this oversized form factor.",
     "scoredFromFullText": false
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "t3",
+    "critic": "Max Freeman-Mills",
+    "url": "https://www.t3.com/tech/headphones/nothing-headphone-1-pro-review",
+    "date": "2026-09-29",
+    "rating": "3/5",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "Most of what I really liked about the Headphone (1) is still here on the Pro, but that sizeable price increase just doesn't feel worth it in my view.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 52
+    },
+    "scoreReason": "Improved sound and controls, but overpriced, bad case, and reviewer recommends other options instead.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "bgr",
+    "critic": "Connor Jewiss",
+    "url": "https://www.bgr.com/2287046/nothing-headphone-1-pro-over-ear-review/",
+    "date": "2026-10-14",
+    "rating": null,
+    "score": 58,
+    "scoreSource": "text",
+    "excerpt": "Meanwhile, if design, comfort, and physical controls matter more to you than sound quality, the Nothing (1) Pro is certainly worth trying on yourself, but in this premium price range, the competition might be too stiff.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 65,
+      "gemini": 50
+    },
+    "scoreReason": "Great design, comfort, and controls, but disappointing sound seriously hurts value at this price.",
+    "scoredFromFullText": true
   }
 ]
