@@ -31,7 +31,7 @@ it.each([
   );
   const run = spawnSync(
     process.execPath,
-    ['--require', join(dir, 'mock.cjs'), join(dir, 'scripts/refresh.js'), '--max-products=1'],
+    ['--require', join(dir, 'mock.cjs'), join(dir, 'scripts/refresh.js'), '--max-products=1', '--no-feeds'],
     { cwd: dir, encoding: 'utf8', timeout: 10000 },
   );
   expect(run.status, run.stderr).toBe(status);

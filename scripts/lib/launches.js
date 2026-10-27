@@ -72,4 +72,5 @@ module.exports = {
   isRenamedDuplicate,
   knownProduct,
   sharedReviewUrls,
+  urlKey,
 };

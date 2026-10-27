@@ -3,517 +3,737 @@
     "id": "the-verge",
     "name": "The Verge",
     "tier": 1,
-    "domain": "theverge.com"
+    "domain": "theverge.com",
+    "feeds": [
+      "https://theverge.com/rss/index.xml"
+    ]
   },
   {
     "id": "wired",
     "name": "Wired",
     "tier": 1,
-    "domain": "wired.com"
+    "domain": "wired.com",
+    "feeds": [
+      "https://www.wired.com/feed/rss"
+    ]
   },
   {
     "id": "cnet",
     "name": "CNET",
     "tier": 1,
-    "domain": "cnet.com"
+    "domain": "cnet.com",
+    "feeds": [
+      "https://www.cnet.com/rss/all/"
+    ]
   },
   {
     "id": "engadget",
     "name": "Engadget",
     "tier": 1,
-    "domain": "engadget.com"
+    "domain": "engadget.com",
+    "feeds": [
+      "https://www.engadget.com/feed/"
+    ]
   },
   {
     "id": "the-wall-street-journal",
     "name": "The Wall Street Journal",
     "tier": 1,
-    "domain": "wsj.com"
+    "domain": "wsj.com",
+    "feeds": []
   },
   {
     "id": "the-new-york-times",
     "name": "The New York Times",
     "tier": 1,
-    "domain": "nytimes.com"
+    "domain": "nytimes.com",
+    "feeds": []
   },
   {
     "id": "bloomberg",
     "name": "Bloomberg",
     "tier": 1,
-    "domain": "bloomberg.com"
+    "domain": "bloomberg.com",
+    "feeds": []
   },
   {
     "id": "the-washington-post",
     "name": "The Washington Post",
     "tier": 1,
-    "domain": "washingtonpost.com"
+    "domain": "washingtonpost.com",
+    "feeds": []
   },
   {
     "id": "toms-guide",
     "name": "Tom's Guide",
     "tier": 2,
-    "domain": "tomsguide.com"
+    "domain": "tomsguide.com",
+    "feeds": [
+      "https://www.tomsguide.com/feeds.xml"
+    ]
   },
   {
     "id": "techradar",
     "name": "TechRadar",
     "tier": 2,
-    "domain": "techradar.com"
+    "domain": "techradar.com",
+    "feeds": [
+      "https://www.techradar.com/feeds.xml"
+    ]
   },
   {
     "id": "pcmag",
     "name": "PCMag",
     "tier": 2,
-    "domain": "pcmag.com"
+    "domain": "pcmag.com",
+    "feeds": [
+      "https://www.pcmag.com/feeds/rss/latest"
+    ]
   },
   {
     "id": "zdnet",
     "name": "ZDNET",
     "tier": 2,
-    "domain": "zdnet.com"
+    "domain": "zdnet.com",
+    "feeds": [
+      "https://www.zdnet.com/rss/all/"
+    ]
   },
   {
     "id": "digital-trends",
     "name": "Digital Trends",
     "tier": 2,
-    "domain": "digitaltrends.com"
+    "domain": "digitaltrends.com",
+    "feeds": []
   },
   {
     "id": "mashable",
     "name": "Mashable",
     "tier": 2,
-    "domain": "mashable.com"
+    "domain": "mashable.com",
+    "feeds": [
+      "https://mashable.com/feeds/rss/all"
+    ]
   },
   {
     "id": "gizmodo",
     "name": "Gizmodo",
     "tier": 2,
-    "domain": "gizmodo.com"
+    "domain": "gizmodo.com",
+    "feeds": [
+      "https://gizmodo.com/feed"
+    ]
   },
   {
     "id": "cnbc",
     "name": "CNBC",
     "tier": 2,
-    "domain": "cnbc.com"
+    "domain": "cnbc.com",
+    "feeds": []
   },
   {
     "id": "android-central",
     "name": "Android Central",
     "tier": 2,
-    "domain": "androidcentral.com"
+    "domain": "androidcentral.com",
+    "feeds": [
+      "https://www.androidcentral.com/feeds.xml"
+    ]
   },
   {
     "id": "android-authority",
     "name": "Android Authority",
     "tier": 2,
-    "domain": "androidauthority.com"
+    "domain": "androidauthority.com",
+    "feeds": [
+      "https://androidauthority.com/feed/"
+    ]
   },
   {
     "id": "macworld",
     "name": "Macworld",
     "tier": 2,
-    "domain": "macworld.com"
+    "domain": "macworld.com",
+    "feeds": [
+      "https://www.macworld.com/feed"
+    ]
   },
   {
     "id": "the-guardian",
     "name": "The Guardian",
     "tier": 2,
-    "domain": "theguardian.com"
+    "domain": "theguardian.com",
+    "feeds": [
+      "https://www.theguardian.com/us/rss"
+    ]
   },
   {
     "id": "trusted-reviews",
     "name": "Trusted Reviews",
     "tier": 2,
-    "domain": "trustedreviews.com"
+    "domain": "trustedreviews.com",
+    "feeds": [
+      "https://www.trustedreviews.com/feed"
+    ]
   },
   {
     "id": "ars-technica",
     "name": "Ars Technica",
     "tier": 2,
-    "domain": "arstechnica.com"
+    "domain": "arstechnica.com",
+    "feeds": [
+      "https://arstechnica.com/feed/"
+    ]
   },
   {
     "id": "9to5mac",
     "name": "9to5Mac",
     "tier": 2,
-    "domain": "9to5mac.com"
+    "domain": "9to5mac.com",
+    "feeds": [
+      "https://9to5mac.com/feed/"
+    ]
   },
   {
     "id": "9to5google",
     "name": "9to5Google",
     "tier": 2,
-    "domain": "9to5google.com"
+    "domain": "9to5google.com",
+    "feeds": [
+      "https://9to5google.com/feed/"
+    ]
   },
   {
     "id": "toms-hardware",
     "name": "Tom's Hardware",
     "tier": 2,
-    "domain": "tomshardware.com"
+    "domain": "tomshardware.com",
+    "feeds": [
+      "https://www.tomshardware.com/feeds.xml"
+    ]
   },
   {
     "id": "usa-today",
     "name": "USA Today",
     "tier": 2,
-    "domain": "usatoday.com"
+    "domain": "usatoday.com",
+    "feeds": []
   },
   {
     "id": "business-insider",
     "name": "Business Insider",
     "tier": 2,
-    "domain": "businessinsider.com"
+    "domain": "businessinsider.com",
+    "feeds": [
+      "https://feeds.businessinsider.com/custom/all"
+    ]
   },
   {
     "id": "forbes",
     "name": "Forbes",
     "tier": 2,
-    "domain": "forbes.com"
+    "domain": "forbes.com",
+    "feeds": []
   },
   {
     "id": "techcrunch",
     "name": "TechCrunch",
     "tier": 2,
-    "domain": "techcrunch.com"
+    "domain": "techcrunch.com",
+    "feeds": [
+      "https://techcrunch.com/feed/"
+    ]
   },
   {
     "id": "lifehacker",
     "name": "Lifehacker",
     "tier": 2,
-    "domain": "lifehacker.com"
+    "domain": "lifehacker.com",
+    "feeds": [
+      "https://lifehacker.com/feed/rss"
+    ]
   },
   {
     "id": "gsmarena",
     "name": "GSMArena",
     "tier": 3,
-    "domain": "gsmarena.com"
+    "domain": "gsmarena.com",
+    "feeds": [
+      "https://www.gsmarena.com/rss-news-reviews.php3"
+    ]
   },
   {
     "id": "phonearena",
     "name": "PhoneArena",
     "tier": 3,
-    "domain": "phonearena.com"
+    "domain": "phonearena.com",
+    "feeds": []
   },
   {
     "id": "pocket-lint",
     "name": "Pocket-lint",
     "tier": 3,
-    "domain": "pocket-lint.com"
+    "domain": "pocket-lint.com",
+    "feeds": [
+      "https://pocket-lint.com/feed/"
+    ]
   },
   {
     "id": "stuff",
     "name": "Stuff",
     "tier": 3,
-    "domain": "stuff.tv"
+    "domain": "stuff.tv",
+    "feeds": [
+      "https://stuff.tv/feed/"
+    ]
   },
   {
     "id": "t3",
     "name": "T3",
     "tier": 3,
-    "domain": "t3.com"
+    "domain": "t3.com",
+    "feeds": [
+      "https://t3.com/rss/"
+    ]
   },
   {
     "id": "expert-reviews",
     "name": "Expert Reviews",
     "tier": 3,
-    "domain": "expertreviews.co.uk"
+    "domain": "expertreviews.co.uk",
+    "feeds": [
+      "https://expertreviews.co.uk/feed/"
+    ]
   },
   {
     "id": "appleinsider",
     "name": "AppleInsider",
     "tier": 3,
-    "domain": "appleinsider.com"
+    "domain": "appleinsider.com",
+    "feeds": []
   },
   {
     "id": "macrumors",
     "name": "MacRumors",
     "tier": 3,
-    "domain": "macrumors.com"
+    "domain": "macrumors.com",
+    "feeds": [
+      "https://feeds.macrumors.com/MacRumors-All"
+    ]
   },
   {
     "id": "sammobile",
     "name": "SamMobile",
     "tier": 3,
-    "domain": "sammobile.com"
+    "domain": "sammobile.com",
+    "feeds": []
   },
   {
     "id": "petapixel",
     "name": "PetaPixel",
     "tier": 3,
-    "domain": "petapixel.com"
+    "domain": "petapixel.com",
+    "feeds": [
+      "https://petapixel.com/feed/"
+    ]
   },
   {
     "id": "pickr",
     "name": "Pickr",
     "tier": 3,
-    "domain": "pickr.com.au"
+    "domain": "pickr.com.au",
+    "feeds": [
+      "https://pickr.com.au/feed/"
+    ]
   },
   {
     "id": "six-colors",
     "name": "Six Colors",
     "tier": 3,
-    "domain": "sixcolors.com"
+    "domain": "sixcolors.com",
+    "feeds": []
   },
   {
     "id": "daring-fireball",
     "name": "Daring Fireball",
     "tier": 3,
-    "domain": "daringfireball.net"
+    "domain": "daringfireball.net",
+    "feeds": [
+      "https://daringfireball.net/feeds/main"
+    ]
   },
   {
     "id": "android-police",
     "name": "Android Police",
     "tier": 3,
-    "domain": "androidpolice.com"
+    "domain": "androidpolice.com",
+    "feeds": [
+      "https://androidpolice.com/feed/"
+    ]
   },
   {
     "id": "imore",
     "name": "iMore",
     "tier": 3,
-    "domain": "imore.com"
+    "domain": "imore.com",
+    "feeds": [
+      "https://www.imore.com/feeds.xml"
+    ]
   },
   {
     "id": "laptop-mag",
     "name": "Laptop Mag",
     "tier": 3,
-    "domain": "laptopmag.com"
+    "domain": "laptopmag.com",
+    "feeds": [
+      "https://www.laptopmag.com/feeds.xml"
+    ]
   },
   {
     "id": "tech-advisor",
     "name": "Tech Advisor",
     "tier": 3,
-    "domain": "techadvisor.com"
+    "domain": "techadvisor.com",
+    "feeds": [
+      "https://www.techadvisor.com/feed"
+    ]
   },
   {
     "id": "wareable",
     "name": "Wareable",
     "tier": 3,
-    "domain": "wareable.com"
+    "domain": "wareable.com",
+    "feeds": []
   },
   {
     "id": "slashgear",
     "name": "SlashGear",
     "tier": 3,
-    "domain": "slashgear.com"
+    "domain": "slashgear.com",
+    "feeds": [
+      "https://www.slashgear.com/feed/"
+    ]
   },
   {
     "id": "mobile-syrup",
     "name": "Mobile Syrup",
     "tier": 3,
-    "domain": "mobilesyrup.com"
+    "domain": "mobilesyrup.com",
+    "feeds": [
+      "https://mobilesyrup.com/feed/"
+    ]
   },
   {
     "id": "android-headlines",
     "name": "Android Headlines",
     "tier": 3,
-    "domain": "androidheadlines.com"
+    "domain": "androidheadlines.com",
+    "feeds": [
+      "https://androidheadlines.com/feed/"
+    ]
   },
   {
     "id": "notebookcheck",
     "name": "Notebookcheck",
     "tier": 3,
-    "domain": "notebookcheck.net"
+    "domain": "notebookcheck.net",
+    "feeds": []
   },
   {
     "id": "the-independent",
     "name": "The Independent",
     "tier": 3,
-    "domain": "independent.co.uk"
+    "domain": "independent.co.uk",
+    "feeds": []
   },
   {
     "id": "evening-standard",
     "name": "Evening Standard",
     "tier": 3,
-    "domain": "standard.co.uk"
+    "domain": "standard.co.uk",
+    "feeds": [
+      "https://www.standard.co.uk/rss"
+    ]
   },
   {
     "id": "the-telegraph",
     "name": "The Telegraph",
     "tier": 3,
-    "domain": "telegraph.co.uk"
+    "domain": "telegraph.co.uk",
+    "feeds": []
   },
   {
     "id": "what-hi-fi",
     "name": "What Hi-Fi?",
     "tier": 3,
-    "domain": "whathifi.com"
+    "domain": "whathifi.com",
+    "feeds": [
+      "https://www.whathifi.com/feeds.xml"
+    ]
   },
   {
     "id": "cnn",
     "name": "CNN",
     "tier": 2,
-    "domain": "cnn.com"
+    "domain": "cnn.com",
+    "feeds": []
   },
   {
     "id": "popular-mechanics",
     "name": "Popular Mechanics",
     "tier": 3,
-    "domain": "popularmechanics.com"
+    "domain": "popularmechanics.com",
+    "feeds": [
+      "https://popularmechanics.com/rss/"
+    ]
   },
   {
     "id": "gq-uk",
     "name": "GQ (UK)",
     "tier": 3,
-    "domain": "gq-magazine.co.uk"
+    "domain": "gq-magazine.co.uk",
+    "feeds": [
+      "https://www.gq-magazine.co.uk/feed/rss"
+    ]
   },
   {
     "id": "daily-mail",
     "name": "Daily Mail",
     "tier": 3,
-    "domain": "dailymail.com"
+    "domain": "dailymail.com",
+    "feeds": [
+      "https://www.dailymail.com/ushome/index.rss",
+      "https://www.dailymail.com/articles.rss"
+    ]
   },
   {
     "id": "gb-news",
     "name": "GB News",
     "tier": 4,
-    "domain": "gbnews.com"
+    "domain": "gbnews.com",
+    "feeds": [
+      "https://gbnews.com/feeds/feed.rss"
+    ]
   },
   {
     "id": "bgr",
     "name": "BGR",
     "tier": 3,
-    "domain": "bgr.com"
+    "domain": "bgr.com",
+    "feeds": [
+      "https://www.bgr.com/feed/"
+    ]
   },
   {
     "id": "hardwarezone",
     "name": "HardwareZone",
     "tier": 3,
-    "domain": "hardwarezone.com.sg"
+    "domain": "hardwarezone.com.sg",
+    "feeds": [
+      "https://hardwarezone.com.sg/feed/"
+    ]
   },
   {
     "id": "cult-of-mac",
     "name": "Cult of Mac",
     "tier": 3,
-    "domain": "cultofmac.com"
+    "domain": "cultofmac.com",
+    "feeds": [
+      "https://www.cultofmac.com/feed/"
+    ]
   },
   {
     "id": "man-of-many",
     "name": "Man of Many",
     "tier": 4,
-    "domain": "manofmany.com"
+    "domain": "manofmany.com",
+    "feeds": [
+      "https://manofmany.com/feed/"
+    ]
   },
   {
     "id": "cgmagonline",
     "name": "CGMagazine",
     "tier": 4,
-    "domain": "cgmagonline.com"
+    "domain": "cgmagonline.com",
+    "feeds": [
+      "https://www.cgmagonline.com/feed/"
+    ]
   },
   {
     "id": "outdoorgearlab",
     "name": "OutdoorGearLab",
     "tier": 3,
-    "domain": "outdoorgearlab.com"
+    "domain": "outdoorgearlab.com",
+    "feeds": []
   },
   {
     "id": "the-5k-runner",
     "name": "The 5K Runner",
     "tier": 4,
-    "domain": "the5krunner.com"
+    "domain": "the5krunner.com",
+    "feeds": [
+      "https://the5krunner.com/feed/"
+    ]
   },
   {
     "id": "trail-and-kale",
     "name": "Trail and Kale",
     "tier": 4,
-    "domain": "trailandkale.com"
+    "domain": "trailandkale.com",
+    "feeds": [
+      "https://trailandkale.com/rss/"
+    ]
   },
   {
     "id": "soundguys",
     "name": "SoundGuys",
     "tier": 3,
-    "domain": "soundguys.com"
+    "domain": "soundguys.com",
+    "feeds": [
+      "https://www.soundguys.com/feed/"
+    ]
   },
   {
     "id": "hothardware",
     "name": "HotHardware",
     "tier": 3,
-    "domain": "hothardware.com"
+    "domain": "hothardware.com",
+    "feeds": [
+      "https://hothardware.com/rss/news.aspx",
+      "https://hothardware.com/rss/articles.aspx"
+    ]
   },
   {
     "id": "pocket-tactics",
     "name": "Pocket Tactics",
     "tier": 4,
-    "domain": "pockettactics.com"
+    "domain": "pockettactics.com",
+    "feeds": [
+      "https://www.pockettactics.com/mainrss.xml"
+    ]
   },
   {
     "id": "techgearlab",
     "name": "TechGearLab",
     "tier": 3,
-    "domain": "techgearlab.com"
+    "domain": "techgearlab.com",
+    "feeds": []
   },
   {
     "id": "pcworld",
     "name": "PCWorld",
     "tier": 2,
-    "domain": "pcworld.com"
+    "domain": "pcworld.com",
+    "feeds": [
+      "https://www.pcworld.com/feed"
+    ]
   },
   {
     "id": "reviewed",
     "name": "Reviewed",
     "tier": 3,
-    "domain": "reviewed.com"
+    "domain": "reviewed.com",
+    "feeds": [
+      "https://reviewed.com/articles.atom"
+    ]
   },
   {
     "id": "amateur-photographer",
     "name": "Amateur Photographer",
     "tier": 3,
-    "domain": "amateurphotographer.com"
+    "domain": "amateurphotographer.com",
+    "feeds": [
+      "https://amateurphotographer.com/feed/"
+    ]
   },
   {
     "id": "digital-camera-world",
     "name": "Digital Camera World",
     "tier": 3,
-    "domain": "digitalcameraworld.com"
+    "domain": "digitalcameraworld.com",
+    "feeds": [
+      "https://www.digitalcameraworld.com/feeds.xml"
+    ]
   },
   {
     "id": "thurrott",
     "name": "Thurrott.com",
     "tier": 3,
-    "domain": "thurrott.com"
+    "domain": "thurrott.com",
+    "feeds": [
+      "https://thurrott.com/feed/"
+    ]
   },
   {
     "id": "itpro",
     "name": "ITPro",
     "tier": 3,
-    "domain": "itpro.com"
+    "domain": "itpro.com",
+    "feeds": [
+      "https://www.itpro.com/feeds.xml"
+    ]
   },
   {
     "id": "creative-bloq",
     "name": "Creative Bloq",
     "tier": 3,
-    "domain": "creativebloq.com"
+    "domain": "creativebloq.com",
+    "feeds": [
+      "https://www.creativebloq.com/feeds.xml"
+    ]
   },
   {
     "id": "makeuseof",
     "name": "MakeUseOf",
     "tier": 3,
-    "domain": "makeuseof.com"
+    "domain": "makeuseof.com",
+    "feeds": [
+      "https://makeuseof.com/feed/"
+    ]
   },
   {
     "id": "the-shortcut",
     "name": "The Shortcut",
     "tier": 4,
-    "domain": "theshortcut.com"
+    "domain": "theshortcut.com",
+    "feeds": [
+      "https://theshortcut.com/feed"
+    ]
   },
   {
     "id": "androidguys",
     "name": "AndroidGuys",
     "tier": 4,
-    "domain": "androidguys.com"
+    "domain": "androidguys.com",
+    "feeds": []
   },
   {
     "id": "ign",
     "name": "IGN",
     "tier": 2,
-    "domain": "ign.com"
+    "domain": "ign.com",
+    "feeds": [
+      "https://www.ign.com/rss/v2/articles/feed"
+    ]
   },
   {
     "id": "gamesradar",
     "name": "GamesRadar+",
     "tier": 2,
-    "domain": "gamesradar.com"
+    "domain": "gamesradar.com",
+    "feeds": [
+      "https://www.gamesradar.com/feeds.xml"
+    ]
   },
   {
     "id": "pc-gamer",
     "name": "PC Gamer",
     "tier": 2,
-    "domain": "pcgamer.com"
+    "domain": "pcgamer.com",
+    "feeds": [
+      "https://www.pcgamer.com/feeds.xml"
+    ]
   },
   {
     "id": "digital-foundry",
@@ -522,540 +742,786 @@
     "domain": "eurogamer.net",
     "altDomains": [
       "digitalfoundry.net"
+    ],
+    "feeds": [
+      "https://www.eurogamer.net/feed"
     ]
   },
   {
     "id": "droid-life",
     "name": "Droid-Life",
     "tier": 3,
-    "domain": "droid-life.com"
+    "domain": "droid-life.com",
+    "feeds": [
+      "https://www.droid-life.com/feed/"
+    ]
   },
   {
     "id": "dc-rainmaker",
     "name": "DC Rainmaker",
     "tier": 3,
-    "domain": "dcrainmaker.com"
+    "domain": "dcrainmaker.com",
+    "feeds": [
+      "https://www.dcrainmaker.com/feed"
+    ]
   },
   {
     "id": "musictech",
     "name": "MusicTech",
     "tier": 3,
-    "domain": "musictech.com"
+    "domain": "musictech.com",
+    "feeds": [
+      "https://musictech.com/feed/"
+    ]
   },
   {
     "id": "eurogamer",
     "name": "Eurogamer",
     "tier": 2,
-    "domain": "eurogamer.net"
+    "domain": "eurogamer.net",
+    "feeds": []
   },
   {
     "id": "pcgamesn",
     "name": "PCGamesN",
     "tier": 3,
-    "domain": "pcgamesn.com"
+    "domain": "pcgamesn.com",
+    "feeds": [
+      "https://www.pcgamesn.com/mainrss.xml"
+    ]
   },
   {
     "id": "gamersnexus",
     "name": "GamersNexus",
     "tier": 3,
-    "domain": "gamersnexus.net"
+    "domain": "gamersnexus.net",
+    "feeds": [
+      "https://gamersnexus.net/rss.xml"
+    ]
   },
   {
     "id": "club386",
     "name": "Club386",
     "tier": 3,
-    "domain": "club386.com"
+    "domain": "club386.com",
+    "feeds": [
+      "https://www.club386.com/feed/"
+    ]
   },
   {
     "id": "sammyguru",
     "name": "SammyGuru",
     "tier": 4,
-    "domain": "sammyguru.com"
+    "domain": "sammyguru.com",
+    "feeds": [
+      "https://sammyguru.com/feed/"
+    ]
   },
   {
     "id": "powerup",
     "name": "PowerUp!",
     "tier": 4,
-    "domain": "powerup-gaming.com"
+    "domain": "powerup-gaming.com",
+    "feeds": [
+      "https://powerup-gaming.com/feed/"
+    ]
   },
   {
     "id": "can-buy-or-not",
     "name": "Can Buy or Not",
     "tier": 4,
-    "domain": "canbuyornot.com"
+    "domain": "canbuyornot.com",
+    "feeds": [
+      "https://www.canbuyornot.com/feed/"
+    ]
   },
   {
     "id": "eftm",
     "name": "EFTM",
     "tier": 4,
-    "domain": "eftm.com"
+    "domain": "eftm.com",
+    "feeds": [
+      "https://eftm.com/feed"
+    ]
   },
   {
     "id": "uploadvr",
     "name": "UploadVR",
     "tier": 3,
-    "domain": "uploadvr.com"
+    "domain": "uploadvr.com",
+    "feeds": [
+      "https://www.uploadvr.com/rss/"
+    ]
   },
   {
     "id": "beebom",
     "name": "Beebom",
     "tier": 4,
-    "domain": "beebom.com"
+    "domain": "beebom.com",
+    "feeds": [
+      "https://beebom.com/feed/"
+    ]
   },
   {
     "id": "itdaily",
     "name": "ITdaily",
     "tier": 4,
-    "domain": "itdaily.com"
+    "domain": "itdaily.com",
+    "feeds": [
+      "https://itdaily.com/feed/"
+    ]
   },
   {
     "id": "india-tv-news",
     "name": "India TV News",
     "tier": 3,
-    "domain": "indiatvnews.com"
+    "domain": "indiatvnews.com",
+    "feeds": [
+      "https://api.indiatvnews.com/v3/en/gp7naGtJSQrs9oi/rss/topstory"
+    ]
   },
   {
     "id": "geek-culture",
     "name": "Geek Culture",
     "tier": 4,
-    "domain": "geekculture.co"
+    "domain": "geekculture.co",
+    "feeds": [
+      "https://geekculture.co/feed/"
+    ]
   },
   {
     "id": "techgoondu",
     "name": "Techgoondu",
     "tier": 4,
-    "domain": "techgoondu.com"
+    "domain": "techgoondu.com",
+    "feeds": [
+      "https://www.techgoondu.com/feed/"
+    ]
   },
   {
     "id": "windows-central",
     "name": "Windows Central",
     "tier": 2,
-    "domain": "windowscentral.com"
+    "domain": "windowscentral.com",
+    "feeds": [
+      "https://www.windowscentral.com/feeds.xml"
+    ]
   },
   {
     "id": "ultrabookreview",
     "name": "UltrabookReview",
     "tier": 3,
-    "domain": "ultrabookreview.com"
+    "domain": "ultrabookreview.com",
+    "feeds": [
+      "https://www.ultrabookreview.com/feed/",
+      "https://www.ultrabookreview.com/feed/atom/"
+    ]
   },
   {
     "id": "macsources",
     "name": "MacSources",
     "tier": 4,
-    "domain": "macsources.com"
+    "domain": "macsources.com",
+    "feeds": [
+      "https://macsources.com/feed/"
+    ]
   },
   {
     "id": "wccftech",
     "name": "Wccftech",
     "tier": 3,
-    "domain": "wccftech.com"
+    "domain": "wccftech.com",
+    "feeds": [
+      "https://wccftech.com/feed/"
+    ]
   },
   {
     "id": "noobfeed",
     "name": "NoobFeed",
     "tier": 4,
-    "domain": "noobfeed.com"
+    "domain": "noobfeed.com",
+    "feeds": []
   },
   {
     "id": "gadgetguy",
     "name": "Gadgetguy",
     "tier": 3,
-    "domain": "gadgetguy.com.au"
+    "domain": "gadgetguy.com.au",
+    "feeds": []
   },
   {
     "id": "the-mobile-indian",
     "name": "The Mobile Indian",
     "tier": 4,
-    "domain": "themobileindian.com"
+    "domain": "themobileindian.com",
+    "feeds": []
   },
   {
     "id": "uswitch",
     "name": "Uswitch",
     "tier": 4,
-    "domain": "uswitch.com"
+    "domain": "uswitch.com",
+    "feeds": []
   },
   {
     "id": "xda-developers",
     "name": "XDA",
     "tier": 3,
-    "domain": "xda-developers.com"
+    "domain": "xda-developers.com",
+    "feeds": [
+      "https://xda-developers.com/feed/"
+    ]
   },
   {
     "id": "techaeris",
     "name": "Techaeris",
     "tier": 4,
-    "domain": "techaeris.com"
+    "domain": "techaeris.com",
+    "feeds": [
+      "https://techaeris.com/feed/"
+    ]
   },
   {
     "id": "dadnology",
     "name": "Dadnology",
     "tier": 4,
-    "domain": "dadnology.com"
+    "domain": "dadnology.com",
+    "feeds": [
+      "https://dadnology.com/rss.xml"
+    ]
   },
   {
     "id": "smartprix",
     "name": "Smartprix",
     "tier": 4,
-    "domain": "smartprix.com"
+    "domain": "smartprix.com",
+    "feeds": []
   },
   {
     "id": "journal-du-geek",
     "name": "Journal du Geek",
     "tier": 4,
-    "domain": "journaldugeek.com"
+    "domain": "journaldugeek.com",
+    "feeds": [
+      "https://www.journaldugeek.com/feed/"
+    ]
   },
   {
     "id": "t2-online",
     "name": "t2 (The Telegraph India)",
     "tier": 4,
-    "domain": "t2online.in"
+    "domain": "t2online.in",
+    "feeds": []
   },
   {
     "id": "consolecreatures",
     "name": "Console Creatures",
     "tier": 4,
-    "domain": "consolecreatures.com"
+    "domain": "consolecreatures.com",
+    "feeds": [
+      "https://www.consolecreatures.com/feed/"
+    ]
   },
   {
     "id": "pokde",
     "name": "Pokde.Net",
     "tier": 4,
-    "domain": "pokde.net"
+    "domain": "pokde.net",
+    "feeds": [
+      "https://pokde.net/feed"
+    ]
   },
   {
     "id": "technerdo",
     "name": "Technerdo",
     "tier": 4,
-    "domain": "technerdo.com"
+    "domain": "technerdo.com",
+    "feeds": [
+      "https://technerdo.com/feed.xml"
+    ]
   },
   {
     "id": "the-pc-enthusiast",
     "name": "The PC Enthusiast",
     "tier": 4,
-    "domain": "thepcenthusiast.com"
+    "domain": "thepcenthusiast.com",
+    "feeds": [
+      "https://thepcenthusiast.com/feed/"
+    ]
   },
   {
     "id": "stereo-guide",
     "name": "Stereo Guide",
     "tier": 3,
-    "domain": "stereoguide.com"
+    "domain": "stereoguide.com",
+    "feeds": [
+      "https://stereoguide.com/rss/"
+    ]
   },
   {
     "id": "rolling-stone",
     "name": "Rolling Stone",
     "tier": 2,
-    "domain": "rollingstone.com"
+    "domain": "rollingstone.com",
+    "feeds": [
+      "https://www.rollingstone.com/feed/rss/"
+    ]
   },
   {
     "id": "ecoustics",
     "name": "eCoustics",
     "tier": 4,
-    "domain": "ecoustics.com"
+    "domain": "ecoustics.com",
+    "feeds": [
+      "https://www.ecoustics.com/feed/"
+    ]
   },
   {
     "id": "rock-paper-shotgun",
     "name": "Rock Paper Shotgun",
     "tier": 2,
-    "domain": "rockpapershotgun.com"
+    "domain": "rockpapershotgun.com",
+    "feeds": [
+      "https://www.rockpapershotgun.com/feed"
+    ]
   },
   {
     "id": "kotaku",
     "name": "Kotaku",
     "tier": 2,
-    "domain": "kotaku.com"
+    "domain": "kotaku.com",
+    "feeds": [
+      "https://kotaku.com/feed"
+    ]
   },
   {
     "id": "aftermath",
     "name": "Aftermath",
     "tier": 3,
-    "domain": "aftermath.site"
+    "domain": "aftermath.site",
+    "feeds": [
+      "https://aftermath.site/rss/"
+    ]
   },
   {
     "id": "road-to-vr",
     "name": "Road to VR",
     "tier": 3,
-    "domain": "roadtovr.com"
+    "domain": "roadtovr.com",
+    "feeds": [
+      "https://roadtovr.com/feed/"
+    ]
   },
   {
     "id": "xbox-tavern",
     "name": "Xbox Tavern",
     "tier": 4,
-    "domain": "xboxtavern.com"
+    "domain": "xboxtavern.com",
+    "feeds": [
+      "https://www.xboxtavern.com/feed/"
+    ]
   },
   {
     "id": "polygon",
     "name": "Polygon",
     "tier": 2,
-    "domain": "polygon.com"
+    "domain": "polygon.com",
+    "feeds": [
+      "https://polygon.com/feed/"
+    ]
   },
   {
     "id": "better-trail",
     "name": "Better Trail",
     "tier": 4,
-    "domain": "bettertrail.com"
+    "domain": "bettertrail.com",
+    "feeds": []
   },
   {
     "id": "runmorph",
     "name": "RunMorph",
     "tier": 4,
-    "domain": "runmorph.com"
+    "domain": "runmorph.com",
+    "feeds": []
   },
   {
     "id": "breaking-eighty",
     "name": "Breaking Eighty",
     "tier": 4,
-    "domain": "breakingeighty.com"
+    "domain": "breakingeighty.com",
+    "feeds": [
+      "https://breakingeighty.com/feed"
+    ]
   },
   {
     "id": "mytrails",
     "name": "MyTrails.com",
     "tier": 4,
-    "domain": "mytrails.com"
+    "domain": "mytrails.com",
+    "feeds": []
   },
   {
     "id": "samsung-magazine",
     "name": "Samsung Magazine",
     "tier": 4,
-    "domain": "samsungmagazine.eu"
+    "domain": "samsungmagazine.eu",
+    "feeds": [
+      "https://samsungmagazine.eu/feed/"
+    ]
   },
   {
     "id": "radio-times",
     "name": "Radio Times",
     "tier": 3,
-    "domain": "radiotimes.com"
+    "domain": "radiotimes.com",
+    "feeds": [
+      "https://www.radiotimes.com/feed"
+    ]
   },
   {
     "id": "digital-spy",
     "name": "Digital Spy",
     "tier": 3,
-    "domain": "digitalspy.com"
+    "domain": "digitalspy.com",
+    "feeds": [
+      "https://digitalspy.com/rss/default.xml",
+      "https://digitalspy.com/rss/all.xml"
+    ]
   },
   {
     "id": "gaming-trend",
     "name": "Gaming Trend",
     "tier": 3,
-    "domain": "gamingtrend.com"
+    "domain": "gamingtrend.com",
+    "feeds": [
+      "https://gamingtrend.com/rss/"
+    ]
   },
   {
     "id": "retro-handhelds",
     "name": "Retro Handhelds",
     "tier": 4,
-    "domain": "retrohandhelds.gg"
+    "domain": "retrohandhelds.gg",
+    "feeds": [
+      "https://retrohandhelds.gg/feed/"
+    ]
   },
   {
     "id": "ztgd",
     "name": "Zero Thirty Gaming Dojo",
     "tier": 4,
-    "domain": "ztgd.com"
+    "domain": "ztgd.com",
+    "feeds": [
+      "https://ztgd.com/feed/"
+    ]
   },
   {
     "id": "how-to-geek",
     "name": "How-To Geek",
     "tier": 2,
-    "domain": "howtogeek.com"
+    "domain": "howtogeek.com",
+    "feeds": [
+      "https://howtogeek.com/feed/"
+    ]
   },
   {
     "id": "mark-ellis-reviews",
     "name": "Mark Ellis Reviews",
     "tier": 4,
-    "domain": "markellisreviews.com"
+    "domain": "markellisreviews.com",
+    "feeds": [
+      "https://markellisreviews.com/feed/"
+    ]
   },
   {
     "id": "spacebar",
     "name": "Spacebar",
     "tier": 4,
-    "domain": "spacebar.news"
+    "domain": "spacebar.news",
+    "feeds": [
+      "https://www.spacebar.news/rss/"
+    ]
   },
   {
     "id": "recording-now",
     "name": "Recording Now",
     "tier": 4,
-    "domain": "recordingnow.com"
+    "domain": "recordingnow.com",
+    "feeds": [
+      "https://recordingnow.com/feed/"
+    ]
   },
   {
     "id": "picky-audio",
     "name": "Picky Audio",
     "tier": 4,
-    "domain": "pickyaudio.com"
+    "domain": "pickyaudio.com",
+    "feeds": [
+      "https://pickyaudio.com/feed.xml"
+    ]
   },
   {
     "id": "outside",
     "name": "Outside",
     "tier": 3,
-    "domain": "outsideonline.com"
+    "domain": "outsideonline.com",
+    "feeds": [
+      "https://outsideonline.com/feed/"
+    ]
   },
   {
     "id": "cyclingnews",
     "name": "Cyclingnews",
     "tier": 3,
-    "domain": "cyclingnews.com"
+    "domain": "cyclingnews.com",
+    "feeds": [
+      "https://www.cyclingnews.com/feeds.xml",
+      "https://airedale.futurecdn.net/feeds/en_US_feed_271bdec3.rss"
+    ]
   },
   {
     "id": "road-cc",
     "name": "road.cc",
     "tier": 3,
-    "domain": "road.cc"
+    "domain": "road.cc",
+    "feeds": [
+      "https://road.cc/feed"
+    ]
   },
   {
     "id": "athletech-news",
     "name": "Athletech News",
     "tier": 4,
-    "domain": "athletechnews.com"
+    "domain": "athletechnews.com",
+    "feeds": [
+      "https://athletechnews.com/feed/"
+    ]
   },
   {
     "id": "woman-and-home",
     "name": "Woman & Home",
     "tier": 3,
-    "domain": "womanandhome.com"
+    "domain": "womanandhome.com",
+    "feeds": [
+      "https://www.womanandhome.com/feeds.xml"
+    ]
   },
   {
     "id": "canadian-running-magazine",
     "name": "Canadian Running Magazine",
     "tier": 3,
-    "domain": "runningmagazine.ca"
+    "domain": "runningmagazine.ca",
+    "feeds": [
+      "https://runningmagazine.ca/feed/"
+    ]
   },
   {
     "id": "mountaineer-journey",
     "name": "Mountaineer Journey",
     "tier": 4,
-    "domain": "mountaineerjourney.com"
+    "domain": "mountaineerjourney.com",
+    "feeds": [
+      "https://mountaineerjourney.com/feed"
+    ]
   },
   {
     "id": "run-to-the-finish",
     "name": "RunToTheFinish",
     "tier": 4,
-    "domain": "runtothefinish.com"
+    "domain": "runtothefinish.com",
+    "feeds": [
+      "https://runtothefinish.com/feed/"
+    ]
   },
   {
     "id": "zelpio",
     "name": "Zelpio",
     "tier": 4,
-    "domain": "zelpio.com"
+    "domain": "zelpio.com",
+    "feeds": []
   },
   {
     "id": "the-watches-geek",
     "name": "The Watches Geek",
     "tier": 4,
-    "domain": "thewatchesgeek.com"
+    "domain": "thewatchesgeek.com",
+    "feeds": [
+      "https://thewatchesgeek.com/feed/"
+    ]
   },
   {
     "id": "android-faithful",
     "name": "Android Faithful",
     "tier": 4,
-    "domain": "androidfaithful.com"
+    "domain": "androidfaithful.com",
+    "feeds": [
+      "https://androidfaithful.com/rss"
+    ]
   },
   {
     "id": "serious-insights",
     "name": "Serious Insights",
     "tier": 4,
-    "domain": "seriousinsights.net"
+    "domain": "seriousinsights.net",
+    "feeds": [
+      "https://www.seriousinsights.net/feed/"
+    ]
   },
   {
     "id": "the-gadgeteer",
     "name": "The Gadgeteer",
     "tier": 4,
-    "domain": "the-gadgeteer.com"
+    "domain": "the-gadgeteer.com",
+    "feeds": [
+      "https://the-gadgeteer.com/feed/"
+    ]
   },
   {
     "id": "myfixguide",
     "name": "MyFixGuide",
     "tier": 4,
-    "domain": "myfixguide.com"
+    "domain": "myfixguide.com",
+    "feeds": []
   },
   {
     "id": "illgaming",
     "name": "iLLGaming",
     "tier": 4,
-    "domain": "illgaming.net"
+    "domain": "illgaming.net",
+    "feeds": [
+      "https://illgaming.net/feed/"
+    ]
   },
   {
     "id": "sportskeeda",
     "name": "Sportskeeda",
     "tier": 4,
-    "domain": "sportskeeda.com"
+    "domain": "sportskeeda.com",
+    "feeds": [
+      "https://sportskeeda.com/feed/"
+    ]
   },
   {
     "id": "lowyat",
     "name": "Lowyat.NET",
     "tier": 4,
-    "domain": "lowyat.net"
+    "domain": "lowyat.net",
+    "feeds": [
+      "https://www.lowyat.net/feed/"
+    ]
   },
   {
     "id": "stark-insider",
     "name": "Stark Insider",
     "tier": 4,
-    "domain": "starkinsider.com"
+    "domain": "starkinsider.com",
+    "feeds": [
+      "https://starkinsider.com/feed/"
+    ]
   },
   {
     "id": "purewow",
     "name": "PureWow",
     "tier": 4,
-    "domain": "purewow.com"
+    "domain": "purewow.com",
+    "feeds": [
+      "https://www.purewow.com/rss/feed_national.xml"
+    ]
   },
   {
     "id": "fstoppers",
     "name": "Fstoppers",
     "tier": 4,
-    "domain": "fstoppers.com"
+    "domain": "fstoppers.com",
+    "feeds": [
+      "https://fstoppers.com/feed",
+      "https://fstoppers.com/potd/feed"
+    ]
   },
   {
     "id": "gadgets-and-wearables",
     "name": "Gadgets & Wearables",
     "tier": 3,
-    "domain": "gadgetsandwearables.com"
+    "domain": "gadgetsandwearables.com",
+    "feeds": [
+      "https://gadgetsandwearables.com/feed/"
+    ]
   },
   {
     "id": "yanko-design",
     "name": "Yanko Design",
     "tier": 4,
-    "domain": "yankodesign.com"
+    "domain": "yankodesign.com",
+    "feeds": [
+      "https://www.yankodesign.com/feed/"
+    ]
   },
   {
     "id": "digit",
     "name": "Digit",
     "tier": 3,
-    "domain": "digit.in"
+    "domain": "digit.in",
+    "feeds": [
+      "https://digit.in/feed/"
+    ]
   },
   {
     "id": "iphone-in-canada",
     "name": "iPhone in Canada",
     "tier": 4,
-    "domain": "iphoneincanada.ca"
+    "domain": "iphoneincanada.ca",
+    "feeds": [
+      "https://iphoneincanada.ca/feed/"
+    ]
   },
   {
     "id": "reviews-org",
     "name": "Reviews.org",
     "tier": 3,
-    "domain": "reviews.org"
+    "domain": "reviews.org",
+    "feeds": [
+      "https://reviews.org/feed/"
+    ]
   },
   {
     "id": "digital-reviews-network",
     "name": "Digital Reviews Network",
     "tier": 4,
-    "domain": "digitalreviews.net"
+    "domain": "digitalreviews.net",
+    "feeds": [
+      "https://www.digitalreviews.net/feed/"
+    ]
   },
   {
     "id": "gamerevolution",
     "name": "Game Revolution",
     "tier": 3,
-    "domain": "gamerevolution.com"
+    "domain": "gamerevolution.com",
+    "feeds": [
+      "https://www.gamerevolution.com/feed"
+    ]
   },
   {
     "id": "gaming-nexus",
     "name": "Gaming Nexus",
     "tier": 4,
-    "domain": "gamingnexus.com"
+    "domain": "gamingnexus.com",
+    "feeds": []
   },
   {
     "id": "analog-stick-gaming",
     "name": "Analog Stick Gaming",
     "tier": 4,
-    "domain": "analogstickgaming.com"
+    "domain": "analogstickgaming.com",
+    "feeds": []
   },
   {
     "id": "impulse-gamer",
     "name": "Impulse Gamer",
     "tier": 4,
-    "domain": "impulsegamer.com"
+    "domain": "impulsegamer.com",
+    "feeds": [
+      "https://www.impulsegamer.com/feed/"
+    ]
   }
 ]

@@ -26,13 +26,20 @@ Lessons from the first 30 products (2026-10-22):
 - Skip hands-on/first-look pieces, video-only reviews, non-English editions and reviews of sibling models
   (joint reviews are fine with a `note`).
 
-## Weekly refresh (automatic)
+## Daily refresh (automatic)
 
-`.github/workflows/weekly-refresh.yml` runs every Monday (and on demand from the Actions tab) and calls
+`.github/workflows/weekly-refresh.yml` runs every day at 09:17 UTC (and on demand from the Actions tab) and calls
 `scripts/refresh-pipeline.sh`:
 
-1. `scripts/refresh.js` asks Gemini (with Google Search) for review URLs of products already on the site,
-   then reads each page itself: rating, critic and date come from the page's JSON-LD, and the quote must
+0. `scripts/find-feeds.js` looks up the RSS/Atom feed of any outlet added since the last run and saves it as
+   `feeds` in `data/outlets.json` (`[]` when it has none; `--all` looks every outlet up again).
+1. `scripts/refresh.js` reads every outlet feed first. A review headline from the last 14 days that names a
+   product on the site (`scripts/lib/feeds.js`) sends that page to the checks below, whichever product it is.
+   Headlines that name no product are passed to the launch search as leads. Then it asks Gemini (with Google
+   Search) for review URLs: products released in the last 45 days take up to 10 of the 15 slots, the least
+   recently checked fill the rest. A page already on the site is skipped; a page judged not a review of the
+   product (or dated outside its launch window) is listed in `data/refresh-rejected.json` and not sent to the
+   model again for 30 days. Every candidate page, from a feed or from search, is read by the script itself: rating, critic and date come from the page's JSON-LD, and the quote must
    appear word for word in the page text. Only outlets in `data/outlets.json` are accepted. It also looks
    for launches from the last 45 days and adds one only when 6 or more reviews pass these checks
    (card text is written from the review texts only, with `autoAdded` set on the product).
@@ -43,11 +50,11 @@ Lessons from the first 30 products (2026-10-22):
 2. `verify-quotes.py` re-checks every new quote; a MISS or unreadable page drops that review.
 3. `score-reviews.js` band-scores everything new (OpenAI + Gemini), twice so a missing model answer is
    asked again. A new review still without two model scores is dropped (`drop-unscored.js`) and found
-   again next week; a new product left under 6 reviews is removed (`drop-thin-products.js`).
+   again next run; a new product left under 6 reviews is removed (`drop-thin-products.js`).
 4. `npm run build` validates the data, copy rules included. The workflow commits `data/` to main only if it passed.
 5. Anything that went wrong (a failed launch search, more than a third of product searches failing, a
    rejected import, or a failed run) opens or updates a GitHub issue labelled `refresh-failed`, which
-   emails the owner. The next clean run closes it.
+   emails the owner. A problem already reported is not posted again; the next clean run closes it.
 
 Needs repo secrets `OPENAI_API_KEY` and `GEMINI_API_KEY`. `data/refresh-state.json` remembers when each
 product was last checked, so each run covers the least recently checked products first.

@@ -83,6 +83,8 @@ function validateData(
 
   for (const o of outlets) {
     if (![1, 2, 3, 4].includes(o.tier)) errors.push(`outlet ${o.id}: tier must be 1-4`);
+    if (o.feeds != null && (!Array.isArray(o.feeds) || !o.feeds.every(isHttpsUrl)))
+      errors.push(`outlet ${o.id}: feeds must be a list of https URLs`);
   }
 
   for (const p of products) {

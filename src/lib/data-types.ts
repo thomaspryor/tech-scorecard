@@ -80,4 +80,6 @@ export interface Outlet {
   domain: string;
   /** Other sites the outlet publishes reviews on. */
   altDomains?: string[];
+  /** RSS/Atom feeds the daily refresh reads for new reviews (scripts/find-feeds.js); [] when none was found. */
+  feeds?: string[];
 }

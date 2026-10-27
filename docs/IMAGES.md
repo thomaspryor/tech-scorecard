@@ -166,7 +166,7 @@ Same as `image.sourceUrl` in `data/products.json`.
 | airpods-5                  | Apple          | https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/                           |
 | headphone-1-pro            | Nothing        | https://us.nothing.tech/products/headphone-1-pro                                                                                                   |
 
-## Weekly refresh
+## Daily refresh
 
 `refresh.js` adds new products without an `image`, so they show the plain brand tile until someone runs
 `scripts/add-product-image.js` with a photo from the brand's own newsroom or product page. This is manual on purpose:
