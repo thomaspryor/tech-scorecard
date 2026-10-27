@@ -1,13 +1,14 @@
 #!/usr/bin/env node
-// Weekly refresh: find new reviews for products already on the site, and new launches.
-// Uses Gemini with Google Search grounding to FIND candidate review URLs only. Everything
+// Daily refresh: find new reviews for products already on the site, and new launches.
+// Candidate review URLs come from the outlets' own RSS feeds (headlines naming a product on the site)
+// and from Gemini with Google Search grounding, which only FINDS URLs. Everything
 // that reaches data/ is read from the outlet's own page: rating, critic and date come from
 // the page's JSON-LD, and the quote must appear word for word in the page text.
 // refresh-pipeline.sh then runs verify-quotes.py and score-reviews.js. Each import file is applied
-// on its own, so one bad file is rejected without losing the rest of the week; anything that went
+// on its own, so one bad file is rejected without losing the rest of the run; anything that went
 // wrong is listed in .cache/refresh/problems.txt and the workflow alerts on it after committing.
 //
-// Usage: node scripts/refresh.js [--max-products=15] [--max-new=2] [--only=id,id] [--no-launches] [--dry-run]
+// Usage: node scripts/refresh.js [--max-products=15] [--max-new=2] [--only=id,id] [--no-launches] [--no-feeds] [--dry-run]
 // Needs GEMINI_API_KEY (search + excerpt picking) and OPENAI_API_KEY (copy for new products).
 // Writes files in .cache/refresh/ in the import-product.js shapes and imports them unless --dry-run.
 const fs = require('fs');
@@ -22,7 +23,8 @@ const {
   knownProduct,
   sharedReviewUrls,
 } = require('./lib/launches');
-const { UA, curl, fetchPage, pageText, containsQuote, jsonLd, hostOf } = require('./lib/page');
+const { UA, curl, fetchPage, fetchPageAsync, pageText, containsQuote, jsonLd, hostOf } = require('./lib/page');
+const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
 const { openaiText, geminiText, parseJsonReply } = require('./lib/models');
 
 /** @typedef {import('../src/lib/data-types').Product} Product */
@@ -38,6 +40,8 @@ const STATE_FILE = path.join(DATA_DIR, 'refresh-state.json');
 const TODAY = new Date().toISOString().slice(0, 10);
 /** More failed product searches than this share of the queue is reported as a problem, not just a warning. */
 const MAX_FAILED_SHARE = 1 / 3;
+/** Feed headlines that name no product on the site, passed to the launch search as leads. */
+const MAX_LEADS = 60;
 /** Gemini answers (search grounding above all) can take minutes. */
 const GEMINI_TIMEOUT_MS = 600_000;
 
@@ -63,6 +67,28 @@ const daysBefore = (iso, n) => new Date(Date.parse(iso) - n * 864e5).toISOString
 /** @param {string} u */
 const outletForUrl = (u) =>
   outlets.find((o) => [o.domain, ...(o.altDomains || [])].some((d) => hostOf(u) === d || hostOf(u).endsWith(`.${d}`)));
+
+/**
+ * Every outlet feed's recent review headlines: URLs for products on the site, and leads for new launches.
+ * A feed that cannot be read is skipped; search still covers that outlet.
+ */
+async function readFeeds() {
+  const urls = outlets.flatMap((o) => o.feeds || []);
+  /** @type {{title: string, url: string, date: string}[]} */
+  const items = [];
+  for (let i = 0; i < urls.length; i += 16) {
+    const xmls = await Promise.all(urls.slice(i, i + 16).map((u) => fetchPageAsync(u, 30)));
+    for (const xml of xmls) if (xml) items.push(...parseFeed(xml));
+  }
+  const res = sortFeedItems(items, products, (u) => !!outletForUrl(u), TODAY);
+  const tier = (/** @type {string} */ u) => outletForUrl(u)?.tier ?? 9;
+  res.leads.sort((a, b) => tier(a.url) - tier(b.url) || b.date.localeCompare(a.date));
+  const hits = [...res.byProduct.values()].flat().length;
+  console.log(
+    `feeds: ${items.length} items, ${hits} review(s) naming a product on the site, ${res.leads.length} other review(s)`,
+  );
+  return res;
+}
 
 /**
  * Ask Gemini (with Google Search) for review URLs for one product on outlets we know.
@@ -157,10 +183,13 @@ ${text.slice(0, 30000)}`,
  * New, verified reviews of `product` from outlets it has no review from yet.
  * @param {ProductRef} product
  * @param {Review[]} existing
+ * @param {string[]} [feedUrls] pages from outlet feeds whose headline names the product
+ * @param {boolean} [search] also ask Gemini to search for reviews
  */
-async function collectReviews(product, existing) {
+async function collectReviews(product, existing, feedUrls = [], search = true) {
   const have = new Set(existing.map((r) => r.outletId));
-  const urls = await findReviewUrls(product, have);
+  // Feed pages first: they are this product's reviews by headline, so they need no search to find.
+  const urls = [...feedUrls, ...(search ? await findReviewUrls(product, have) : [])];
   /** @type {Review[]} */
   const out = [];
   for (const url of [...new Set(urls)]) {
@@ -211,13 +240,22 @@ async function geminiTextRetry(prompt, opts) {
 
 /**
  * New launches: find them, collect reviews, and only keep products that reach the review minimum.
+ * @param {{title: string, url: string}[]} leads recent review headlines from outlet feeds that name no product on the site
  * @returns {Promise<{product: Product, reviews: Review[], newOutlets: []}[]>}
  */
-async function newLaunches() {
+async function newLaunches(leads) {
   // Products already on the site are filtered out in code below, so the prompt stays short and the search fast.
+  const headlines = leads
+    .slice(0, MAX_LEADS)
+    .map((l) => `- ${l.title} (${hostOf(l.url)})`)
+    .join('\n');
   const text = await geminiTextRetry(
     `Today is ${TODAY}. Using search, list up to 6 consumer gadgets that went on sale in the US within the last ${LAUNCH_WINDOW_DAYS} days and already have several professional reviews from major tech outlets.
-Categories allowed: ${CATEGORIES.categories.join(', ')}.
+Categories allowed: ${CATEGORIES.categories.join(', ')}.${
+      headlines
+        ? `\nLeads: these review headlines appeared this fortnight on outlets we follow. A gadget several of them review is a strong candidate; confirm its facts with search. Ignore games, films, books and other products outside the categories.\n${headlines}`
+        : ''
+    }
 Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate":"YYYY-MM-DD","launchPrice":<USD number>,"officialUrl":"https://..."}]. Use only facts you saw in search results.`,
     { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
   );
@@ -251,7 +289,8 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
       continue;
     }
     const probe = { ...c, id };
-    const revs = await collectReviews(probe, []);
+    const fromFeeds = leads.filter((l) => matchProduct(l.title, [probe])).map((l) => l.url);
+    const revs = await collectReviews(probe, [], fromFeeds);
     // Name matching misses renames ("MacBook Air M5" vs "MacBook Air (M5, 2026)"); the same review pages do not.
     const shared = sharedReviewUrls(
       revs.map((r) => r.url),
@@ -355,31 +394,46 @@ async function main() {
   const problems = [];
   let failedProducts = 0;
   let launchFailed = false;
-  // 1. New reviews for existing products: newest and least recently checked first.
+  // 0. Outlet feeds: what was published in the last two weeks.
+  const feeds = args['no-feeds']
+    ? { byProduct: /** @type {Map<string, string[]>} */ (new Map()), leads: [] }
+    : await readFeeds();
+  // 1. New reviews for existing products. Search covers products launched in the last LAUNCH_WINDOW_DAYS
+  // first (that is when reviews arrive), then the least recently checked; newer first among equals.
+  // A product outside the search queue whose review turned up in a feed gets that page checked too.
   /** @param {Product} p */
   const recent = (p) =>
     TODAY.localeCompare(p.releaseDate) < 0
       ? 0
       : Math.max(0, 1 - (Date.parse(TODAY) - Date.parse(p.releaseDate)) / (365 * 864e5));
+  /** @param {Product} p */
+  const launching = (p) => (p.releaseDate >= daysBefore(TODAY, LAUNCH_WINDOW_DAYS) ? 0 : 1);
   const queue = products
     .filter((p) => !only || only.has(p.id))
-    .sort((a, b) => (state[a.id] || '').localeCompare(state[b.id] || '') || recent(b) - recent(a))
+    .sort(
+      (a, b) =>
+        launching(a) - launching(b) || (state[a.id] || '').localeCompare(state[b.id] || '') || recent(b) - recent(a),
+    )
     .slice(0, MAX_PRODUCTS);
-  for (const p of queue) {
-    console.log(`checking ${p.id}`);
+  const feedOnly = products.filter((p) => feeds.byProduct.has(p.id) && !queue.includes(p) && (!only || only.has(p.id)));
+  for (const p of [...queue, ...feedOnly]) {
+    const search = queue.includes(p);
+    console.log(`checking ${p.id}${search ? '' : ' (feed only)'}`);
     /** @type {Review[]} */
     let revs = [];
     try {
       revs = await collectReviews(
         p,
         reviews.filter((r) => r.productId === p.id),
+        feeds.byProduct.get(p.id),
+        search,
       );
     } catch (e) {
       failedProducts++;
       console.error(`  failed: ${errText(e)}`);
       continue;
     }
-    state[p.id] = TODAY;
+    if (search) state[p.id] = TODAY;
     if (revs.length) {
       const f = path.join(OUT, `append-${p.id}.json`);
       fs.writeFileSync(f, JSON.stringify({ productId: p.id, reviews: revs }, null, 2));
@@ -389,7 +443,7 @@ async function main() {
   // 2. New launches.
   if (!args['no-launches'] && !only) {
     try {
-      for (const m of await newLaunches()) {
+      for (const m of await newLaunches(feeds.leads)) {
         const f = path.join(OUT, `new-${m.product.id}.json`);
         fs.writeFileSync(f, JSON.stringify(m, null, 2));
         files.push(f);
@@ -400,14 +454,15 @@ async function main() {
       problems.push(`The search for new launches failed: ${errText(e)}`);
     }
   }
-  const steps = queue.length + (args['no-launches'] || only ? 0 : 1);
+  const steps = queue.length + feedOnly.length + (args['no-launches'] || only ? 0 : 1);
   const failures = failedProducts + Number(launchFailed);
   // Nothing worked (a revoked key or an API outage): fail now, there is nothing to commit.
   if (steps && failures === steps)
     throw new Error(`Refresh incomplete: all ${failures} search step(s) failed; no imports applied.`);
-  if (failedProducts > queue.length * MAX_FAILED_SHARE)
-    problems.push(`${failedProducts} of ${queue.length} product searches failed (see the run log).`);
-  else if (failedProducts) console.log(`::warning::${failedProducts} product search(es) failed; retried next week`);
+  const checked = queue.length + feedOnly.length;
+  if (failedProducts > checked * MAX_FAILED_SHARE)
+    problems.push(`${failedProducts} of ${checked} product searches failed (see the run log).`);
+  else if (failedProducts) console.log(`::warning::${failedProducts} product search(es) failed; retried next run`);
 
   console.log(`\n${files.length} import file(s)`);
   const writeOut = () => {
@@ -427,7 +482,7 @@ async function main() {
   for (const r of res.rejected) {
     console.error(`rejected ${r.label}:\n- ${r.errors.join('\n- ')}`);
     problems.push(`An import was rejected by the data checks (${r.label}): ${r.errors.slice(0, 3).join('; ')}`);
-    // A rejected product is checked again next week rather than skipped for a full cycle.
+    // A rejected product is checked again next run rather than skipped for a full cycle.
     const id = contents[files.findIndex((f) => path.basename(f) === r.label)].productId;
     if (id) delete state[id];
   }

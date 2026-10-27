@@ -1,7 +1,7 @@
 // Fetching review pages and turning their HTML into text. Shared by score-reviews.js and
 // refresh.js; scripts/verify-quotes.py applies the same quote normalization in Python.
 // Everything except `curl` is pure, so the tests cover it without the network.
-const { execFileSync } = require('child_process');
+const { execFile, execFileSync } = require('child_process');
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
@@ -26,6 +26,22 @@ function curl(argv, { input, timeout = 90 } = {}) {
 
 /** The HTML page at `url` (-f: an HTTP error such as 403, 404 or 429 throws). @param {string} url */
 const fetchPage = (url) => curl(['-f', '-A', UA, url]);
+
+/**
+ * fetchPage without blocking, for fetching many feeds at once. Resolves to null when the page cannot be read.
+ * @param {string} url
+ * @param {number} [timeout] seconds
+ * @returns {Promise<string | null>}
+ */
+const fetchPageAsync = (url, timeout = 30) =>
+  new Promise((resolve) =>
+    execFile(
+      'curl',
+      ['-sfL', '-m', String(timeout), '-A', UA, url],
+      { maxBuffer: 64 * 1024 * 1024, encoding: 'utf8' },
+      (err, out) => resolve(err ? null : out),
+    ),
+  );
 
 /** The common entities review pages use; dashes become hyphens, curly quotes straight ones. @param {string} s */
 function decodeEntities(s) {
@@ -140,6 +156,7 @@ module.exports = {
   UA,
   curl,
   fetchPage,
+  fetchPageAsync,
   decodeEntities,
   pageText,
   articleParagraphs,

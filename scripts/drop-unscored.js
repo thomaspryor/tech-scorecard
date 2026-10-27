@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Weekly refresh: a review is published only once both models have scored it (modelScores).
+// Daily refresh: a review is published only once both models have scored it (modelScores).
 // New reviews still missing a model after the retry are dropped, so one flaky API answer does not
-// cost the whole week. Their products are marked unchecked in refresh-state.json so next week's run
+// cost the whole run. Their products are marked unchecked in refresh-state.json so the next run
 // looks again, and when most new reviews are dropped (a model is down) problems.txt gets a line so
 // the workflow alerts. An older review without two scores means the data itself is wrong: fail.
 // Usage: node scripts/drop-unscored.js <added.txt>   (one productId/outletId per line; problems.txt sits next to it)
@@ -28,7 +28,7 @@ if (require.main === module) {
   }
   if (drop.length) {
     console.log(
-      `::warning::dropping new reviews only one model scored (looked for again next week): ${drop.join(', ')}`,
+      `::warning::dropping new reviews only one model scored (looked for again next run): ${drop.join(', ')}`,
     );
     writeData(DATA_DIR, { reviews: data.reviews.filter((r) => !drop.includes(`${r.productId}/${r.outletId}`)) });
     const stateFile = path.join(DATA_DIR, 'refresh-state.json');
