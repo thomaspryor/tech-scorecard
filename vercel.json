@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "ignoreCommand": "[ \"$VERCEL_ENV\" = production ] && git diff --quiet HEAD^ HEAD -- . ':!.claude'",
+  "ignoreCommand": "[ \"$VERCEL_ENV\" = production ] && git diff --quiet HEAD^ HEAD -- . ':!.claude' ':!data/refresh-state.json' ':!data/refresh-rejected.json'",
   "headers": [
     {
       "source": "/product/:slug/opengraph-image/",

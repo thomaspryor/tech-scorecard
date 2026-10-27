@@ -24,6 +24,7 @@ const {
   sharedReviewUrls,
 } = require('./lib/launches');
 const { UA, curl, fetchPage, fetchPageAsync, pageText, containsQuote, jsonLd, hostOf } = require('./lib/page');
+const { urlKey } = require('./lib/launches');
 const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
 const { openaiText, geminiText, parseJsonReply } = require('./lib/models');
 
@@ -37,11 +38,16 @@ const { openaiText, geminiText, parseJsonReply } = require('./lib/models');
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, '.cache', 'refresh');
 const STATE_FILE = path.join(DATA_DIR, 'refresh-state.json');
+const REJECTED_FILE = path.join(DATA_DIR, 'refresh-rejected.json');
+/** A page judged not to be a review of the product is not sent to the model again for this long. */
+const REJECTED_DAYS = 30;
 const TODAY = new Date().toISOString().slice(0, 10);
 /** More failed product searches than this share of the queue is reported as a problem, not just a warning. */
 const MAX_FAILED_SHARE = 1 / 3;
-/** Feed headlines that name no product on the site, passed to the launch search as leads. */
-const MAX_LEADS = 60;
+/** Feed headlines that name no product on the site, passed to the launch search as leads (newest first). */
+const MAX_LEADS = 150;
+/** Share of the search queue kept for products launched in the last LAUNCH_WINDOW_DAYS; the rest rotates. */
+const LAUNCH_SHARE = 2 / 3;
 /** Gemini answers (search grounding above all) can take minutes. */
 const GEMINI_TIMEOUT_MS = 600_000;
 
@@ -60,13 +66,38 @@ const CATEGORIES = /** @type {{categories: Category[], artKinds: string[]}} */ (
 const { products, reviews, outlets } = loadData();
 /** Product id -> date it was last checked (YYYY-MM-DD). @type {Record<string, string>} */
 const state = fs.existsSync(STATE_FILE) ? JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')) : {};
+/** Page (urlKey) -> date it was judged not to be a review of the product. @type {Record<string, string>} */
+const rejected = fs.existsSync(REJECTED_FILE) ? JSON.parse(fs.readFileSync(REJECTED_FILE, 'utf8')) : {};
+/** Pages already on the site, under any product or outlet. */
+const onSite = new Set(reviews.map((r) => urlKey(r.url)));
 
 /** Reviews usually publish a week or two before the on-sale date. @param {string} iso @param {number} n */
 const daysBefore = (iso, n) => new Date(Date.parse(iso) - n * 864e5).toISOString().slice(0, 10);
 
-/** @param {string} u */
-const outletForUrl = (u) =>
-  outlets.find((o) => [o.domain, ...(o.altDomains || [])].some((d) => hostOf(u) === d || hostOf(u).endsWith(`.${d}`)));
+/**
+ * The outlet a URL belongs to. Two outlets can share a domain (Digital Foundry publishes on eurogamer.net):
+ * the one named in the path wins ("/digitalfoundry-..."), then the one the domain is named after.
+ * @param {string} u
+ */
+function outletForUrl(u) {
+  const host = hostOf(u);
+  const found = outlets.filter((o) =>
+    [o.domain, ...(o.altDomains || [])].some((d) => host === d || host.endsWith(`.${d}`)),
+  );
+  if (found.length < 2) return found[0];
+  const key = (/** @type {string} */ s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+  let pathname = '';
+  try {
+    pathname = key(new URL(u).pathname);
+  } catch {
+    /* hostOf already matched, so the URL parses */
+  }
+  return (
+    found.find((o) => pathname.includes(key(o.id))) ||
+    found.find((o) => key(host.replace(/^www\./, '')).startsWith(key(o.id))) ||
+    found[0]
+  );
+}
 
 /**
  * Every outlet feed's recent review headlines: URLs for products on the site, and leads for new launches.
@@ -78,11 +109,16 @@ async function readFeeds() {
   const items = [];
   for (let i = 0; i < urls.length; i += 16) {
     const xmls = await Promise.all(urls.slice(i, i + 16).map((u) => fetchPageAsync(u, 30)));
-    for (const xml of xmls) if (xml) items.push(...parseFeed(xml));
+    for (const xml of xmls) {
+      try {
+        if (xml) items.push(...parseFeed(xml));
+      } catch (e) {
+        console.log(`  a feed could not be parsed: ${errText(e)}`);
+      }
+    }
   }
   const res = sortFeedItems(items, products, (u) => !!outletForUrl(u), TODAY);
-  const tier = (/** @type {string} */ u) => outletForUrl(u)?.tier ?? 9;
-  res.leads.sort((a, b) => tier(a.url) - tier(b.url) || b.date.localeCompare(a.date));
+  res.leads.sort((a, b) => b.date.localeCompare(a.date));
   const hits = [...res.byProduct.values()].flat().length;
   console.log(
     `feeds: ${items.length} items, ${hits} review(s) naming a product on the site, ${res.leads.length} other review(s)`,
@@ -127,6 +163,8 @@ function resolveRedirect(u) {
   }
 }
 
+const NOT_A_REVIEW = 'not a full review of this product';
+
 /**
  * Turn one candidate URL into a review object, or a reason to skip it.
  * @param {ProductRef} product
@@ -159,7 +197,7 @@ ${text.slice(0, 30000)}`,
       { timeoutMs: GEMINI_TIMEOUT_MS },
     ),
   );
-  if (!answer || !answer.fullReview) return { skip: 'not a full review of this product' };
+  if (!answer || !answer.fullReview) return { skip: NOT_A_REVIEW };
   const excerpt = String(answer.excerpt || '').trim();
   const words = excerpt.split(/\s+/).length;
   if (!excerpt || words > 40 || words < 5) return { skip: 'no usable excerpt' };
@@ -194,8 +232,10 @@ async function collectReviews(product, existing, feedUrls = [], search = true) {
   const out = [];
   for (const url of [...new Set(urls)]) {
     const outlet = outletForUrl(url);
-    if (!outlet || have.has(outlet.id)) continue;
+    // A page already on the site (under any product or outlet) or recently judged not a review is skipped.
+    if (!outlet || have.has(outlet.id) || onSite.has(urlKey(url)) || rejected[urlKey(url)]) continue;
     const res = await buildReview(product, url);
+    if (res.skip === NOT_A_REVIEW || res.skip?.startsWith('date ')) rejected[urlKey(url)] = TODAY;
     if (res.review) {
       out.push(res.review);
       have.add(outlet.id);
@@ -393,6 +433,7 @@ async function main() {
   /** Things the workflow should alert on once the good part of the run is committed. @type {string[]} */
   const problems = [];
   let failedProducts = 0;
+  let failedFeedChecks = 0;
   let launchFailed = false;
   // 0. Outlet feeds: what was published in the last two weeks.
   const feeds = args['no-feeds']
@@ -407,14 +448,16 @@ async function main() {
       ? 0
       : Math.max(0, 1 - (Date.parse(TODAY) - Date.parse(p.releaseDate)) / (365 * 864e5));
   /** @param {Product} p */
-  const launching = (p) => (p.releaseDate >= daysBefore(TODAY, LAUNCH_WINDOW_DAYS) ? 0 : 1);
-  const queue = products
-    .filter((p) => !only || only.has(p.id))
-    .sort(
-      (a, b) =>
-        launching(a) - launching(b) || (state[a.id] || '').localeCompare(state[b.id] || '') || recent(b) - recent(a),
-    )
-    .slice(0, MAX_PRODUCTS);
+  const launching = (p) => p.releaseDate >= daysBefore(TODAY, LAUNCH_WINDOW_DAYS);
+  const byAge = (/** @type {Product} */ a, /** @type {Product} */ b) =>
+    (state[a.id] || '').localeCompare(state[b.id] || '') || recent(b) - recent(a);
+  const candidates = products.filter((p) => !only || only.has(p.id));
+  // Launches get up to LAUNCH_SHARE of the slots, so older products keep rotating however many launch at once.
+  const fresh = candidates
+    .filter(launching)
+    .sort(byAge)
+    .slice(0, Math.ceil(MAX_PRODUCTS * LAUNCH_SHARE));
+  const queue = [...fresh, ...candidates.filter((p) => !fresh.includes(p)).sort(byAge)].slice(0, MAX_PRODUCTS);
   const feedOnly = products.filter((p) => feeds.byProduct.has(p.id) && !queue.includes(p) && (!only || only.has(p.id)));
   for (const p of [...queue, ...feedOnly]) {
     const search = queue.includes(p);
@@ -429,7 +472,8 @@ async function main() {
         search,
       );
     } catch (e) {
-      failedProducts++;
+      if (search) failedProducts++;
+      else failedFeedChecks++;
       console.error(`  failed: ${errText(e)}`);
       continue;
     }
@@ -454,19 +498,22 @@ async function main() {
       problems.push(`The search for new launches failed: ${errText(e)}`);
     }
   }
-  const steps = queue.length + feedOnly.length + (args['no-launches'] || only ? 0 : 1);
+  // Feed-only checks are left out of these counts: they say nothing about whether search works.
+  const steps = queue.length + (args['no-launches'] || only ? 0 : 1);
   const failures = failedProducts + Number(launchFailed);
   // Nothing worked (a revoked key or an API outage): fail now, there is nothing to commit.
   if (steps && failures === steps)
     throw new Error(`Refresh incomplete: all ${failures} search step(s) failed; no imports applied.`);
-  const checked = queue.length + feedOnly.length;
-  if (failedProducts > checked * MAX_FAILED_SHARE)
-    problems.push(`${failedProducts} of ${checked} product searches failed (see the run log).`);
+  if (failedProducts > queue.length * MAX_FAILED_SHARE)
+    problems.push(`${failedProducts} of ${queue.length} product searches failed (see the run log).`);
   else if (failedProducts) console.log(`::warning::${failedProducts} product search(es) failed; retried next run`);
+  if (failedFeedChecks) console.log(`::warning::${failedFeedChecks} feed-only check(s) failed; retried next run`);
 
   console.log(`\n${files.length} import file(s)`);
   const writeOut = () => {
     fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
+    const keep = Object.entries(rejected).filter(([, d]) => d >= daysBefore(TODAY, REJECTED_DAYS));
+    fs.writeFileSync(REJECTED_FILE, JSON.stringify(Object.fromEntries(keep.sort()), null, 2) + '\n');
     if (problems.length) fs.writeFileSync(path.join(OUT, 'problems.txt'), problems.join('\n') + '\n');
   };
   if (args['dry-run']) return;

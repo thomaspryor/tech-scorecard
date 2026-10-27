@@ -100,7 +100,15 @@ jobs:
           } > alert.md
           OPEN=$(gh issue list --label refresh-failed --state open --json number --jq '.[0].number')
           if [ -n "$OPEN" ]; then
-            gh issue comment "$OPEN" --body-file alert.md
+            # Running daily, a problem that lasts would email every day: only post when it is new.
+            LAST=$(gh issue view "$OPEN" --json body,comments --jq '(.comments | last | .body) // .body')
+            NOW=$(grep '^- ' alert.md | sort || true)
+            PREV=$(printf '%s\n' "$LAST" | grep '^- ' | sort || true)
+            if [ "$NOW" = "$PREV" ]; then
+              echo "Same problem as already reported in issue $OPEN; not posting again."
+            else
+              gh issue comment "$OPEN" --body-file alert.md
+            fi
           else
             gh issue create --title "Daily update needs a look" --label refresh-failed --body-file alert.md
           fi

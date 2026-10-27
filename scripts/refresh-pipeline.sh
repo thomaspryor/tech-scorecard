@@ -7,8 +7,9 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 OUT=.cache/refresh
 
-# Outlets added since the last run get their RSS feeds looked up (saved in data/outlets.json).
-node scripts/find-feeds.js
+# Outlets added since the last run get their RSS feeds looked up (saved in data/outlets.json);
+# on Mondays, outlets saved without one are tried again.
+if [ "$(date -u +%u)" = 1 ]; then node scripts/find-feeds.js --retry-empty; else node scripts/find-feeds.js; fi
 node scripts/refresh.js "$@"
 [ -s "$OUT/touched.txt" ] || { echo "nothing new"; exit 0; }
 IDS=$(cat "$OUT/touched.txt")
