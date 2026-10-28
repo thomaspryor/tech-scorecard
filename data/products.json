@@ -6500,5 +6500,81 @@
       "credit": "Nothing",
       "sourceUrl": "https://us.nothing.tech/products/headphone-1-pro"
     }
+  },
+  {
+    "id": "fitbit-edge",
+    "slug": "fitbit-edge",
+    "name": "Fitbit Edge",
+    "brand": "Google",
+    "category": "wearable",
+    "releaseDate": "2026-10-27",
+    "launchPrice": 179.99,
+    "officialUrl": "https://store.google.com/product/fitbit_edge",
+    "criticsTake": "Reviewers see the Fitbit Edge as a solid upgrade over older Fitbit trackers with a bigger, brighter screen, broader health tracking, and better workout features. Most agree it fits between the Fitbit Air and Pixel Watch, but several reviews say the software can feel slow or limited and some smartwatch features are missing.",
+    "loved": [
+      "Bright 1.34-inch display",
+      "Up to 7 days battery life",
+      "Physical side button",
+      "More advanced health and workout tracking"
+    ],
+    "gripes": [
+      "No Google Wallet or NFC",
+      "Band fastening can be finicky",
+      "Notifications can be inconsistent",
+      "Software can feel slow or clunky",
+      "Auto-pause can be overly sensitive"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "1.34-inch display"
+      },
+      {
+        "label": "Screen details",
+        "value": "Hybrid OLED display with always-on display option"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 7 days"
+      },
+      {
+        "label": "Fast charging",
+        "value": "5 minutes gets you 1 day of usage"
+      },
+      {
+        "label": "GPS",
+        "value": "Built-in GPS"
+      },
+      {
+        "label": "Health sensors",
+        "value": "24/7 heart rate, ECG, SpO2, and skin temperature"
+      },
+      {
+        "label": "Workout modes",
+        "value": "50 workout profiles with automatic workout detection"
+      },
+      {
+        "label": "Durability",
+        "value": "5ATM water resistance and IP68 dust and water resistance"
+      },
+      {
+        "label": "Repairability",
+        "value": "Google's first repairable fitness tracker with a replaceable battery"
+      },
+      {
+        "label": "Price",
+        "value": "From $179.99"
+      }
+    ],
+    "art": {
+      "kind": "glasses",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-10-28"
   }
 ]

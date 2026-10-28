@@ -22816,5 +22816,593 @@
     },
     "scoreReason": "Accurate, comfortable, and good value for Garmin users, but limited software and niche appeal hurt it.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "ars-technica",
+    "critic": "Andrew Cunningham",
+    "url": "https://arstechnica.com/gadgets/2026/10/apple-iphone-duo-review-two-screens-two-experiences-two-thousand-dollars/",
+    "date": "2026-10-27",
+    "rating": null,
+    "score": 57,
+    "scoreSource": "text",
+    "excerpt": "I respect Apple's first crack at a foldable phone, but I'm not sure I like it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 55
+    },
+    "scoreReason": "Impressive engineering and good tablet mode, but too many compromises make it hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "eftm",
+    "critic": "Trevor Long",
+    "url": "https://eftm.com/2026/10/iphone-duo-review-price-availability-australia-australian-apps-compatability-fold-flip-foldable-282547",
+    "date": "2026-10-21",
+    "rating": null,
+    "score": 83,
+    "scoreSource": "text",
+    "excerpt": "Outstanding hardware, held back only by apps that aren’t ready yet: the iPhone Duo is the best new iPhone in years, if you can stomach $3,499.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 78
+    },
+    "scoreReason": "Excellent hardware and battery, praised as best new iPhone in years, but pricey with immature app support.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "mark-ellis-reviews",
+    "critic": "Mark Ellis",
+    "url": "https://markellisreviews.com/reviews/samsung-galaxy-tab-s12-ultra-review/",
+    "date": "2026-10-23",
+    "rating": "8/10",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Tab S12 Ultra is a stunning media machine and the best Android tablet money can buy right now - while the S12+ is the more practical, travel-ready pick for most people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for display, battery and capability, with only aspect ratio and keyboard case drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "pocket-tactics",
+    "critic": "Sam Comrie",
+    "url": "https://www.pockettactics.com/nothing-headphone-1-pro-review",
+    "date": "2026-10-19",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The rich sound, extensive customization, tactile controls, and premium presentation make it an easy recommendation for anyone looking for high-end over-ears.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise throughout, easy recommendation, with only minor price and wired-mode drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "can-buy-or-not",
+    "critic": "Aloysius Low",
+    "url": "https://www.canbuyornot.com/reviews/audio/nothing-headphones-1-pro-review-price/",
+    "date": "2026-10-28",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Retailing at S$549, the Nothing Headphone 1 Pro offers excellent audio quality and great noise cancellation at a very competitive price, especially when compared with the S$649 Sony WH-1000XM6, or the S$749 AirPods Max.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 96
+    },
+    "scoreReason": "Strong recommendation with excellent sound, ANC, comfort, and value; only minor case and ANC drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "eftm",
+    "critic": "Scott Plowman",
+    "url": "https://eftm.com/2026/10/review-beats-360-headphones-customisable-comfortable-and-sweat-proof-282674",
+    "date": "2026-10-24",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "The Beats 360 are a great set of headphones for those looking for a breathable set of headphones for exercise but also to use on occasion while lounging about.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Great comfort, design, ANC and gym use outweigh merely decent sound and a few missing premium features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "petapixel",
+    "critic": "Jaron Schneider",
+    "url": "https://petapixel.com/2026/09/16/apple-iphone-18-pro-camera-review-small-changes-big-differences/",
+    "date": "2026-09-16",
+    "rating": "8.5/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "While Apple's keynote may not have impressed you, the changes on this device are numerous and directly impact both photo and video capture in a positive and meaningful way.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 85
+    },
+    "scoreReason": "Strong recommendation with meaningful camera improvements, but limited year-over-year upgrade appeal and some camera drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-4",
+    "outletId": "outside",
+    "critic": "Jakob Schiller",
+    "url": "https://www.outsideonline.com/outdoor-gear/tools/the-apple-watch-ultra-4-ups-its-game-on-heart-rate-and-battery-life/?scope=anon",
+    "date": "2026-09-22",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "Anyone who’s not an endurance athlete but still takes their training seriously and wants to dig into their metrics should consider the Ultra 4.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent readiness features and usability, with battery improvements, but still weaker for ultradistance athletes.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/beauty-wellness/wearables/apple-watch-series-12-review",
+    "date": "2026-10-26",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "But if you don't mind having to charge it every day, it's a brilliant all-round smart watch and the best in the business.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for accuracy and overall quality, with battery life the main drawback.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "9to5mac",
+    "critic": "Chance Miller",
+    "url": "https://9to5mac.com/2026/09/17/apple-watch-series-12-and-ultra-4-review/",
+    "date": "2026-09-17",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "Taken as a whole, the Apple Watch Series 12 and Apple Watch Ultra 4 offer the clearest indication yet of what the future holds for Apple’s most important wearable.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise for major health upgrades and usefulness, with minor reservations about readiness and limited visible changes.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/headphones-audio/apple-airpods-5-review",
+    "date": "2026-10-23",
+    "rating": "5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "That, in my book, makes them among the best value headphones money can buy right now, for iPhone owners, at least.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 97
+    },
+    "scoreReason": "Strong enthusiasm and value praise, with minor downsides in battery life and Apple-only features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "engadget",
+    "critic": "Cherlynn Low",
+    "url": "https://www.engadget.com/2180910/fitbit-air-review-google-health-ai-coach-testing/",
+    "date": "2026-05-26",
+    "rating": "8.8/10",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "The Fitbit Air feels like a natural marriage of the two companies' strengths and presents a compelling alternative to Whoop.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Compelling, affordable alternative with strong app and AI, but bugs, awkward AI moments and shorter battery life.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/mobile/fitbit-air-review-google-smartwatch-killer-i-tested-it-for-two-weeks-to-find-out/",
+    "date": "2026-05-26",
+    "rating": "8.8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "If you've been curious about wearables, but put off by the data-heavy, subscription-first world of Oura and Whoop, the Fitbit Air's $100 price and familiar platform make it an easy way in.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Comfortable, affordable and useful for passive health tracking, but workout limitations and missing features bring notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://me.pcmag.com/en/fitness-trackers/37350/fitbit-air",
+    "date": "2026-05-26",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The Fitbit Air is a lightweight, affordable screen-free fitness tracker that delivers strong sleep and heart rate tracking plus standout AI coaching, making it the best all-around entry in the category.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 98
+    },
+    "scoreReason": "Strong recommendation with standout comfort, tracking, and AI coaching, tempered by some auto-detection and subscription drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "android-authority",
+    "critic": "Kaitlyn Cimino",
+    "url": "https://www.androidauthority.com/google-fitbit-air-review-3671325/",
+    "date": "2026-05-29",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "If you want a comfortable, approachable tracker with excellent sleep monitoring and an established ecosystem, the Air gets a lot right for the price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value and comfort with excellent sleep tracking, but notable GPS and heart rate limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/fitness-trackers/google-fitbit-air-review",
+    "date": "2026-09-16",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "If you want distraction-free tracking without steep ongoing costs, it’s a worthy buy—just be prepared to navigate some software friction.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Good value with strong tracking, but messy app, paywalled features, and shorter battery limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "zdnet",
+    "critic": "Nina Raemont",
+    "url": "https://www.zdnet.com/article/google-fitbit-air-review/",
+    "date": "2026-06-24",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The device is the platonic ideal for people leaning into fitness and health tracking who don't quite need a flashy screen around their wrist.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for comfort, value, and battery life, with only minor app and AI limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "android-central",
+    "critic": "Derrek Lee",
+    "url": "https://www.androidcentral.com/wearables/fitbit/fitbit-air-review",
+    "date": "2026-05-26",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The Fitbit Air is a worthy and affordable alternative to a lot of fitness wearables.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 96
+    },
+    "scoreReason": "Strong praise for comfort, value, and usability, with only modest feature and sensor limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "expert-reviews",
+    "critic": "Andrew Williams",
+    "url": "https://www.expertreviews.co.uk/beauty-wellness/wearables/fitbit-air-review",
+    "date": "2026-07-13",
+    "rating": "3/5",
+    "score": 54,
+    "scoreSource": "rating",
+    "excerpt": "But its unremarkable distance and heart-rate tracking means it's not an automatic recommendation from me.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 54,
+      "gemini": 54
+    },
+    "scoreReason": "Very comfortable and good for casual tracking, but inaccurate distance and heart-rate data limit recommendations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-5",
+    "outletId": "eftm",
+    "critic": "Scott Plowman",
+    "url": "https://eftm.com/2026/10/review-google-pixel-watch-5-same-look-better-specs-more-gemini-ai-282387",
+    "date": "2026-10-19",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "The Google Pixel Watch 5 is possibly the best smartwatch option for Android users, although its looks are divisive.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Excellent Android smartwatch with great interface and health features, but weak workout tracking and divisive design.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-forerunner-170",
+    "outletId": "the-watches-geek",
+    "critic": "Luis Cooper",
+    "url": "https://thewatchesgeek.com/garmin-forerunner-170-review/",
+    "date": "2026-10-25",
+    "rating": null,
+    "score": 81,
+    "scoreSource": "text",
+    "excerpt": "The Garmin Forerunner 170 is a well-balanced running watch that delivers training intelligence previously found only on more expensive Garmins.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for value and training features, with clear limitations in GPS, sensor hardware, and missing extras.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "the-watches-geek",
+    "critic": "Luis Cooper",
+    "url": "https://thewatchesgeek.com/fitbit-edge-review/",
+    "date": "2026-10-27",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "The Fitbit Edge is the best fitness tracker Google has ever made.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong recommendation with notable drawbacks like no NFC and missing launch navigation features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "wired",
+    "critic": "Boutayna Chokrane ",
+    "url": "https://www.wired.com/review/google-fitbit-edge/",
+    "date": "2026-10-26",
+    "rating": "7/10",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "Without NFC for contactless payment, it feels like a smartwatch with one too many compromises.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Good upgrade for Fitbit owners, but subscription reliance, no NFC, and limited value for newcomers hurt appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://www.pcmag.com/reviews/google-fitbit-edge",
+    "date": "2026-10-26",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Fitbit Edge makes a strong case for the classic fitness tracker, pairing accurate health metrics and a vibrant AMOLED screen with cross-platform support at a reasonable price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 89
+    },
+    "scoreReason": "Strong recommendation and Editors' Choice, with notable drawbacks like no NFC and middling battery life.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "9to5google",
+    "critic": "Ben Schoon",
+    "url": "https://9to5google.com/2026/10/26/google-fitbit-edge-review/",
+    "date": "2026-10-26",
+    "rating": "4/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "Inherently a good and capable fitness tracker, Google’s new Fitbit Edge sits in a place where it’s somehow managing to bring too much and too little to the table at the same time.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 79,
+      "gemini": 71
+    },
+    "scoreReason": "Good fitness tracker with strong battery, but awkward software, missing NFC, and identity confusion limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "mobile-syrup",
+    "critic": "Jonathan Lamont",
+    "url": "https://mobilesyrup.com/2026/10/26/google-fitbit-edge-review-middle-child-energy/",
+    "date": "2026-10-26",
+    "rating": null,
+    "score": 69,
+    "scoreSource": "text",
+    "excerpt": "Right now, the Fitbit Edge is best for former Charge users who want a similar experience out of newer hardware.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 65
+    },
+    "scoreReason": "Good fitness tracker for Charge fans, but limited smart features, bugs, and awkward usability hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "droid-life",
+    "critic": "Kellen",
+    "url": "https://www.droid-life.com/2026/10/26/fitbit-edge-review-the-fitness-tracker-you-actually-want/",
+    "date": "2026-10-26",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "At $179.99, it really does split the difference between the screen-free Fitbit Air and something like a Pixel Watch 5, and honestly, it might be the best option of the bunch.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 86
+    },
+    "scoreReason": "Strong praise for comfort, battery, and tracking, with minor complaints about band attachment and slow charging.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "dc-rainmaker",
+    "critic": "DC Rainmaker",
+    "url": "https://www.dcrainmaker.com/2026/10/fitbit-edge-depth-review-worth-the-upgrade.html",
+    "date": "2026-10-26",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "Overall, this is a massive upgrade over the Fitbit Charge 6 for both heart rate and GPS.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Good value with major improvements and handy features, but accuracy and software polish still have notable caveats.",
+    "scoredFromFullText": true
   }
 ]
