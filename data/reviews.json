@@ -23404,5 +23404,467 @@
     },
     "scoreReason": "Good value with major improvements and handy features, but accuracy and software polish still have notable caveats.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "mark-ellis-reviews",
+    "critic": "Mark Ellis",
+    "url": "https://markellisreviews.com/reviews/google-fitbit-edge-review/",
+    "date": "2026-10-28",
+    "rating": "9/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "Buy the Fitbit Edge if you want a capable fitness band that also tells the time, and you don't want to think about charging it every day.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Strong recommendation for its target audience, with only minor limits for serious athletes and subscription concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "engadget",
+    "critic": "Cherlynn Low",
+    "url": "https://www.engadget.com/2296678/fitbit-edge-review/",
+    "date": "2026-10-26",
+    "rating": "9/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The Edge feels like the first successful attempt in Fitbit's history to deliver a good-looking yet minimal activity tracker, thanks not only to solid hardware but an easy-to-use and fairly refined operating system.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise for design, screen, usability and value, with only minor bugs and modest battery caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/mobile/fitbit-edge-makes-a-case-for-spending-80-on-telling-the-time/",
+    "date": "2026-10-28",
+    "rating": "8.7/10",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "It took me a week to stop expecting the Edge to act like a smartwatch and start appreciating what it does, and now it stands out as the true Goldilocks pick for indecisive people like me.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 82
+    },
+    "scoreReason": "Strong praise for health tracking and design, but battery life and missing smartwatch features are notable drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/fitbit-edge-review-3725764/",
+    "date": "2026-10-26",
+    "rating": "6/10",
+    "score": 52,
+    "scoreSource": "rating",
+    "excerpt": "It’s certainly not the worst wearable you can buy, but whether you’re looking at alternatives from different brands or from Google itself, the Fitbit Edge doesn’t make a strong enough case for choosing it over those other options.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 52,
+      "gemini": 52
+    },
+    "scoreReason": "Comfort and battery are strong, but missing features and weak workout tracking make it hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "zdnet",
+    "critic": "Nina Raemont",
+    "url": "https://www.zdnet.com/health/google-fitbit-edge-review/",
+    "date": "2026-10-26",
+    "rating": "3/5",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "It's a budget-friendly health tracker supplemented by a wonderful app, but hamstrung by lagging hardware.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 52
+    },
+    "scoreReason": "Good app and form factor, but laggy hardware and battery compromises make it hard to recommend widely.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "zdnet",
+    "critic": "Kerry Wan",
+    "url": "https://www.zdnet.com/tech/iphone-duo-review/",
+    "date": "2026-10-29",
+    "rating": "4/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "Still, most people probably shouldn’t buy the Duo; it’s expensive, actively being developed, and falls behind in camera quality compared to iPhones that cost hundreds of dollars less.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Innovative and exciting, but expensive, awkward, and not recommended for most buyers yet.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "recording-now",
+    "critic": "Odi Productions",
+    "url": "https://recordingnow.com/blog/nothing-headphone-1-pro-review/",
+    "date": "2026-10-09",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "The Nothing Headphone (1) Pro is the best-sounding and best noise cancelling performance in a Nothing headphone yet, but is somewhat impractical due to its very poorly-designed and heavy (383 gram) case.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Excellent sound, comfort, ANC, and value, but marred by a badly designed heavy case.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "picky-audio",
+    "critic": "James",
+    "url": "https://www.pickyaudio.com/reviews/nothing-headphone-1-pro-review",
+    "date": "2026-10-13",
+    "rating": "90.35/100",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "This is the first Nothing product I've reviewed where the core features, not just the design, are up there with the best.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent features and value, but needs heavy EQ and has comfort and battery drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "impulse-gamer",
+    "critic": "Branden Zavaleta",
+    "url": "https://www.impulsegamer.com/beats-360-review-the-real-airpods-max-successor/",
+    "date": "2026-10-29",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "A hundred grams lighter and half the price, the Beats 360 is perfect for people who don’t want to pay through the nose on the Airpods Max 2s.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Strong recommendation with one notable hiss flaw and minor battery concern, but overall praised as stylish and practical.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "business-insider",
+    "critic": "Sarah Saril",
+    "url": "https://www.businessinsider.com/guides/tech/apple-iphone-18-pro-review",
+    "date": "2026-10-26",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "However, if it's a spend you can make, it's a powerful and undeniable upgrade for fans in the stands, avid mobile gamers, and anyone tired of constantly charging.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strong camera and performance upgrades, excellent for older iPhone users, but limited value for recent upgraders.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "bgr",
+    "critic": "Connor Jewiss",
+    "url": "https://www.bgr.com/2267077/iphone-18-pro-review/",
+    "date": "2026-09-23",
+    "rating": null,
+    "score": 83,
+    "scoreSource": "text",
+    "excerpt": "The iPhone 18 Pro may be an iterative update on the outside, but it's a substantial one inside.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 84
+    },
+    "scoreReason": "Strongly praised performance, battery, display, and camera improvements, but iterative design, price hike, and limited upgrade appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "pcmag",
+    "critic": "Kimberly Gedeon",
+    "url": "https://www.pcmag.com/reviews/motorola-razr-2026",
+    "date": "2026-05-28",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr for 2026 is one of the most accessible entry points into the foldable lifestyle, packing fantastic battery life, sharp cameras, and AI smarts into a fun-filled flip phone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 85
+    },
+    "scoreReason": "Strong value pick with great battery and cameras, but dimmer screens and weak performance temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "cnet",
+    "critic": "Abrar Al-Heeti",
+    "url": "https://www.cnet.com/tech/mobile/motorola-razr-fold-review/",
+    "date": "2026-05-14",
+    "rating": "8.3/10",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "If you've been thinking about switching to a book-style foldable for the first time, the Motorola Razr Fold makes a strong case for itself - even with its hefty $1,900 price tag.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 83
+    },
+    "scoreReason": "Strong first-gen foldable praise, with caveats on price, charging, software quirks and limited upgrade appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "pcmag",
+    "critic": "Florence Ion",
+    "url": "https://www.pcmag.com/reviews/motorola-razr-fold",
+    "date": "2026-05-14",
+    "rating": "3.5/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Motorola’s Razr Fold is a valiant first effort on the book-style foldable, with excellent battery life, rapid charging, and stylus support.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 76
+    },
+    "scoreReason": "Strong battery and displays, but first-gen roughness, weight, cameras, and software hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "digital-trends",
+    "critic": "Vikhyaat Vivek",
+    "url": "https://www.digitaltrends.com/phones/motorola-razr-fold-review-2/",
+    "date": "2026-06-17",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "A terrific foldable phone, if you're willing to make the brand value plunge.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, battery, display, and software, with notable price and optimization caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/motorola-razr-fold-review-3669371/",
+    "date": "2026-05-28",
+    "rating": "9/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "For most people, it's the new best foldable to buy.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended as the best US foldable, with only a few notable annoyances.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "zdnet",
+    "critic": "Cesar Cadenas",
+    "url": "https://www.zdnet.com/article/motorola-razr-fold-review/",
+    "date": "2026-05-15",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Simply put, this is an excellent smartphone, from its high-quality screens to its awesome cameras.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 96
+    },
+    "scoreReason": "Strong praise for displays, cameras, battery, and performance, with only price and minor heat/selfie concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-forerunner-170",
+    "outletId": "lifehacker",
+    "critic": "Meredith Dietz",
+    "url": "https://lifehacker.com/tech/garmin-forerunner-170-review",
+    "date": "2026-05-26",
+    "rating": "4/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "At $299.99, the Garmin Forerunner 170 is a capable running watch.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Useful training features, but weak value and many readers are steered to cheaper or better alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "viture-beast",
+    "outletId": "cnet",
+    "critic": "Scott Stein",
+    "url": "https://www.cnet.com/tech/computing/viture-beast-review-i-think-i-found-my-new-favorite-display-glasses/",
+    "date": "2026-04-28",
+    "rating": "8.4/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Beast is worth the upgrade if you're into wearable displays.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise and Editor’s Choice, but niche appeal and clunky wired design limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "viture-beast",
+    "outletId": "pcmag",
+    "critic": "Will Greenwald",
+    "url": "https://www.pcmag.com/reviews/viture-beast",
+    "date": "2026-04-29",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The Viture Beast raises the bar for prism display smart glasses with a brighter, wider, and more stable head-tracked virtual screen that feels like a portable ultrawide monitor, delivering top-tier immersion.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 96
+    },
+    "scoreReason": "Strong Editors' Choice praise, category-leading display and value, with only minor trade-offs and small firmware issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro",
+    "outletId": "lowyat",
+    "critic": "Ian Chee",
+    "url": "https://www.lowyat.net/2026/408658/google-pixel-11-pro-review/",
+    "date": "2026-10-29",
+    "rating": "7.9/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "The Pixel 11 Pro delivers vanilla Android, improved battery life and slightly better cameras, but the headline agentic AI features are largely absent.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 73
+    },
+    "scoreReason": "Good Android phone with better battery and cameras, but missing AI features and weak gaming blunt enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "msi-claw-8-ex-ai-plus",
+    "outletId": "rock-paper-shotgun",
+    "critic": "James Archer",
+    "url": "https://www.rockpapershotgun.com/msi-claw-8-ex-ai-plus-review",
+    "date": "2026-10-21",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "Which is why, and I suspect I'd be saying this even if the Claw 8 EX AI+ was &pound;800, I'd wait until Valve can do what they've done for previous Claws: get SteamOS running on it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent performance, battery and noise, but very high price, weaker screen and Windows issues temper recommendation.",
+    "scoredFromFullText": true
   }
 ]
