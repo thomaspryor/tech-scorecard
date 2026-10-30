@@ -23866,5 +23866,404 @@
     },
     "scoreReason": "Excellent performance, battery and noise, but very high price, weaker screen and Windows issues temper recommendation.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "the-independent",
+    "critic": "Alex Lee",
+    "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/fitbit-edge-review-b3073259.html",
+    "date": "2026-10-26",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "At £159.99, it’s a great little fitness tracker that has the smarts of a smartwatch, but doesn’t sacrifice battery life.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Strong praise for battery, comfort and tracking, with notable missing features and some app quirks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "lifehacker",
+    "critic": "Beth Skwarecki",
+    "url": "https://lifehacker.com/health/fitbit-edge-is-everything-the-charge-6-should-have-been",
+    "date": "2026-10-26",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "For anyone who doesn't want a smartwatch or a running watch and will be satisfied with just \"a Fitbit,\" this one is pretty much perfect.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise for accuracy, comfort, and value, with minor complaints about no NFC and app issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "digital-camera-world",
+    "critic": "Adam Juniper",
+    "url": "https://www.digitalcameraworld.com/tech/iphones/apple-iphone-duo-review",
+    "date": "2026-10-30",
+    "rating": "4/5",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "It's not easy to sum up this device in one go because, for the first time in a while, it isn't a matter of slow perfection and of polish but of compromise.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 75
+    },
+    "scoreReason": "Innovative and beautiful with strong performance, but camera compromises and high price bring notable reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "zdnet",
+    "critic": "Kerry Wan",
+    "url": "https://www.zdnet.com/business/iphone-18-pro-review/",
+    "date": "2026-09-22",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone 18 Pro series may not be the flashiest models, but key changes to the processor, battery, and cameras make them still worth your time.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 91
+    },
+    "scoreReason": "Strong praise for battery, performance, and refinement, but limited year-over-year gains and higher price temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-4",
+    "outletId": "the-shortcut",
+    "critic": "Max Buondonno",
+    "url": "https://www.theshortcut.com/p/apple-watch-ultra-4-review",
+    "date": "2026-10-30",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "If you’ve been wanting a new Apple Watch and love the idea of a super computer on your wrist, this is the one to get.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for battery, durability, performance, and health tracking, with drawbacks from unchanged design, missing features, and price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/mobile/apple-watch-series-12-review/",
+    "date": "2026-10-07",
+    "rating": "9.2/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Top of the list are more robust health metrics, a longer battery and a smoother, more powerful processor that will essentially future-proof my device for more upgrades without slowing it down.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for health, battery and value, with notable unease about unfinished AI features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/apple-airpods-5-review/",
+    "date": "2026-09-18",
+    "rating": "8.9/10",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "That makes the AirPods 5 easy to recommend to Apple users who don’t like having ear tips jammed in their ears or don’t want to spend extra on the AirPods Pro 3.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strong praise and easy recommendation, with fit security and battery life as the main caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "pcmag",
+    "critic": "Kimberly Gedeon",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-a57-5g",
+    "date": "2026-06-10",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "To that end, the Samsung Galaxy A57 has plenty to offer, including a large, sharp screen, plenty of battery life, capable cameras, and an introductory set of AI tools.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 81,
+      "gemini": 80
+    },
+    "scoreReason": "Strong screen, battery, durability, and cameras, but slow performance, plasticky design, and weaker value hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/reviews/samsung-galaxy-a57-review/",
+    "date": "2026-04-03",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy A57 is Samsung’s best mid-range phone yet, and if that’s the category you’re shopping in, it’s an easy recommendation.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 90
+    },
+    "scoreReason": "Calls it Samsung’s best mid-range phone yet and an easy recommendation for mid-range buyers.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "techgoondu",
+    "critic": "Alfred Siew",
+    "url": "https://www.techgoondu.com/2026/05/02/samsung-galaxy-a57-review-slim-midrange-phone-hits-the-right-notes/",
+    "date": "2026-05-02",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "If you're in the market for a midrange phone that doesn't break the bank, definitely look up this new Samsung phone.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for design, display, battery and value, with modest caveats on cameras and flagship features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a37",
+    "outletId": "pcmag",
+    "critic": "Kimberly Gedeon",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-a37-5g",
+    "date": "2026-05-12",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy A37 delivers a flagship-inspired design, impressive battery life, fast performance, and upgraded AI tools, offering a respectable experience for buyers on a budget.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 78
+    },
+    "scoreReason": "Strong budget pick with good battery, cameras, and support, but many buyers are better served by Pixel 10a.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a37",
+    "outletId": "android-authority",
+    "critic": "Rushil Agrawal",
+    "url": "https://www.androidauthority.com/samsung-galaxy-a37-review-3726330/",
+    "date": "2026-10-28",
+    "rating": "7/10",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy A37 is a good phone, just not at full price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 73
+    },
+    "scoreReason": "Solid basics, but performance lag and price sensitivity make the recommendation cautious.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a37",
+    "outletId": "sammobile",
+    "critic": "Asif Iqbal Shaik",
+    "url": "https://www.sammobile.com/samsung/galaxy-a37/review/",
+    "date": "2026-04-14",
+    "rating": null,
+    "score": 76,
+    "scoreSource": "text",
+    "excerpt": "If you are upgrading from a phone like the Galaxy A34 or the Galaxy A35, the Galaxy A37 is a good choice.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 75
+    },
+    "scoreReason": "Reviewer calls it a good choice for upgrading from recent A-series models, indicating positive but limited praise.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-a37",
+    "outletId": "zdnet",
+    "critic": "Cesar Cadenas",
+    "url": "https://www.zdnet.com/article/samsung-galaxy-a37-review/",
+    "date": "2026-04-23",
+    "rating": "3/5",
+    "score": 61,
+    "scoreSource": "rating",
+    "excerpt": "This phone is an easy recommendation for budget-conscious shoppers, offering a fun, easy-to-use camera, excellent battery life, and a vibrant display.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 62,
+      "gemini": 60
+    },
+    "scoreReason": "Easy to recommend overall, but weak gaming, heat issues, and limited upgrade value bring it down.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a14-x2-elite",
+    "outletId": "pcmag",
+    "critic": "Marshall Honorof",
+    "url": "https://www.pcmag.com/reviews/asus-zenbook-a14-2026",
+    "date": "2026-08-07",
+    "rating": "4/5",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "If you need a powerful and long-lasting productivity ultraportable, the Zenbook A14 isn't the cheapest choice, but it's one of the best.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 82
+    },
+    "scoreReason": "Excellent performance, battery life, and design, with notable heat, price, and compatibility caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "pcmag",
+    "critic": "Brian Westover",
+    "url": "https://www.pcmag.com/reviews/asus-zenbook-a16",
+    "date": "2026-08-30",
+    "rating": "4/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "The superlight Asus Zenbook A16 pairs a luxury chassis and stunning 3K OLED display with dominant Snapdragon X2 Elite Extreme performance, setting a high standard for big-screen ultraportables.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Highly praised with Editors' Choice, minor trackpad and Arm compatibility drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "hothardware",
+    "critic": "Adam Doud",
+    "url": "https://hothardware.com/reviews/asus-zenbook-a16-snapdragon-x2-elite-extreme-review",
+    "date": "2026-06-04",
+    "rating": "4.25/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "Asus launching the Zenbook A16 delivers a notebook with a gorgeous, large display, great horsepower, in a frame that is highly portable at just a hair over 2.8 pounds.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strong praise for display, performance, and portability with no meaningful reservations in the excerpt.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "thurrott",
+    "critic": "Paul Thurrott",
+    "url": "https://www.thurrott.com/mobile/copilot-pc/338148/asus-zenbook-a16-review-portable-perfection",
+    "date": "2026-06-30",
+    "rating": null,
+    "score": 98,
+    "scoreSource": "text",
+    "excerpt": "The ASUS Zenbook A16 is highly recommended.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Reviewer calls it perhaps the best laptop used, with excellent design, performance, battery life, and minor flaws.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "zdnet",
+    "critic": "Cesar Cadenas",
+    "url": "https://www.zdnet.com/article/hp-omnibook-ultra-2026-review/",
+    "date": "2026-10-28",
+    "rating": "4/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "I highly recommend the OmniBook Ultra 14 to any power user or professional looking for a new premium work laptop, as it can handle just about everything you throw at it.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for professionals, with excellent design, display, speed, and battery, but glossy screen and webcam disappoint.",
+    "scoredFromFullText": true
   }
 ]
