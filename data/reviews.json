@@ -24265,5 +24265,593 @@
     },
     "scoreReason": "Strongly recommended for professionals, with excellent design, display, speed, and battery, but glossy screen and webcam disappoint.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/2298359/google-fitbit-edge-review-battery-price-testing/",
+    "date": "2026-10-27",
+    "rating": null,
+    "score": 75,
+    "scoreSource": "text",
+    "excerpt": "With the Fitbit Edge, you get a nice compromise that keeps the value in the right places.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 78
+    },
+    "scoreReason": "Stylish, light, good value and battery, but limited apps, few watch faces, and disappointing AOD battery.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/2295400/google-fitbit-edge-review/",
+    "date": "2026-10-26",
+    "rating": null,
+    "score": 81,
+    "scoreSource": "text",
+    "excerpt": "That said, if you don't need those smartwatch-like features, and a screen matters to you, the Fitbit Edge is the health-tracker to buy.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 79
+    },
+    "scoreReason": "Strongly recommended fitness tracker with good hardware, but subscription and missing smartwatch features hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "toms-guide",
+    "critic": "Dan Bracaglia",
+    "url": "https://www.tomsguide.com/wellness/fitness-trackers/fitbit-edge-review-just-the-right-amount-of-fitness-tracker-for-most-people",
+    "date": "2026-10-26",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Moreover, the Fitbit Edge feels like just the right amount of fitness tracker for most folks, which is why I highly recommend it.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Highly recommended for most people, with minor compromises like no NFC and unreliable auto workout detection.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "slashgear",
+    "critic": "Chris Davies",
+    "url": "https://www.slashgear.com/2302496/foldable-iphone-duo-review-hands-on-is-it-worth-buying/",
+    "date": "2026-10-30",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "As for whether you should actually buy an iPhone Duo today, right now Apple's first foldable feels more flagship adjacent not flagship replacement.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Impressive hardware and screen, but expensive, compromised, and best for early adopters only.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "the-independent",
+    "critic": "Alex Lee",
+    "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/phones-accessories/iphone-duo-review-b3073563.html",
+    "date": "2026-10-27",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The brilliant folding display, the excellent battery life and, most of all, the sheer versatility of having a phone and a tablet in one single device just can’t be overstated.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Highly enthusiastic overall, despite app optimization, camera, ergonomics, and price drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/apple/beats-360-review",
+    "date": "2026-10-16",
+    "rating": null,
+    "score": 62,
+    "scoreSource": "text",
+    "excerpt": "If you want the best-looking, most customizable gym cans going, and can live with the flaws, the 360 make an interesting alternative.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 68,
+      "gemini": 55
+    },
+    "scoreReason": "Stylish and gym-friendly with strong battery, but sound flaws and missing features make them feel overpriced.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "business-insider",
+    "critic": "Tyler Hayes",
+    "url": "https://www.businessinsider.com/guides/tech/apple-watch-series-12-review",
+    "date": "2026-10-14",
+    "rating": null,
+    "score": 66,
+    "scoreSource": "text",
+    "excerpt": "The Apple Watch Series 12 is an impressive smartwatch, but if you already own a Series 9 or newer model, it's hard to justify the upgrade.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 60
+    },
+    "scoreReason": "Good but underwhelming upgrade, best for newcomers or much older owners, with delayed features and limited reasons to upgrade.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "zdnet",
+    "critic": "Jada Jones",
+    "url": "https://www.zdnet.com/tech/best-airpods-anc-data-byte/",
+    "date": "2026-10-02",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "With these characteristics in mind, the AirPods 5 may be the best midrange earbuds on the market, and certainly the best midrange AirPods for Apple enthusiasts.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for improved ANC, features, and value, with minor limits on high-frequency noise cancellation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "pcmag",
+    "critic": "Florence Ion",
+    "url": "https://www.pcmag.com/reviews/nothing-phone-4a-pro",
+    "date": "2026-06-27",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Nothing Phone (4a) Pro impresses with its unique look, a retooled Glyph Matrix, Bauhaus Android, and a camera that snaps deep, moody pictures, making it an excellent choice if you prefer the unbeaten path.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Distinctive design, great battery and display, but carrier limits and safer alternatives temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "engadget",
+    "critic": null,
+    "url": "https://www.engadget.com/mobile/smartphones/nothing-phone-4a-pro-review-glyph-matrix-130042005.html",
+    "date": "2026-03-19",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "Nothing's Phone 4a Pro is a device with a clear identity, delivering on the essentials for half the price of many rivals.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Strong value, refined hardware, excellent battery and photos, but video, software support and missing features temper praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "toms-guide",
+    "critic": "Tom Pritchard",
+    "url": "https://www.tomsguide.com/phones/android-phones/nothing-phone-4a-pro-review-a-solid-sub-usd500-phone-let-down-by-its-altered-looks",
+    "date": "2026-04-11",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Nothing Phone 4a Pro isn't the most powerful, but it still offers an extraordinary amount for your money.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value, cameras and battery impress, but performance, missing wireless charging and design changes temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razer-blade-16-2026",
+    "outletId": "gaming-trend",
+    "critic": "David Flynn",
+    "url": "https://gamingtrend.com/feature/reviews/razer-blade-16-2026-review/",
+    "date": "2026-07-25",
+    "rating": null,
+    "score": 62,
+    "scoreSource": "text",
+    "excerpt": "The Razer Blade 16 2026 is a fantastic laptop both for gaming and productivity.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 68,
+      "gemini": 55
+    },
+    "scoreReason": "Great performance and display, but huge price and persistent stuttering issues stop a clear recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "thinkpad-x1-carbon-gen14",
+    "outletId": "pcmag",
+    "critic": "Matthew Buzzi",
+    "url": "https://www.pcmag.com/reviews/lenovo-thinkpad-x1-carbon-gen-14-aura-edition",
+    "date": "2026-07-12",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Lenovo&#039;s ThinkPad X1 Carbon Gen 14 Aura Edition evolves the class-leading business laptop with an accessible, repairable internal redesign and even longer battery life.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with excellent design, repairability, and battery life, but expensive and not the fastest.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "thinkpad-x1-carbon-gen14",
+    "outletId": "cnet",
+    "critic": "Matt Elliott",
+    "url": "https://www.cnet.com/tech/computing/lenovo-thinkpad-x1-carbon-gen-14-review-flagship-ultraportable-repairable/",
+    "date": "2026-07-19",
+    "rating": "8.3/10",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "Outweighing the lack of any performance gains with this year's edition and battery life decreasing by a few hours is the greater repairability that should help extend the useful life of the ThinkPad X1 Carbon Gen 14.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 83
+    },
+    "scoreReason": "Strong praise for repairability, keyboard and value, tempered by no performance gains and shorter battery life.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "thinkpad-x1-carbon-gen14",
+    "outletId": "toms-guide",
+    "critic": "Dylan Haas",
+    "url": "https://www.tomsguide.com/computing/laptops/lenovo-thinkpad-x1-carbon-gen-14-aura-edition-review",
+    "date": "2026-10-24",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "It's expensive, but if you want one of the better business ultraportables on the market, this is it.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent business laptop with standout keyboard, display, and repairability, but high price and middling battery hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "android-authority",
+    "critic": "Ryan Haines",
+    "url": "https://www.androidauthority.com/samsung-galaxy-s26-ultra-review-3652705/",
+    "date": "2026-03-31",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy S26 Ultra feels a little more special than its predecessor, even if it still lacks a bit of identity.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for performance, cameras, and refinement, but size, battery, and limited innovation temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "business-insider",
+    "critic": "Mark Knapp",
+    "url": "https://www.businessinsider.com/guides/tech/samsung-galaxy-s26-ultra-review",
+    "date": "2026-10-16",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "So, if you want it all with little compromise, the Galaxy S26 Ultra is still the phone to beat.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 90
+    },
+    "scoreReason": "Excellent all-around flagship with few major flaws, but pricey, bulky, and some AI and durability concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "mashable",
+    "critic": "Timothy Beck Werth",
+    "url": "https://sea.mashable.com/samsung-galaxy-s26-ultra/42564/samsung-galaxy-s26-ultra-review-i-might-be-done-with-iphones",
+    "date": "2026-03-11",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "However, for dedicated Android users — or anyone who loves big phones and hates Liquid Glass — the S26 Ultra is worth the investment.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent cameras, display, speed, and privacy feature, but too large and excessive for many users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "itpro",
+    "critic": "Bobby Hellard",
+    "url": "https://www.itpro.com/hardware/mobile-phones/samsungs-galaxy-s26-ultra-is-a-big-ai-powered-video-powerhouse-and-the-worlds-first-anti-shoulder-surfing-smartphone",
+    "date": "2026-02-25",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "Sure, it's expensive, but for social, promotional, or even mini film needs, the S26 Ultra is almost an all-in-one solution.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Outstanding cameras, video, battery, and privacy features, with only minor drawbacks and high price caveat.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/Blocks-prying-eyes-Samsung-Galaxy-S26-Ultra-review.1278349.0.html",
+    "date": "2026-04-22",
+    "rating": "90/100",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "Nevertheless, the Galaxy S26 Ultra remains an extremely powerful flagship for users who are looking for maximum specs, high performance and a real privacy advantage on their phone's display.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent flagship with standout privacy feature, but pricey and only a modest upgrade over the predecessor.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "sammyguru",
+    "critic": "Sumit Adhikari",
+    "url": "https://sammyguru.com/samsung-galaxy-s26-ultra-review/",
+    "date": "2026-04-20",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy S26 Ultra isn't a dramatic leap on paper, but dismissing it as a minor upgrade would be missing the point.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strongly praised overall with notable display and battery drawbacks, but clearly seen as a refined improvement.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/samsung-galaxy-s26-review-3650267/",
+    "date": "2026-04-04",
+    "rating": "7/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "If you need a new Samsung phone, don’t want an older model, and have found a good deal on the Galaxy S26, go ahead and buy it.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 81,
+      "gemini": 72
+    },
+    "scoreReason": "Good performance and compact design, but cameras, battery, charging, and value draw strong reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-s26/review/",
+    "date": "2026-04-01",
+    "rating": null,
+    "score": 83,
+    "scoreSource": "text",
+    "excerpt": "But for the person who just wants a compact Samsung flagship that does everything well without the bulk, the S26 is the one to get.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 85
+    },
+    "scoreReason": "Strong recommendation for buyers wanting a compact flagship, with clear praise for overall performance.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/apr/30/galaxy-s26-review-samsung-android-ai-loaded-battery-camera",
+    "date": "2026-04-30",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "Samsung’s compact flagship phone hasn’t changed much in a year, but the S26 is still one of the best smaller handsets available as rivals grow larger and larger.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Good compact flagship with solid performance and software, but aging cameras and minor misses limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "mashable",
+    "critic": "Priya Singh",
+    "url": "https://in.mashable.com/tech/107631/samsung-galaxy-s26-review-familiar-yet-dependable",
+    "date": "2026-03-26",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "The Samsung Galaxy S26 is a classic case of a flagship that chooses refinement over risk, and largely succeeds at it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 78
+    },
+    "scoreReason": "Polished and dependable flagship with strong display and cameras, but safe upgrades and slow charging limit excitement.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "android-headlines",
+    "critic": "Justin Diaz",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-s26-review",
+    "date": "2026-03-12",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "From high-quality cameras to top-notch performance, the Galaxy S26 is pushing beyond boundaries to cement itself as an incredibly good Android phone for the masses.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with minor display and charging drawbacks, but praised as excellent for most users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/2134057/samsung-galaxy-s26-review/",
+    "date": "2026-03-28",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "If you like Samsung phones, the Galaxy S26 and Galaxy S26+ are both excellent devices.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent phones with great cameras and displays, but very iterative with middling battery and charging.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "pcmag",
+    "critic": "Kimberly Gedeon",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-s26-fe",
+    "date": "2026-10-30",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy S26 FE offers speedy charging, a full suite of AI tools, and solid performance, even if its price undercuts the standard S26 by less than you’d hope.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Good performance and features, but weaker value, shorter battery life, and USB downgrade limit enthusiasm.",
+    "scoredFromFullText": true
   }
 ]
