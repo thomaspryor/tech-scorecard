@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { bestYear, getAllProducts, getTotals, indexableCategories, isScored } from '@/lib/data';
+import { bestYear, getAllProducts, getLatestReviews, getTotals, indexableCategories, isScored } from '@/lib/data';
 import { MiniProductCard, ProductListCard } from '@/components/product-cards';
 import { Logo } from '@/components/Header';
 import { ListSort } from '@/components/ListSort';
-import { CATEGORY_ORDER, CATEGORY_PLURAL } from '@/lib/format';
+import { CATEGORY_ORDER, CATEGORY_PLURAL, formatDate } from '@/lib/format';
 
 export const metadata: Metadata = { alternates: { canonical: '/' } };
 
@@ -31,6 +31,7 @@ export default function HomePage() {
   const cutoff = new Date();
   cutoff.setFullYear(cutoff.getFullYear() - 1);
   const since = cutoff.toISOString().slice(0, 10);
+  const latest = getLatestReviews(8);
   const topRecent = products.filter((p) => isScored(p) && p.releaseDate >= since).slice(0, 8);
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6">
@@ -63,6 +64,38 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section aria-labelledby="latest" className="pb-10">
+        <h2 id="latest" className="mb-3 text-lg font-bold">
+          Latest reviews
+        </h2>
+        <p className="mb-3 text-sm text-ink-muted">
+          The newest review of each product, with that outlet&apos;s own score out of 100.
+        </p>
+        <ul className="divide-y divide-line rounded-xl border border-line">
+          {latest.map(({ product, review }) => (
+            <li key={product.id}>
+              <Link
+                href={`/product/${product.slug}/`}
+                className="flex min-h-11 items-center gap-3 px-3 py-2 hover:bg-surface-overlay"
+              >
+                <span
+                  className="w-8 shrink-0 text-center text-sm font-bold tabular-nums"
+                  title={`${review.outlet.name}'s score`}
+                >
+                  {review.score}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-semibold">{product.name}</span>
+                  <span className="block truncate text-xs text-ink-faint">
+                    {review.outlet.name} · {formatDate(review.date)}
+                  </span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section aria-labelledby="all" className="cat-filter sort-toggle">

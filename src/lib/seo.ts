@@ -34,6 +34,13 @@ export const titleCandidates = {
     `Best ${plural} ${year}: ranked by critic score`,
     `Best ${plural} to buy in ${year}`,
   ],
+  /** `subject` is the lower-case list name from a Roundup ("Apple products", "phones under $800"). */
+  roundup: (subject: string, year: number) => [
+    `Best ${subject} in ${year}: ranked by critic score`,
+    `Best ${subject} ${year}: ranked by critic score`,
+    `Best ${subject} ${year} by critic score`,
+    `Best ${subject} in ${year}`,
+  ],
   best: (year: number) => [
     `Best-reviewed tech to buy in ${year}: top gadgets by critic score`,
     `Best-reviewed tech of ${year} by critic score`,

@@ -4,10 +4,10 @@ import type { Metadata } from 'next';
 import { bestYear, getScoredProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_ORDER, CATEGORY_PLURAL, isCategory } from '@/lib/format';
 import type { Category } from '@/lib/data-types';
-import { ProductListCard } from '@/components/product-cards';
+import { RankedList } from '@/components/RankedList';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta, titleCandidates } from '@/lib/seo';
-import { EARLY_SCORE_BELOW } from '@/config/scoring';
+import { getRoundups } from '@/lib/roundups';
 
 type Params = { name: string };
 
@@ -55,6 +55,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
   const plural = CATEGORY_PLURAL[name];
   const others = indexableCategories().filter((c) => c !== name);
   const path = `/category/${name}/`;
+  const pricePages = getRoundups().filter((r) => r.category === name);
 
   return (
     <div className="mx-auto max-w-3xl px-4 pb-4 pt-6 sm:px-6">
@@ -90,19 +91,27 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
         </Link>
       </p>
 
-      <ol className="mt-6 space-y-3">
-        {list.map((p, i) => (
-          <li key={p.id} className="flex items-center gap-3">
-            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint">{i + 1}</span>
-            <div className="min-w-0 flex-1">
-              <ProductListCard product={p} heading="h2" />
-              {p.reviewCount < EARLY_SCORE_BELOW && (
-                <p className="mt-1 text-xs text-ink-faint">Early score: based on {p.reviewCount} reviews so far</p>
-              )}
-            </div>
-          </li>
-        ))}
-      </ol>
+      <RankedList products={list} />
+
+      {pricePages.length > 0 && (
+        <section className="mt-10" aria-labelledby="by-price">
+          <h2 id="by-price" className="mb-3 text-lg font-bold">
+            {plural} by price
+          </h2>
+          <ul className="flex flex-wrap gap-2 text-sm">
+            {pricePages.map((r) => (
+              <li key={r.slug}>
+                <Link
+                  href={`/best/${r.slug}/`}
+                  className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
+                >
+                  Best {r.subject}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {others.length > 0 && (
         <section className="mt-10" aria-labelledby="more-cats">

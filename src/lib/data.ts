@@ -74,3 +74,26 @@ export function indexableCategories(): Category[] {
   const scored = getScoredProducts();
   return CATEGORY_ORDER.filter((c) => scored.filter((p) => p.category === c).length >= MIN_PRODUCTS_FOR_CATEGORY_PAGE);
 }
+
+export interface LatestReview {
+  product: ComputedProduct;
+  review: ComputedProduct['reviews'][number];
+}
+
+/** The newest review of each product, newest first (ties: bigger outlet, then higher score). One per product keeps the list varied. */
+export function getLatestReviews(limit: number): LatestReview[] {
+  return getAllProducts()
+    .flatMap((product) => {
+      const review = [...product.reviews].sort(
+        (a, b) => b.date.localeCompare(a.date) || a.outlet.tier - b.outlet.tier || b.score - a.score,
+      )[0];
+      return review ? [{ product, review }] : [];
+    })
+    .sort(
+      (a, b) =>
+        b.review.date.localeCompare(a.review.date) ||
+        a.review.outlet.tier - b.review.outlet.tier ||
+        b.review.score - a.review.score,
+    )
+    .slice(0, limit);
+}

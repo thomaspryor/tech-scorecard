@@ -1,0 +1,23 @@
+{
+  "note": "Roundup pages under /best/ that have been published. A listed slug keeps its page even when the product counts shift, so a URL Google has indexed never turns into a 404. New pages that qualify appear on their own; add a slug here once it has been live, to protect it.",
+  "slugs": [
+    "apple",
+    "samsung",
+    "google",
+    "motorola",
+    "asus",
+    "garmin",
+    "under-200",
+    "under-300",
+    "under-500",
+    "under-1000",
+    "phones-under-500",
+    "phones-under-800",
+    "phones-under-1000",
+    "headphones-under-200",
+    "headphones-under-300",
+    "watches-under-500",
+    "wearables-under-500",
+    "wearables-under-800"
+  ]
+}

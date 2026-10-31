@@ -2,10 +2,10 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { bestYear, getScoredProducts, indexableCategories } from '@/lib/data';
 import { CATEGORY_PLURAL } from '@/lib/format';
-import { ProductListCard } from '@/components/product-cards';
+import { RankedList } from '@/components/RankedList';
+import { getRoundups, type Roundup } from '@/lib/roundups';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbLd, clip, fitTitle, itemListLd, socialMeta, titleCandidates } from '@/lib/seo';
-import { EARLY_SCORE_BELOW } from '@/config/scoring';
 
 const TOP_N = 10;
 
@@ -32,6 +32,7 @@ export default function BestPage() {
   const all = rated();
   const top = all.slice(0, TOP_N);
   const cats = indexableCategories();
+  const roundups = getRoundups();
   return (
     <div className="mx-auto max-w-3xl px-4 pb-4 pt-6 sm:px-6">
       <JsonLd
@@ -64,19 +65,7 @@ export default function BestPage() {
           How scores work
         </Link>
       </p>
-      <ol className="mt-6 space-y-3">
-        {top.map((p, i) => (
-          <li key={p.id} className="flex items-center gap-3">
-            <span className="w-6 shrink-0 text-center text-sm font-bold text-ink-faint">{i + 1}</span>
-            <div className="min-w-0 flex-1">
-              <ProductListCard product={p} heading="h2" />
-              {p.reviewCount < EARLY_SCORE_BELOW && (
-                <p className="mt-1 text-xs text-ink-faint">Early score: based on {p.reviewCount} reviews so far</p>
-              )}
-            </div>
-          </li>
-        ))}
-      </ol>
+      <RankedList products={top} />
       <section className="mt-10" aria-labelledby="by-cat">
         <h2 id="by-cat" className="mb-3 text-lg font-bold">
           Best by category
@@ -94,6 +83,31 @@ export default function BestPage() {
           ))}
         </ul>
       </section>
+      <RoundupGroup id="by-price" title="Best by price" items={roundups.filter((r) => r.kind === 'price')} />
+      <RoundupGroup id="by-brand" title="Best by brand" items={roundups.filter((r) => r.kind === 'brand')} />
     </div>
+  );
+}
+
+function RoundupGroup({ id, title, items }: { id: string; title: string; items: Roundup[] }) {
+  if (items.length === 0) return null;
+  return (
+    <section className="mt-10" aria-labelledby={id}>
+      <h2 id={id} className="mb-3 text-lg font-bold">
+        {title}
+      </h2>
+      <ul className="flex flex-wrap gap-2 text-sm">
+        {items.map((r) => (
+          <li key={r.slug}>
+            <Link
+              href={`/best/${r.slug}/`}
+              className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
+            >
+              Best {r.subject}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
