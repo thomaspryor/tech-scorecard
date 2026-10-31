@@ -1,9 +1,11 @@
 import type { ComputedProduct } from './engine';
-import { formatDate } from './format';
-import { RECOMMENDED_MIN } from '@/config/score-buckets';
+import { RECOMMENDED_MIN, WORTH_IT_MIN } from '@/config/score-buckets';
 
 const AGREE_WITHIN = 12;
 const SPLIT_AT = 30;
+/** A split needs a real group on each side: at least this many reviews, and this share of all reviews, scoring Recommended or better and scoring under Worth a Look. One outlier is not a split. */
+const SPLIT_MIN_SIDE = 2;
+const SPLIT_MIN_SHARE = 0.25;
 /** Tier 1 against the rest is only worth saying when the gap is at least this many points. */
 const OUTLET_GAP = 4;
 
@@ -28,10 +30,13 @@ export function consensusSentences(p: ComputedProduct): string[] {
   const spread = hi.score - lo.score;
   const out: string[] = [];
 
+  const positive = reviews.filter((r) => r.score >= RECOMMENDED_MIN).length;
+  const negative = reviews.filter((r) => r.score < WORTH_IT_MIN).length;
+  const sideMin = Math.min(positive, negative);
+  const realSplit = spread >= SPLIT_AT && sideMin >= SPLIT_MIN_SIDE && sideMin / n >= SPLIT_MIN_SHARE;
   if (spread <= AGREE_WITHIN)
     out.push(`Critics largely agree: all ${n} reviews land between ${lo.score} and ${hi.score}.`);
-  else if (spread >= SPLIT_AT)
-    out.push(`Critics are split: scores run from ${lo.score} to ${hi.score} across ${n} reviews.`);
+  else if (realSplit) out.push(`Critics are split: scores run from ${lo.score} to ${hi.score} across ${n} reviews.`);
   else out.push(`Scores run from ${lo.score} to ${hi.score} across ${n} reviews.`);
 
   if (spread > AGREE_WITHIN) {
@@ -45,7 +50,7 @@ export function consensusSentences(p: ComputedProduct): string[] {
   const strong = reviews.filter((r) => r.score >= RECOMMENDED_MIN).length;
   if (strong === n) out.push(`Every review scores ${RECOMMENDED_MIN} or higher.`);
   else if (strong === 0) out.push(`None of the ${n} reviews reaches ${RECOMMENDED_MIN}.`);
-  else out.push(`${strong} of ${n} reviews score ${RECOMMENDED_MIN} or higher.`);
+  else out.push(`${strong} of ${n} reviews ${strong === 1 ? 'scores' : 'score'} ${RECOMMENDED_MIN} or higher.`);
 
   const major = reviews.filter((r) => r.outlet.tier === 1);
   const rest = reviews.filter((r) => r.outlet.tier !== 1);
@@ -53,19 +58,14 @@ export function consensusSentences(p: ComputedProduct): string[] {
     const a = Math.round(mean(major.map((r) => r.score)));
     const b = Math.round(mean(rest.map((r) => r.score)));
     if (Math.abs(a - b) >= OUTLET_GAP)
-      out.push(`The ${major.length} major national outlets average ${a}, against ${b} for the other ${rest.length}.`);
+      out.push(
+        `The ${major.length} biggest outlets (tier 1 in our methodology) average ${a}, against ${b} for the other ${rest.length}.`,
+      );
   }
 
   const awarded = reviews.filter((r) => r.editorsChoice);
-  if (awarded.length > 0) out.push(`${names(awarded)} gave it an Editors' Choice award.`);
+  // The flag covers each outlet's own award badge (Editors' Choice, Best Buy, Recommended), so the wording stays generic.
+  if (awarded.length > 0) out.push(`Award badge from ${names(awarded)}.`);
 
-  const dates = reviews.map((r) => r.date).sort();
-  const first = dates[0];
-  const last = dates[dates.length - 1];
-  out.push(
-    first === last
-      ? `All the reviews were published on ${formatDate(first)}.`
-      : `Reviews were published between ${formatDate(first)} and ${formatDate(last)}.`,
-  );
   return out;
 }

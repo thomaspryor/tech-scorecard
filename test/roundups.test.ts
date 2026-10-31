@@ -5,6 +5,7 @@ import { fitTitle, titleCandidates } from '@/lib/seo';
 import { MAX_TITLE_LENGTH, TITLE_SUFFIX } from '@/config/seo';
 import type { Category } from '@/lib/data-types';
 import { product } from './fixtures';
+import roundupSlugs from '@/config/roundup-slugs.json';
 
 let n = 0;
 function p(over: { brand?: string; category?: Category; launchPrice?: number | null }): ScoredProduct {
@@ -77,6 +78,19 @@ describe('buildRoundups', () => {
   });
 });
 
+describe('published slugs', () => {
+  it('keep their page even when the rules would drop it', () => {
+    const list = [...many(5, { launchPrice: 150 }), ...many(1, { launchPrice: 900 })];
+    expect(buildRoundups(list).some((r) => r.slug === 'under-200')).toBe(false);
+    expect(buildRoundups(list, ['under-200']).find((r) => r.slug === 'under-200')?.products).toHaveLength(5);
+  });
+
+  it('keep a thin brand page, but never create an empty one', () => {
+    const list = [...many(2, { brand: 'Acme' })];
+    expect(buildRoundups(list, ['acme', 'ghost']).map((r) => r.slug)).toEqual(['acme']);
+  });
+});
+
 describe('roundups over the real data', () => {
   const all = getRoundups();
 
@@ -87,6 +101,11 @@ describe('roundups over the real data', () => {
       const scores = r.products.map((x) => x.criticScore);
       expect(scores, r.slug).toEqual([...scores].sort((a, b) => b - a));
     }
+  });
+
+  it('still builds every published slug', () => {
+    const slugs = all.map((r) => r.slug);
+    for (const s of roundupSlugs.slugs) expect(slugs, s).toContain(s);
   });
 
   it('fits every title, keeping the year and "critic score"', () => {

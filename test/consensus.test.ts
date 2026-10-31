@@ -36,6 +36,20 @@ describe('consensusSentences', () => {
     expect(text).not.toContain('most enthusiastic');
   });
 
+  it('does not call one outlier a split, and uses the right verb', () => {
+    const p = build([
+      ['the-verge', 96],
+      ['cnet', 60],
+      ['techradar', 62],
+      ['pcmag', 64],
+      ['wired', 66],
+    ]);
+    const text = consensusSentences(p).join(' ');
+    expect(text).not.toContain('Critics are split');
+    expect(text).toContain('Scores run from 60 to 96 across 5 reviews.');
+    expect(text).toContain('1 of 5 reviews scores 80 or higher.');
+  });
+
   it('names the extremes and flags a split', () => {
     const p = build([
       ['the-verge', 92],
@@ -59,7 +73,7 @@ describe('consensusSentences', () => {
       ['wired', 71],
     ]);
     expect(consensusSentences(wide).join(' ')).toContain(
-      'The 3 major national outlets average 71, against 89 for the other 2.',
+      'The 3 biggest outlets (tier 1 in our methodology) average 71, against 89 for the other 2.',
     );
     const close = build([
       ['the-verge', 80],
@@ -68,10 +82,10 @@ describe('consensusSentences', () => {
       ['pcmag', 81],
       ['wired', 80],
     ]);
-    expect(consensusSentences(close).join(' ')).not.toContain('major national outlets');
+    expect(consensusSentences(close).join(' ')).not.toContain('biggest outlets');
   });
 
-  it("credits Editors' Choice and dates the reviews", () => {
+  it('credits award badges', () => {
     const p = build([
       ['the-verge', 90, { editorsChoice: true, date: '2026-10-01' }],
       ['cnet', 88, { editorsChoice: true, date: '2026-10-05' }],
@@ -80,8 +94,7 @@ describe('consensusSentences', () => {
       ['wired', 84],
     ]);
     const text = consensusSentences(p).join(' ');
-    expect(text).toContain("The Verge and CNET gave it an Editors' Choice award.");
-    expect(text).toContain('Reviews were published between Sep 20, 2026 and Oct 5, 2026.');
+    expect(text).toContain('Award badge from The Verge and CNET.');
   });
 
   it('follows the site copy rules', () => {

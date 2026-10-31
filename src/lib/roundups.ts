@@ -1,6 +1,7 @@
 import type { Category, Product } from './data-types';
 import { getScoredProducts, type ScoredProduct } from './data';
 import { CATEGORY_ORDER, CATEGORY_PLURAL, formatPrice } from './format';
+import roundupSlugs from '@/config/roundup-slugs.json';
 
 /** A roundup needs this many scored products, or it is a thin page. */
 export const MIN_PRODUCTS_FOR_ROUNDUP = 4;
@@ -36,9 +37,12 @@ function slugify(text: string): string {
 /**
  * Narrow "best of" pages built only from the data: one per brand with enough products, plus launch-price
  * ladders ("tech under $500", "phones under $800"). `products` must be sorted best first (getScoredProducts is).
+ * A slug in `keep` (the published list in src/config/roundup-slugs.json) skips the size and duplicate rules, so an
+ * indexed URL does not vanish when counts shift; it only needs one product.
  * Pure so tests can feed it small lists.
  */
-export function buildRoundups(products: ScoredProduct[]): Roundup[] {
+export function buildRoundups(products: ScoredProduct[], keep: string[] = []): Roundup[] {
+  const kept = new Set(keep);
   const out: Roundup[] = [];
   const seenSets = new Set<string>();
   const slugs = new Set<string>();
@@ -47,7 +51,9 @@ export function buildRoundups(products: ScoredProduct[]): Roundup[] {
       .map((p) => p.id)
       .sort()
       .join('|');
-    if (r.products.length < MIN_PRODUCTS_FOR_ROUNDUP || seenSets.has(key) || slugs.has(r.slug)) return false;
+    const sticky = kept.has(r.slug);
+    if (r.products.length === 0 || slugs.has(r.slug)) return false;
+    if (!sticky && (r.products.length < MIN_PRODUCTS_FOR_ROUNDUP || seenSets.has(key))) return false;
     seenSets.add(key);
     slugs.add(r.slug);
     out.push(r);
@@ -70,7 +76,11 @@ export function buildRoundups(products: ScoredProduct[]): Roundup[] {
   let previous = 0;
   for (const cap of OVERALL_CAPS) {
     const list = under(products, cap);
-    if (list.length > products.length - MIN_LEFT_OUT || list.length - previous < MIN_ADDED_PER_STEP) continue;
+    if (
+      !kept.has(`under-${cap}`) &&
+      (list.length > products.length - MIN_LEFT_OUT || list.length - previous < MIN_ADDED_PER_STEP)
+    )
+      continue;
     if (add({ slug: `under-${cap}`, kind: 'price', subject: `tech under ${formatPrice(cap)}`, cap, products: list }))
       previous = list.length;
   }
@@ -81,10 +91,15 @@ export function buildRoundups(products: ScoredProduct[]): Roundup[] {
     previous = 0;
     for (const cap of CATEGORY_CAPS) {
       const list = under(inCategory, cap);
-      if (list.length > inCategory.length - MIN_LEFT_OUT || list.length - previous < MIN_ADDED_PER_STEP) continue;
+      const slug = `${plural}-under-${cap}`;
+      if (
+        !kept.has(slug) &&
+        (list.length > inCategory.length - MIN_LEFT_OUT || list.length - previous < MIN_ADDED_PER_STEP)
+      )
+        continue;
       if (
         add({
-          slug: `${plural}-under-${cap}`,
+          slug,
           kind: 'price',
           subject: `${plural} under ${formatPrice(cap)}`,
           category,
@@ -101,7 +116,7 @@ export function buildRoundups(products: ScoredProduct[]): Roundup[] {
 let cache: Roundup[] | null = null;
 
 export function getRoundups(): Roundup[] {
-  return (cache ??= buildRoundups(getScoredProducts()));
+  return (cache ??= buildRoundups(getScoredProducts(), roundupSlugs.slugs));
 }
 
 export function getRoundup(slug: string): Roundup | undefined {
@@ -109,8 +124,8 @@ export function getRoundup(slug: string): Roundup | undefined {
 }
 
 /** The roundups worth linking from a product page: its brand page, then the tightest price page it is on. */
-export function roundupsFor(product: Pick<Product, 'brand' | 'category' | 'launchPrice'>): Roundup[] {
-  const all = getRoundups();
+export function roundupsFor(product: Pick<Product, 'id' | 'brand' | 'category' | 'launchPrice'>): Roundup[] {
+  const all = getRoundups().filter((r) => r.products.some((p) => p.id === product.id));
   const brand = all.find((r) => r.kind === 'brand' && r.brand === product.brand);
   const price = all
     .filter(

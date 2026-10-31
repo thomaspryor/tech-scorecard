@@ -68,8 +68,11 @@ export default function HomePage() {
 
       <section aria-labelledby="latest" className="pb-10">
         <h2 id="latest" className="mb-3 text-lg font-bold">
-          Latest reviews added
+          Latest reviews
         </h2>
+        <p className="mb-3 text-sm text-ink-muted">
+          The newest review of each product, with that outlet&apos;s own score out of 100.
+        </p>
         <ul className="divide-y divide-line rounded-xl border border-line">
           {latest.map(({ product, review }) => (
             <li key={product.id}>
@@ -77,7 +80,12 @@ export default function HomePage() {
                 href={`/product/${product.slug}/`}
                 className="flex min-h-11 items-center gap-3 px-3 py-2 hover:bg-surface-overlay"
               >
-                <span className="w-8 shrink-0 text-center text-sm font-bold tabular-nums">{review.score}</span>
+                <span
+                  className="w-8 shrink-0 text-center text-sm font-bold tabular-nums"
+                  title={`${review.outlet.name}'s score`}
+                >
+                  {review.score}
+                </span>
                 <span className="min-w-0 flex-1">
                   <span className="block truncate font-semibold">{product.name}</span>
                   <span className="block truncate text-xs text-ink-faint">
