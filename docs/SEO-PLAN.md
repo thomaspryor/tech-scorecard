@@ -75,15 +75,21 @@ Status 2026-10-26 (from the SEO audit that day):
 
 - Step 4 done: `fitTitle` (`src/lib/seo.ts`) keeps product, category and /best/ titles within 65 characters,
   dropping the " | Tech Scorecard" suffix only when a long product name needs it. A test checks every product.
-- Step 5 half done: the sitemap has real `lastmod` for home, /best/ and categories (newest review), and product
-  JSON-LD has `dateModified`. The home "newest reviews" block is still open.
+- Step 5: the sitemap has real `lastmod` for home, /best/ and categories (newest review), and product
+  JSON-LD has `dateModified`. The home "newest reviews" block was added 2026-10-31 (see below).
 - Step 6 done: per-product share images. Their URL now keeps its trailing slash (the slashless one redirected).
 - The year in "Best ... to buy in" titles comes from the data (`bestYear()` in `src/lib/data.ts`): it moves to a
   new year once 10 reviews are dated in it.
 - IndexNow (the key file is live in `public/`) is not wired up: a ping from the weekly workflow would have to wait
   for the Vercel deploy, and that wait was judged more likely to send the owner false alarms than to help.
   It only reaches Bing and Yandex, which read the sitemap anyway. Revisit if Bing indexing lags.
-- Steps 8 and 9 are open.
+- Status 2026-10-31 (plan finished except link building):
+  - Step 5 done: the home page has a "Latest reviews added" block (newest review per product, `getLatestReviews`).
+  - Step 7 done: fonts are self-hosted; text colors already meet 4.5:1 (see `globals.css`); the shared share image gets a one-week cache header in `vercel.json`.
+  - Step 8 done, with a limit: each scored product page has "Where critics agree and disagree" (`src/lib/consensus.ts`), built only from the review scores, outlets, dates and awards. A "who should buy it" paragraph was left out on purpose: it cannot be derived from the data without guessing.
+  - Step 9 done: `/best/<topic>/` roundups from `src/lib/roundups.ts`. One page per brand with at least 4 scored products, plus launch-price ladders (tech under $200 to $1,000; phones, wearables, watches and headphones by price). Pages are generated from the data, so a new product can create or fill one. A price page is skipped when it would list nearly the whole parent list or add fewer than 3 products over the previous cap, to avoid near-duplicates. They are linked from `/best/`, category pages and product pages, and are in the sitemap.
+  - Google Search Console and Bing Webmaster Tools are verified (Oct 24); Google began showing the site in results the same day.
+  - Step 10 (earning first links) is not something code can do; it stays an ongoing job.
 
 ### Now (this week)
 

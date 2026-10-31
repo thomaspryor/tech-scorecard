@@ -16,6 +16,8 @@ import {
 } from '@/components/product-cards';
 import { ReviewList } from '@/components/ReviewRow';
 import { JsonLd } from '@/components/JsonLd';
+import { consensusSentences } from '@/lib/consensus';
+import { roundupsFor } from '@/lib/roundups';
 import { abs, breadcrumbLd, clip, fitTitle, socialMeta, titleCandidates } from '@/lib/seo';
 
 type Params = { slug: string };
@@ -53,6 +55,8 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     .sort((a, b) => Number(b.category === product.category) - Number(a.category === product.category))
     .slice(0, 4);
 
+  const consensus = consensusSentences(product);
+  const lists = roundupsFor(product);
   const categoryHasPage = indexableCategories().includes(product.category);
   const crumbs = [
     { name: 'Home', path: '/' },
@@ -175,6 +179,15 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         </div>
       </section>
 
+      {consensus.length > 0 && (
+        <section className="card mt-6 p-5" aria-labelledby="consensus">
+          <h2 id="consensus" className="section-label">
+            Where critics agree and disagree
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-ink">{consensus.join(' ')}</p>
+        </section>
+      )}
+
       {/* Critic Scorecard */}
       <section className="card mt-6 p-4 sm:p-6" aria-labelledby="scorecard">
         <div className="flex items-baseline justify-between">
@@ -249,6 +262,30 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
             <MiniProductCard key={p.id} product={p} />
           ))}
         </div>
+        {(lists.length > 0 || categoryHasPage) && (
+          <ul className="mt-4 flex flex-wrap gap-2 text-sm">
+            {categoryHasPage && (
+              <li>
+                <Link
+                  href={`/category/${product.category}/`}
+                  className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
+                >
+                  All {CATEGORY_PLURAL[product.category].toLowerCase()}
+                </Link>
+              </li>
+            )}
+            {lists.map((r) => (
+              <li key={r.slug}>
+                <Link
+                  href={`/best/${r.slug}/`}
+                  className="inline-flex min-h-11 items-center rounded-full border border-line px-4 hover:border-ink"
+                >
+                  Best {r.subject}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
     </div>
   );
