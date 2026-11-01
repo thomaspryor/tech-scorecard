@@ -24853,5 +24853,215 @@
     },
     "scoreReason": "Good performance and features, but weaker value, shorter battery life, and USB downgrade limit enthusiasm.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "can-buy-or-not",
+    "critic": "Aloysius Low",
+    "url": "https://www.canbuyornot.com/reviews/smartphones/apple-iphone-duo-hands-on-review-price/",
+    "date": "2026-10-30",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "Despite being the heaviest dual-screen foldable I've tested, the Apple iPhone Duo delivers a satisfying premium feel that other equivalent devices, such as the Samsung Galaxy Z Fold 8, don't quite match.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 83
+    },
+    "scoreReason": "Fresh foldable design, strong software and premium feel, but weight, ergonomics, price and durability concerns remain.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "geek-culture",
+    "critic": "Si Jia",
+    "url": "https://geekculture.co/apple-watch-series-12-review/",
+    "date": "2026-10-31",
+    "rating": "8.8/10",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "Despite what the unchanged exterior may suggest, additions to the Apple Watch Series 12 are iterative in name but meaningful in nature, making a strong case for making the switch.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for most buyers, with iterative upgrades and lingering battery and feature caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "t3",
+    "critic": "Matt Kollat",
+    "url": "https://www.t3.com/tech/earbuds/apple-airpods-5-review",
+    "date": "2026-09-29",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "The AirPods 5 are Apple's best open-fit earbuds yet, combining superb comfort with fuller sound, improved noise reduction and outstanding Transparency mode.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent comfort, sound and features, but battery life and limited ANC hold it back slightly.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "steam-frame",
+    "outletId": "gamesradar",
+    "critic": "Duncan Robertson",
+    "url": "https://www.gamesradar.com/hardware/vr/steam-frame-review/",
+    "date": "2026-10-30",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Steam Frame feels like a viable alternative to the Steam Deck for people who also want VR gameplay in their lives.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for comfort and PC streaming, but price, battery life, and unfinished native performance hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17e",
+    "outletId": "9to5mac",
+    "critic": "Fernando Silva",
+    "url": "https://9to5mac.com/2026/03/12/iphone-17e-hands-on-apple-finally-got-the-entry-level-iphone-right-video/",
+    "date": "2026-03-12",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "So if you are upgrading from an older iPhone or just looking for the best value in the iPhone lineup, the iPhone 17e gets a recommendation from me.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended as the best-value budget iPhone, despite display and camera versatility compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17e",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/phones/apple-iphone-17e-review",
+    "date": "2026-03-27",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "People are going to buy this phone anyway because it is an iPhone - and there is nothing egregiously wrong with it.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Good iPhone value with strong performance, but single camera, 60Hz screen and weak battery limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/mar/31/macbook-neo-review-budget-apple-laptop-iphone-chip",
+    "date": "2026-03-31",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "The MacBook Neo is a stunning entry into the sub-£600 laptop category that proves cheaper machines don’t have to be rubbish.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 90
+    },
+    "scoreReason": "Excellent value with fast performance and premium feel, despite several feature cuts and port limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "techradar",
+    "critic": "Matt Hanson",
+    "url": "https://www.techradar.com/computing/macbooks/apple-macbook-neo",
+    "date": "2026-03-10",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The MacBook Neo is the best budget laptop you can buy right now.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent value and strongly recommended, but memory, keyboard backlight, and USB ports are meaningful compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "business-insider",
+    "critic": "Tyler Hayes",
+    "url": "https://www.businessinsider.com/guides/tech/apple-macbook-neo-review",
+    "date": "2026-03-25",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "Apple's MacBook Neo isn't just a good laptop; it's a great one.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for value, design, battery, and usability, with only minor omissions and performance limits.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "ign",
+    "critic": "Wes Davis",
+    "url": "https://www.ign.com/articles/apple-macbook-neo-review",
+    "date": "2026-03-19",
+    "rating": "9/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The MacBook Neo is, without a doubt, the best budget laptop you can buy today.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended as best budget laptop, with notable but acceptable 8GB RAM limitation.",
+    "scoredFromFullText": true
   }
 ]
