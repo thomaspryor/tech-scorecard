@@ -6,7 +6,7 @@ newsroom, then the brand's own product or store page. Never retailer, review-sit
 stays as the record of what each brand's pages actually say: for most brands the terms do NOT grant this use, so treat it
 as removable on request, and get written permission before the site is public.
 
-Status: all 84 products have a photo. There is no drawn fallback any more: a product without a photo shows a plain
+Status: all 85 products have a photo. There is no drawn fallback any more: a product without a photo shows a plain
 tile with the brand name (`ProductImage`).
 
 ## How it works
@@ -155,6 +155,7 @@ Same as `image.sourceUrl` in `data/products.json`.
 | macbook-pro-16-m5          | Apple          | https://www.apple.com/shop/buy-mac/macbook-pro/16-inch                                                                                             |
 | pixel-11-pro-fold          | Google         | https://blog.google/products-and-platforms/devices/pixel/pixel-11-pro-fold/                                                                        |
 | fitbit-air                 | Google         | https://store.google.com/product/google_fitbit_air                                                                                                 |
+| fitbit-edge                | Google         | https://store.google.com/product/google_fitbit_edge                                                                                                |
 | beats-360                  | Beats          | https://www.beatsbydre.com/company/press/beats-360                                                                                                 |
 | zenbook-a16-x2             | ASUS           | https://www.asus.com/us/laptops/for-home/zenbook/asus-zenbook-a16-ux3607/                                                                          |
 | oneplus-15r                | OnePlus        | https://www.oneplus.com/us/oneplus-15r                                                                                                             |
