@@ -6509,7 +6509,7 @@
     "category": "wearable",
     "releaseDate": "2026-10-27",
     "launchPrice": 179.99,
-    "officialUrl": "https://store.google.com/product/fitbit_edge",
+    "officialUrl": "https://store.google.com/product/google_fitbit_edge",
     "criticsTake": "Reviewers see the Fitbit Edge as a solid upgrade over older Fitbit trackers with a bigger, brighter screen, broader health tracking, and better workout features. Most agree it fits between the Fitbit Air and Pixel Watch, but several reviews say the software can feel slow or limited and some smartwatch features are missing.",
     "loved": [
       "Bright 1.34-inch display",
@@ -6567,7 +6567,7 @@
       }
     ],
     "art": {
-      "kind": "glasses",
+      "kind": "watch",
       "body": "#3a3d46",
       "accent": "#8aa4d8",
       "backdrop": [
@@ -6575,6 +6575,13 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-10-28"
+    "autoAdded": "2026-10-28",
+    "image": {
+      "src": "/images/products/fitbit-edge/main.webp",
+      "thumb": "/images/products/fitbit-edge/thumb.webp",
+      "alt": "Google Fitbit Edge, official Google product photo",
+      "credit": "Google",
+      "sourceUrl": "https://store.google.com/product/google_fitbit_edge"
+    }
   }
 ]
