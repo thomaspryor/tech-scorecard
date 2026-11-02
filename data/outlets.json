@@ -104,7 +104,9 @@
     "name": "Digital Trends",
     "tier": 2,
     "domain": "digitaltrends.com",
-    "feeds": []
+    "feeds": [
+      "https://www.digitaltrends.com/feed/"
+    ]
   },
   {
     "id": "mashable",
@@ -326,7 +328,9 @@
     "name": "SamMobile",
     "tier": 3,
     "domain": "sammobile.com",
-    "feeds": []
+    "feeds": [
+      "https://sammobile.com/feed/"
+    ]
   },
   {
     "id": "petapixel",
@@ -351,7 +355,9 @@
     "name": "Six Colors",
     "tier": 3,
     "domain": "sixcolors.com",
-    "feeds": []
+    "feeds": [
+      "https://sixcolors.com/feed/"
+    ]
   },
   {
     "id": "daring-fireball",
@@ -437,7 +443,10 @@
     "name": "Notebookcheck",
     "tier": 3,
     "domain": "notebookcheck.net",
-    "feeds": []
+    "feeds": [
+      "https://www.notebookcheck.net/RSS-Feed-Notebook-Reviews.8156.0.html",
+      "https://www.notebookcheck.net/News.152.100.html"
+    ]
   },
   {
     "id": "the-independent",
@@ -460,7 +469,9 @@
     "name": "The Telegraph",
     "tier": 3,
     "domain": "telegraph.co.uk",
-    "feeds": []
+    "feeds": [
+      "https://telegraph.co.uk/rss/"
+    ]
   },
   {
     "id": "what-hi-fi",
@@ -706,7 +717,9 @@
     "name": "AndroidGuys",
     "tier": 4,
     "domain": "androidguys.com",
-    "feeds": []
+    "feeds": [
+      "https://androidguys.com/feed/"
+    ]
   },
   {
     "id": "ign",
@@ -947,7 +960,9 @@
     "name": "Gadgetguy",
     "tier": 3,
     "domain": "gadgetguy.com.au",
-    "feeds": []
+    "feeds": [
+      "https://www.gadgetguy.com.au/feed/"
+    ]
   },
   {
     "id": "the-mobile-indian",

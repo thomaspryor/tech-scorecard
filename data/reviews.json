@@ -25063,5 +25063,425 @@
     },
     "scoreReason": "Strongly recommended as best budget laptop, with notable but acceptable 8GB RAM limitation.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://www.pcmag.com/reviews/beats-360",
+    "date": "2026-11-02",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Beats 360 have a fun design, replaceable earpads and headband, and detailed audio, making them more than worth considering for Apple users who don’t want to spend AirPods Max money.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong sound, design, and battery, but missing wired audio and only decent ANC hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "the-independent",
+    "critic": "Andrew Griffin",
+    "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/phones-accessories/iphone-18-pro-max-review-b3053421.html",
+    "date": "2026-09-21",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "But it remains the best phone on the market, and it just got quietly better.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly praised as the best phone, with price the main caveat and little hesitation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "lowyat",
+    "critic": "Nurul Kamil",
+    "url": "https://www.lowyat.net/2026/408670/airpods-5-review/",
+    "date": "2026-11-02",
+    "rating": "7.5/10",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "ANC is impressive for an open-ear design and calls are excellent, but comfort, fit security and battery life remain weak points.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 73
+    },
+    "scoreReason": "Strong ANC and calls, but major comfort, fit, and battery issues limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4-pro",
+    "outletId": "mashable",
+    "critic": "Priya Singh",
+    "url": "https://in.mashable.com/tech/109856/samsung-galaxy-buds4-pro-review-no-gimmicks-just-good-earbuds",
+    "date": "2026-05-18",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "But what makes the Samsung Galaxy Buds 4 Pro easy to recommend is how complete the overall experience feels.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Easy to recommend, with excellent comfort, sound, and usability, despite ecosystem limits and minor touch issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4-pro",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://me.pcmag.com/en/headphones/36280/samsung-galaxy-buds-4-pro",
+    "date": "2026-03-30",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "With excellent audio, long battery life, and tight Galaxy integration, the Buds 4 Pro are a compelling pair of earbuds for Samsung users.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent sound and battery, but ecosystem limits and merely good noise cancellation temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4-pro",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-buds-4-pro/review/",
+    "date": "2026-03-27",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Buds 4 Pro are excellent earbuds and very easily among Samsung’s best audio products so far.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 95
+    },
+    "scoreReason": "Reviewer calls them excellent and among Samsung's best audio products, indicating strong enthusiasm.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-buds-4-pro",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/samsung-galaxy-buds-4-pro-review/",
+    "date": "2026-02-25",
+    "rating": "8.8/10",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "But they're easy to recommend to both Samsung Galaxy and Android users, especially if you can get a deal on them when you buy a new Galaxy phone or trade in some old buds.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 88
+    },
+    "scoreReason": "Strong recommendation with excellent sound and features, tempered by modest upgrades and not-best noise canceling.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-16-m5",
+    "outletId": "cnet",
+    "critic": "Lori Grunin",
+    "url": "https://www.cnet.com/tech/computing/apple-macbook-pro-16-m5-max-pro-review/",
+    "date": "2026-03-09",
+    "rating": "8.6/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "All told, this year's MacBook Pro 16s provide a great upgrade from almost any generation, but this may also be the last generation before the rumored update to OLED or touchscreen displays.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 86
+    },
+    "scoreReason": "Excellent performance and display, best for creatives, but pricey, heavy, hot, and some should wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-16-m5",
+    "outletId": "pcmag",
+    "critic": "Brian Westover",
+    "url": "https://au.pcmag.com/laptops/116446/apple-macbook-pro-16-inch-2026-m5-max",
+    "date": "2026-06-25",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The 2026 MacBook Pro 16-inch with M5 Max is a professional-laptop powerhouse that pairs the groundbreaking efficiency of the new M5 \"super core\" architecture with jaw-dropping battery life and future-ready Thunderbolt 5 connectivity.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Powerful praise for performance, battery life, and design, with only minor complaints about price and display.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-headphone-a",
+    "outletId": "pcmag",
+    "critic": "Mark Knapp",
+    "url": "https://www.pcmag.com/reviews/nothing-headphone-a",
+    "date": "2026-05-07",
+    "rating": "4/5",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "If you don’t mind the unique looks, the Nothing Headphone (a) proves to be a superb pair of noise-cancelling headphones with solid audio chops, strong noise reduction, and class-leading battery life for a reasonable price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 89
+    },
+    "scoreReason": "Strong praise, Editors' Choice, excellent battery and ANC, with some bass, wind, and fit drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-headphone-a",
+    "outletId": "mark-ellis-reviews",
+    "critic": "Mark Ellis",
+    "url": "https://markellisreviews.com/nothing-headphone-a-review/",
+    "date": "2026-03-20",
+    "rating": "9/10",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "They are, without question, one of the best pairs of headphones I’ve tested in recent times, and, for the price, they’re an absolute bargain.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended for value, sound, comfort, and battery, with only minor transparency and accessory compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-14-2026",
+    "outletId": "pcmag",
+    "critic": "Charles Jefferies",
+    "url": "https://www.pcmag.com/reviews/dell-xps-14-2026",
+    "date": "2026-02-24",
+    "rating": "4/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "Dell’s revived XPS 14 ultraportable laptop dazzles with sublime build quality, a crisp and colorful OLED screen, and fiery productivity and graphics performance.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strong praise, Editors' Choice, excellent performance and design, with limited ports and value concerns on lower models.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-14-2026",
+    "outletId": "hothardware",
+    "critic": "David Altavilla",
+    "url": "https://hothardware.com/reviews/dell-xps-14-da14260-review-2026",
+    "date": "2026-02-20",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "Dell's XPS 14 (DA14260) for 2026 leaps forward with Intel Panther Lake, delivering impressive performance, class-leading efficiency, and a clean, premium design that continues to set the XPS line apart.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise for performance, efficiency, and design with no meaningful reservations in the excerpt.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-z-trifold",
+    "outletId": "sammobile",
+    "critic": "Max Jambor",
+    "url": "https://www.sammobile.com/reviews/samsung-galaxy-z-trifold-review/",
+    "date": "2026-02-18",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Z TriFold is an amazing product and a real statement piece.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Reviewer calls it amazing and a real statement piece, indicating strong enthusiasm.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "momentum-true-wireless-5",
+    "outletId": "gsmarena",
+    "critic": "Prasad",
+    "url": "https://www.gsmarena.com/sennheiser_momentum_true_wireless_5_review-news-75302.php",
+    "date": "2026-11-02",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "The Sennheiser Momentum True Wireless 5 are a really great pair of wireless earbuds and a comprehensive improvement over their predecessor.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Great sound, comfort, and replaceable batteries outweigh software bugs and merely good ANC.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "momentum-true-wireless-5",
+    "outletId": "what-hi-fi",
+    "critic": "Harry McKerrell",
+    "url": "https://www.whathifi.com/headphones/wireless-earbuds/sennheiser-momentum-true-wireless-5",
+    "date": "2026-09-24",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "If spaciousness, detail and precision are at the top of your sonic wishlist, the Momentum True Wireless 5 are a Christmas gift come early.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly recommended for sound, features and ANC, with only slight treble hardness and fit caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "momentum-true-wireless-5",
+    "outletId": "soundguys",
+    "critic": "Christian Thomas",
+    "url": "https://www.soundguys.com/sennheiser-momentum-true-wireless-5-review-161261/",
+    "date": "2026-09-03",
+    "rating": "8.3/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "If you’re looking for higher-end ANC earbuds that will last you a long time, it’s hard to argue against the Sennheiser MOMENTUM True Wireless 5.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 83
+    },
+    "scoreReason": "Strong recommendation with standout longevity, great features and sound, tempered by treble sensitivity and battery-access quirks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "momentum-true-wireless-5",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://me.pcmag.com/en/headphones/38336/sennheiser-momentum-true-wireless-5-review-premium-sound-now-with-replaceable-batteries",
+    "date": "2026-10-13",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "Sennheiser’s Momentum True Wireless 5 earbuds pair rich, accurate sound with strong noise cancellation, plus batteries you can swap yourself.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 83
+    },
+    "scoreReason": "Excellent sound and ANC with useful app and replaceable batteries, but fit and battery life disappoint.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "momentum-true-wireless-5",
+    "outletId": "engadget",
+    "critic": "Billy Steele",
+    "url": "https://www.engadget.com/2249856/sennheiser-momentum-true-wireless-5-review/",
+    "date": "2026-09-03",
+    "rating": "8.4/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "You'll just have to decide whether those are shortcomings you can live with, because I'll bet the sound quality and comfy fit won't disappoint.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 84
+    },
+    "scoreReason": "Excellent sound, comfort and battery, but ANC and calls are weaker than top premium rivals.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "momentum-true-wireless-5",
+    "outletId": "toms-guide",
+    "critic": "Erin Bashford",
+    "url": "https://www.tomsguide.com/sennheiser-momentum-5-true-wireless-review",
+    "date": "2026-09-03",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "If you value premium sound quality, a sleek design, and a bunch of cool features, the Sennheiser Momentum 5 True Wireless will be the earbuds for you.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding sound and features, with only moderate ANC and fit issues for small ears.",
+    "scoredFromFullText": true
   }
 ]

@@ -6583,5 +6583,77 @@
       "credit": "Google",
       "sourceUrl": "https://store.google.com/product/google_fitbit_edge"
     }
+  },
+  {
+    "id": "momentum-true-wireless-5",
+    "slug": "momentum-true-wireless-5",
+    "name": "Momentum True Wireless 5",
+    "brand": "Sennheiser",
+    "category": "headphones",
+    "releaseDate": "2026-09-21",
+    "launchPrice": 299.95,
+    "officialUrl": "https://www.sennheiser-hearing.com",
+    "criticsTake": "Reviewers agree the Momentum True Wireless 5 delivers strong sound quality, a more comfortable smaller design, and user-replaceable batteries in both the earbuds and case. They also point to mixed battery results, uneven ANC results across reviews, and some fit or software quirks.",
+    "loved": [
+      "User-replaceable batteries",
+      "Comfortable smaller earbuds",
+      "Strong sound quality",
+      "Detailed app controls"
+    ],
+    "gripes": [
+      "Battery life is only fine",
+      "Fit can feel unstable",
+      "ANC behavior can be inconsistent",
+      "Call quality is subpar",
+      "No case pairing button"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $299.95"
+      },
+      {
+        "label": "Battery replaceability",
+        "value": "User-replaceable batteries in both the earbuds and charging case"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP54 dust and splash resistance on the earbuds"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 6.0 with multipoint"
+      },
+      {
+        "label": "Codecs",
+        "value": "SBC, AAC, aptX, aptX Adaptive, aptX Lossless"
+      },
+      {
+        "label": "EQ and tuning",
+        "value": "8-band custom EQ with presets and Sound Personalization"
+      },
+      {
+        "label": "Spatial audio",
+        "value": "Dolby Atmos support with head tracking"
+      },
+      {
+        "label": "Charging case",
+        "value": "Supports wireless charging and USB-C charging"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 12 hours per charge and up to 40 hours total with the case"
+      }
+    ],
+    "art": {
+      "kind": "headphones",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-02"
   }
 ]
