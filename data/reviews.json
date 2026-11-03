@@ -25483,5 +25483,404 @@
     },
     "scoreReason": "Outstanding sound and features, with only moderate ANC and fit issues for small ears.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "momentum-true-wireless-5",
+    "outletId": "mashable",
+    "critic": "Mashable Video",
+    "url": "https://mashable.com/review/sennheiser-momentum-true-wireless-5-review",
+    "date": "2026-09-03",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "Featuring an improved design, including replaceable batteries, along with better noise-canceling and voice-calling performance, the excellent sounding $300 Momentum TWS 5 are top earbuds contender and earn a CNET Editors' Choice award.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for sound, upgrades, and performance; presented as a top contender with clear endorsement.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://www.pcmag.com/reviews/nothing-headphone-1-pro",
+    "date": "2026-11-02",
+    "rating": "3.5/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "The Nothing Headphone (1) Pro sounds great, offers unique features, and has the best EQ customization of any consumer headphones, but its ANC isn’t as good as the flagship-level competition from Apple, Bose, and Sony.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Great sound and EQ, but weaker ANC and the reviewer suggests many buyers choose rivals instead.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-linkbuds-clip",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://www.pcmag.com/reviews/sony-linkbuds-clip",
+    "date": "2026-02-09",
+    "rating": "3.5/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The Sony LinkBuds Clip open earbuds have a distinctive clip design, a reasonably natural audio response, and a comfortable fit, but fall just short of the class leaders.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Comfortable and competent open earbuds, but pricey with weak bass, mediocre mic, and missing premium features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-linkbuds-clip",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/sony-linkbuds-clip-review-open-earbuds-good-sound-pricey/",
+    "date": "2026-01-21",
+    "rating": "7.9/10",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "While there isn&#039;t anything terribly innovative about Sony&#039;s new $230 LinkBuds Clip earbuds, they&#039;re attractively designed, sound good and feature strong voice-calling performance.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 79
+    },
+    "scoreReason": "Good design, comfort and calling, but overpriced, unremarkable and only decent-sounding for the category.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-15r",
+    "outletId": "pcmag",
+    "critic": "Iyaz Akhtar",
+    "url": "https://www.pcmag.com/reviews/oneplus-15r",
+    "date": "2026-01-20",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The OnePlus 15R is a fast, well-built Android phone with a gorgeous display, strong cameras, and excellent battery life, making it a compelling alternative to models from Google and Samsung.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong performance, display, cameras, and battery, but most buyers are steered toward the cheaper Pixel 9a.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "pcmag",
+    "critic": "Matthew Buzzi",
+    "url": "https://www.pcmag.com/reviews/dell-xps-16-2026",
+    "date": "2026-05-11",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "This laptop is a premium machine with a price to match, but its high-end build, OLED display, advanced feature set, and performance are worth the cost if you don't need discrete-GPU power.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Premium design and screen impress, but high price, limited ports, and no discrete GPU temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "zdnet",
+    "critic": "Cesar Cadenas",
+    "url": "https://www.zdnet.com/article/motorola-moto-g-review/",
+    "date": "2026-04-21",
+    "rating": "3.5/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "Motorola&#039;s 2026 Moto G is currently available on the Motorola site for $200, making it an easy recommendation for shoppers seeking a reliable low-to-midrange phone - especially if you prefer the bold pink finish.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Strong budget pick with good battery and performance, but modest upgrades and weak HD display hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "kindle-scribe-colorsoft",
+    "outletId": "pcmag",
+    "critic": "Will Greenwald",
+    "url": "https://www.pcmag.com/reviews/amazon-kindle-scribe-colorsoft",
+    "date": "2026-06-16",
+    "rating": "3/5",
+    "score": 56,
+    "scoreSource": "rating",
+    "excerpt": "The Amazon Kindle Scribe Colorsoft&#039;s large color E Ink display is nice for taking notes and reading comics, but it ultimately falls short of traditional tablets that offer brighter screens and more power for a lower price.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 56,
+      "gemini": 55
+    },
+    "scoreReason": "Good note-taking and comics reader, but overpriced with weak non-Amazon support and clear better alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "kindle-scribe-colorsoft",
+    "outletId": "ign",
+    "critic": "Bill Loguidice",
+    "url": "https://www.ign.com/articles/kindle-scribe-colorsoft-review",
+    "date": "2026-05-07",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "Although the Kindle Scribe Colorsoft delivers arguably the best color E Ink screen on the market and incredibly responsive stylus support, its big price and restrictive software keep it from being a universal recommendation over a traditional tablet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent premium e-reader with strong praise, but high price and software limits temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "even-realities-g2",
+    "outletId": "cnet",
+    "critic": "Scott Stein",
+    "url": "https://www.cnet.com/tech/services-and-software/these-sleek-smart-glasses-get-so-much-right-why-am-i-so-disappointed/",
+    "date": "2026-02-26",
+    "rating": null,
+    "score": 54,
+    "scoreSource": "text",
+    "excerpt": "It's just extremely disappointing that these glasses can't live up to the promise of all the rest yet.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 50
+    },
+    "scoreReason": "Great design and battery, but usefulness, software, connectivity, and features disappointed overall.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "even-realities-g2",
+    "outletId": "pcmag",
+    "critic": "Will Greenwald",
+    "url": "https://www.pcmag.com/reviews/even-realities-g2",
+    "date": "2026-04-09",
+    "rating": "3/5",
+    "score": 56,
+    "scoreSource": "rating",
+    "excerpt": "The Even Realities G2 smart glasses make meaningful improvements in design and features, but their high price, inconsistent AI, and lingering usability issues keep them from appealing to most people.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 56,
+      "gemini": 55
+    },
+    "scoreReason": "Not recommended for most people; improved design and features, but price, AI, navigation, and usability remain problematic.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/1976642/iphone-17-review/",
+    "date": "2025-09-23",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "It's an excellent device, and a meaningful upgrade over last year's model.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation, excellent upgrade, best for most people, with minor camera and design caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "digital-trends",
+    "critic": "Nirave Gondhia",
+    "url": "https://www.digitaltrends.com/phones/apple-iphone-17-review/",
+    "date": "2025-10-02",
+    "rating": "9/10",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "This is the best iPhone for almost everyone, and there are few reasons not to buy it.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 99
+    },
+    "scoreReason": "Strongly recommended as the best iPhone for most people, with only telephoto and minor color complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/1986236/iphone-17-review-2025/",
+    "date": "2025-10-03",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "Overall, I like the iPhone 17 a lot, and I think it's the iPhone that most people should buy.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strong recommendation and great value, with minor software bugs, mediocre zoom, and average battery life.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/oct/22/iphone-17-review-the-apple-smartphone-to-get-this-year",
+    "date": "2025-10-22",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "Unless you need a camera zoom, the standard iPhone 17 is the one to get for Apple buyers.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Excellent value and features, strongly recommended, with only minor camera and design limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "business-insider",
+    "critic": "Sarah Saril",
+    "url": "https://www.businessinsider.com/guides/tech/iphone-17-review",
+    "date": "2026-03-18",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "To keep it simple: it's a nice device, but not one worth dumping your savings into, especially if you're only a year or two behind in iPhones.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Smooth performance, battery, and cameras impress, but upgrades are minor and AI is weak.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17-pro",
+    "outletId": "cult-of-mac",
+    "critic": "Ian Fuchs",
+    "url": "https://www.cultofmac.com/reviews/iphone-17-pro-review",
+    "date": "2025-09-24",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "If pro features and maximum battery life are at the top of your must-haves list, iPhone 17 Pro is the best choice.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for performance, battery, cameras and pro features, with only minor design and upgrade caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "msi-claw-8-ex-ai-plus",
+    "outletId": "trusted-reviews",
+    "critic": "Reece Bithrey",
+    "url": "https://www.trustedreviews.com/reviews/msi-claw-8-ex-ai",
+    "date": "2026-11-02",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The MSI Claw 8 EX AI+ CG3EM is a potent Windows gaming handheld with the fastest performance I’ve tested, a comfortable design and a pleasant colourway.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Exceptional performance and comfort, but very high price, IPS screen, and average battery life temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "wired",
+    "critic": "Boutayna Chokrane ",
+    "url": "https://www.wired.com/review/apple-airpods-5/",
+    "date": "2026-11-03",
+    "rating": "7/10",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "With stronger noise cancellation and a lower starting price, AirPods 5 are a solid upgrade.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value and features, but reviewer repeatedly prefers the Pro model for fit, ANC, and controls.",
+    "scoredFromFullText": true
   }
 ]
