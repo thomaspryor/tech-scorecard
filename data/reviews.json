@@ -25882,5 +25882,425 @@
     },
     "scoreReason": "Strong value and features, but reviewer repeatedly prefers the Pro model for fit, ANC, and controls.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "android-central",
+    "critic": "Nirave Gondhia",
+    "url": "https://www.androidcentral.com/phones/apple-iphone/apple-iphone-duo-review",
+    "date": "2026-11-04",
+    "rating": "4/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "Apple's first foldable is a fascinating contradiction: a phone that gets some fundamentals wrong, challenges years of Android foldable convention, yet somehow becomes almost impossible to put down.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly enthusiastic overall, but tempered by first-gen compromises, high price, and weaker cameras/software.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "macworld",
+    "critic": "Jason Cross",
+    "url": "https://www.macworld.com/article/3272761/iphone-duo-review.html",
+    "date": "2026-10-29",
+    "rating": "3.5/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "Folding phones come with some inherent tradeoffs, but even so, the iPhone Duo is hard to recommend right now.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Reviewer found it exciting but not ready, with too many app, camera, and usability compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "t3",
+    "critic": "Mat Gallagher",
+    "url": "https://www.t3.com/tech/iphones/iphone-duo-review",
+    "date": "2026-11-04",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "However, these feel like small sacrifices for what is an incredible phone and, by far, the best model to buy this year.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 97
+    },
+    "scoreReason": "Strongly enthusiastic overall, with only minor compromises on cameras and Face ID.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-air",
+    "outletId": "9to5mac",
+    "critic": "Chance Miller",
+    "url": "https://9to5mac.com/2025/09/17/iphone-air-review/",
+    "date": "2025-09-17",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "If you want an iPhone that looks incredible and feels even better in the hand, the iPhone Air is for you.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Gorgeous, exciting redesign with strong praise, but clear camera and battery compromises limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-vision-pro-m5",
+    "outletId": "can-buy-or-not",
+    "critic": "Aloysius Low",
+    "url": "https://www.canbuyornot.com/reviews/gaming/apple-vision-pro-m5-review-price/",
+    "date": "2025-11-21",
+    "rating": "4/5",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "If you have the budget for this, definitely pick one up.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Very enthusiastic and recommends it if affordable, with price and app ecosystem as main caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-11",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/apple/apple-watch-series-11-review",
+    "date": "2025-10-16",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "The conclusion, much like the release cycle itself, feels familiar: this is still the best all-round smartwatch you can buy.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Best all-round smartwatch with polished refinements, but limited upgrades and short battery life hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-pro-m5",
+    "outletId": "fstoppers",
+    "critic": null,
+    "url": "https://fstoppers.com/gear/review-m5-ipad-pro-premium-creative-workhorse-no-equal-900840",
+    "date": "2026-03-17",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "But regardless of where you're coming from, the M5 iPad Pro 13-inch stands alone as the most capable and versatile tablet ever made, offering a creative experience that no other device in the world can match.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Glowing praise for display, performance, and versatility, with only minor iPadOS and price caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-pro-m5",
+    "outletId": "mark-ellis-reviews",
+    "critic": "Mark Ellis",
+    "url": "https://markellisreviews.com/reviews/m5-ipad-pro-review/",
+    "date": "2025-11-10",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "If you need the ultimate power you can get from a tablet, then there is nowhere else you should look.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent power and longevity, but expensive and only truly worthwhile for a specific niche audience.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "laptop-mag",
+    "critic": "Rami Tabari",
+    "url": "https://www.laptopmag.com/gaming/nintendo/nintendo-switch-2-review",
+    "date": "2025-06-17",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "With its smooth and sharp display, strong overall performance (both in handheld and TV modes), and revamped Joy-Con 2 controllers, the Switch 2 mostly delivers.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong performance and features, but repeated complaints about OLED, price, battery, comfort, and launch lineup.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "digital-trends",
+    "critic": "Giovanni Colantonio",
+    "url": "https://www.digitaltrends.com/gaming/nintendo-switch-2-review/",
+    "date": "2025-06-10",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "Even with some kinks to work out, the Nintendo Switch 2 is the exact follow up it needed to be.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 81
+    },
+    "scoreReason": "Strong upgrade with impressive features and performance, but battery life and some design choices hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "slashgear",
+    "critic": "Andy Zahn",
+    "url": "https://www.slashgear.com/1891354/nintento-switch-2-review-price-specs-features/",
+    "date": "2025-06-20",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "Ultimately, the Nintendo Switch 2 is worth the price, and I do recommend it, but it's unfortunate that all the praise I rightfully send its way is tainted by caveats.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strongly praised hardware and fun, but high costs and several annoying caveats temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "t3",
+    "critic": "Mike Lowe",
+    "url": "https://www.t3.com/tech/gaming-consoles/nintendo-switch-2-review",
+    "date": "2025-06-12",
+    "rating": "5/5",
+    "score": 99,
+    "scoreSource": "rating",
+    "excerpt": "As a glimpse into the future, the Switch 2 is a killer console and the must-have tech product of 2025.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 99
+    },
+    "scoreReason": "Rapturous must-buy verdict with minor battery and spec complaints, but no meaningful hesitation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "gaming-trend",
+    "critic": "David Flynn",
+    "url": "https://gamingtrend.com/reviews/nintendo-switch-2-review-nintendo-charm-nintendo-problems/",
+    "date": "2025-07-01",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "The Switch 2 has a lot of great new features and is surprisingly powerful for its form factor.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong hardware upgrade with many praised features, but frequent complaints about restrictions, battery life, and clunky software.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "the-guardian",
+    "critic": "Keith Stuart",
+    "url": "https://www.theguardian.com/games/2025/jun/10/nintendo-switch-2-review-more-than-good-enough",
+    "date": "2025-06-10",
+    "rating": null,
+    "score": 83,
+    "scoreSource": "text",
+    "excerpt": "Perhaps the design team at Nintendo were right not to call it Super Switch, but for the next few years, a Switch Pro equivalent is more than good enough.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Strong recommendation and praise for refinements, despite modest generational leap, added costs, and some performance limits.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "the-independent",
+    "critic": "Jake Brigstock",
+    "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/video-games-consoles/nintendo-switch-2-review-b2780947.html",
+    "date": "2026-07-27",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Switch 2 is easily the best hybrid console on the market at its current price point.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Strong hybrid value and family appeal, but first-party lineup and many third-party ports disappoint.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "business-insider",
+    "critic": "William Antonelli",
+    "url": "https://www.businessinsider.com/guides/tech/nintendo-switch-2-review",
+    "date": "2025-06-13",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "It's the best choice for new players who never bought an original Switch, but overpriced for existing Switch owners.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Great console for newcomers, but overpriced and not worth upgrading yet due to few exclusives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "laptop-mag",
+    "critic": "Rami Tabari",
+    "url": "https://www.laptopmag.com/headphones/noise-cancelling-headphones/sony-wh-1000xm6-review",
+    "date": "2025-06-28",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Sony WH-1000XM6 delivers everything I wanted out of a full, rich soundstage, topped off with an excellent design, long battery life, and dual Bluetooth-connectivity.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for sound, ANC, design, and battery, with notable but not dealbreaking comfort and app annoyances.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/jul/09/sony-wh-1000xm6-review-raising-the-bar-for-noise-cancelling-headphones",
+    "date": "2025-07-09",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "But if you want the best noise cancelling money can buy, the WH-1000XM6 are it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise for class-leading noise cancelling, great sound, comfort and battery, despite high price and minor drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "lifehacker",
+    "critic": "Daniel Oropeza",
+    "url": "https://lifehacker.com/tech/sony-wh-1000xm6-review",
+    "date": "2025-05-16",
+    "rating": "5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The XM6 are, without a question, the best ANC headphones on the market right now.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent and best-in-class, but pricey and not worth upgrading from XM5.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "pickr",
+    "critic": "Leigh :) Stark",
+    "url": "https://www.pickr.com.au/reviews/2025/sony-wh-1000xm6-headphones/",
+    "date": "2025-06-16",
+    "rating": "4.7/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Sony's WH-1000XM6 are a new benchmark with plenty to love.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised for sound and noise cancelling, but high price and weaker value temper enthusiasm.",
+    "scoredFromFullText": true
   }
 ]
