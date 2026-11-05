@@ -26302,5 +26302,299 @@
     },
     "scoreReason": "Strongly praised for sound and noise cancelling, but high price and weaker value temper enthusiasm.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "the-shortcut",
+    "critic": "Max Buondonno",
+    "url": "https://www.theshortcut.com/p/galaxy-tab-s12-ultra-review",
+    "date": "2026-11-05",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "If you’re heavily invested in the Android ecosystem and want a big tablet that can double as your laptop, this is the one to get.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong recommendation for Android users, with major praise tempered by high price and weak tablet software.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-pro-3",
+    "outletId": "digital-trends",
+    "critic": "Nadeem Sarwar",
+    "url": "https://www.digitaltrends.com/home-theater/apple-airpods-pro-3-review/",
+    "date": "2026-05-26",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "If you live in the Apple ecosystem and you're coming from anything older than the AirPods Pro 2, especially the original 2019 Pro, the AirPods Pro 3 are an easy recommendation.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent sound, ANC, and Apple features, with clear caveats for Pro 2 owners and Android users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-pro-3",
+    "outletId": "t3",
+    "critic": "Matt Kollat",
+    "url": "https://www.t3.com/tech/earbuds/apple-airpods-pro-3-review",
+    "date": "2026-05-20",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The Apple AirPods Pro 3 sound fantastic, last longer and add genuinely useful health features, but the redesigned fit won't suit everyone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent sound and features, but fit and ANC concerns make the upgrade recommendation cautious.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "cnet",
+    "critic": "Abrar Al-Heeti",
+    "url": "https://www.cnet.com/tech/mobile/pixel-10-pro-fold-review-durability-and-battery-win-out-over-sleekness/",
+    "date": "2025-10-08",
+    "rating": "8.3/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "Unlike many of its competitors, Google didn't slim down the Pixel 10 Pro Fold, but rather focused on bolstering features that some buyers might prioritize, like battery life and durability.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 83
+    },
+    "scoreReason": "Practical foldable with strong battery and durability, but cameras and multitasking limitations temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/google-pixel-10-pro-fold-review-3605611/",
+    "date": "2025-10-18",
+    "rating": "7/10",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "However, lacking design innovation, a limiting chipset, and lackluster cameras make recommending the $1,799 Pixel 10 Pro Fold somewhat difficult to anyone except die-hard Pixel fans.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Good software and durability, but reviewer says most buyers should choose another foldable or Pixel.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/1990224/google-pixel-10-pro-fold-review/",
+    "date": "2025-10-08",
+    "rating": null,
+    "score": 66,
+    "scoreSource": "text",
+    "excerpt": "There are just as many \"gives\" as \"takes\" in this phone, so there is value here, but it's a different value than the Pixel name usually offers.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 62,
+      "gemini": 70
+    },
+    "scoreReason": "Good battery and durability, but bulky design, weak cameras, and several compromises make it mixed-positive.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/google-pixel-10-pro-fold-review",
+    "date": "2025-10-10",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "With solid battery life, polished software, and clever features like Magic Cue and PixelSnap charging, it’s a great foldable for Pixel fans — though not the outright best foldable you can buy.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised for durability, screens, battery and software, but weight, camera and unfinished AI features temper it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "bose-qc-ultra-headphones-2",
+    "outletId": "soundguys",
+    "critic": "Christian Thomas",
+    "url": "https://www.soundguys.com/bose-quietcomfort-ultra-headphones-2nd-gen-review-boring-refresh-or-notable-upgrade-144545/",
+    "date": "2025-10-01",
+    "rating": "8.2/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Bose QuietComfort Ultra Headphones (2nd Gen.) are a solid set ofheadphones that compete well with the current ANC leaders.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong ANC and comfort earn praise, but limited upgrades, awkward controls, and some feature quirks temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "pcmag",
+    "critic": "Zackery Cuevas",
+    "url": "https://www.pcmag.com/reviews/asus-rog-xbox-ally-x",
+    "date": "2025-10-15",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "Even if the price-still cheaper than Legion Go 2!-gives you pause, the Asus ROG Xbox Ally X is the new best handheld gaming PC, earning our Editors' Choice award.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for comfort and performance, but bugs, delayed features, and screen compromises temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally",
+    "outletId": "the-shortcut",
+    "critic": "Kevin Lee",
+    "url": "https://theshortcut.com/p/asus-rog-xbox-ally-x-review",
+    "date": "2025-10-15",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "$999 is a hard pill to swallow, but if you’re deadset on playing more games on a handheld and at higher settings, the Asus ROG Xbox Ally X is the best gaming handheld.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Highly praised performance and Xbox handheld experience, with notable software bugs, old screen, and steep price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/mobile/pixel-watch-4-review/",
+    "date": "2026-08-19",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "With the battery boost, satellite connectivity, brighter screen and just enough improvements, it's an easy upgrade for anyone with an older Pixel or Android watch.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for features and value, with only minor battery and band-system complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://uk.pcmag.com/migrated-99802-smartwatches/160578/google-pixel-watch-4",
+    "date": "2025-10-08",
+    "rating": "4/5",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "The Pixel Watch 4's curved display and impressive battery life make it one of the best-looking and longest-lasting Android smartwatches available.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent design and battery life, with strong tracking, but some missing features and minor annoyances.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/smartwatches/google-pixel-watch-4-review",
+    "date": "2025-10-08",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "As a result, it remains the best smartwatch for most people in the Android ecosystem.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent all-around Android smartwatch with minor durability, app, and battery caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "android-authority",
+    "critic": "Kaitlyn Cimino",
+    "url": "https://www.androidauthority.com/google-pixel-watch-4-review-3604086/",
+    "date": "2025-10-08",
+    "rating": "10/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "For most Android users, especially Pixel owners, it’s the best Wear OS watch available.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended overall, with notable GPS, battery, charger, and subscription drawbacks.",
+    "scoredFromFullText": true
   }
 ]
