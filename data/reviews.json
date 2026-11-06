@@ -26596,5 +26596,572 @@
     },
     "scoreReason": "Strongly recommended overall, with notable GPS, battery, charger, and subscription drawbacks.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "mark-ellis-reviews",
+    "critic": "Mark Ellis",
+    "url": "https://markellisreviews.com/reviews/iphone-duo-review/",
+    "date": "2026-11-05",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone Duo is a genuinely impressive first attempt at a foldable iPhone - with the best internal display in the category, great battery life, and a portrait mode experience that's unlike anything else.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise and personal commitment, but notable software limits and some users are told to wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "pickr",
+    "critic": "Leigh :) Stark",
+    "url": "https://www.pickr.com.au/reviews/2026/apple-iphone-duo/",
+    "date": "2026-11-05",
+    "rating": "4.2/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "Simply put, it's a great start for foldable, but it's not for everyone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Impressive design and performance, but huge price, camera compromises, app issues, and many people should skip it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oakley-meta-vanguard",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://www.pcmag.com/reviews/oakley-meta-vanguard",
+    "date": "2025-10-21",
+    "rating": "3.5/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The pricey Oakley Meta Vanguard smart glasses combine a sporty, weather-resistant design with useful software features and loud open-ear speakers, delivering a premium hands-free experience for athletes.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Strong features and audio, but high price, weak value, and battery issues limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-buds-2a",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/google-pixel-buds-2a-review-a-sound-choice-for-pixel-users/",
+    "date": "2025-10-08",
+    "rating": "7.9/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "Many people may find the trade-offs are worth the savings, but I can't tell you that the Pixel Buds 2A, while appealing earbuds overall, truly rise above the competition in this price range.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 73
+    },
+    "scoreReason": "Good sound and features, but fit, ANC, calls and value concerns make it a cautious recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-buds-2a",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/feb/05/google-pixel-buds-2a-review-great-bluetooth-earbuds-at-a-good-price",
+    "date": "2026-02-05",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "The Pixel Buds 2a are a great set of Bluetooth earbuds for more than just Android at a good price.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Comfortable, compact earbuds with good sound and ANC for the price, but missing features and average calls.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-buds-2a",
+    "outletId": "the-shortcut",
+    "critic": "Max Buondonno",
+    "url": "https://www.theshortcut.com/p/google-pixel-buds-2a-review",
+    "date": "2025-10-08",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "Still, the Pixel Buds 2a are an easy recommendation for Android users on a budget, and a no-brainer for Pixel fans.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strong value, impressive ANC and features, with sound and ecosystem limitations holding it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "mashable",
+    "critic": "Priya Singh",
+    "url": "https://in.mashable.com/tech/109641/samsung-galaxy-s26-plus-review-big-screen-energy-minimal-drama",
+    "date": "2026-05-12",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "And while the Ultra may grab most of the spotlight, the S26 Plus quietly proves that sometimes the most balanced flagship is the smarter buy.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 82
+    },
+    "scoreReason": "Polished, balanced flagship with great display and software, but battery, value, and limited upgrades hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-s26-plus/review/",
+    "date": "2026-03-30",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "That said, the S26+ is still a good phone, and anyone buying it will have a genuinely good experience, as long as they're not expecting the best Samsung has to offer.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Good phone and buyers will be happy, but it is clearly not Samsung’s best.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "ipad-air-m4",
+    "outletId": "cnet",
+    "critic": "Scott Stein",
+    "url": "https://www.cnet.com/tech/computing/ipad-air-m4-review/",
+    "date": "2026-03-09",
+    "rating": "8.7/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "This is the best balance of future-proofing and price for now, but this may not be the final iPad released this year.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for value and power, but accessory cost, iPadOS limits and possible upcoming base iPad temper it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "android-central",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidcentral.com/phones/google-pixel/google-pixel-10a-review",
+    "date": "2026-03-04",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "It's true that much about the Google Pixel 10a is completely carried over from the Pixel 9a, but the good news is the latest model still costs just $500 and comes with seven years of Android OS upgrades.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value and battery life, but recycled hardware and limited RAM bring notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "engadget",
+    "critic": null,
+    "url": "https://www.engadget.com/mobile/smartphones/google-pixel-10a-review-small-changes-but-still-great-value-173026779.html",
+    "date": "2026-03-04",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The Pixel 10a is still the phone to beat in the $500 range.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 84
+    },
+    "scoreReason": "Excellent value and easy recommendation, despite minimal upgrades and some battery, charging, and feature omissions.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/2115139/google-pixel-10a-review-vs-pixel-9a-android-budget-phone/",
+    "date": "2026-03-04",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "That being said, if you have an older device and need to upgrade, this is a very capable phone that will serve you for a long time.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 82
+    },
+    "scoreReason": "Great value and capable overall, but too similar to last year with a few missed upgrades.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10a",
+    "outletId": "android-headlines",
+    "critic": "Justin Diaz",
+    "url": "https://www.androidheadlines.com/google-pixel-10a-review-its-still-the-best-500-phone",
+    "date": "2026-03-27",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "If $600 is a hard limit for you, then you really can’t go wrong here.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong value and experience, but aging hardware, weak battery, and nearby better buys limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "mashable",
+    "critic": "Waquar Haider",
+    "url": "https://in.mashable.com/tech/114012/samsung-galaxy-s26-fe-review-is-it-worth-the-inr-79999-price-tag",
+    "date": "2026-09-16",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "Having used the phone for a while, I must say that it does just about everything right, including having 120Hz screen refresh rate, all-day battery backup, smooth One UI experience, and good camera setup.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for display, battery, software, and design, but notes limited innovation at the price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/google-pixel-11-pro-review",
+    "date": "2026-08-24",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "This is the most complete Pixel experience Google has put together in years.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for fixes and overall experience, but price, RAM cut, gaming, and battery caveats remain.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro",
+    "outletId": "digital-trends",
+    "critic": "Vikhyaat Vivek",
+    "url": "https://www.digitaltrends.com/phones/google-pixel-11-pro-review/",
+    "date": "2026-09-15",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "For everyone else, especially those who have been waiting for a premium Android phone that hasn't ballooned toward seven inches, the Pixel 11 Pro is one of the strongest choices I've used this year.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Strong recommendation for compact buyers, but performance and battery weaknesses temper enthusiasm at this price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-5",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/smartwatches/google-pixel-watch-5-review",
+    "date": "2026-11-02",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "But none of that stops it from being an outstanding smartwatch and the default choice for Android users at this price point.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 85
+    },
+    "scoreReason": "Outstanding Android smartwatch with smart software and safety features, despite iterative design, price rise, and modest upgrades.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-5",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/2246785/google-pixel-watch-5-review-2026/",
+    "date": "2026-08-28",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "So, if you're going to spend that much money, this is the watch to buy.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent design and performance, favorite at its price, but health and AI features feel limited.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11",
+    "outletId": "android-headlines",
+    "critic": "Justin Diaz",
+    "url": "https://www.androidheadlines.com/2026/09/google-pixel-11-review-a-smart-phone-for-smart-buyers.html",
+    "date": "2026-09-14",
+    "rating": "4/5",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "But if you just want a phone with great daily performance and snappy user experiences, with a pretty good camera, this is an excellent choice.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 84
+    },
+    "scoreReason": "Strong praise for design, battery, software, and value, with notable gaming and camera limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-4",
+    "outletId": "canadian-running-magazine",
+    "critic": "Hayden West",
+    "url": "https://runningmagazine.ca/sections/gear/watch-review-apple-watch-ultra-4/",
+    "date": "2026-11-06",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "The Ultra 4 is a great step up for Apple as a sports and health watch.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 94
+    },
+    "scoreReason": "Strong praise for training features, GPS, durability and safety, with only minor battery-life criticism.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "engadget",
+    "critic": "Mat Smith",
+    "url": "https://www.engadget.com/2306413/samsung-galaxy-watch-ultra-2-review-2026/",
+    "date": "2026-11-06",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Watch 9 lacks the Watch Ultra 2's standout battery life and bright display, though, both of which make this Samsung's most capable wearable yet.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent battery, display, and hardware, with notable software quirks and some questionable health features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "9to5mac",
+    "critic": "Chance Miller",
+    "url": "https://9to5mac.com/2026/11/05/macbook-pro-with-proled-xdr-display-touch-review/",
+    "date": "2026-11-05",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "Apple has taken an already excellent laptop and made meaningful improvements to nearly every aspect of the experience.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 90
+    },
+    "scoreReason": "Excellent upgrade with standout display and lighter design; touch is useful but not transformative, price and lineup are awkward.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "toms-hardware",
+    "critic": "Andrew E. Freedman",
+    "url": "https://www.tomshardware.com/laptops/macbooks/apple-macbook-pro-with-proled-xdr-display-review",
+    "date": "2026-11-05",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The MacBook Pro with PROLED XDR display has the best laptop screen I've ever seen, and other changes like reducing weight and moving from the notch to the Dynamic Island add to an excellent, albeit very pricey, machine.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent screen, lighter build and strong performance, but touch adds little and pricing is very high.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "fstoppers",
+    "critic": null,
+    "url": "https://fstoppers.com/gear/review-macbook-pro-proled-xdr-display-and-m5-max-screen-changes-everything-905426",
+    "date": "2026-11-05",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "The display is the best I have used, on any device, and it is the reason the computer around it got lighter and thinner at the same time.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 95
+    },
+    "scoreReason": "Reviewer calls it a major step forward with best-in-class display, performance, sound, and only minor software gripes.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "engadget",
+    "critic": "Devindra Hardawar",
+    "url": "https://www.engadget.com/2307215/apple-macbook-pro-with-proled-xdr-display-review/",
+    "date": "2026-11-05",
+    "rating": "8.8/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "It’s a notable evolution of the MacBook Pro at a much higher price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Excellent screen and lighter design, but touchscreen is basic and prices are hard to justify.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "notebookcheck",
+    "critic": "Andreas Osthoff",
+    "url": "https://www.notebookcheck.net/Amazing-OLED-panel-Apple-MacBook-Pro-14-PROLED-XDR-Review.1438048.0.html",
+    "date": "2026-11-05",
+    "rating": "92/100",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The result is the best multimedia laptop you can buy today, but there are still some annoying quirks from the previous model that were not fixed.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding display and battery gains, but louder fans, heat, PWM, and charging limits temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "pcmag",
+    "critic": "Joe Osborne",
+    "url": "https://www.pcmag.com/reviews/apple-macbook-pro-with-proled-xdr-display-16-inch-m5-max",
+    "date": "2026-11-05",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Even if you take the touch screen out of the equation, though, this is the most improved MacBook Pro in years, copping our Editors' Choice award as the new mobile Mac workstation to beat, especially for creators.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding for creators, class-leading display and performance, but touch fatigue, noise, and niche value temper enthusiasm.",
+    "scoredFromFullText": true
   }
 ]

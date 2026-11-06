@@ -6655,5 +6655,81 @@
       ]
     },
     "autoAdded": "2026-11-02"
+  },
+  {
+    "id": "macbook-pro-with-proled-xdr-display",
+    "slug": "macbook-pro-with-proled-xdr-display",
+    "name": "MacBook Pro with PROLED XDR Display",
+    "brand": "Apple",
+    "category": "laptop",
+    "releaseDate": "2026-11-06",
+    "launchPrice": 2899,
+    "officialUrl": "https://www.apple.com/macbook-pro/",
+    "criticsTake": "Reviewers agree the new MacBook Pro’s tandem OLED display is the main change, with deeper blacks, higher contrast, and very high brightness than the previous mini-LED models. They also note the slimmer, lighter chassis and strong performance, while several reviews say the touchscreen adds little and the higher price is a concern.",
+    "loved": [
+      "Tandem OLED display with deep blacks",
+      "Lighter and thinner chassis",
+      "Strong performance with M5 Pro and M5 Max",
+      "Good speakers and port selection"
+    ],
+    "gripes": [
+      "Touchscreen adds little for macOS",
+      "High starting price",
+      "Fans get louder under load",
+      "Chassis runs hotter under load",
+      "No Apple Pencil support"
+    ],
+    "specs": [
+      {
+        "label": "Display sizes",
+        "value": "14.2-inch and 16.3-inch tandem OLED"
+      },
+      {
+        "label": "Resolution",
+        "value": "3,024 x 1,986 (14-inch), 3,472 x 2,266 (16-inch)"
+      },
+      {
+        "label": "Brightness",
+        "value": "1,000 nits sustained full-screen, 2,000 nits peak for HDR highlights and SDR outdoors"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "ProMotion with 10Hz to 120Hz adaptive refresh"
+      },
+      {
+        "label": "Touch",
+        "value": "On-cell touch sensor built into the display panel"
+      },
+      {
+        "label": "Weight",
+        "value": "14-inch from 3.0 lb, 16-inch from 4.0 lb"
+      },
+      {
+        "label": "Ports",
+        "value": "Three Thunderbolt 5, HDMI, SDXC, MagSafe 3, 3.5 mm headphone jack"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi‑Fi 7, Bluetooth 6, and Thread"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP Center Stage with Desk View"
+      },
+      {
+        "label": "Price",
+        "value": "From $2899"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-06"
   }
 ]
