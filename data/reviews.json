@@ -27163,5 +27163,488 @@
     },
     "scoreReason": "Outstanding for creators, class-leading display and performance, but touch fatigue, noise, and niche value temper enthusiasm.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/macbooks/macbook-pro-with-proled-xdr-display-review",
+    "date": "2026-11-05",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "While the MacBook Pro with PROLED XDR Display is decidedly expensive with the same performance as the MacBook Pro laptops released in March 2026, it's easily one of the best MacBooks and best laptops you can buy.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Rapturous praise overall; only real drawbacks are high price and weak upgrade case for recent owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro-fold",
+    "outletId": "mashable",
+    "critic": "Alex Perry",
+    "url": "https://sea.mashable.com/google-pixel-11-pro-fold/53855/review-the-google-pixel-11-pro-fold-finally-gives-samsung-a-real-fight",
+    "date": "2026-08-19",
+    "rating": null,
+    "score": 76,
+    "scoreSource": "text",
+    "excerpt": "Google's new Pixel 11 Pro Fold is a marked improvement over its predecessor thanks to some serious slimming down, but you should probably still go for a Z Fold 8 Ultra instead, if you can.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 75
+    },
+    "scoreReason": "Strongly improved and very nice, but overpriced and still not the foldable the reviewer would choose.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro-fold",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/sep/14/pixel-11-pro-fold-review-the-foldable-with-the-best-triple-camera",
+    "date": "2026-09-14",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "But if you want a folding phone to be exactly the same as a regular one when closed, the Pixel Fold is the one to get.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Strong recommendation for buyers wanting a normal phone when closed, despite high price and some hardware drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro-fold",
+    "outletId": "business-insider",
+    "critic": "Sherri L. Smith",
+    "url": "https://www.businessinsider.com/guides/tech/google-pixel-11-pro-fold-review",
+    "date": "2026-09-21",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "If you aren't squeamish about the price and aren't a spec-stickler, the Pixel 11 Pro Fold is a great foldable.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent foldable with great design, durability, AI, and cameras, but the very high price hurts.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-fold-8",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/2026/07/samsung-galaxy-z-fold-8-review-i-wasnt-ready-for-how-good-this-foldable-actually-is.html",
+    "date": "2026-07-31",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "Samsung finally cracked the foldable formula I’ve been waiting years for, and after a week with the Galaxy Z Fold 8, I’m not sure I want to go back to a regular phone.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 95
+    },
+    "scoreReason": "Very enthusiastic overall, praising design and usability; only notable knocks are cameras, price, and a few compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-flip-8",
+    "outletId": "android-headlines",
+    "critic": "Justin Diaz",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-z-flip-8-review.html",
+    "date": "2026-08-17",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "With a brighter and more visually pleasing display, great battery life, and great cameras, the Galaxy Z Flip 8 is the best Flip Samsung has made so far.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 91
+    },
+    "scoreReason": "Strong praise overall, but high price and limited upgrade value temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-z-flip-8",
+    "outletId": "digit",
+    "critic": "Ayushi Jain",
+    "url": "https://www.digit.in/reviews/mobile-phones/samsung-galaxy-z-flip-8-review-still-one-of-the-best-flip-phones.html",
+    "date": "2026-09-15",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "If portability, design and the foldable experience are your priorities, the Galaxy Z Flip 8 is definitely among the best options available in the market.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Refined, practical foldable with strong display and usability, but pricey with average cameras, slow charging, and heat.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-9",
+    "outletId": "mashable",
+    "critic": "Priya Singh",
+    "url": "https://in.mashable.com/samsung-health/113561/samsung-galaxy-watch-9-review-a-great-everyday-watch-with-familiar-compromises",
+    "date": "2026-09-03",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "But if you're coming from an older Galaxy Watch, the Watch 9 feels much easier to recommend.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong health features and smooth performance, but battery and unclear insights keep it from higher praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "droid-life",
+    "critic": "Tim",
+    "url": "https://www.droid-life.com/2026/08/10/galaxy-watch-ultra-2-review/",
+    "date": "2026-08-10",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "This is truly the first time that I’ve felt Android users have a reasonable competitor to something like the Apple Watch Ultra line.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 81,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise for comfort, battery, display, and performance, with notification annoyances and a few feature complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "sammyguru",
+    "critic": "Jeff Springer",
+    "url": "https://sammyguru.com/samsung-galaxy-watch-ultra-2-review/",
+    "date": "2026-08-28",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "If you're okay with a bigger watch, though, the Ultra 2 is better than the Watch 9 in almost every way that matters.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with minor size, connectivity, and notification setup drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "valve-steam-machine",
+    "outletId": "rock-paper-shotgun",
+    "critic": "James Archer",
+    "url": "https://www.rockpapershotgun.com/steam-machine-review",
+    "date": "2026-06-22",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "That's newly-staked Steam Machine territory, and it's going to stay that way until someone figures out how to make a compact PC that goes faster while still being half as inconspicuous as this is.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent compact, quiet living-room PC, but overpriced and weaker value than similarly priced desktops.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oura-ring-5",
+    "outletId": "engadget",
+    "critic": "Daniel Cooper",
+    "url": "https://www.engadget.com/2201675/oura-ring-5-review/",
+    "date": "2026-06-29",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Taking the class-leading wearable and shrinking it this much is a massive deal, especially since it comes with longer battery life.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for smaller design and battery, with subscription and upgrade caveats for current owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oura-ring-5",
+    "outletId": "techradar",
+    "critic": "Amelia Schwanke",
+    "url": "https://www.techradar.com/health-fitness/oura-ring-5-review-a-luxury-smart-ring-for-discreet-everyday-wellness-tracking-thats-almost-easy-to-forget-youre-wearing",
+    "date": "2026-06-24",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "It isn't perfect, but if you want accurate sleep tracking hidden inside what could easily pass as a piece of jewellery, Oura still wears the crown.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent design, comfort, battery and sleep tracking, but subscription cost and weaker fitness features limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oura-ring-5",
+    "outletId": "toms-guide",
+    "critic": "Jane McGuire",
+    "url": "https://www.tomsguide.com/wellness/smart-rings/oura-ring-5-hands-on-review-ive-worn-the-worlds-smallest-smart-ring-for-a-week-and-it-changes-fitness-tracking-forever",
+    "date": "2026-06-04",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The Oura Ring 5 is the smallest smart ring in the world, and probably the best for most people.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise as best smart ring, with only subscription and upgrade-value caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oura-ring-5",
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/mobile/oura-ring-5-review-best-smart-ring/",
+    "date": "2026-07-15",
+    "rating": "9.5/10",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "The Oura Ring 5 is the best smart ring you can buy.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly enthusiastic best-in-class verdict, with price and workout caveats but clear buy recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oura-ring-5",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/wearable-tech/oura-ring-5-review",
+    "date": "2026-08-02",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "The Oura Ring 5 is a masterclass in wearable engineering, setting a new benchmark for the smart ring category.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding smart ring with major design and software strengths, despite subscription, upgrade pricing, and workout comfort drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oura-ring-5",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://www.pcmag.com/reviews/oura-ring-5",
+    "date": "2026-07-19",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "If you're willing to pay a premium for style, the Oura Ring 5 is the best smart ring you can buy right now, so it earns our Editors' Choice award for finger-based trackers.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent design, battery, sleep and stress tracking, but pricey subscription and weak exercise tracking limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "hardwarezone",
+    "critic": "Aaron Yip",
+    "url": "https://www.hardwarezone.com.sg/pc/laptops/asus-proart-p16-nvidia-rtx-spark-laptop-review",
+    "date": "2026-11-06",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "And while I still think RTX Spark has some convincing to do, particularly when it comes to value, the P16 makes a pretty good case for the platform.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong design, display, ports and AI potential, but expensive and value is hard to justify.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "techradar",
+    "critic": "Josh Russell",
+    "url": "https://www.techradar.com/computing/windows-laptops/asus-proart-p16-rtx-spark",
+    "date": "2026-10-28",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "Honestly, the Asus ProArt P16 RTX Spark is pretty adept at everything it tries to do: it's a talented all-rounder.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent versatile laptop with premium design, but very high price and niche-specific rivals limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "pc-gamer",
+    "critic": "Dave James",
+    "url": "https://www.pcgamer.com/hardware/gaming-laptops/asus-proart-p16-rtx-spark-review/",
+    "date": "2026-10-20",
+    "rating": "78/100",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "If your needs stretch beyond just gaming-and so does your wallet-then the ProArt P16 is a great machine.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 78
+    },
+    "scoreReason": "Great for creators with money, but huge price, compatibility gaps, battery disappointment, and QC issues hurt recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "engadget",
+    "critic": "Devindra Hardawar",
+    "url": "https://www.engadget.com/2294849/asus-proart-p16-rtx-spark-review/",
+    "date": "2026-10-23",
+    "rating": "8.7/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "But its high starting cost and unique hardware make it something that's truly only tempting for AI professionals.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent hardware and AI performance, but price and niche Arm compatibility limit mainstream appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "notebookcheck",
+    "critic": "Andreas Osthoff",
+    "url": "https://www.notebookcheck.net/Asus-ProArt-P16-RTX-Spark-Laptop-Review-The-future-of-multimedia-laptops.1422366.0.html",
+    "date": "2026-10-16",
+    "rating": "90/100",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "This is probably the most compelling Windows laptop you can get right now, but also a very expensive one.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding design, display, inputs and performance, with notable concerns about price, battery life and ARM compatibility.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "windows-central",
+    "critic": "Daniel Rubino",
+    "url": "https://www.windowscentral.com/hardware/laptops/asus-proart-p16-rtx-spark-review-2016",
+    "date": "2026-10-24",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "It's an extraordinary Windows workstation, but most people shouldn't buy one.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 91
+    },
+    "scoreReason": "Outstanding niche workstation, but expensive and not for most buyers; strong praise with clear caveats.",
+    "scoredFromFullText": true
   }
 ]

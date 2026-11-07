@@ -6731,5 +6731,81 @@
       ]
     },
     "autoAdded": "2026-11-06"
+  },
+  {
+    "id": "proart-p16-rtx-spark",
+    "slug": "proart-p16-rtx-spark",
+    "name": "ProArt P16 (RTX Spark)",
+    "brand": "ASUS",
+    "category": "laptop",
+    "releaseDate": "2026-10-16",
+    "launchPrice": 2799,
+    "officialUrl": "https://www.asus.com/laptops/for-creators/proart/proart-p16/",
+    "criticsTake": "Reviewers agree the ProArt P16 RTX Spark is a slim, premium 16-inch creator laptop with strong AI, creative and gaming performance. Its OLED display, keyboard, touchpad and port selection are widely praised, but the high price, some app or game compatibility issues, and middling battery life make it a niche buy.",
+    "loved": [
+      "Strong AI, creative and gaming performance",
+      "Slim, lightweight aluminum chassis",
+      "Bright 16-inch OLED touchscreen",
+      "Useful port selection with SD Express"
+    ],
+    "gripes": [
+      "Very expensive",
+      "Some app and game compatibility issues",
+      "Battery runtime is not that great",
+      "1080p webcam is mediocre",
+      "Screen lid has some wobble"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "16-inch OLED touchscreen"
+      },
+      {
+        "label": "Resolution",
+        "value": "2880 x 1800 OLED or 3840 x 2400 Tandem OLED"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "120Hz"
+      },
+      {
+        "label": "Color gamut",
+        "value": "100% DCI-P3"
+      },
+      {
+        "label": "Peak brightness",
+        "value": "1,100 nits on the 3K OLED, up to 1,600 nits on the 4K Tandem OLED"
+      },
+      {
+        "label": "Processor and graphics",
+        "value": "NVIDIA RTX Spark with a 20-core Arm CPU and 6144-core Blackwell GPU"
+      },
+      {
+        "label": "Memory",
+        "value": "64GB RAM, with support for up to 128GB unified memory"
+      },
+      {
+        "label": "Ports",
+        "value": "Three USB4 or USB-C ports, USB-A, HDMI 2.1, 3.5mm audio jack, and SD Express 7.0 or full-sized SD card reader"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 7 and Bluetooth 5.4"
+      },
+      {
+        "label": "Price",
+        "value": "From $2799"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-07"
   }
 ]
