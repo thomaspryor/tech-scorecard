@@ -27646,5 +27646,215 @@
     },
     "scoreReason": "Outstanding niche workstation, but expensive and not for most buyers; strong praise with clear caveats.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "toms-guide",
+    "critic": "Darragh Murphy",
+    "url": "https://www.tomsguide.com/computing/laptops/asus-proart-p16-rtx-spark-review",
+    "date": "2026-10-16",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Asus ProArt P16 with Nvidia's RTX Spark steps up to the plate as the ultimate laptop for creators, and for the most part, it lives up to its expectations.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent creator and AI laptop, but very expensive, niche, and runs loud and warm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "hardwarezone",
+    "critic": "Kenny Yeo",
+    "url": "https://www.hardwarezone.com.sg/mobile/smartphones/apple-iphone-duo-review-foldable-phone-singapore-specs-buy",
+    "date": "2026-11-08",
+    "rating": null,
+    "score": 83,
+    "scoreSource": "text",
+    "excerpt": "Apple took a long time to give us a foldable phone, but its first attempt is a very good one, so the wait was mostly worth it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 78
+    },
+    "scoreReason": "Excellent first foldable with great displays and versatility, held back mainly by very high price and weaker cameras.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-fold-2026",
+    "outletId": "expert-reviews",
+    "critic": "Ben Johnston",
+    "url": "https://www.expertreviews.co.uk/technology/phones/motorola-razr-fold-review",
+    "date": "2026-09-15",
+    "rating": "4/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "So while it's a solid proof of concept, it might be worth waiting for the Razr Fold 2 before you put your money down.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Very good first effort, but heavy, less durable, and reviewer suggests waiting or buying cheaper rival.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a37",
+    "outletId": "business-insider",
+    "critic": "Ara Wagoner",
+    "url": "https://www.businessinsider.com/guides/tech/samsung-galaxy-a37-review",
+    "date": "2026-05-13",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "While none of the changes between the new A37 and 2025's A36 are earth-shattering, even the most modest of iterative updates allows the A37 to remain a worthwhile value, despite a $50 price increase.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 70
+    },
+    "scoreReason": "Good value with long support and nice screen, but performance, battery, and cameras have notable limits.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "hardwarezone",
+    "critic": "Kenny Yeo",
+    "url": "https://www.hardwarezone.com.sg/mobile/tablets/apple-ipad-mini-8th-gen-a20-pro-review-close-perfect",
+    "date": "2026-11-07",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "All things considered, even with the substantial price hikes, the new iPad mini is a fantastic little tablet.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Fantastic compact tablet with big upgrades, hurt mainly by high price and dated 60Hz display.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/ipads/apple-ipad-mini-8-review",
+    "date": "2026-11-03",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Though pricier and missing features like Face ID and a 120Hz refresh rate, it's a first-rate iPad experience.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, display, performance and battery, with price, no Face ID, and 60Hz as caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "techradar",
+    "critic": "Jacob Krol",
+    "url": "https://www.techradar.com/tablets/ipad-mini/ipad-mini-a20-pro-review",
+    "date": "2026-11-03",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The iPad mini is an absolute joy to use, and the long-awaited move to OLED makes a world of difference to Apple's smallest tablet.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent upgrade with standout OLED, portability and performance, but price and missing 120Hz temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/nov/05/apple-ipad-mini-a20-pro-review-best-small-tablet-but-big-price",
+    "date": "2026-11-05",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "The iPad mini is the best small tablet available.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Excellent small tablet with major upgrades, but very high price and missing premium features hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "the-independent",
+    "critic": "Andrew Griffin",
+    "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/laptops-tablets/ipad-mini-8-review-b3078234.html",
+    "date": "2026-11-03",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "It is without a doubt the best small tablet you can buy, and justifies its slightly unusual place in Apple’s line-up.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent small tablet, but niche appeal, 60Hz screen, and steep price limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "engadget",
+    "critic": "Nathan Ingraham",
+    "url": "https://www.engadget.com/2304616/apple-ipad-mini-a20-pro-review/",
+    "date": "2026-11-03",
+    "rating": "8.5/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "But in 2026, with consumer electronics prices continuing to surge, a more expensive iPad mini might be an even more niche device than it was before.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Excellent upgrades and fun to use, but the high price makes it hard to recommend widely.",
+    "scoredFromFullText": true
   }
 ]

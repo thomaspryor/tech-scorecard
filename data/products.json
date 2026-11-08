@@ -6807,5 +6807,76 @@
       ]
     },
     "autoAdded": "2026-11-07"
+  },
+  {
+    "id": "ipad-mini-8th-gen",
+    "slug": "ipad-mini-8th-gen",
+    "name": "iPad mini (8th gen)",
+    "brand": "Apple",
+    "category": "tablet",
+    "releaseDate": "2026-11-06",
+    "launchPrice": 699,
+    "officialUrl": "https://www.apple.com/ipad-mini/",
+    "criticsTake": "Reviewers agree the iPad mini 8 is a major update with a thinner and lighter body, a larger 8.5-inch OLED display, and strong performance from the A20 Pro chip. The small size remains a key strength for reading, media, notes, and portability. The main concerns are the higher starting price and the display staying at 60Hz.",
+    "loved": [
+      "8.5-inch OLED display",
+      "thinner and lighter design",
+      "IP67 water and dust resistance",
+      "fast A20 Pro performance"
+    ],
+    "gripes": [
+      "higher $699 starting price",
+      "60Hz refresh rate",
+      "no Face ID",
+      "audio gets shouty at max volume"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "8.5-inch OLED with HDR"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "60Hz"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple A20 Pro"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB, 256GB, or 512GB"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP67"
+      },
+      {
+        "label": "Weight",
+        "value": "255g"
+      },
+      {
+        "label": "Thickness",
+        "value": "5.4mm"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi‑Fi 7, Bluetooth 6, USB-C"
+      },
+      {
+        "label": "Price",
+        "value": "From $699"
+      }
+    ],
+    "art": {
+      "kind": "tablet",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-08"
   }
 ]
