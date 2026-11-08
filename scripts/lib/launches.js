@@ -66,11 +66,42 @@ function sharedReviewUrls(urls, reviews) {
   return urls.filter((u) => have.has(urlKey(u))).length;
 }
 
+/**
+ * The brand as the site already spells it ("ASUS" from the search becomes the site's "Asus"), so a
+ * new product lands on the same brand page as the others.
+ * @param {string} brand
+ * @param {{brand: string}[]} products
+ */
+function siteBrand(brand, products) {
+  const b = brand.trim();
+  return products.find((p) => norm(p.brand) === norm(b))?.brand ?? b;
+}
+
+/**
+ * The product name the way the site writes it: brand first ("iPad mini (A20 Pro)" -> "Apple iPad mini (A20 Pro)"),
+ * with the search's spacing tidied.
+ * @param {string} name
+ * @param {string} brand
+ */
+function siteName(name, brand) {
+  const n = name.trim().replace(/\s+/g, ' ');
+  const b = brand.trim();
+  if (!b || norm(n).startsWith(norm(b))) {
+    // Already starts with the brand: use the site's spelling of it ("ASUS ProArt" -> "Asus ProArt").
+    const words = b.split(' ').length;
+    const head = n.split(' ').slice(0, words).join(' ');
+    return b && norm(head) === norm(b) ? `${b}${n.slice(head.length)}` : n;
+  }
+  return `${b} ${n}`;
+}
+
 module.exports = {
   MIN_REVIEWS_NEW_PRODUCT,
   LAUNCH_WINDOW_DAYS,
   isRenamedDuplicate,
   knownProduct,
+  siteBrand,
+  siteName,
   sharedReviewUrls,
   urlKey,
 };

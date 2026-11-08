@@ -94,6 +94,12 @@ function validateData(
     for (const k of /** @type {const} */ (['loved', 'gripes', 'specs']))
       if (!Array.isArray(p[k]) || p[k].length === 0) errors.push(`product ${p.id}: ${k} must be a non-empty list`);
     if (!SLUG_RE.test(p.slug || '')) errors.push(`product ${p.id}: slug must be lowercase words joined by hyphens`);
+    // Names read "Brand Model" everywhere on the site (the brand line under a card does not replace it).
+    const plain = (/** @type {string} */ s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (p.name && p.brand && !plain(p.name).startsWith(plain(p.brand)))
+      errors.push(`product ${p.id}: name must start with the brand ("${p.brand} ...")`);
+    // A product the refresh added goes live with its photo (scripts/lib/launch-photo.js), never a blank tile.
+    if (p.autoAdded && !p.image) errors.push(`product ${p.id}: an auto-added product needs a photo`);
     if (p.officialUrl != null && !isHttpsUrl(p.officialUrl)) errors.push(`product ${p.id}: officialUrl must be https`);
     if (!categories.categories.includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
     if (p.art && !categories.artKinds.includes(p.art.kind))

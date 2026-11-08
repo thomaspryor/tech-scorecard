@@ -4,6 +4,7 @@
 // Usage: node scripts/drop-thin-products.js
 const { DATA_DIR, loadData, writeData } = require('./lib/data-files');
 const { MIN_REVIEWS_NEW_PRODUCT } = require('./lib/launches');
+const { removeProductImage } = require('./lib/product-image');
 
 /**
  * Ids of auto-added products with fewer than `min` reviews.
@@ -25,6 +26,8 @@ if (require.main === module) {
       products: data.products.filter((p) => !thin.includes(p.id)),
       reviews: data.reviews.filter((r) => !thin.includes(r.productId)),
     });
+    // Its photo goes too (written when the launch was added).
+    for (const id of thin) removeProductImage(data.products.find((p) => p.id === id)?.slug || id);
   }
 }
 
