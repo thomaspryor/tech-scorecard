@@ -16,6 +16,10 @@ The owner is not technical and does not review code, read diffs, or merge PRs. T
 6. For anything beyond a trivial edit, run `/ship-check` before pushing, then `/what-else` and `/wrap-up` at the end. `/plan-review`, `/second-opinion`, `/did-it-work`, `/right-problem`, `/plan-tasks` and `/last30days` are here too (`.claude/commands/`, `.claude/skills/`, copied from Broadwayscore since cloud sessions only see a repo's own `.claude/`). A daily job (`sync-claude-skills.yml`) keeps the copies current; edit them in Broadwayscore, not here. The synced list is in `scripts/lib/claude-sync.js`.
 7. Your last line is always one of: `SAFE TO ARCHIVE`, `KEEP OPEN: <what you wait on>`, or `ACTION NEEDED FROM YOU: <one sentence>`. Use SAFE TO ARCHIVE only when it is merged, live and verified.
 
+## Automation
+
+Nothing here waits on a person. The daily refresh adds reviews and launches (with photos); `dependabot-merge.yml` merges green dependency updates; a scheduled "Tech Scorecard daily caretaker" session follows docs/CARETAKER.md every evening (failed runs, stuck PRs, model disagreements). Anything new that would need a human step gets automated or added to CARETAKER.md.
+
 ## Rules
 
 - Never publish unverified review scores or quotes. Every review links to the original (see `/methodology`).
