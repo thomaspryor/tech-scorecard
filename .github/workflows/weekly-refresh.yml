@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: main
-      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -97,7 +97,7 @@ jobs:
               sed 's/^/- /' .cache/refresh/problems.txt
               echo
             fi
-            echo "To fix it, start a Claude Code session on this repository and paste this link: $RUN_URL"
+            echo "Nothing for you to do: the daily caretaker session (docs/CARETAKER.md) picks this up the same evening. Run log: $RUN_URL"
           } > alert.md
           OPEN=$(gh issue list --label refresh-failed --state open --json number --jq '.[0].number')
           if [ -n "$OPEN" ]; then

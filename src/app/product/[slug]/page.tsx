@@ -108,7 +108,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
             )}
           </div>
           <div className="min-w-0 flex-1">
-            <ProductChips category={product.category} releaseDate={product.releaseDate} />
+            <ProductChips category={product.category} />
             <h1 className="mt-2 text-2xl font-extrabold leading-tight sm:text-4xl sm:leading-10">{product.name}</h1>
             <p className="mt-1.5 text-sm text-ink-muted sm:text-base">
               {product.brand}

@@ -75,8 +75,8 @@ readers. In code:
    The article goes into the prompt fenced as untrusted data, with an instruction to ignore
    anything in it that is not the reviewer's verdict, so a page cannot steer its own score.
    When the two placements differ by more than 15 points the review keeps the average but is
-   marked `modelsDisagree`, and the run summary lists it for a human check. A person who reads the
-   review can then record `adjudicatedScore` (inside the same band) with an `adjudicationReason`; it
+   marked `modelsDisagree`, and the daily caretaker session (docs/CARETAKER.md) reads the
+   review and records `adjudicatedScore` (inside the same band) with an `adjudicationReason`; it
    becomes the published score, the model scores are kept, and later runs do not overwrite it. Answers are cached
    in `.cache/` (gitignored) keyed by URL, rating, models and prompt.
 3. **Outlets are weighted by tier** (`src/config/scoring.ts`): tier 1 counts 1.0, tier 2
