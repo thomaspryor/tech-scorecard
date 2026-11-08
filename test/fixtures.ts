@@ -10,7 +10,7 @@ export function product(over: Partial<Product> = {}): Product {
   return {
     id: 'test-phone',
     slug: 'test-phone',
-    name: 'Test Phone',
+    name: 'Acme Test Phone',
     brand: 'Acme',
     category: 'phone',
     releaseDate: '2026-09-19',

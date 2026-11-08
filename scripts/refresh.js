@@ -22,11 +22,15 @@ const {
   isRenamedDuplicate,
   knownProduct,
   sharedReviewUrls,
+  siteBrand,
+  siteName,
 } = require('./lib/launches');
 const { UA, curl, fetchPage, fetchPageAsync, pageText, containsQuote, jsonLd, hostOf } = require('./lib/page');
 const { urlKey } = require('./lib/launches');
 const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
-const { openaiText, geminiText, parseJsonReply } = require('./lib/models');
+const { openaiText, geminiText, geminiImageText, parseJsonReply } = require('./lib/models');
+const { findLaunchPhoto } = require('./lib/launch-photo');
+const { hasDarkBackground, writeProductImage, removeProductImage } = require('./lib/product-image');
 
 /** @typedef {import('../src/lib/data-types').Product} Product */
 /** @typedef {import('../src/lib/data-types').Review} Review */
@@ -257,6 +261,16 @@ const ART_KIND = {
   wearable: 'glasses',
 };
 
+/** Photos of new launches (product id -> image file), written to public/ only for launches being imported. @type {Map<string, Buffer>} */
+const launchPhotos = new Map();
+
+/** An image file from a brand site. @param {string} url */
+async function downloadImage(url) {
+  const res = await fetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(60_000) });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return Buffer.from(await res.arrayBuffer());
+}
+
 /** @param {string} s */
 const slug = (s) =>
   s
@@ -296,7 +310,7 @@ Categories allowed: ${CATEGORIES.categories.join(', ')}.${
         ? `\nLeads: these review headlines appeared this fortnight on outlets we follow. A gadget several of them review is a strong candidate; confirm its facts with search. Ignore games, films, books and other products outside the categories.\n${headlines}`
         : ''
     }
-Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate":"YYYY-MM-DD","launchPrice":<USD number>,"officialUrl":"https://..."}]. Use only facts you saw in search results.`,
+Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate":"YYYY-MM-DD","launchPrice":<USD number>,"officialUrl":"https://..."}]. "name" is the model name reviewers use, without the brand (for example "iPad mini (A20 Pro)", not "iPad mini (8th gen)"). "officialUrl" is this product's own page on the brand's site, never the home page or a category page. Use only facts you saw in search results.`,
     { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
   );
   /** @type {{name: string, brand: string, category: Category, releaseDate: string, launchPrice: number, officialUrl: string}[]} */
@@ -313,8 +327,12 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
   );
   /** @type {{product: Product, reviews: Review[], newOutlets: []}[]} */
   const made = [];
-  for (const c of found) {
+  for (const raw of found) {
     if (made.length >= MAX_NEW) break;
+    // The brand as the site spells it and in front of the name. The slug keeps the brand too, so a
+    // number-only model ("OnePlus 16") never becomes a bare "/product/16/".
+    const brand = siteBrand(raw.brand || '', products, raw.name);
+    const c = { ...raw, brand, name: siteName(raw.name, brand) };
     const id = slug(c.name);
     const dup = knownProduct({ ...c, id }, [...products, ...made.map((m) => m.product)]);
     if (dup) {
@@ -342,6 +360,18 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
     }
     if (revs.length < MIN_REVIEWS_NEW_PRODUCT) {
       console.log(`  only ${revs.length} verified reviews, need ${MIN_REVIEWS_NEW_PRODUCT}`);
+      continue;
+    }
+    // A launch goes live with its photo or not at all; without one it is tried again on a later run.
+    const photo = await findLaunchPhoto(c, {
+      fetchPage,
+      download: downloadImage,
+      judge: geminiImageText,
+      parse: (t) => parseJsonReply(t),
+      log: (m) => console.log(m),
+    });
+    if (!photo) {
+      console.log('  no usable official photo yet, skipped');
       continue;
     }
     const texts = revs
@@ -376,6 +406,15 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
       specs: copy.specs,
       art: { kind: ART_KIND[c.category], body: '#3a3d46', accent: '#8aa4d8', backdrop: ['#f4f6fb', '#e3e8f3'] },
       autoAdded: TODAY,
+    };
+    // The files are written in main() just before the import, so a dry run or a failed run leaves none behind.
+    launchPhotos.set(id, photo.buffer);
+    product.image = {
+      src: `/images/products/${id}/main.webp`,
+      thumb: `/images/products/${id}/thumb.webp`,
+      alt: `${c.name}, official ${c.brand} photo`,
+      credit: c.brand,
+      sourceUrl: c.officialUrl,
     };
     made.push({ product, reviews: revs, newOutlets: [] });
   }
@@ -517,6 +556,9 @@ async function main() {
     if (problems.length) fs.writeFileSync(path.join(OUT, 'problems.txt'), problems.join('\n') + '\n');
   };
   if (args['dry-run']) return;
+  for (const [id, buffer] of launchPhotos)
+    if (files.some((f) => path.basename(f) === `new-${id}.json`))
+      await writeProductImage(id, buffer, (await hasDarkBackground(buffer)) ? { pad: true } : { trim: true });
   if (!files.length) return writeOut();
   /** @type {{productId?: string, product?: Product, reviews: Review[]}[]} */
   const contents = files.map((f) => JSON.parse(fs.readFileSync(f, 'utf8')));
@@ -530,8 +572,11 @@ async function main() {
     console.error(`rejected ${r.label}:\n- ${r.errors.join('\n- ')}`);
     problems.push(`An import was rejected by the data checks (${r.label}): ${r.errors.slice(0, 3).join('; ')}`);
     // A rejected product is checked again next run rather than skipped for a full cycle.
-    const id = contents[files.findIndex((f) => path.basename(f) === r.label)].productId;
+    const content = contents[files.findIndex((f) => path.basename(f) === r.label)];
+    const id = content.productId;
     if (id) delete state[id];
+    // A rejected new launch leaves no photo folder behind.
+    if (content.product) removeProductImage(content.product.id);
   }
   if (res.applied.length) writeData(DATA_DIR, res.data);
   writeOut();

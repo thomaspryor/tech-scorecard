@@ -78,6 +78,29 @@ async function geminiText(prompt, { search = false, timeoutMs } = {}) {
 }
 
 /**
+ * Gemini's JSON answer about one image (a JPEG), e.g. whether it is a usable product photo. Needs GEMINI_API_KEY.
+ * @param {string} prompt
+ * @param {Buffer} jpeg
+ * @returns {Promise<string>}
+ */
+async function geminiImageText(prompt, jpeg) {
+  const out = await postJson(
+    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`,
+    { 'x-goog-api-key': process.env.GEMINI_API_KEY ?? '' },
+    {
+      contents: [
+        {
+          role: 'user',
+          parts: [{ inline_data: { mime_type: 'image/jpeg', data: jpeg.toString('base64') } }, { text: prompt }],
+        },
+      ],
+      generationConfig: { temperature: 0, responseMimeType: 'application/json' },
+    },
+  );
+  return (out.candidates?.[0]?.content?.parts || []).map((/** @type {{text?: string}} */ x) => x.text || '').join('');
+}
+
+/**
  * The JSON value in a model reply: the text from the first `open` to the last `close`, parsed.
  * Null when there is none or it does not parse.
  * @param {unknown} s
@@ -97,4 +120,4 @@ function parseJsonReply(s, open = '{') {
   }
 }
 
-module.exports = { OPENAI_MODEL, GEMINI_MODEL, postJson, openaiText, geminiText, parseJsonReply };
+module.exports = { OPENAI_MODEL, GEMINI_MODEL, postJson, openaiText, geminiText, geminiImageText, parseJsonReply };

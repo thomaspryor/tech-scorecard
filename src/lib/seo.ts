@@ -27,7 +27,14 @@ export function fitTitle(candidates: string[], max = MAX_TITLE_LENGTH): string |
 export const titleCandidates = {
   product: (name: string, score: number | null) =>
     score != null
-      ? [`${name} reviews: ${score}/100 critic score`, `${name} reviews: ${score}/100`, `${name} reviews`]
+      ? [
+          `${name} reviews: ${score}/100 critic score`,
+          `${name} reviews: ${score}/100`,
+          // A long name keeps its score before it keeps the word "reviews".
+          `${name}: ${score}/100 critic score`,
+          `${name}: ${score}/100`,
+          `${name} reviews`,
+        ]
       : [`${name} reviews`],
   category: (plural: string, year: number) => [
     `Best ${plural} to buy in ${year}: ranked by critic score`,

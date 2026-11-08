@@ -66,11 +66,48 @@ function sharedReviewUrls(urls, reviews) {
   return urls.filter((u) => have.has(urlKey(u))).length;
 }
 
+/**
+ * The brand as the site already spells it ("ASUS" from the search becomes the site's "Asus"), so a
+ * new product lands on the same brand page as the others.
+ * @param {string} brand
+ * @param {{brand: string}[]} products
+ * @param {string} [name] the product name as found
+ */
+function siteBrand(brand, products, name = '') {
+  const b = brand.trim();
+  // A co-brand the site already uses that the name starts with wins: "Oakley Meta HSTN" is an "Oakley Meta" product.
+  const lead = products
+    .map((p) => p.brand)
+    .filter((x) => norm(x).length > norm(b).length && norm(name).startsWith(norm(x)))
+    .sort((x, y) => y.length - x.length)[0];
+  return lead ?? products.find((p) => norm(p.brand) === norm(b))?.brand ?? b;
+}
+
+/**
+ * The product name the way the site writes it: brand first ("iPad mini (A20 Pro)" -> "Apple iPad mini (A20 Pro)"),
+ * with the search's spacing tidied.
+ * @param {string} name
+ * @param {string} brand
+ */
+function siteName(name, brand) {
+  const n = name.trim().replace(/\s+/g, ' ');
+  const b = brand.trim();
+  if (!b || norm(n).startsWith(norm(b))) {
+    // Already starts with the brand: use the site's spelling of it ("ASUS ProArt" -> "Asus ProArt").
+    const words = b.split(' ').length;
+    const head = n.split(' ').slice(0, words).join(' ');
+    return b && norm(head) === norm(b) ? `${b}${n.slice(head.length)}` : n;
+  }
+  return `${b} ${n}`;
+}
+
 module.exports = {
   MIN_REVIEWS_NEW_PRODUCT,
   LAUNCH_WINDOW_DAYS,
   isRenamedDuplicate,
   knownProduct,
+  siteBrand,
+  siteName,
   sharedReviewUrls,
   urlKey,
 };

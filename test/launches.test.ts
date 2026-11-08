@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isRenamedDuplicate, knownProduct, sharedReviewUrls } from '../scripts/lib/launches';
+import { isRenamedDuplicate, knownProduct, sharedReviewUrls, siteBrand, siteName } from '../scripts/lib/launches';
 import { thinProducts } from '../scripts/drop-thin-products';
 import { unscored } from '../scripts/drop-unscored';
 import { product, review } from './fixtures';
@@ -73,5 +73,33 @@ describe('unscored', () => {
       review({ outletId: 'c' }),
     ];
     expect(unscored(reviews, new Set(['test-phone/b']))).toEqual({ drop: ['test-phone/b'], old: ['test-phone/c'] });
+  });
+});
+
+describe('siteBrand and siteName', () => {
+  const brands = [{ brand: 'Asus' }, { brand: 'Even Realities' }];
+
+  it('uses the brand spelling already on the site', () => {
+    expect(siteBrand('ASUS', brands)).toBe('Asus');
+    expect(siteBrand('even realities', brands)).toBe('Even Realities');
+    expect(siteBrand('Sennheiser', brands)).toBe('Sennheiser');
+  });
+
+  it('prefers a co-brand on the site that the name starts with', () => {
+    const site = [{ brand: 'Meta' }, { brand: 'Oakley Meta' }];
+    expect(siteBrand('Meta', site, 'Oakley Meta HSTN')).toBe('Oakley Meta');
+    expect(siteName('Oakley Meta HSTN', 'Oakley Meta')).toBe('Oakley Meta HSTN');
+    expect(siteBrand('Meta', site, 'Ray-Ban Display')).toBe('Meta');
+  });
+
+  it('puts the brand in front of the name', () => {
+    expect(siteName('iPad mini (A20 Pro)', 'Apple')).toBe('Apple iPad mini (A20 Pro)');
+    expect(siteName('Momentum  True Wireless 5', 'Sennheiser')).toBe('Sennheiser Momentum True Wireless 5');
+  });
+
+  it('keeps a name that already starts with the brand, in the site spelling', () => {
+    expect(siteName('Samsung Galaxy S26', 'Samsung')).toBe('Samsung Galaxy S26');
+    expect(siteName('ASUS ProArt P16', 'Asus')).toBe('Asus ProArt P16');
+    expect(siteName('OnePlus 15', 'OnePlus')).toBe('OnePlus 15');
   });
 });

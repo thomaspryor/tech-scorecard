@@ -8,11 +8,9 @@
 // public/images/products/<slug>/main.webp (800px wide at most) and thumb.webp (300px wide at most),
 // then sets `image` on the product in data/products.json.
 const fs = require('fs');
-const path = require('path');
-const sharp = require('sharp');
 const { DATA_DIR, loadData, writeData } = require('./lib/data-files');
+const { writeProductImage } = require('./lib/product-image');
 
-const ROOT = path.join(__dirname, '..');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36';
 
 /** @param {string[]} argv */
@@ -38,21 +36,6 @@ async function readSource(from) {
   return Buffer.from(await res.arrayBuffer());
 }
 
-/** The photo's background color: the median of its top-left corner pixels. @param {Buffer} input */
-async function cornerColor(input) {
-  const { data } = await sharp(input)
-    .flatten({ background: '#fff' })
-    .extract({ left: 0, top: 0, width: 8, height: 8 })
-    .raw()
-    .toBuffer({ resolveWithObject: true });
-  const med = (/** @type {number} */ c) => {
-    const v = [];
-    for (let i = c; i < data.length; i += 3) v.push(data[i]);
-    return v.sort((a, b) => a - b)[v.length >> 1];
-  };
-  return { r: med(0), g: med(1), b: med(2), alpha: 1 };
-}
-
 async function main() {
   const { pos, opts } = parseArgs(process.argv.slice(2));
   const [slug, from] = pos;
@@ -67,38 +50,16 @@ async function main() {
   if (!product) throw new Error(`unknown product slug: ${slug}`);
 
   const input = await readSource(from);
-  const dir = path.join(ROOT, 'public', 'images', 'products', slug);
-  fs.mkdirSync(dir, { recursive: true });
-  let source = input;
-  if (opts.trim) {
-    // Crop empty margins, then leave 6% breathing room so the product never touches the tile edge.
-    const trimmed = await sharp(input).trim({ threshold: 12 }).toBuffer({ resolveWithObject: true });
-    const gap = Math.round(Math.max(trimmed.info.width, trimmed.info.height) * 0.06);
-    const meta = await sharp(input).metadata();
-    const edge = meta.hasAlpha ? { r: 255, g: 255, b: 255, alpha: 0 } : await cornerColor(input);
-    source = await sharp(trimmed.data)
-      .extend({ top: gap, bottom: gap, left: gap, right: gap, background: edge })
-      .toBuffer();
-  }
-  const canvas = opts.pad ? await cornerColor(input) : null;
-  for (const [name, width] of /** @type {const} */ ([
-    ['main', 800],
-    ['thumb', 300],
-  ])) {
-    const img = sharp(source);
-    if (canvas) img.resize({ width, height: Math.round((width * 4) / 3), fit: 'contain', background: canvas });
-    else img.resize({ width, withoutEnlargement: true });
-    await img.webp({ quality: 82 }).toFile(path.join(dir, `${name}.webp`));
-  }
+  const written = await writeProductImage(slug, input, { trim: !!opts.trim, pad: !!opts.pad });
   product.image = {
-    src: `/images/products/${slug}/main.webp`,
-    thumb: `/images/products/${slug}/thumb.webp`,
+    src: written.src,
+    thumb: written.thumb,
     alt: opts.alt || `${product.name}, official ${opts.credit} press photo`,
     credit: opts.credit,
     sourceUrl: opts.source,
   };
   writeData(DATA_DIR, { products: data.products });
-  console.log(`${slug}: image added (${fs.statSync(path.join(dir, 'main.webp')).size} bytes)`);
+  console.log(`${slug}: image added (${written.bytes} bytes)`);
 }
 
 main().catch((e) => {

@@ -2,7 +2,7 @@
   {
     "id": "iphone-duo",
     "slug": "iphone-duo",
-    "name": "iPhone Duo",
+    "name": "Apple iPhone Duo",
     "brand": "Apple",
     "category": "foldable",
     "releaseDate": "2026-10-23",
@@ -84,7 +84,7 @@
   {
     "id": "iphone-18-pro",
     "slug": "iphone-18-pro",
-    "name": "iPhone 18 Pro",
+    "name": "Apple iPhone 18 Pro",
     "brand": "Apple",
     "category": "phone",
     "releaseDate": "2026-09-18",
@@ -156,7 +156,7 @@
   {
     "id": "galaxy-z-fold-8",
     "slug": "galaxy-z-fold-8",
-    "name": "Galaxy Z Fold 8",
+    "name": "Samsung Galaxy Z Fold 8",
     "brand": "Samsung",
     "category": "foldable",
     "releaseDate": "2026-08-07",
@@ -229,7 +229,7 @@
   {
     "id": "iphone-17",
     "slug": "iphone-17",
-    "name": "iPhone 17",
+    "name": "Apple iPhone 17",
     "brand": "Apple",
     "category": "phone",
     "releaseDate": "2025-09-19",
@@ -307,7 +307,7 @@
   {
     "id": "iphone-17-pro",
     "slug": "iphone-17-pro",
-    "name": "iPhone 17 Pro",
+    "name": "Apple iPhone 17 Pro",
     "brand": "Apple",
     "category": "phone",
     "releaseDate": "2025-09-19",
@@ -381,7 +381,7 @@
   {
     "id": "iphone-air",
     "slug": "iphone-air",
-    "name": "iPhone Air",
+    "name": "Apple iPhone Air",
     "brand": "Apple",
     "category": "phone",
     "releaseDate": "2025-09-19",
@@ -459,7 +459,7 @@
   {
     "id": "galaxy-s26-ultra",
     "slug": "galaxy-s26-ultra",
-    "name": "Galaxy S26 Ultra",
+    "name": "Samsung Galaxy S26 Ultra",
     "brand": "Samsung",
     "category": "phone",
     "releaseDate": "2026-03-11",
@@ -537,7 +537,7 @@
   {
     "id": "pixel-11-pro",
     "slug": "pixel-11-pro",
-    "name": "Pixel 11 Pro",
+    "name": "Google Pixel 11 Pro",
     "brand": "Google",
     "category": "phone",
     "releaseDate": "2026-08-20",
@@ -615,7 +615,7 @@
   {
     "id": "galaxy-z-flip-8",
     "slug": "galaxy-z-flip-8",
-    "name": "Galaxy Z Flip 8",
+    "name": "Samsung Galaxy Z Flip 8",
     "brand": "Samsung",
     "category": "foldable",
     "releaseDate": "2026-08-07",
@@ -1079,7 +1079,7 @@
   {
     "id": "galaxy-s26",
     "slug": "galaxy-s26",
-    "name": "Galaxy S26",
+    "name": "Samsung Galaxy S26",
     "brand": "Samsung",
     "category": "phone",
     "releaseDate": "2026-03-11",
@@ -1157,7 +1157,7 @@
   {
     "id": "ipad-pro-m5",
     "slug": "ipad-pro-m5",
-    "name": "iPad Pro (M5)",
+    "name": "Apple iPad Pro (M5)",
     "brand": "Apple",
     "category": "tablet",
     "releaseDate": "2025-10-22",
@@ -1235,7 +1235,7 @@
   {
     "id": "iphone-17e",
     "slug": "iphone-17e",
-    "name": "iPhone 17e",
+    "name": "Apple iPhone 17e",
     "brand": "Apple",
     "category": "phone",
     "releaseDate": "2026-03-11",
@@ -1313,7 +1313,7 @@
   {
     "id": "macbook-air-m5",
     "slug": "macbook-air-m5",
-    "name": "MacBook Air (M5, 2026)",
+    "name": "Apple MacBook Air (M5, 2026)",
     "brand": "Apple",
     "category": "laptop",
     "releaseDate": "2026-03-11",
@@ -1391,7 +1391,7 @@
   {
     "id": "macbook-pro-14-m5",
     "slug": "macbook-pro-14-m5",
-    "name": "MacBook Pro 14-inch (M5)",
+    "name": "Apple MacBook Pro 14-inch (M5)",
     "brand": "Apple",
     "category": "laptop",
     "releaseDate": "2025-10-22",
@@ -1705,7 +1705,7 @@
   {
     "id": "pixel-watch-5",
     "slug": "pixel-watch-5",
-    "name": "Pixel Watch 5",
+    "name": "Google Pixel Watch 5",
     "brand": "Google",
     "category": "watch",
     "releaseDate": "2026-08-20",
@@ -1940,7 +1940,7 @@
   {
     "id": "galaxy-watch-9",
     "slug": "galaxy-watch-9",
-    "name": "Galaxy Watch 9",
+    "name": "Samsung Galaxy Watch 9",
     "brand": "Samsung",
     "category": "watch",
     "releaseDate": "2026-08-07",
@@ -2018,7 +2018,7 @@
   {
     "id": "airpods-pro-3",
     "slug": "airpods-pro-3",
-    "name": "AirPods Pro 3",
+    "name": "Apple AirPods Pro 3",
     "brand": "Apple",
     "category": "headphones",
     "releaseDate": "2025-09-19",
@@ -2096,7 +2096,7 @@
   {
     "id": "pixel-11",
     "slug": "pixel-11",
-    "name": "Pixel 11",
+    "name": "Google Pixel 11",
     "brand": "Google",
     "category": "phone",
     "releaseDate": "2026-08-20",
@@ -6346,7 +6346,7 @@
   {
     "id": "airpods-5",
     "slug": "airpods-5",
-    "name": "AirPods 5",
+    "name": "Apple AirPods 5",
     "brand": "Apple",
     "category": "headphones",
     "releaseDate": "2026-09-18",
@@ -6425,7 +6425,7 @@
   {
     "id": "headphone-1-pro",
     "slug": "headphone-1-pro",
-    "name": "Headphone (1) Pro",
+    "name": "Nothing Headphone (1) Pro",
     "brand": "Nothing",
     "category": "headphones",
     "releaseDate": "2026-09-29",
@@ -6504,7 +6504,7 @@
   {
     "id": "fitbit-edge",
     "slug": "fitbit-edge",
-    "name": "Fitbit Edge",
+    "name": "Google Fitbit Edge",
     "brand": "Google",
     "category": "wearable",
     "releaseDate": "2026-10-27",
@@ -6587,12 +6587,12 @@
   {
     "id": "momentum-true-wireless-5",
     "slug": "momentum-true-wireless-5",
-    "name": "Momentum True Wireless 5",
+    "name": "Sennheiser Momentum True Wireless 5",
     "brand": "Sennheiser",
     "category": "headphones",
     "releaseDate": "2026-09-21",
     "launchPrice": 299.95,
-    "officialUrl": "https://www.sennheiser-hearing.com",
+    "officialUrl": "https://us.sennheiser-hearing.com/products/momentum-true-wireless-5",
     "criticsTake": "Reviewers agree the Momentum True Wireless 5 delivers strong sound quality, a more comfortable smaller design, and user-replaceable batteries in both the earbuds and case. They also point to mixed battery results, uneven ANC results across reviews, and some fit or software quirks.",
     "loved": [
       "User-replaceable batteries",
@@ -6654,17 +6654,24 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-11-02"
+    "autoAdded": "2026-11-02",
+    "image": {
+      "src": "/images/products/momentum-true-wireless-5/main.webp",
+      "thumb": "/images/products/momentum-true-wireless-5/thumb.webp",
+      "alt": "Sennheiser Momentum True Wireless 5 earbuds in their open charging case",
+      "credit": "Sennheiser",
+      "sourceUrl": "https://us.sennheiser-hearing.com/products/momentum-true-wireless-5"
+    }
   },
   {
     "id": "macbook-pro-with-proled-xdr-display",
     "slug": "macbook-pro-with-proled-xdr-display",
-    "name": "MacBook Pro with PROLED XDR Display",
+    "name": "Apple MacBook Pro with PROLED XDR Display",
     "brand": "Apple",
     "category": "laptop",
     "releaseDate": "2026-11-06",
     "launchPrice": 2899,
-    "officialUrl": "https://www.apple.com/macbook-pro/",
+    "officialUrl": "https://www.apple.com/macbook-pro/proled-xdr-display/",
     "criticsTake": "Reviewers agree the new MacBook Pro’s tandem OLED display is the main change, with deeper blacks, higher contrast, and very high brightness than the previous mini-LED models. They also note the slimmer, lighter chassis and strong performance, while several reviews say the touchscreen adds little and the higher price is a concern.",
     "loved": [
       "Tandem OLED display with deep blacks",
@@ -6730,17 +6737,24 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-11-06"
+    "autoAdded": "2026-11-06",
+    "image": {
+      "src": "/images/products/macbook-pro-with-proled-xdr-display/main.webp",
+      "thumb": "/images/products/macbook-pro-with-proled-xdr-display/thumb.webp",
+      "alt": "Apple MacBook Pro with PROLED XDR Display, open, facing forward",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/macbook-pro/proled-xdr-display/"
+    }
   },
   {
     "id": "proart-p16-rtx-spark",
     "slug": "proart-p16-rtx-spark",
-    "name": "ProArt P16 (RTX Spark)",
-    "brand": "ASUS",
+    "name": "Asus ProArt P16 (RTX Spark)",
+    "brand": "Asus",
     "category": "laptop",
     "releaseDate": "2026-10-16",
     "launchPrice": 2799,
-    "officialUrl": "https://www.asus.com/laptops/for-creators/proart/proart-p16/",
+    "officialUrl": "https://www.asus.com/us/laptops/for-creators/proart/proart-p16-h7607/",
     "criticsTake": "Reviewers agree the ProArt P16 RTX Spark is a slim, premium 16-inch creator laptop with strong AI, creative and gaming performance. Its OLED display, keyboard, touchpad and port selection are widely praised, but the high price, some app or game compatibility issues, and middling battery life make it a niche buy.",
     "loved": [
       "Strong AI, creative and gaming performance",
@@ -6806,12 +6820,19 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-11-07"
+    "autoAdded": "2026-11-07",
+    "image": {
+      "src": "/images/products/proart-p16-rtx-spark/main.webp",
+      "thumb": "/images/products/proart-p16-rtx-spark/thumb.webp",
+      "alt": "Asus ProArt P16 laptop, open, in black",
+      "credit": "ASUS",
+      "sourceUrl": "https://www.asus.com/us/laptops/for-creators/proart/proart-p16-h7607/"
+    }
   },
   {
     "id": "ipad-mini-8th-gen",
     "slug": "ipad-mini-8th-gen",
-    "name": "iPad mini (8th gen)",
+    "name": "Apple iPad mini (A20 Pro)",
     "brand": "Apple",
     "category": "tablet",
     "releaseDate": "2026-11-06",
@@ -6820,15 +6841,15 @@
     "criticsTake": "Reviewers agree the iPad mini 8 is a major update with a thinner and lighter body, a larger 8.5-inch OLED display, and strong performance from the A20 Pro chip. The small size remains a key strength for reading, media, notes, and portability. The main concerns are the higher starting price and the display staying at 60Hz.",
     "loved": [
       "8.5-inch OLED display",
-      "thinner and lighter design",
+      "Thinner and lighter design",
       "IP67 water and dust resistance",
-      "fast A20 Pro performance"
+      "Fast A20 Pro performance"
     ],
     "gripes": [
-      "higher $699 starting price",
+      "Higher $699 starting price",
       "60Hz refresh rate",
-      "no Face ID",
-      "audio gets shouty at max volume"
+      "No Face ID",
+      "Audio gets shouty at max volume"
     ],
     "specs": [
       {
@@ -6877,6 +6898,13 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-11-08"
+    "autoAdded": "2026-11-08",
+    "image": {
+      "src": "/images/products/ipad-mini-8th-gen/main.webp",
+      "thumb": "/images/products/ipad-mini-8th-gen/thumb.webp",
+      "alt": "Apple iPad mini (A20 Pro) held in one hand",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/"
+    }
   }
 ]
