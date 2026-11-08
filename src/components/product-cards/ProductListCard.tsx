@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { ComputedProduct } from '@/lib/engine';
 import { getScoreTier } from '@/config/score-buckets';
-import { formatDate, formatPrice } from '@/lib/format';
+import { formatDate, formatMonth, formatPrice } from '@/lib/format';
 import { ProductImage } from './ProductImage';
 import { ProductChips } from './ProductChips';
 import { ScoreBadge } from './ScoreBadge';
@@ -20,21 +20,24 @@ export function ProductListCard({
   const tier = product.criticScore != null ? getScoreTier(product.criticScore) : null;
   const price = formatPrice(product.launchPrice);
   return (
-    <Link href={`/product/${product.slug}/`} className="card-interactive flex items-center gap-4 p-4 sm:gap-5 sm:p-5">
-      <div className="h-[84px] w-[84px] shrink-0 overflow-hidden rounded-lg sm:h-28 sm:w-28">
+    <Link href={`/product/${product.slug}/`} className="card-interactive flex items-center gap-3 p-3 sm:gap-5 sm:p-5">
+      <div className="h-[72px] w-[72px] shrink-0 overflow-hidden rounded-lg sm:h-28 sm:w-28">
         <ProductImage product={product} />
       </div>
       <div className="min-w-0 flex-1">
-        <Heading className="line-clamp-2 text-lg font-bold leading-tight sm:text-xl sm:leading-7">
+        <Heading className="text-base font-bold leading-snug sm:line-clamp-2 sm:text-xl sm:leading-7">
           {product.name}
         </Heading>
-        <div className="mt-1.5">
-          <ProductChips category={product.category} releaseDate={product.releaseDate} />
+        {/* The name starts with the brand, so this line is just category, date and price. Phones get the
+            month only so it fits beside the chip; the narrowest ones wrap it under the chip, never cut it. */}
+        <div className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+          <ProductChips category={product.category} />
+          <p className="whitespace-nowrap text-sm text-ink-muted">
+            <span className="sm:hidden">{formatMonth(product.releaseDate)}</span>
+            <span className="hidden sm:inline">{formatDate(product.releaseDate)}</span>
+            {price && <span className="hidden sm:inline"> · From {price}</span>}
+          </p>
         </div>
-        <p className="mt-2 text-sm text-ink-muted">
-          {product.brand} · {formatDate(product.releaseDate)}
-          {price && <span className="hidden sm:inline"> · From {price}</span>}
-        </p>
       </div>
       <div className="flex w-20 shrink-0 flex-col items-center gap-1 text-center sm:w-24">
         {tier && (

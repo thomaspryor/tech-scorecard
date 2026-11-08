@@ -13,8 +13,8 @@ export function MiniProductCard({ product }: { product: ComputedProduct }) {
           <ScoreBadge score={product.criticScore} size="sm" />
         </div>
       </div>
-      <p className="mt-2 line-clamp-2 text-sm font-semibold leading-snug">{product.name}</p>
-      <p className="text-xs text-ink-faint">{product.brand}</p>
+      {/* The name starts with the brand (validated), so no separate brand line. */}
+      <p className="mt-2 line-clamp-3 text-sm font-semibold leading-snug">{product.name}</p>
     </Link>
   );
 }
