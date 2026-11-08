@@ -261,15 +261,8 @@ const ART_KIND = {
   wearable: 'glasses',
 };
 
-/**
- * The name without a leading brand, as written: "Asus ProArt P16" -> "ProArt P16".
- * @param {string} name
- * @param {string} brand
- */
-const bareOf = (name, brand) => {
-  const n = name.trim();
-  return brand && n.toLowerCase().startsWith(`${brand.toLowerCase()} `) ? n.slice(brand.length + 1) : n;
-};
+/** Photos of new launches (product id -> image file), written to public/ only for launches being imported. @type {Map<string, Buffer>} */
+const launchPhotos = new Map();
 
 /** An image file from a brand site. @param {string} url */
 async function downloadImage(url) {
@@ -336,10 +329,11 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
   const made = [];
   for (const raw of found) {
     if (made.length >= MAX_NEW) break;
-    // The brand as the site spells it and in front of the name; the slug stays brandless, like the others.
-    const brand = siteBrand(raw.brand || '', products);
+    // The brand as the site spells it and in front of the name. The slug keeps the brand too, so a
+    // number-only model ("OnePlus 16") never becomes a bare "/product/16/".
+    const brand = siteBrand(raw.brand || '', products, raw.name);
     const c = { ...raw, brand, name: siteName(raw.name, brand) };
-    const id = slug(bareOf(raw.name, brand));
+    const id = slug(c.name);
     const dup = knownProduct({ ...c, id }, [...products, ...made.map((m) => m.product)]);
     if (dup) {
       console.log(`launch candidate ${c.name}: already on the site as ${dup.id}`);
@@ -350,18 +344,6 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
       curl(['-f', '-o', '/dev/null', '-A', UA, c.officialUrl]);
     } catch {
       console.log('  official page not readable, skipped');
-      continue;
-    }
-    // A launch goes live with its photo or not at all; without one it is tried again on a later run.
-    const photo = await findLaunchPhoto(c, {
-      fetchPage,
-      download: downloadImage,
-      judge: geminiImageText,
-      parse: (t) => parseJsonReply(t),
-      log: (m) => console.log(m),
-    });
-    if (!photo) {
-      console.log('  no usable official photo yet, skipped');
       continue;
     }
     const probe = { ...c, id };
@@ -378,6 +360,18 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
     }
     if (revs.length < MIN_REVIEWS_NEW_PRODUCT) {
       console.log(`  only ${revs.length} verified reviews, need ${MIN_REVIEWS_NEW_PRODUCT}`);
+      continue;
+    }
+    // A launch goes live with its photo or not at all; without one it is tried again on a later run.
+    const photo = await findLaunchPhoto(c, {
+      fetchPage,
+      download: downloadImage,
+      judge: geminiImageText,
+      parse: (t) => parseJsonReply(t),
+      log: (m) => console.log(m),
+    });
+    if (!photo) {
+      console.log('  no usable official photo yet, skipped');
       continue;
     }
     const texts = revs
@@ -413,14 +407,11 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
       art: { kind: ART_KIND[c.category], body: '#3a3d46', accent: '#8aa4d8', backdrop: ['#f4f6fb', '#e3e8f3'] },
       autoAdded: TODAY,
     };
-    const written = await writeProductImage(
-      id,
-      photo.buffer,
-      (await hasDarkBackground(photo.buffer)) ? { pad: true } : { trim: true },
-    );
+    // The files are written in main() just before the import, so a dry run or a failed run leaves none behind.
+    launchPhotos.set(id, photo.buffer);
     product.image = {
-      src: written.src,
-      thumb: written.thumb,
+      src: `/images/products/${id}/main.webp`,
+      thumb: `/images/products/${id}/thumb.webp`,
       alt: `${c.name}, official ${c.brand} photo`,
       credit: c.brand,
       sourceUrl: c.officialUrl,
@@ -565,6 +556,9 @@ async function main() {
     if (problems.length) fs.writeFileSync(path.join(OUT, 'problems.txt'), problems.join('\n') + '\n');
   };
   if (args['dry-run']) return;
+  for (const [id, buffer] of launchPhotos)
+    if (files.some((f) => path.basename(f) === `new-${id}.json`))
+      await writeProductImage(id, buffer, (await hasDarkBackground(buffer)) ? { pad: true } : { trim: true });
   if (!files.length) return writeOut();
   /** @type {{productId?: string, product?: Product, reviews: Review[]}[]} */
   const contents = files.map((f) => JSON.parse(fs.readFileSync(f, 'utf8')));

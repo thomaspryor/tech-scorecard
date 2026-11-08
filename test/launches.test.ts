@@ -85,6 +85,13 @@ describe('siteBrand and siteName', () => {
     expect(siteBrand('Sennheiser', brands)).toBe('Sennheiser');
   });
 
+  it('prefers a co-brand on the site that the name starts with', () => {
+    const site = [{ brand: 'Meta' }, { brand: 'Oakley Meta' }];
+    expect(siteBrand('Meta', site, 'Oakley Meta HSTN')).toBe('Oakley Meta');
+    expect(siteName('Oakley Meta HSTN', 'Oakley Meta')).toBe('Oakley Meta HSTN');
+    expect(siteBrand('Meta', site, 'Ray-Ban Display')).toBe('Meta');
+  });
+
   it('puts the brand in front of the name', () => {
     expect(siteName('iPad mini (A20 Pro)', 'Apple')).toBe('Apple iPad mini (A20 Pro)');
     expect(siteName('Momentum  True Wireless 5', 'Sennheiser')).toBe('Sennheiser Momentum True Wireless 5');

@@ -71,10 +71,16 @@ function sharedReviewUrls(urls, reviews) {
  * new product lands on the same brand page as the others.
  * @param {string} brand
  * @param {{brand: string}[]} products
+ * @param {string} [name] the product name as found
  */
-function siteBrand(brand, products) {
+function siteBrand(brand, products, name = '') {
   const b = brand.trim();
-  return products.find((p) => norm(p.brand) === norm(b))?.brand ?? b;
+  // A co-brand the site already uses that the name starts with wins: "Oakley Meta HSTN" is an "Oakley Meta" product.
+  const lead = products
+    .map((p) => p.brand)
+    .filter((x) => norm(x).length > norm(b).length && norm(name).startsWith(norm(x)))
+    .sort((x, y) => y.length - x.length)[0];
+  return lead ?? products.find((p) => norm(p.brand) === norm(b))?.brand ?? b;
 }
 
 /**

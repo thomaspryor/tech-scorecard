@@ -6,7 +6,7 @@ const sharp = (/** @type {any} */ input) => /** @type {any} */ (require('sharp')
 const { decodeEntities } = require('./page');
 
 /** Image URLs that are site furniture, never a product photo. */
-const NOT_A_PHOTO = /logo|icon|favicon|sprite|placeholder|badge|flag/i;
+const NOT_A_PHOTO = /(^|[^a-z])(logos?|icons?|favicon|sprite|placeholder|badges?|flags?)([^a-z]|$)/i;
 /** Smaller than this (in either direction) makes a blurry tile. */
 const MIN_SIZE = 500;
 /** How many candidates are downloaded and shown to the model at most. */
@@ -59,7 +59,7 @@ function photoCandidates(html, pageUrl) {
     }
     if (u.protocol === 'http:') u.protocol = 'https:';
     const href = u.toString();
-    if (u.protocol !== 'https:' || NOT_A_PHOTO.test(u.pathname) || out.includes(href)) continue;
+    if (u.protocol !== 'https:' || NOT_A_PHOTO.test(u.pathname.split('/').pop() || '') || out.includes(href)) continue;
     out.push(href);
   }
   return out;
@@ -87,31 +87,35 @@ async function findLaunchPhoto(c, io) {
     return null;
   }
   for (const url of photoCandidates(html, c.officialUrl).slice(0, MAX_CANDIDATES)) {
+    let buffer;
+    let jpeg;
     try {
-      const buffer = await io.download(url);
+      buffer = await io.download(url);
       const { width = 0, height = 0 } = await sharp(buffer).metadata();
       if (width < MIN_SIZE || height < MIN_SIZE / 2) {
         log(`  photo too small (${width}x${height}): ${url}`);
         continue;
       }
-      const jpeg = await sharp(buffer)
+      jpeg = await sharp(buffer)
         .flatten({ background: '#fff' })
         .resize({ width: 768, withoutEnlargement: true })
         .jpeg({ quality: 80 })
         .toBuffer();
-      const verdict = io.parse(
-        await io.judge(
-          `This image is from the official web page of the ${c.brand} product "${c.name}". Could it be used as the product's photo on a review site?
+    } catch (e) {
+      log(`  photo not usable (${e instanceof Error ? e.message.slice(0, 80) : e}): ${url}`);
+      continue;
+    }
+    // A failing model call throws: an outage must reach the run's alert, not read as "no photo".
+    const verdict = io.parse(
+      await io.judge(
+        `This image is from the official web page of the ${c.brand} product "${c.name}". Could it be used as the product's photo on a review site?
 Answer yes only if it clearly shows that product itself, large and recognizable. Answer no for a logo, a wordmark, a banner that is mostly text, a photo of a different or older product, a lineup of several different products, an abstract graphic, or a scene where the product is small or hidden.
 Reply JSON only: {"ok": true or false, "reason": "a few words"}`,
-          jpeg,
-        ),
-      );
-      if (verdict?.ok === true) return { buffer, url };
-      log(`  photo rejected (${verdict?.reason || 'no answer'}): ${url}`);
-    } catch (e) {
-      log(`  photo check failed (${e instanceof Error ? e.message.slice(0, 80) : e}): ${url}`);
-    }
+        jpeg,
+      ),
+    );
+    if (verdict?.ok === true) return { buffer, url };
+    log(`  photo rejected (${verdict?.reason || 'no answer'}): ${url}`);
   }
   return null;
 }

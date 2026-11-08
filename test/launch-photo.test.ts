@@ -17,6 +17,11 @@ describe('photoCandidates', () => {
     ]);
   });
 
+  it('keeps photos whose file name only contains a filtered word', () => {
+    const html = `<meta property="og:image" content="https://a.example.com/s27-flagship-hero.jpg"><meta property="og:image" content="https://a.example.com/brand_logo.png">`;
+    expect(photoCandidates(html, 'https://a.example.com/')).toEqual(['https://a.example.com/s27-flagship-hero.jpg']);
+  });
+
   it('upgrades http and skips broken JSON-LD', () => {
     const html = `<meta content="http://a.example.com/p.jpg" property="og:image"><script type="application/ld+json">{bad</script>`;
     expect(photoCandidates(html, 'https://a.example.com/')).toEqual(['https://a.example.com/p.jpg']);
@@ -69,5 +74,18 @@ describe('findLaunchPhoto', () => {
       parse: JSON.parse,
     });
     expect(got).toBeNull();
+  });
+
+  it('throws when the model call fails, so the run raises an alert', async () => {
+    await expect(
+      findLaunchPhoto(c, {
+        fetchPage: () => page,
+        download: () => image(1000, 1000),
+        judge: async () => {
+          throw new Error('HTTP 429');
+        },
+        parse: JSON.parse,
+      }),
+    ).rejects.toThrow('429');
   });
 });
