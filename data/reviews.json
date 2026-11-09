@@ -27856,5 +27856,362 @@
     },
     "scoreReason": "Excellent upgrades and fun to use, but the high price makes it hard to recommend widely.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "macworld",
+    "critic": "Roman Loyola",
+    "url": "https://www.macworld.com/article/3279129/touchscreen-macbook-pro-proled-display-review.html",
+    "date": "2026-11-06",
+    "rating": null,
+    "score": 98,
+    "scoreSource": "text",
+    "excerpt": "The MacBook Pro with PROLED XDR Display raises the bar of Apple excellence.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 100
+    },
+    "scoreReason": "Enthusiastic praise calls it Apple’s finest MacBook and best laptop, with price caveats for some buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "techradar",
+    "critic": "Matt Hanson",
+    "url": "https://www.techradar.com/computing/macbooks/apple-macbook-pro-with-proled-xdr-display-16-inch-2026-m5-max",
+    "date": "2026-11-05",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "That said, if you're a creative professional who needs an incredibly powerful laptop with one of the best screens on the market, this MacBook Pro is an excellent investment.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding display, power and battery life, with pricey, niche touchscreen and limited mainstream appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "cnet",
+    "critic": "Matt Elliott",
+    "url": "https://www.cnet.com/tech/computing/asus-zenbook-a16-2026-review-ai-laptop/",
+    "date": "2026-04-19",
+    "rating": "8.5/10",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "With its stellar application and AI performance, the Zenbook A16 is a modern laptop well equipped for today's demands and those of tomorrow.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 86
+    },
+    "scoreReason": "Strongly recommended for performance, display and portability, with price, gaming and Arm compatibility caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "techradar",
+    "critic": "Lewis Maddison",
+    "url": "https://www.techradar.com/computing/laptops/asus-zenbook-a16-review",
+    "date": "2026-04-15",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The super light design and excellent display are big plus points for the Zenbook A16, but the middling graphical performance and high price hamper its value compared to the alternatives.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Very light, great display and battery, but poor graphics and high price limit its appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "zdnet",
+    "critic": "Kyle Kucharski",
+    "url": "https://www.zdnet.com/article/asus-zenbook-a16-review/",
+    "date": "2026-04-07",
+    "rating": "3.5/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "It's an attractive, future-facing 16-inch with a powerful processor and a gorgeous OLED display, a full suite of connectivity and a unique aesthetic.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Strong performance and display, but build quality, battery inconsistency, and experimental feel temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hp-omnibook-ultra-14-2026",
+    "outletId": "cnet",
+    "critic": "Matt Elliott",
+    "url": "https://www.cnet.com/tech/computing/hp-omnibook-ultra-14-review-stunning-design-strong-performance-make-it-a-macbook-killer/",
+    "date": "2026-06-18",
+    "rating": "8.3/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "If you like the idea of Apple's MacBook Pro but want that premium design, strong overall performance and lengthy battery life in a Windows machine, the OmniBook Ultra 14 is the move I'd make.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for design, performance and battery, with notable caveats on price, ports and Arm compatibility.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "cnet",
+    "critic": "Andrew Lanxon",
+    "url": "https://www.cnet.com/tech/mobile/nothing-phone-4a-pro-review/",
+    "date": "2026-05-09",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "For its price, the Nothing Phone 4A Pro packs in everything you'd expect from an everyday phone and is well worth considering if you want a new Android handset that won't break the bank.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Strong value, good cameras and design, but battery and some software/design quirks hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "9to5google",
+    "critic": "Ben Schoon",
+    "url": "https://9to5google.com/2026/04/03/nothing-phone-4a-pro-review/",
+    "date": "2026-04-03",
+    "rating": "5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "While I think Pixel 10a, overall, is a better phone, it’s hard to argue against Nothing Phone (4a) Pro as the best alternative for those who want a bigger screen or simply want something other than a Pixel.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong recommendation with standout design, camera, battery, despite notable glyph and performance drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "android-central",
+    "critic": "Nicholas Sutrich",
+    "url": "https://www.androidcentral.com/phones/nothing-phones/nothing-phone-4a-pro-review",
+    "date": "2026-04-13",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The Nothing 4a Pro is the best phone for $499 today, thanks to its class-leading build quality, design, and display.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 97
+    },
+    "scoreReason": "Strongly recommends it as the best $499 phone, with only moderate camera and wireless charging drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "zdnet",
+    "critic": "Prakhar Khanna",
+    "url": "https://www.zdnet.com/article/nothing-phone-4a-pro-review/",
+    "date": "2026-03-23",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Nothing Phone 4a Pro outdoes its midrange competitors with a premium build, smooth user experience, and a versatile camera setup.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 86
+    },
+    "scoreReason": "Strong praise for design, performance, display, and value, with moderate concerns about Glyph utility and some compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/2132506/samsung-galaxy-s26-ultra-review/",
+    "date": "2026-03-26",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "If you want one of the best phones you can get in the Android world, it's an excellent option.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent Android flagship with useful display innovation, but only modest yearly upgrades and a few missing features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "mobile-syrup",
+    "critic": "Dean Daley",
+    "url": "https://mobilesyrup.com/2026/03/11/samsung-galaxy-s26-ultra-review-canada/",
+    "date": "2026-03-11",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "But after spending some time with the Galaxy S26U, I can easily say this is one of the best smartphones I've ever used.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise for performance, camera and overall experience, despite high price and some battery and camera issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-s26-ultra-review",
+    "date": "2026-03-09",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "With seven years of software support, Privacy Display, and a camera system that finally gets colors right, this is the Android phone that everyone else is trying to catch.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise overall, but display compromises and limited upgrade value for recent owners hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/mar/16/samsung-galaxy-s26-ultra-review",
+    "date": "2026-03-16",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy S26 Ultra remains the most capable of all slab phones, packed with an unrivalled set of features.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Excellent Android flagship with standout screen, cameras and battery, but pricey and only modestly improved.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "the-independent",
+    "critic": "David Phelan",
+    "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/phones-accessories/samsung-galaxy-s26-ultra-review-b2933457.html",
+    "date": "2026-03-06",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "Samsung’s new flagship is the best phone it has made to date, and the best Android phone currently available.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strongly praised as Samsung’s best and top Android phone, with only minor design and accessory caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "sammyguru",
+    "critic": "Sumit Adhikari",
+    "url": "https://sammyguru.com/samsung-galaxy-s26-review/",
+    "date": "2026-04-30",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "The challenge with the Galaxy S26 isn't what it does; it's what it doesn't do.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Polished and fast with strong software, but underwhelming cameras, slow charging, and limited upgrades hurt value.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro-fold",
+    "outletId": "hardwarezone",
+    "critic": "Cheryl Tan",
+    "url": "https://www.hardwarezone.com.sg/mobile/smartphones/google-pixel-11-pro-fold-review-has-google-finally-produced-competitive-foldable",
+    "date": "2026-11-09",
+    "rating": null,
+    "score": 54,
+    "scoreSource": "text",
+    "excerpt": "While the software and polish are already there, Google still has a laundry list of hardware upgrades to make.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 57,
+      "gemini": 50
+    },
+    "scoreReason": "Strong software and decent battery, but overpriced with lagging foldable hardware and several frustrating compromises.",
+    "scoredFromFullText": true
   }
 ]
