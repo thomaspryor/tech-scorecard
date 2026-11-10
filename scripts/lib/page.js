@@ -106,6 +106,18 @@ function normQuote(s) {
 const containsQuote = (text, excerpt) => normQuote(text).includes(normQuote(excerpt).replace(/[.!?…]+$/, ''));
 
 /**
+ * A page's published date as YYYY-MM-DD. ISO dates are cut to the day; a written date such as GSMArena's
+ * "17 July 2026" is read as UTC. Anything else is returned as it came, so the date check rejects it.
+ * @param {string} s
+ */
+function isoDate(s) {
+  const t = s.trim();
+  if (/^\d{4}-\d{2}-\d{2}/.test(t)) return t.slice(0, 10);
+  const ms = Date.parse(/Z|GMT|UTC|[+-]\d{2}:?\d{2}$/.test(t) ? t : `${t} UTC`);
+  return Number.isNaN(ms) ? t.slice(0, 10) : new Date(ms).toISOString().slice(0, 10);
+}
+
+/**
  * Rating, critic and date from the page's own JSON-LD. Never guessed: a field the page does not
  * state is left out.
  * @param {string} html
@@ -130,7 +142,7 @@ function jsonLd(html) {
       const name = typeof a === 'string' ? a : a?.name;
       if (name && name.length < 60) found.critic = name;
     }
-    if (n.datePublished && !found.date) found.date = String(n.datePublished).slice(0, 10);
+    if (n.datePublished && !found.date) found.date = isoDate(String(n.datePublished));
     Object.values(n).forEach(walk);
   };
   for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
@@ -164,5 +176,6 @@ module.exports = {
   normQuote,
   containsQuote,
   jsonLd,
+  isoDate,
   hostOf,
 };
