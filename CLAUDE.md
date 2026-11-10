@@ -18,7 +18,7 @@ The owner is not technical and does not review code, read diffs, or merge PRs. T
 
 ## Automation
 
-Nothing here waits on a person. The daily refresh adds reviews and launches (with photos); `dependabot-merge.yml` merges green dependency updates; a scheduled "Tech Scorecard daily caretaker" session follows docs/CARETAKER.md every evening (failed runs, stuck PRs, model disagreements). Anything new that would need a human step gets automated or added to CARETAKER.md.
+Nothing here waits on a person. The daily refresh adds reviews and launches (with photos) and backfills up to 3 older products a day into thin categories (docs/PIPELINE.md, "Backfill"; never add products by hand); `dependabot-merge.yml` merges green dependency updates; a scheduled "Tech Scorecard daily caretaker" session follows docs/CARETAKER.md every evening (failed runs, stuck PRs, model disagreements). Anything new that would need a human step gets automated or added to CARETAKER.md.
 
 ## Rules
 

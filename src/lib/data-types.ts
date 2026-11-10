@@ -1,4 +1,17 @@
-export type Category = 'phone' | 'foldable' | 'tablet' | 'laptop' | 'headphones' | 'watch' | 'console' | 'wearable';
+export type Category =
+  | 'phone'
+  | 'foldable'
+  | 'tablet'
+  | 'laptop'
+  | 'headphones'
+  | 'watch'
+  | 'console'
+  | 'wearable'
+  | 'earbuds'
+  | 'tv'
+  | 'camera'
+  | 'e-reader'
+  | 'handheld';
 export type ArtKind =
   | 'phone'
   | 'foldable'
@@ -10,7 +23,11 @@ export type ArtKind =
   | 'watch'
   | 'console'
   | 'glasses'
-  | 'headset';
+  | 'headset'
+  | 'tv'
+  | 'camera'
+  | 'ereader'
+  | 'handheld';
 
 export interface Spec {
   label: string;
@@ -43,6 +60,8 @@ export interface Product {
   art: { kind: ArtKind; body: string; accent: string; backdrop: [string, string] };
   /** YYYY-MM-DD, set when scripts/refresh.js added the product as a new launch. */
   autoAdded?: string;
+  /** YYYY-MM-DD, set (next to autoAdded) when the daily backfill added an older product to fill a thin category. */
+  backfilled?: string;
 }
 
 export interface Review {

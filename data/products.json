@@ -6906,5 +6906,85 @@
       "credit": "Apple",
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/"
     }
+  },
+  {
+    "id": "samsung-galaxy-tab-s11-ultra",
+    "slug": "samsung-galaxy-tab-s11-ultra",
+    "name": "Samsung Galaxy Tab S11 Ultra",
+    "brand": "Samsung",
+    "category": "tablet",
+    "releaseDate": "2025-09-04",
+    "launchPrice": 1199.99,
+    "officialUrl": "https://www.samsung.com/us/tablets/galaxy-tab-s11/buy/",
+    "criticsTake": "Reviewers agree the Galaxy Tab S11 Ultra stands out for its huge 14.6-inch AMOLED display, strong media experience, and long battery life. They also repeatedly call out its high price, very large size, and performance that does not always match what buyers may expect at this level.",
+    "loved": [
+      "14.6-inch AMOLED display",
+      "Long battery life",
+      "S Pen included",
+      "Great speakers"
+    ],
+    "gripes": [
+      "Very expensive",
+      "Big and heavy to hold",
+      "Performance lags price expectations",
+      "Keyboard case often feels necessary",
+      "Android app ecosystem limits pro use"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14.6-inch Dynamic AMOLED 2X"
+      },
+      {
+        "label": "Resolution",
+        "value": "2960 x 1848"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "120Hz"
+      },
+      {
+        "label": "Peak brightness",
+        "value": "1,600 nits"
+      },
+      {
+        "label": "Processor",
+        "value": "MediaTek Dimensity 9400+"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB, 512GB, or 1TB"
+      },
+      {
+        "label": "Battery",
+        "value": "11,600mAh"
+      },
+      {
+        "label": "Price",
+        "value": "From $1199.99"
+      }
+    ],
+    "art": {
+      "kind": "tablet",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-10",
+    "backfilled": "2026-11-10",
+    "image": {
+      "src": "/images/products/samsung-galaxy-tab-s11-ultra/main.webp",
+      "thumb": "/images/products/samsung-galaxy-tab-s11-ultra/thumb.webp",
+      "alt": "Samsung Galaxy Tab S11 Ultra, official Samsung photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://www.samsung.com/us/tablets/galaxy-tab-s11/buy/"
+    }
   }
 ]

@@ -8,7 +8,14 @@
 // on its own, so one bad file is rejected without losing the rest of the run; anything that went
 // wrong is listed in .cache/refresh/problems.txt and the workflow alerts on it after committing.
 //
+// With --backfill-only it instead fills catalogue gaps (scripts/lib/backfill.js has the rules): up to 3 older
+// well-reviewed products a day, found by search and built exactly like a new launch (at least 5 reviews from
+// known outlets, an official photo, a card). It runs after the normal refresh in refresh-pipeline.sh, adds its
+// products to the same .cache/refresh/touched.txt and added.txt, and so goes through the same quote check,
+// scoring, thin-product and build steps. A failed backfill is reported in problems.txt; it never fails the run.
+//
 // Usage: node scripts/refresh.js [--max-products=15] [--max-new=2] [--only=id,id] [--no-launches] [--no-feeds] [--dry-run]
+//        node scripts/refresh.js --backfill-only [--category=tablet] [--max-backfill=3] [--dry-run]
 // Needs GEMINI_API_KEY (search + excerpt picking) and OPENAI_API_KEY (copy for new products).
 // Writes files in .cache/refresh/ in the import-product.js shapes and imports them unless --dry-run.
 const fs = require('fs');
@@ -30,6 +37,7 @@ const { urlKey } = require('./lib/launches');
 const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
 const { openaiText, geminiText, geminiImageText, parseJsonReply } = require('./lib/models');
 const { findLaunchPhoto } = require('./lib/launch-photo');
+const backfill = require('./lib/backfill');
 const { hasDarkBackground, writeProductImage, removeProductImage } = require('./lib/product-image');
 
 /** @typedef {import('../src/lib/data-types').Product} Product */
@@ -38,11 +46,13 @@ const { hasDarkBackground, writeProductImage, removeProductImage } = require('./
 /** The fields of a product (or a launch candidate) a review search needs. */
 /** @typedef {Pick<Product, 'id' | 'name' | 'brand' | 'releaseDate'>} ProductRef */
 /** @typedef {{review: Review, skip?: undefined} | {skip: string, review?: undefined}} BuildResult */
+/** A new product ready to import, with the reviews it was built from. @typedef {{product: Product, reviews: Review[], newOutlets: []}} Made */
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, '.cache', 'refresh');
 const STATE_FILE = path.join(DATA_DIR, 'refresh-state.json');
 const REJECTED_FILE = path.join(DATA_DIR, 'refresh-rejected.json');
+const BACKFILL_FILE = path.join(DATA_DIR, 'backfill-state.json');
 /** A page judged not to be a review of the product is not sent to the model again for this long. */
 const REJECTED_DAYS = 30;
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -65,8 +75,12 @@ const args = Object.fromEntries(
 const MAX_PRODUCTS = Number(args['max-products'] || 15);
 const MAX_NEW = Number(args['max-new'] ?? 2);
 const only = args.only ? new Set(String(args.only).split(',')) : null;
+const BACKFILL_ONLY = !!args['backfill-only'];
 
-const CATEGORIES = /** @type {{categories: Category[], artKinds: string[]}} */ (loadCategories());
+const CATEGORIES =
+  /** @type {{categories: Category[], artKinds: string[], expansion: import('./lib/backfill').Config['expansion']}} */ (
+    loadCategories()
+  );
 const { products, reviews, outlets } = loadData();
 /** Product id -> date it was last checked (YYYY-MM-DD). @type {Record<string, string>} */
 const state = fs.existsSync(STATE_FILE) ? JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')) : {};
@@ -134,11 +148,12 @@ async function readFeeds() {
  * Ask Gemini (with Google Search) for review URLs for one product on outlets we know.
  * @param {ProductRef} product
  * @param {Set<string>} skipOutletIds
+ * @param {boolean} [majorOnly] ask only about the tier 1 and 2 outlets (a second pass after a thin first one)
  * @returns {Promise<string[]>}
  */
-async function findReviewUrls(product, skipOutletIds) {
+async function findReviewUrls(product, skipOutletIds, majorOnly = false) {
   const list = outlets
-    .filter((o) => !skipOutletIds.has(o.id))
+    .filter((o) => !skipOutletIds.has(o.id) && (!majorOnly || o.tier <= 2))
     .map((o) => `${o.name} (${o.domain})`)
     .join(', ');
   const text = await geminiText(
@@ -227,11 +242,12 @@ ${text.slice(0, 30000)}`,
  * @param {Review[]} existing
  * @param {string[]} [feedUrls] pages from outlet feeds whose headline names the product
  * @param {boolean} [search] also ask Gemini to search for reviews
+ * @param {boolean} [majorOnly] search only the tier 1 and 2 outlets
  */
-async function collectReviews(product, existing, feedUrls = [], search = true) {
+async function collectReviews(product, existing, feedUrls = [], search = true, majorOnly = false) {
   const have = new Set(existing.map((r) => r.outletId));
   // Feed pages first: they are this product's reviews by headline, so they need no search to find.
-  const urls = [...feedUrls, ...(search ? await findReviewUrls(product, have) : [])];
+  const urls = [...feedUrls, ...(search ? await findReviewUrls(product, have, majorOnly) : [])];
   /** @type {Review[]} */
   const out = [];
   for (const url of [...new Set(urls)]) {
@@ -259,6 +275,11 @@ const ART_KIND = {
   watch: 'watch',
   console: 'console',
   wearable: 'glasses',
+  earbuds: 'earbuds',
+  tv: 'tv',
+  camera: 'camera',
+  'e-reader': 'ereader',
+  handheld: 'handheld',
 };
 
 /** Photos of new launches (product id -> image file), written to public/ only for launches being imported. @type {Map<string, Buffer>} */
@@ -295,7 +316,7 @@ async function geminiTextRetry(prompt, opts) {
 /**
  * New launches: find them, collect reviews, and only keep products that reach the review minimum.
  * @param {{title: string, url: string}[]} leads recent review headlines from outlet feeds that name no product on the site
- * @returns {Promise<{product: Product, reviews: Review[], newOutlets: []}[]>}
+ * @returns {Promise<Made[]>}
  */
 async function newLaunches(leads) {
   // Products already on the site are filtered out in code below, so the prompt stays short and the search fast.
@@ -303,9 +324,11 @@ async function newLaunches(leads) {
     .slice(0, MAX_LEADS)
     .map((l) => `- ${l.title} (${hostOf(l.url)})`)
     .join('\n');
+  // A category the backfill is still opening is not live yet; its products come in through the backfill, in order.
+  const liveCategories = backfill.liveCategories(products, reviews, CATEGORIES);
   const text = await geminiTextRetry(
     `Today is ${TODAY}. Using search, list up to 6 consumer gadgets that went on sale in the US within the last ${LAUNCH_WINDOW_DAYS} days and already have several professional reviews from major tech outlets.
-Categories allowed: ${CATEGORIES.categories.join(', ')}.${
+Categories allowed: ${[...liveCategories].join(', ')}.${
       headlines
         ? `\nLeads: these review headlines appeared this fortnight on outlets we follow. A gadget several of them review is a strong candidate; confirm its facts with search. Ignore games, films, books and other products outside the categories.\n${headlines}`
         : ''
@@ -318,107 +341,194 @@ Reply with a JSON array only: [{"name":"","brand":"","category":"","releaseDate"
   const found = candidates.filter(
     (c) =>
       c.name &&
-      CATEGORIES.categories.includes(c.category) &&
+      liveCategories.has(c.category) &&
       /^\d{4}-\d{2}-\d{2}$/.test(c.releaseDate) &&
       c.releaseDate <= TODAY &&
       c.releaseDate >= daysBefore(TODAY, LAUNCH_WINDOW_DAYS) &&
       Number.isFinite(c.launchPrice) &&
       /^https:\/\//.test(c.officialUrl || ''),
   );
-  /** @type {{product: Product, reviews: Review[], newOutlets: []}[]} */
+  /** @type {Made[]} */
   const made = [];
   for (const raw of found) {
     if (made.length >= MAX_NEW) break;
-    // The brand as the site spells it and in front of the name. The slug keeps the brand too, so a
-    // number-only model ("OnePlus 16") never becomes a bare "/product/16/".
-    const brand = siteBrand(raw.brand || '', products, raw.name);
-    const c = { ...raw, brand, name: siteName(raw.name, brand) };
-    const id = slug(c.name);
-    const dup = knownProduct({ ...c, id }, [...products, ...made.map((m) => m.product)]);
+    const { c, id, dup } = siteCandidate(raw, [...products, ...made.map((m) => m.product)]);
     if (dup) {
       console.log(`launch candidate ${c.name}: already on the site as ${dup.id}`);
       continue;
     }
     console.log(`new launch candidate: ${c.name}`);
-    try {
-      curl(['-f', '-o', '/dev/null', '-A', UA, c.officialUrl]);
-    } catch {
-      console.log('  official page not readable, skipped');
-      continue;
-    }
-    const probe = { ...c, id };
-    const fromFeeds = leads.filter((l) => matchProduct(l.title, [probe])).map((l) => l.url);
-    const revs = await collectReviews(probe, [], fromFeeds);
-    // Name matching misses renames ("MacBook Air M5" vs "MacBook Air (M5, 2026)"); the same review pages do not.
-    const shared = sharedReviewUrls(
-      revs.map((r) => r.url),
-      reviews,
-    );
-    if (isRenamedDuplicate(shared, revs.length)) {
-      console.log('  its reviews are already on the site under another product, skipped');
-      continue;
-    }
-    if (revs.length < MIN_REVIEWS_NEW_PRODUCT) {
-      console.log(`  only ${revs.length} verified reviews, need ${MIN_REVIEWS_NEW_PRODUCT}`);
-      continue;
-    }
-    // A launch goes live with its photo or not at all; without one it is tried again on a later run.
-    const photo = await findLaunchPhoto(c, {
-      fetchPage,
-      download: downloadImage,
-      judge: geminiImageText,
-      parse: (t) => parseJsonReply(t),
-      log: (m) => console.log(m),
-    });
-    if (!photo) {
-      console.log('  no usable official photo yet, skipped');
-      continue;
-    }
-    const texts = revs
-      .slice(0, 8)
-      .map((r) => {
-        try {
-          return `SOURCE ${r.outletId}: ${pageText(fetchPage(r.url)).slice(0, 6000)}`;
-        } catch {
-          return ''; // the review itself was already verified; the card just has one source fewer
-        }
-      })
-      .filter(Boolean)
-      .join('\n\n');
-    const copy = await writeCard(c, texts);
-    if (!copy) {
-      console.log('  could not write the card, skipped');
-      continue;
-    }
-    /** @type {Product} */
-    const product = {
-      id,
-      slug: id,
-      name: c.name,
-      brand: c.brand,
-      category: c.category,
-      releaseDate: c.releaseDate,
-      launchPrice: c.launchPrice,
-      officialUrl: c.officialUrl,
-      criticsTake: copy.criticsTake,
-      loved: copy.loved,
-      gripes: copy.gripes,
-      specs: copy.specs,
-      art: { kind: ART_KIND[c.category], body: '#3a3d46', accent: '#8aa4d8', backdrop: ['#f4f6fb', '#e3e8f3'] },
-      autoAdded: TODAY,
-    };
-    // The files are written in main() just before the import, so a dry run or a failed run leaves none behind.
-    launchPhotos.set(id, photo.buffer);
-    product.image = {
-      src: `/images/products/${id}/main.webp`,
-      thumb: `/images/products/${id}/thumb.webp`,
-      alt: `${c.name}, official ${c.brand} photo`,
-      credit: c.brand,
-      sourceUrl: c.officialUrl,
-    };
-    made.push({ product, reviews: revs, newOutlets: [] });
+    const m = await buildNewProduct(c, id, leads, { minReviews: MIN_REVIEWS_NEW_PRODUCT });
+    if (m) made.push(m);
   }
   return made;
+}
+
+/**
+ * A candidate the way the site writes it: the brand as the site spells it and in front of the name (the slug
+ * keeps the brand too, so a number-only model like "OnePlus 16" never becomes a bare "/product/16/"), its id,
+ * and the product already on the site it duplicates, if any.
+ * @template {{name: string, brand: string}} C
+ * @param {C} raw
+ * @param {{id: string, slug?: string, name: string, brand: string}[]} others products to compare with
+ */
+function siteCandidate(raw, others) {
+  const brand = siteBrand(raw.brand || '', products, raw.name);
+  const c = { ...raw, brand, name: siteName(raw.name, brand) };
+  const id = slug(c.name);
+  return { c, id, dup: knownProduct({ ...c, id }, others) };
+}
+
+/**
+ * The brand's own press or newsroom pages for a product, found by search (the caller keeps only pages on the
+ * brand's own site). Their share images are judged like the official page's.
+ * @param {{name: string, brand: string, officialUrl: string}} c
+ * @returns {Promise<string[]>}
+ */
+async function findPressPages(c) {
+  const text = await geminiTextRetry(
+    `Find the ${c.brand}'s own press release or newsroom page(s) about the ${c.name} (the brand's website only, not retailers or review sites). Return only URLs you actually saw in search results. Reply with a JSON array only: [{"url":"https://..."}]`,
+    { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
+  );
+  /** @type {{url?: unknown}[]} */
+  const found = parseJsonReply(text, '[') || [];
+  return found
+    .map((x) => resolveRedirect(x.url))
+    .filter(/** @returns {u is string} */ (u) => typeof u === 'string' && /^https:\/\//.test(u));
+}
+
+/**
+ * The facts a backfill candidate must get right, from a search about that one product: when it went on sale, its US
+ * launch price, and its own page on the brand's site. A list of eight products gets sloppy dates and guessed
+ * links, and the review date check trusts the date. Null (with the reason printed) when it went on sale outside the
+ * backfill's window or no brand page can be read. A fact the search does not give keeps the candidate's own.
+ * @param {{name: string, brand: string, releaseDate: string, launchPrice: number, officialUrl: string}} c
+ * @returns {Promise<{releaseDate: string, launchPrice: number, officialUrl: string} | null>}
+ */
+async function confirmFacts(c) {
+  const text = await geminiTextRetry(
+    `Using search: on what date did the ${c.brand} ${c.name} first go on sale in the US (retail availability, not the announcement), what was its US launch price in USD for the base model, and what is its own product page on ${c.brand}'s website (not the home page, a category page or a retailer)? Reply JSON only: {"onSale":"YYYY-MM-DD","launchPrice":<number>,"officialUrl":"https://..."}`,
+    { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
+  );
+  const got = parseJsonReply(text);
+  const releaseDate = /^\d{4}-\d{2}-\d{2}$/.test(got?.onSale) ? got.onSale : c.releaseDate;
+  const launchPrice = Number.isFinite(got?.launchPrice) && got.launchPrice > 0 ? got.launchPrice : c.launchPrice;
+  if (releaseDate !== c.releaseDate) console.log(`  on sale ${releaseDate}, not ${c.releaseDate} as first listed`);
+  if (releaseDate > TODAY || releaseDate < backfill.monthsBefore(TODAY, backfill.WINDOW_MONTHS)) {
+    console.log(`  on sale ${releaseDate}, outside the last ${backfill.WINDOW_MONTHS} months, skipped`);
+    return null;
+  }
+  const pages = [c.officialUrl, got?.officialUrl].filter((u) => typeof u === 'string' && /^https:\/\//.test(u));
+  for (const officialUrl of new Set(pages)) {
+    try {
+      curl(['-f', '-o', '/dev/null', '-A', UA, officialUrl]);
+      return { releaseDate, launchPrice, officialUrl };
+    } catch {
+      /* try the other page */
+    }
+  }
+  console.log('  official page not readable, skipped');
+  return null;
+}
+
+/**
+ * Everything a new product needs beyond its facts: reviews from outlets we know (at least `minReviews`, each
+ * read from the outlet's own page), an official photo, and a card written from the review texts. Null, with the
+ * reason printed, when any is missing. Used for new launches and for the backfill alike.
+ * @param {{name: string, brand: string, category: Category, releaseDate: string, launchPrice: number, officialUrl: string}} c
+ * @param {string} id
+ * @param {{title: string, url: string}[]} leads feed headlines that may point at this product's reviews
+ * @param {{minReviews: number, backfilled?: boolean}} opts
+ * @returns {Promise<Made | null>}
+ */
+async function buildNewProduct(c, id, leads, { minReviews, backfilled = false }) {
+  try {
+    curl(['-f', '-o', '/dev/null', '-A', UA, c.officialUrl]);
+  } catch {
+    console.log('  official page not readable, skipped');
+    return null;
+  }
+  const probe = { ...c, id };
+  const fromFeeds = leads.filter((l) => matchProduct(l.title, [probe])).map((l) => l.url);
+  // An older product's reviews are spread over search results, and a question about all 170 outlets at once gets
+  // guessed URLs. The backfill asks about the major outlets first, and once more about the rest when that leaves
+  // it short but promising. The same checks apply to every page either search finds.
+  const revs = await collectReviews(probe, [], fromFeeds, true, backfilled);
+  if (backfilled && revs.length >= 2 && revs.length < minReviews) {
+    console.log(`  ${revs.length} verified reviews so far, searching the other outlets too`);
+    revs.push(...(await collectReviews(probe, revs, [], true, false)));
+  }
+  // Name matching misses renames ("MacBook Air M5" vs "MacBook Air (M5, 2026)"); the same review pages do not.
+  const shared = sharedReviewUrls(
+    revs.map((r) => r.url),
+    reviews,
+  );
+  if (isRenamedDuplicate(shared, revs.length)) {
+    console.log('  its reviews are already on the site under another product, skipped');
+    return null;
+  }
+  if (revs.length < minReviews) {
+    console.log(`  only ${revs.length} verified reviews, need ${minReviews}`);
+    return null;
+  }
+  // A product goes live with its photo or not at all; without one it is tried again on a later run.
+  const photo = await findLaunchPhoto(c, {
+    fetchPage,
+    download: downloadImage,
+    judge: geminiImageText,
+    parse: (t) => parseJsonReply(t),
+    // Only the backfill falls back to the brand's press pages: many brand pages offer no share image of the product.
+    pressPages: backfilled ? findPressPages : undefined,
+    log: (m) => console.log(m),
+  });
+  if (!photo) {
+    console.log('  no usable official photo yet, skipped');
+    return null;
+  }
+  const texts = revs
+    .slice(0, 8)
+    .map((r) => {
+      try {
+        return `SOURCE ${r.outletId}: ${pageText(fetchPage(r.url)).slice(0, 6000)}`;
+      } catch {
+        return ''; // the review itself was already verified; the card just has one source fewer
+      }
+    })
+    .filter(Boolean)
+    .join('\n\n');
+  const copy = await writeCard(c, texts);
+  if (!copy) {
+    console.log('  could not write the card, skipped');
+    return null;
+  }
+  /** @type {Product} */
+  const product = {
+    id,
+    slug: id,
+    name: c.name,
+    brand: c.brand,
+    category: c.category,
+    releaseDate: c.releaseDate,
+    launchPrice: c.launchPrice,
+    officialUrl: c.officialUrl,
+    criticsTake: copy.criticsTake,
+    loved: copy.loved,
+    gripes: copy.gripes,
+    specs: copy.specs,
+    art: { kind: ART_KIND[c.category], body: '#3a3d46', accent: '#8aa4d8', backdrop: ['#f4f6fb', '#e3e8f3'] },
+    autoAdded: TODAY,
+    ...(backfilled ? { backfilled: TODAY } : {}),
+  };
+  // The files are written in main() just before the import, so a dry run or a failed run leaves none behind.
+  launchPhotos.set(id, photo.buffer);
+  product.image = {
+    src: `/images/products/${id}/main.webp`,
+    thumb: `/images/products/${id}/thumb.webp`,
+    alt: `${c.name}, official ${c.brand} photo`,
+    credit: c.brand,
+    sourceUrl: c.officialUrl,
+  };
+  return { product, reviews: revs, newOutlets: [] };
 }
 
 /**
@@ -465,6 +575,7 @@ ${texts}`),
 const errText = (e) => String(/** @type {Error} */ (e).message).slice(0, 160);
 
 async function main() {
+  if (BACKFILL_ONLY) return mainBackfill();
   fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(OUT, { recursive: true });
   /** @type {string[]} */
@@ -549,17 +660,38 @@ async function main() {
   if (failedFeedChecks) console.log(`::warning::${failedFeedChecks} feed-only check(s) failed; retried next run`);
 
   console.log(`\n${files.length} import file(s)`);
-  const writeOut = () => {
-    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
-    const keep = Object.entries(rejected).filter(([, d]) => d >= daysBefore(TODAY, REJECTED_DAYS));
-    fs.writeFileSync(REJECTED_FILE, JSON.stringify(Object.fromEntries(keep.sort()), null, 2) + '\n');
-    if (problems.length) fs.writeFileSync(path.join(OUT, 'problems.txt'), problems.join('\n') + '\n');
-  };
   if (args['dry-run']) return;
+  const parsed = await importFiles(files, problems);
+  writeOut(problems);
+  if (parsed) recordTouched(parsed, false);
+}
+
+/** Writes what a run learned: when each product was last checked, the pages and candidates rejected, and any problems. @param {string[]} problems @param {boolean} [appendProblems] */
+function writeOut(problems, appendProblems = false) {
+  fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
+  fs.writeFileSync(
+    REJECTED_FILE,
+    JSON.stringify(backfill.keepRejected(rejected, TODAY, REJECTED_DAYS), null, 2) + '\n',
+  );
+  if (problems.length) {
+    const file = path.join(OUT, 'problems.txt');
+    const text = problems.join('\n') + '\n';
+    if (appendProblems) fs.appendFileSync(file, text);
+    else fs.writeFileSync(file, text);
+  }
+}
+
+/**
+ * Writes the photos of new products, then applies every import file, each on its own. Files the data checks
+ * reject are reported in `problems` and leave nothing behind. Returns the files that were applied, or null when there were none.
+ * @param {string[]} files
+ * @param {string[]} problems
+ */
+async function importFiles(files, problems) {
   for (const [id, buffer] of launchPhotos)
     if (files.some((f) => path.basename(f) === `new-${id}.json`))
       await writeProductImage(id, buffer, (await hasDarkBackground(buffer)) ? { pad: true } : { trim: true });
-  if (!files.length) return writeOut();
+  if (!files.length) return null;
   /** @type {{productId?: string, product?: Product, reviews: Review[]}[]} */
   const contents = files.map((f) => JSON.parse(fs.readFileSync(f, 'utf8')));
   const res = importEach(
@@ -575,20 +707,166 @@ async function main() {
     const content = contents[files.findIndex((f) => path.basename(f) === r.label)];
     const id = content.productId;
     if (id) delete state[id];
-    // A rejected new launch leaves no photo folder behind.
+    // A rejected new launch leaves no photo folder behind; a rejected backfill product is not tried again for a while.
     if (content.product) removeProductImage(content.product.id);
+    if (content.product?.backfilled) rejected[backfill.rejectKey(content.product.id)] = TODAY;
   }
   if (res.applied.length) writeData(DATA_DIR, res.data);
-  writeOut();
-  // What the later steps should check and score: product ids, and the exact reviews added.
-  const parsed = contents.filter((_, i) => res.applied.includes(path.basename(files[i])));
+  return contents.filter((_, i) => res.applied.includes(path.basename(files[i])));
+}
+
+/**
+ * What the later steps of refresh-pipeline.sh should check and score: product ids (touched.txt), and the
+ * exact reviews added (added.txt). The backfill runs after the refresh and adds to what the refresh wrote.
+ * @param {{productId?: string, product?: Product, reviews: Review[]}[]} parsed
+ * @param {boolean} append
+ */
+function recordTouched(parsed, append) {
   /** @param {(typeof parsed)[number]} m */
   const idOf = (m) => m.productId || m.product?.id;
-  fs.writeFileSync(path.join(OUT, 'touched.txt'), [...new Set(parsed.map(idOf))].join(','));
-  fs.writeFileSync(
-    path.join(OUT, 'added.txt'),
-    parsed.flatMap((m) => m.reviews.map((r) => `${idOf(m)}/${r.outletId}`)).join('\n') + '\n',
+  const touchedFile = path.join(OUT, 'touched.txt');
+  const addedFile = path.join(OUT, 'added.txt');
+  const before = append && fs.existsSync(touchedFile) ? fs.readFileSync(touchedFile, 'utf8').split(',') : [];
+  const ids = [...new Set([...before, ...parsed.map(idOf)].filter(Boolean))];
+  fs.writeFileSync(touchedFile, ids.join(','));
+  const lines = parsed.flatMap((m) => m.reviews.map((r) => `${idOf(m)}/${r.outletId}`)).join('\n') + '\n';
+  if (append) fs.appendFileSync(addedFile, lines);
+  else fs.writeFileSync(addedFile, lines);
+}
+
+/**
+ * The backfill: up to MAX_PER_RUN older, well-reviewed products that are missing from the site, built like new
+ * launches. Categories are worked in the order scripts/lib/backfill.js gives; each is searched once. Candidates
+ * that fail (too few reviews from known outlets, no official photo, a card that breaks the copy rules) are
+ * recorded in data/refresh-rejected.json so the next runs do not pay for them again.
+ * Returns what to import; `problems` gets a line when the search itself failed.
+ * @param {string[]} problems
+ * @returns {Promise<{made: Made[], state: import('./lib/backfill').State}>}
+ */
+async function findBackfill(problems) {
+  const forced = args.category ? String(args.category) : null;
+  if (forced && !CATEGORIES.categories.includes(/** @type {Category} */ (forced)))
+    throw new Error(`--category=${forced} is not a category (${CATEGORIES.categories.join(', ')})`);
+  const maxAdd = Math.min(backfill.MAX_PER_RUN, Number(args['max-backfill'] ?? backfill.MAX_PER_RUN));
+  let bstate = /** @type {import('./lib/backfill').State} */ (
+    fs.existsSync(BACKFILL_FILE) ? JSON.parse(fs.readFileSync(BACKFILL_FILE, 'utf8')) : backfill.initialState(TODAY)
   );
+  const started = Date.now();
+  const inBudget = () => Date.now() - started < backfill.BUDGET_MS;
+  /** @type {Made[]} */
+  const made = [];
+  /** Categories already searched in this run. @type {Set<string>} */
+  const worked = new Set();
+  let attempts = 0;
+  let checked = 0;
+  while (
+    made.length < maxAdd &&
+    attempts < backfill.MAX_ATTEMPTS &&
+    worked.size < backfill.MAX_SEARCHES &&
+    inBudget()
+  ) {
+    const now = () => ({
+      products: [...products, ...made.map((m) => m.product)],
+      reviews: [...reviews, ...made.flatMap((m) => m.reviews)],
+    });
+    const pick = forced
+      ? worked.has(forced)
+        ? null
+        : { category: forced, why: 'asked for' }
+      : backfill.pickCategory({ ...now(), config: CATEGORIES, state: bstate, today: TODAY, skip: worked });
+    if (!pick) {
+      if (!worked.size) console.log('backfill: nothing to fill (every category has enough products, or is resting)');
+      break;
+    }
+    const category = /** @type {Category} */ (pick.category);
+    worked.add(category);
+    console.log(
+      `backfill: ${category} (${pick.why}), ${now().products.filter((p) => p.category === category).length} products`,
+    );
+    /** @type {ReturnType<typeof backfill.usableCandidates>} */
+    let found;
+    try {
+      const text = await geminiTextRetry(
+        backfill.candidatePrompt({
+          today: TODAY,
+          category,
+          known: products.filter((p) => p.category === category).map((p) => p.name),
+          rejected: backfill.rejectedIds(rejected),
+        }),
+        { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
+      );
+      found = backfill.usableCandidates(parseJsonReply(text, '['), category, TODAY);
+    } catch (e) {
+      // An outage says nothing about the category, and the other categories would fail the same way.
+      problems.push(`The backfill search for ${category} failed: ${errText(e)}`);
+      console.error(`backfill search failed: ${errText(e)}`);
+      break;
+    }
+    let added = 0;
+    for (const raw of found) {
+      if (made.length >= maxAdd || attempts >= backfill.MAX_ATTEMPTS || checked >= backfill.MAX_CHECKED || !inBudget())
+        break;
+      const { c, id, dup } = siteCandidate(raw, now().products);
+      if (dup) {
+        console.log(`backfill candidate ${c.name}: already on the site as ${dup.id}`);
+        continue;
+      }
+      if (backfill.rejectedIds(rejected).includes(id)) {
+        console.log(`backfill candidate ${c.name}: rejected before, skipped`);
+        continue;
+      }
+      console.log(`backfill candidate: ${c.name} (${c.releaseDate})`);
+      checked++;
+      const facts = await confirmFacts(c);
+      let m = null;
+      if (facts && attempts < backfill.MAX_ATTEMPTS) {
+        attempts++;
+        m = await buildNewProduct({ ...c, ...facts }, id, [], {
+          minReviews: backfill.MIN_REVIEWS_BACKFILL,
+          backfilled: true,
+        });
+      }
+      if (m) {
+        made.push(m);
+        added++;
+      } else rejected[backfill.rejectKey(id)] = TODAY;
+      // Once this category has what it needs the next one is up; its candidates come from its own search.
+      const still = backfill.pickCategory({ ...now(), config: CATEGORIES, state: bstate, today: TODAY });
+      if (!forced && still?.category !== category) break;
+    }
+    bstate = backfill.noteCategory(bstate, category, added, TODAY);
+  }
+  console.log(`backfill: ${made.length} product(s) added, ${attempts} built, ${checked} checked`);
+  return { made, state: bstate };
+}
+
+/** The backfill step of refresh-pipeline.sh: find, import, and hand the new products to the checks that follow. */
+async function mainBackfill() {
+  fs.mkdirSync(OUT, { recursive: true });
+  /** @type {string[]} */
+  const problems = [];
+  /** @type {string[]} */
+  const files = [];
+  let bstate = null;
+  try {
+    const res = await findBackfill(problems);
+    bstate = res.state;
+    for (const m of res.made) {
+      const f = path.join(OUT, `new-${m.product.id}.json`);
+      fs.writeFileSync(f, JSON.stringify(m, null, 2));
+      files.push(f);
+    }
+  } catch (e) {
+    // The refresh that ran just before is not lost to a backfill fault: report it and carry on.
+    console.error(e);
+    problems.push(`The backfill failed: ${errText(e)}`);
+  }
+  console.log(`\n${files.length} import file(s)`);
+  if (args['dry-run']) return;
+  const parsed = await importFiles(files, problems);
+  if (bstate) fs.writeFileSync(BACKFILL_FILE, JSON.stringify(bstate, null, 2) + '\n');
+  writeOut(problems, true);
+  if (parsed) recordTouched(parsed, true);
 }
 
 main().catch((e) => {

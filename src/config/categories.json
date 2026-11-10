@@ -1,5 +1,19 @@
 {
-  "categories": ["phone", "foldable", "tablet", "laptop", "headphones", "watch", "console", "wearable"],
+  "categories": [
+    "phone",
+    "foldable",
+    "tablet",
+    "laptop",
+    "headphones",
+    "watch",
+    "console",
+    "wearable",
+    "earbuds",
+    "tv",
+    "camera",
+    "e-reader",
+    "handheld"
+  ],
   "artKinds": [
     "phone",
     "foldable",
@@ -11,6 +25,16 @@
     "watch",
     "console",
     "glasses",
-    "headset"
-  ]
+    "headset",
+    "tv",
+    "camera",
+    "ereader",
+    "handheld"
+  ],
+  "expansion": {
+    "note": "Categories added one at a time by the daily backfill (scripts/lib/backfill.js), in this order. One goes live on the site only once it has minProducts products with at least minReviews reviews each; until then its products stay in data/ but are not shown anywhere.",
+    "order": ["earbuds", "tv", "camera", "e-reader", "handheld"],
+    "minProducts": 5,
+    "minReviews": 5
+  }
 }

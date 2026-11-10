@@ -44,3 +44,46 @@ it.each([
   else expect(existsSync(problemsFile)).toBe(false);
   expect(readFileSync(join(dir, 'data/reviews.json'), 'utf8')).toBe(before);
 });
+
+// The backfill step runs after the refresh and must never cost it anything: a failed or empty search leaves the data
+// alone, exits 0, and a failure is reported in problems.txt next to the refresh's own.
+it.each([
+  ['an empty search', 'false', 0, null],
+  ['a failed search', 'true', 0, 'backfill search for tablet failed'],
+  ['an unknown category', 'false', 0, 'The backfill failed'],
+] as const)('backfill-only handles %s without touching the data', (name, fail, status, problem) => {
+  const dir = mkdtempSync(join(tmpdir(), 'backfill-test-'));
+  dirs.push(dir);
+  cpSync('scripts', join(dir, 'scripts'), { recursive: true });
+  cpSync('data', join(dir, 'data'), { recursive: true });
+  mkdirSync(join(dir, 'src/config'), { recursive: true });
+  cpSync('src/config/categories.json', join(dir, 'src/config/categories.json'));
+  rmSync(join(dir, 'data/backfill-state.json'), { force: true });
+  mkdirSync(join(dir, '.cache/refresh'), { recursive: true });
+  writeFileSync(join(dir, '.cache/refresh/touched.txt'), 'earlier-product');
+  const before = ['products', 'reviews', 'outlets'].map((f) => readFileSync(join(dir, `data/${f}.json`), 'utf8'));
+  writeFileSync(
+    join(dir, 'mock.cjs'),
+    `global.fetch=async()=>{const fail=${fail}; return new Response(JSON.stringify(fail?{error:{message:'API key not valid'}}:{candidates:[{content:{parts:[{text:'[]'}]}}]}),{status:fail?400:200});};`,
+  );
+  const category = name === 'an unknown category' ? 'toaster' : 'tablet';
+  const run = spawnSync(
+    process.execPath,
+    ['--require', join(dir, 'mock.cjs'), join(dir, 'scripts/refresh.js'), '--backfill-only', `--category=${category}`],
+    { cwd: dir, encoding: 'utf8', timeout: 20000 },
+  );
+  expect(run.status, run.stderr).toBe(status);
+  expect(['products', 'reviews', 'outlets'].map((f) => readFileSync(join(dir, `data/${f}.json`), 'utf8'))).toEqual(
+    before,
+  );
+  // What the refresh before it wrote is still there for the checks that follow.
+  expect(readFileSync(join(dir, '.cache/refresh/touched.txt'), 'utf8')).toBe('earlier-product');
+  const problemsFile = join(dir, '.cache/refresh/problems.txt');
+  if (problem) expect(readFileSync(problemsFile, 'utf8')).toContain(problem);
+  else expect(existsSync(problemsFile)).toBe(false);
+  if (name === 'an empty search') {
+    // A search that worked and found nothing counts as an empty run for that category.
+    const state = JSON.parse(readFileSync(join(dir, 'data/backfill-state.json'), 'utf8'));
+    expect(state.categories.tablet.misses).toBe(1);
+  }
+});

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import sharp from 'sharp';
-import { findLaunchPhoto, photoCandidates } from '../scripts/lib/launch-photo';
+import { findLaunchPhoto, photoCandidates, siteOf } from '../scripts/lib/launch-photo';
 
 const page = `<html><head>
 <meta property="og:image" content="/img/hero.jpg?v=1&amp;w=1200">
@@ -87,5 +87,46 @@ describe('findLaunchPhoto', () => {
         parse: JSON.parse,
       }),
     ).rejects.toThrow('429');
+  });
+});
+
+describe('findLaunchPhoto press page fallback', () => {
+  const c = { name: 'Example Pad', brand: 'Example', officialUrl: 'https://www.example.com/pad/' };
+  const noShare = '<html><head><title>Pad</title></head></html>';
+  const press = '<meta property="og:image" content="https://news.example.com/pad-hero.jpg">';
+  const big = () =>
+    sharp({ create: { width: 1200, height: 900, channels: 3, background: '#ddd' } })
+      .png()
+      .toBuffer();
+  const base = {
+    fetchPage: (u: string) => (u.startsWith('https://news.example.com') ? press : noShare),
+    download: big,
+    judge: async () => '{"ok": true}',
+    parse: JSON.parse,
+  };
+
+  it('tries brand press pages when the official page has no usable photo', async () => {
+    const got = await findLaunchPhoto(c, { ...base, pressPages: async () => ['https://news.example.com/pad-launch'] });
+    expect(got?.url).toBe('https://news.example.com/pad-hero.jpg');
+  });
+
+  it('ignores pages that are not on the brand site, and does nothing without the fallback', async () => {
+    const fetched: string[] = [];
+    const io = {
+      ...base,
+      fetchPage: (u: string) => {
+        fetched.push(u);
+        return u.includes('retailer') ? press : noShare;
+      },
+    };
+    expect(await findLaunchPhoto(c, { ...io, pressPages: async () => ['https://retailer.com/pad'] })).toBeNull();
+    expect(fetched).not.toContain('https://retailer.com/pad');
+    expect(await findLaunchPhoto(c, io)).toBeNull();
+  });
+
+  it('knows a site from its subdomains', () => {
+    expect(siteOf('https://news.samsung.com/us/x')).toBe('samsung.com');
+    expect(siteOf('https://www.samsung.co.uk/x')).toBe('samsung.co.uk');
+    expect(siteOf('nonsense')).toBe('');
   });
 });

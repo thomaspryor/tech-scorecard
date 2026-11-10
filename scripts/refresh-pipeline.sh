@@ -1,5 +1,5 @@
 #!/bin/bash
-# Daily refresh, end to end: find new reviews and launches, verify every quote, score, build.
+# Daily refresh, end to end: find new reviews and launches, backfill gaps, verify every quote, score, build.
 # Exits 0 with nothing changed when there is nothing new; non-zero if a check fails (the workflow then
 # commits nothing). Single bad items are dropped instead, and listed in .cache/refresh/problems.txt
 # when the workflow should alert after committing the rest. Needs GEMINI_API_KEY and OPENAI_API_KEY.
@@ -7,10 +7,26 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 OUT=.cache/refresh
 
-# Outlets added since the last run get their RSS feeds looked up (saved in data/outlets.json);
-# on Mondays, outlets saved without one are tried again.
-if [ "$(date -u +%u)" = 1 ]; then node scripts/find-feeds.js --retry-empty; else node scripts/find-feeds.js; fi
-node scripts/refresh.js "$@"
+# --backfill-only runs just the backfill and the checks after it (to try it by hand): bash scripts/refresh-pipeline.sh
+# --backfill-only --category=tablet --max-backfill=1. Otherwise the normal refresh runs first, then the backfill.
+BACKFILL_ARGS=()
+if [ "${1:-}" = "--backfill-only" ]; then
+  shift
+  BACKFILL_ARGS=("$@")
+  rm -rf "$OUT"
+  mkdir -p "$OUT"
+else
+  # Outlets added since the last run get their RSS feeds looked up (saved in data/outlets.json);
+  # on Mondays, outlets saved without one are tried again.
+  if [ "$(date -u +%u)" = 1 ]; then node scripts/find-feeds.js --retry-empty; else node scripts/find-feeds.js; fi
+  node scripts/refresh.js "$@"
+fi
+
+# Backfill: up to 3 older, well-reviewed products a day that the site is missing (thin categories first, then new
+# categories; scripts/lib/backfill.js has the rules). Its products join touched.txt and added.txt, so they go through
+# every check below like any new launch. It reports its own faults in problems.txt, so a crash here must not cost
+# the refresh above: note it and carry on.
+node scripts/refresh.js --backfill-only ${BACKFILL_ARGS[@]+"${BACKFILL_ARGS[@]}"} || echo "The backfill step crashed (see the run log)." >> "$OUT/problems.txt"
 [ -s "$OUT/touched.txt" ] || { echo "nothing new"; exit 0; }
 IDS=$(cat "$OUT/touched.txt")
 

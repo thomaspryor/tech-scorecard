@@ -28318,5 +28318,153 @@
     },
     "scoreReason": "Strong value and clear recommendation, with notable compromises in display, battery, and missing premium features.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-tab-s11-ultra",
+    "outletId": "techradar",
+    "critic": "Nico Arboleda",
+    "url": "https://www.techradar.com/tablets/samsung-galaxy-tab-s11-ultra-review",
+    "date": "2026-05-22",
+    "rating": "3.5/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "With a massive 14.6-inch display, the Samsung Galaxy Tab S11 Ultra is an impressive tablet that might be great for some, but power users would be better off with an iPad Pro instead.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 73,
+      "gemini": 71
+    },
+    "scoreReason": "Great display and software, but overpriced with weak chipset and many buyers should choose something else.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-tab-s11-ultra",
+    "outletId": "pcmag",
+    "critic": "Iyaz Akhtar",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-tab-s11-ultra",
+    "date": "2025-10-02",
+    "rating": "4/5",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "Samsung&#039;s Galaxy Tab S11 Ultra combines a laptop-sized display, powerful performance for demanding apps, a versatile S Pen stylus, and productivity-focused software—all packed into a sleek, if sizable, Android tablet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 89
+    },
+    "scoreReason": "Strong praise and Editors' Choice, with only minor complaints about size, weight, and basic cameras.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-tab-s11-ultra",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/samsung-galaxy-tab-s11-ultra-review-3616532/",
+    "date": "2025-11-29",
+    "rating": "8/10",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "So long as you have deep pockets and don't mind its gargantuan size, it's a really compelling package.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent screen and media experience, but huge size, high price, and weak value limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-tab-s11-ultra",
+    "outletId": "mashable",
+    "critic": "Samantha Mangino",
+    "url": "https://me.mashable.com/samsung-galaxy-tab-s11-ultra/65683/samsung-galaxy-tab-s11-ultra-oversized-and-underpowered",
+    "date": "2026-01-10",
+    "rating": null,
+    "score": 64,
+    "scoreSource": "text",
+    "excerpt": "The Samsung Galaxy Tab S11 Ultra is a mixed bag, offering stellar battery life but with more to be desired in terms of performance.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 55
+    },
+    "scoreReason": "Great screen and battery, but overpriced, oversized, and underpowered for its premium ambitions.",
+    "scoredFromFullText": true,
+    "modelsDisagree": true
+  },
+  {
+    "productId": "samsung-galaxy-tab-s11-ultra",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/android-tablets/samsung-galaxy-tab-s11-ultra-review",
+    "date": "2025-11-01",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "While it makes for a mediocre laptop replacement, it’s one of the best Android tablets available.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent screen, battery and performance, but big usability compromises and weak laptop replacement limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-tab-s11-ultra",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/tablets-ereaders/samsung-galaxy-tab-s11-ultra-review",
+    "date": "2025-09-16",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "However, if you don't mind a bit of a learning curve, Samsung's latest big-screen laptop-alike is its best yet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent hardware and value, but keyboard, monitor support and Android apps limit productivity appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-tab-s11-ultra",
+    "outletId": "t3",
+    "critic": "Chris Hall",
+    "url": "https://www.t3.com/tech/tablets/samsung-galaxy-tab-s11-ultra-review",
+    "date": "2025-10-15",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Tab S11 Ultra continues to offer a first-class tablet experience, mired only by the fact that it's probably too large for many owners - and too expensive.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent screen, performance and battery, but very expensive and impractical without keyboard or case.",
+    "scoredFromFullText": true
   }
 ]

@@ -47,6 +47,27 @@ Lessons from the first 30 products (2026-10-22):
    brand, "+" spelled out so S26 and S26+ stay apart) or when at least half of its reviews are pages already on the site.
    The card must pass the copy rules (`scripts/lib/copy-voice.js`); a card that breaks them is asked for once more.
    Each import file is validated on its own, so one bad file is rejected without losing the rest.
+   1b. **Backfill** (`node scripts/refresh.js --backfill-only`, the second step of `refresh-pipeline.sh`). The refresh
+   above only finds launches and new reviews, so catalogue gaps would never close. Each day the backfill adds up to
+   3 older products (launched in the last 18 months, well reviewed) that the site is missing, built exactly like a
+   new launch: a search for candidates, reviews read from the outlets' own pages, an official photo, a card written
+   from the review texts, then the same steps 2 to 4 below. Rules (`scripts/lib/backfill.js`, tested in `test/backfill.test.ts`):
+   - Which category: a live category under 12 products first (tablet, then console, then the rest, fewest first);
+     then new categories one at a time (earbuds, TV, camera, e-reader, handheld, the `expansion` list in
+     `src/config/categories.json`); then any category under 15 products. At 15 everywhere it stops.
+   - A product needs at least 5 verified reviews from outlets already in `data/outlets.json` (the backfill never adds
+     an outlet), and an official photo (`docs/IMAGES.md`). A quote that fails `verify-quotes.py` is dropped like any other.
+     A product left under 5 reviews after the checks is removed again (`drop-thin-products.js`).
+   - A candidate that fails is recorded in `data/refresh-rejected.json` as `backfill:<id>` and skipped for 90 days.
+   - A new category goes live only with 5 products that have at least 5 reviews each. Until then its products sit in
+     `data/` and show nowhere (`src/lib/category-gate.ts` filters them out of every list, page and the sitemap), so
+     the category appears in one build, complete. Products already on the site stay in the category they have: the
+     earbuds that sit under Headphones and the handhelds under Consoles were not moved.
+   - Cost: at most 3 products added, 6 candidates examined, 3 category searches and 40 minutes per run. A category
+     that comes up empty on 3 runs in a row rests for 14 days so it cannot block the ones behind it.
+   - By hand: `bash scripts/refresh-pipeline.sh --backfill-only --category=tablet --max-backfill=1` runs the backfill and
+     every check after it; `npm run backfill:status` shows where it stands.
+   - A backfill fault is reported in `problems.txt` like any other and never costs the refresh anything.
 2. `verify-quotes.py` re-checks every new quote; a MISS or unreadable page drops that review.
 3. `score-reviews.js` band-scores everything new (OpenAI + Gemini), twice so a missing model answer is
    asked again. A new review still without two model scores is dropped (`drop-unscored.js`) and found
@@ -80,11 +101,11 @@ Each review object (exact keys):
 
 ## Product object (exact keys)
 
-{"id","slug" (same as id),"name","brand","category": one of "phone", "foldable", "tablet", "laptop", "headphones", "watch", "console", "wearable","releaseDate":"YYYY-MM-DD" (US on-sale date),"launchPrice": number (USD base model),"officialUrl": manufacturer product page you opened,
+{"id","slug" (same as id),"name","brand","category": one of "phone", "foldable", "tablet", "laptop", "headphones", "watch", "console", "wearable", "earbuds", "tv", "camera", "e-reader", "handheld","releaseDate":"YYYY-MM-DD" (US on-sale date),"launchPrice": number (USD base model),"officialUrl": manufacturer product page you opened,
 "criticsTake": 2-3 plain sentences summarizing the critical consensus (no em dashes, no "not X but Y", no hype words),
 "loved": 3-4 short strings, "gripes": 3-5 short strings (things several reviewers said),
 "specs": [{"label","value"}] 7-9 items: the 7-9 specs a buyer of this category cares about (e.g. laptop: Display, Chip, Memory, Storage, Battery life, Weight, Ports, Price),
-"art": {"kind": same as category (use "foldable" for book folds, "flip" for clamshells, "earbuds" for in-ear audio, "glasses" for smart glasses, "headset" for VR/AR headsets), "body": "<hex of a real launch color>", "accent": "<hex screen color>", "backdrop": ["<very light hex>", "<light hex>"]}}
+"art": {"kind": same as category ("ereader" for "e-reader"; use "foldable" for book folds, "flip" for clamshells, "earbuds" for in-ear audio, "glasses" for smart glasses, "headset" for VR/AR headsets), "body": "<hex of a real launch color>", "accent": "<hex screen color>", "backdrop": ["<very light hex>", "<light hex>"]}}
 
 ## Output
 
