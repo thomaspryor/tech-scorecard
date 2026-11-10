@@ -123,6 +123,14 @@ describe('pickCategory', () => {
     expect(pick(s, { skip: new Set(['tablet']) })?.category).toBe('console');
   });
 
+  it('keeps working on the current category while earlier ones are skipped', () => {
+    // tablet was searched first and found nothing; console is now being worked and must stay the pick.
+    const s = site(10, { tablet: 5, console: 6 });
+    expect(pick(s, { skip: new Set() })?.category).toBe('tablet');
+    expect(pick(s, { skip: new Set(['tablet']) })?.category).toBe('console');
+    expect(pick(s, { skip: new Set(['tablet', 'console']) })?.category).not.toBe('console');
+  });
+
   it('leaves a resting category out, but a paused one is still work for the status report', () => {
     const s = site(12, { tablet: 5 });
     const state = { ...initialState(today), categories: { tablet: { misses: 0, pausedUntil: addDays(today, 3) } } };

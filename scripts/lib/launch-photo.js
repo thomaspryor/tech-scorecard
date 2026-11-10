@@ -94,7 +94,7 @@ const MAX_PRESS_PAGES = 3;
  *   pressPages?: (c: {name: string, brand: string, officialUrl: string}) => Promise<string[]>,
  *   log?: (msg: string) => void,
  * }} io
- * @returns {Promise<{buffer: Buffer, url: string} | null>}
+ * @returns {Promise<{buffer: Buffer, url: string, page: string} | null>}
  */
 async function findLaunchPhoto(c, io) {
   const log = io.log || (() => {});
@@ -139,7 +139,7 @@ Reply JSON only: {"ok": true or false, "reason": "a few words"}`,
           jpeg,
         ),
       );
-      if (verdict?.ok === true) return { buffer, url };
+      if (verdict?.ok === true) return { buffer, url, page: pageUrl };
       log(`  photo rejected (${verdict?.reason || 'no answer'}): ${url}`);
     }
     return null;

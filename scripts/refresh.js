@@ -36,7 +36,7 @@ const { UA, curl, fetchPage, fetchPageAsync, pageText, containsQuote, jsonLd, ho
 const { urlKey } = require('./lib/launches');
 const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
 const { openaiText, geminiText, geminiImageText, parseJsonReply } = require('./lib/models');
-const { findLaunchPhoto } = require('./lib/launch-photo');
+const { findLaunchPhoto, siteOf } = require('./lib/launch-photo');
 const backfill = require('./lib/backfill');
 const { hasDarkBackground, writeProductImage, removeProductImage } = require('./lib/product-image');
 
@@ -165,7 +165,7 @@ Search for them and return only URLs you actually saw in search results. Reply w
   /** @type {{url?: unknown}[]} */
   const found = parseJsonReply(text, '[') || [];
   return found
-    .map((x) => resolveRedirect(x.url))
+    .map((x) => resolveRedirect(x?.url))
     .filter(/** @returns {u is string} */ (u) => typeof u === 'string' && /^https:\/\//.test(u));
 }
 
@@ -393,7 +393,7 @@ async function findPressPages(c) {
   /** @type {{url?: unknown}[]} */
   const found = parseJsonReply(text, '[') || [];
   return found
-    .map((x) => resolveRedirect(x.url))
+    .map((x) => resolveRedirect(x?.url))
     .filter(/** @returns {u is string} */ (u) => typeof u === 'string' && /^https:\/\//.test(u));
 }
 
@@ -418,7 +418,15 @@ async function confirmFacts(c) {
     console.log(`  on sale ${releaseDate}, outside the last ${backfill.WINDOW_MONTHS} months, skipped`);
     return null;
   }
-  const pages = [c.officialUrl, got?.officialUrl].filter((u) => typeof u === 'string' && /^https:\/\//.test(u));
+  // The page this search named for this one product beats the list's guess; either must be on the brand's own site.
+  const brand = c.brand.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const onBrandSite = (/** @type {string} */ u) => {
+    const label = siteOf(u).split('.')[0];
+    return !!label && (brand.includes(label) || label.includes(brand));
+  };
+  const pages = [got?.officialUrl, c.officialUrl].filter(
+    (u) => typeof u === 'string' && /^https:\/\//.test(u) && onBrandSite(u),
+  );
   for (const officialUrl of new Set(pages)) {
     try {
       curl(['-f', '-o', '/dev/null', '-A', UA, officialUrl]);
@@ -526,7 +534,7 @@ async function buildNewProduct(c, id, leads, { minReviews, backfilled = false })
     thumb: `/images/products/${id}/thumb.webp`,
     alt: `${c.name}, official ${c.brand} photo`,
     credit: c.brand,
-    sourceUrl: c.officialUrl,
+    sourceUrl: photo.page,
   };
   return { product, reviews: revs, newOutlets: [] };
 }
@@ -661,9 +669,8 @@ async function main() {
 
   console.log(`\n${files.length} import file(s)`);
   if (args['dry-run']) return;
-  const parsed = await importFiles(files, problems);
+  await importFiles(files, problems, false);
   writeOut(problems);
-  if (parsed) recordTouched(parsed, false);
 }
 
 /** Writes what a run learned: when each product was last checked, the pages and candidates rejected, and any problems. @param {string[]} problems @param {boolean} [appendProblems] */
@@ -686,8 +693,9 @@ function writeOut(problems, appendProblems = false) {
  * reject are reported in `problems` and leave nothing behind. Returns the files that were applied, or null when there were none.
  * @param {string[]} files
  * @param {string[]} problems
+ * @param {boolean} append add to what an earlier step wrote in touched.txt and added.txt instead of replacing it
  */
-async function importFiles(files, problems) {
+async function importFiles(files, problems, append) {
   for (const [id, buffer] of launchPhotos)
     if (files.some((f) => path.basename(f) === `new-${id}.json`))
       await writeProductImage(id, buffer, (await hasDarkBackground(buffer)) ? { pad: true } : { trim: true });
@@ -712,7 +720,10 @@ async function importFiles(files, problems) {
     if (content.product?.backfilled) rejected[backfill.rejectKey(content.product.id)] = TODAY;
   }
   if (res.applied.length) writeData(DATA_DIR, res.data);
-  return contents.filter((_, i) => res.applied.includes(path.basename(files[i])));
+  const applied = contents.filter((_, i) => res.applied.includes(path.basename(files[i])));
+  // Written at once, before anything else can fail: a product in data/ that is not listed here would skip the checks.
+  if (applied.length) recordTouched(applied, append);
+  return applied;
 }
 
 /**
@@ -763,6 +774,7 @@ async function findBackfill(problems) {
     made.length < maxAdd &&
     attempts < backfill.MAX_ATTEMPTS &&
     worked.size < backfill.MAX_SEARCHES &&
+    checked < backfill.MAX_CHECKED &&
     inBudget()
   ) {
     const now = () => ({
@@ -790,8 +802,11 @@ async function findBackfill(problems) {
         backfill.candidatePrompt({
           today: TODAY,
           category,
-          known: products.filter((p) => p.category === category).map((p) => p.name),
-          rejected: backfill.rejectedIds(rejected),
+          // Earbuds filed under Headphones and handhelds under Consoles are still "already on the site".
+          known: products
+            .filter((p) => p.category === category || p.art.kind === ART_KIND[category])
+            .map((p) => p.name),
+          rejected: backfill.rejectedIds(rejected).slice(-30),
         }),
         { search: true, timeoutMs: GEMINI_TIMEOUT_MS },
       );
@@ -803,6 +818,8 @@ async function findBackfill(problems) {
       break;
     }
     let added = 0;
+    let examined = 0;
+    let stopped = false;
     for (const raw of found) {
       if (made.length >= maxAdd || attempts >= backfill.MAX_ATTEMPTS || checked >= backfill.MAX_CHECKED || !inBudget())
         break;
@@ -817,24 +834,37 @@ async function findBackfill(problems) {
       }
       console.log(`backfill candidate: ${c.name} (${c.releaseDate})`);
       checked++;
-      const facts = await confirmFacts(c);
+      examined++;
+      /** @type {Made | null} */
       let m = null;
-      if (facts && attempts < backfill.MAX_ATTEMPTS) {
-        attempts++;
-        m = await buildNewProduct({ ...c, ...facts }, id, [], {
-          minReviews: backfill.MIN_REVIEWS_BACKFILL,
-          backfilled: true,
-        });
+      try {
+        const facts = await confirmFacts(c);
+        if (facts) {
+          attempts++;
+          m = await buildNewProduct({ ...c, ...facts }, id, [], {
+            minReviews: backfill.MIN_REVIEWS_BACKFILL,
+            backfilled: true,
+          });
+        }
+      } catch (e) {
+        // A model outage: keep what is already built, report it, and stop (the next candidates would fail the same way).
+        problems.push(`The backfill stopped at ${c.name}: ${errText(e)}`);
+        console.error(`backfill stopped: ${errText(e)}`);
+        stopped = true;
+        break;
       }
       if (m) {
         made.push(m);
         added++;
       } else rejected[backfill.rejectKey(id)] = TODAY;
       // Once this category has what it needs the next one is up; its candidates come from its own search.
-      const still = backfill.pickCategory({ ...now(), config: CATEGORIES, state: bstate, today: TODAY });
+      const others = new Set([...worked].filter((w) => w !== category));
+      const still = backfill.pickCategory({ ...now(), config: CATEGORIES, state: bstate, today: TODAY, skip: others });
       if (!forced && still?.category !== category) break;
     }
-    bstate = backfill.noteCategory(bstate, category, added, TODAY);
+    if (stopped) break;
+    // A category the caps cut off before any candidate was looked at says nothing about it.
+    if (examined > 0 || found.length === 0) bstate = backfill.noteCategory(bstate, category, added, TODAY);
   }
   console.log(`backfill: ${made.length} product(s) added, ${attempts} built, ${checked} checked`);
   return { made, state: bstate };
@@ -863,10 +893,9 @@ async function mainBackfill() {
   }
   console.log(`\n${files.length} import file(s)`);
   if (args['dry-run']) return;
-  const parsed = await importFiles(files, problems);
+  await importFiles(files, problems, true);
   if (bstate) fs.writeFileSync(BACKFILL_FILE, JSON.stringify(bstate, null, 2) + '\n');
   writeOut(problems, true);
-  if (parsed) recordTouched(parsed, true);
 }
 
 main().catch((e) => {
