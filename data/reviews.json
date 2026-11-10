@@ -28213,5 +28213,110 @@
     },
     "scoreReason": "Strong software and decent battery, but overpriced with lagging foldable hardware and several frustrating compromises.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "hardwarezone",
+    "critic": "Kenny Yeo",
+    "url": "https://www.hardwarezone.com.sg/pc/laptops/apple-macbook-pro-proled-xdr-display-review-singapore-price-specs",
+    "date": "2026-11-10",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "It isn’t just the best laptop Apple makes; it may very well be the best laptop you can buy right now, period.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding display, lighter design, top performance, and called possibly the best laptop despite high price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "reviewed",
+    "critic": "Christian de Looper",
+    "url": "https://www.reviewed.com/laptops/content/macbook-pro-proled-xdr-display-review",
+    "date": "2026-11-10",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "For macOS fans who want the best Apple laptop yet, the price is the only real obstacle.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding performance and display with few flaws; only the very high price seriously holds it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://uk.pcmag.com/tablets/168214/apple-ipad-mini-2026",
+    "date": "2026-11-03",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "It's a highly capable tablet that can handle tough tasks, as long as you don't mind the small screen and the high price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent performance and portability, but high price and narrow audience limit the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "smartprix",
+    "critic": "Mehtab Ansari",
+    "url": "https://www.smartprix.com/bytes/samsung-galaxy-tab-s12-ultra-review-big-screen-better-notes-and-a-lot-of-tablet/",
+    "date": "2026-11-04",
+    "rating": null,
+    "score": 81,
+    "scoreSource": "text",
+    "excerpt": "If you regularly take handwritten notes, watch movies, mark up PDFs, or run several apps side by side, the Galaxy Tab S12 Ultra is an excellent choice.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent for notes, display, performance, and productivity, but heavy, reflective, and very expensive.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17e",
+    "outletId": "reviews-org",
+    "critic": "Fergus Halliday",
+    "url": "https://www.reviews.org/mobile/apple-iphone-17e-review/",
+    "date": "2026-04-02",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Apple iPhone 17e doubles down on everything that worked about its predecessor and fixes the things that held it back.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 89
+    },
+    "scoreReason": "Strong value and clear recommendation, with notable compromises in display, battery, and missing premium features.",
+    "scoredFromFullText": true
   }
 ]
