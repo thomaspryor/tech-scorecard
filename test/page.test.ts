@@ -5,6 +5,7 @@ import {
   decodeEntities,
   hostOf,
   jsonLd,
+  isoDate,
   normQuote,
   pageText,
   reviewPages,
@@ -90,5 +91,23 @@ describe('parseJsonReply', () => {
   it.each([null, '', 'none', '{bad}', '] [', '}{'])('returns null for %j', (s) => {
     expect(parseJsonReply(s)).toBeNull();
     expect(parseJsonReply(s, '[')).toBeNull();
+  });
+});
+
+describe('isoDate', () => {
+  it('cuts ISO dates to the day and reads written dates as UTC', () => {
+    expect(isoDate('2026-09-20T14:30:00-04:00')).toBe('2026-09-20');
+    expect(isoDate('17 July 2026')).toBe('2026-07-17');
+    expect(isoDate('July 17, 2026')).toBe('2026-07-17');
+    expect(isoDate('2026-07-17 09:00:00 GMT')).toBe('2026-07-17');
+  });
+
+  it('leaves what it cannot read to fail the date check', () => {
+    expect(isoDate('sometime in July')).toBe('sometime i');
+  });
+
+  it('is used for the JSON-LD date', () => {
+    const html = '<script type="application/ld+json">{"@type":"Review","datePublished":"17 July 2026"}</script>';
+    expect(jsonLd(html).date).toBe('2026-07-17');
   });
 });

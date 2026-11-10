@@ -65,6 +65,18 @@ describe('thinProducts', () => {
   });
 });
 
+describe('thinProducts for the backfill', () => {
+  it('keeps a backfilled product with 5 reviews, where a launch needs 6', () => {
+    const five = Array.from({ length: 5 }, (_, i) => review({ productId: 'old', outletId: `o${i}` }));
+    const added = { autoAdded: '2026-11-10', backfilled: '2026-11-10' };
+    const base = [product({ id: 'old', slug: 'old', ...added })];
+    expect(thinProducts({ products: base, reviews: five, outlets: [] })).toEqual([]);
+    expect(thinProducts({ products: base, reviews: five.slice(1), outlets: [] })).toEqual(['old']);
+    const launch = [product({ id: 'old', slug: 'old', autoAdded: '2026-11-10' })];
+    expect(thinProducts({ products: launch, reviews: five, outlets: [] })).toEqual(['old']);
+  });
+});
+
 describe('unscored', () => {
   it('drops new reviews without two model scores and reports older ones', () => {
     const reviews = [

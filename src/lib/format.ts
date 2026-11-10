@@ -28,6 +28,11 @@ export const CATEGORY_LABEL: Record<Category, string> = {
   watch: 'Watch',
   console: 'Console',
   wearable: 'Wearable',
+  earbuds: 'Earbuds',
+  tv: 'TV',
+  camera: 'Camera',
+  'e-reader': 'E-reader',
+  handheld: 'Handheld',
 };
 export const CATEGORY_PLURAL: Record<Category, string> = {
   phone: 'Phones',
@@ -38,6 +43,11 @@ export const CATEGORY_PLURAL: Record<Category, string> = {
   watch: 'Watches',
   console: 'Consoles',
   wearable: 'Wearables',
+  earbuds: 'Earbuds',
+  tv: 'TVs',
+  camera: 'Cameras',
+  'e-reader': 'E-readers',
+  handheld: 'Handhelds',
 };
 /** Display order for filters; the same list validate-data.js checks against. */
 export const CATEGORY_ORDER = categories.categories as Category[];

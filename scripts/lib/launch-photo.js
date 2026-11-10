@@ -65,59 +65,96 @@ function photoCandidates(html, pageUrl) {
   return out;
 }
 
+/** The site a URL belongs to ("news.samsung.com" -> "samsung.com"), or "" when it does not parse. @param {string} url */
+function siteOf(url) {
+  try {
+    const labels = new URL(url).hostname.split('.');
+    // "bbc.co.uk" keeps three labels; a two-letter country code under co/com/org/net is a second-level domain.
+    const keep =
+      ['co', 'com', 'org', 'net'].includes(labels[labels.length - 2]) && labels[labels.length - 1].length === 2 ? 3 : 2;
+    return labels.slice(-keep).join('.');
+  } catch {
+    return '';
+  }
+}
+
+/** How many press pages found by the fallback search are read. */
+const MAX_PRESS_PAGES = 3;
+
 /**
- * The first candidate that downloads, is big enough, and the judge accepts.
+ * The first candidate that downloads, is big enough, and the judge accepts. The product's official page comes
+ * first; when it offers no usable photo and `io.pressPages` is given, the brand's own press or newsroom pages for the
+ * product (found by search, and only kept when they are on the same site as the official page) are tried the same way.
  * @param {{name: string, brand: string, officialUrl: string}} c
  * @param {{
  *   fetchPage: (url: string) => string,
  *   download: (url: string) => Promise<Buffer>,
  *   judge: (prompt: string, jpeg: Buffer) => Promise<string>,
  *   parse: (text: string) => any,
+ *   pressPages?: (c: {name: string, brand: string, officialUrl: string}) => Promise<string[]>,
  *   log?: (msg: string) => void,
  * }} io
- * @returns {Promise<{buffer: Buffer, url: string} | null>}
+ * @returns {Promise<{buffer: Buffer, url: string, page: string} | null>}
  */
 async function findLaunchPhoto(c, io) {
   const log = io.log || (() => {});
-  let html;
-  try {
-    html = io.fetchPage(c.officialUrl);
-  } catch {
-    log('  official page not readable for a photo');
-    return null;
-  }
-  for (const url of photoCandidates(html, c.officialUrl).slice(0, MAX_CANDIDATES)) {
-    let buffer;
-    let jpeg;
+  /** Images already judged, so two pages sharing a share image are not paid for twice. @type {Set<string>} */
+  const judged = new Set();
+  /** @param {string} pageUrl */
+  const fromPage = async (pageUrl) => {
+    let html;
     try {
-      buffer = await io.download(url);
-      const { width = 0, height = 0 } = await sharp(buffer).metadata();
-      if (width < MIN_SIZE || height < MIN_SIZE / 2) {
-        log(`  photo too small (${width}x${height}): ${url}`);
+      html = io.fetchPage(pageUrl);
+    } catch {
+      log('  brand page not readable for a photo');
+      return null;
+    }
+    for (const url of photoCandidates(html, pageUrl).slice(0, MAX_CANDIDATES)) {
+      if (judged.has(url)) continue;
+      judged.add(url);
+      let buffer;
+      let jpeg;
+      try {
+        buffer = await io.download(url);
+        const { width = 0, height = 0 } = await sharp(buffer).metadata();
+        if (width < MIN_SIZE || height < MIN_SIZE / 2) {
+          log(`  photo too small (${width}x${height}): ${url}`);
+          continue;
+        }
+        jpeg = await sharp(buffer)
+          .flatten({ background: '#fff' })
+          .resize({ width: 768, withoutEnlargement: true })
+          .jpeg({ quality: 80 })
+          .toBuffer();
+      } catch (e) {
+        log(`  photo not usable (${e instanceof Error ? e.message.slice(0, 80) : e}): ${url}`);
         continue;
       }
-      jpeg = await sharp(buffer)
-        .flatten({ background: '#fff' })
-        .resize({ width: 768, withoutEnlargement: true })
-        .jpeg({ quality: 80 })
-        .toBuffer();
-    } catch (e) {
-      log(`  photo not usable (${e instanceof Error ? e.message.slice(0, 80) : e}): ${url}`);
-      continue;
-    }
-    // A failing model call throws: an outage must reach the run's alert, not read as "no photo".
-    const verdict = io.parse(
-      await io.judge(
-        `This image is from the official web page of the ${c.brand} product "${c.name}". Could it be used as the product's photo on a review site?
+      // A failing model call throws: an outage must reach the run's alert, not read as "no photo".
+      const verdict = io.parse(
+        await io.judge(
+          `This image is from the official web page of the ${c.brand} product "${c.name}". Could it be used as the product's photo on a review site?
 Answer yes only if it clearly shows that product itself, large and recognizable. Answer no for a logo, a wordmark, a banner that is mostly text, a photo of a different or older product, a lineup of several different products, an abstract graphic, or a scene where the product is small or hidden.
 Reply JSON only: {"ok": true or false, "reason": "a few words"}`,
-        jpeg,
-      ),
-    );
-    if (verdict?.ok === true) return { buffer, url };
-    log(`  photo rejected (${verdict?.reason || 'no answer'}): ${url}`);
+          jpeg,
+        ),
+      );
+      if (verdict?.ok === true) return { buffer, url, page: pageUrl };
+      log(`  photo rejected (${verdict?.reason || 'no answer'}): ${url}`);
+    }
+    return null;
+  };
+
+  const official = await fromPage(c.officialUrl);
+  if (official || !io.pressPages) return official;
+  log('  no photo on the official page, trying the brand press pages');
+  const site = siteOf(c.officialUrl);
+  const pages = (await io.pressPages(c)).filter((u) => u !== c.officialUrl && site && siteOf(u) === site);
+  for (const pageUrl of pages.slice(0, MAX_PRESS_PAGES)) {
+    const found = await fromPage(pageUrl);
+    if (found) return found;
   }
   return null;
 }
 
-module.exports = { photoCandidates, findLaunchPhoto };
+module.exports = { photoCandidates, findLaunchPhoto, siteOf };

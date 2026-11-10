@@ -5,6 +5,7 @@ import { computeProduct, type ComputedProduct } from './engine';
 import type { Category, Outlet, Product, Review } from './data-types';
 import { CATEGORY_ORDER } from './format';
 import { MIN_PRODUCTS_FOR_CATEGORY_PAGE } from '@/config/seo';
+import { liveCategories } from './category-gate';
 
 // JSON imports type literal unions as string and tuples as arrays, so the data is cast to the
 // hand-written types. That is safe because `npm run build` runs scripts/validate-data.js first
@@ -22,7 +23,10 @@ export function isScored(p: ComputedProduct): p is ScoredProduct {
 
 export function getAllProducts(): ComputedProduct[] {
   if (!cache) {
+    // Products of a category that is not live yet (see category-gate.ts) are left out of the whole site.
+    const live = liveCategories(productsJson as unknown as Product[], reviewsJson as unknown as Review[]);
     cache = (productsJson as unknown as Product[])
+      .filter((p) => live.has(p.category))
       .map((p) => computeProduct(p, reviewsJson as unknown as Review[], outlets))
       .sort((a, b) => (b.criticScore ?? -1) - (a.criticScore ?? -1));
   }
