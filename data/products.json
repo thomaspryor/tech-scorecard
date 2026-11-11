@@ -7139,5 +7139,85 @@
       "credit": "Asus",
       "sourceUrl": "https://rog.asus.com/us/gaming-handhelds/rog-ally/rog-xbox-ally-x20-2026/"
     }
+  },
+  {
+    "id": "samsung-galaxy-z-fold-7",
+    "slug": "samsung-galaxy-z-fold-7",
+    "name": "Samsung Galaxy Z Fold 7",
+    "brand": "Samsung",
+    "category": "foldable",
+    "releaseDate": "2025-07-25",
+    "launchPrice": 1999.99,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-z-fold7/",
+    "criticsTake": "Reviewers say the Galaxy Z Fold 7 makes Samsung's foldable feel much closer to a regular phone when closed thanks to a thinner and lighter design, while still offering a large 8-inch inner display. They also praise the displays, performance, multitasking software, and improved cameras, though the high price, average battery life, and loss of S Pen support come up repeatedly.",
+    "loved": [
+      "Thin and light design",
+      "Large 8-inch inner display",
+      "Excellent displays",
+      "Strong performance and multitasking"
+    ],
+    "gripes": [
+      "Very expensive",
+      "Average battery life",
+      "No S Pen support",
+      "Mediocre charging speeds",
+      "Sometimes does not open fully flat"
+    ],
+    "specs": [
+      {
+        "label": "Main display",
+        "value": "8-inch inner display"
+      },
+      {
+        "label": "Cover display",
+        "value": "6.5-inch cover screen"
+      },
+      {
+        "label": "Processor",
+        "value": "Qualcomm Snapdragon 8 Elite for Galaxy"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "200MP, 12MP, 10MP"
+      },
+      {
+        "label": "Front cameras",
+        "value": "10MP, 10MP"
+      },
+      {
+        "label": "Battery life",
+        "value": "13 hours, 10 minutes as tested"
+      },
+      {
+        "label": "Durability",
+        "value": "IP48 with submersion up to 5 feet for 30 minutes"
+      },
+      {
+        "label": "OS",
+        "value": "Android 16"
+      },
+      {
+        "label": "Price",
+        "value": "From $1999.99"
+      }
+    ],
+    "art": {
+      "kind": "foldable",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-11",
+    "backfilled": "2026-11-11",
+    "image": {
+      "src": "/images/products/samsung-galaxy-z-fold-7/main.webp",
+      "thumb": "/images/products/samsung-galaxy-z-fold-7/thumb.webp",
+      "alt": "Samsung Galaxy Z Fold 7, official Samsung photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://news.samsung.com/za/galaxy-z-fold7-redefines-the-foldable-experience-media-and-influencers-give-their-verdict"
+    }
   }
 ]

@@ -29201,5 +29201,362 @@
     },
     "scoreReason": "Excellent screen, comfort, thermals, and software, but the steep price premium brings clear value concerns.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "petapixel",
+    "critic": "Jaron Schneider",
+    "url": "https://petapixel.com/2026/11/05/apple-m5-max-macbook-pro-with-proled-xdr-review-dont-touch-it/",
+    "date": "2026-11-05",
+    "rating": null,
+    "score": 97,
+    "scoreSource": "text",
+    "excerpt": "I can't find a flaw with this machine, and if you can afford it and need the performance it offers, then there is no reason not to take the plunge.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 100
+    },
+    "scoreReason": "Strong full recommendation; best display tested, lighter design, no real flaws beyond optional touch gimmick.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "ultrabookreview",
+    "critic": "Andrei Girbea",
+    "url": "https://www.ultrabookreview.com/77057-asus-proart-p16-rtxspark-review/",
+    "date": "2026-10-16",
+    "rating": "4.25/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "This Asus ProArt P16 is a spectacular premium notebook, one the better looking and made in the Windows space, while offering solid ergonomics, and excellent keyboard, a beautiful 4K Tandem OLED display, and punchy audio.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Excellent design and display, but ARM app limits, warm chassis, weak battery, and high prices temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/laptops/asus-proart-p16-rtx-spark-review",
+    "date": "2026-10-16",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "It's super fast at local AI duties, powerful for creative tasks and general use, and better than a MacBook Pro for gaming.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong performance and display, but first-gen risk, weaker battery life and some software limitations temper enthusiasm",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "phonearena",
+    "critic": "Peter Kostadinov",
+    "url": "https://www.phonearena.com/reviews/samsung-galaxy-tab-s12-ultra-review_id8048",
+    "date": "2026-09-30",
+    "rating": "6.5/10",
+    "score": 58,
+    "scoreSource": "rating",
+    "excerpt": "I'd strongly urge you to get a Galaxy Tab S11 Ultra while you still can or consider the Galaxy Tab S12 Plus, both of which will offer mostly the same general experience.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 56,
+      "gemini": 60
+    },
+    "scoreReason": "Great display and design, but missing key software features and usability concerns limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "gizmodo",
+    "critic": "James Pero",
+    "url": "https://gizmodo.com/nothing-headphone-1-pro-review-2000819049",
+    "date": "2026-10-01",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Nothing 1 Pro sound great and look very cool, which more than makes up for average ANC.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent sound and design earn strong praise, with only average ANC and minor comfort concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "phonearena",
+    "critic": "Peter Kostadinov",
+    "url": "https://www.phonearena.com/reviews/apple-iphone-17-review_id7677",
+    "date": "2025-09-23",
+    "rating": "7.7/10",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "Pair all that with the fairly sensible pricing, and what you're left with is pretty much the perfect iPhone for just about anybody.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 90
+    },
+    "scoreReason": "Strongly recommended as the iPhone to buy, with some typical caveats keeping it below top marks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17-pro",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/1978475/iphone-17-pro-review/",
+    "date": "2025-09-25",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "The iPhone 17 Pro and Pro Max are excellent phones, and represent meaningful upgrades over last year's models.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent overall with standout camera, battery, and performance, but pricey and unnecessary for many owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17-pro",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/oct/08/apple-iphone-17-pro-review-different-looks-zoom-battery-life",
+    "date": "2025-10-08",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "So for an iPhone buyer who wants a telephoto camera to zoom in on your subjects, the 17 Pro is the model to get.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent compact phone with great cameras and performance, but price and limited differentiation temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-11",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/oct/06/apple-watch-series-11-review-wrist-flickingly-good-with-longer-battery-life",
+    "date": "2025-10-06",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "Overall, the Series 11 is one of the very best smartwatches available for the iPhone, and if you have an older watch such as a Series 6, you will see a massive upgrade.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent smartwatch with meaningful battery and usability gains, but iterative updates and high price temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-11",
+    "outletId": "appleinsider",
+    "critic": "Oliver Haslam",
+    "url": "https://appleinsider.com/articles/25/10/16/apple-watch-series-11-review-if-it-aint-broke",
+    "date": "2025-10-16",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Apple Watch Series 11 is undoubtedly the best wearable Apple has ever made, especially if you don't need the ruggedness of the Ultra 3.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise overall, but many Series 10 owners are told to skip this incremental update.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-3",
+    "outletId": "appleinsider",
+    "critic": "Wesley Hilliard",
+    "url": "https://appleinsider.com/articles/25/10/01/apple-watch-ultra-3-review-iterative-update-but-still-excellent-hardware",
+    "date": "2025-10-01",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "Apple Watch Ultra 3 is a 5 out of 5 for those seeking a heavy-duty Apple Watch that likes the size and extra features.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 73
+    },
+    "scoreReason": "Good for first-time Ultra buyers, but dull update with limited new features and narrow appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-3",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/apple/apple-watch-ultra-3-review",
+    "date": "2025-10-28",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "The Apple Watch Ultra 3 is a powerful evolution, solidifying its status as the best overall smartwatch money can buy.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Calls it the best overall smartwatch, with excellent display, software, tracking, and enough battery despite minor upgrade caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "engadget",
+    "critic": null,
+    "url": "https://www.engadget.com/mobile/smartphones/samsung-galaxy-z-fold-7-review-foldable-phone-nirvana-for-a-price-123004636.html",
+    "date": "2025-07-17",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "The Samsung Galaxy Z Fold 7 has reached foldable phone nirvana thanks to major reductions in its size and thickness.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Exceptional foldable design and performance, but ultra-high price and a few feature removals temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://me.pcmag.com/en/mobile-phones/31015/samsung-galaxy-z-fold-7",
+    "date": "2025-07-17",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "With a refined and appealing design, plenty of power, smarter AI, smoother multitasking, and improved cameras, the Samsung Galaxy Z Fold 7 is the best folding phone you can buy, bar none.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised as the best foldable, with notable but not dealbreaking battery, heat, and S Pen drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "techradar",
+    "critic": "Lance Ulanoff",
+    "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-z-fold-7-review",
+    "date": "2025-07-09",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "There's a larger 8-inch display inside, and all this, plus the new camera system – the main camera finally gets a 200MP sensor – make this the most desirable Z Fold yet.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent foldable with standout screens, power and camera, held back by high price, modest zoom and no S Pen.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "toms-guide",
+    "critic": "Mark Spoonauer",
+    "url": "https://www.tomsguide.com/phones/samsung-galaxy-z-fold-7-review",
+    "date": "2025-07-18",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The $2,000 price is super expensive — and Samsung ditched the S Pen — but overall, this is the best foldable money can buy.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 95
+    },
+    "scoreReason": "Highly enthusiastic praise overall, with price and battery as the main drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "android-central",
+    "critic": "Andrew Myrick",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-z-fold-7-review",
+    "date": "2025-07-25",
+    "rating": "4.5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "Despite the annoyances and concerns, the Galaxy Z Fold 7 is the first Samsung foldable that I would wholly recommend to anyone who asks.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 94
+    },
+    "scoreReason": "Strongly recommended for design and cameras, but battery, lost S Pen, and high price temper enthusiasm.",
+    "scoredFromFullText": true
   }
 ]
