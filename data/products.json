@@ -7059,5 +7059,85 @@
     },
     "autoAdded": "2026-11-11",
     "backfilled": "2026-11-11"
+  },
+  {
+    "id": "asus-rog-xbox-ally-x20",
+    "slug": "asus-rog-xbox-ally-x20",
+    "name": "Asus ROG Xbox Ally X20",
+    "brand": "Asus",
+    "category": "console",
+    "releaseDate": "2026-10-15",
+    "launchPrice": 1299,
+    "officialUrl": "https://rog.asus.com/us/gaming-handhelds/rog-ally/rog-xbox-ally-x20-2026/",
+    "criticsTake": "Reviewers like the X20 for its OLED screen, comfortable grips and controls, and strong game performance for a Windows handheld. The main concerns are the high price, performance that stays close to the previous Ally X, and a Windows interface that can still be frustrating on a handheld.",
+    "loved": [
+      "HDR OLED display",
+      "Comfortable grips and ergonomics",
+      "Clicky buttons and good joystick tension",
+      "Strong game performance"
+    ],
+    "gripes": [
+      "High $1,300 price",
+      "Windows 11 can be annoying",
+      "Performance barely changes from Ally X",
+      "No case included",
+      "Stand feels cheap"
+    ],
+    "specs": [
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen AI Z2 Extreme"
+      },
+      {
+        "label": "Memory",
+        "value": "24GB LPDDR5X"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "OLED display"
+      },
+      {
+        "label": "HDR",
+        "value": "DisplayHDR 1400"
+      },
+      {
+        "label": "Screen size change",
+        "value": "0.4-inch larger screen than the original"
+      },
+      {
+        "label": "Turbo power mode",
+        "value": "35W plugged in, 25W unplugged"
+      },
+      {
+        "label": "Operating system",
+        "value": "Windows 11"
+      },
+      {
+        "label": "Price",
+        "value": "From $1299"
+      }
+    ],
+    "art": {
+      "kind": "console",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-11",
+    "backfilled": "2026-11-11",
+    "image": {
+      "src": "/images/products/asus-rog-xbox-ally-x20/main.webp",
+      "thumb": "/images/products/asus-rog-xbox-ally-x20/thumb.webp",
+      "alt": "Asus ROG Xbox Ally X20, official Asus photo",
+      "credit": "Asus",
+      "sourceUrl": "https://rog.asus.com/us/gaming-handhelds/rog-ally/rog-xbox-ally-x20-2026/"
+    }
   }
 ]

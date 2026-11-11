@@ -28802,5 +28802,404 @@
     },
     "scoreReason": "Strong praise for display, battery and software, with moderate complaints about performance, charging and missing fingerprint sensor",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "pcworld",
+    "critic": "Brad Chacos",
+    "url": "https://www.pcworld.com/article/3271512/asus-proart-p16-review-rtx-spark-vs-ai.html",
+    "date": "2026-10-28",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "And if you deal with ridiculousness daily, the Asus ProArt 16 with its 128GB and RTX Spark inside might just be worth every penny - all 700,000 of them in this laptop's case.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Highly impressed for niche AI workloads, but extreme price, noise, and battery limits broader appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/macbook-pro-with-proled-xdr-display-review-2000835221",
+    "date": "2026-11-05",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "It's enormously expensive, but for that premium price its not only packing the best OLED laptop screen I've seen—it also makes macOS so much better.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding display and overall experience, but extreme price and modest non-screen gains temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "cnet",
+    "critic": "Scott Stein",
+    "url": "https://www.cnet.com/tech/computing/ipad-mini-oled-2026-review/",
+    "date": "2026-11-03",
+    "rating": "8.8/10",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "It doesn’t fold, but Apple’s refreshed tiny tablet now feels like a refreshing Duo alternative.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 74
+    },
+    "scoreReason": "Strong praise for portability and upgrades, but price, 60Hz screen, and waiting advice temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "macworld",
+    "critic": "Roman Loyola",
+    "url": "https://www.macworld.com/article/3273892/ipad-mini-a20-pro-review.html",
+    "date": "2026-11-01",
+    "rating": "4/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "With this release, Apple finally does more with the iPad mini, giving it an overhaul that makes the device feel modern and worth its price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 86
+    },
+    "scoreReason": "Strong upgrade with modernized design and display, but 60Hz screen and modest audio keep enthusiasm measured.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "appleinsider",
+    "critic": "Wesley Hilliard",
+    "url": "https://appleinsider.com/articles/26/10/30/iphone-duo-review-proof-that-foldables-dont-have-to-suck",
+    "date": "2026-10-30",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone Duo is far from perfect as a first-generation product, but it is a strong enough entry that will single-handedly lift foldables from passing fad to serious category for anyone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong praise for cameras, software, and concept, but notable concerns about compromises, app support, and durability.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "android-authority",
+    "critic": "Ryan Haines",
+    "url": "https://www.androidauthority.com/oneplus-pad-go-2-review-3625367/",
+    "date": "2025-12-18",
+    "rating": "8/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "Premium power aside, the OnePlus Pad Go 2 checks all the boxes for a $400 Android tablet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Very positive overall, with strong praise for design and battery, but notable performance and feature drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "phonearena",
+    "critic": "Peter Kostadinov",
+    "url": "https://www.phonearena.com/reviews/oneplus-pad-go-2-review_id7816",
+    "date": "2026-01-08",
+    "rating": "5.2/10",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "Do consider it if you're invested in the OnePlus ecosystem, but please take a look at other more capable Android tablets before you commit.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 54,
+      "gemini": 52
+    },
+    "scoreReason": "Mostly for OnePlus ecosystem users; reviewer urges most buyers to consider better Android tablets first.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "cnet",
+    "critic": "Matt Elliott",
+    "url": "https://www.cnet.com/tech/computing/dell-xps-16-review/",
+    "date": "2026-09-25",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The XPS 16 is a good fit for laptop shoppers looking for a do-it-all, big-screen laptop that offers a roomy 16-inch OLED display inside a fairly trim package, backed by solid but not groundbreaking performance.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong, stylish and capable, but overpriced with limited ports, upgrades and graphics power.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-16-2026",
+    "outletId": "zdnet",
+    "critic": "Cesar Cadenas",
+    "url": "https://www.zdnet.com/article/dell-xps-16-review/",
+    "date": "2026-07-17",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "I'd recommend the XPS 16 to anyone looking for a premium Windows 11 machine, especially if you're a content creator who wants a reliable workstation on the go.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent premium laptop with gorgeous display, strong performance, and battery life, but limited ports and mushy keyboard.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-15",
+    "outletId": "digit",
+    "critic": "Ayushi Jain",
+    "url": "https://www.digit.in/reviews/mobile-phones/oneplus-15-review-power-over-panache.html",
+    "date": "2025-12-17",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "But if you want good performance, excellent battery life, and a good viewing experience, the OnePlus 15 stands out as a well-rounded and sensible flagship option.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong battery, display and performance, but camera and missing alert slider hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "cnet",
+    "critic": "David Lumb",
+    "url": "https://www.cnet.com/tech/mobile/motorola-moto-g-2026-3-things-i-like-and-2-that-i-dont/",
+    "date": "2025-12-11",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "There's always room for Motorola to improve on the basics, but for a $200 phone, the Moto G has a lot to offer budget-minded buyers.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Good value with attractive design and solid cameras, but weak performance and low-resolution display hurt it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "moto-g-2026",
+    "outletId": "android-authority",
+    "critic": "Ryan Haines",
+    "url": "https://www.androidauthority.com/motorola-moto-g-play-2026-review-3635255/",
+    "date": "2026-05-08",
+    "rating": "5/10",
+    "score": 52,
+    "scoreSource": "rating",
+    "excerpt": "Although the Moto G (2026) is a bit better, I still wouldn’t say it’s worthwhile.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 52,
+      "gemini": 51
+    },
+    "scoreReason": "Mostly negative review; slight camera and charging advantages, but reviewer says it is not worthwhile.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "cnet",
+    "critic": "Lori Grunin",
+    "url": "https://www.cnet.com/tech/gaming/asus-rog-xbox-ally-x20-review/",
+    "date": "2026-10-15",
+    "rating": "8.3/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "Like the Xbox Ally X, whether you think the ROG Xbox Ally X20 is worth the money depends upon the games you play.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for OLED and comfort, but high price, Windows hassles and middling battery temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "toms-guide",
+    "critic": "Jason England",
+    "url": "https://www.tomsguide.com/gaming/handheld-gaming/asus-rog-xbox-ally-x20-review",
+    "date": "2026-10-15",
+    "rating": "3.5/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "But an eye-watering $1,299 price tag turns what should be a mainstream handheld into a luxury gamble.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Great screen and comfort, but overpriced with unchanged performance and weak value.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "pcmag",
+    "critic": "Zackery Cuevas",
+    "url": "https://www.pcmag.com/reviews/asus-rog-xbox-ally-x20",
+    "date": "2026-10-15",
+    "rating": "3.5/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "Yes, the Xbox Ally X20's pricing leaves it caught between a rock and a hard place, but it's still a very capable handheld gaming PC and a fun collector's item if you're willing to splurge.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Great OLED and ergonomics, but very expensive with minor upgrades, Windows quirks, and little reason to upgrade.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "android-authority",
+    "critic": "Taylor Kerns",
+    "url": "https://www.androidauthority.com/asus-rog-xbox-ally-x20-review-3722864/",
+    "date": "2026-10-26",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The ASUS ROG Xbox Ally X20 is a very capable machine that's expensive, but competitively priced against other Windows handhelds.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent performance and design, but very high price, Windows quirks, and software bugs limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "toms-hardware",
+    "critic": "Andrew E. Freedman",
+    "url": "https://www.tomshardware.com/video-games/handheld-gaming/asus-rog-xbox-ally-x20-tested-same-performance-more-comfortable-and-a-glorious-oled-screen",
+    "date": "2026-10-26",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "The Asus ROG Xbox Ally X20 is the definitive form of Asus' handheld.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent OLED and build upgrades, but unchanged performance and steep price limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "ign",
+    "critic": "Jacqueline Thomas",
+    "url": "https://www.ign.com/articles/asus-rog-xbox-x20-review",
+    "date": "2026-10-16",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Asus ROG Xbox Ally X20 takes the best handheld gaming PC on the market and straps an OLED display on it, and besides a weird software quirk, it's the new king of gaming handhelds.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for its OLED screen and value, but software bugs and weak upgrade case temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "pc-gamer",
+    "critic": "James Bentley",
+    "url": "https://www.pcgamer.com/hardware/handheld-gaming-pcs/asus-rog-xbox-ally-x20-review/",
+    "date": "2026-10-15",
+    "rating": "80/100",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "Its additions are very welcome, but that's a lot of cash for a familiar package.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent screen, comfort, thermals, and software, but the steep price premium brings clear value concerns.",
+    "scoredFromFullText": true
   }
 ]
