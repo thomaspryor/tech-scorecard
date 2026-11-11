@@ -28466,5 +28466,236 @@
     },
     "scoreReason": "Excellent screen, performance and battery, but very expensive and impractical without keyboard or case.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/nov/10/apple-macbook-pro-review-lighter-thinner-stunning-oled-touchscreen",
+    "date": "2026-11-10",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "The reduced weight, slimmer body and absolutely stunning new screen are meaningful upgrades that will no doubt see the MacBook Pro through another five years as one of the very best pro laptops you can get.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent display, lighter design and top performance, but very expensive with minor feature drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "tech-advisor",
+    "critic": "Britta O’Boyle",
+    "url": "https://www.techadvisor.com/article/3268179/apple-iphone-duo-review.html",
+    "date": "2026-10-23",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "But if you'll use the larger screen regularly, it's one of the best foldables around.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent design and software, but high price, camera compromises, and missing features limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "bgr",
+    "critic": "Connor Jewiss",
+    "url": "https://www.bgr.com/2302400/iphone-duo-review/",
+    "date": "2026-10-30",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "All in all, this is not how I expected to feel about a first-generation foldable phone, and it shows just how much effort Apple put into nailing this form factor from the jump.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent first-gen foldable with standout design and polish, but expensive and camera compromises prevent a rave.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "pickr",
+    "critic": "Leigh :) Stark",
+    "url": "https://www.pickr.com.au/reviews/2026/apple-airpods-5/",
+    "date": "2026-09-30",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "They're priced better, feel better, sound better, and are generally just better overall.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended with standout sound, comfort, value, and ANC; only minor upsell and battery complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4-pro",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-buds-4-pro-review",
+    "date": "2026-03-24",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "But for the “Samsung faithful,” the Buds 4 Pro are exactly what we wanted: a refined, premium, and great-sounding pair of buds that finally get the fundamentals right.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent sound, comfort, and ANC, but battery life and non-Samsung limitations temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4-pro",
+    "outletId": "zdnet",
+    "critic": "Jada Jones",
+    "url": "https://www.zdnet.com/article/samsung-galaxy-buds-4-review/",
+    "date": "2026-03-22",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Buds 4 Pro debut with meaningful upgrades that will please most audio fans.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Best Samsung buds yet with strong sound and comfort, but upgrades are incremental and Galaxy-only features limit appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-16-m5",
+    "outletId": "petapixel",
+    "critic": "Jaron Schneider",
+    "url": "https://petapixel.com/2026/03/13/macbook-pro-with-m5-max-review-this-is-better-than-your-desktop/",
+    "date": "2026-03-13",
+    "rating": null,
+    "score": 98,
+    "scoreSource": "text",
+    "excerpt": "This is an exceptional creative editing machine and one of the most impressive computers we have ever seen.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Exceptional creative performance, best-in-market praise, with only minor drawbacks like weight and high price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wf-1000xm6",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/sony-wf-1000xm6-earbuds-review/",
+    "date": "2026-02-12",
+    "rating": "9.2/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "And while these buds are certainly expensive, they're pretty hard to beat from a performance standpoint across all the key areas, including sound quality, noise canceling and voice-calling, which is why I've awarded them an Editors' Choice.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding sound, noise canceling and calls, with price and fit concerns limiting an unreserved recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wf-1000xm6",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/headphones/sony-wf-1000xm6-review",
+    "date": "2026-02-12",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "In general, despite a small misstep on the comfort and design front, both of which I think I could get used to, the Sony WF-1000XM6 are an absolute triumph.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Exceptional ANC, sound and features, with comfort and iPhone-focused caveats preventing a perfect score.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wf-1000xm6",
+    "outletId": "mark-ellis-reviews",
+    "critic": "Mark Ellis",
+    "url": "https://markellisreviews.com/sony-wf-1000xm6-review/",
+    "date": "2026-02-12",
+    "rating": "8/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "With a beautifully open sound and especially dynamic mid-range, the XM6 are top quality earbuds with solid noise-cancelling to boot.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strong sound, fit, and ANC praise, but price and weaker transparency temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-14-2026",
+    "outletId": "itpro",
+    "critic": "Keumars Afifi-Sabet",
+    "url": "https://www.itpro.com/hardware/laptops/the-dell-xps-14-is-back-with-a-vengeance-but-is-this-high-end-laptop-worth-the-premium-price-tag",
+    "date": "2026-08-10",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Dell has finally brought back the XPS 14, and it's the best version of this machine that it's manufactured in years – but with several important caveats.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent design, keyboard and battery, but pricey base model has disappointing screen and only decent performance.",
+    "scoredFromFullText": true
   }
 ]
