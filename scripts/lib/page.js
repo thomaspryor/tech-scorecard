@@ -154,22 +154,28 @@ function isoDate(s) {
 
 /**
  * Rating, critic and date from the page's own JSON-LD. Never guessed: a field the page does not
- * state is left out.
+ * state is left out. `ambiguous` is set when the page carries two different ratings (a roundup, or a sidebar with another
+ * product's review): the first one cannot be trusted to be this product's.
  * @param {string} html
- * @returns {{rating?: string, critic?: string, date?: string}}
+ * @returns {{rating?: string, critic?: string, date?: string, ambiguous?: boolean}}
  */
 function jsonLd(html) {
-  /** @type {{rating?: string, critic?: string, date?: string}} */
+  /** @type {{rating?: string, critic?: string, date?: string, ambiguous?: boolean}} */
   const found = {};
+  /** Every rating on the page as a share of its scale, so "4/5" and "8/10" count as one. @type {Set<string>} */
+  const seen = new Set();
   /** @param {any} n */
   const walk = (n) => {
     if (!n || typeof n !== 'object') return;
     if (Array.isArray(n)) return n.forEach(walk);
     const rr = n.reviewRating || (n['@type'] === 'Rating' ? n : null);
-    if (rr && rr.ratingValue != null && !found.rating) {
+    if (rr && rr.ratingValue != null) {
       const v = parseFloat(rr.ratingValue);
       const best = parseFloat(rr.bestRating ?? 5);
-      if (Number.isFinite(v) && best > 0 && v <= best) found.rating = `${v}/${best}`;
+      if (Number.isFinite(v) && best > 0 && v <= best) {
+        seen.add((v / best).toFixed(3));
+        if (!found.rating) found.rating = `${v}/${best}`;
+      }
     }
     const author = n.author;
     if (author && !found.critic) {
@@ -187,6 +193,7 @@ function jsonLd(html) {
       /* malformed block */
     }
   }
+  if (seen.size > 1) found.ambiguous = true;
   return found;
 }
 

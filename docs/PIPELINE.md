@@ -55,6 +55,14 @@ never sent to a paid service.
    appear word for word in the page text. Only outlets in `data/outlets.json` are accepted. It also looks
    for launches from the last 45 days and adds one only when 6 or more reviews pass these checks
    (card text is written from the review texts only, with `autoAdded` set on the product).
+   Before the model reads a page, `scripts/lib/page-guards.js` (ported from Broadway's `verifyFetchedUrl` and soft-404 checks, with the
+   same tolerance) skips a page that is the outlet's error template, whose canonical address is another article or the home page,
+   that starts with a subscribe wall, or whose title names a sibling model ("Pixel 10a" for the Pixel 10) or another product on the
+   site; a page with two different ratings in its JSON-LD is skipped too. A page that gives no such evidence passes on to the model
+   and the word-for-word quote check, which are unchanged. Sibling-model and several-ratings skips are remembered 30 days;
+   not-found and canonical skips are not (the real review can appear at that address later). `npm run validate` also rejects one
+   review URL filed under two outlets, and the same excerpt from two outlets on one product (a joint review of two products on one
+   outlet is fine). Each run prints a count of skipped candidate pages by reason.
    A candidate is skipped when it matches a product already on the site (same name with or without the
    brand, "+" spelled out so S26 and S26+ stay apart) or when at least half of its reviews are pages already on the site.
    The card must pass the copy rules (`scripts/lib/copy-voice.js`); a card that breaks them is asked for once more.
