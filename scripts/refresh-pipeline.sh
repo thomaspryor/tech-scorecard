@@ -6,6 +6,8 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 OUT=.cache/refresh
+# Pages the fetch services read earlier in a run are cached for that run (scripts/lib/fetch-ladder.js); start each run clean.
+rm -rf .cache/fetch-ladder
 
 # --backfill-only runs just the backfill and the checks after it (to try it by hand): bash scripts/refresh-pipeline.sh
 # --backfill-only --category=tablet --max-backfill=1. Otherwise the normal refresh runs first, then the backfill.
@@ -27,11 +29,12 @@ fi
 # every check below like any new launch. It reports its own faults in problems.txt, so a crash here must not cost
 # the refresh above: note it and carry on.
 node scripts/refresh.js --backfill-only ${BACKFILL_ARGS[@]+"${BACKFILL_ARGS[@]}"} || echo "The backfill step crashed (see the run log)." >> "$OUT/problems.txt"
-[ -s "$OUT/touched.txt" ] || { echo "nothing new"; exit 0; }
+# Nothing new to check, but a photo found for an older product (or the state files) may have changed data/: validate it.
+[ -s "$OUT/touched.txt" ] || { echo "nothing new"; npm run validate; exit 0; }
 IDS=$(cat "$OUT/touched.txt")
 
 # Quote check: a new review whose quote is missing (or whose page cannot be read) is dropped.
-python3 scripts/verify-quotes.py "$IDS" > "$OUT/verify.txt" || true
+ADDED_FILE="$OUT/added.txt" python3 scripts/verify-quotes.py "$IDS" > "$OUT/verify.txt" || true
 cat "$OUT/verify.txt"
 # It exits non-zero when it finds a MISS, so check it got to the end (its last line is the counts).
 tail -n 1 "$OUT/verify.txt" | grep -q '^{' || { echo "verify-quotes.py did not finish"; exit 1; }

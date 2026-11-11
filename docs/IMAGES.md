@@ -6,8 +6,10 @@ newsroom, then the brand's own product or store page. Never retailer, review-sit
 stays as the record of what each brand's pages actually say: for most brands the terms do NOT grant this use, so treat it
 as removable on request, and get written permission before the site is public.
 
-Status: all 89 products have a photo. There is no drawn fallback any more: a product without a photo shows a plain
-tile with the brand name (`ProductImage`).
+Status: a product without a photo shows a plain tile with the brand name (`ProductImage`). Owner decision 2026-11-11: a
+photo is wanted but never holds reviews back. The refresh adds a new product even when no usable official photo turns up,
+and `fillMissingPhotos` (`scripts/refresh.js`, part of the daily backfill step) looks again every 3 days, a few products a
+run, until it finds one. `npm run backfill:status` lists the products still waiting.
 
 ## How it works
 

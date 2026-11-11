@@ -7,7 +7,7 @@ Pages that block scripted fetches (403/429) are reported as BLOCKED, not failure
 check those by hand. Multi-page reviews (GSMArena ...p2.php to p9.php) are followed.
 Run after scripts/import-product.js, before publishing.
 """
-import html, json, re, subprocess, sys, unicodedata
+import html, json, os, re, subprocess, sys, unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -37,6 +37,23 @@ def fetch(url):
     return code, norm(body, page=True)
 
 
+def fetch_ladder(url):
+    """The page as the paid fetch services or the Internet Archive read it (scripts/fetch-page.js), or None.
+    A page the refresh already read that way is in the run's cache, so this costs nothing again."""
+    try:
+        alt = subprocess.run(['node', str(ROOT / 'scripts' / 'fetch-page.js'), url], capture_output=True, text=True, errors='ignore', timeout=200)
+    except (subprocess.TimeoutExpired, OSError):
+        return None
+    return norm(alt.stdout, page=True) if alt.returncode == 0 and alt.stdout.strip() else None
+
+
+# Reviews added in this run (productId/outletId lines of the file named by ADDED_FILE): only these can be dropped, so
+# only these are worth a second look through a paid service. Without ADDED_FILE (a manual run) every review may be.
+ADDED = None
+if os.environ.get('ADDED_FILE') and Path(os.environ['ADDED_FILE']).exists():
+    ADDED = set(Path(os.environ['ADDED_FILE']).read_text().split())
+
+
 def candidates(url):
     yield url
     if 'gsmarena.com' in url and not re.search(r'p\d+\.php$', url):
@@ -55,6 +72,17 @@ def check(r):
         first_code = first_code or code
         if want in page:
             return 'FULL', r, u
+        if first_code != '200':
+            break  # the first page could not be read: later pages of a multi-page review cannot be either
+    # Not on the plain page (blocked, a bot wall, an empty shell): look at the copy the paid services or the Internet
+    # Archive return. The quote still has to be on it word for word. Not for a page that does not exist.
+    if first_code not in ('404', '410') and (ADDED is None or f"{r['productId']}/{r['outletId']}" in ADDED):
+        for u in candidates(r['url']):
+            page = fetch_ladder(u)
+            if page is None:
+                break
+            if want in page:
+                return 'FULL', r, u
     # 000 = timeout/connection failure: not evidence the quote is wrong.
     return ('BLOCKED' if first_code in ('000', '403', '429', '451', '503') else 'MISS'), r, first_code
 

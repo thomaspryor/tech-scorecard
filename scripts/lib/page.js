@@ -2,6 +2,8 @@
 // refresh.js; scripts/verify-quotes.py applies the same quote normalization in Python.
 // Everything except `curl` is pure, so the tests cover it without the network.
 const { execFile, execFileSync } = require('child_process');
+const path = require('path');
+const { looksBlocked } = require('./fetch-ladder');
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
@@ -24,8 +26,41 @@ function curl(argv, { input, timeout = 90 } = {}) {
   }
 }
 
-/** The HTML page at `url` (-f: an HTTP error such as 403, 404 or 429 throws). @param {string} url */
-const fetchPage = (url) => curl(['-f', '-A', UA, url]);
+/** Plain request status codes that mean "the page is not there", which no paid service can fix. */
+const GONE = new Set([400, 404, 410]);
+
+/**
+ * The HTML page at `url`. A plain request first; when the outlet refuses it (403, 429, a bot wall, an empty
+ * shell) the page is read through the paid fetch services and the Internet Archive (scripts/lib/fetch-ladder.js,
+ * run as scripts/fetch-page.js so this stays synchronous). Throws when nothing can read it, and straight away
+ * for a page that does not exist. Set NO_FETCH_LADDER=1 to skip the fallback.
+ * @param {string} url
+ */
+function fetchPage(url) {
+  let html = '';
+  let code = 0;
+  try {
+    const out = curl(['-A', UA, '-w', '\n%{http_code}', url], { timeout: 40 });
+    const cut = out.lastIndexOf('\n');
+    html = out.slice(0, cut);
+    code = Number(out.slice(cut + 1));
+  } catch {
+    /* curl could not connect or timed out: the fallback may still read it */
+  }
+  if (code >= 200 && code < 300 && !looksBlocked(html)) return html;
+  if (GONE.has(code)) throw new Error(`HTTP ${code}`);
+  if (process.env.NO_FETCH_LADDER) throw new Error(`HTTP ${code || 'error'}`);
+  try {
+    return execFileSync(process.execPath, [path.join(__dirname, '..', 'fetch-page.js'), url], {
+      encoding: 'utf8',
+      maxBuffer: 64 * 1024 * 1024,
+      stdio: ['ignore', 'pipe', 'ignore'],
+      timeout: 150_000,
+    });
+  } catch {
+    throw new Error(`page not readable (HTTP ${code || 'error'}, and no fetch service could read it)`);
+  }
+}
 
 /**
  * fetchPage without blocking, for fetching many feeds at once. Resolves to null when the page cannot be read.

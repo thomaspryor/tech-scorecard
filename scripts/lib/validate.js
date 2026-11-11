@@ -98,8 +98,8 @@ function validateData(
     const plain = (/** @type {string} */ s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
     if (p.name && p.brand && !plain(p.name).startsWith(plain(p.brand)))
       errors.push(`product ${p.id}: name must start with the brand ("${p.brand} ...")`);
-    // A product the refresh added goes live with its photo (scripts/lib/launch-photo.js), never a blank tile.
-    if (p.autoAdded && !p.image) errors.push(`product ${p.id}: an auto-added product needs a photo`);
+    // A product the refresh added goes live even without a photo (it shows a brand tile): its reviews are what the site is for.
+    // The refresh keeps looking for an official photo (fillMissingPhotos in scripts/refresh.js).
     if (p.officialUrl != null && !isHttpsUrl(p.officialUrl)) errors.push(`product ${p.id}: officialUrl must be https`);
     if (!categories.categories.includes(p.category)) errors.push(`product ${p.id}: unknown category "${p.category}"`);
     if (p.art && !categories.artKinds.includes(p.art.kind))

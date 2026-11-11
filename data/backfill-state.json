@@ -3,8 +3,13 @@
   "lastRun": "2026-11-11",
   "categories": {
     "tablet": {
+      "misses": 0,
+      "pausedUntil": null
+    },
+    "console": {
       "misses": 1,
       "pausedUntil": null
     }
-  }
+  },
+  "photoTries": {}
 }

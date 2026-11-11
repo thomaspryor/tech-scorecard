@@ -53,6 +53,12 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Outlets that refuse a plain request are read through these (scripts/lib/fetch-ladder.js, the same services
+          # Broadway Scorecard uses). Optional: a step with no key is skipped, and the Internet Archive needs none.
+          SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
+          SCRAPINGBEE_API_KEY: ${{ secrets.SCRAPINGBEE_API_KEY }}
+          BRIGHTDATA_TOKEN: ${{ secrets.BRIGHTDATA_TOKEN }}
+          BRIGHTDATA_ZONE: ${{ secrets.BRIGHTDATA_ZONE }}
         run: bash scripts/refresh-pipeline.sh --max-products=${{ inputs.max_products || '15' }}
       - name: Commit if anything changed
         run: |

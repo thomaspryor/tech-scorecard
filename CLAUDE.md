@@ -23,7 +23,7 @@ Nothing here waits on a person. The daily refresh adds reviews and launches (wit
 ## Rules
 
 - Never publish unverified review scores or quotes. Every review links to the original (see `/methodology`).
-- Product photos follow docs/IMAGES.md (official press photos, credited).
+- Product photos follow docs/IMAGES.md (official press photos, credited). A missing photo never blocks a product's reviews; the refresh keeps looking.
 - Score tiers live in `src/config/score-buckets.ts`; Critical Gold starts at 90 (tiers 90/80/70/60, recalibrated 2026-10-26 from the score distribution).
 - Share images: product pages have a generated card at `src/app/product/[slug]/opengraph-image.tsx`. Messaging apps cache previews per URL, so test with `?v=N` on the link.
 - SEO notes: docs/SEO-PLAN.md. Data changes run `npm run validate` first.

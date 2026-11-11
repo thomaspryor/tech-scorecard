@@ -26,6 +26,18 @@ Lessons from the first 30 products (2026-10-22):
 - Skip hands-on/first-look pieces, video-only reviews, non-English editions and reviews of sibling models
   (joint reviews are fine with a `note`).
 
+## Reading pages outlets refuse (fetch ladder)
+
+Every script reads review pages through `fetchPage()` (`scripts/lib/page.js`). A plain request goes first; when the outlet
+answers 403/429, a bot wall or an empty shell, the page is read through `scripts/lib/fetch-ladder.js` (run as
+`scripts/fetch-page.js`, which `verify-quotes.py` also calls): ScrapingDog, then Bright Data, then ScrapingBee, then the
+Internet Archive's newest saved copy. These are the services Broadway Scorecard uses (`scripts/lib/scraper.js` there, much
+larger: it also has cookie logins for paywalls and Browserbase, which are not ported). A service with no key in the environment
+is skipped. Keys (repository secrets, the same names Broadway uses): `SCRAPINGDOG_API_KEY`, `BRIGHTDATA_TOKEN` +
+`BRIGHTDATA_ZONE`, `SCRAPINGBEE_API_KEY`; the Internet Archive needs none. At most `PAID_FETCH_CAP` (250) paid requests a run.
+A page read this way is checked like any other: the quote must be on it word for word. A page that does not exist (404) is
+never sent to a paid service.
+
 ## Daily refresh (automatic)
 
 `.github/workflows/weekly-refresh.yml` runs every day at 09:17 UTC (and on demand from the Actions tab) and calls
@@ -56,7 +68,9 @@ Lessons from the first 30 products (2026-10-22):
      then new categories one at a time (earbuds, TV, camera, e-reader, handheld, the `expansion` list in
      `src/config/categories.json`); then any category under 15 products. At 15 everywhere it stops.
    - A product needs at least 5 verified reviews from outlets already in `data/outlets.json` (the backfill never adds
-     an outlet), and an official photo (`docs/IMAGES.md`). A quote that fails `verify-quotes.py` is dropped like any other.
+     an outlet). A quote that fails `verify-quotes.py` is dropped like any other. An official photo is wanted (`docs/IMAGES.md`)
+     but does not hold the reviews back: a product with none goes live with a brand tile and `fillMissingPhotos` looks again
+     every 3 days (3 products a run, the official page first, then the brand's press pages).
      A product left under 5 reviews after the checks is removed again (`drop-thin-products.js`).
    - A candidate that fails is recorded in `data/refresh-rejected.json` as `backfill:<id>` and skipped for 90 days.
    - A new category goes live only with 5 products that have at least 5 reviews each. Until then its products sit in
