@@ -224,6 +224,21 @@ function usableCandidates(raw, category, today) {
     .map((c) => ({ ...c, category }));
 }
 
+/** A candidate that ends one or two reviews short of the minimum is looked at again after this many days, not REJECT_DAYS. */
+const NEAR_MISS_DAYS = 14;
+/** Reviews a candidate needs before it counts as a near miss (3 or 4 of the 5 needed). */
+const NEAR_MISS_MIN_REVIEWS = 3;
+
+/**
+ * The date to store for a rejected candidate. Rejections expire REJECT_DAYS after their date, so a near miss
+ * (it found at least NEAR_MISS_MIN_REVIEWS verified reviews but not enough) is dated earlier, which makes it
+ * expire after NEAR_MISS_DAYS: another outlet may have reviewed it since.
+ * @param {string} today
+ * @param {number} found verified reviews it ended with, -1 when it failed for another reason
+ */
+const rejectedOn = (today, found) =>
+  found >= NEAR_MISS_MIN_REVIEWS ? addDays(today, -(REJECT_DAYS - NEAR_MISS_DAYS)) : today;
+
 /** The data/refresh-rejected.json key for a rejected product. @param {string} id */
 const rejectKey = (id) => `${REJECT_PREFIX}${id}`;
 
@@ -285,6 +300,8 @@ module.exports = {
   THIN_BELOW,
   FULL_AT,
   REJECT_DAYS,
+  NEAR_MISS_DAYS,
+  rejectedOn,
   PAUSE_AFTER_MISSES,
   PAUSE_DAYS,
   STALL_DAYS,

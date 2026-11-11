@@ -35,6 +35,7 @@ const {
 const { UA, curl, fetchPage, fetchPageAsync, pageText, containsQuote, jsonLd, hostOf } = require('./lib/page');
 const { urlKey } = require('./lib/launches');
 const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
+const { outletFor } = require('./lib/outlets');
 const { openaiText, geminiText, geminiImageText, parseJsonReply } = require('./lib/models');
 const { findLaunchPhoto, siteOf } = require('./lib/launch-photo');
 const backfill = require('./lib/backfill');
@@ -76,6 +77,8 @@ const MAX_PRODUCTS = Number(args['max-products'] || 15);
 const MAX_NEW = Number(args['max-new'] ?? 2);
 const only = args.only ? new Set(String(args.only).split(',')) : null;
 const BACKFILL_ONLY = !!args['backfill-only'];
+/** How many verified reviews the last buildNewProduct found when it ended for lack of them (-1 when it ended for another reason). */
+let shortfall = -1;
 
 const CATEGORIES =
   /** @type {{categories: Category[], artKinds: string[], expansion: import('./lib/backfill').Config['expansion']}} */ (
@@ -92,30 +95,8 @@ const onSite = new Set(reviews.map((r) => urlKey(r.url)));
 /** Reviews usually publish a week or two before the on-sale date. @param {string} iso @param {number} n */
 const daysBefore = (iso, n) => new Date(Date.parse(iso) - n * 864e5).toISOString().slice(0, 10);
 
-/**
- * The outlet a URL belongs to. Two outlets can share a domain (Digital Foundry publishes on eurogamer.net):
- * the one named in the path wins ("/digitalfoundry-..."), then the one the domain is named after.
- * @param {string} u
- */
-function outletForUrl(u) {
-  const host = hostOf(u);
-  const found = outlets.filter((o) =>
-    [o.domain, ...(o.altDomains || [])].some((d) => host === d || host.endsWith(`.${d}`)),
-  );
-  if (found.length < 2) return found[0];
-  const key = (/** @type {string} */ s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
-  let pathname = '';
-  try {
-    pathname = key(new URL(u).pathname);
-  } catch {
-    /* hostOf already matched, so the URL parses */
-  }
-  return (
-    found.find((o) => pathname.includes(key(o.id))) ||
-    found.find((o) => key(host.replace(/^www\./, '')).startsWith(key(o.id))) ||
-    found[0]
-  );
-}
+/** The outlet a URL belongs to (scripts/lib/outlets.js). @param {string} u */
+const outletForUrl = (u) => outletFor(u, outlets);
 
 /**
  * Every outlet feed's recent review headlines: URLs for products on the site, and leads for new launches.
@@ -183,6 +164,16 @@ function resolveRedirect(u) {
 }
 
 const NOT_A_REVIEW = 'not a full review of this product';
+/** Skip reasons for a page that could not be read: gone for good, or only refusing us (the fetch services may read it another day). */
+const SKIP_MISSING = 'page missing (404/410)';
+const SKIP_BLOCKED = 'page blocked (no fetch service could read it)';
+/** How often each skip reason came up in this run, printed at the end so a change to the pipeline can be measured. @type {Map<string, number>} */
+const skipCounts = new Map();
+/** @param {string} reason */
+function countSkip(reason) {
+  const key = reason.replace(/^date .*/, 'date outside launch..today').replace(/\s*\(.*$/, '');
+  skipCounts.set(key, (skipCounts.get(key) || 0) + 1);
+}
 
 /**
  * Turn one candidate URL into a review object, or a reason to skip it.
@@ -198,8 +189,11 @@ async function buildReview(product, url) {
     html = fetchPage(url);
   } catch (e) {
     // A page that does not exist is not looked for again for a while; one that is only blocked may be read another day.
-    if (/HTTP (404|410)/.test(String(/** @type {Error} */ (e).message))) rejected[urlKey(url)] = TODAY;
-    return { skip: 'page not readable (blocked or missing)' };
+    if (/HTTP (404|410)/.test(String(/** @type {Error} */ (e).message))) {
+      rejected[urlKey(url)] = TODAY;
+      return { skip: SKIP_MISSING };
+    }
+    return { skip: SKIP_BLOCKED };
   }
   const text = pageText(html);
   if (text.length < 1500) return { skip: 'page too short' };
@@ -262,7 +256,10 @@ async function collectReviews(product, existing, feedUrls = [], search = true, m
       out.push(res.review);
       have.add(outlet.id);
       console.log(`  + ${outlet.id} ${res.review.rating || 'unrated'}`);
-    } else console.log(`  - ${url.slice(0, 90)}: ${res.skip}`);
+    } else {
+      console.log(`  - ${url.slice(0, 90)}: ${res.skip}`);
+      countSkip(res.skip || 'unknown');
+    }
   }
   return out;
 }
@@ -515,7 +512,7 @@ async function confirmFacts(c) {
   );
   for (const officialUrl of new Set(pages)) {
     try {
-      curl(['-f', '-o', '/dev/null', '-A', UA, officialUrl]);
+      fetchPage(officialUrl); // brand sites that refuse a plain request are read through the fetch services too
       return { releaseDate, launchPrice, officialUrl };
     } catch {
       /* try the other page */
@@ -536,8 +533,9 @@ async function confirmFacts(c) {
  * @returns {Promise<Made | null>}
  */
 async function buildNewProduct(c, id, leads, { minReviews, backfilled = false }) {
+  shortfall = -1;
   try {
-    curl(['-f', '-o', '/dev/null', '-A', UA, c.officialUrl]);
+    fetchPage(c.officialUrl);
   } catch {
     console.log('  official page not readable, skipped');
     return null;
@@ -563,6 +561,7 @@ async function buildNewProduct(c, id, leads, { minReviews, backfilled = false })
   }
   if (revs.length < minReviews) {
     console.log(`  only ${revs.length} verified reviews, need ${minReviews}`);
+    shortfall = revs.length;
     return null;
   }
   // Official photo: the product's own page first, then the brand's press pages (backfill only).
@@ -755,6 +754,8 @@ async function main() {
 
 /** Writes what a run learned: when each product was last checked, the pages and candidates rejected, and any problems. @param {string[]} problems @param {boolean} [appendProblems] */
 function writeOut(problems, appendProblems = false) {
+  if (skipCounts.size)
+    console.log(`candidate pages skipped, by reason: ${[...skipCounts].map(([k, n]) => `${k} ${n}`).join(', ')}`);
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n');
   fs.writeFileSync(
     REJECTED_FILE,
@@ -916,6 +917,7 @@ async function findBackfill(problems) {
       examined++;
       /** @type {Made | null} */
       let m = null;
+      shortfall = -1;
       try {
         const facts = await confirmFacts(c);
         if (facts) {
@@ -934,7 +936,7 @@ async function findBackfill(problems) {
       if (m) {
         made.push(m);
         added++;
-      } else rejected[backfill.rejectKey(id)] = TODAY;
+      } else rejected[backfill.rejectKey(id)] = backfill.rejectedOn(TODAY, shortfall);
       // Once this category has what it needs the next one is up; its candidates come from its own search.
       const others = new Set([...worked].filter((w) => w !== category));
       const still = backfill.pickCategory({ ...now(), config: CATEGORIES, state: bstate, today: TODAY, skip: others });
