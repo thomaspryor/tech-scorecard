@@ -7,6 +7,7 @@ import {
   PAUSE_AFTER_MISSES,
   THIN_BELOW,
   addDays,
+  isNetworkError,
   backfillStatus,
   candidatePrompt,
   initialState,
@@ -237,5 +238,15 @@ describe('backfillStatus', () => {
     const s = status({ state: resting });
     expect(s.next?.category).toBe('tablet');
     expect(s.rows.find((r) => r.category === 'tablet')?.pausedUntil).toBe(addDays(today, 5));
+  });
+});
+
+describe('isNetworkError', () => {
+  it('treats dropped connections and timeouts as a warning, API errors as a problem', () => {
+    expect(isNetworkError('fetch failed')).toBe(true);
+    expect(isNetworkError('The operation was aborted due to timeout')).toBe(true);
+    expect(isNetworkError('connect ECONNRESET 1.2.3.4:443')).toBe(true);
+    expect(isNetworkError('HTTP 400: API key not valid')).toBe(false);
+    expect(isNetworkError('HTTP 503: model overloaded')).toBe(false);
   });
 });

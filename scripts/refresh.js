@@ -869,8 +869,7 @@ async function findBackfill(problems) {
       found = backfill.usableCandidates(parseJsonReply(text, '['), category, TODAY);
     } catch (e) {
       // An outage says nothing about the category, and the other categories would fail the same way.
-      problems.push(`The backfill search for ${category} failed: ${errText(e)}`);
-      console.error(`backfill search failed: ${errText(e)}`);
+      reportBackfillFault(problems, `The backfill search for ${category} failed: ${errText(e)}`, e);
       break;
     }
     let added = 0;
@@ -904,8 +903,7 @@ async function findBackfill(problems) {
         }
       } catch (e) {
         // A model outage: keep what is already built, report it, and stop (the next candidates would fail the same way).
-        problems.push(`The backfill stopped at ${c.name}: ${errText(e)}`);
-        console.error(`backfill stopped: ${errText(e)}`);
+        reportBackfillFault(problems, `The backfill stopped at ${c.name}: ${errText(e)}`, e);
         stopped = true;
         break;
       }
@@ -924,6 +922,19 @@ async function findBackfill(problems) {
   }
   console.log(`backfill: ${made.length} product(s) added, ${attempts} built, ${checked} checked`);
   return { made, state: bstate };
+}
+
+/**
+ * A backfill fault: an alert for the owner when the API answered with an error, only a warning in the run log when the
+ * connection dropped or timed out (the next day tries again, and the caretaker's 7-day check catches a backfill that never works).
+ * @param {string[]} problems
+ * @param {string} message
+ * @param {unknown} e
+ */
+function reportBackfillFault(problems, message, e) {
+  if (backfill.isNetworkError(String(/** @type {Error} */ (e).message))) console.log(`::warning::${message}`);
+  else problems.push(message);
+  console.error(message);
 }
 
 /** The backfill step of refresh-pipeline.sh: find, import, and hand the new products to the checks that follow. */

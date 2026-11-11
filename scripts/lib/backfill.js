@@ -72,6 +72,15 @@ const CATEGORY_HINT = {
  * @property {Record<string, string>} [photoTries] product id -> the last day its official photo was looked for
  */
 
+/**
+ * A dropped connection or a timeout (as opposed to an API answering with an error). The backfill is optional work, so
+ * one of these is a warning in the run log and not an alert to the owner; a backfill that keeps failing is caught by
+ * backfillStatus ("stalled") in the evening caretaker's check. An API error (a rejected key, HTTP 4xx or 5xx) is still reported.
+ * @param {string} message
+ */
+const isNetworkError = (message) =>
+  /fetch failed|timeout|timed out|aborted|socket|ECONN|ENOTFOUND|EAI_AGAIN/i.test(message);
+
 /** @param {string} iso @param {number} n */
 const addDays = (iso, n) => new Date(Date.parse(iso) + n * 864e5).toISOString().slice(0, 10);
 /** Whole days from a to b (both YYYY-MM-DD). @param {string} a @param {string} b */
@@ -280,6 +289,7 @@ module.exports = {
   PAUSE_DAYS,
   STALL_DAYS,
   REJECT_PREFIX,
+  isNetworkError,
   addDays,
   daysBetween,
   monthsBefore,
