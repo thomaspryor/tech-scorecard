@@ -26,6 +26,7 @@ if (require.main === module) {
   console.log(
     `last product added: ${s.lastAdded ?? 'never'}; last search run: ${s.lastRun ?? 'never'}; since ${s.since}`,
   );
+  console.log(`products waiting for a photo: ${s.waitingForPhoto.length ? s.waitingForPhoto.join(', ') : 'none'}`);
   console.log(s.next ? `next: ${s.next.category} (${s.next.why})` : 'next: nothing, every category is full');
   console.log(`backfill: ${s.verdict} (${s.quietDays} days since the last product, or since the start)`);
   process.exit(s.verdict === 'stalled' ? 1 : 0);

@@ -69,6 +69,7 @@ const CATEGORY_HINT = {
  * @property {string} since the day the backfill first ran
  * @property {string | null} lastRun the last day a category search worked (an outage does not count)
  * @property {Record<string, {misses: number, pausedUntil?: string | null}>} categories
+ * @property {Record<string, string>} [photoTries] product id -> the last day its official photo was looked for
  */
 
 /** @param {string} iso @param {number} n */
@@ -241,7 +242,7 @@ function keepRejected(rejected, today, pageDays) {
  * Where the backfill stands, for docs/CARETAKER.md. "stalled" means work remains and no product has
  * been added for STALL_DAYS days (or since the backfill first ran, when none ever was).
  * @param {object} o
- * @param {Pick<Product, 'id' | 'category' | 'backfilled'>[]} o.products
+ * @param {Pick<Product, 'id' | 'category' | 'backfilled' | 'image'>[]} o.products
  * @param {Pick<Review, 'productId'>[]} o.reviews
  * @param {Config} o.config
  * @param {State} o.state
@@ -260,7 +261,8 @@ function backfillStatus({ products, reviews, config, state, today }) {
   const lastAdded = products.reduce((max, p) => (p.backfilled && p.backfilled > max ? p.backfilled : max), '') || null;
   const quietDays = daysBetween(lastAdded ?? state.since, today);
   const verdict = !next ? 'complete' : quietDays >= STALL_DAYS ? 'stalled' : 'ok';
-  return { verdict, next, quietDays, lastAdded, lastRun: state.lastRun, since: state.since, rows };
+  const waitingForPhoto = products.filter((p) => !p.image).map((p) => p.id);
+  return { verdict, next, quietDays, lastAdded, lastRun: state.lastRun, since: state.since, rows, waitingForPhoto };
 }
 
 module.exports = {

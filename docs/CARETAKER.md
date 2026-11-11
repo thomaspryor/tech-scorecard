@@ -48,6 +48,8 @@ squash-merge it yourself, confirm the production deploy is READY on Vercel).
 - `npm run validate` already fails if a product the refresh added has no photo, or if a name does not
   start with its brand.
 - Also look at the newest 3 products on https://www.thetechscorecard.com.
+- Products added without a photo (`npm run backfill:status` lists them) are retried by the refresh every 3 days. One that
+  has waited more than 14 days gets a photo from you: `scripts/add-product-image.js`, following docs/IMAGES.md.
 - If a photo shows the wrong product, or is mostly logo or text, replace it with
   `scripts/add-product-image.js`, following docs/IMAGES.md (an official brand image, credited).
 

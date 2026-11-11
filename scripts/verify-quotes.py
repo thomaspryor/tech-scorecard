@@ -34,6 +34,12 @@ def norm(s, page=False):
 def fetch(url):
     out = subprocess.run(['curl', '-sL', '-A', UA, '-m', '30', '-w', '\n%{http_code}', url], capture_output=True, text=True, errors='ignore').stdout
     body, _, code = out.rpartition('\n')
+    if code != '200' and code not in ('404', '410'):
+        # Refused (403, 429, a timeout): read it through the paid fetch services or the Internet Archive, the same way
+        # the refresh read it (scripts/fetch-page.js). The quote still has to be on the page word for word.
+        alt = subprocess.run(['node', str(ROOT / 'scripts' / 'fetch-page.js'), url], capture_output=True, text=True, errors='ignore', timeout=300)
+        if alt.returncode == 0 and alt.stdout.strip():
+            return '200', norm(alt.stdout, page=True)
     return code, norm(body, page=True)
 
 

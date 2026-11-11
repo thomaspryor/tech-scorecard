@@ -28697,5 +28697,110 @@
     },
     "scoreReason": "Excellent design, keyboard and battery, but pricey base model has disappointing screen and only decent performance.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "pcmag",
+    "critic": "Iyaz Akhtar",
+    "url": "https://uk.pcmag.com/tablets/163029/oneplus-pad-go-2",
+    "date": "2026-02-08",
+    "rating": "3.5/5",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "The OnePlus Pad Go 2 is a fine Android tablet that benefits from a sharp screen, solid everyday performance, and helpful AI features, making it a good pick for OnePlus phone owners.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 76
+    },
+    "scoreReason": "Good screen and charging, but several missing features and weaker value than key rival.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "techradar",
+    "critic": "Thomas Deehan",
+    "url": "https://www.techradar.com/tablets/oneplus-pad-go-2-review",
+    "date": "2025-12-17",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "The OnePlus Pad Go 2 is a thoughtful upgrade on what was already a great, affordable tablet.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Outstanding mid-range tablet with only minor design and charging drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "digital-trends",
+    "critic": "Tom Bedford",
+    "url": "https://www.digitaltrends.com/tablets/oneplus-pad-go-2-review/",
+    "date": "2026-01-10",
+    "rating": "7/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "Packing plenty of power and a good-looking screen, the OnePlus Pad Go 2 is a useful entertainment device to challenge the iPad, but Apple's tablet heavyweight still wins out when it comes to software.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Good entertainment tablet with solid value, but software, accessories, and battery issues limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "mashable",
+    "critic": "Samantha Mangino",
+    "url": "https://sea.mashable.com/oneplus-pad-go-2/43216/review-the-oneplus-pad-go-2-looks-a-lot-like-an-ipad-but-its-not-quite-as-powerful",
+    "date": "2026-03-19",
+    "rating": null,
+    "score": 69,
+    "scoreSource": "text",
+    "excerpt": "But if you're not down with iOS, the Pad Go 2 is a comparable, although less powerful, Android option.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 65
+    },
+    "scoreReason": "Good budget tablet for streaming and browsing, but weak cameras, speakers, and performance limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/oneplus-pad-go-2-review/",
+    "date": "2025-12-23",
+    "rating": "5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "By improving on the original Pad Go in all the right places, OnePlus has found the affordable Android tablet sweet spot.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for display, battery and software, with moderate complaints about performance, charging and missing fingerprint sensor",
+    "scoredFromFullText": true
   }
 ]

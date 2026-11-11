@@ -380,6 +380,68 @@ function siteCandidate(raw, others) {
 }
 
 /**
+ * The `image` record of a product whose photo files are in public/images/products/<id>/.
+ * @param {{name: string, brand: string}} c
+ * @param {string} id
+ * @param {string} sourceUrl the brand page the photo came from
+ * @returns {NonNullable<Product['image']>}
+ */
+const photoRecord = (c, id, sourceUrl) => ({
+  src: `/images/products/${id}/main.webp`,
+  thumb: `/images/products/${id}/thumb.webp`,
+  alt: `${c.name}, official ${c.brand} photo`,
+  credit: c.brand,
+  sourceUrl,
+});
+
+/** How often a product still without a photo is looked at again, in days, and how many per run. */
+const PHOTO_RETRY_DAYS = 3;
+const PHOTO_RETRIES_PER_RUN = 3;
+
+/**
+ * Official photos for products that went live without one. Each is tried every PHOTO_RETRY_DAYS days, a few per run,
+ * the same way a new product's photo is found (its official page, then the brand's press pages) and judged by the same
+ * image check. Writes the photo and sets `image` on the product; touches nothing else.
+ * @param {import('./lib/backfill').State} bstate
+ * @returns {Promise<import('./lib/backfill').State>}
+ */
+async function fillMissingPhotos(bstate) {
+  const tries = { ...(bstate.photoTries || {}) };
+  const due = loadData(DATA_DIR)
+    .products.filter(
+      (p) => !p.image && p.officialUrl && (tries[p.id] || '') <= backfill.addDays(TODAY, -PHOTO_RETRY_DAYS),
+    )
+    .slice(0, PHOTO_RETRIES_PER_RUN);
+  for (const p of due) {
+    console.log(`photo: looking again for ${p.name}`);
+    tries[p.id] = TODAY;
+    const photo = await findLaunchPhoto(
+      { name: p.name, brand: p.brand, officialUrl: /** @type {string} */ (p.officialUrl) },
+      {
+        fetchPage,
+        download: downloadImage,
+        judge: geminiImageText,
+        parse: (t) => parseJsonReply(t),
+        pressPages: findPressPages,
+        log: (m) => console.log(m),
+      },
+    );
+    if (!photo || args['dry-run']) continue;
+    await writeProductImage(
+      p.slug,
+      photo.buffer,
+      (await hasDarkBackground(photo.buffer)) ? { pad: true } : { trim: true },
+    );
+    const data = loadData(DATA_DIR);
+    const target = data.products.find((x) => x.id === p.id);
+    if (target) target.image = photoRecord(p, p.slug, photo.page);
+    writeData(DATA_DIR, { products: data.products });
+    console.log(`photo: found one for ${p.name}`);
+  }
+  return { ...bstate, photoTries: tries };
+}
+
+/**
  * The brand's own press or newsroom pages for a product, found by search (the caller keeps only pages on the
  * brand's own site). Their share images are judged like the official page's.
  * @param {{name: string, brand: string, officialUrl: string}} c
@@ -489,10 +551,8 @@ async function buildNewProduct(c, id, leads, { minReviews, backfilled = false })
     pressPages: backfilled ? findPressPages : undefined,
     log: (m) => console.log(m),
   });
-  if (!photo) {
-    console.log('  no usable official photo yet, skipped');
-    return null;
-  }
+  // No photo is no reason to hold the reviews back: the product goes live with a brand tile, and fillMissingPhotos keeps looking.
+  if (!photo) console.log('  no usable official photo yet: adding it without one, the photo is retried on later runs');
   const texts = revs
     .slice(0, 8)
     .map((r) => {
@@ -527,15 +587,11 @@ async function buildNewProduct(c, id, leads, { minReviews, backfilled = false })
     autoAdded: TODAY,
     ...(backfilled ? { backfilled: TODAY } : {}),
   };
-  // The files are written in main() just before the import, so a dry run or a failed run leaves none behind.
-  launchPhotos.set(id, photo.buffer);
-  product.image = {
-    src: `/images/products/${id}/main.webp`,
-    thumb: `/images/products/${id}/thumb.webp`,
-    alt: `${c.name}, official ${c.brand} photo`,
-    credit: c.brand,
-    sourceUrl: photo.page,
-  };
+  if (photo) {
+    // The files are written in main() just before the import, so a dry run or a failed run leaves none behind.
+    launchPhotos.set(id, photo.buffer);
+    product.image = photoRecord(c, id, photo.page);
+  }
   return { product, reviews: revs, newOutlets: [] };
 }
 
@@ -879,6 +935,17 @@ async function mainBackfill() {
   const files = [];
   let bstate = null;
   try {
+    // Products added without a photo get another look first (one search each, a few per run).
+    const start = fs.existsSync(BACKFILL_FILE)
+      ? JSON.parse(fs.readFileSync(BACKFILL_FILE, 'utf8'))
+      : backfill.initialState(TODAY);
+    try {
+      const withPhotos = await fillMissingPhotos(start);
+      if (!args['dry-run']) fs.writeFileSync(BACKFILL_FILE, JSON.stringify(withPhotos, null, 2) + '\n');
+    } catch (e) {
+      // A photo that cannot be looked up today must not cost the product search.
+      reportBackfillFault(problems, `The photo search failed: ${errText(e)}`, e);
+    }
     const res = await findBackfill(problems);
     bstate = res.state;
     for (const m of res.made) {

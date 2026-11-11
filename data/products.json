@@ -6986,5 +6986,78 @@
       "credit": "Samsung",
       "sourceUrl": "https://www.samsung.com/us/tablets/galaxy-tab-s11/buy/"
     }
+  },
+  {
+    "id": "oneplus-pad-go-2",
+    "slug": "oneplus-pad-go-2",
+    "name": "OnePlus Pad Go 2",
+    "brand": "OnePlus",
+    "category": "tablet",
+    "releaseDate": "2025-12-23",
+    "launchPrice": 399.99,
+    "officialUrl": "https://www.oneplus.com/us/oneplus-pad-go-2",
+    "criticsTake": "Reviewers describe the OnePlus Pad Go 2 as a solid mid-range Android tablet with a large sharp display, smooth everyday performance, and clean software. It is often seen as a good fit for entertainment and for OnePlus phone owners, though several reviews point to weaker battery results in some testing, no fingerprint sensor, and limits for heavier work.",
+    "loved": [
+      "Large 12.1-inch sharp display",
+      "Good everyday performance",
+      "Clean Android software with AI features",
+      "Included fast charger"
+    ],
+    "gripes": [
+      "No fingerprint sensor",
+      "Stylus not included",
+      "Battery life varies by review",
+      "Speakers can sound tinny",
+      "Android and split-screen feel awkward on a large screen"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $399.99"
+      },
+      {
+        "label": "Display",
+        "value": "12.1-inch LCD"
+      },
+      {
+        "label": "Resolution",
+        "value": "2,800 by 1,980 pixels"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "30Hz, 60Hz, 90Hz, and 120Hz"
+      },
+      {
+        "label": "Brightness",
+        "value": "600 nits on average"
+      },
+      {
+        "label": "Processor",
+        "value": "MediaTek Dimensity 7300-Ultra"
+      },
+      {
+        "label": "Memory",
+        "value": "8GB RAM"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB"
+      },
+      {
+        "label": "OS",
+        "value": "Android 16"
+      }
+    ],
+    "art": {
+      "kind": "tablet",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-11",
+    "backfilled": "2026-11-11"
   }
 ]

@@ -17,17 +17,18 @@ describe('validateData', () => {
     expect(validateData({ ...validData(), categories })).toEqual([]);
   });
 
+  it('accepts an auto-added product that has no photo yet', () => {
+    const d = validData();
+    d.products[0].autoAdded = '2026-11-08';
+    expect(validateData({ ...d, categories })).toEqual([]);
+  });
+
   it('accepts the committed data in data/', () => {
     expect(validateData({ ...loadData(), categories: loadCategories() })).toEqual([]);
   });
 
   it.each<[string, (d: Data) => void, RegExp]>([
     ['name without the brand in front', (d) => (d.products[0].name = 'Test Phone'), /name must start with the brand/],
-    [
-      'auto-added product without a photo',
-      (d) => (d.products[0].autoAdded = '2026-11-08'),
-      /auto-added product needs a photo/,
-    ],
     ['duplicate product id', (d) => d.products.push(product({ slug: 'other' })), /duplicate product id: test-phone/],
     [
       'em dash in written copy',
