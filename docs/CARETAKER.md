@@ -62,7 +62,8 @@ every category has 15. It should add something most days, so a quiet week means 
    backfill lines of the latest runs of `weekly-refresh.yml` ("backfill:", "backfill candidate:", "only N verified
    reviews", "no usable official photo yet") and `data/refresh-rejected.json` (`backfill:` keys).
    - **The step crashed or its search failed** (look for "The backfill" in the run's problems): a fault in this repo
-     gets fixed and landed like section 1; an outside outage waits a day.
+     gets fixed and landed like section 1; an outside outage waits a day. A dropped connection or timeout is only a
+     `::warning::` line in the run log, not an alert; look for those lines when the status is `stalled`.
    - **Every candidate fails for the same reason** (no photos, quotes never found, a card rule): fix that cause
      in the scripts. Do not loosen a check: a quote that fails verification stays dropped, and a product
      without an official photo or with fewer than 5 reviews from outlets in `data/outlets.json` is not added.
