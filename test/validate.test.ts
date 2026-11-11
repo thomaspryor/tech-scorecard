@@ -260,6 +260,34 @@ describe('validateData', () => {
   });
 });
 
+describe('duplicate review rules', () => {
+  const second = (d: Data, over: object) => {
+    d.products.push(product({ id: 'other-phone', slug: 'other-phone', name: 'Acme Other Phone' }));
+    d.reviews.push(review({ productId: 'other-phone', ...over }));
+  };
+  it('allows one article filed under two products of the same outlet (a joint review)', () => {
+    expect(errorsAfter((d) => second(d, { url: d.reviews[0].url, excerpt: d.reviews[0].excerpt }))).toEqual([]);
+  });
+  it('rejects one article filed under two outlets', () => {
+    {
+      const errors = errorsAfter((d) => {
+        d.outlets.push(outlet({ id: 'second-outlet', domain: new URL(d.reviews[0].url).hostname }));
+        second(d, { outletId: 'second-outlet', url: d.reviews[0].url, excerpt: 'A different sentence entirely here.' });
+      });
+      expect(errors.join()).toMatch(/already filed under outlet/);
+    }
+  });
+  it('rejects the same excerpt from two outlets for one product', () => {
+    const errors = errorsAfter((d) => {
+      d.outlets.push(outlet({ id: 'second-outlet', domain: 'second.example' }));
+      d.reviews.push(
+        review({ outletId: 'second-outlet', url: 'https://second.example/review', excerpt: d.reviews[0].excerpt }),
+      );
+    });
+    expect(errors.join()).toMatch(/same excerpt as the/);
+  });
+});
+
 describe('isIsoDate', () => {
   it.each(['2026-01-01', '2028-02-29'])('accepts %s', (s) => expect(isIsoDate(s)).toBe(true));
   it.each(['2026-02-29', '2026-13-01', '2026-1-01', '', null, undefined])('rejects %s', (s) =>

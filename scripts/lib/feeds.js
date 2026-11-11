@@ -167,6 +167,28 @@ function matchProduct(title, products) {
 }
 
 /**
+ * True when `title` names a sibling of the product rather than the product: one of its name forms followed by a word that
+ * makes it another model ("Pixel 10 Pro"), or its last word with letters added ("Pixel 10a" for the Pixel 10).
+ * @param {string} title
+ * @param {{name: string, brand: string}} p
+ */
+function mentionsSibling(title, p) {
+  const t = words(title).trim().split(' ');
+  return nameForms(p).some((form) => {
+    const f = form.trim().split(' ');
+    const last = f[f.length - 1];
+    for (let i = 0; i + f.length <= t.length; i++) {
+      if (!f.slice(0, -1).every((/** @type {string} */ w, /** @type {number} */ k) => t[i + k] === w)) continue;
+      const at = t[i + f.length - 1];
+      if (at === last) {
+        if (MODEL_WORD.test(t[i + f.length] || '')) return true;
+      } else if (/\d$/.test(last) && at.startsWith(last) && /^[a-z]{1,2}$/.test(at.slice(last.length))) return true;
+    }
+    return false;
+  });
+}
+
+/**
  * Sorts recent review headlines into pages for products on the site and leads for the launch search.
  * @template {{id: string, name: string, brand: string}} P
  * @param {{title: string, url: string, date: string}[]} items
@@ -201,5 +223,6 @@ module.exports = {
   parseFeed,
   isReviewTitle,
   matchProduct,
+  mentionsSibling,
   sortFeedItems,
 };

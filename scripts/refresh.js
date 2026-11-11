@@ -36,6 +36,7 @@ const { UA, curl, fetchPage, fetchPageAsync, pageText, containsQuote, jsonLd, ho
 const { urlKey } = require('./lib/launches');
 const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
 const { outletFor } = require('./lib/outlets');
+const { pageProblem } = require('./lib/page-guards');
 const { openaiText, geminiText, geminiImageText, parseJsonReply } = require('./lib/models');
 const { findLaunchPhoto, siteOf } = require('./lib/launch-photo');
 const backfill = require('./lib/backfill');
@@ -171,7 +172,7 @@ const SKIP_BLOCKED = 'page blocked (no fetch service could read it)';
 const skipCounts = new Map();
 /** @param {string} reason */
 function countSkip(reason) {
-  const key = reason.replace(/^date .*/, 'date outside launch..today').replace(/\s*\(.*$/, '');
+  const key = reason.replace(/^date .*/, 'date outside launch..today').replace(/\s*[(:].*$/, '');
   skipCounts.set(key, (skipCounts.get(key) || 0) + 1);
 }
 
@@ -197,7 +198,17 @@ async function buildReview(product, url) {
   }
   const text = pageText(html);
   if (text.length < 1500) return { skip: 'page too short' };
+  const problem = pageProblem({
+    html,
+    text,
+    url,
+    product: { id: product.id, name: product.name, brand: product.brand },
+    products,
+    sameOutlet: (a, b) => !!outletForUrl(a) && outletForUrl(a) === outletForUrl(b),
+  });
+  if (problem) return { skip: problem };
   const ld = jsonLd(html);
+  if (ld.ambiguous) return { skip: 'several ratings on the page (a roundup, or another product\u2019s review)' };
   if (!ld.date || ld.date > TODAY || ld.date < daysBefore(product.releaseDate, 21))
     return { skip: `date ${ld.date || 'missing'} outside launch..today` };
   const answer = parseJsonReply(
@@ -251,7 +262,10 @@ async function collectReviews(product, existing, feedUrls = [], search = true, m
     // A page already on the site (under any product or outlet) or recently judged not a review is skipped.
     if (!outlet || have.has(outlet.id) || onSite.has(urlKey(url)) || rejected[urlKey(url)]) continue;
     const res = await buildReview(product, url);
-    if (res.skip === NOT_A_REVIEW || res.skip?.startsWith('date ')) rejected[urlKey(url)] = TODAY;
+    // A page that will not change is not looked at again for REJECTED_DAYS. Not-found and canonical skips are left out: the
+    // real review can appear at the same address later.
+    if (res.skip === NOT_A_REVIEW || /^(date |different model|several ratings)/.test(res.skip || ''))
+      rejected[urlKey(url)] = TODAY;
     if (res.review) {
       out.push(res.review);
       have.add(outlet.id);
