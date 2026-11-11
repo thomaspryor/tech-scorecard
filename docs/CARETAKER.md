@@ -45,8 +45,8 @@ squash-merge it yourself, confirm the production deploy is READY on Vercel).
 
 ## 4. Photos and names
 
-- `npm run validate` already fails if a product the refresh added has no photo, or if a name does not
-  start with its brand.
+- `npm run validate` already fails if a name does not start with its brand. A product the refresh added may have no
+  photo yet (it shows a brand tile and the refresh retries); see the photo line below.
 - Also look at the newest 3 products on https://www.thetechscorecard.com.
 - Products added without a photo (`npm run backfill:status` lists them) are retried by the refresh every 3 days. One that
   has waited more than 14 days gets a photo from you: `scripts/add-product-image.js`, following docs/IMAGES.md.
@@ -68,7 +68,7 @@ every category has 15. It should add something most days, so a quiet week means 
      `::warning::` line in the run log, not an alert; look for those lines when the status is `stalled`.
    - **Every candidate fails for the same reason** (no photos, quotes never found, a card rule): fix that cause
      in the scripts. Do not loosen a check: a quote that fails verification stays dropped, and a product
-     without an official photo or with fewer than 5 reviews from outlets in `data/outlets.json` is not added.
+     with fewer than 5 reviews from outlets in `data/outlets.json` is not added.
    - **The category really has nothing left** (its candidates are all on the site or rejected): `data/backfill-state.json`
      already rests a category for 14 days after 3 empty runs, so the others go ahead. If every remaining
      category is resting, say so in one line; it will try again by itself.

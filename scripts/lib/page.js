@@ -40,7 +40,7 @@ function fetchPage(url) {
   let html = '';
   let code = 0;
   try {
-    const out = curl(['-A', UA, '-w', '\n%{http_code}', url]);
+    const out = curl(['-A', UA, '-w', '\n%{http_code}', url], { timeout: 40 });
     const cut = out.lastIndexOf('\n');
     html = out.slice(0, cut);
     code = Number(out.slice(cut + 1));
@@ -55,7 +55,7 @@ function fetchPage(url) {
       encoding: 'utf8',
       maxBuffer: 64 * 1024 * 1024,
       stdio: ['ignore', 'pipe', 'ignore'],
-      timeout: 240_000,
+      timeout: 150_000,
     });
   } catch {
     throw new Error(`page not readable (HTTP ${code || 'error'}, and no fetch service could read it)`);

@@ -10,13 +10,13 @@ let dir = '';
 
 beforeEach(() => {
   dir = mkdtempSync(join(tmpdir(), 'ladder-'));
-  process.env.FETCH_LADDER_USAGE_FILE = join(dir, 'usage.json');
+  process.env.FETCH_LADDER_DIR = join(dir, 'ladder');
   for (const k of KEYS) delete process.env[k];
 });
 afterEach(() => {
   vi.unstubAllGlobals();
   for (const k of KEYS) delete process.env[k];
-  delete process.env.FETCH_LADDER_USAGE_FILE;
+  delete process.env.FETCH_LADDER_DIR;
   rmSync(dir, { recursive: true, force: true });
 });
 
@@ -42,6 +42,10 @@ describe('looksBlocked', () => {
     expect(looksBlocked('<html><title>Just a moment...</title></html>')).toBe(true);
     expect(looksBlocked('<html><body>Enable JavaScript and cookies to continue</body></html>')).toBe(true);
     expect(looksBlocked('<html><body><div id="app"></div></body></html>')).toBe(true);
+    expect(looksBlocked('<html><head><title>Pardon Our Interruption</title></head></html>')).toBe(true);
+    expect(looksBlocked(`<html><body>Access to this page has been denied ${'x '.repeat(900)}</body></html>`)).toBe(
+      true,
+    );
     expect(looksBlocked(ARTICLE)).toBe(false);
   });
 });
@@ -82,7 +86,52 @@ describe('fetchLadder', () => {
     network({ 'api.scrapingdog.com': 403, 'archive.org': JSON.stringify({}) });
     await expect(fetchLadder('https://outlet.example/a')).rejects.toThrow(/ScrapingDog: HTTP 403/);
     await expect(fetchLadder('https://outlet.example/b')).rejects.toThrow(/paid cap reached/);
-    expect(JSON.parse(readFileSync(process.env.FETCH_LADDER_USAGE_FILE as string, 'utf8')).count).toBe(1);
+    expect(
+      readFileSync(join(dir, 'ladder', 'usage.log'), 'utf8')
+        .split('\n')
+        .filter((l) => l === 'p'),
+    ).toHaveLength(1);
+  });
+
+  it('stops asking paid services once one says the page does not exist, but still tries the free archive', async () => {
+    process.env.SCRAPINGDOG_API_KEY = 'k';
+    process.env.SCRAPINGBEE_API_KEY = 'k';
+    const hosts = network({ 'api.scrapingdog.com': 404, 'archive.org': JSON.stringify({}) });
+    await expect(fetchLadder('https://outlet.example/gone')).rejects.toThrow(/HTTP 404/);
+    expect(hosts).toEqual(['api.scrapingdog.com', 'archive.org']);
+  });
+
+  it('pays for a page once per run: a second read comes from the cache, and so does a failure', async () => {
+    process.env.SCRAPINGDOG_API_KEY = 'k';
+    const hosts = network({ 'api.scrapingdog.com': ARTICLE });
+    expect((await fetchLadder('https://outlet.example/a')).source).toBe('scrapingdog');
+    expect((await fetchLadder('https://outlet.example/a')).source).toBe('cache');
+    expect(hosts).toHaveLength(1);
+    const bad = network({ 'api.scrapingdog.com': 403, 'archive.org': JSON.stringify({}) });
+    await expect(fetchLadder('https://outlet.example/b')).rejects.toThrow(/no service could read/);
+    const before = bad.length;
+    await expect(fetchLadder('https://outlet.example/b')).rejects.toThrow(/already tried in this run/);
+    expect(bad).toHaveLength(before);
+  });
+
+  it('stops paying once the run has spent its time allowance', async () => {
+    process.env.SCRAPINGDOG_API_KEY = 'k';
+    process.env.LADDER_TIME_CAP_S = '0';
+    const hosts = network({ 'api.scrapingdog.com': ARTICLE, 'archive.org': JSON.stringify({}) });
+    await expect(fetchLadder('https://outlet.example/slow')).rejects.toThrow(/paid cap reached/);
+    expect(hosts).not.toContain('api.scrapingdog.com');
+    delete process.env.LADDER_TIME_CAP_S;
+  });
+
+  it('counts concurrent requests without losing any', async () => {
+    process.env.SCRAPINGDOG_API_KEY = 'k';
+    network({ 'api.scrapingdog.com': ARTICLE });
+    await Promise.all(Array.from({ length: 20 }, (_, i) => fetchLadder(`https://outlet.example/${i}`)));
+    expect(
+      readFileSync(join(dir, 'ladder', 'usage.log'), 'utf8')
+        .split('\n')
+        .filter((l) => l === 'p'),
+    ).toHaveLength(20);
   });
 
   it('never puts an API key in an error message', async () => {
