@@ -1,13 +1,13 @@
 {
   "since": "2026-11-10",
-  "lastRun": "2026-11-11",
+  "lastRun": "2026-11-12",
   "categories": {
     "tablet": {
-      "misses": 2,
-      "pausedUntil": null
+      "misses": 0,
+      "pausedUntil": "2026-11-26"
     },
     "console": {
-      "misses": 1,
+      "misses": 2,
       "pausedUntil": null
     },
     "foldable": {
@@ -15,5 +15,7 @@
       "pausedUntil": null
     }
   },
-  "photoTries": {}
+  "photoTries": {
+    "oneplus-pad-go-2": "2026-11-12"
+  }
 }

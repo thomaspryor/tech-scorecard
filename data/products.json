@@ -7219,5 +7219,89 @@
       "credit": "Samsung",
       "sourceUrl": "https://news.samsung.com/za/galaxy-z-fold7-redefines-the-foldable-experience-media-and-influencers-give-their-verdict"
     }
+  },
+  {
+    "id": "samsung-galaxy-z-flip-7",
+    "slug": "samsung-galaxy-z-flip-7",
+    "name": "Samsung Galaxy Z Flip 7",
+    "brand": "Samsung",
+    "category": "foldable",
+    "releaseDate": "2025-07-25",
+    "launchPrice": 1099,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-z-flip7/",
+    "criticsTake": "Reviewers see the Galaxy Z Flip 7 as a refined, incremental update with a bigger and brighter cover screen, a wider 6.9-inch inner display, and a thinner design. Battery life is improved, but the cover screen software remains limited, the cameras are mostly unchanged, and charging is still slow.",
+    "loved": [
+      "4.1-inch cover screen",
+      "Thinner design",
+      "Wider 6.9-inch main display",
+      "Improved battery life"
+    ],
+    "gripes": [
+      "Limited cover screen software",
+      "Cameras mostly unchanged",
+      "Slow charging",
+      "Exynos 2500 concerns",
+      "Outer screen functionality still limited"
+    ],
+    "specs": [
+      {
+        "label": "Main display",
+        "value": "6.9-inch screen with a 21:9 aspect ratio and 120Hz refresh rate"
+      },
+      {
+        "label": "Cover display",
+        "value": "4.1-inch Flex Window with 120Hz refresh rate"
+      },
+      {
+        "label": "Cover screen brightness",
+        "value": "Up to 2,600 nits peak brightness"
+      },
+      {
+        "label": "Processor",
+        "value": "Exynos 2500"
+      },
+      {
+        "label": "Rear cameras",
+        "value": "50MP main camera with OIS and 12MP ultra-wide"
+      },
+      {
+        "label": "Front camera",
+        "value": "10MP"
+      },
+      {
+        "label": "Battery",
+        "value": "4,300mAh"
+      },
+      {
+        "label": "Charging",
+        "value": "25W wired and 15W wireless"
+      },
+      {
+        "label": "Durability",
+        "value": "IP48 rating"
+      },
+      {
+        "label": "Price",
+        "value": "From $1099"
+      }
+    ],
+    "art": {
+      "kind": "foldable",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-12",
+    "backfilled": "2026-11-12",
+    "image": {
+      "src": "/images/products/samsung-galaxy-z-flip-7/main.webp",
+      "thumb": "/images/products/samsung-galaxy-z-flip-7/thumb.webp",
+      "alt": "Samsung Galaxy Z Flip 7, official Samsung photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://www.samsung.com/us/smartphones/galaxy-z-flip7/"
+    }
   }
 ]

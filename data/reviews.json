@@ -29558,5 +29558,404 @@
     },
     "scoreReason": "Strongly recommended for design and cameras, but battery, lost S Pen, and high price temper enthusiasm.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "techradar",
+    "critic": "Matt Evans",
+    "url": "https://www.techradar.com/health-fitness/fitness-trackers/google-fitbit-edge-review-the-fitbit-we-loved-now-in-its-google-era",
+    "date": "2026-11-11",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "GPS and resulting metrics are a little wobbly, but for most people looking for an activity tracker for sports, the gym, and the occasional jog or bike ride, the Edge will do the trick.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Comfortable and likable tracker with good basics, but app problems and GPS inaccuracies limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/asus-rog-xbox-ally-x20-review-2000826321",
+    "date": "2026-10-15",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "The Asus ROG Xbox Ally X20 feels great, looks great, and would be my favorite handheld PC if it just had performance to match the best from 2026.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 91
+    },
+    "scoreReason": "Beautiful screen and comfort earn strong praise, but performance and software issues add meaningful caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "headphone-1-pro",
+    "outletId": "creative-bloq",
+    "critic": "Ian Dean",
+    "url": "https://www.creativebloq.com/tech/headphones-earbuds/nothing-headphone-1-pro-review-better-headphones-but-should-you-upgrade",
+    "date": "2026-10-02",
+    "rating": "3/5",
+    "score": 54,
+    "scoreSource": "rating",
+    "excerpt": "Technically impressive with a standout flat EQ mode, but at £349, and with the original still good, and superb competition, the Headphone (1) Pro isn't a clear buy for all newcomers and a tough upgrade sell for current owners.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 56,
+      "gemini": 52
+    },
+    "scoreReason": "Strong sound and features, but high price and limited upgrade appeal bring major caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "cnet",
+    "critic": "Abrar Al-Heeti",
+    "url": "https://www.cnet.com/tech/mobile/i-tested-the-galaxy-z-fold-7-its-slim-powerful-and-surprisingly-practical/",
+    "date": "2025-07-21",
+    "rating": "8.5/10",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "If you're all about having a sleek device with the option of a bigger screen, and a solid camera is one of your top priorities, the Z Fold 7 could be the right fit for you.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly praised for design, screens and cameras, but very high price and a few compromises temper it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "zdnet",
+    "critic": "Prakhar Khanna",
+    "url": "https://www.zdnet.com/article/i-spent-a-week-in-new-york-city-with-the-samsung-z-fold-7-and-it-spoiled-me-the-entire-time/",
+    "date": "2025-07-31",
+    "rating": "4.1/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "Samsung improved the weakest links of its book-style foldable with the Galaxy Z Fold 7, and the result is a near-perfect phone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Strongly recommended with standout design and polish, held back mainly by price, battery, and telephoto limits.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "phonearena",
+    "critic": "Rad Slavov",
+    "url": "https://www.phonearena.com/reviews/samsung-galaxy-fold-7-review_id7538",
+    "date": "2025-07-23",
+    "rating": "7.1/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "Once you get over the super-premium starting price of $2000, I don’t think there will be many people out there who’ll regret buying the Galaxy Fold 7.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 89
+    },
+    "scoreReason": "Strong praise for buyers, but the very high price is a major reservation.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-z-fold-7/review/",
+    "date": "2025-08-08",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "Bottom line: Samsung has the best and the thinnest foldable phone on the market right now.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 95
+    },
+    "scoreReason": "Calls it the best and thinnest foldable available, indicating a strongly enthusiastic verdict.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/The-market-leader-strikes-back-Samsung-Galaxy-Z-Fold7-review.1093384.0.html",
+    "date": "2025-08-21",
+    "rating": "87/100",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Z Fold7 has eliminated the largest argument against it, now presenting itself as a slim foldable that is able to offer a high performance, good camera, and decent battery life.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 84
+    },
+    "scoreReason": "Strongly praised for slim design, performance and cameras, with notable battery, PWM and S Pen drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "expert-reviews",
+    "critic": "Ben Johnston",
+    "url": "https://www.expertreviews.co.uk/technology/phones/samsung-galaxy-z-fold-7-review",
+    "date": "2025-07-29",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "It’s not perfect, and may struggle against incoming competition, but the Galaxy Z Fold 7 is easily Samsung’s best foldable yet",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for design, performance and camera, but price and dropped S Pen bring notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "slashgear",
+    "critic": "Nadeem Sarwar",
+    "url": "https://www.slashgear.com/1927653/samsung-galaxy-z-fold-7-review-foldable-smartphone-features-price-release/",
+    "date": "2025-07-31",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "But if you want the best from a foldable phone, and wish to push the envelope functionally, there is no better option out there.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 90
+    },
+    "scoreReason": "Highly praised design, screens, cameras, software, and durability; price and battery charging are main drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "bose-qc-ultra-earbuds-2",
+    "outletId": "recording-now",
+    "critic": "Odi Productions",
+    "url": "https://recordingnow.com/blog/bose-quietcomfort-ultra-earbuds-2nd-gen-review/",
+    "date": "2026-02-06",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "The Bose QC Ultra 2nd Gen is more of a refinement over the 1st Gen than a complete overhaul, but the welcomed improvements in sound quality and microphone quality make it worth it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Best-in-class noise canceling and comfort, with clear improvements, but only good sound and high price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "bose-qc-ultra-earbuds-2",
+    "outletId": "ecoustics",
+    "critic": "W. Jennings",
+    "url": "https://www.ecoustics.com/reviews/bose-quietcomfort-ultra-earbuds-2nd-gen/",
+    "date": "2025-11-14",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "The combination of class-leading ANC, improved call quality, longer battery life, and wireless charging makes them one of the most complete packages available right now.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent ANC and features, strongly recommended, but upgrades are incremental and sound tuning has minor drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "reviews-org",
+    "critic": "Anula Wiwatowska",
+    "url": "https://www.reviews.org/au/technology/headphones-technology/sony-wh1000xm6-review/",
+    "date": "2025-08-22",
+    "rating": "4/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "Sony's latest WXM iteration lives up to its predecessors audio quality, but there are a few too many user quirks to justify the $700 price tag.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Superb music sound, but frequent usability issues and weak value make the recommendation notably qualified.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-flip-7",
+    "outletId": "engadget",
+    "critic": null,
+    "url": "https://www.engadget.com/mobile/smartphones/samsung-galaxy-z-flip-7-review-140022250.html",
+    "date": "2025-07-25",
+    "rating": null,
+    "score": 71,
+    "scoreSource": "text",
+    "excerpt": "There's untapped potential here and the Z Flip 7 doesn't push its category of foldables forward by much.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 70
+    },
+    "scoreReason": "Praised thinner design, bigger screens and battery life, but criticized stale cameras and limited front-screen software.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-flip-7",
+    "outletId": "android-central",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-z-flip-7-review",
+    "date": "2025-07-30",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "With the same camera hardware and the same limited cover screen software, this phone isn't a breakthrough — but it still may be the best clamshell foldable you can buy in North America.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong overall recommendation, but cover screen regression, unchanged cameras, and mediocre battery limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-flip-7",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/samsung-galaxy-z-flip-7-review-3582634/",
+    "date": "2025-08-08",
+    "rating": "7/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "Instead, the Flip 7 is just another good flip phone that’s (once again) bested by the competition.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 73
+    },
+    "scoreReason": "Strong hardware improvements, but restrictive software, weaker chip, okay cameras, and price make recommendation cautious.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-flip-7",
+    "outletId": "techradar",
+    "critic": "Philip Berne",
+    "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-z-flip-7-review",
+    "date": "2025-07-23",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "I wish it had a better processor, and using Samsung’s software can be a real drag, but this is still an excellent flip with capabilities competitors can’t match, like Samsung’s DeX.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for the design and flip concept, with notable battery, performance, and software drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-flip-7",
+    "outletId": "pcmag",
+    "critic": "Eric Zeman",
+    "url": "https://me.pcmag.com/en/mobile-phones/31078/samsung-galaxy-z-flip-7",
+    "date": "2025-07-22",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Z Flip 7 takes a step forward thanks to its refreshed design, larger and brighter displays, better cameras, and easy access to Gemini Live, making it the flip phone to beat.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 82
+    },
+    "scoreReason": "Best flip phone for most people, with strong improvements but notable heat and battery concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-flip-7",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/samsung-galaxy-z-flip-7-review_id7536",
+    "date": "2025-07-21",
+    "rating": "7/10",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "But those are not dealbreakers and with its long software support and many other little improvements, the Flip 7 regains the crown as the go-to Flip phone for buyers.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 89
+    },
+    "scoreReason": "Strong recommendation with minor caveats; praised as the best flip choice for buyers.",
+    "scoredFromFullText": false
   }
 ]
