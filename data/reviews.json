@@ -29957,5 +29957,489 @@
     },
     "scoreReason": "Strong recommendation with minor caveats; praised as the best flip choice for buyers.",
     "scoredFromFullText": false
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/a20-pro-ipad-mini-review-2000833963",
+    "date": "2026-11-03",
+    "rating": "4/5",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "With a prettier screen and surprising performance, the iPad mini may be the best tablet for most users, so long as you don't need high refresh rates.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended for most users, with price and 60Hz display as main caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "stuff",
+    "critic": "Britta O'Boyle",
+    "url": "https://www.stuff.tv/features/ive-spent-a-week-with-the-ipad-mini-heres-what-i-love-and-the-two-things-i-dont/",
+    "date": "2026-11-03",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "Still, after a week, the iPad mini has won me over.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Strong praise for display, design and usability, but high price and 60Hz screen are notable drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "pcworld",
+    "critic": "Laura Pippig",
+    "url": "https://www.pcworld.com/article/2811793/nintendo-switch-2-review.html",
+    "date": "2025-06-12",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The Nintendo Switch 2 is a smart upgrade with better graphics and faster load times, but its weaker battery, LCD screen, and high price suit hardcore fans more than casual players.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 72
+    },
+    "scoreReason": "Strong upgrade with notable performance gains, but price, battery, screen, and gimmicky features limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nintendo-switch-2",
+    "outletId": "cgmagonline",
+    "critic": "Zubi Khan",
+    "url": "https://www.cgmagonline.com/review/hardware/nintendo-switch-2-console-review/",
+    "date": "2025-06-09",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "\"The Nintendo Switch 2 is the muscle-bound successor fans have been waiting for, built to handle the next generation of portable and docked play.\"",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Strong upgrade with great hardware and backward compatibility, despite weak launch lineup, HDR, battery, and some feature limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-pro-3",
+    "outletId": "macworld",
+    "critic": "Jason Cross",
+    "url": "https://www.macworld.com/article/2921626/airpods-pro-3-review-small-improvements-make-a-sizable-difference.html",
+    "date": "2025-09-26",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "But a few smart design and build tweaks add up to real improvements to an already stellar product.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise and easy recommendation, with only modest upgrade value for current Pro 2 owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-pro-3",
+    "outletId": "bgr",
+    "critic": "José Adorno",
+    "url": "https://www.bgr.com/2063171/airpods-pro-3-review-three-months-later/",
+    "date": "2025-12-29",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "Perhaps unsurprisingly, the AirPods Pro 3 are probably the best earbuds you can find on the market right now.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 95
+    },
+    "scoreReason": "Reviewer calls them the best earbuds available, praising sound, ANC, features, and worthwhile upgrade despite minor comfort issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "9to5google",
+    "critic": "Damien Wilde",
+    "url": "https://9to5google.com/2026/05/14/pixel-10-pro-fold-long-term-review/",
+    "date": "2026-05-22",
+    "rating": null,
+    "score": 64,
+    "scoreSource": "text",
+    "excerpt": "Google has made a nice folding phone, but not one that is all that easy to recommend unless at a significant discount.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 55
+    },
+    "scoreReason": "Good software and solid basics, but too many compromises make it hard to recommend full price.",
+    "scoredFromFullText": true,
+    "modelsDisagree": true
+  },
+  {
+    "productId": "bose-qc-ultra-headphones-2",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://www.pcmag.com/reviews/bose-quietcomfort-ultra-headphones-2nd-gen",
+    "date": "2025-10-06",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The second-generation Bose QuietComfort Ultra Headphones produce enjoyable audio, effectively cancel noise, and last longer than the previous model, but fall just short of beating the competition.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent sound and ANC, but several limitations and not the class leader or an upgrade pick.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "techradar",
+    "critic": "Matt Hanson",
+    "url": "https://www.techradar.com/computing/gaming-computers/asus-rog-xbox-ally-x-review",
+    "date": "2025-10-15",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "Instead, the Asus ROG Xbox Ally X is very much a premium PC gaming handheld, with all the pros and cons that brings.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 74
+    },
+    "scoreReason": "Strong handheld comfort and solid gaming, but very high price, weak AAA performance, and messy software hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "windows-central",
+    "critic": "Rebecca Spear",
+    "url": "https://www.windowscentral.com/hardware/asus/asus-rog-xbox-ally-x-review",
+    "date": "2025-10-15",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Its solid performance, sleek design, comfortable grips, and useful ports work together to make it one of the best Windows handhelds on the market right now.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent performance and comfort, strongly recommended despite unfinished Windows handheld software and average battery life.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "pcgamesn",
+    "critic": "Edward Chester",
+    "url": "https://www.pcgamesn.com/asus/rog-xbox-ally-x-review",
+    "date": "2025-10-15",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "However, thanks to a great AMD processor and competitive price, it's the handheld to beat right now.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent performance and value for a Windows handheld, but usability and Xbox software disappoint.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "techradar",
+    "critic": "Lance Ulanoff",
+    "url": "https://www.techradar.com/phones/samsung-galaxy-phones/samsung-galaxy-z-fold-8-ultra-review",
+    "date": "2026-08-05",
+    "rating": "4.75/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Samsung has upgraded it just enough — it's flatter, lighter, and has a better battery and better cameras — to make the market's best-overall folding flagship virtually unbeatable, and I would choose it over the competition every single day.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 97
+    },
+    "scoreReason": "Strongly recommended as the best foldable, with notable price and zoom drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "engadget",
+    "critic": "Sam Rutherford",
+    "url": "https://www.engadget.com/2228942/samsung-galaxy-z-fold-8-ultra-review/",
+    "date": "2026-08-03",
+    "rating": "8.8/10",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Z Fold 8 Ultra is a nice refinement over its predecessor and an excellent foldable in its own right.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent foldable with meaningful refinements, but pricey and most buyers should choose the regular model instead.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "pcmag",
+    "critic": "Florence Ion",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-z-fold-8-ultra",
+    "date": "2026-08-06",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Z Fold 8 Ultra is the most capable and well-balanced book-style folding phone available, thanks to its excellent performance, full set of features, and top-notch build quality.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent and most capable foldable, but very expensive and only a small upgrade over last year.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "android-authority",
+    "critic": "Joe Maring",
+    "url": "https://www.androidauthority.com/samsung-galaxy-z-fold-8-ultra-review-3715709/",
+    "date": "2026-10-06",
+    "rating": "8/10",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "The Fold 8 Ultra gets a lot right, but it won't be the default choice for everyone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent hardware, but pricey with camera, charging, software, and stylus drawbacks; reviewer would buy another foldable.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "android-central",
+    "critic": "Harish Jonnalagadda",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-z-fold-8-ultra-review",
+    "date": "2026-08-22",
+    "rating": "3.75/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Combine that with a price hike to $2,099, and the Galaxy Z Fold 8 Ultra isn't a straightforward recommendation.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 71
+    },
+    "scoreReason": "Strong battery and display upgrades, but high price, mediocre telephoto, wobble, and missing Qi2 hurt recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/aug/13/samsung-galaxy-z-fold-8-ultra-review-the-top-dog-of-folding-androids",
+    "date": "2026-08-13",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Z Fold 8 Ultra is the best folding phone available.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 88
+    },
+    "scoreReason": "Best folding phone with excellent software, battery and design, but very expensive and only modestly improved.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "9to5google",
+    "critic": "Andrew Romero",
+    "url": "https://9to5google.com/2026/07/31/review-galaxy-z-fold-8-ultra/",
+    "date": "2026-07-31",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "It might not be the newest and most exciting form factor, but it's easily the best it's ever been.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Highly refined and best Fold yet, with strong praise tempered by price and some design compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-venu-4",
+    "outletId": "cnet",
+    "critic": "Vanessa Hand Orellana",
+    "url": "https://www.cnet.com/tech/mobile/garmin-venu-4-review/",
+    "date": "2026-01-27",
+    "rating": "8.5/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "It's a solid pick for anyone looking to cross over into the sports watch world for the first time, and it's one of Garmin's most well-rounded options.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for design, fitness insights and battery, with caveats on price, smart features and skin irritation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-venu-4",
+    "outletId": "android-authority",
+    "critic": "Kaitlyn Cimino",
+    "url": "https://www.androidauthority.com/garmin-venu-4-review-3613810/",
+    "date": "2025-11-09",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Though I’d readily call it Garmin’s best smartwatch, the truth is that it’s a serious fitness watch that looks and feels like a flagship smartwatch, without putting a phone on your wrist.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise and best-in-line verdict, but high price and limited smartwatch features temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-venu-4",
+    "outletId": "techradar",
+    "critic": "Matt Evans",
+    "url": "https://www.techradar.com/health-fitness/garmin-venu-4-review",
+    "date": "2025-10-22",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The Garmin Venu 4 is awesome, striking the balance between dressy smartwatch and fitness tool better than any mainline Venu before it.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, battery, fitness features, with only minor complaints about maps and LTE.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-venu-4",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/garmin/garmin-venu-4-review",
+    "date": "2026-01-14",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "It remains a superior fitness tracker with far better battery life than its rivals, but, at this price, you really have to want those specific Garmin strengths to justify the premium.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Strong all-around upgrade with excellent fitness features, but high price and some usability issues temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "garmin-venu-4",
+    "outletId": "android-central",
+    "critic": "Derrek Lee",
+    "url": "https://www.androidcentral.com/wearables/garmin/garmin-venu-4-review",
+    "date": "2025-11-15",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "It's a great all-around fitness watch for the masses, although the heavy build and $100 premium over its predecessor might deter some.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for features and software, with notable concerns about weight, comfort, and higher price.",
+    "scoredFromFullText": true
   }
 ]

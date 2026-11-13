@@ -7303,5 +7303,169 @@
       "credit": "Samsung",
       "sourceUrl": "https://www.samsung.com/us/smartphones/galaxy-z-flip7/"
     }
+  },
+  {
+    "id": "samsung-galaxy-z-fold-8-ultra",
+    "slug": "samsung-galaxy-z-fold-8-ultra",
+    "name": "Samsung Galaxy Z Fold 8 Ultra",
+    "brand": "Samsung",
+    "category": "foldable",
+    "releaseDate": "2026-08-07",
+    "launchPrice": 2099.99,
+    "officialUrl": "https://www.samsung.com/us/smartphones/galaxy-z-fold8-ultra/",
+    "criticsTake": "Reviewers agree the Galaxy Z Fold 8 Ultra is a refined update with brighter screens, easier opening, strong performance, and a thin, light design. Most also say the Ultra branding feels overstated because the design changes are small, and the high price makes it a harder recommendation.",
+    "loved": [
+      "Thin and light 215g design",
+      "Brighter 3,000-nit displays",
+      "Anti-reflective 8-inch inner screen",
+      "Fast Snapdragon 8 Elite Gen 5 performance"
+    ],
+    "gripes": [
+      "High $2,099.99 price",
+      "Design is largely unchanged",
+      "No Qi2 magnets",
+      "Telephoto camera is weak",
+      "Large black bars for video"
+    ],
+    "specs": [
+      {
+        "label": "Main display",
+        "value": "8-inch AMOLED flexible display, 120Hz, 2,256 x 2,504"
+      },
+      {
+        "label": "Cover display",
+        "value": "6.5-inch AMOLED display, 120Hz"
+      },
+      {
+        "label": "Peak brightness",
+        "value": "Up to 3,000 nits"
+      },
+      {
+        "label": "Processor",
+        "value": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy"
+      },
+      {
+        "label": "Memory and storage",
+        "value": "12GB or 16GB RAM, 256GB, 512GB, or 1TB storage"
+      },
+      {
+        "label": "Battery",
+        "value": "5,000mAh"
+      },
+      {
+        "label": "Cameras",
+        "value": "200MP + 50MP + 10MP rear cameras with 3x telephoto"
+      },
+      {
+        "label": "Durability",
+        "value": "IP48 water and dust resistance"
+      },
+      {
+        "label": "Weight and thickness",
+        "value": "215g, 8.9mm folded, 4.1mm unfolded"
+      },
+      {
+        "label": "Price",
+        "value": "From $2099.99"
+      }
+    ],
+    "art": {
+      "kind": "foldable",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-13",
+    "backfilled": "2026-11-13",
+    "image": {
+      "src": "/images/products/samsung-galaxy-z-fold-8-ultra/main.webp",
+      "thumb": "/images/products/samsung-galaxy-z-fold-8-ultra/thumb.webp",
+      "alt": "Samsung Galaxy Z Fold 8 Ultra, official Samsung photo",
+      "credit": "Samsung",
+      "sourceUrl": "https://www.samsung.com/us/smartphones/galaxy-z-fold8-ultra/"
+    }
+  },
+  {
+    "id": "garmin-venu-4",
+    "slug": "garmin-venu-4",
+    "name": "Garmin Venu 4",
+    "brand": "Garmin",
+    "category": "watch",
+    "releaseDate": "2025-09-22",
+    "launchPrice": 549.99,
+    "officialUrl": "https://www.garmin.com/en-US/p/1614061",
+    "criticsTake": "Reviewers see the Garmin Venu 4 as a polished fitness watch that blends Garmin’s serious training tools with a more everyday smartwatch design. They praise its fitness depth, reliable tracking, bright AMOLED display, and strong battery life, while pointing to the higher price, limited smart features, and a smartwatch experience that still trails Apple, Google, and Samsung.",
+    "loved": [
+      "Advanced training and recovery tools",
+      "Bright AMOLED display",
+      "Reliable GPS and heart rate tracking",
+      "Handy built-in flashlight"
+    ],
+    "gripes": [
+      "$100 price increase over Venu 3",
+      "Smart features still limited",
+      "UI can feel sluggish or less intuitive",
+      "No onboard maps or LTE",
+      "Heavier build for some users"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $549.99"
+      },
+      {
+        "label": "Case sizes",
+        "value": "41mm and 45mm"
+      },
+      {
+        "label": "Display",
+        "value": "AMOLED touchscreen"
+      },
+      {
+        "label": "Brightness",
+        "value": "Up to 2,000 nits"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 12 days in smartwatch mode, or about 4 days with always-on display enabled"
+      },
+      {
+        "label": "GPS",
+        "value": "Multi-band or dual-frequency GPS"
+      },
+      {
+        "label": "Water resistance",
+        "value": "5 ATM, suitable for submersion to 50 metres"
+      },
+      {
+        "label": "Flashlight",
+        "value": "Built-in LED flashlight with adjustable brightness, red-light mode, and optional strobe on night runs"
+      },
+      {
+        "label": "Health and fitness",
+        "value": "Tracks heart rate, breathing rate, blood oxygen, stress, ECG, skin temperature changes, HRV, advanced sleep, menstrual cycle, Body Battery, Training Readiness, and suggested workouts"
+      }
+    ],
+    "art": {
+      "kind": "watch",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-13",
+    "backfilled": "2026-11-13",
+    "image": {
+      "src": "/images/products/garmin-venu-4/main.webp",
+      "thumb": "/images/products/garmin-venu-4/thumb.webp",
+      "alt": "Garmin Venu 4, official Garmin photo",
+      "credit": "Garmin",
+      "sourceUrl": "https://www.garmin.com/en-US/p/1614061"
+    }
   }
 ]

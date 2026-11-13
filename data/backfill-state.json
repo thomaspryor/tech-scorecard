@@ -1,16 +1,20 @@
 {
   "since": "2026-11-10",
-  "lastRun": "2026-11-12",
+  "lastRun": "2026-11-13",
   "categories": {
     "tablet": {
       "misses": 0,
       "pausedUntil": "2026-11-26"
     },
     "console": {
-      "misses": 2,
-      "pausedUntil": null
+      "misses": 0,
+      "pausedUntil": "2026-11-27"
     },
     "foldable": {
+      "misses": 0,
+      "pausedUntil": null
+    },
+    "watch": {
       "misses": 0,
       "pausedUntil": null
     }
