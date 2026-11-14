@@ -1,6 +1,6 @@
 {
   "since": "2026-11-10",
-  "lastRun": "2026-11-13",
+  "lastRun": "2026-11-14",
   "categories": {
     "tablet": {
       "misses": 0,
@@ -15,6 +15,18 @@
       "pausedUntil": null
     },
     "watch": {
+      "misses": 0,
+      "pausedUntil": null
+    },
+    "wearable": {
+      "misses": 0,
+      "pausedUntil": null
+    },
+    "earbuds": {
+      "misses": 0,
+      "pausedUntil": null
+    },
+    "tv": {
       "misses": 0,
       "pausedUntil": null
     }

@@ -30441,5 +30441,614 @@
     },
     "scoreReason": "Strong praise for features and software, with notable concerns about weight, comfort, and higher price.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "appleinsider",
+    "critic": "Mike Wuerthele",
+    "url": "https://appleinsider.com/articles/26/11/09/ipad-mini-eighth-generation-review-still-the-best-e-reader-not-an-ipad-pro-mini",
+    "date": "2026-11-09",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "What Apple has managed to make is a compact tablet, that remains the best e-reader ever made, that doesn't have the bells and whistles of an iPad Pro.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for display, performance, and portability, but price and missing pro features temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-z-fold-8-ultra-review",
+    "date": "2026-08-10",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "If you’re coming from anything older, or switching from another foldable entirely, the Galaxy Z Fold 8 Ultra is genuinely one of the best foldables you can buy right now.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent foldable overall, but camera and value keep it from a top-end recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-z-fold-8-ultra/review/",
+    "date": "2026-08-06",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Z Fold 8 Ultra is the most complete Fold Samsung has made.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 90
+    },
+    "scoreReason": "Calls it Samsung’s most complete Fold yet, indicating a strongly enthusiastic verdict.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "sammyguru",
+    "critic": "Jeff Springer",
+    "url": "https://sammyguru.com/samsung-galaxy-z-fold-8-ultra-review/",
+    "date": "2026-09-04",
+    "rating": "9/10",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "After one month, the Galaxy Z Fold 8 Ultra is the foldable I’d choose as my only phone.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 92
+    },
+    "scoreReason": "Strong daily-driver endorsement, but software omissions, no S Pen, and limited upgrade appeal temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "cnet",
+    "critic": "Andrew Lanxon",
+    "url": "https://www.cnet.com/tech/mobile/galaxy-z-fold-8-ultra-the-best-update-isnt-what-i-expected/",
+    "date": "2026-07-31",
+    "rating": "8/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "But the reality is that the Galaxy Z Fold 8 Ultra is a superb phone that's arguably the pinnacle of what today's foldable technology can be.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent foldable, but pricey and only slightly improved; best for older Fold owners, not recent upgraders.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "phonearena",
+    "critic": "Rad Slavov",
+    "url": "https://www.phonearena.com/reviews/samsung-galaxy-z-fold-8-ultra-review-is-this-the-ultra-form-factor_id8004",
+    "date": "2026-08-01",
+    "rating": "7.2/10",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "I used the Galaxy Fold 8 Ultra for a week and I&apos;m not sure if it&apos;s ready to be called ultra yet",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 71,
+      "gemini": 72
+    },
+    "scoreReason": "Rating suggests significant reservations and limited enthusiasm, despite some strengths.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "dc-rainmaker",
+    "critic": "DC Rainmaker",
+    "url": "https://www.dcrainmaker.com/2025/10/pixel-watch-4-in-depth-review-sports-fitness.html",
+    "date": "2025-10-20",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "The Pixel Watch 4 is best viewed as a large slate of minor to moderate hardware tweaks, alongside a slate of software improvements.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Strong features, battery, heart rate, and AI, but notable GPS bugs and design limitations temper praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "the-5k-runner",
+    "critic": "tfk the5krunner",
+    "url": "https://the5krunner.com/2026/01/12/google-pixel-watch-4-review-wear-os-6-1/",
+    "date": "2026-01-12",
+    "rating": "91/100",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Better than that, after over a decade of testing fitness trackers and smartwatches, the Pixel Watch 4 is the best smartwatch by most measures.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, battery, usability, with notable sports and subscription caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "slashgear",
+    "critic": "Adam Doud",
+    "url": "https://www.slashgear.com/1992014/google-pixel-watch-4-review/",
+    "date": "2025-10-09",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "What I can say is, overall, the Pixel Watch 4 is my favorite WearOS smartwatch that I've worn yet.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 90
+    },
+    "scoreReason": "Favorite WearOS watch so far, polished and helpful, but upgrade value and some tracking issues hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-360",
+    "outletId": "appleinsider",
+    "critic": "Malcolm Owen",
+    "url": "https://appleinsider.com/articles/26/09/22/beats-360-review-good-all-around-sound-and-customizable-too",
+    "date": "2026-09-22",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "They're comfy, they sound great, and they have a battery life that will get you quite a few gym sessions before needing to be plugged in again.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Very strong praise for comfort, sound, workout fit, and battery; only real complaint is no wired audio.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "android-authority",
+    "critic": "Hadlee Simons",
+    "url": "https://www.androidauthority.com/samsung-galaxy-s26-fe-review-3725050/",
+    "date": "2026-11-03",
+    "rating": "7/10",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "It's a substantial upgrade over the Galaxy S24 FE or earlier, but other upper mid-range phones and affordable flagships leave the Galaxy S26 FE behind.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 71
+    },
+    "scoreReason": "Some real strengths, but repeated complaints and cheaper-feeling compromises make it hard to strongly recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "pcmag",
+    "critic": "Andrew Gebhart",
+    "url": "https://www.pcmag.com/reviews/samsung-galaxy-watch-8",
+    "date": "2025-07-17",
+    "rating": "4/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Watch 8 has only minor physical changes from its predecessor, but new AI abilities help it take a meaningful step forward as a wellness assistant.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strongly recommended with standout features, but battery life and limited upgrade appeal temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "digital-trends",
+    "critic": "Nadeem Sarwar",
+    "url": "https://www.digitaltrends.com/mobile/samsung-galaxy-watch-8-review/",
+    "date": "2025-08-15",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "For its current asking price of $350, the Galaxy Watch 8 is a fantastic piece of smartwatch hardware.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, software, and health features, with moderate battery and accuracy caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "techradar",
+    "critic": "Matt Evans",
+    "url": "https://www.techradar.com/health-fitness/smartwatches/samsung-galaxy-watch-8-review",
+    "date": "2025-07-09",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "More than an iterative upgrade this time around, the Galaxy Watch 8 finally feels like a big step forward, and not just due to its redesign.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, comfort and features, with notable battery life and charging complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "toms-guide",
+    "critic": "Dan Bracaglia",
+    "url": "https://www.tomsguide.com/wellness/smartwatches/samsung-galaxy-watch-8-review",
+    "date": "2025-07-09",
+    "rating": "4/5",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "If you want that tactile bezel interaction and something that looks more like a traditional timepiece, the Classic is going to be your pick.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 74
+    },
+    "scoreReason": "Strong Android smartwatch praise, especially Classic, but standard model and some new features draw real criticism.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "android-central",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidcentral.com/wearables/samsung-galaxy-watch/samsung-galaxy-watch-8-review",
+    "date": "2025-08-12",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Overall, the Samsung Galaxy Watch 8 might be the best base-model Wear OS smartwatch to date.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, comfort, and software, but battery life and navigation are notable drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "wareable",
+    "critic": null,
+    "url": "https://www.wareable.com/samsung/samsung-galaxy-watch-8-review",
+    "date": "2025-08-05",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "This is a much more memorable Samsung smartwatch than previous editions, but, while still a strong option for some to consider, it isn't quite polished enough to become the no-brainer pick for Android users.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 76
+    },
+    "scoreReason": "Strong software and health features, but battery life and fitness accuracy hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "android-authority",
+    "critic": "Adamya Sharma",
+    "url": "https://www.androidauthority.com/samsung-galaxy-watch-8-review-3590714/",
+    "date": "2025-08-29",
+    "rating": "8/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy Watch 8 is the first smartwatch in years that I've genuinely enjoyed wearing and using all day and all night.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 84
+    },
+    "scoreReason": "Highly praised for comfort and software, with battery life the main significant drawback.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-watch-8/review/",
+    "date": "2025-08-27",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "If you want a smartwatch that does almost everything the Watch Ultra can, but in a lighter and less bulky form, the Galaxy Watch 8 is the perfect middle ground.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strongly recommended as a lighter, less bulky alternative with nearly all flagship smartwatch features.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "nothing-ear-3",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://www.pcmag.com/reviews/nothing-ear-3",
+    "date": "2025-12-06",
+    "rating": "3/5",
+    "score": 56,
+    "scoreSource": "rating",
+    "excerpt": "Nothing&#039;s Ear (3) wireless earbuds look and sound good, but unimpressive noise cancellation and battery life limit their appeal.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 53
+    },
+    "scoreReason": "Stylish and capable, but weak ANC, short battery, and needed EQ tweaks make it hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3",
+    "outletId": "techradar",
+    "critic": "Becky Scarrott",
+    "url": "https://www.techradar.com/audio/earbuds-airpods/nothing-ear-3-review",
+    "date": "2025-09-26",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "Nothing’s latest flagship earbuds are truly elevated visually yet still able to deliver zealous, customizable sound along with extensive audio tailoring.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 72
+    },
+    "scoreReason": "Stylish, feature-rich earbuds with good sound and ANC, but weak value, battery life, and comfort hold them back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3",
+    "outletId": "android-central",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidcentral.com/accessories/earbuds/nothing-ear-3-review",
+    "date": "2025-09-18",
+    "rating": "3.5/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Nothing's Ear 3 are a vibrant third-generation revision to the brand's truly-wireless headphone line, and they pack a punch.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Innovative and enjoyable, but weak ANC, transparency, and value limit the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3",
+    "outletId": "gizmodo",
+    "critic": "James Pero",
+    "url": "https://gizmodo.com/nothing-ear-3-review-super-sounding-wireless-earbuds-not-so-super-mic-2000662177",
+    "date": "2025-09-23",
+    "rating": "3/5",
+    "score": 59,
+    "scoreSource": "rating",
+    "excerpt": "The Nothing Ear 3 have solid sound, but flub the one thing that makes them unique.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 60
+    },
+    "scoreReason": "Good sound and design, but flawed headline feature and middling battery limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3",
+    "outletId": "9to5google",
+    "critic": "Ben Schoon",
+    "url": "https://9to5google.com/2025/09/24/nothing-ear-3-review/",
+    "date": "2025-09-24",
+    "rating": "4/5",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "The main takeaway I've had around Nothing Ear (3) thus far is that, while they're the \"latest and greatest,\" I don't think they're meaningfully better than the prior generation.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Good overall, but weak ANC, flawed new feature, and reviewer suggests buying last year's model instead.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8l",
+    "outletId": "cnet",
+    "critic": "Ty Pendlebury",
+    "url": "https://www.cnet.com/tech/home-entertainment/tcls-qm8l-is-the-best-tv-ive-tested-in-2026/",
+    "date": "2026-07-31",
+    "rating": "8.8/10",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "In short, if you want the best LED TV for your money in 2026, this is it.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strongly recommended for brightness and picture quality, with caveats about reflections and OLED alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8l",
+    "outletId": "techradar",
+    "critic": "James Holland",
+    "url": "https://www.techradar.com/televisions/tcl-qm8l-review",
+    "date": "2026-05-09",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "If you're looking for an excellent mini-LED TV that comes in big sizes, and can hold up to even the brightest rooms while still delivering nuanced picture quality, I can recommend the TCL QM8L strongly.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for brightness, gaming, and value, with noticeable color accuracy and AI quirks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8l",
+    "outletId": "toms-guide",
+    "critic": "Sean Captain",
+    "url": "https://www.tomsguide.com/tvs/qled-tvs/tcl-sqd-mini-led-qm8l-75-inch-tv-review",
+    "date": "2026-04-22",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "It's reasonable for the cutting-edge tech and OLED-adjacent performance, but it's your call if bleeding-edge tech is worth bleeding your wallet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent picture and gaming, but launch price, mixed color accuracy, and Google TV issues temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8l",
+    "outletId": "pcmag",
+    "critic": "Will Greenwald",
+    "url": "https://me.pcmag.com/en/tvs/37588/tcl-85qm8l",
+    "date": "2026-07-01",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The TCL QM8L SQD-Mini LED TV delivers class-leading brightness, vibrant color, and excellent gaming performance at a price that undercuts most RGB LED rivals.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Exceptional brightness and value, with minor color accuracy issues and some blooming.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8l",
+    "outletId": "business-insider",
+    "critic": "Steven Cohen",
+    "url": "https://www.businessinsider.com/guides/tech/tcl-qm8l-sqd-4k-tv-review",
+    "date": "2026-09-27",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "It's a worthy successor to the QM8K, and recent discounts have helped to cement it as one of my top recommendations for high-end performance on a midrange budget.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 90
+    },
+    "scoreReason": "Excellent picture and value, top recommendation despite minor blooming, viewing angle, and stand drawbacks.",
+    "scoredFromFullText": true
   }
 ]
