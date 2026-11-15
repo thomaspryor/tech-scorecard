@@ -7619,7 +7619,14 @@
       ]
     },
     "autoAdded": "2026-11-14",
-    "backfilled": "2026-11-14"
+    "backfilled": "2026-11-14",
+    "image": {
+      "src": "/images/products/nothing-ear-3/main.webp",
+      "thumb": "/images/products/nothing-ear-3/thumb.webp",
+      "alt": "Nothing Ear (3), official Nothing photo",
+      "credit": "Nothing",
+      "sourceUrl": "https://us.nothing.tech/products/ear-3"
+    }
   },
   {
     "id": "tcl-qm8l",

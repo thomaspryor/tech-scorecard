@@ -31050,5 +31050,258 @@
     },
     "scoreReason": "Excellent picture and value, top recommendation despite minor blooming, viewing angle, and stand drawbacks.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/iphone-duo-review_id8076",
+    "date": "2026-11-03",
+    "rating": "8/10",
+    "score": 76,
+    "scoreSource": "rating",
+    "excerpt": "I also don't think the average user should jump on the foldable bandwagon just yet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 80
+    },
+    "scoreReason": "No actual review verdict provided, so the low end best matches the limited evidence.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "android-authority",
+    "critic": "Andy Boxall",
+    "url": "https://www.androidauthority.com/i-replaced-laptop-with-galaxy-tab-s12-ultra-big-mistake-3724409/",
+    "date": "2026-10-23",
+    "rating": null,
+    "score": 59,
+    "scoreSource": "text",
+    "excerpt": "The Samsung Galaxy Tab S12 Ultra’s impressive hardware, grand dimensions, and gorgeous screen make it desirable, but in the real world, the desirability doesn’t translate into the level of usability I expect from a $1,800 device.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 45
+    },
+    "scoreReason": "Great screen and battery, but poor work usability, awkward design, and very high price limit appeal.",
+    "scoredFromFullText": true,
+    "modelsDisagree": true
+  },
+  {
+    "productId": "tcl-qm8l",
+    "outletId": "ecoustics",
+    "critic": "Al Griffin",
+    "url": "https://www.ecoustics.com/reviews/tcl-qm8l-tv/",
+    "date": "2026-04-17",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "Compared to those, and also to TCL’s own SQD-Mini-LED flagship, the QM8L is a relative bargain.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent picture, gaming, sound, and value with only minor accuracy issues out of the box.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "engadget",
+    "critic": null,
+    "url": "https://www.engadget.com/wearables/galaxy-watch-8-review-samsungs-best-smartwatch-in-years-155857108.html",
+    "date": "2025-07-18",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "But if you're a Galaxy fan, this watch may very well delight you and help you get the most out of your phone.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 85
+    },
+    "scoreReason": "Strongly recommended for Galaxy users, praising comfort, battery, design and features despite some minor shortcomings.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-watch-8",
+    "outletId": "android-headlines",
+    "critic": "Alexander Maxham",
+    "url": "https://www.androidheadlines.com/samsung-galaxy-watch-8-review",
+    "date": "2025-08-04",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "If you’re looking for a Wear OS watch that has all of your favorite Android apps, as well as some incredible fitness features, then the Galaxy Watch 8 is a really good choice.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 89
+    },
+    "scoreReason": "Strong recommendation with praise for comfort, speed, and health features, tempered by price and some weak new metrics.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3",
+    "outletId": "soundguys",
+    "critic": "Adam Birney",
+    "url": "https://www.soundguys.com/nothing-ear-3-review-144486/",
+    "date": "2026-03-24",
+    "rating": "8.1/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "If you already own recent Nothing earbuds, I don’t think the Ear (3) offers enough meaningful improvements to justify an upgrade.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Strong ANC, sound, and app, but overpriced upgrade with gimmicky mic and notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/oct/23/nothing-ear-3-review-good-looking-earbuds-with-super-mic-party-trick",
+    "date": "2025-10-23",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "The earbuds themselves are another great set from Nothing, which combine good sound, reasonable noise cancelling, solid battery life and a comfortable fit into something much more interesting to look at than your usual boring buds.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Good sound, comfort and features, but pricier, unrepairable, and not quite top-tier overall.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/google-pixel-11-pro-review_id8026",
+    "date": "2026-08-28",
+    "rating": "7.4/10",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "With a good deal (or trade-in), I still think the Pixel 11 Pro is a great choice for those who like pure Android and an amazing camera.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 74
+    },
+    "scoreReason": "No actual review content provided, so only a score near the low end fits safely.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11",
+    "outletId": "mobile-syrup",
+    "critic": "Jonathan Lamont",
+    "url": "https://mobilesyrup.com/2026/08/19/google-pixel-11-canadian-review/",
+    "date": "2026-08-19",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "For the Pixel fans out there, the Pixel 11 is more of the same great phone you've come to know and love, with a few new features and not much else.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Strong everyday phone with smart features and solid camera, but limited upgrades, weak battery gains, and higher price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11",
+    "outletId": "business-insider",
+    "critic": "Michael Hicks",
+    "url": "https://www.businessinsider.com/guides/tech/google-pixel-11-review",
+    "date": "2026-10-02",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "For now, whether you care about Gemini Intelligence or not, the Pixel 11 is still one of the best phones of the year, and is worth the upgrade for Pixel fans with aging Tensor hardware.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Good phone and best Pixel for most, but price, AI misses, and performance limits temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-plus",
+    "outletId": "phonearena",
+    "critic": "Peter Kostadinov",
+    "url": "https://www.phonearena.com/reviews/samsung-galaxy-s26-plus-review_id7904",
+    "date": "2026-03-12",
+    "rating": "7.7/10",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy S26 Plus lacks any unique features that would beckon you to buy it.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 72
+    },
+    "scoreReason": "Good performance and battery, but uninspiring design and too compromised versus the Ultra.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-4",
+    "outletId": "mountaineer-journey",
+    "critic": "Tyler",
+    "url": "https://mountaineerjourney.com/blog/apple-watch-ultra-4-review",
+    "date": "2026-11-14",
+    "rating": "8/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The short version: excellent health features and smartwatch integration, strong GPS and heart rate accuracy in our testing, but still behind Garmin for serious GPS training depth and battery life.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 81
+    },
+    "scoreReason": "Strong accuracy and smartwatch praise, but battery and mapping limits make serious athletes consider alternatives.",
+    "scoredFromFullText": true
   }
 ]
