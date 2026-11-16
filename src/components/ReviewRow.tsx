@@ -49,7 +49,7 @@ export function ReviewRow({ review }: { review: ScoredReview }) {
             href={review.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-brand-ink hover:underline"
+            className="inline-flex min-h-11 items-center gap-1 text-xs font-bold uppercase tracking-wide text-brand-ink hover:underline"
           >
             Full review <span aria-hidden="true">↗</span>
           </a>
