@@ -47,7 +47,9 @@
     "name": "The New York Times",
     "tier": 1,
     "domain": "nytimes.com",
-    "feeds": []
+    "feeds": [
+      "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+    ]
   },
   {
     "id": "bloomberg",
@@ -953,7 +955,9 @@
     "name": "NoobFeed",
     "tier": 4,
     "domain": "noobfeed.com",
-    "feeds": []
+    "feeds": [
+      "https://www.noobfeed.com/rss.xml"
+    ]
   },
   {
     "id": "gadgetguy",
