@@ -123,7 +123,7 @@ Plain English, no em dashes. Never invent data or results.
 
 ## Port log
 
-Last reviewed through: 2026-10-22 (Broadwayscore main `f34982aa1`).
+Last reviewed through: 2026-11-16 (Broadwayscore main `51c0f0adc`).
 
 | Date       | Broadway change                                     | Tech Scorecard change                                                                      |
 | ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -132,6 +132,7 @@ Last reviewed through: 2026-10-22 (Broadwayscore main `f34982aa1`).
 | 2026-10-22 | BRO-4575, BRO-4949 header/footer overflow on phones | header fits one row from 320px; header links 44px tall                                     |
 | 2026-10-22 | BRO-5812 copy voice rules and guard                 | `test/copy-voice.test.ts` checks src/ strings and products.json copy                       |
 | 2026-10-22 | BRO-4881 tier chip meaning for every reader         | tier chip has a screen-reader label (title alone is mouse-only)                            |
+| 2026-11-16 | 44px touch targets (global link rule, 2026-11-04)   | review cards: "Full review" link is 44px tall (was 16px)                                   |
 
 ## Catch-up inventory (2026-09-22 to 2026-10-22)
 
@@ -173,3 +174,24 @@ out.
 Counts: 28 items. 6 ported (one in part), 1 partly covered by the new page-size guard, 10 already
 done (one of them by BRO-5959), 1 ported by the SEO session BRO-5960 after this review found it,
 1 left to BRO-5960's SEO plan, 1 left as an owner setting, 8 do not apply.
+
+## Review 2026-11-16 (Broadway commits 2026-10-22 to 2026-11-16)
+
+About 450 commits touched site code. Generic web items only.
+
+| Broadway change                                                     | Verdict        | Why                                                                            |
+| ------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------ |
+| BRO-6553 dim gray text to WCAG AA, plus audit guard                 | already done   | muted text tokens are 5.1:1 or better on white                                 |
+| BRO-6567 honor OS Increase Contrast                                 | does not apply | light theme with AA-or-better tokens; low value                                |
+| 44px touch targets, global link rule                                | ported         | standalone "Full review" links were 16px tall; inline text links stay exempt   |
+| BRO-6838 robots: allow AI crawlers                                  | already done   | robots.txt is `User-agent: * Allow: /`                                         |
+| 0cbdfb131 escape JSON-LD                                            | already done   | `JsonLd` escapes `<`                                                           |
+| Next 16 sitemap shards (BRO-6458)                                   | already done   | site is on Next 16.4                                                           |
+| BRO-5984 same-origin PostHog /ingest proxy                          | watch          | needs a rewrite plus CSP change; low traffic, revisit if analytics gaps matter |
+| BRO-6277 srcset variants, BRO-6562/8dfe9a7 OG image fixes           | does not apply | no raster images besides the Open Graph card                                   |
+| BRO-7486 JS and HTML budgets                                        | already done   | page-size guard (largest page 425kB)                                           |
+| BRO-7469, 7777984d3 phone list cards no longer balloon              | already done   | checked live at 320 and 390px: no overflow, no console errors                  |
+| Focus rings (BRO-7422), SEO FAQ, thin-page, sitemap, schema commits | does not apply | show, venue and cast features this site lacks                                  |
+
+Counts: 11 candidates. 1 ported, 5 already done, 1 watch, 4 do not apply. No commit carried a
+`PORT-TECH:` line and no Linear card had the `port-tech` label.
