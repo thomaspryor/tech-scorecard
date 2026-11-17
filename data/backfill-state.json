@@ -1,6 +1,6 @@
 {
   "since": "2026-11-10",
-  "lastRun": "2026-11-14",
+  "lastRun": "2026-11-17",
   "categories": {
     "tablet": {
       "misses": 0,
@@ -27,6 +27,10 @@
       "pausedUntil": null
     },
     "tv": {
+      "misses": 1,
+      "pausedUntil": null
+    },
+    "camera": {
       "misses": 0,
       "pausedUntil": null
     }

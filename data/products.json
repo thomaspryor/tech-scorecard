@@ -7704,5 +7704,169 @@
     },
     "autoAdded": "2026-11-14",
     "backfilled": "2026-11-14"
+  },
+  {
+    "id": "earfun-air-pro-4",
+    "slug": "earfun-air-pro-4",
+    "name": "EarFun Air Pro 4+",
+    "brand": "EarFun",
+    "category": "earbuds",
+    "releaseDate": "2025-10-27",
+    "launchPrice": 99.99,
+    "officialUrl": "https://www.myearfun.com/headphones/earfun-air-pro-4-plus-hi-res-adaptive-anc-true-wireless-earbuds-black",
+    "criticsTake": "Reviews agree the EarFun Air Pro 4+ packs a long feature list and strong overall value at under $100. Most praise the sound quality, comfort, battery life, and codec support, while common criticisms focus on noise canceling, mic and call quality, and a few design compromises.",
+    "loved": [
+      "Detailed, rich sound",
+      "Comfortable secure fit",
+      "Bluetooth 6.0 and broad codec support",
+      "Long battery life"
+    ],
+    "gripes": [
+      "Noise canceling is average",
+      "Mic and call quality could be better",
+      "Transparency mode is only average",
+      "Charging case can be awkward",
+      "Directionality is imprecise for gaming"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $99.99"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 6.0"
+      },
+      {
+        "label": "Drivers",
+        "value": "Dual-driver system with a 10mm dynamic driver and a FeatherBA balanced-armature driver"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 8 hours with ANC on"
+      },
+      {
+        "label": "Total battery",
+        "value": "Up to 54 hours with the charging case"
+      },
+      {
+        "label": "Fast charging",
+        "value": "10 minutes for 3 hours of playback"
+      },
+      {
+        "label": "Durability",
+        "value": "IP55 dust and water resistance"
+      },
+      {
+        "label": "Audio codecs",
+        "value": "LDAC, aptX Adaptive, aptX Lossless, and LC3"
+      },
+      {
+        "label": "Extra features",
+        "value": "Multipoint connection, adaptive noise cancelling, transparency mode, low-latency game mode, and Qi wireless charging case"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-17",
+    "backfilled": "2026-11-17",
+    "image": {
+      "src": "/images/products/earfun-air-pro-4/main.webp",
+      "thumb": "/images/products/earfun-air-pro-4/thumb.webp",
+      "alt": "EarFun Air Pro 4+, official EarFun photo",
+      "credit": "EarFun",
+      "sourceUrl": "https://www.myearfun.com/headphones/earfun-air-pro-4-plus-hi-res-adaptive-anc-true-wireless-earbuds-black"
+    }
+  },
+  {
+    "id": "insta360-x6",
+    "slug": "insta360-x6",
+    "name": "Insta360 X6",
+    "brand": "Insta360",
+    "category": "camera",
+    "releaseDate": "2026-08-12",
+    "launchPrice": 699.99,
+    "officialUrl": "https://www.insta360.com/product/insta360-x6",
+    "criticsTake": "Reviewers agree the Insta360 X6 delivers some of the best image quality available from a consumer 360 camera, with improved low-light performance, strong processing, and a smaller body than before. They also note that the gains over the X5 are fairly incremental for many buyers, while the $699.99 starting price, app issues, and editing demands for 8K and 120MP files can limit its appeal.",
+    "loved": [
+      "Excellent image quality",
+      "Improved low-light performance",
+      "Smaller, easier-to-handle design",
+      "47GB built-in storage"
+    ],
+    "gripes": [
+      "Premium price",
+      "Only incremental upgrade over X5",
+      "Occasional stitch lines",
+      "Some phones struggle with 8K and 120MP files",
+      "Buggy app"
+    ],
+    "specs": [
+      {
+        "label": "Sensors",
+        "value": "Dual 1/1.1-inch sensors"
+      },
+      {
+        "label": "360 video",
+        "value": "Up to 8K at 50 fps"
+      },
+      {
+        "label": "Single-lens video",
+        "value": "Up to 4K at 120 fps"
+      },
+      {
+        "label": "Photo resolution",
+        "value": "120MP spherical photos, 15,520 x 7,760"
+      },
+      {
+        "label": "Screen",
+        "value": "2.3-inch OLED touchscreen"
+      },
+      {
+        "label": "Storage",
+        "value": "47GB internal storage, expandable via microSD"
+      },
+      {
+        "label": "Color modes",
+        "value": "10-bit i-Log and Dolby Vision"
+      },
+      {
+        "label": "Stabilization",
+        "value": "Electronic image stabilization"
+      },
+      {
+        "label": "Weight",
+        "value": "197g"
+      },
+      {
+        "label": "Price",
+        "value": "From $699.99"
+      }
+    ],
+    "art": {
+      "kind": "camera",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-17",
+    "backfilled": "2026-11-17",
+    "image": {
+      "src": "/images/products/insta360-x6/main.webp",
+      "thumb": "/images/products/insta360-x6/thumb.webp",
+      "alt": "Insta360 X6, official Insta360 photo",
+      "credit": "Insta360",
+      "sourceUrl": "https://www.insta360.com/blog/insta360-x6-launch.html"
+    }
   }
 ]

@@ -31618,5 +31618,530 @@
     },
     "scoreReason": "Very limited review text, but visible verdict context suggests notable reservations rather than strong enthusiasm.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "trusted-reviews",
+    "critic": "Lewis Painter",
+    "url": "https://www.trustedreviews.com/reviews/google-fitbit-edge",
+    "date": "2026-11-17",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The Fitbit Edge nails the fundamentals, pairing a comfortable, lightweight design and bright AMOLED screen with reliable health tracking, impressively accurate GPS and battery life that beats Google’s claims.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Strong tracking, GPS and comfort, but missing basics and subscription limits make recommendation qualified.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/samsung-galaxy-tab-s12-ultra-review/",
+    "date": "2026-09-30",
+    "rating": "5/5",
+    "score": 92,
+    "scoreSource": "rating",
+    "excerpt": "Samsung’s new tablet Everest is undeniably excellent, but the Galaxy Tab S12 Ultra is now expensive enough that only the true Android faithful need apply",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent Android tablet, but huge price, tiny upgrades, and limited audience temper the five-star praise.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-watch-ultra-2",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/samsung-galaxy-watch-ultra-2-review/",
+    "date": "2026-07-22",
+    "rating": "5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "It's pricey and the regular Galaxy Watch 9 isn't far removed on features, but the Galaxy Watch Ultra 2 is still the new king of Android smartwatches for adventurers and outdoorsy types",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise and category-leading verdict, but price and overlap with cheaper Galaxy Watch are notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "msi-claw-8-ex-ai-plus",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/gaming/msi-claw-8-ex-ai-plus-review",
+    "date": "2026-11-17",
+    "rating": "3/5",
+    "score": 52,
+    "scoreSource": "rating",
+    "excerpt": "At &pound;1,400, this MSI is simply too expensive.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 51
+    },
+    "scoreReason": "Strong performance and comfort, but the reviewer says the price is too high and most should choose something else.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "msi-claw-8-ex-ai-plus",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/msi-claw-8-ex-ai-plus-review/",
+    "date": "2026-09-29",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "A brilliantly powerful handheld with great battery life and strong ergonomics, but the MSI Claw 8 EX AI+ is tricky to love on account of the prohibitive asking price",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Outstanding power, battery and comfort, but the very high price and LCD screen limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "business-insider",
+    "critic": "Rachael Schultz",
+    "url": "https://www.businessinsider.com/guides/tech/fitbit-air-review",
+    "date": "2026-07-15",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "If you're happy to trade those real-time stats for a slimmer profile, an understated look, and a wearable that quietly fades into the background, the Fitbit Air is an ideal fit.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Strong value and discreet design, but screenless limits workouts and misses useful prompts.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-air",
+    "outletId": "lifehacker",
+    "critic": "Beth Skwarecki",
+    "url": "https://lifehacker.com/health/fitbit-air-review",
+    "date": "2026-05-27",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "So, with reservations, I crown the Fitbit Air the best fitness tracker for most people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value and comfort, but notable complaints about AI coach, missing features, and subscriptions.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "motorola-razr-ultra-2026",
+    "outletId": "android-authority",
+    "critic": "Ryan Haines",
+    "url": "https://www.androidauthority.com/motorola-razr-ultra-2026-review-3678181/",
+    "date": "2026-06-24",
+    "rating": "8/10",
+    "score": 74,
+    "scoreSource": "rating",
+    "excerpt": "The Razr Ultra (2026) is fantastic, but the 2025 model gives you so much of the same essential experience that it's worth hunting out.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 72
+    },
+    "scoreReason": "Great phone with strong praise, but high price and recommendation to buy the older model hurt it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "hardwarezone",
+    "critic": "Kenny Yeo",
+    "url": "https://www.hardwarezone.com.sg/lifestyle/audio/apple-airpods-5-review-singapore-price-specs-buy",
+    "date": "2026-11-17",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "But when you consider what the AirPods 5 offer, it’s hard to come away with any conclusion other than these are the best open-style earbuds you can buy if you are an iPhone user.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent ANC and sound for open earbuds, with some fit, battery, and detail drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "pcmag",
+    "critic": "Mark Knapp",
+    "url": "https://www.pcmag.com/reviews/earfun-air-pro-4-plus",
+    "date": "2026-03-26",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The EarFun Air Pro 4+ budget wireless earphones are among the best if you don’t want to miss out on high-quality audio, powerful ANC, and fancy features.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent sound, ANC, features, and value; minor app and LE Audio issues barely dent strong recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "techradar",
+    "critic": "Tom Bedford",
+    "url": "https://www.techradar.com/audio/earbuds-airpods/earfun-air-pro-4-plus-review",
+    "date": "2025-11-13",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "These cheap and cheerful earbuds have an enviable set of features, including some rarely seen outside of the premium earbuds sector.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 75
+    },
+    "scoreReason": "Great features and battery, but confusing ANC and merely fine sound limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "toms-guide",
+    "critic": "Erin Bashford",
+    "url": "https://www.tomsguide.com/audio/earbuds/earfun-air-pro-4-plus-review",
+    "date": "2025-10-27",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "These are the best budget earbuds I’ve ever tested.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 100
+    },
+    "scoreReason": "Overwhelming praise and buy-now recommendation, with only minor design and ANC caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "pc-gamer",
+    "critic": "Jacob Fox",
+    "url": "https://www.pcgamer.com/hardware/earbuds-headphones/earfun-air-pro-4-review/",
+    "date": "2026-03-11",
+    "rating": "88/100",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "These earbuds show just how much difference armature drivers can make, as the addition of these in the new Plus version has improved the sound quality greatly.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent sound and features for the price, with only fit and gaming latency holding it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/earfun-air-pro-4-plus-earbuds-review-premium-sound-for-less-than-80/",
+    "date": "2025-11-05",
+    "rating": "8.3/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "They offer good fit, a strong feature set, effective noise canceling and improved sound quality that competes favorably with more premium earbuds.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 83
+    },
+    "scoreReason": "Excellent value with standout sound and features, held back by average transparency and inconsistent call quality.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "ign",
+    "critic": "Samuel Horti",
+    "url": "https://www.ign.com/articles/earfun-air-pro-4-plus-review",
+    "date": "2026-05-13",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The EarFun Air Pro 4 Plus earbuds are some of the best-sounding sub-$100 buds I've ever used and they're crammed with features you won't find from competitors.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 82
+    },
+    "scoreReason": "Strong sound, features, and comfort outweigh mediocre ANC and some gaming and control limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "soundguys",
+    "critic": "Chase Bernath",
+    "url": "https://www.soundguys.com/earfun-air-pro-4-plus-review-147238/",
+    "date": "2025-11-07",
+    "rating": "8.2/10",
+    "score": 85,
+    "scoreSource": "rating",
+    "excerpt": "The EarFun Air Pro 4+ are an excellent value under $100.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Strong value and features with good sound, but average ANC and a few minor drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "recording-now",
+    "critic": "Odi Productions",
+    "url": "https://recordingnow.com/blog/earfun-air-pro-4-plus-review/",
+    "date": "2026-08-09",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "The EarFun Air Pro 4+ is easily one of the best earbuds I've tested under $100, with the best sound quality I've heard in this price range.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent sound and battery for the price, with only decent ANC and mic holding it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "gaming-trend",
+    "critic": "Joe Morgan",
+    "url": "https://gamingtrend.com/reviews/earfun-air-pro-4-review/",
+    "date": "2026-02-17",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "The Air Pro 4+ are great earbuds with excellent sound quality, beefy battery life, and customizable tools via their app.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 89,
+      "gemini": 90
+    },
+    "scoreReason": "Excellent sound, strong battery, useful app, and good value; only minor complaint about translation marketing.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "engadget",
+    "critic": "James Trew",
+    "url": "https://www.engadget.com/2234775/insta360-x6-review/",
+    "date": "2026-08-12",
+    "rating": "8.9/10",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "For fans of the Insta360 brand, the X6 is a solid update, especially if you're coming from an X4 or older.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 82
+    },
+    "scoreReason": "Strong image and usability upgrade, but AI tools, stitch lines and value concerns temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "pcmag",
+    "critic": "Jim Fisher",
+    "url": "https://www.pcmag.com/reviews/insta360-x6",
+    "date": "2026-08-12",
+    "rating": "4.5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The Insta360 X6 is a compact powerhouse that delivers exceptional low-light performance, crisp 8K50 video, and a rugged, waterproof build, setting a new standard for 360-degree cameras.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding image quality and features, with price and a few interface issues as the main drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "techradar",
+    "critic": "Sam Kieldsen",
+    "url": "https://www.techradar.com/cameras/360-cameras/insta360-x6-review",
+    "date": "2026-08-12",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The Insta360 X6 is a camera of two halves: hardware that feels impeccable, paired with software that plainly doesn't.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Best-in-class image quality and hardware, with notable app instability and high price as main caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "cnet",
+    "critic": "Geoffrey Morrison",
+    "url": "https://www.cnet.com/tech/computing/insta360-x6-review-without-question-the-best-360-camera/",
+    "date": "2026-08-12",
+    "rating": "9/10",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "Lastly, if you’re an enthusiast about 360 cameras and especially if you have an older camera (X3, original GoPro Max or older), the X6 is excellent and worth the price.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 91
+    },
+    "scoreReason": "Best consumer 360 camera, but improvements are modest and many buyers should choose cheaper older models.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "toms-guide",
+    "critic": "Peter Wolinski",
+    "url": "https://www.tomsguide.com/cameras-photography/gopro-action-cameras/insta360-x6-review",
+    "date": "2026-08-13",
+    "rating": "4.5/5",
+    "score": 92,
+    "scoreSource": "rating",
+    "excerpt": "But if you want the best-of-the-best 360 camera from a technical standpoint, it has to be the X6.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 91
+    },
+    "scoreReason": "Technically superb, but very high price and recommendation to most buyers goes to older model.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "forbes",
+    "critic": "Ben Sin",
+    "url": "https://www.forbes.com/sites/bensin/2026/08/12/insta360-x6-review-improved-visuals-mean-its-no-longer-just-for-play/",
+    "date": "2026-08-12",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "I think for anyone who makes videos as a hobby or more, the X6 is definitely worth considering.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for image quality and versatility, with only minor caveats about 360 viewing and storage.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/insta360-x6-review-the-king-of-360-cameras-reclaims-its-crown-2000797308",
+    "date": "2026-08-12",
+    "rating": "4.5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "Even with companies like DJI and GoPro nipping at its heels, the new $700 X6 once again claims the top spot for fish-eye action shooters.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 92
+    },
+    "scoreReason": "Best-in-class 360 camera with excellent quality, but pricey and still not ideal as an only camera.",
+    "scoredFromFullText": true
   }
 ]
