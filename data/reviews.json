@@ -28389,7 +28389,7 @@
     "url": "https://me.mashable.com/samsung-galaxy-tab-s11-ultra/65683/samsung-galaxy-tab-s11-ultra-oversized-and-underpowered",
     "date": "2026-01-10",
     "rating": null,
-    "score": 64,
+    "score": 61,
     "scoreSource": "text",
     "excerpt": "The Samsung Galaxy Tab S11 Ultra is a mixed bag, offering stellar battery life but with more to be desired in terms of performance.",
     "scoreBand": [
@@ -28402,7 +28402,9 @@
     },
     "scoreReason": "Great screen and battery, but overpriced, oversized, and underpowered for its premium ambitions.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 61,
+    "adjudicationReason": "Praises the 16-hour battery and included S Pen, but calls it oversized, underpowered and overpriced next to an iPad Air, a worthwhile buy only for pros and artists."
   },
   {
     "productId": "samsung-galaxy-tab-s11-ultra",
@@ -30091,7 +30093,7 @@
     "url": "https://9to5google.com/2026/05/14/pixel-10-pro-fold-long-term-review/",
     "date": "2026-05-22",
     "rating": null,
-    "score": 64,
+    "score": 61,
     "scoreSource": "text",
     "excerpt": "Google has made a nice folding phone, but not one that is all that easy to recommend unless at a significant discount.",
     "scoreBand": [
@@ -30104,7 +30106,9 @@
     },
     "scoreReason": "Good software and solid basics, but too many compromises make it hard to recommend full price.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 61,
+    "adjudicationReason": "Likes the software and Pixelsnap, but slow charging, weak cameras and better rival foldables make it hard to recommend unless discounted."
   },
   {
     "productId": "bose-qc-ultra-headphones-2",
@@ -31079,7 +31083,7 @@
     "url": "https://www.androidauthority.com/i-replaced-laptop-with-galaxy-tab-s12-ultra-big-mistake-3724409/",
     "date": "2026-10-23",
     "rating": null,
-    "score": 59,
+    "score": 52,
     "scoreSource": "text",
     "excerpt": "The Samsung Galaxy Tab S12 Ultra’s impressive hardware, grand dimensions, and gorgeous screen make it desirable, but in the real world, the desirability doesn’t translate into the level of usability I expect from a $1,800 device.",
     "scoreBand": [
@@ -31092,7 +31096,9 @@
     },
     "scoreReason": "Great screen and battery, but poor work usability, awkward design, and very high price limit appeal.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 52,
+    "adjudicationReason": "Loves the screen for video, but finds it too big, heavy and compromised for work at $1,800 and says almost any laptop is the better buy."
   },
   {
     "productId": "tcl-qm8l",
