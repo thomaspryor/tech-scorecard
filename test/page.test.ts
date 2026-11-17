@@ -59,6 +59,23 @@ describe('jsonLd', () => {
     expect(jsonLd(html)).toEqual({ rating: '4.5/5', critic: 'Jane Critic', date: '2026-09-20' });
   });
 
+  it('flags a page with two different ratings, but not the same rating on two scales', () => {
+    const two = ld([
+      { '@type': 'Review', reviewRating: { ratingValue: 4, bestRating: 5 } },
+      { '@type': 'Review', reviewRating: { ratingValue: 3, bestRating: 5 } },
+    ]);
+    expect(jsonLd(two).ambiguous).toBe(true);
+    const same = ld([
+      { '@type': 'Review', reviewRating: { ratingValue: 4, bestRating: 5 } },
+      { '@type': 'Review', reviewRating: { ratingValue: 8, bestRating: 10 } },
+    ]);
+    expect(jsonLd(same).ambiguous).toBeUndefined();
+    expect(
+      jsonLd(ld({ aggregateRating: { '@type': 'AggregateRating', ratingValue: 3 }, reviewRating: { ratingValue: 4 } }))
+        .ambiguous,
+    ).toBeUndefined();
+  });
+
   it('defaults bestRating to 5, rejects impossible ratings and skips malformed blocks', () => {
     expect(jsonLd(ld({ reviewRating: { ratingValue: 4 } })).rating).toBe('4/5');
     expect(jsonLd(ld({ reviewRating: { ratingValue: 9, bestRating: 5 } })).rating).toBeUndefined();

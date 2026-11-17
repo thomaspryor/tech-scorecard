@@ -143,7 +143,13 @@ describe('importEach', () => {
       label: 'good.json',
       content: {
         productId: 'test-phone',
-        reviews: [review({ outletId: 'wired', url: 'https://www.wired.com/review/test-phone' })],
+        reviews: [
+          review({
+            outletId: 'wired',
+            url: 'https://www.wired.com/review/test-phone',
+            excerpt: 'A different verdict, written by Wired.',
+          }),
+        ],
       },
     };
     const bad = {

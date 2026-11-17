@@ -55,6 +55,7 @@ export function validData() {
         rating: null,
         scoreSource: 'text',
         score: 80,
+        excerpt: 'Fast, polished and worth the money.',
       }),
     ],
   };

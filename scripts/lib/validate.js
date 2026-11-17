@@ -111,6 +111,11 @@ function validateData(
   for (const v of productCopyViolations(products)) errors.push(`copy rule: ${v}`);
 
   const seen = new Set();
+  /** Review address -> the outlet it was filed under. One article may be filed under several products (a joint review of two
+   * models), but never under a second outlet. @type {Map<string, string>} */
+  const urlOutlet = new Map();
+  /** Product + outlet-independent excerpt text -> the outlet that has it: two outlets do not publish one sentence. @type {Map<string, string>} */
+  const excerptOutlet = new Map();
   reviews.forEach((r, i) => {
     const at = `review #${i} (${r.productId}/${r.outletId})`;
     const outlet = outletsById.get(r.outletId);
@@ -128,6 +133,24 @@ function validateData(
       const domains = [outlet.domain, ...(outlet.altDomains || [])].map(bareHost);
       if (!domains.some((d) => host === d || host.endsWith(`.${d}`)))
         errors.push(`${at}: url host ${host} is not ${domains.join(' or ')}`);
+    }
+
+    if (isHttpsUrl(r.url)) {
+      const u = new URL(r.url);
+      const urlKey = `${bareHost(u.hostname)}${u.pathname.replace(/\/+$/, '')}`.toLowerCase();
+      const filed = urlOutlet.get(urlKey);
+      if (filed && filed !== r.outletId) errors.push(`${at}: url is already filed under outlet ${filed}`);
+      urlOutlet.set(urlKey, filed ?? r.outletId);
+    }
+    const sentence = (r.excerpt || '')
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}]+/gu, ' ')
+      .trim();
+    if (sentence.length > 20) {
+      const k = `${r.productId}|${sentence}`;
+      const other = excerptOutlet.get(k);
+      if (other && other !== r.outletId) errors.push(`${at}: same excerpt as the ${other} review of this product`);
+      excerptOutlet.set(k, other ?? r.outletId);
     }
 
     if (!isIsoDate(r.date)) errors.push(`${at}: bad date`);
