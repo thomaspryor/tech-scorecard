@@ -32149,5 +32149,257 @@
     },
     "scoreReason": "Best-in-class 360 camera with excellent quality, but pricey and still not ideal as an only camera.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "appleinsider",
+    "critic": "Mike Wuerthele",
+    "url": "https://appleinsider.com/articles/26/11/16/proled-macbook-pro-review-great-hardware-maybe-wait-for-m7",
+    "date": "2026-11-16",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "If all you really need is performance, either skip this generation and wait for that M7 model, or get the previously available model without the PROLED premium.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent display and design, but first-gen quirks, no speed gains, and some buyers should wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "yanko-design",
+    "critic": null,
+    "url": "https://www.yankodesign.com/2026/11/18/asus-proart-p16-rtx-spark-review-a-work-of-art-with-6x-faster-ai-to-unlock/",
+    "date": "2026-11-18",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "The ProArt P16 RTX Spark is a work of art as a laptop, and the more time I gave its local AI, the more it gave back.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent display, speakers, keyboard, and AI potential, but expensive, hot, loud, and has software compatibility limits.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "tech-advisor",
+    "critic": "Anyron Copeman",
+    "url": "https://www.techadvisor.com/article/3288416/samsung-galaxy-tab-s12-ultra-review.html",
+    "date": "2026-11-17",
+    "rating": "3.5/5",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "But with software that's designed for touch and many apps still not optimised for the big screen, the Tab S12 Ultra feels no closer to becoming a genuine laptop replacement, making the price tag feel extortionate.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 71
+    },
+    "scoreReason": "Fantastic hardware, but poor value and productivity software issues make it hard to recommend widely.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "earfun-air-pro-4",
+    "outletId": "zdnet",
+    "critic": "Jack Wallen",
+    "url": "https://www.zdnet.com/article/im-an-audiophile-and-these-are-the-only-cheap-earbuds-you-should-consider-right-now/",
+    "date": "2025-11-05",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "If you love music and you want to hear it as it should be heard, the Earfun Air Pro 4+ are your best bet.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 91,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised for exceptional sound and called the best under $100, with only minor caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "android-headlines",
+    "critic": "Justin Diaz",
+    "url": "https://www.androidheadlines.com/motorola-razr-2026-review.html",
+    "date": "2026-06-15",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr 2026 is a testament to Motorola’s commitment to providing a top-notch user experience in the foldable space, as well as smartphones in general.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for design and usability, with notable concerns about price increase and short software support.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "razr-2026",
+    "outletId": "android-authority",
+    "critic": "Stephen Radochia",
+    "url": "https://www.androidauthority.com/motorola-razr-2026-review-3689037/",
+    "date": "2026-10-07",
+    "rating": "8/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The Motorola Razr (2026) is more expensive than its predecessor, but it's still the flip phone that should wind up in your pocket.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 85
+    },
+    "scoreReason": "Strong recommendation with minor software support and performance caveats, still best for most clamshell buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "viture-beast",
+    "outletId": "ign",
+    "critic": "Jacqueline Thomas",
+    "url": "https://www.ign.com/articles/viture-beast-xr-glasses",
+    "date": "2026-05-21",
+    "rating": "8/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "The Viture Beast XR glasses are a great way to bring a giant gaming monitor with you wherever you go, even if fiddly controls and blurry text stop them from being a full-time display contender.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong travel gaming praise, but comfort, blur, heat, and daily-use limits keep it from higher marks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "viture-beast",
+    "outletId": "android-authority",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidauthority.com/viture-beast-review-3686604/",
+    "date": "2026-07-15",
+    "rating": "8/10",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "If you’re willing to pay $550 for a pair of XR glasses, the VITURE Beast are an easy sell.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for gaming and media, with notable text clarity and accessory cost drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "android-authority",
+    "critic": "Rushil Agrawal",
+    "url": "https://www.androidauthority.com/samsung-galaxy-a57-5g-review-3667288/",
+    "date": "2026-05-24",
+    "rating": "7/10",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy A57 5G is easy to like, but harder to justify compared to the competition.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Stylish and likable, but thermal issues and weak value make the recommendation very hesitant.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/samsung-galaxy-a57-review/",
+    "date": "2026-04-13",
+    "rating": "3/5",
+    "score": 55,
+    "scoreSource": "rating",
+    "excerpt": "It's a balanced mid-ranger in Samsung land, but the Galaxy A57 is behind the times once you look at the rest of the phone world.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 57,
+      "gemini": 52
+    },
+    "scoreReason": "Good screen and battery, but overpriced, barely improved, and hard to recommend over rivals or predecessor.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "smartprix",
+    "critic": "Mehtab Ansari",
+    "url": "https://www.smartprix.com/bytes/samsung-galaxy-a57-review/",
+    "date": "2026-04-06",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy A57 5G is a safe, well-rounded upgrade that focuses on the everyday experience.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 72
+    },
+    "scoreReason": "Good software, display, design and support, but average performance, battery, low-light camera, and heavy bloatware hurt value.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a57",
+    "outletId": "gizmodo",
+    "critic": "Prakhar Khanna",
+    "url": "https://gizmodo.com/samsung-galaxy-a57-5g-review-not-worth-it-at-full-price-2000752653",
+    "date": "2026-05-05",
+    "rating": "3.5/5",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy A57 is a good phone but not the same value as its predecessor.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 72
+    },
+    "scoreReason": "Good phone with nice design and software, but overpriced and reviewer suggests waiting for a discount.",
+    "scoredFromFullText": true
   }
 ]
