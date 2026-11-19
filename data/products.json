@@ -7868,5 +7868,81 @@
       "credit": "Insta360",
       "sourceUrl": "https://www.insta360.com/blog/insta360-x6-launch.html"
     }
+  },
+  {
+    "id": "apple-macbook-pro-14-inch-m6",
+    "slug": "apple-macbook-pro-14-inch-m6",
+    "name": "Apple MacBook Pro 14-Inch (M6)",
+    "brand": "Apple",
+    "category": "laptop",
+    "releaseDate": "2026-11-06",
+    "launchPrice": 1999,
+    "officialUrl": "https://www.apple.com/macbook-pro/",
+    "criticsTake": "Reviewers say the 14-inch MacBook Pro with M6 is a familiar update centered on the new chip, bringing moderate CPU gains, stronger graphics, and very long battery life. They also describe it as a good fit for users who want the Pro design, display, ports, and endurance, while noting the older design and higher price relative to before.",
+    "loved": [
+      "Very long battery life",
+      "Bright 14.2-inch 120Hz mini-LED display",
+      "Strong port selection with MagSafe",
+      "Fast M6 performance and better graphics"
+    ],
+    "gripes": [
+      "Design is unchanged from prior models",
+      "Included 70W adapter does not fast charge",
+      "Power adapter not included in the U.K.",
+      "More expensive than its predecessor",
+      "Base M6 is less suited to full-time pros than Pro or Max models"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "14.2-inch mini-LED Liquid Retina XDR, 3024x1964, 254 ppi, ProMotion 120Hz"
+      },
+      {
+        "label": "Processor",
+        "value": "Apple M6"
+      },
+      {
+        "label": "CPU",
+        "value": "12-core CPU with 2 super cores, 4 performance cores, and 6 efficiency cores"
+      },
+      {
+        "label": "GPU",
+        "value": "12-core GPU"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB SSD"
+      },
+      {
+        "label": "Ports",
+        "value": "3 Thunderbolt 4/USB-C, HDMI, SDXC card slot, 3.5mm audio, MagSafe 3"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi‑Fi 7, Bluetooth 6, Thread"
+      },
+      {
+        "label": "Weight",
+        "value": "3.4 pounds (1.55 kg)"
+      },
+      {
+        "label": "Price",
+        "value": "From $1999"
+      }
+    ],
+    "art": {
+      "kind": "laptop",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-19"
   }
 ]

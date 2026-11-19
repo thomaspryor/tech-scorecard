@@ -1,6 +1,6 @@
 {
   "since": "2026-11-10",
-  "lastRun": "2026-11-17",
+  "lastRun": "2026-11-19",
   "categories": {
     "tablet": {
       "misses": 0,
@@ -23,15 +23,15 @@
       "pausedUntil": null
     },
     "earbuds": {
-      "misses": 0,
-      "pausedUntil": null
-    },
-    "tv": {
       "misses": 1,
       "pausedUntil": null
     },
+    "tv": {
+      "misses": 2,
+      "pausedUntil": null
+    },
     "camera": {
-      "misses": 0,
+      "misses": 1,
       "pausedUntil": null
     }
   },

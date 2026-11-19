@@ -32401,5 +32401,446 @@
     },
     "scoreReason": "Good phone with nice design and software, but overpriced and reviewer suggests waiting for a discount.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "the-verge",
+    "critic": "David Pierce",
+    "url": "https://www.theverge.com/tech/1026570/apple-macbook-pro-proled-xdr-display-review",
+    "date": "2026-11-05",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "In general, this device runs about a $400 premium over the standard, similarly specced Pro, but spoiler alert: I think it’s worth it, touchscreen or no touchscreen.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent redesign and display, strong recommendation, but touch adds little and price premium limits enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/A-lot-of-promises-little-to-show-for-it-Samsung-Galaxy-Tab-S12-Ultra-review.1454612.0.html",
+    "date": "2026-11-19",
+    "rating": "88/100",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy Tab S12 Ultra remains one of the most technically advanced Android tablets, but it has only evolved in small steps compared to its predecessor.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 74
+    },
+    "scoreReason": "Excellent display and features, but meaningful performance throttling, heat, and limited upgrades temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "techradar",
+    "critic": "Jouri Altorf",
+    "url": "https://global.techradar.com/nl-nl/tablets/samsung-galaxy-tab-s12-ultra-review-nl",
+    "date": "2026-11-10",
+    "rating": "4.2/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "De Samsung Galaxy Tab S12 Ultra is zonder twijfel een van de indrukwekkendste Android-tablets die je momenteel kunt kopen.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent screen and performance, but very expensive with few upgrades and limited laptop replacement appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "t3",
+    "critic": "Matt Kollat",
+    "url": "https://www.t3.com/tech/gopro-action-cameras/insta360-x6-review-bigger-sensors-and-smarter-ai-make-this-the-brands-best-360o-camera-yet",
+    "date": "2026-08-12",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "It won't replace dedicated cameras for every job, but its rugged design, excellent image quality and clever AI features make it a brilliant choice for travellers and creators who want one camera that can do almost everything.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Highly versatile and capable, but expensive and not the best choice for casual or specialist users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "fstoppers",
+    "critic": null,
+    "url": "https://fstoppers.com/originals/giving-bigger-camera-energy-review-insta360-x6-904168",
+    "date": "2026-08-20",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "With this evolution of Insta360’s X series, users can rely more on the camera without worrying about the quality of the footage, not just in terms of detail and resolution, but also framing and stabilization.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 90
+    },
+    "scoreReason": "Highly praised for major upgrades, image quality, and usability, with only minor caveats about editing preferences.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-x6",
+    "outletId": "digit",
+    "critic": "Vyom Ramani",
+    "url": "https://www.digit.in/reviews/audio-video/insta360-x6-review-the-360-degree-camera-that-edits-for-you.html",
+    "date": "2026-09-21",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "Bigger sensors, 120MP stills, native Dolby Vision, and 140 minutes of battery time in 8K30 make it the best camera overall in the category.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 90
+    },
+    "scoreReason": "Strong recommendation with excellent features and usability, despite overheating and some AI editing pacing issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-a37",
+    "outletId": "cnet",
+    "critic": "Mike Sorrentino",
+    "url": "https://www.cnet.com/tech/mobile/samsungs-galaxy-a37-feels-like-a-deal-but-its-missing-out-on-key-perks/",
+    "date": "2026-11-15",
+    "rating": "7/10",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "During my time testing the Galaxy A37, I felt like this is the right phone for someone looking for the essentials at a low price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 74,
+      "gemini": 72
+    },
+    "scoreReason": "Good basics and battery, but full price brings obvious compromises and many shoppers should consider alternatives.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/asus-zenbook-a16-review-start-considering-snapdragon-on-pc-for-real-2000743704",
+    "date": "2026-04-08",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "This thin and light 16-incher doesn't offer the same graphics capabilities as an Intel laptop, but it has great specs and performance for its price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Great design, screen, speed, and value, but ARM compatibility, GPU weakness, and update issues temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "t3",
+    "critic": "Max Freeman-Mills",
+    "url": "https://www.t3.com/tech/laptops/asus-zenbook-a16-2026-review",
+    "date": "2026-04-07",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "As it stands, Asus' 16-inch Zenbook is a sleek beauty – so if you're after Windows laptop in such a size, then the A16 is a surefire high-end option.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for design, display, battery and speed, but price, materials and compatibility issues temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "expert-reviews",
+    "critic": "Alun Taylor",
+    "url": "https://www.expertreviews.co.uk/technology/laptops/asus-zenbook-a16-review",
+    "date": "2026-04-07",
+    "rating": "5/5",
+    "score": 99,
+    "scoreSource": "rating",
+    "excerpt": "At the time of writing, the Asus Zenbook A16 is easily the best full-sized slim and superlight laptop on the market.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 100
+    },
+    "scoreReason": "Extremely enthusiastic verdict, calling it the best in class with only minor caveats on price and compatibility.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "pc-gamer",
+    "critic": "Ian Evenden",
+    "url": "https://www.pcgamer.com/hardware/gaming-laptops/asus-zenbook-a16-review/",
+    "date": "2026-07-10",
+    "rating": "73/100",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "The Snapdragon X2 is clearly a really good CPU, but until someone can staple a better GPU to it, or slide it into a handheld where it could really shine, it only makes a mediocre gaming laptop.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 73,
+      "gemini": 73
+    },
+    "scoreReason": "Great CPU, screen, and battery, but weak gaming performance, compatibility issues, and high price limit appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "itpro",
+    "critic": "Stuart Andrews",
+    "url": "https://www.itpro.com/hardware/laptops/the-asus-zenbook-a16-is-an-impressive-debut-for-qualcomms-snapdragon-x2",
+    "date": "2026-04-07",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "Even if it might be too expensive for some budgets, the Zenbook A16 is a low-weight, big-screen laptop to be reckoned with.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Outstanding performance, display, and portability, with price and minor ARM quirks the only notable drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "zenbook-a16-x2",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/asus-zenbook-a16-review/",
+    "date": "2026-04-07",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The Zenbook A16 is an astonishingly powerful and long-lasting ultraportable that proves Qualcomm is a force to be reckoned with, especially now software support has largely caught up.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly enthusiastic praise with only minor keyboard, audio, price, and lingering ARM compatibility caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-phone-4a-pro",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/may/18/nothing-phone-4a-pro-review-premium-aluminium-quirky-design",
+    "date": "2026-05-18",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "For now you can certainly get better cameras or stronger performance for the money, even if the alternatives aren’t quite as interesting as the Nothing.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 76
+    },
+    "scoreReason": "Distinctive, fun and well-made with strong software, but overpriced and not class-leading in cameras or performance.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "macworld",
+    "critic": "Roman Loyola",
+    "url": "https://www.macworld.com/article/3284273/m6-macbook-pro-review.html",
+    "date": "2026-11-12",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "It's a fantastic laptop with excellent performance at a competitive price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Great laptop, but gains are modest and many buyers are advised to wait for Air or M7.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "pcmag",
+    "critic": "Joe Osborne",
+    "url": "https://www.pcmag.com/reviews/apple-macbook-pro-14-inch-2026-m6",
+    "date": "2026-11-19",
+    "rating": "4/5",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "Despite an aging display, Apple&#039;s 14-inch MacBook Pro with M6 is a marked improvement over the M5 model, pairing near-record battery life with performance that rivals much pricier creator laptops.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 89
+    },
+    "scoreReason": "Excellent battery life and strong creator performance, but aging display and limited upgrade appeal temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/nov/16/apple-macbook-pro-m6-review-battery-laptop",
+    "date": "2026-11-16",
+    "rating": null,
+    "score": 73,
+    "scoreSource": "text",
+    "excerpt": "The M6 MacBook Pro is a potent machine for general use that is let down by its high price, mostly thanks to the scourge of RAMageddon.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 70
+    },
+    "scoreReason": "Great performance and battery life, but very expensive and overshadowed by newer design and better options.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "toms-hardware",
+    "critic": "Brandon Hill",
+    "url": "https://www.tomshardware.com/laptops/macbooks/apple-macbook-pro-14-inch-m6-review",
+    "date": "2026-11-05",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "While the base MacBook Pro design is getting a bit tired, Apple’s new M6 chip gives the 14-inch MacBook even more pep in its step.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong performance, battery life and build praised; high upgrade pricing and aging design are the main caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "pickr",
+    "critic": "Leigh :) Stark",
+    "url": "https://www.pickr.com.au/reviews/2026/apple-macbook-pro-14-inch-m6/",
+    "date": "2026-11-17",
+    "rating": "4.5/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "If you're someone dabbling in a bit of everything, the M6 MacBook Pro might just be the best laptop to keep you going for the next few years.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 93,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent laptop with few flaws, but the steep price makes the recommendation more cautious.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "techradar",
+    "critic": "Jacob Krol",
+    "url": "https://www.techradar.com/computing/macbooks/the-new-m6-macbook-pro-is-a-speed-boost-not-a-reinvention-and-im-fine-with-that",
+    "date": "2026-11-05",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "Like its predecessors, the new 14-inch MacBook Pro delivers excellent performance for most tasks, long battery life, and better connectivity, all in a familiar build.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent performance, battery life, display, and value, but minor update that many recent owners can skip.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "toms-guide",
+    "critic": "Tony Polanco",
+    "url": "https://www.tomsguide.com/computing/macbooks/apple-macbook-pro-m6-review",
+    "date": "2026-11-05",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Taken on its own merits, the MacBook Pro 14-inch M6 is still a phenomenal laptop.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent performance, display, and battery life, but pricey and only a modest upgrade.",
+    "scoredFromFullText": true
   }
 ]
