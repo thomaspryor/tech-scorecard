@@ -33207,7 +33207,7 @@
     "url": "https://www.theguardian.com/technology/2026/mar/23/iphone-17e-review-apple-cheapest-new-smartphone-chip-magsafe-storage",
     "date": "2026-03-23",
     "rating": null,
-    "score": 69,
+    "score": 70,
     "scoreSource": "text",
     "excerpt": "As with its predecessor, the 17e only makes sense if you want the absolute cheapest new iPhone Apple sells and will not settle for anything else.",
     "scoreBand": [
@@ -33220,7 +33220,9 @@
     },
     "scoreReason": "Good value for Apple fans, but limited camera and older design make it a niche recommendation.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 70,
+    "adjudicationReason": "Praises the fast chip, great battery and MagSafe and calls it better than last year's model, but says the single camera and old design make it right only for buyers who want the cheapest new iPhone."
   },
   {
     "productId": "iphone-17e",
