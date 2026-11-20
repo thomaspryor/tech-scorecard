@@ -7943,6 +7943,163 @@
         "#e3e8f3"
       ]
     },
-    "autoAdded": "2026-11-19"
+    "autoAdded": "2026-11-19",
+    "image": {
+      "src": "/images/products/apple-macbook-pro-14-inch-m6/main.webp",
+      "thumb": "/images/products/apple-macbook-pro-14-inch-m6/thumb.webp",
+      "alt": "Apple MacBook Pro 14-Inch (M6), official Apple photo",
+      "credit": "Apple",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/"
+    }
+  },
+  {
+    "id": "oneplus-buds-4",
+    "slug": "oneplus-buds-4",
+    "name": "OnePlus Buds 4",
+    "brand": "OnePlus",
+    "category": "earbuds",
+    "releaseDate": "2025-07-08",
+    "launchPrice": 129.99,
+    "officialUrl": "https://www.oneplus.com/us/oneplus-buds-4",
+    "criticsTake": "Reviewers agree the OnePlus Buds 4 deliver strong sound quality for the money, with bass-forward tuning, dual drivers and dual DACs, and useful app features. ANC is a consistent highlight, while complaints focus on finicky touch or swipe controls, the lack of wireless charging, and some design comfort or handling issues.",
+    "loved": [
+      "Strong sound quality",
+      "Very effective ANC",
+      "Long battery life",
+      "LHDC 5.0 support"
+    ],
+    "gripes": [
+      "Finicky controls",
+      "No wireless charging",
+      "Chunky or bulky design",
+      "Slippery case",
+      "Bass-heavy tuning can sound muddy"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $129.99"
+      },
+      {
+        "label": "Drivers",
+        "value": "Dual drivers with 11mm woofer and 6mm tweeter"
+      },
+      {
+        "label": "DAC",
+        "value": "Dual DAC system"
+      },
+      {
+        "label": "Noise cancellation",
+        "value": "ANC with three modes, plus adaptive and transparency modes"
+      },
+      {
+        "label": "ANC rating",
+        "value": "Up to 55 dB and up to 5,500Hz frequency range"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.4"
+      },
+      {
+        "label": "Audio codecs",
+        "value": "SBC, AAC, and LHDC 5.0"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP55 dust and water resistance"
+      },
+      {
+        "label": "Gaming feature",
+        "value": "Low-latency Game Mode"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-20",
+    "backfilled": "2026-11-20"
+  },
+  {
+    "id": "tcl-qm8k",
+    "slug": "tcl-qm8k",
+    "name": "TCL QM8K",
+    "brand": "TCL",
+    "category": "tv",
+    "releaseDate": "2025-05-27",
+    "launchPrice": 2299.99,
+    "officialUrl": "https://www.tcl.com/us/en/products/home-theater/qm8-series/65qm8k",
+    "criticsTake": "Reviewers describe the TCL QM8K as a bright, colorful flagship mini-LED TV with strong overall picture quality, a high refresh rate, and a feature-rich Google TV setup. They also note some blooming or light bloom and say the price is high, while the built-in audio is good but may still leave some buyers wanting a soundbar.",
+    "loved": [
+      "Bright, colorful mini-LED picture",
+      "144Hz with FreeSync Premium Pro",
+      "Google TV with hands-free Google Assistant",
+      "2.2.2-channel Dolby Atmos speakers"
+    ],
+    "gripes": [
+      "Expensive",
+      "Some light bloom",
+      "Faint blooming around bright objects",
+      "Stand can be awkward with a soundbar",
+      "Remote feels plasticky"
+    ],
+    "specs": [
+      {
+        "label": "Display type",
+        "value": "4K QLED mini-LED TV"
+      },
+      {
+        "label": "Resolution",
+        "value": "3,840 by 2,160"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "144Hz"
+      },
+      {
+        "label": "Gaming",
+        "value": "AMD FreeSync Premium Pro and VRR"
+      },
+      {
+        "label": "Audio",
+        "value": "2.2.2-channel Bang & Olufsen-designed speaker array with Dolby Atmos spatial audio"
+      },
+      {
+        "label": "Smart TV platform",
+        "value": "Google TV"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wi-Fi 6"
+      },
+      {
+        "label": "Broadcast tuner",
+        "value": "ATSC 3.0"
+      },
+      {
+        "label": "Ports",
+        "value": "4 HDMI ports, including two 4K144 and one eARC, plus 2 USB-A"
+      },
+      {
+        "label": "Price",
+        "value": "From $2299.99"
+      }
+    ],
+    "art": {
+      "kind": "tv",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-20",
+    "backfilled": "2026-11-20"
   }
 ]

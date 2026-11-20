@@ -32842,5 +32842,657 @@
     },
     "scoreReason": "Excellent performance, display, and battery life, but pricey and only a modest upgrade.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "engadget",
+    "critic": "Devindra Hardawar",
+    "url": "https://www.engadget.com/2307614/apple-macbook-pro-m6-review/",
+    "date": "2026-11-05",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The M6 MacBook Pro doesn't bring much new to the table, but it remains one of the best laptops you can buy today.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent laptop with small gains and higher price, but still strongly recommended for most buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/m6-macbook-pro-review-2000837337",
+    "date": "2026-11-10",
+    "rating": "4/5",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "I wish I could have one without the other, but if you don't want to pay $2,899 for the entry-level OLED MacBook, the M6 model may be your best bet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 80
+    },
+    "scoreReason": "Great performance and battery, but stale design, high price, and reviewer repeatedly prefers newer pricier models.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "slashgear",
+    "critic": "Chris Davies",
+    "url": "https://www.slashgear.com/2322404/ipad-mini-review-a20-pro-tablet/",
+    "date": "2026-11-19",
+    "rating": null,
+    "score": 78,
+    "scoreSource": "text",
+    "excerpt": "It's a niche within a niche; as much a demonstration of the company's engineering talents and manufacturing tolerances as it is a practical product in its own right.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 78
+    },
+    "scoreReason": "Highly praised design and charm, but pricey and missing features make it niche.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "can-buy-or-not",
+    "critic": "Vincent Chang",
+    "url": "https://www.canbuyornot.com/reviews/smartwatches/google-fitbit-edge-review-price/",
+    "date": "2026-11-20",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "It's a solid fitness tracker with a few extras over the basic models.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Good tracker with comfort and health strengths, but price, subscription, and missing smartwatch features temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "consolecreatures",
+    "critic": "Bobby Pashalidis",
+    "url": "https://www.consolecreatures.com/asus-rog-xbox-ally-x20-review/",
+    "date": "2026-10-15",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "I don't expect everyone to have an extra $2200 CAD to drop on a device, but if you can afford it, I can't find a better device on the market; the X20 is easily the best in class.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Rave review calling it best in class, with price as the main significant drawback.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-tab-s12-ultra",
+    "outletId": "man-of-many",
+    "critic": "Rob Edwards",
+    "url": "https://manofmany.com/tech/samsung-galaxy-tab-s12-ultra-review",
+    "date": "2026-11-20",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "A polished and flexible tablet with a price to match, Samsung’s Galaxy Tab S12 Ultra caught me off guard with how useful it is and how much I enjoyed using it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent screen, performance and versatility, but very expensive and not essential for recent Tab owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/samsung-galaxy-s26-ultra-review_id7894",
+    "date": "2026-03-10",
+    "rating": "8.1/10",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "If you value the slim and light design, the One UI refinements, and the overall reliability of Samsung phones, the S26 Ultra is still the phone to buy in 2026.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong recommendation with minor implied caveats, praising design, software, reliability, and calling it the phone to buy.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "forbes",
+    "critic": "Rebecca Isaacs",
+    "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/samsungs-galaxy-s26-ultra-review/",
+    "date": "2026-03-16",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "The handful of upgrades Samsung made to its flagship phone make it my choice for the best Android phone to date.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised as best Android phone, with standout privacy and camera upgrades, but unnecessary for many users.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "9to5google",
+    "critic": "Ben Schoon",
+    "url": "https://9to5google.com/2026/03/13/samsung-galaxy-s26-ultra-review/",
+    "date": "2026-03-13",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "But it’s a really solid device through and through, and you’ll be happy if you do buy it.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 92
+    },
+    "scoreReason": "Strong overall praise, but repeated frustration about stagnation, missing Qi2 magnets, compromises, and price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "smartprix",
+    "critic": "Deepak Rajawat",
+    "url": "https://www.smartprix.com/bytes/samsung-galaxy-s26-ultra-review/",
+    "date": "2026-03-16",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "It remains the undisputed king of Android all-rounders, but the crown is heavier this year.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Excellent all-round Android phone with smart software, but notable hardware compromises and high price hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "digit",
+    "critic": "Aman Rashid",
+    "url": "https://www.digit.in/reviews/mobile-phones/samsung-galaxy-s26-ultra-review-king-of-the-hill.html",
+    "date": "2026-03-20",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "It’s the king of the hill, not just because it’s a Samsung, but because it’s the most complete package you can buy today.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 91,
+      "gemini": 95
+    },
+    "scoreReason": "Calls it the most complete package and king of the hill despite minor complaints and high price.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-ultra",
+    "outletId": "reviews-org",
+    "critic": "Fergus Halliday",
+    "url": "https://www.reviews.org/mobile/samsung-galaxy-s26-ultra-review/",
+    "date": "2026-03-31",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Samsung Galaxy S26 Ultra might be one of the most expensive devices on the market, but it checks every box you could want.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent premium phone with strong features, but very high price limits its appeal for many buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/samsung-galaxy-s26-review_id7907",
+    "date": "2026-03-18",
+    "rating": "7.4/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Galaxy S26 might not be a big upgrade, but it remains an easy recommendation.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Still an easy recommendation, though limited upgrade makes praise solid rather than enthusiastic.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "galaxy-s26",
+    "outletId": "notebookcheck",
+    "critic": "Daniel Schmidt",
+    "url": "https://www.notebookcheck.net/Exynos-and-more-battery-power-make-it-a-star-Samsung-Galaxy-S26-review.1284566.0.html",
+    "date": "2026-04-29",
+    "rating": "88/100",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "Overall, it's more of a careful fine-tuning than a major leap forward.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 80
+    },
+    "scoreReason": "Strong display, build, performance and support, but modest battery gains, slow charging, throttling and stale cameras.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "appleinsider",
+    "critic": "Andrew O'Hara",
+    "url": "https://appleinsider.com/articles/26/10/01/iphone-18-pro-review-a-massive-camera-update-is-just-the-beginning",
+    "date": "2026-10-01",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "With the iPhone 18 Pro, Apple delivered a stellar upgrade.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended with minor caveats; most upgrade hesitation is about who should buy, not product quality.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "forbes",
+    "critic": "Rebecca Isaacs",
+    "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/apple-iphone-18-pro-review/",
+    "date": "2026-10-14",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "After testing over a dozen smartphones this year, I found that the iPhone 18 Pro is one of the best smartphones you can buy now.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent overall, among the best phones, with standout performance and camera despite limited changes.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-18-pro",
+    "outletId": "macworld",
+    "critic": "Jason Cross",
+    "url": "https://www.macworld.com/article/3242385/iphone-18-pro-review-the-best-boring-gets.html",
+    "date": "2026-09-24",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "But the impressive A20 Pro performance and efficiency really help make this the iPhone Pro to beat all others.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent performance and battery life, but iterative upgrades and higher price make owners of last year's model wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17e",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/mar/23/iphone-17e-review-apple-cheapest-new-smartphone-chip-magsafe-storage",
+    "date": "2026-03-23",
+    "rating": null,
+    "score": 69,
+    "scoreSource": "text",
+    "excerpt": "As with its predecessor, the 17e only makes sense if you want the absolute cheapest new iPhone Apple sells and will not settle for anything else.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 77,
+      "gemini": 60
+    },
+    "scoreReason": "Good value for Apple fans, but limited camera and older design make it a niche recommendation.",
+    "scoredFromFullText": true,
+    "modelsDisagree": true
+  },
+  {
+    "productId": "iphone-17e",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/apple-iphone-17e-review_id7908",
+    "date": "2026-03-24",
+    "rating": "7/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone 17e is not only an easy recommendation in the mid-range space, but probably the fastest phone with the most capable main camera in this price range.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 81,
+      "gemini": 90
+    },
+    "scoreReason": "Strong recommendation with standout speed and camera, but still a mid-range pick with implied limits.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "iphone-17e",
+    "outletId": "appleinsider",
+    "critic": "Mike Wuerthele",
+    "url": "https://appleinsider.com/articles/26/03/16/iphone-17e-review-welcome-improvements-at-apples-lower-end",
+    "date": "2026-03-16",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "For now, the iPhone 17e is an excellent balance of price and performance, inexpensively.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for smart fixes and value, but recurring complaints keep enthusiasm slightly tempered.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-air-m5",
+    "outletId": "appleinsider",
+    "critic": "Mike Wuerthele",
+    "url": "https://appleinsider.com/articles/26/03/30/m5-macbook-air-review-incremental-update-but-the-best-buy-for-most",
+    "date": "2026-03-30",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The positioning of the MacBook Air has changed, but its soul as the portable Mac you should choose is still there.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for most buyers, with minor complaints about sameness, ports, and price increase.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-buds-4",
+    "outletId": "android-central",
+    "critic": "Brady Snyder",
+    "url": "https://www.androidcentral.com/accessories/earbuds/oneplus-buds-4-review",
+    "date": "2025-07-08",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "Long battery life, excellent sound quality, and solid ANC all come together to create a well-rounded experience at this price point.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 76
+    },
+    "scoreReason": "Excellent sound and solid ANC, but controls, comfort, and full-price value bring notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-buds-4",
+    "outletId": "techradar",
+    "critic": "Tom Bedford",
+    "url": "https://www.techradar.com/audio/earbuds-airpods/oneplus-buds-4-review",
+    "date": "2025-07-09",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The top-notch, bubble-of-silence ANC, lovely light build and impressive list of features makes these some of the best earbuds you can buy at the price point.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent ANC, comfort and features, but app problems and some smaller issues clearly hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-buds-4",
+    "outletId": "toms-guide",
+    "critic": "Alex Bracetti",
+    "url": "https://www.tomsguide.com/audio/earbuds/i-just-tested-the-oneplus-buds-4-and-theyre-equally-impressive-and-disappointing",
+    "date": "2025-08-07",
+    "rating": "3.5/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "The OnePlus Buds 4 bring excellent sound, great controls, and very impressive battery to the table, but unfortunately, they're let down by less than stellar ANC and some unimpressive 3D sound.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 72
+    },
+    "scoreReason": "Strong sound and battery, but weak ANC, feature limits, and reviewer says most buyers should skip.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-buds-4",
+    "outletId": "gizmodo",
+    "critic": "James Pero",
+    "url": "https://gizmodo.com/oneplus-buds-4-review-these-wireless-earbuds-have-almost-everything-2000625118",
+    "date": "2025-07-08",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "No matter what your preference is, though, there's one thing you can be sure of—the OnePlus Buds 4 are a solid pair of wireless earbuds for the price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 81
+    },
+    "scoreReason": "Strong sound and good features for the price, with minor design and differentiation caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-buds-4",
+    "outletId": "zdnet",
+    "critic": "Prakhar Khanna",
+    "url": "https://www.zdnet.com/article/oneplus-buds-4-earbuds-review/",
+    "date": "2025-12-26",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "If you are looking for a pair of earbuds for active noise cancelation for around $100, they're a great choice.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Excellent ANC and comfort for the price, with bass-heavy sound and annoying touch controls.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8k",
+    "outletId": "pcmag",
+    "critic": "Will Greenwald",
+    "url": "https://me.pcmag.com/en/tvs/31561/tcl-qm8k-class-85-inch-tv-85qm8k",
+    "date": "2025-08-01",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The costly QM8K is a worthy flagship model in TCL's TV lineup, with excellent mini-LED picture quality, good speakers, and plenty of features.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent picture and features, but high price and some bloom keep enthusiasm in check.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8k",
+    "outletId": "techradar",
+    "critic": "Al Griffin",
+    "url": "https://www.techradar.com/televisions/tcl-qm8k-review",
+    "date": "2025-07-25",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Value is perhaps the strongest suit of the QM8K, which offers very solid picture quality, sleek design, and useful features at a lower price than the premium competition.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent value with strong picture quality and features, but gaming, smart platform, and sound have minor drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8k",
+    "outletId": "zdnet",
+    "critic": "Chris Bayer",
+    "url": "https://www.zdnet.com/home-and-office/home-entertainment/tcl-qm8k-series-tv-review/",
+    "date": "2025-12-26",
+    "rating": null,
+    "score": 83,
+    "scoreSource": "text",
+    "excerpt": "Ultimately, though, it's fair to say the QM8K is a legitimate contender for the best \"bright room\" TV on the market.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 78
+    },
+    "scoreReason": "Excellent bright-room picture and gaming, with minor blooming, narrow HDMI 2.1 support, and weak value versus TCL's cheaper model.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8k",
+    "outletId": "ign",
+    "critic": "Jaron Schneider",
+    "url": "https://www.ign.com/articles/tcl-qm8k-review",
+    "date": "2025-09-10",
+    "rating": "8/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "While it does have to make some tradeoffs, the QM8K is one of the most impressive-looking (and performing) LED televisions I’ve ever tested.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent brightness, halo control, and gaming, but weak audio, color compromises, and price caveats temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "tcl-qm8k",
+    "outletId": "toms-guide",
+    "critic": "Matthew Murray",
+    "url": "https://www.tomsguide.com/tvs/8k-tvs/tcl-qm8k-qd-mini-led-tv-review",
+    "date": "2025-07-21",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "That might make the TCLC QM8K less than a perfect choice for everyone, but it’s still a strong jack-of-all-trades QD-Mini LED TV that provides a good balance of performance and price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Great picture and features, but weak audio and high price versus rivals limit enthusiasm.",
+    "scoredFromFullText": true
   }
 ]
