@@ -72,10 +72,19 @@ async function main() {
   const findings = [];
   for (const c of CHECKS) {
     if (!c.env.every((k) => process.env[k])) {
-      // OpenAI and Gemini are required for every run; the fetch services are optional.
-      if (c.kind === 'required' && c.name !== 'ScrapingDog')
-        findings.push({ level: 'action', text: `${c.name}: no key is set (${c.env.join(', ')}).` });
-      else console.log(`${c.name}: no key set, skipped`);
+      // A missing key is invisible otherwise: the scripts that use it just skip it. Required services are an owner action
+      // (ScrapingDog runs the outlet search and reads pages outlets refuse); a missing fallback is a note.
+      const missing = c.env.filter((k) => !process.env[k]).join(', ');
+      const why =
+        c.name === 'ScrapingDog'
+          ? ' Without it the daily refresh cannot search outlets for reviews or read pages outlets refuse.'
+          : '';
+      const finding = /** @type {import('./lib/health').Finding} */ ({
+        level: c.kind === 'required' ? 'action' : 'note',
+        text: `${c.name}: no key is set in the repository secrets (${missing}).${why}`,
+      });
+      console.log(`${c.name}: [${finding.level}] ${finding.text}`);
+      findings.push(finding);
       continue;
     }
     const found = keyFindings({ name: c.name, kind: c.kind, ...(await c.call()) });

@@ -87,6 +87,10 @@ const SERP_CAP = Number(process.env.SERP_CAP || 300);
 const SERP_RUN_LIMIT = BACKFILL_ONLY ? SERP_CAP : Math.round(SERP_CAP / 3);
 /** With search results from this many outlets, Gemini is not asked as well (it is slow and often invents addresses). */
 const SERP_ENOUGH = 6;
+if (!process.env.SCRAPINGDOG_API_KEY)
+  console.log(
+    '::warning::SCRAPINGDOG_API_KEY is not set: review URLs come from Gemini only and pages outlets refuse are not read (docs/CARETAKER.md, section 6).',
+  );
 /** How many verified reviews the last buildNewProduct found when it ended for lack of them (-1 when it ended for another reason). */
 let shortfall = -1;
 
