@@ -84,7 +84,10 @@ under 10% of its credits. A fallback page reader (ScrapingBee, Bright Data) runn
 others read the page.
 
 1. Re-run the check (`workflow_dispatch` on `health.yml`) if the issue is more than a day old; a passing run closes the issue itself.
-2. If it still fails, end with `ACTION NEEDED FROM YOU:` and one sentence naming the service and what to do (for example "ScrapingDog
+2. A key that is "not set in the repository secrets" means the workflow never received it: the owner adds it under the
+   repository's Actions secrets (same names as Broadway Scorecard's: `SCRAPINGDOG_API_KEY`, `SCRAPINGBEE_API_KEY`,
+   `BRIGHTDATA_TOKEN`, `BRIGHTDATA_ZONE`). Without ScrapingDog the refresh falls back to Gemini for every URL.
+3. If it still fails, end with `ACTION NEEDED FROM YOU:` and one sentence naming the service and what to do (for example "ScrapingDog
    has 4% of its monthly credits left; renew or upgrade the plan before it runs out on <date>").
 
 ## 7. Published reviews whose page changed
