@@ -60,19 +60,27 @@ function looksBlocked(content) {
   return text.length < 200 && content.length < 5000 && /<html/i.test(content);
 }
 
-/** What this run has spent so far: paid requests, and milliseconds inside the ladder. @returns {{count: number, ms: number}} */
+/**
+ * What this run has spent so far: paid page requests ("p"), milliseconds inside the ladder ("t"), searches ("s") and
+ * milliseconds spent searching ("u", kept apart so searches never use up the time paid page reads need).
+ * @returns {{count: number, ms: number, serp: number, serpMs: number}}
+ */
 function readUsage() {
   let count = 0;
+  let serp = 0;
   let ms = 0;
+  let serpMs = 0;
   try {
     for (const line of fs.readFileSync(usageFile(), 'utf8').split('\n')) {
       if (line === 'p') count++;
+      else if (line === 's') serp++;
       else if (line.startsWith('t')) ms += Number(line.slice(1)) || 0;
+      else if (line.startsWith('u')) serpMs += Number(line.slice(1)) || 0;
     }
   } catch {
     /* no log yet: nothing spent */
   }
-  return { count, ms };
+  return { count, ms, serp, serpMs };
 }
 
 /** @param {string} line */
@@ -90,6 +98,24 @@ function takePaidRequest() {
   record('p');
   return true;
 }
+
+/** Seconds a run may spend searching (scripts/lib/discovery.js), apart from the ladder's own time cap. */
+const DEFAULT_SERP_TIME_CAP_S = 1200;
+
+/**
+ * Counts one search (scripts/lib/discovery.js); false when this run has used `limit` searches or SERP_TIME_CAP_S seconds of searching.
+ * @param {number} limit
+ */
+function takeSerpRequest(limit) {
+  const timeCapMs = Number(process.env.SERP_TIME_CAP_S || DEFAULT_SERP_TIME_CAP_S) * 1000;
+  const usage = readUsage();
+  if (usage.serp >= limit || usage.serpMs >= timeCapMs) return false;
+  record('s');
+  return true;
+}
+
+/** Records time spent searching, against SERP_TIME_CAP_S. @param {number} ms */
+const recordSerpTime = (ms) => record(`u${Math.round(ms)}`);
 
 /** The cache file for a URL. @param {string} url @param {string} ext */
 const cacheFile = (url, ext) =>
@@ -224,4 +250,14 @@ async function fetchLadder(url, { log = () => {}, tiers = ORDER } = {}) {
   }
 }
 
-module.exports = { fetchLadder, looksBlocked, TIERS, ORDER, MIN_PAGE_CHARS };
+module.exports = {
+  fetchLadder,
+  looksBlocked,
+  takeSerpRequest,
+  recordSerpTime,
+  readUsage,
+  dir,
+  TIERS,
+  ORDER,
+  MIN_PAGE_CHARS,
+};

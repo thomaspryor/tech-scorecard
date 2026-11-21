@@ -5,6 +5,15 @@ import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const dirs: string[] = [];
+// The refresh runs with no search or fetch-service keys, whatever this machine has set: only the mocked model calls answer.
+const env = {
+  ...process.env,
+  SCRAPINGDOG_API_KEY: '',
+  SCRAPINGBEE_API_KEY: '',
+  BRIGHTDATA_TOKEN: '',
+  BRIGHTDATA_ZONE: '',
+  NO_FETCH_LADDER: '1',
+};
 afterEach(() => dirs.splice(0).forEach((d) => rmSync(d, { recursive: true, force: true })));
 
 // One product is checked (Gemini call 1), then the launch search runs (calls 2 and 3, it retries once).
@@ -32,7 +41,7 @@ it.each([
   const run = spawnSync(
     process.execPath,
     ['--require', join(dir, 'mock.cjs'), join(dir, 'scripts/refresh.js'), '--max-products=1', '--no-feeds'],
-    { cwd: dir, encoding: 'utf8', timeout: 10000 },
+    { cwd: dir, encoding: 'utf8', timeout: 10000, env },
   );
   expect(run.status, run.stderr).toBe(status);
   const state = JSON.parse(readFileSync(join(dir, 'data/refresh-state.json'), 'utf8'));
@@ -59,6 +68,12 @@ it.each([
   mkdirSync(join(dir, 'src/config'), { recursive: true });
   cpSync('src/config/categories.json', join(dir, 'src/config/categories.json'));
   rmSync(join(dir, 'data/backfill-state.json'), { force: true });
+  // With no backfill state, every product still waiting for a photo is due a photo retry, which reads the brand's real
+  // page over the network (and made these tests slow or flaky). Those products are given no official page here.
+  const productsFile = join(dir, 'data/products.json');
+  const all = JSON.parse(readFileSync(productsFile, 'utf8'));
+  for (const p of all) if (!p.image) delete p.officialUrl;
+  writeFileSync(productsFile, JSON.stringify(all, null, 2) + '\n');
   mkdirSync(join(dir, '.cache/refresh'), { recursive: true });
   writeFileSync(join(dir, '.cache/refresh/touched.txt'), 'earlier-product');
   const before = ['products', 'reviews', 'outlets'].map((f) => readFileSync(join(dir, `data/${f}.json`), 'utf8'));
@@ -70,7 +85,7 @@ it.each([
   const run = spawnSync(
     process.execPath,
     ['--require', join(dir, 'mock.cjs'), join(dir, 'scripts/refresh.js'), '--backfill-only', `--category=${category}`],
-    { cwd: dir, encoding: 'utf8', timeout: 20000 },
+    { cwd: dir, encoding: 'utf8', timeout: 20000, env },
   );
   expect(run.status, run.stderr).toBe(status);
   expect(['products', 'reviews', 'outlets'].map((f) => readFileSync(join(dir, `data/${f}.json`), 'utf8'))).toEqual(

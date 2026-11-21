@@ -17,6 +17,7 @@
     "scripts/backfill-status.js",
     "scripts/find-feeds.js",
     "scripts/fetch-page.js",
+    "scripts/discovery-eval.js",
     "scripts/sync-claude-skills.js",
     "src/lib/data-types.ts"
   ]
