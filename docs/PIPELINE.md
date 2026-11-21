@@ -47,9 +47,20 @@ never sent to a paid service.
    `feeds` in `data/outlets.json` (`[]` when it has none; `--all` looks every outlet up again).
 1. `scripts/refresh.js` reads every outlet feed first. A review headline from the last 14 days that names a
    product on the site (`scripts/lib/feeds.js`) sends that page to the checks below, whichever product it is.
-   Headlines that name no product are passed to the launch search as leads. Then it asks Gemini (with Google
-   Search) for review URLs: products released in the last 45 days take up to 10 of the 15 slots, the least
-   recently checked fill the rest. A page already on the site is skipped; a page judged not a review of the
+   Headlines that name no product are passed to the launch search as leads. Then it searches for review URLs
+   (products released in the last 45 days take up to 10 of the 15 slots, the least recently checked fill the rest):
+   **outlet search first** (`scripts/lib/discovery.js`, ported idea from Broadway's per-outlet SERP discovery): one Google
+   query per outlet, `site:<domain> "<product>" intitle:review`, through ScrapingDog (`SCRAPINGDOG_API_KEY`, the fetch
+   ladder's key). Outlets that review that category most often on this site are searched first (up to 15 searches per product in the
+   refresh, 40 in the backfill). A result titled for a sibling model or another product on the site is dropped before
+   its page is read. The service sometimes ignores `site:`, so an answer with nothing from the outlet is asked once more,
+   and a strict search with nothing usable gets one looser one. Gemini (with Google Search) is asked only when the outlet
+   search found fewer than 6 outlets or could not run (no key, or 3 failed searches in a row); it often invents addresses,
+   which the logs show as "page missing". Cost: a search is 30 ScrapingDog credits; at most 300 searches a run (`SERP_CAP`), of which the
+   refresh may use a third, and at most `SERP_TIME_CAP_S` (1200) seconds of searching, kept apart from the fetch ladder's time
+   for paid page reads; answers are cached for the run. Each product logs a line
+   "outlet search: N outlet(s) searched, M page(s) from K outlet(s)". `node scripts/discovery-eval.js` measures it without
+   writing anything: on 2026-11-21 it found the stored review on 71-81% of 48 major-outlet checks across 8 categories (three runs; Google's answers vary), with no page of another product kept. A page already on the site is skipped; a page judged not a review of the
    product (or dated outside its launch window) is listed in `data/refresh-rejected.json` and not sent to the
    model again for 30 days. Every candidate page, from a feed or from search, is read by the script itself: rating, critic and date come from the page's JSON-LD, and the quote must
    appear word for word in the page text. Only outlets in `data/outlets.json` are accepted. It also looks

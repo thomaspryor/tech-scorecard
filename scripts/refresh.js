@@ -37,6 +37,7 @@ const { urlKey } = require('./lib/launches');
 const { parseFeed, sortFeedItems, matchProduct } = require('./lib/feeds');
 const { outletFor } = require('./lib/outlets');
 const { pageProblem } = require('./lib/page-guards');
+const discovery = require('./lib/discovery');
 const { openaiText, geminiText, geminiImageText, parseJsonReply } = require('./lib/models');
 const { findLaunchPhoto, siteOf } = require('./lib/launch-photo');
 const backfill = require('./lib/backfill');
@@ -78,6 +79,14 @@ const MAX_PRODUCTS = Number(args['max-products'] || 15);
 const MAX_NEW = Number(args['max-new'] ?? 2);
 const only = args.only ? new Set(String(args.only).split(',')) : null;
 const BACKFILL_ONLY = !!args['backfill-only'];
+/** Outlet searches per product and per run (scripts/lib/discovery.js). The normal refresh runs first and leaves most of the run's
+ * searches to the backfill, whose older products have no feed hits to start from. */
+const SERP_PER_PRODUCT = BACKFILL_ONLY ? 40 : 15;
+/** SERP_CAP is the run's total (default 300 searches, 9,000 credits); the refresh may use a third of it, the backfill the rest. */
+const SERP_CAP = Number(process.env.SERP_CAP || 300);
+const SERP_RUN_LIMIT = BACKFILL_ONLY ? SERP_CAP : Math.round(SERP_CAP / 3);
+/** With search results from this many outlets, Gemini is not asked as well (it is slow and often invents addresses). */
+const SERP_ENOUGH = 6;
 /** How many verified reviews the last buildNewProduct found when it ended for lack of them (-1 when it ended for another reason). */
 let shortfall = -1;
 
@@ -162,6 +171,59 @@ function resolveRedirect(u) {
   } catch {
     return null;
   }
+}
+
+/** Outlets already searched for each product in this run, so a second, wider pass searches new ones. @type {Map<string, Set<string>>} */
+const searchedOutlets = new Map();
+
+/** Per category, how many reviews each outlet has on the site: outlets that review this kind of product are searched first. */
+const outletReviewsByCategory = (() => {
+  /** @type {Map<string, Map<string, number>>} */
+  const m = new Map();
+  const categoryOf = new Map(products.map((p) => [p.id, p.category]));
+  for (const r of reviews) {
+    const c = categoryOf.get(r.productId) || '';
+    const counts = m.get(c) || new Map();
+    counts.set(r.outletId, (counts.get(r.outletId) || 0) + 1);
+    m.set(c, counts);
+  }
+  return m;
+})();
+const outletReviewsTotal = new Map(outlets.map((o) => [o.id, reviews.filter((r) => r.outletId === o.id).length]));
+
+/**
+ * Candidate review URLs for a product: one search per outlet first (scripts/lib/discovery.js), then Gemini when those found
+ * fewer than SERP_ENOUGH outlets or could not run.
+ * @param {ProductRef & {category?: string}} product
+ * @param {Set<string>} have outlets that already have a review of it
+ * @param {boolean} majorOnly
+ */
+async function searchReviewUrls(product, have, majorOnly) {
+  /** @type {string[]} */
+  let found = [];
+  if (discovery.available()) {
+    const done = searchedOutlets.get(product.id) || new Set();
+    const inCategory = outletReviewsByCategory.get(product.category || '') || new Map();
+    const res = await discovery.findByOutletSearch(product, outlets, {
+      skip: new Set([...have, ...done]),
+      maxTier: majorOnly ? 2 : 4,
+      maxQueries: SERP_PER_PRODUCT,
+      runLimit: SERP_RUN_LIMIT,
+      // Most reviews in this category first, then most reviews overall, then tier.
+      rank: (o) => -(inCategory.get(o.id) || 0) * 1000 - (outletReviewsTotal.get(o.id) || 0) + o.tier / 10,
+      others: products,
+    });
+    res.searchedIds.forEach((id) => done.add(id));
+    searchedOutlets.set(product.id, done);
+    found = res.urls;
+    const hitOutlets = new Set(found.map((u) => outletForUrl(u)?.id));
+    console.log(
+      `  outlet search: ${res.searchedIds.length} outlet(s) searched, ${found.length} page(s) from ${hitOutlets.size} outlet(s)${res.failed ? `, ${res.failed} search(es) failed` : ''}`,
+    );
+    if (hitOutlets.size >= SERP_ENOUGH) return found;
+  }
+  const skip = new Set([...have, ...found.map((u) => outletForUrl(u)?.id || '')]);
+  return [...found, ...(await findReviewUrls(product, skip, majorOnly))];
 }
 
 const NOT_A_REVIEW = 'not a full review of this product';
@@ -253,8 +315,9 @@ ${text.slice(0, 30000)}`,
  */
 async function collectReviews(product, existing, feedUrls = [], search = true, majorOnly = false) {
   const have = new Set(existing.map((r) => r.outletId));
-  // Feed pages first: they are this product's reviews by headline, so they need no search to find.
-  const urls = [...feedUrls, ...(search ? await findReviewUrls(product, have, majorOnly) : [])];
+  // Feed pages first: they are this product's reviews by headline, so they need no search to find. Then a search of each outlet,
+  // and Gemini only when the outlet searches came up short or could not run.
+  const urls = [...feedUrls, ...(search ? await searchReviewUrls(product, have, majorOnly) : [])];
   /** @type {Review[]} */
   const out = [];
   for (const url of [...new Set(urls)]) {

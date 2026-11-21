@@ -222,6 +222,7 @@ module.exports = {
   cleanUrl,
   parseFeed,
   isReviewTitle,
+  MODEL_WORD,
   matchProduct,
   mentionsSibling,
   sortFeedItems,
