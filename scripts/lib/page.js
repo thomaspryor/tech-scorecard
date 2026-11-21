@@ -78,15 +78,80 @@ const fetchPageAsync = (url, timeout = 30) =>
     ),
   );
 
-/** The common entities review pages use; dashes become hyphens, curly quotes straight ones. @param {string} s */
+/** Named entities review pages use beyond the quote and dash ones handled first. @type {Record<string, string>} */
+const NAMED = {
+  pound: '£',
+  euro: '€',
+  yen: '¥',
+  cent: '¢',
+  copy: '©',
+  reg: '®',
+  trade: '™',
+  deg: '°',
+  times: '×',
+  divide: '÷',
+  plusmn: '±',
+  micro: 'µ',
+  middot: '·',
+  bull: '•',
+  frac12: '½',
+  frac14: '¼',
+  frac34: '¾',
+  sup2: '²',
+  sup3: '³',
+  eacute: 'é',
+  egrave: 'è',
+  ecirc: 'ê',
+  aacute: 'á',
+  agrave: 'à',
+  acirc: 'â',
+  iacute: 'í',
+  oacute: 'ó',
+  uacute: 'ú',
+  ntilde: 'ñ',
+  ccedil: 'ç',
+  auml: 'ä',
+  ouml: 'ö',
+  uuml: 'ü',
+  szlig: 'ß',
+  shy: '',
+  laquo: '«',
+  raquo: '»',
+};
+/** Codes 128-159 mean their Windows-1252 characters, as Python's html.unescape reads them ("&#146;" is an apostrophe). */
+const CP1252 = '€\u0081‚ƒ„…†‡ˆ‰Š‹Œ\u008dŽ\u008f\u0090‘’“”•–—˜™š›œ\u009džŸ';
+
+/** A numeric entity's character, the way html.unescape reads it. @param {number} n @param {string} raw */
+function fromCode(n, raw) {
+  if (n >= 0x80 && n <= 0x9f) return CP1252[n - 0x80];
+  if (n === 0 || (n >= 0xd800 && n <= 0xdfff) || n > 0x10ffff) return '\ufffd';
+  try {
+    return String.fromCodePoint(n);
+  } catch {
+    return raw;
+  }
+}
+
+/**
+ * HTML entities decoded, as verify-quotes.py does with Python's html.unescape, so both checks read a page the same way.
+ * Dashes become hyphens and curly quotes straight ones; other numeric entities ("&#039;", "&#x2019;") and the common named
+ * ones become their character. "&amp;" is decoded last, so "&amp;#039;" stays the text "&#039;" (no double decoding).
+ * @param {string} s
+ */
 function decodeEntities(s) {
   return s
     .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&#8217;|&rsquo;|&#x27;|&#39;/g, "'")
-    .replace(/&quot;|&#8220;|&#8221;|&ldquo;|&rdquo;/g, '"')
-    .replace(/&#8211;|&ndash;/g, '-')
-    .replace(/&#8212;|&mdash;/g, '-');
+    .replace(/&#0*8217;|&rsquo;|&#x0*27;|&#0*39;|&apos;|&#0*8216;|&lsquo;/gi, "'")
+    .replace(/&quot;|&#0*34;|&#0*8220;|&#0*8221;|&ldquo;|&rdquo;/gi, '"')
+    .replace(/&#0*8211;|&ndash;/g, '-')
+    .replace(/&#0*8212;|&mdash;/g, '-')
+    .replace(/&hellip;/g, '\u2026')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&([a-z][a-z0-9]*);/gi, (raw, name) => NAMED[name.toLowerCase()] ?? raw)
+    .replace(/&#(\d+);/g, (raw, n) => fromCode(Number(n), raw))
+    .replace(/&#x([0-9a-f]+);/gi, (raw, h) => fromCode(parseInt(h, 16), raw))
+    .replace(/&amp;/g, '&');
 }
 
 /**
@@ -137,8 +202,14 @@ function normQuote(s) {
   return t.replace(/\s+/g, ' ').trim().toLowerCase();
 }
 
-/** True when `excerpt` appears word for word in `text` (final punctuation aside). @param {string} text @param {string} excerpt */
-const containsQuote = (text, excerpt) => normQuote(text).includes(normQuote(excerpt).replace(/[.!?…]+$/, ''));
+/**
+ * True when `excerpt` appears word for word in `text` (final punctuation aside). `text` is pageText() output, already decoded;
+ * the excerpt is decoded here, as verify-quotes.py unescapes both sides.
+ * @param {string} text
+ * @param {string} excerpt
+ */
+const containsQuote = (text, excerpt) =>
+  normQuote(text).includes(normQuote(decodeEntities(excerpt)).replace(/[.!?…]+$/, ''));
 
 /**
  * A page's published date as YYYY-MM-DD. ISO dates are cut to the day; a written date such as GSMArena's

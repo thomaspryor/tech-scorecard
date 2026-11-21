@@ -30,15 +30,14 @@ function feedLinks(html, base) {
   return [...new Set(out)];
 }
 
-/** A numeric entity as text; an invalid code point becomes nothing instead of throwing. @param {number} n */
-const codePoint = (n) => (Number.isInteger(n) && n >= 0 && n <= 0x10ffff ? String.fromCodePoint(n) : '');
-
-/** Feed text as plain text: CDATA unwrapped, tags dropped, entities (numeric ones too) decoded. @param {string} s */
+/**
+ * Feed text as plain text: CDATA unwrapped, tags dropped, entities decoded (decodeEntities reads numeric ones too). An invalid
+ * code becomes nothing rather than a replacement character, since titles are only used for matching.
+ * @param {string} s
+ */
 const clean = (s) =>
   decodeEntities(s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/<[^>]+>/g, ''))
-    .replace(/&#x([0-9a-f]+);/gi, (_, h) => codePoint(parseInt(h, 16)))
-    .replace(/&#(\d+);/g, (_, d) => codePoint(Number(d)))
-    .replace(/&apos;/g, "'")
+    .replace(/\ufffd/g, '')
     .replace(/\s+/g, ' ')
     .trim();
 

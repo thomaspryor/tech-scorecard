@@ -12,6 +12,8 @@ squash-merge it yourself, confirm the production deploy is READY on Vercel).
 
 - Look for an open issue labelled `refresh-failed`, and at the latest runs of `weekly-refresh.yml`
   ("Daily refresh") and `sync-claude-skills.yml`.
+- `health.yml` starts the daily refresh by itself at 23:43 UTC if no refresh has started in 20 hours (GitHub sometimes drops a
+  scheduled run), so a missing day is usually filled before you look. A day with no run and no watchdog start is worth a line.
 - If the newest run of a workflow succeeded after the failure, the problem fixed itself. The refresh
   workflow closes its own alert issue after a clean run, so leave it.
 - If the latest run failed, read the failed job's log and find the cause.
@@ -73,6 +75,34 @@ every category has 15. It should add something most days, so a quiet week means 
      already rests a category for 14 days after 3 empty runs, so the others go ahead. If every remaining
      category is resting, say so in one line; it will try again by itself.
 4. Never add products by hand to get around a stall.
+
+## 6. A key or account that needs attention
+
+`health.yml` ("Health checks") runs `scripts/check-keys.js` every Monday and keeps one issue labelled `keys-need-attention` open while
+something needs the owner. It lists only what the owner alone can fix: a rejected key, or OpenAI, Gemini or ScrapingDog over quota or
+under 10% of its credits. A fallback page reader (ScrapingBee, Bright Data) running low is a note in the run log, never an issue: the
+others read the page.
+
+1. Re-run the check (`workflow_dispatch` on `health.yml`) if the issue is more than a day old; a passing run closes the issue itself.
+2. If it still fails, end with `ACTION NEEDED FROM YOU:` and one sentence naming the service and what to do (for example "ScrapingDog
+   has 4% of its monthly credits left; renew or upgrade the plan before it runs out on <date>").
+
+## 7. Published reviews whose page changed
+
+The same workflow runs `scripts/audit-stored.js` every Monday: it re-reads every published review's page with a plain request (no paid
+service) and keeps one issue labelled `stored-review-changed` listing pages that are gone (404/410) or no longer carry the quote. Pages
+that refuse a plain request are only counted.
+
+For each listed review:
+
+1. Check it properly: `python3 scripts/verify-quotes.py <product id>` (reads blocked pages through the fetch services).
+2. **The quote is still there** (the plain request missed it): nothing to do.
+3. **The outlet reworded the sentence:** replace the excerpt with the page's current sentence, word for word, and run
+   `npm run validate`. A rating that changed on the page means rescoring: `node scripts/score-reviews.js --only=<id>`.
+4. **The page is gone:** look for the same review at a new address on the outlet (its search, or `site:` search). Found: update the URL.
+   Not found: drop the review with `scripts/drop-reviews.js`. A product left under 5 reviews is removed by the next refresh's thin-product
+   step; that is expected.
+5. Land all fixes as one PR. The next Monday run closes the issue when the list is empty.
 
 ## Rules
 
