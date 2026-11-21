@@ -4970,7 +4970,7 @@
     "rating": "8.8/10",
     "score": 84,
     "scoreSource": "rating",
-    "excerpt": "While its price can run very high, anyone who isn’t budget-concerned and wants the best display and performance on an iPad will find an excellent experience here.",
+    "excerpt": "While its price can run very high, anyone who isn’t budget-conscious and wants the best display and performance on an iPad will find an excellent experience here.",
     "editorsChoice": true,
     "note": "Reviewed the 13-inch model. Date is the page's last-updated date; page says Editors' Choice was awarded Nov. 24, 2025.",
     "scoreBand": [
@@ -7551,20 +7551,20 @@
     "critic": "Kellen",
     "url": "https://www.droid-life.com/2026/09/04/pixel-watch-5-review-the-upgrade-question-is-the-story/",
     "date": "2026-09-04",
-    "rating": "8/10",
-    "score": 83,
+    "rating": "7.5/10",
+    "score": 81,
     "scoreSource": "rating",
-    "excerpt": "The Pixel Watch 5 is another gorgeous, remarkably polished wearable, but it’s essentially a \"Pixel Watch 4+\" with a steeper $399 starting price.",
+    "excerpt": "The Pixel Watch 5 is a polished, great-looking smartwatch with solid battery life and excellent health tracking, though its minor upgrades and higher $399 starting price make it hard to recommend if you already own a Pixel Watch 4.",
     "scoreBand": [
       71,
       90
     ],
+    "scoreReason": "Polished and excellent overall, but minor upgrades, weak haptics, Gemini issues, and poor value for Watch 4 owners.",
+    "scoredFromFullText": true,
     "modelScores": {
-      "openai": 85,
+      "openai": 82,
       "gemini": 80
-    },
-    "scoreReason": "Strong overall praise, but price, weak haptics, and unreliable Gemini keep it from the top.",
-    "scoredFromFullText": true
+    }
   },
   {
     "productId": "pixel-watch-5",
@@ -20050,20 +20050,20 @@
     "critic": "Kellen Barranger",
     "url": "https://www.droid-life.com/2026/06/01/review-fitbit-air-is-really-great-for-99/",
     "date": "2026-06-01",
-    "rating": "4.5/5",
-    "score": 95,
+    "rating": "8/10",
+    "score": 86,
     "scoreSource": "rating",
-    "excerpt": "A phenomenal screenless tracker that hits the perfect $99 sweet spot, though it suffers from early Google Health app growing pains.",
+    "excerpt": "The $99 Fitbit Air is an ultra-comfortable, subscription-free screenless fitness tracker with a 7-day battery life, held back only by minor heart rate tracking inconsistencies and early growing pains in the new Google Health app.",
     "scoreBand": [
-      91,
-      100
+      71,
+      90
     ],
+    "scoreReason": "Very positive on comfort, battery, and value, with minor tracking issues and app growing pains.",
+    "scoredFromFullText": true,
     "modelScores": {
-      "openai": 95,
-      "gemini": 95
-    },
-    "scoreReason": "Strong recommendation for comfort, battery, and value, with app and coaching still maturing.",
-    "scoredFromFullText": true
+      "openai": 85,
+      "gemini": 87
+    }
   },
   {
     "productId": "fitbit-air",
