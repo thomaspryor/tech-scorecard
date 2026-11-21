@@ -33496,5 +33496,110 @@
     },
     "scoreReason": "Great picture and features, but weak audio and high price versus rivals limit enthusiasm.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-buds-4",
+    "outletId": "hothardware",
+    "critic": "Myriam Joire",
+    "url": "https://hothardware.com/reviews/oneplus-buds-4-review",
+    "date": "2025-08-29",
+    "rating": "4.25/5",
+    "score": 84,
+    "scoreSource": "rating",
+    "excerpt": "So, as long as you don't mind the budget look and feel, missing LDAC support, and lack of wireless charging, we highly recommend the OnePlus Buds 4.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 80
+    },
+    "scoreReason": "Highly recommended despite a few feature and design compromises.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "oneplus-buds-4",
+    "outletId": "soundguys",
+    "critic": "Chase Bernath",
+    "url": "https://www.soundguys.com/oneplus-buds-4-review-142159/",
+    "date": "2025-08-14",
+    "rating": "8/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "All together, these earbuds are an easy recommendation for most people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 82
+    },
+    "scoreReason": "Strong all-around praise and easy recommendation, with minor limits like average battery and best features on OnePlus phones.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-neo",
+    "outletId": "appleinsider",
+    "critic": "Oliver Haslam",
+    "url": "https://appleinsider.com/articles/26/05/14/macbook-neo-review-two-months-later-almost-a-macbook-pro-beater",
+    "date": "2026-05-14",
+    "rating": "4/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "The fact that Apple was able to find a way to sell this thing for less than $600 makes it a laptop that's impossible not to recommend.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strongly recommended for most buyers, with notable compromises in ports, display, storage, and charging.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-12",
+    "outletId": "appleinsider",
+    "critic": "Oliver Haslam",
+    "url": "https://appleinsider.com/articles/26/10/07/apple-watch-series-12-review-upgraded-where-it-was-needed",
+    "date": "2026-10-07",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "Ultimately, if you're in the market for a new Apple Watch, the Series 12 is easy to recommend.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strongly recommended for new buyers, but current owners should mostly wait for unfinished features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-5",
+    "outletId": "gizmodo",
+    "critic": "Raymond Wong",
+    "url": "https://gizmodo.com/airpods-5-review-a-ridiculously-great-value-for-anc-wireless-earbuds-2000811531",
+    "date": "2026-09-15",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "Whether for yourself or for somebody else, the AirPods 5 with and without the wireless charging case are excellent wireless earbuds.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise, easy recommendation, few downsides, only minor battery and fit caveats.",
+    "scoredFromFullText": true
   }
 ]
