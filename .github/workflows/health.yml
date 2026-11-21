@@ -1,0 +1,94 @@
+name: Health checks
+
+# Checks that keep the site running unattended. Each opens (or updates, only when something changed) one GitHub issue that the
+# daily caretaker session reads (docs/CARETAKER.md), and closes it once clean. Nothing here changes data or code.
+# - Every Monday: every API key still works and has credits (scripts/check-keys.js), and every published review's page still
+#   exists and still carries its quote (scripts/audit-stored.js, plain requests only, so it costs nothing).
+# - Every evening: if the daily refresh has not started in 20 hours (GitHub sometimes drops a scheduled run), start it once. It
+#   normally starts between 16:00 and 20:00 UTC, so at 23:43 a healthy one is under 8 hours old.
+on:
+  schedule:
+    - cron: '13 6 * * 1'
+    - cron: '43 23 * * *'
+  workflow_dispatch:
+    inputs:
+      watchdog:
+        description: 'Also run the missed-refresh check (it may start a refresh)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: health
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+  actions: write
+
+jobs:
+  keys:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '13 6 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+      - name: Check every key
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
+          SCRAPINGBEE_API_KEY: ${{ secrets.SCRAPINGBEE_API_KEY }}
+          BRIGHTDATA_TOKEN: ${{ secrets.BRIGHTDATA_TOKEN }}
+          BRIGHTDATA_ZONE: ${{ secrets.BRIGHTDATA_ZONE }}
+        run: node scripts/check-keys.js
+      - name: Open, update or close the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: bash scripts/alert-issue.sh keys-need-attention "A key or account needs attention" .cache/health/keys.md
+
+  stored-reviews:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '13 6 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+      - name: Re-read every published review (plain requests, no paid services)
+        # No fetch-service keys here on purpose: this check must never spend credits.
+        env:
+          NO_FETCH_LADDER: '1'
+        run: node scripts/audit-stored.js
+      - name: Open, update or close the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: bash scripts/alert-issue.sh stored-review-changed "Published reviews whose page changed" .cache/health/audit.md
+
+  refresh-watchdog:
+    if: (github.event_name == 'workflow_dispatch' && inputs.watchdog) || github.event.schedule == '43 23 * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Start the daily refresh if it has not run in 20 hours
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          # Any run counts, whatever its result: a refresh that ran and failed opens its own alert, so it is not started again.
+          ACTIVE=$(gh run list --workflow weekly-refresh.yml --limit 5 --json status --jq '[.[] | select(.status != "completed")] | length')
+          if [ "$ACTIVE" != "0" ]; then echo "A refresh is queued or running."; exit 0; fi
+          LAST=$(gh run list --workflow weekly-refresh.yml --limit 1 --json createdAt --jq '.[0].createdAt // ""')
+          AGE_H=999
+          if [ -n "$LAST" ]; then AGE_H=$(( ($(date -u +%s) - $(date -u -d "$LAST" +%s)) / 3600 )); fi
+          echo "Last refresh started $AGE_H hour(s) ago."
+          if [ "$AGE_H" -ge 20 ]; then
+            echo "::warning::The daily refresh has not started in $AGE_H hours; starting it now."
+            gh workflow run weekly-refresh.yml --ref main
+          fi

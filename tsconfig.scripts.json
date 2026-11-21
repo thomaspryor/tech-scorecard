@@ -18,6 +18,8 @@
     "scripts/find-feeds.js",
     "scripts/fetch-page.js",
     "scripts/discovery-eval.js",
+    "scripts/check-keys.js",
+    "scripts/audit-stored.js",
     "scripts/sync-claude-skills.js",
     "src/lib/data-types.ts"
   ]

@@ -190,6 +190,9 @@ function validateData(
     const text = (r.excerpt || '').trim();
     const words = text.split(/\s+/).filter(Boolean).length;
     const realWords = (text.match(/[\p{L}\p{N}]+/gu) || []).length;
+    // Shown on the site as written: "Google&#039;s" would reach visitors as those characters.
+    if (/&(#\d+|#x[0-9a-f]+|[a-z][a-z0-9]*);/i.test(text))
+      errors.push(`${at}: excerpt contains an HTML entity (${text.match(/&[^;\s]+;/)?.[0]})`);
     if (realWords < MIN_EXCERPT_WORDS || words > MAX_EXCERPT_WORDS)
       errors.push(`${at}: excerpt must be ${MIN_EXCERPT_WORDS}-${MAX_EXCERPT_WORDS} words (has ${words})`);
   });

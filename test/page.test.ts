@@ -34,6 +34,19 @@ describe('decodeEntities', () => {
   it('turns curly quotes and dash entities into plain characters', () => {
     expect(decodeEntities('a &ndash; b &mdash; c &#39;d&#x27; &quot;e&quot;')).toBe('a - b - c \'d\' "e"');
   });
+
+  it('decodes every numeric entity, padded or hex, like html.unescape, without decoding twice', () => {
+    expect(decodeEntities('Apple&#039;s iPhone')).toBe("Apple's iPhone");
+    expect(decodeEntities('caf&#233; &#x2122; &lt;b&gt;')).toBe('café ™ <b>');
+    expect(decodeEntities('&amp;#039; stays')).toBe('&#039; stays');
+    expect(decodeEntities('bad &#99999999; kept')).toBe('bad \ufffd kept');
+    expect(decodeEntities('it&#146;s &pound;800 &unknown;')).toBe('it’s £800 &unknown;');
+  });
+
+  it('matches a stored excerpt that still carries entities, as verify-quotes.py does', () => {
+    expect(containsQuote("Google's latest foldable phone", 'Google&#039;s latest foldable phone')).toBe(true);
+    expect(containsQuote("Google's latest foldable phone", 'Apple&#039;s latest foldable phone')).toBe(false);
+  });
 });
 
 describe('quote matching', () => {

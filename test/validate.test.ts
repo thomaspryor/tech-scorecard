@@ -260,6 +260,14 @@ describe('validateData', () => {
   });
 });
 
+describe('excerpt text', () => {
+  it('rejects an excerpt that still carries an HTML entity', () => {
+    expect(errorsAfter((d) => (d.reviews[0].excerpt = 'Google&#039;s best phone yet, by a mile.')).join()).toMatch(
+      /HTML entity \(&#039;\)/,
+    );
+  });
+});
+
 describe('duplicate review rules', () => {
   const second = (d: Data, over: object) => {
     d.products.push(product({ id: 'other-phone', slug: 'other-phone', name: 'Acme Other Phone' }));
