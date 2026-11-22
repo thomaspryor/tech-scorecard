@@ -8101,5 +8101,85 @@
     },
     "autoAdded": "2026-11-20",
     "backfilled": "2026-11-20"
+  },
+  {
+    "id": "insta360-luna-ultra",
+    "slug": "insta360-luna-ultra",
+    "name": "Insta360 Luna Ultra",
+    "brand": "Insta360",
+    "category": "camera",
+    "releaseDate": "2026-06-10",
+    "launchPrice": 769.99,
+    "officialUrl": "https://www.insta360.com/product/insta360-luna-ultra",
+    "criticsTake": "Reviewers agree the Luna Ultra is a versatile gimbal camera with strong video quality, 8K capture, and a useful detachable display for remote framing and control. They also point to its high price, some limits around storage and portrait capture, and a few usability quirks like app connection issues, display lag, and head-focused tracking.",
+    "loved": [
+      "3x optical zoom",
+      "Detachable wireless display",
+      "Solid image quality",
+      "Long battery life"
+    ],
+    "gripes": [
+      "Pro-sumer price",
+      "47GB onboard storage is limited for 8K",
+      "Portrait video tops out at 3K",
+      "Less pocket-friendly",
+      "Occasional app connection issues"
+    ],
+    "specs": [
+      {
+        "label": "Video",
+        "value": "Up to 8K/30fps and up to 4K/120fps"
+      },
+      {
+        "label": "Main camera",
+        "value": "1-inch sensor with f/1.8 20mm lens"
+      },
+      {
+        "label": "Telephoto camera",
+        "value": "1/1.3-inch sensor with f/2.0 60mm lens"
+      },
+      {
+        "label": "Zoom",
+        "value": "3x optical zoom, 6x lossless in-sensor zoom, 12x digital zoom"
+      },
+      {
+        "label": "Display",
+        "value": "2-inch display that rotates 90 degrees for vertical shooting and detaches for wireless remote control"
+      },
+      {
+        "label": "Storage",
+        "value": "47GB internal storage, expandable via microSD card"
+      },
+      {
+        "label": "Battery",
+        "value": "1,550mAh battery with roughly four hours of recording time"
+      },
+      {
+        "label": "Color modes",
+        "value": "Dolby Vision, I-Log, and 10-bit standard color mode"
+      },
+      {
+        "label": "Price",
+        "value": "From $769.99"
+      }
+    ],
+    "art": {
+      "kind": "camera",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-22",
+    "backfilled": "2026-11-22",
+    "image": {
+      "src": "/images/products/insta360-luna-ultra/main.webp",
+      "thumb": "/images/products/insta360-luna-ultra/thumb.webp",
+      "alt": "Insta360 Luna Ultra, official Insta360 photo",
+      "credit": "Insta360",
+      "sourceUrl": "https://www.insta360.com/blog/insta360-launches-luna-series-gimbal-cameras-Leica.html"
+    }
   }
 ]

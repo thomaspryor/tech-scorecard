@@ -33601,5 +33601,194 @@
     },
     "scoreReason": "Strong praise, easy recommendation, few downsides, only minor battery and fit caveats.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-buds-4-pro",
+    "outletId": "sammyguru",
+    "critic": "David Buliga",
+    "url": "https://sammyguru.com/samsung-galaxy-buds-4-pro-review/",
+    "date": "2026-10-22",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "After testing them for more than seven months, my opinion is pretty clear: the Galaxy Buds 4 Pro are Samsung’s best Galaxy Buds yet.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Highly recommended for Galaxy users, with excellent sound and ANC despite average battery and minor annoyances.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wf-1000xm6",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/sony-wf-1000xm6-review/",
+    "date": "2026-02-12",
+    "rating": "5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "The XM6 makes smaller gains than previous generations, but Sony remains the gold standard for its blend of noise cancelling, sound quality, comfort and battery life",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Top-tier all-round praise with minor upgrade and app complaints, but strongly recommended to almost everyone.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-14-2026",
+    "outletId": "expert-reviews",
+    "critic": "Alun Taylor",
+    "url": "https://www.expertreviews.co.uk/technology/laptops/dell-xps-14-2026-review",
+    "date": "2026-07-14",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "The first new XPS laptop since Dell backtracked on the series' demise is a sleek, high-quality machine, but it’s not cheap, and the entry-level models are rather puny",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent design, screen, speakers and battery, but high pricing and weak base performance limit recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-14-2026",
+    "outletId": "digit",
+    "critic": "Divyanshi Sharma",
+    "url": "https://www.digit.in/reviews/laptops/dell-xps-14-review-bold-and-beautiful-but-at-a-cost.html",
+    "date": "2026-05-18",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "But if you do have the budget for it, this is one of those laptops you can buy without overthinking too much.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent performance, display, battery, speakers and build, but expensive with limited ports.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "techradar",
+    "critic": "Timothy Coleman",
+    "url": "https://www.techradar.com/cameras/video-cameras/insta360-luna-ultra-review",
+    "date": "2026-06-23",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "For a first-generation product with multiple Insta360 firsts, the Luna Ultra is surprisingly polished, and its second lens adds extra shooting versatility.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Highly praised for versatility, design and video quality, with notable price and tracking caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "engadget",
+    "critic": "James Trew",
+    "url": "https://www.engadget.com/2195199/insta360-luna-ultra-review/",
+    "date": "2026-06-16",
+    "rating": "8.7/10",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "The good news is that the Luna Ultra is independently a great vlogging camera.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 87
+    },
+    "scoreReason": "Strong praise for zoom, image quality and remote screen, with minor portability, app and portrait-mode drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "toms-guide",
+    "critic": "Nick Harris-Fry",
+    "url": "https://www.tomsguide.com/cameras-photography/i-tested-the-insta360-luna-ultra-for-a-month-and-its-become-my-go-to-camera-as-a-content-creator",
+    "date": "2026-07-13",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "I’m sure I’d get similar benefits from other pocket cameras, but there are some standout features to the Luna Ultra, like the detachable remote and impressive built-in mic, that make it the perfect option for solo creators.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent performance and usability for solo creators, with minor issues around price, size, heat, and occasional focus misses.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/insta360-luna-ultra-review-this-is-the-only-gimbal-camera-you-need-2000793434",
+    "date": "2026-07-31",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "But if the choice is between an expensive GoPro, an expensive 360 camera, or an expensive DSLR, I would probably opt for the Luna Ultra.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent video quality and versatility, but high price and some tracking, focus, and app drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "pcmag",
+    "critic": "Jim Fisher",
+    "url": "https://www.pcmag.com/reviews/insta360-luna-ultra",
+    "date": "2026-06-23",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "More than just a vlogging camera, the Insta360 Luna Ultra is a versatile creative tool that excels at everything from YouTube videos and travel content to photography and everyday filmmaking.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 98
+    },
+    "scoreReason": "Enthusiastic Editors' Choice praise; minor gripes are clearly outweighed by strong performance and versatility.",
+    "scoredFromFullText": true
   }
 ]
