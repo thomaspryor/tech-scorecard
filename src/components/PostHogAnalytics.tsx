@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { POSTHOG_HOST, POSTHOG_KEY } from '@/config/analytics';
+import { POSTHOG_HOST, POSTHOG_KEY, POSTHOG_UI_HOST } from '@/config/analytics';
 
 // The SDK costs ~200ms of main-thread work to parse, which pushed Lighthouse below 95 when it ran
 // on idle. So it waits for the visitor's first interaction, or LOAD_FALLBACK_MS after window load
@@ -29,6 +29,7 @@ export function PostHogAnalytics() {
           if (posthog.__loaded) return;
           posthog.init(POSTHOG_KEY, {
             api_host: POSTHOG_HOST,
+            ui_host: POSTHOG_UI_HOST,
             cookieless_mode: 'always',
             person_profiles: 'identified_only',
             autocapture: true,
