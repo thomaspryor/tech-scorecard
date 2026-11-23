@@ -52,6 +52,16 @@ Never port scoring-data changes or Broadway's data pipeline; this site has its o
    rule is for Broadwayscore only).
 6. Verify on https://www.thetechscorecard.com, then add a row to the port log below.
 
+Two traps found on 2026-11-23:
+
+- `trailingSlash: true` puts a slash on every path, and a `vercel.json` source like
+  `/ingest/:path*` does not match `/ingest/e/`. Write rewrite and redirect sources as
+  `/prefix/:path(.*)` (test/csp.test.ts checks the analytics ones).
+- Vercel previews are behind a login, so header, rewrite and CSP changes can only be checked on
+  production. Check them in the first minutes after the deploy, with a browser that is not headless
+  for analytics (PostHog drops events from headless Chromium as bots; launch with
+  `channel: 'chromium'`).
+
 ## How Broadway flags a change for porting
 
 Broadway sessions are asked (Broadwayscore `cloud-memory/feedback_port_tech_flag.md`, indexed in `cloud-memory/MEMORY.md`; CLAUDE.md there is at its byte cap) to mark
@@ -74,11 +84,13 @@ Broadway Scorecard (repo thomaspryor/Broadwayscore, broadwayscorecard.com) to Te
 Plain English, no em dashes. Never invent data or results.
 
 1. Setup. Attach thomaspryor/tech-scorecard with push access and clone it to
-   /home/user/tech-scorecard (shallow is fine). Read README.md, docs/PORTING.md (this routine,
+   /home/user/tech-scorecard (shallow is fine). Read README.md, CLAUDE.md, docs/PORTING.md (this routine,
    the carry-over rules and the port log) and docs/PIPELINE.md. Do not clone Broadwayscore
    (it is several GB); read it through the GitHub API with gh. Attach it read-only if gh
    refuses. File a Linear card in team "Broadway Scorecard" titled
-   "Tech Scorecard weekly port <today's date>" and keep it updated.
+   "Tech Scorecard weekly port <today's date>" and keep it updated. Use the Linear tools if you
+   have them, otherwise curl https://api.linear.app/graphql with $LINEAR_API_KEY. If neither works,
+   put the report in the docs/PORTING.md port log instead and say so.
 
 2. Find candidates since the "Last reviewed through" date in the port log (default: 8 days ago).
    a. Flagged: gh api "repos/thomaspryor/Broadwayscore/commits?sha=main&since=<date>&per_page=100&page=N"
@@ -103,17 +115,18 @@ Plain English, no em dashes. Never invent data or results.
    owns the area, leave it and say so.
 
 5. Port each applicable item per docs/PORTING.md "How to port one": small commit, npm run check
-   and npm run build before every push, git pull --rebase origin main right before each push,
-   push main (with LAND_ENFORCE_OFF=1 if Broadwayscore hooks are loaded). One item that needs
-   an owner decision or more than about an hour: file a Linear card with the finding and leave it.
+   and npm run build before every push, git pull --rebase origin main right before each push.
+   Land it the way tech-scorecard CLAUDE.md says (branch, PR, merge it yourself once CI is green,
+   confirm the Vercel production deploy is READY). One item that needs an owner decision or more
+   than about an hour: file a Linear card with the finding and leave it.
 
 6. Verify live after Vercel deploys (about a minute): curl the changed pages; Playwright at 320,
-   390 and 1280px (Chromium at /opt/pw-browsers/chromium-1194/chrome-linux/chrome) with no
+   390 and 1280px (Chromium under /opt/pw-browsers) with no
    horizontal scroll and no console errors (CSP violations show up there); Lighthouse mobile on
    / and one product page before and after any performance item.
 
 7. Update docs/PORTING.md: set "Last reviewed through" to the newest Broadway commit date you
-   reviewed (and its short sha), and add one port-log row per ported item. Commit and push.
+   reviewed (and its short sha), and add one port-log row per ported item. Land it the same way.
 
 8. Report on the Linear card, then mark it Done: counts (candidates, applies, does not apply,
    already done, watch), each port with its tech-scorecard commit and live URL, Lighthouse
@@ -123,7 +136,7 @@ Plain English, no em dashes. Never invent data or results.
 
 ## Port log
 
-Last reviewed through: 2026-11-16 (Broadwayscore main `51c0f0adc`).
+Last reviewed through: 2026-11-23 (Broadwayscore main `39b42ab7f`).
 
 | Date       | Broadway change                                     | Tech Scorecard change                                                                      |
 | ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -133,6 +146,7 @@ Last reviewed through: 2026-11-16 (Broadwayscore main `51c0f0adc`).
 | 2026-10-22 | BRO-5812 copy voice rules and guard                 | `test/copy-voice.test.ts` checks src/ strings and products.json copy                       |
 | 2026-10-22 | BRO-4881 tier chip meaning for every reader         | tier chip has a screen-reader label (title alone is mouse-only)                            |
 | 2026-11-16 | 44px touch targets (global link rule, 2026-11-04)   | review cards: "Full review" link is 44px tall (was 16px)                                   |
+| 2026-11-23 | BRO-5984 PostHog reverse proxy                      | analytics go through `/ingest` on this site; CSP no longer allows posthog.com (#49, #50)   |
 
 ## Catch-up inventory (2026-09-22 to 2026-10-22)
 
@@ -195,3 +209,25 @@ About 450 commits touched site code. Generic web items only.
 
 Counts: 11 candidates. 1 ported, 5 already done, 1 watch, 4 do not apply. No commit carried a
 `PORT-TECH:` line and no Linear card had the `port-tech` label.
+
+## Review 2026-11-23 (Broadway commits 2026-11-16 to 2026-11-23)
+
+About 13,500 commits, 65 of them by people or sessions in site code (the rest are data bots).
+No commit carried a `PORT-TECH:` line and no Linear card had the `port-tech` label.
+
+| Broadway change                                                     | Verdict        | Why                                                                                        |
+| ------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------ |
+| BRO-5984 PostHog reverse proxy (last week's watch, done 2026-10-23) | ported         | ad blockers hid visits; events now go through `/ingest`, checked live (200 on event POSTs) |
+| BRO-7734 regex lookbehind breaks Safari before 16.4                 | already done   | no lookbehind in src/                                                                      |
+| BRO-7890 month-only review dates showed an invented day             | already done   | the data validator only accepts full YYYY-MM-DD dates                                      |
+| BRO-7724 history.replaceState inside React state updaters           | does not apply | no history writes in src/                                                                  |
+| BRO-7809 Sentry chunk-error filter                                  | does not apply | no Sentry                                                                                  |
+| BRO-7680 market menu scrolls on phones                              | does not apply | no market menu                                                                             |
+| BRO-8057 Where to Sit 12px text floor and 44px summary              | does not apply | seat-guide feature; 44px rule already ported                                               |
+| StatGrid stretched tiles on theater pages (13f1ff03a)               | does not apply | no theater pages or stat grid                                                              |
+| BRO-8085 "London" in West End page titles                           | does not apply | market-specific title rule                                                                 |
+| BRO-8088 venue PerformingArtsTheater schema                         | does not apply | Broadway-specific schema type                                                              |
+| BRO-7140 screen-reader label on the phone star rating               | does not apply | no reader ratings                                                                          |
+| BRO-7852 Lighthouse regression alert                                | does not apply | runner noise, no code change at Broadway                                                   |
+
+Counts: 12 candidates. 1 ported, 2 already done, 9 do not apply, 0 watch.
