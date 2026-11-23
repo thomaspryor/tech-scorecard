@@ -215,19 +215,19 @@ Counts: 11 candidates. 1 ported, 5 already done, 1 watch, 4 do not apply. No com
 About 13,500 commits, 65 of them by people or sessions in site code (the rest are data bots).
 No commit carried a `PORT-TECH:` line and no Linear card had the `port-tech` label.
 
-| Broadway change                                                     | Verdict        | Why                                                                                        |
-| ------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------ |
-| BRO-5984 PostHog reverse proxy (last week's watch, done 2026-10-23) | ported         | ad blockers hid visits; events now go through `/ingest`, checked live (200 on event POSTs) |
-| BRO-7734 regex lookbehind breaks Safari before 16.4                 | already done   | no lookbehind in src/                                                                      |
-| BRO-7890 month-only review dates showed an invented day             | already done   | the data validator only accepts full YYYY-MM-DD dates                                      |
-| BRO-7724 history.replaceState inside React state updaters           | does not apply | no history writes in src/                                                                  |
-| BRO-7809 Sentry chunk-error filter                                  | does not apply | no Sentry                                                                                  |
-| BRO-7680 market menu scrolls on phones                              | does not apply | no market menu                                                                             |
-| BRO-8057 Where to Sit 12px text floor and 44px summary              | does not apply | seat-guide feature; 44px rule already ported                                               |
-| StatGrid stretched tiles on theater pages (13f1ff03a)               | does not apply | no theater pages or stat grid                                                              |
-| BRO-8085 "London" in West End page titles                           | does not apply | market-specific title rule                                                                 |
-| BRO-8088 venue PerformingArtsTheater schema                         | does not apply | Broadway-specific schema type                                                              |
-| BRO-7140 screen-reader label on the phone star rating               | does not apply | no reader ratings                                                                          |
-| BRO-7852 Lighthouse regression alert                                | does not apply | runner noise, no code change at Broadway                                                   |
+| Broadway change                                                              | Verdict        | Why                                                                                        |
+| ---------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------ |
+| BRO-5984 PostHog reverse proxy (last week's watch; Broadway done 2026-10-23) | ported         | ad blockers hid visits; events now go through `/ingest`, checked live (200 on event POSTs) |
+| BRO-7734 regex lookbehind breaks Safari before 16.4                          | already done   | no lookbehind in src/                                                                      |
+| BRO-7890 month-only review dates showed an invented day                      | already done   | the data validator only accepts full YYYY-MM-DD dates                                      |
+| BRO-7724 history.replaceState inside React state updaters                    | does not apply | no history writes in src/                                                                  |
+| BRO-7809 Sentry chunk-error filter                                           | does not apply | no Sentry                                                                                  |
+| BRO-7680 market menu scrolls on phones                                       | does not apply | no market menu                                                                             |
+| BRO-8057 Where to Sit 12px text floor and 44px summary                       | does not apply | seat-guide feature; 44px rule already ported                                               |
+| StatGrid stretched tiles on theater pages (13f1ff03a)                        | does not apply | no theater pages or stat grid                                                              |
+| BRO-8085 "London" in West End page titles                                    | does not apply | market-specific title rule                                                                 |
+| BRO-8088 venue PerformingArtsTheater schema                                  | does not apply | Broadway-specific schema type                                                              |
+| BRO-7140 screen-reader label on the phone star rating                        | does not apply | no reader ratings                                                                          |
+| BRO-7852 Lighthouse regression alert                                         | does not apply | runner noise, no code change at Broadway                                                   |
 
 Counts: 12 candidates. 1 ported, 2 already done, 9 do not apply, 0 watch.

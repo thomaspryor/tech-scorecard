@@ -30,8 +30,8 @@ describe('PostHog goes through this site (ad blockers block posthog.com)', () =>
     expect(csp['script-src']).toContain("'self'");
   });
 
-  // Vercel matches rewrite sources with path-to-regexp. This covers the one form used here,
-  // `/prefix/:name(.*)`, so the test can route real PostHog request paths the way Vercel does.
+  // Not a Vercel emulator: it handles only the `/prefix/:name(.*)` form (a prefix match, as
+  // path-to-regexp does for it) and rejects any other source, such as the `:path*` that broke.
   function route(urlPath: string): string | undefined {
     for (const r of rewrites) {
       const m = /^(.*):(\w+)\(\.\*\)$/.exec(r.source);
