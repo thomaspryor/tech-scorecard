@@ -33790,5 +33790,572 @@
     },
     "scoreReason": "Enthusiastic Editors' Choice praise; minor gripes are clearly outweighed by strong performance and versatility.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "cnn",
+    "critic": "Henry T. Casey",
+    "url": "https://us.cnn.com/cnn-underscored/reviews/macbook-pro-proled-xdr-display",
+    "date": "2026-11-10",
+    "rating": null,
+    "score": 85,
+    "scoreSource": "text",
+    "excerpt": "All of the Mac users who have coveted OLED tech in TVs or touchscreen displays in Windows laptops finally have a great (albeit expensive) solution.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent display, battery and performance make it highly recommended despite very high price and minor feature complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "trusted-reviews",
+    "critic": "Max Parker",
+    "url": "https://www.trustedreviews.com/reviews/apple-ipad-mini-8-a20-pro",
+    "date": "2026-11-03",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The screen, the thin design, the quality-of-life extras like an IP rating, the flagship performance – they all just combine to make the ultimate mini tablet.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent upgrade with strong praise; high price and missing 120Hz are the main drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/iPad-mini-A20-Pro-Review-Almost-perfect_id8082",
+    "date": "2026-11-13",
+    "rating": null,
+    "score": 50,
+    "scoreSource": "text",
+    "excerpt": "The iPad mini is actually not a better device than a larger iPad for productivity, but it is much easier to carry around, and that is its essence.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 50,
+      "gemini": 50
+    },
+    "scoreReason": "No actual review verdict provided; only testing and account notice text appears.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "hothardware",
+    "critic": "Myriam Joire",
+    "url": "https://hothardware.com/reviews/apple-iphone-duo-review-matte-display-dual-camera-a20-pro-c2-modem",
+    "date": "2026-11-23",
+    "rating": "3.75/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone Duo is Apple's first folding phone that's hampered by questionable hardware and software decisions and a challenging user experience.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "First folding iPhone is criticized for hardware, software, and usability issues with little enthusiasm.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "pcmag",
+    "critic": "Brian Westover",
+    "url": "https://www.pcmag.com/reviews/asus-proart-p16-h7607-rtx-spark",
+    "date": "2026-11-15",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "It's a powerful laptop for the AI early adopter, but it comes up short against the Apple MacBook Pro.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong AI-focused Windows laptop with great screen and battery, but pricey, niche, and clearly behind the MacBook Pro.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "trusted-reviews",
+    "critic": "Reece Bithrey",
+    "url": "https://www.trustedreviews.com/reviews/asus-proart-p16-2026-rtx-spark-review",
+    "date": "2026-10-16",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Asus ProArt P16 (2026, RTX Spark) is a slim, stunning creator laptop that shows what RTX Spark can do, with standout integrated graphics, capable performance and nearly 14 hours of battery life.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent creator laptop with great battery and graphics, but very expensive with minor screen and gaming drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "gamesradar",
+    "critic": "Phil Hayton",
+    "url": "https://www.gamesradar.com/hardware/handhelds/rog-xbox-ally-x20-review/",
+    "date": "2026-11-23",
+    "rating": "4.5/5",
+    "score": 93,
+    "scoreSource": "rating",
+    "excerpt": "The ROG Xbox Ally X20 makes for a fantastic upgrade over last year's vanilla X predecessor, but its higher price tag keeps it from getting any closer to portable perfection.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 91
+    },
+    "scoreReason": "Excellent handheld with standout OLED and controls, but price and limited gains over last model are significant.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "techradar",
+    "critic": "Bram Lodewijks",
+    "url": "https://global.techradar.com/nl-nl/gaming/consoles-pc/asus-rog-xbox-ally-x20-review-nl",
+    "date": "2026-10-15",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "Wie de ultieme gaming handheld in huis wil halen, moet bij de ASUS ROG XBOX Ally X20 zijn.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent OLED and refinements, but same performance, pricey bundle, and limited battery life temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "asus-rog-xbox-ally-x20",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/asus-rog-xbox-ally-x20-review/",
+    "date": "2026-10-16",
+    "rating": "4/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "A gorgeous OLED display, streamlined controls and transparent case make the ROG Xbox Ally X20 a very special handheld - but one with no power boost and which you'll pay through the nose to own.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Excellent screen and comfort, but high price and no performance boost seriously limit the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "petapixel",
+    "critic": "Jordan Drake",
+    "url": "https://petapixel.com/2026/06/18/insta360-luna-ultra-review-an-excellent-vlogging-camera-with-a-few-caveats/",
+    "date": "2026-06-18",
+    "rating": "8.5/10",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "It is the best vlogging camera I have ever used.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Strongly recommended as the best vlogging camera used, with only manageable control, battery, and heat caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "cnet",
+    "critic": "Geoffrey Morrison",
+    "url": "https://www.cnet.com/tech/computing/insta360-luna-ultra-review/",
+    "date": "2026-09-07",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Insta360 Luna Ultra offers great image quality, clever features and a big price tag.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent image quality and usability, but very expensive with app, low-light and design drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "stuff",
+    "critic": "Sam Kieldsen",
+    "url": "https://www.stuff.tv/review/insta360-luna-ultra-review/",
+    "date": "2026-06-19",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "A broken panorama mode and jerky manual gimbal hold the Luna Ultra back, but the only dual-lens gimbal camera you can buy right now is easy to recommend.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent image quality and features, with notable launch bugs and imperfect manual gimbal control.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "insta360-luna-ultra",
+    "outletId": "t3",
+    "critic": "Matt Kollat",
+    "url": "https://www.t3.com/tech/gopro-action-cameras/insta360-luna-ultra-review",
+    "date": "2026-06-10",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "It's an excellent video camera, a surprisingly capable stills camera and a genuinely creative tool that encourages experimentation.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised as versatile and polished, with only minor design and software complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oneplus-pad-go-2",
+    "outletId": "hothardware",
+    "critic": "Ted Kritsonis",
+    "url": "https://hothardware.com/reviews/oneplus-pad-go-2-review-scaled-back-with-compromises",
+    "date": "2026-03-27",
+    "rating": "3.5/5",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "At $349, the Pad Go 2 is a hard sell up against an entry-level 11-inch iPad coming at a similar price, even if it's not bundled with an Apple Pencil.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Reviewer sees it as overpriced and hard to recommend at its price.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "appleinsider",
+    "critic": "Andrew O'Hara",
+    "url": "https://appleinsider.com/articles/25/09/19/iphone-17-review-more-pro-features-added-than-ever-before",
+    "date": "2025-09-19",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone 17 is a great value across the board and an easy recommendation for typical users.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for typical users, with big display, battery, and camera upgrades despite familiar design.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "cult-of-mac",
+    "critic": "Ed Hardy",
+    "url": "https://www.cultofmac.com/reviews/iphone-17-review",
+    "date": "2025-09-20",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "Dramatic improvements to the display, the Center Stage selfie cam, twice as much storage and many other enhancements make it closer to the Pro versions than ever.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for upgrades and value, with minor limits on zoom and no battery verdict yet.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17",
+    "outletId": "ign",
+    "critic": "Shubham Agarwal",
+    "url": "https://www.ign.com/articles/apple-iphone-17-review",
+    "date": "2025-10-17",
+    "rating": "8/10",
+    "score": 86,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone 17 is Apple’s best base phone in years.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 86
+    },
+    "scoreReason": "Strongly recommended for most upgraders, with notable gaming and camera limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-17-pro",
+    "outletId": "phonearena",
+    "critic": "Victor Hristov",
+    "url": "https://www.phonearena.com/reviews/iphone-17-pro-review_id7672",
+    "date": "2025-09-23",
+    "rating": "7.9/10",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "The iPhone 17 Pro is a bigger upgrade than it might seem at first, but it's still fundamentally an iPhone, like all others before it.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 80
+    },
+    "scoreReason": "Notable upgrade, but enthusiasm is tempered by it feeling fundamentally like previous iPhones.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "iphone-17-pro",
+    "outletId": "mashable",
+    "critic": "Priya Singh",
+    "url": "https://in.mashable.com/tech/100829/iphone-17-pro-review-apples-most-confident-glow-up-yet",
+    "date": "2025-10-09",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "This isn’t a dramatic redesign or a feature revolution, but rather a thoughtful recalibration of what a Pro iPhone should look and feel like in 2025.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for design, performance, cameras, display, and battery, with only minor charging caveat.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "dell-xps-14-2026",
+    "outletId": "techaeris",
+    "critic": "Alex Hernandez",
+    "url": "https://techaeris.com/2026/11/23/dell-xps-14-ubuntu-da14260-review/",
+    "date": "2026-11-23",
+    "rating": null,
+    "score": 92,
+    "scoreSource": "text",
+    "excerpt": "The Dell XPS 14 Ubuntu configuration is the best out-of-the-box Linux laptop experience I have had from a major manufacturer.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent Linux experience and premium hardware, with main drawbacks being price, ports, fingerprints, and no biometrics.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3a",
+    "outletId": "techradar",
+    "critic": "Becky Scarrott",
+    "url": "https://www.techradar.com/audio/earbuds-airpods/nothing-ear-3a-review",
+    "date": "2026-07-25",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "I can't help but feel that Nothing has taken a wrong turn here.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Good sound and ANC for the price, but privacy concerns and weak battery life seriously temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3a",
+    "outletId": "toms-guide",
+    "critic": "Peter Wolinski",
+    "url": "https://www.tomsguide.com/audio/earbuds/nothing-ear-3a-review",
+    "date": "2026-08-13",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "With striking design, solid build quality and a fantastic app, these buds represent excellent value for money.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent value and design, with fixable sound tuning flaws and one serious privacy concern.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3a",
+    "outletId": "pcmag",
+    "critic": "Mark Knapp",
+    "url": "https://uk.pcmag.com/headphones/166606/nothing-ear-3a-review-a-subtle-sonic-upgrade-worth-hearing",
+    "date": "2026-08-07",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The affordable Nothing Ear (3a) noise-cancelling earphones introduce a handful of minor improvements, including a more durable charging case and expanded frequency support, for the same low price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong sound and useful features, but rivals beat its ANC, battery life, and overall value.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3a",
+    "outletId": "gizmodo",
+    "critic": "James Pero",
+    "url": "https://gizmodo.com/nothing-ear-3a-review-still-nothings-value-king-2000782330",
+    "date": "2026-07-08",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "The Ear 3a are a great value, with solid sound, unique recording features, and a unique look for $99.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong value pick with good sound and useful extras, tempered by merely decent ANC and minor missing features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3a",
+    "outletId": "trusted-reviews",
+    "critic": "Simon Cocks",
+    "url": "https://www.trustedreviews.com/reviews/nothing-ear-3a",
+    "date": "2026-08-04",
+    "rating": "4/5",
+    "score": 79,
+    "scoreSource": "rating",
+    "excerpt": "These are great challengers at this price tier, and a couple of aspects of the Nothing Ear (3a) – such as the better fit and ANC – suited me even better than the brand’s flagship Nothing Ear (3).",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 78
+    },
+    "scoreReason": "Good features and fit, but sound, battery and value trail key rivals.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3a",
+    "outletId": "wired",
+    "critic": "Chris Haslam",
+    "url": "https://www.wired.com/review/nothing-ear-3a/",
+    "date": "2026-08-03",
+    "rating": "8/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "But few sub-$100 earbuds combine this much personality, polish, and practical technology into such a sleek package.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Stylish, polished, and good-sounding for the price, with notable ANC, spatial audio, and subscription caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "nothing-ear-3a",
+    "outletId": "mashable",
+    "critic": "Martijn Niesen",
+    "url": "https://nl.mashable.com/tech-2/13269/review-nothing-ear-3a-deze-prijs-voelt-bijna-verdacht",
+    "date": "2026-08-06",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "Voor wie oordopjes zoekt onder de honderd euro en niet wil inleveren op ontwerp, functies of geluidskwaliteit, behoren de Ear (3a) tot de sterkere opties.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Strong value with good sound, comfort and features, but some controls and ANC limitations hold it back.",
+    "scoredFromFullText": true
   }
 ]

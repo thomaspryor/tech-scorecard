@@ -8181,5 +8181,78 @@
       "credit": "Insta360",
       "sourceUrl": "https://www.insta360.com/blog/insta360-launches-luna-series-gimbal-cameras-Leica.html"
     }
+  },
+  {
+    "id": "nothing-ear-3a",
+    "slug": "nothing-ear-3a",
+    "name": "Nothing Ear (3a)",
+    "brand": "Nothing",
+    "category": "earbuds",
+    "releaseDate": "2026-07-07",
+    "launchPrice": 99,
+    "officialUrl": "https://us.nothing.tech/products/ear-3a",
+    "criticsTake": "Reviewers agree the Nothing Ear (3a) offer good sound, a distinctive design, useful app features, and a low $99 price. Most also say the default tuning is bass-heavy and the ANC is decent rather than class-leading, with some mixed views on the recording and transcription features.",
+    "loved": [
+      "Good sound for the price",
+      "Distinctive transparent design",
+      "Useful Nothing X app and EQ",
+      "Audio Snapshot and call recording"
+    ],
+    "gripes": [
+      "Bass-heavy default tuning",
+      "ANC only okay",
+      "Case is awkward to open",
+      "Battery life varies",
+      "Pro transcription needs subscription after trial"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $99"
+      },
+      {
+        "label": "Driver",
+        "value": "12mm dynamic driver"
+      },
+      {
+        "label": "Noise cancellation",
+        "value": "Up to 45dB hybrid ANC"
+      },
+      {
+        "label": "EQ",
+        "value": "Advanced 8-band equalizer in the Nothing X app"
+      },
+      {
+        "label": "Codec support",
+        "value": "LDAC support, with AAC on iOS"
+      },
+      {
+        "label": "Audio recording",
+        "value": "Audio Snapshot and call recording with transcription in the app"
+      },
+      {
+        "label": "Built-in storage",
+        "value": "32MB total for recordings"
+      },
+      {
+        "label": "Battery life",
+        "value": "Up to 10 hours without ANC and 6 hours with ANC on AAC"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IP54"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-23",
+    "backfilled": "2026-11-23"
   }
 ]
