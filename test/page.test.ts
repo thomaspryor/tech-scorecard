@@ -56,6 +56,10 @@ describe('quote matching', () => {
       containsQuote('Overall, it’s the best phone — for most people.', "It's the best phone - for most people."),
     ).toBe(true);
     expect(containsQuote('Overall, it is fine.', "It's the best phone.")).toBe(false);
+    expect(containsQuote('Ultra 3 - *BUY* if you want it. *SKIP* if not.', 'BUY if you want it. SKIP if not.')).toBe(
+      true,
+    );
+    expect(containsQuote('Ultra 3 - *BUY* if you want it.', 'SKIP if you want it.')).toBe(false);
   });
 });
 
