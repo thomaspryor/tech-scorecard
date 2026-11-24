@@ -28,7 +28,8 @@ def norm(s, page=False):
     s = unicodedata.normalize('NFKC', html.unescape(s))
     for a, b in QUOTES.items():
         s = s.replace(a, b)
-    return re.sub(r'\s+', ' ', s.replace('\\"', '"')).strip().lower()
+    # Asterisks are emphasis marks some outlets type around words, not words (matches scripts/lib/page.js normQuote).
+    return re.sub(r'\s+', ' ', s.replace('\\"', '"').replace('*', '')).strip().lower()
 
 
 def fetch(url):

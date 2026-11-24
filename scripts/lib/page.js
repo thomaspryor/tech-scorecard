@@ -199,7 +199,8 @@ const QUOTES = { '’': "'", '‘': "'", '“': '"', '”': '"', '–': '-', '�
 function normQuote(s) {
   let t = String(s).normalize('NFKC');
   for (const [a, b] of Object.entries(QUOTES)) t = t.split(a).join(b);
-  return t.replace(/\s+/g, ' ').trim().toLowerCase();
+  // Asterisks are emphasis marks some outlets type around words (the5krunner's "*BUY* if you want..."), not words.
+  return t.replace(/\*/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
 }
 
 /**
