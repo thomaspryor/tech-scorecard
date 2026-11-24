@@ -34357,5 +34357,320 @@
     },
     "scoreReason": "Strong value with good sound, comfort and features, but some controls and ANC limitations hold it back.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "creative-bloq",
+    "critic": "Ian Evenden",
+    "url": "https://www.creativebloq.com/reviews/macbook-pro-16-2026-m5-pro-proled-xdr-review-the-touchscreen-mac-is-here-at-last",
+    "date": "2026-11-24",
+    "rating": "4.25/5",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The big drawback is that it’s even more expensive, especially as it only comes on top-end machines, but one day every MacBook might be like this.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 73
+    },
+    "scoreReason": "Great screen, speed and battery, but touchscreen value and high price bring notable reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "zdnet",
+    "critic": "Maria Diaz",
+    "url": "https://www.zdnet.com/tech/ipad-mini-2026-review/",
+    "date": "2026-11-24",
+    "rating": "4.5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "The iPad Mini is the lightest and thinnest iPad ever, and it packs the performance of tablets nearly twice its size.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise for display, power, and portability; main reservation is the high price versus iPad Air.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "gadgetguy",
+    "critic": "Adam Turner",
+    "url": "https://www.gadgetguy.com.au/google-fitbit-edge-review/",
+    "date": "2026-11-23",
+    "rating": "9.1/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Offering plenty of fitness insights and coaching advice, the Google Fitbit Edge is a great fit for health-conscious Android or iPhone owners.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Strong fitness-focused praise, with notable smartwatch feature omissions and some usability annoyances.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "digit",
+    "critic": "Mithun Mohandas",
+    "url": "https://www.digit.in/features/laptops/nvidia-rtx-spark-review-windows-on-arm-gets-serious-about-graphics-and-local-ai.html",
+    "date": "2026-10-16",
+    "rating": null,
+    "score": 79,
+    "scoreSource": "text",
+    "excerpt": "The P16 is a suitable vehicle for the idea: a 16-inch 120 Hz OLED workspace, substantial battery capacity and useful connectivity.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 76
+    },
+    "scoreReason": "Powerful, flexible creator laptop with strong AI and graphics, but notable software compatibility and CPU-focused caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-air",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/oct/15/iphone-air-review-apple-pursuit-absolute-thinness",
+    "date": "2025-10-15",
+    "rating": null,
+    "score": 66,
+    "scoreSource": "text",
+    "excerpt": "But if you are an Apple buyer who wants a slender novelty that is great to hold and use, the iPhone Air is a special piece of hardware.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 60
+    },
+    "scoreReason": "Impressive design and screen, but camera compromises, short battery life and high price limit its appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-air",
+    "outletId": "techcrunch",
+    "critic": null,
+    "url": "https://techcrunch.com/2025/10/07/the-iphone-air-is-so-light-i-forgot-it-was-in-my-pocket/",
+    "date": "2025-10-07",
+    "rating": null,
+    "score": 71,
+    "scoreSource": "text",
+    "excerpt": "But if aesthetics or portability matter to you more than all-day battery life or a multi-lens camera system, the iPhone Air delivers.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 70
+    },
+    "scoreReason": "Beautifully thin and appealing, but battery, camera, and speaker compromises limit broad recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-air",
+    "outletId": "appleinsider",
+    "critic": "Oliver Haslam",
+    "url": "https://appleinsider.com/articles/26/09/03/iphone-air-review-one-year-later-more-than-the-sum-of-its-flaws",
+    "date": "2026-09-03",
+    "rating": "4/5",
+    "score": 87,
+    "scoreSource": "rating",
+    "excerpt": "But the positives outweigh the negatives, and the iPhone Air goes down as one of my favorite iPhones yet.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise and personal enthusiasm, with notable battery and camera compromises for some buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-air",
+    "outletId": "phonearena",
+    "critic": "Mariyan Slavov",
+    "url": "https://www.phonearena.com/reviews/apple-iphone-air-review_id7688",
+    "date": "2025-09-23",
+    "rating": "7.4/10",
+    "score": 75,
+    "scoreSource": "rating",
+    "excerpt": "If you're okay with those drawbacks, the iPhone Air could be your perfect phone, one that will turn heads for sure.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 74
+    },
+    "scoreReason": "Strong design appeal, but the review centers on notable compromises and caution.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-air",
+    "outletId": "macrumors",
+    "critic": "Juli Clover",
+    "url": "https://www.macrumors.com/2025/09/30/iphone-air-two-week-review/",
+    "date": "2025-09-30",
+    "rating": null,
+    "score": 72,
+    "scoreSource": "text",
+    "excerpt": "It's the iPhone to get if you want to prioritize thin and light over everything else, but you can get more functionality by spending $200 less or $100 more.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 68
+    },
+    "scoreReason": "Praised for thin, light design and durability, but battery, heat, camera, and value compromises limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-vision-pro-m5",
+    "outletId": "appleinsider",
+    "critic": "Oliver Haslam",
+    "url": "https://appleinsider.com/articles/25/12/23/apple-vision-pro-m5-review-three-months-later-a-flawed-wonder",
+    "date": "2025-12-23",
+    "rating": "3/5",
+    "score": 55,
+    "scoreSource": "rating",
+    "excerpt": "The M5 refresh makes the new Apple Vision Pro faster and improves some features, but it doesn't change the fact that the headset still doesn't have a long-term place in most people's homes.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 52
+    },
+    "scoreReason": "Excellent performance and display use, but high price, friction, and limited everyday value make most people wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-series-11",
+    "outletId": "business-insider",
+    "critic": "Tyler Hayes",
+    "url": "https://www.businessinsider.com/guides/tech/apple-watch-series-11-review",
+    "date": "2026-02-13",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "If you don't already have a recent Apple Watch and you want the best overall value in Apple's lineup, the Series 11 is now the model to get.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 92
+    },
+    "scoreReason": "Best choice for most iPhone users, but upgrades are minor and not worth it for recent owners.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-3",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/oct/27/apple-watch-ultra-3-review-the-biggest-and-best-smartwatch-for-an-iphone",
+    "date": "2025-10-27",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "The Ultra 3 is the biggest, baddest and best Apple Watch the company makes but it isn’t a massive leap over previous models.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent smartwatch with meaningful refinements, but expensive and only a modest upgrade over earlier Ultra models.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-3",
+    "outletId": "android-authority",
+    "critic": "Kaitlyn Cimino",
+    "url": "https://www.androidauthority.com/apple-watch-ultra-3-review-3603590/",
+    "date": "2025-11-05",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "If you want the best iOS integration available on the best watch Apple has to offer, the Ultra 3 is it.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Highly recommended best-in-class smartwatch, but upgrades are incremental and many should skip if owning last year’s model.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-watch-ultra-3",
+    "outletId": "phonearena",
+    "critic": "Peter Kostadinov",
+    "url": "https://www.phonearena.com/reviews/apple-watch-ultra-3-review_id7680",
+    "date": "2025-09-26",
+    "rating": "8/10",
+    "score": 88,
+    "scoreSource": "rating",
+    "excerpt": "The Apple Watch Ultra 3 is an excellent smartwatch and easily the best one if you're locked in the Apple ecosystem.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 90
+    },
+    "scoreReason": "Strong praise as best Apple-compatible smartwatch, with no major reservations in the available verdict excerpt.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "apple-watch-ultra-3",
+    "outletId": "pickr",
+    "critic": "Leigh :) Stark",
+    "url": "https://www.pickr.com.au/reviews/2025/apple-watch-ultra-3/",
+    "date": "2025-10-13",
+    "rating": "4.7/5",
+    "score": 94,
+    "scoreSource": "rating",
+    "excerpt": "Built to last, the Apple Watch Ultra 3 is what every Apple Watch should be like: long-lasting and featured packed.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 94
+    },
+    "scoreReason": "Strong praise and recommendation, but expensive, bulky, and not worth upgrading for current Ultra owners.",
+    "scoredFromFullText": true
   }
 ]

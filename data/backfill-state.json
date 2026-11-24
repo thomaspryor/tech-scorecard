@@ -1,6 +1,6 @@
 {
   "since": "2026-11-10",
-  "lastRun": "2026-11-23",
+  "lastRun": "2026-11-24",
   "categories": {
     "tablet": {
       "misses": 0,
@@ -23,7 +23,7 @@
       "pausedUntil": null
     },
     "earbuds": {
-      "misses": 0,
+      "misses": 1,
       "pausedUntil": null
     },
     "tv": {
@@ -36,11 +36,11 @@
     }
   },
   "photoTries": {
-    "oneplus-pad-go-2": "2026-11-21",
+    "oneplus-pad-go-2": "2026-11-24",
     "nothing-ear-3": "2026-11-15",
-    "tcl-qm8l": "2026-11-21",
+    "tcl-qm8l": "2026-11-24",
     "apple-macbook-pro-14-inch-m6": "2026-11-20",
-    "oneplus-buds-4": "2026-11-21",
+    "oneplus-buds-4": "2026-11-24",
     "tcl-qm8k": "2026-11-22"
   }
 }
