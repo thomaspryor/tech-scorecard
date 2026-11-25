@@ -34672,5 +34672,614 @@
     },
     "scoreReason": "Strong praise and recommendation, but expensive, bulky, and not worth upgrading for current Ultra owners.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-with-proled-xdr-display",
+    "outletId": "expert-reviews",
+    "critic": "Jonathan Bray",
+    "url": "https://www.expertreviews.co.uk/technology/laptops/16-inch-apple-macbook-with-proled-xdr-display-review",
+    "date": "2026-11-24",
+    "rating": "4/5",
+    "score": 89,
+    "scoreSource": "rating",
+    "excerpt": "At the end of the day, though, the MacBook Pro with ProLED XDR Display is a superb laptop with few rivals.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 89
+    },
+    "scoreReason": "Outstanding screen, battery and all-round performance, with price the main significant drawback.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "business-insider",
+    "critic": "Tyler Hayes",
+    "url": "https://www.businessinsider.com/guides/tech/apple-ipad-mini-2026-review",
+    "date": "2026-11-25",
+    "rating": null,
+    "score": 77,
+    "scoreSource": "text",
+    "excerpt": "If price isn't a concern, the iPad Mini is easy to recommend for all of its physical improvements.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent compact tablet with major upgrades, but very high price and weaker value hurt enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "apple-macbook-pro-14-inch-m6",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/2328433/apple-macbook-pro-m6-14-inch-review/",
+    "date": "2026-11-25",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The 14-inch MacBook Pro with M6 gets the important things right.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strongly recommended overall, with caveats about outdated design, base RAM, and missing premium features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "iphone-duo",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/nov/23/apple-iphone-duo-review-most-novel-interesting-iphone-in-almost-a-decade",
+    "date": "2026-11-23",
+    "rating": null,
+    "score": 73,
+    "scoreSource": "text",
+    "excerpt": "But it is the most fun I’ve had with an iPhone in quite some time, and for those locked into Apple’s ecosystem but craving a different experience, this is it.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 68
+    },
+    "scoreReason": "Innovative and fun with a great screen, but expensive, compromised, and not for most buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-pro-m5",
+    "outletId": "stuff",
+    "critic": "Dan Grabham",
+    "url": "https://www.stuff.tv/review/apple-ipad-pro-m5-review/",
+    "date": "2025-10-21",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "While it's incredibly powerful and clearly the best iPad out there, the iPad Pro M5 is for the minority who need (or want) the best there is.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Superb tablet with standout power and display, but price and cheaper iPads temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-14-m5",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/apr/28/apple-macbook-pro-m5-review-serious-power-still-long-battery-life",
+    "date": "2026-04-28",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "So for those that need high-level power and long battery life in a quality, adaptable laptop, very little else even comes close to the MacBook Pro unless you specifically need Windows or Linux.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 91,
+      "gemini": 90
+    },
+    "scoreReason": "Outstanding performance, battery and display, with price and base-model spec caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "macbook-pro-14-m5",
+    "outletId": "the-independent",
+    "critic": "David Phelan",
+    "url": "https://www.independent.co.uk/extras/indybest/gadgets-tech/apple-macbook-pro-m5-review-b2849541.html",
+    "date": "2025-10-21",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "Add in the other benefits over the MacBook Air, and the Pro seems less of an overkill.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for performance, display, audio and connectivity, with minor caveats about charger omission and upgrade necessity.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "phonearena",
+    "critic": "Preslav Kateliev",
+    "url": "https://www.phonearena.com/reviews/sony-wh-1000xm6-review_id7560",
+    "date": "2025-08-07",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "In all honesty, these just became my \"easy to recommend\" headphones for 2025.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 90
+    },
+    "scoreReason": "Reviewer calls them easy to recommend, signaling a strongly enthusiastic verdict.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "rolling-stone",
+    "critic": "Jonathan Zavaleta",
+    "url": "https://www.rollingstone.com/product-recommendations/tech/sony-wh-1000xm6-headphones-review-1235339952/",
+    "date": "2025-05-15",
+    "rating": null,
+    "score": 89,
+    "scoreSource": "text",
+    "excerpt": "Sony's 1000X series has had a lot of hits, and the WH-1000XM6 headphones are another winner.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 89,
+      "gemini": 88
+    },
+    "scoreReason": "Excellent sound and ANC with useful upgrades, but high price and minor comfort/design issues temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "sony-wh-1000xm6",
+    "outletId": "eurogamer",
+    "critic": "Reece Bithrey",
+    "url": "https://www.eurogamer.net/after-18-hours-flying-economy-with-sonys-wh-1000xm6-i-may-just-have-a-new-favourite-pair-of-anc-headphones",
+    "date": "2025-11-16",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "Nonetheless, I think these things are some of the most complete wireless headphones you can buy - as long as you can stretch to their heftier £399/$458 price tag, of course.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 91,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent noise cancellation, comfort and sound; pricey and minor flaws, but strongly recommended.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "gizmodo",
+    "critic": "Raymond Wong",
+    "url": "https://gizmodo.com/samsung-galaxy-z-fold-7-review-foldable-perfection-thats-tempting-me-to-leave-my-iphone-2000629703",
+    "date": "2025-07-16",
+    "rating": "4.5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "The Z Fold 7 is my new gadget love, and I guarantee, it'll be yours too if you can stomach the price.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 98
+    },
+    "scoreReason": "Rapturous praise for design and experience, with price and a few compromises as the main drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "9to5google",
+    "critic": "Ben Schoon",
+    "url": "https://9to5google.com/2026/07/21/samsung-galaxy-z-fold-7-review-one-year-later/",
+    "date": "2026-07-21",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "I’ve been buying Samsung foldables for years now, but the Galaxy Z Fold 7 is the first one that, as a reviewer, I’ve actually managed to keep in my pocket all year long.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 75,
+      "gemini": 72
+    },
+    "scoreReason": "Great hardware and software, but poor battery, weak cameras, and heat issues heavily limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/jul/23/samsung-galaxy-z-fold-7-android-review-thinner-lighter-better-folding",
+    "date": "2025-07-23",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "But the Fold 7 is the best folding phone available and the major upgrade Samsung needed after a few rather repetitive years.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 87,
+      "gemini": 92
+    },
+    "scoreReason": "Excellent foldable with major improvements, superb screen and camera, but extreme price and fragility hold it back.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "forbes",
+    "critic": "Rebecca Isaacs",
+    "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/samsung-galaxy-z-fold-7-review/",
+    "date": "2025-08-21",
+    "rating": null,
+    "score": 80,
+    "scoreSource": "text",
+    "excerpt": "There’s no question in my mind that Samsung cemented this as one of the best booklet-style foldables available right now.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 78
+    },
+    "scoreReason": "Strong praise for design, battery and cameras, but costly with S Pen removal and ergonomic issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/samsung-galaxy-z-fold-7-review/",
+    "date": "2025-07-16",
+    "rating": "5/5",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "Slimmer than ever, and with a superior camera setup; the Galaxy Z Fold 7 is a monumental year-on-year upgrade.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly enthusiastic praise overall, with only notable battery, charging, price and stylus compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-7",
+    "outletId": "bgr",
+    "critic": "Christian de Looper",
+    "url": "https://www.bgr.com/reviews/samsung-galaxy-z-fold-7-review-an-ultra-foldable-in-all-but-name/",
+    "date": "2025-07-16",
+    "rating": "8/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "If you have the cash to spend and want Samsung's best foldable yet, you'll love what's on offer here.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent foldable with strong praise, but very high price and some battery and charging compromises.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "airpods-pro-3",
+    "outletId": "appleinsider",
+    "critic": "Andrew O&#039;Hara",
+    "url": "https://appleinsider.com/articles/25/09/15/airpods-pro-3-review-the-best-true-wireless-earbuds-get-even-better",
+    "date": "2025-09-15",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "There are a lot of new features here as the best wireless earbuds get even better.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly praised as best wireless earbuds, with only minor battery-life caveat and modest upgrade concerns.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11-pro",
+    "outletId": "impulse-gamer",
+    "critic": "Andrew Bistak",
+    "url": "https://www.impulsegamer.com/google-pixel-11-pro-review/",
+    "date": "2026-11-25",
+    "rating": null,
+    "score": 88,
+    "scoreSource": "text",
+    "excerpt": "Thankfully, that is where the Google Pixel 11 Pro shines: with its 6.3-inch footprint, it packs almost everything that makes the larger Pro XL special into a far more manageable frame.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 88
+    },
+    "scoreReason": "Strong praise for compact design, cameras, display and features, with minor charging and peak performance caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-11",
+    "outletId": "impulse-gamer",
+    "critic": "Andrew Bistak",
+    "url": "https://www.impulsegamer.com/google-pixel-11-review/",
+    "date": "2026-11-25",
+    "rating": null,
+    "score": 90,
+    "scoreSource": "text",
+    "excerpt": "There is very little to fault with the Google Pixel 11 considering the price and technology it packs inside this relatively compact smartphone.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 88
+    },
+    "scoreReason": "Highly praised value, battery, display, cameras, and usability, with only minor feature omissions and subscription caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "panasonic-z95b-oled",
+    "outletId": "toms-guide",
+    "critic": "Matthew Murray",
+    "url": "https://www.tomsguide.com/tvs/oled-tvs/panasonic-z95b-oled-tv-review",
+    "date": "2025-08-12",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Panasonic Z95B produces a superb picture and ear-pleasing sound that mark it among one of the best OLED TVs on the market.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Superb picture and sound, highly recommended, but brightness limits and clunky Fire TV prevent a stronger score.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "panasonic-z95b-oled",
+    "outletId": "pcmag",
+    "critic": "Will Greenwald",
+    "url": "https://www.pcmag.com/reviews/panasonic-65-inch-z95b-oled-tv",
+    "date": "2026-02-16",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "The Panasonic Z95B is a superb high-end OLED TV that pairs class-leading brightness and color accuracy with an unusually powerful built-in sound system.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 95,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding picture and sound with Editors' Choice, tempered by high price, thick design, and ad-heavy interface.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "panasonic-z95b-oled",
+    "outletId": "wired",
+    "critic": "Ryan Waniata",
+    "url": "https://www.wired.com/review/panasonic-z95b/",
+    "date": "2025-11-23",
+    "rating": "9/10",
+    "score": 96,
+    "scoreSource": "rating",
+    "excerpt": "If you’re after an all-in-one screen that elevates everything to showcase levels, this is the TV to take home.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 95
+    },
+    "scoreReason": "Outstanding picture and sound, strongly recommended despite poor Fire TV interface and limited HDMI 2.1 ports.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "panasonic-z95b-oled",
+    "outletId": "techradar",
+    "critic": "Al Griffin",
+    "url": "https://www.techradar.com/televisions/panasonic-z95b-review",
+    "date": "2025-08-23",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Given its impressive picture and sound quality, it’s one of 2025's best OLED TVs, and a very good overall value among premium TVs.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Excellent picture and standout sound, but bright-room performance, Fire TV, and tweaking needs add real caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "panasonic-z95b-oled",
+    "outletId": "expert-reviews",
+    "critic": "John Archer",
+    "url": "https://www.expertreviews.co.uk/technology/tvs-home-cinema/panasonic-z95b-review",
+    "date": "2025-08-29",
+    "rating": "5/5",
+    "score": 99,
+    "scoreSource": "rating",
+    "excerpt": "But it's hard to get stuck on this point when you're talking about a TV that delivers the most immaculate pictures we've seen from a television this year.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 97,
+      "gemini": 100
+    },
+    "scoreReason": "Outstanding picture quality and strong overall performance, with only minor HDMI and audio caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hisense-u7sg",
+    "outletId": "toms-guide",
+    "critic": "Sean Captain",
+    "url": "https://www.tomsguide.com/tvs/4k-tvs/hisense-u7sg-uled-miniled-google-tv-review",
+    "date": "2026-08-24",
+    "rating": "3.5/5",
+    "score": 80,
+    "scoreSource": "rating",
+    "excerpt": "In the right viewing environment, the Hisense U7SG delivers value in spades, making it a top contender for TV enthusiasts looking to get a big-screen TV on a moderate budget.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 80,
+      "gemini": 80
+    },
+    "scoreReason": "Strong sound, gaming, and value, but black levels and HDR shadows are notable weaknesses.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hisense-u7sg",
+    "outletId": "techradar",
+    "critic": "James Holland",
+    "url": "https://www.techradar.com/televisions/hisense-u7sg-review",
+    "date": "2026-10-15",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Hisense U7’s main selling point is its performance-to-price ratio — it's undeniable good value.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent value with strong features and sound, but picture flaws and software quirks temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hisense-u7sg",
+    "outletId": "cnet",
+    "critic": "Ty Pendlebury",
+    "url": "https://www.cnet.com/tech/home-entertainment/hisense-u7sg-tv-review/",
+    "date": "2026-07-28",
+    "rating": "8.1/10",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "At its current street price of $1,000, the Hisense U7 offers a remarkably bright picture, which is great with HDR content and gaming.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Very bright, affordable and great for bright rooms and gaming, but color and contrast flaws temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hisense-u7sg",
+    "outletId": "wired",
+    "critic": "Ryan Waniata",
+    "url": "https://www.wired.com/review/hisense-u7sg/",
+    "date": "2026-04-19",
+    "rating": "8/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "We’ll know more about the 2026 TV landscape once the new RGB TVs have landed, but if you need a powerful, classy-looking TV before then, the U7SG should be on your list.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Bright, feature-packed, and recommended, but software quirks, viewing-angle issues, and price caveats temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "hisense-u7sg",
+    "outletId": "the-verge",
+    "critic": "John Higgins",
+    "url": "https://www.theverge.com/tech/899160/hisense-u7sg-tv-review",
+    "date": "2026-03-24",
+    "rating": "8/10",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "As great as the U7SG is, there’s good reason to wait a few months before buying.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent bright-room TV with strong gaming and reflections, but blooming, cool color, and wait-for-price advice temper it.",
+    "scoredFromFullText": true
   }
 ]

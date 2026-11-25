@@ -8253,6 +8253,177 @@
       ]
     },
     "autoAdded": "2026-11-23",
-    "backfilled": "2026-11-23"
+    "backfilled": "2026-11-23",
+    "image": {
+      "src": "/images/products/nothing-ear-3a/main.webp",
+      "thumb": "/images/products/nothing-ear-3a/thumb.webp",
+      "alt": "Nothing Ear (3a), official Nothing photo",
+      "credit": "Nothing",
+      "sourceUrl": "https://us.nothing.tech/products/ear-3a"
+    }
+  },
+  {
+    "id": "panasonic-z95b-oled",
+    "slug": "panasonic-z95b-oled",
+    "name": "Panasonic Z95B OLED",
+    "brand": "Panasonic",
+    "category": "tv",
+    "releaseDate": "2025-06-24",
+    "launchPrice": 2599.99,
+    "officialUrl": "https://shop.panasonic.com/products/panasonic-oled-tv-z95b-series",
+    "criticsTake": "Reviewers describe the Panasonic Z95B as a top-tier OLED with standout picture quality, very strong built-in sound, and broad HDR support. The main complaints are the Fire TV interface, the limited number of HDMI 2.1 ports, and some audio quirks from the built-in bass.",
+    "loved": [
+      "Excellent picture quality",
+      "Very strong built-in Dolby Atmos sound",
+      "Supports Dolby Vision and HDR10+",
+      "Up to 144Hz gaming support"
+    ],
+    "gripes": [
+      "Fire TV can be frustrating",
+      "Only two HDMI 2.1 ports",
+      "Built-in subwoofer can struggle",
+      "Treble can sound tinny at times",
+      "Design is quite chunky"
+    ],
+    "specs": [
+      {
+        "label": "Price",
+        "value": "From $2599.99"
+      },
+      {
+        "label": "Panel",
+        "value": "Primary RGB Tandem OLED"
+      },
+      {
+        "label": "Resolution",
+        "value": "4K/UHD (3,840 x 2,160)"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "Up to 144Hz"
+      },
+      {
+        "label": "HDR formats",
+        "value": "HDR10, HDR10+ Adaptive, HLG, Dolby Vision IQ"
+      },
+      {
+        "label": "Audio",
+        "value": "360° Soundscape Pro audio system (170W), Dolby Atmos"
+      },
+      {
+        "label": "HDMI",
+        "value": "4 inputs, including 2 x HDMI 2.1"
+      },
+      {
+        "label": "Gaming features",
+        "value": "VRR, ALLM, AMD FreeSync, Nvidia G-Sync, Game Mode Extreme, Game Control Board"
+      },
+      {
+        "label": "Wireless",
+        "value": "Bluetooth 5.3, Wi-Fi 6, Apple AirPlay, Apple HomeKit"
+      }
+    ],
+    "art": {
+      "kind": "tv",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-25",
+    "backfilled": "2026-11-25",
+    "image": {
+      "src": "/images/products/panasonic-z95b-oled/main.webp",
+      "thumb": "/images/products/panasonic-z95b-oled/thumb.webp",
+      "alt": "Panasonic Z95B OLED, official Panasonic photo",
+      "credit": "Panasonic",
+      "sourceUrl": "https://shop.panasonic.com/products/panasonic-oled-tv-z95b-series"
+    }
+  },
+  {
+    "id": "hisense-u7sg",
+    "slug": "hisense-u7sg",
+    "name": "Hisense U7SG",
+    "brand": "Hisense",
+    "category": "tv",
+    "releaseDate": "2026-03-10",
+    "launchPrice": 799.99,
+    "officialUrl": "https://www.hisense-usa.com/product-page/televisions-55-class-u7-series-uled-miniled-4k-google-tv-55u7sg",
+    "criticsTake": "Reviewers see the Hisense U7SG as a strong midrange mini-LED TV with high brightness, good gaming support, and solid overall value. They also note some picture setup quirks, off-angle limitations, and that its price is expected to drop after launch.",
+    "loved": [
+      "Very bright for living rooms",
+      "Great gaming support",
+      "Anti-reflection screen",
+      "Solid built-in sound"
+    ],
+    "gripes": [
+      "Some subtle blooming",
+      "Off-angle performance is middling",
+      "Default picture settings look weird",
+      "Color can show a green tinge",
+      "Google TV home screen can feel busy"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "Mini-LED TV with quantum dots"
+      },
+      {
+        "label": "Peak brightness",
+        "value": "Up to 3,000 nits"
+      },
+      {
+        "label": "Local dimming",
+        "value": "Up to 3,000 dimming zones"
+      },
+      {
+        "label": "Refresh rate",
+        "value": "165Hz native refresh rate"
+      },
+      {
+        "label": "Gaming features",
+        "value": "4K/165Hz, VRR up to 330Hz, ALLM, AMD FreeSync Premium Pro"
+      },
+      {
+        "label": "HDR formats",
+        "value": "Dolby Vision, HDR10+, HDR10, HLG"
+      },
+      {
+        "label": "Smart TV platform",
+        "value": "Google TV"
+      },
+      {
+        "label": "HDMI",
+        "value": "4 x HDMI 2.1 with one eARC/ARC"
+      },
+      {
+        "label": "Audio",
+        "value": "Dolby Atmos support with 2.1.2 speakers; DTS Virtual X"
+      },
+      {
+        "label": "Price",
+        "value": "From $799.99"
+      }
+    ],
+    "art": {
+      "kind": "tv",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-25",
+    "backfilled": "2026-11-25",
+    "image": {
+      "src": "/images/products/hisense-u7sg/main.webp",
+      "thumb": "/images/products/hisense-u7sg/thumb.webp",
+      "alt": "Hisense U7SG, official Hisense photo",
+      "credit": "Hisense",
+      "sourceUrl": "https://www.hisense-usa.com/product-page/televisions-55-class-u7-series-uled-miniled-4k-google-tv-55u7sg"
+    }
   }
 ]
