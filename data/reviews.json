@@ -35281,5 +35281,425 @@
     },
     "scoreReason": "Excellent bright-room TV with strong gaming and reflections, but blooming, cool color, and wait-for-price advice temper it.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "wired",
+    "critic": "Luke Larsen",
+    "url": "https://www.wired.com/review/ipad-mini-2026/",
+    "date": "2026-11-03",
+    "rating": "7/10",
+    "score": 78,
+    "scoreSource": "rating",
+    "excerpt": "The iPad Mini’s impressive new features make it a better tablet than ever-only to be betrayed by its higher price.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 81,
+      "gemini": 75
+    },
+    "scoreReason": "Strongly praised design and display, but high price and niche appeal bring notable reservations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "proart-p16-rtx-spark",
+    "outletId": "dadnology",
+    "critic": "Patrick W.",
+    "url": "https://dadnology.com/tech-gadgets/asus-proart-p16-rtx-spark-review/",
+    "date": "2026-11-26",
+    "rating": "5/5",
+    "score": 98,
+    "scoreSource": "rating",
+    "excerpt": "After daily work with the ASUS ProArt P16 with RTX Spark , the verdict is a clear buy for one kind of user: anyone who wants to run serious AI models locally and needs Windows to do it.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 98,
+      "gemini": 98
+    },
+    "scoreReason": "Strong praise for AI-focused users, with only battery life and niche audience caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "meta-ray-ban-display",
+    "outletId": "iphone-in-canada",
+    "critic": null,
+    "url": "https://www.iphoneincanada.ca/2026/11/26/meta-ray-ban-display-review/",
+    "date": "2026-11-26",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "However, the thicker frames, relatively modest battery life, and software ecosystem limitations remind me this is still a first-generation product.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Impressive and promising first-gen smart glasses, but high price, battery, comfort, and software limits temper recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "techcrunch",
+    "critic": null,
+    "url": "https://techcrunch.com/2025/11/14/pixel-10-pro-fold-review-googles-bet-to-make-foldables-sturdy/",
+    "date": "2025-11-14",
+    "rating": null,
+    "score": 75,
+    "scoreSource": "text",
+    "excerpt": "If you want a fully baked Google or Pixel experience in a foldable form factor, this device is for you.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 74
+    },
+    "scoreReason": "Durability and Pixel features praised, but cameras, performance, multitasking, and Pro compromises bring notable caveats.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/google-pixel-10-pro-fold-review/",
+    "date": "2025-10-08",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "So while it feels like an iterative update, rather than the top-to-bottom overhaul Samsung gave the Z Fold 7, long-time Pixel fans that aren't concerned about being the thinnest or lightest will still find plenty to like.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 83,
+      "gemini": 80
+    },
+    "scoreReason": "Strong all-round foldable with standout features, but bulk and iterative upgrades temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-10-pro-fold",
+    "outletId": "forbes",
+    "critic": "Rebecca Isaacs",
+    "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/google-pixel-10-pro-fold-review/",
+    "date": "2025-11-13",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "That said, if you’re considering the Google Pixel 10 Pro Fold as your first foldable or coming from the first-gen Google Pixel Fold, it’s a great device.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Strong software and camera tools, but bulky design, weak chip, high price, and limited upgrade appeal.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "bose-qc-ultra-headphones-2",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2025/oct/14/bose-quietcomfort-ultra-2-review-the-most-comfortable-noise-cancelling-headphones",
+    "date": "2025-10-14",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The second-generation Bose QuietComfort Ultra headphones are a quality set of cans that deliver more of what the firm is known for: good sound, great noise cancelling and supreme comfort.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent comfort, noise cancelling and features, with strong praise tempered by very high price and slight rival shortcomings.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/asus-rog-xbox-ally-x-review/",
+    "date": "2025-12-25",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "It's a strong first step into handheld territory for Microsoft, but one that prices out a lot of gamers.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent comfort, performance and battery, but very high price and still-imperfect software limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "t3",
+    "critic": "Max Freeman-Mills",
+    "url": "https://www.t3.com/tech/gaming-consoles/rog-xbox-ally-x-review",
+    "date": "2025-11-13",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The more powerful Xbox Ally is a total portable beast – of that there's no doubt.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent performance and comfort, but high price, unchanged screen, and clunky Windows hurt value.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "the-guardian",
+    "critic": "Alyssa Mercante",
+    "url": "https://www.theguardian.com/games/2025/oct/16/rog-xbox-ally-x-review-like-nothing-handheld-gaming-has-seen-before",
+    "date": "2025-10-16",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The ROG Xbox Ally X, the handheld console collaboration from Asus and Microsoft, is an impressive, yet expensive, piece of gaming tech.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent performance and design despite high price and some setup and interface issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "gizmodo",
+    "critic": "Kyle Barr",
+    "url": "https://gizmodo.com/asus-rog-xbox-ally-x-review-everythings-an-xbox-even-when-its-not-2000672409",
+    "date": "2025-10-15",
+    "rating": "4/5",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "In the meantime, it's one of the best handheld PCs you can get, despite one glaring bug.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Excellent handheld PC performance and software progress, but very high price and notable sleep bugs hurt recommendation",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "rog-xbox-ally-x",
+    "outletId": "lifehacker",
+    "critic": "Michelle Ehrhardt",
+    "url": "https://lifehacker.com/tech/asus-rog-xbox-ally-x-review",
+    "date": "2025-12-15",
+    "rating": "3/5",
+    "score": 55,
+    "scoreSource": "rating",
+    "excerpt": "Unfortunately, the out-of-the-box experience is clunky and buggy, the screen is just okay, and while performance is strong, it doesn't quite feel strong enough to justify the $1,000 price point.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 58,
+      "gemini": 51
+    },
+    "scoreReason": "Excellent ergonomics, but buggy software, mediocre screen, and weak value make it hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-flip-7",
+    "outletId": "sammobile",
+    "critic": "Abhijeet Mishra",
+    "url": "https://www.sammobile.com/samsung/galaxy-z-flip-7/review/",
+    "date": "2025-07-24",
+    "rating": null,
+    "score": 93,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy Z Flip 7 is hands down the most polished and complete Flip Samsung has made so far.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 90,
+      "gemini": 95
+    },
+    "scoreReason": "Reviewer calls it the most polished and complete Flip Samsung has made, indicating very strong praise.",
+    "scoredFromFullText": false
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "toms-guide",
+    "critic": "Tammy Rogers",
+    "url": "https://www.tomsguide.com/audio/earbuds/beats-powerbeats-fit-review",
+    "date": "2025-10-13",
+    "rating": "3.5/5",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "The Beats Powerbeats Fit are a fine pair of buds — they sound decent, have good ANC, and come in some endearing funky colors — but they don’t feel quite as much of an upgrade as we were hoping for.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 73,
+      "gemini": 72
+    },
+    "scoreReason": "Good for workouts and style, but comfort, sound, ANC, and value issues make it hard to recommend.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "pcmag",
+    "critic": "Christian de Looper",
+    "url": "https://uk.pcmag.com/headphones/162042/beats-powerbeats-fit",
+    "date": "2025-12-15",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "The Beats Powerbeats Fit are vibrant and comfortable earbuds that sound great and stay in place during strenuous workouts.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong workout fit and good sound, but key feature gaps and better alternatives limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "cnet",
+    "critic": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/beats-powerbeats-fit-earbuds-review-winged-migration/",
+    "date": "2025-10-04",
+    "rating": "8/10",
+    "score": 73,
+    "scoreSource": "rating",
+    "excerpt": "As it stands, these buds make a lot more sense - and easier to recommend - at less than $140.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 73,
+      "gemini": 72
+    },
+    "scoreReason": "Good fit and sound, but outdated tech and price make the recommendation cautious.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "trusted-reviews",
+    "critic": "Kob Monney",
+    "url": "https://www.trustedreviews.com/reviews/beats-powerbeats-fit",
+    "date": "2026-02-17",
+    "rating": "4/5",
+    "score": 81,
+    "scoreSource": "rating",
+    "excerpt": "An upgrade over the Fit Pro, though within a wider context, the Powerbeats Fit remain just a solid pair of workout headphones.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 80
+    },
+    "scoreReason": "Strong sound and ANC upgrades, but stale features and some fit issues limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "mashable",
+    "critic": "Priya Singh",
+    "url": "https://in.mashable.com/tech/102997/powerbeats-fit-review-the-perfect-gym-earbuds",
+    "date": "2025-12-01",
+    "rating": null,
+    "score": 87,
+    "scoreSource": "text",
+    "excerpt": "The Powerbeats Fit are excellent workout earbuds thanks to their secure fit, punchy sound, solid ANC, and great battery life.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 88,
+      "gemini": 85
+    },
+    "scoreReason": "Excellent workout earbuds with secure fit, strong sound and battery, but pricey with some limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "the-guardian",
+    "critic": "Samuel Gibbs",
+    "url": "https://www.theguardian.com/technology/2026/feb/10/beats-powerbeats-fit-review-apple-compact-workout-earbuds-revamped",
+    "date": "2026-02-10",
+    "rating": null,
+    "score": 82,
+    "scoreSource": "text",
+    "excerpt": "That makes them great workout buds that can pull double-duty as regular earbuds with good enough noise cancelling and great sound.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 78,
+      "gemini": 85
+    },
+    "scoreReason": "Strong workout earbuds with secure fit and good sound, but comfort issues and high price limit enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "engadget",
+    "critic": null,
+    "url": "https://www.engadget.com/audio/headphones/beats-powerbeats-fit-review-deja-vu-in-a-good-way-120058332.html",
+    "date": "2025-10-20",
+    "rating": null,
+    "score": 86,
+    "scoreSource": "text",
+    "excerpt": "They offer a solid balance of a comfortable, secure design, good sound quality and ANC and handy additional features at a decent price.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 88
+    },
+    "scoreReason": "Strong workout earbuds with polished design, secure comfort and Apple features, but improvements over predecessor are modest.",
+    "scoredFromFullText": true
   }
 ]

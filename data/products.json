@@ -8425,5 +8425,89 @@
       "credit": "Hisense",
       "sourceUrl": "https://www.hisense-usa.com/product-page/televisions-55-class-u7-series-uled-miniled-4k-google-tv-55u7sg"
     }
+  },
+  {
+    "id": "beats-powerbeats-fit",
+    "slug": "beats-powerbeats-fit",
+    "name": "Beats Powerbeats Fit",
+    "brand": "Beats",
+    "category": "earbuds",
+    "releaseDate": "2025-10-02",
+    "launchPrice": 199.99,
+    "officialUrl": "https://www.beatsbydre.com/earbuds/powerbeats-fit",
+    "criticsTake": "Reviewers agree the Powerbeats Fit are a modest update to the Beats Fit Pro that improves comfort, fit, case size, noise cancellation and sound. They are widely seen as strong workout earbuds with secure wings and good Apple integration, but several reviews say the lack of bigger new features and the use of the older H1 chip make the price harder to justify.",
+    "loved": [
+      "Secure, comfortable wingtip fit",
+      "Good ANC and transparency mode",
+      "Clear, punchy sound",
+      "Smaller case with Apple-friendly features"
+    ],
+    "gripes": [
+      "Older H1 chip instead of H2",
+      "No wireless charging",
+      "Few new features over Fit Pro",
+      "IPX4 only",
+      "Battery life is only average"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "True wireless in-canal earbuds"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5 or Bluetooth 5.3, with AAC and SBC support"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple H1 chip"
+      },
+      {
+        "label": "Noise control",
+        "value": "Active noise cancellation and transparency mode"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX4 splash resistant buds and case"
+      },
+      {
+        "label": "Battery life",
+        "value": "About 6 hours with ANC on, up to 24 hours total with the case"
+      },
+      {
+        "label": "Charging",
+        "value": "USB-C charging case, no wireless charging"
+      },
+      {
+        "label": "Fit",
+        "value": "Flexible wing-tip design for a secure fit"
+      },
+      {
+        "label": "Colors",
+        "value": "Black, gray, pink, orange, with reviews also listing Hyper Purple as an option"
+      },
+      {
+        "label": "Price",
+        "value": "From $199.99"
+      }
+    ],
+    "art": {
+      "kind": "earbuds",
+      "body": "#3a3d46",
+      "accent": "#8aa4d8",
+      "backdrop": [
+        "#f4f6fb",
+        "#e3e8f3"
+      ]
+    },
+    "autoAdded": "2026-11-26",
+    "backfilled": "2026-11-26",
+    "image": {
+      "src": "/images/products/beats-powerbeats-fit/main.webp",
+      "thumb": "/images/products/beats-powerbeats-fit/thumb.webp",
+      "alt": "Beats Powerbeats Fit, official Beats photo",
+      "credit": "Beats",
+      "sourceUrl": "https://www.beatsbydre.com/earbuds/powerbeats-fit"
+    }
   }
 ]
