@@ -7058,7 +7058,14 @@
       ]
     },
     "autoAdded": "2026-11-11",
-    "backfilled": "2026-11-11"
+    "backfilled": "2026-11-11",
+    "image": {
+      "src": "/images/products/oneplus-pad-go-2/main.webp",
+      "thumb": "/images/products/oneplus-pad-go-2/thumb.webp",
+      "alt": "OnePlus Pad Go 2, official OnePlus press photo",
+      "credit": "OnePlus",
+      "sourceUrl": "https://www.oneplus.com/uk/oneplus-pad-go-2"
+    }
   },
   {
     "id": "asus-rog-xbox-ally-x20",
