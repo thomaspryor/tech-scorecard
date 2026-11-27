@@ -35772,7 +35772,7 @@
     "url": "https://recordingnow.com/blog/beats-powerbeats-fit-review/",
     "date": "2026-08-05",
     "rating": null,
-    "score": 64,
+    "score": 73,
     "scoreSource": "text",
     "excerpt": "The Beats Powerbeats Fit has a consistent seal and comfort thank to its Secure-Fit Wingtips, but is fairly average in its noise cancelling and sound quality.",
     "scoreBand": [
@@ -35785,7 +35785,9 @@
     },
     "scoreReason": "Great fit for workouts, but average sound, ANC, and weak value versus slightly pricier upgrades.",
     "scoredFromFullText": true,
-    "modelsDisagree": true
+    "modelsDisagree": true,
+    "adjudicatedScore": 73,
+    "adjudicationReason": "The outlet gives it an overall 7.3 out of 10: a great secure fit for workouts, but mediocre sound and average noise cancelling."
   },
   {
     "productId": "beats-powerbeats-fit",

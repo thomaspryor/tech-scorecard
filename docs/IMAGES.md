@@ -162,6 +162,7 @@ Same as `image.sourceUrl` in `data/products.json`.
 | beats-360                           | Beats          | https://www.beatsbydre.com/company/press/beats-360                                                                                                 |
 | zenbook-a16-x2                      | ASUS           | https://www.asus.com/us/laptops/for-home/zenbook/asus-zenbook-a16-ux3607/                                                                          |
 | oneplus-15r                         | OnePlus        | https://www.oneplus.com/us/oneplus-15r                                                                                                             |
+| oneplus-pad-go-2                    | OnePlus        | https://www.oneplus.com/uk/oneplus-pad-go-2 (the US site is support-only since July 2026)                                                          |
 | apple-watch-series-12               | Apple          | https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/                                   |
 | nothing-headphone-a                 | Nothing        | https://nothing.tech/products/headphone-a                                                                                                          |
 | msi-claw-8-ex-ai-plus               | MSI            | https://www.msi.com/Handheld/Claw-8-EX-AI-Plus-CG3EMX                                                                                              |
