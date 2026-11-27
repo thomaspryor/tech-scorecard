@@ -35701,5 +35701,384 @@
     },
     "scoreReason": "Strong workout earbuds with polished design, secure comfort and Apple features, but improvements over predecessor are modest.",
     "scoredFromFullText": true
+  },
+  {
+    "productId": "ipad-mini-8th-gen",
+    "outletId": "evening-standard",
+    "critic": "David Phelan",
+    "url": "https://www.standard.co.uk/shopping/esbest/gadgets-tech/apple-ipad-mini-review-b1303405.html",
+    "date": "2026-11-06",
+    "rating": null,
+    "score": 94,
+    "scoreSource": "text",
+    "excerpt": "Mostly, I’ve always been a fan of the larger-screen tablets, but this new iPad mini has blown me away.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 92,
+      "gemini": 95
+    },
+    "scoreReason": "Reviewer was blown away, praising display, design, speed and overall usability with few real drawbacks.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "fitbit-edge",
+    "outletId": "the-verge",
+    "critic": "Victoria Song",
+    "url": "https://www.theverge.com/tech/1018621/fitbit-edge-review-fitness-tracker-wearables-health",
+    "date": "2026-10-26",
+    "rating": "8/10",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "All in all, I enjoyed the Fitbit Edge as a low-key tracker.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for simple, refined tracking, but price and app issues keep enthusiasm in check.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "soundguys",
+    "critic": "Chase Bernath",
+    "url": "https://www.soundguys.com/powerbeats-fit-review-145954/",
+    "date": "2025-10-18",
+    "rating": "7.1/10",
+    "score": 72,
+    "scoreSource": "rating",
+    "excerpt": "I would not recommend the Powerbeats Fit to most people.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 71
+    },
+    "scoreReason": "Reviewer finds them mediocre, underwhelming, and not recommended for most buyers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "recording-now",
+    "critic": "Odi Productions",
+    "url": "https://recordingnow.com/blog/beats-powerbeats-fit-review/",
+    "date": "2026-08-05",
+    "rating": null,
+    "score": 64,
+    "scoreSource": "text",
+    "excerpt": "The Beats Powerbeats Fit has a consistent seal and comfort thank to its Secure-Fit Wingtips, but is fairly average in its noise cancelling and sound quality.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 55
+    },
+    "scoreReason": "Great fit for workouts, but average sound, ANC, and weak value versus slightly pricier upgrades.",
+    "scoredFromFullText": true,
+    "modelsDisagree": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "runmorph",
+    "critic": "RunMorph",
+    "url": "https://runmorph.com/en/reviews/powerbeats-fit-review",
+    "date": "2026-09-04",
+    "rating": null,
+    "score": 74,
+    "scoreSource": "text",
+    "excerpt": "The Powerbeats Fit delivers on its main promise: sports earbuds that never move, with punchy sound that keeps you going and battery life that covers a full week of training without a second thought.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 72,
+      "gemini": 75
+    },
+    "scoreReason": "Excellent fit and sound, but overpriced with weaker ANC and missing premium features.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "digital-reviews-network",
+    "critic": "Simon Pollock",
+    "url": "https://www.digitalreviews.net/reviews/audio/beats-powerbeats-fit-review-secure-fit-small-ears/",
+    "date": "2025-10-28",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "The Powerbeats Fit are well featured and perfectly compact!",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for fit, features and ANC, with minor issues around controls and occasional stability.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "beats-powerbeats-fit",
+    "outletId": "appleinsider",
+    "critic": "Malcolm Owen",
+    "url": "https://appleinsider.com/articles/25/10/04/beats-powerbeats-fit-review-compact-earbuds-ideal-for-workouts",
+    "date": "2025-10-04",
+    "rating": "4/5",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "The Beats Powerbeats Fit is a modernization of the Beats Fit Pro format that works extremely well.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for fit, sound, battery, and features, with minor complaints about H1, no wireless charging, and sensors.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "galaxy-s26-fe",
+    "outletId": "notebookcheck",
+    "critic": "Marcus Herbrich",
+    "url": "https://www.notebookcheck.net/Is-a-massive-price-drop-the-saviour-for-a-camera-disaster-Samsung-Galaxy-S26-FE-review.1456057.0.html",
+    "date": "2026-11-21",
+    "rating": "85/100",
+    "score": 77,
+    "scoreSource": "rating",
+    "excerpt": "Despite the price drop, the Galaxy S26 FE remains a compromise-filled smartphone.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 72
+    },
+    "scoreReason": "Good display, build, updates, but many compromises and disappointing camera, USB, and battery choices.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "beebom",
+    "critic": "Sagnik Das Gupta",
+    "url": "https://gadgets.beebom.com/reviews/samsung-galaxy-z-fold-8-ultra-review",
+    "date": "2026-08-18",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "It doesn't redefine the foldable category, but it finally feels like Samsung is bringing the Z Fold lineup up to where it should have been.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strongly recommended for polished foldable experience, but price and a few hardware weaknesses temper enthusiasm.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "gadgetguy",
+    "critic": "Alice Clarke",
+    "url": "https://www.gadgetguy.com.au/samsung-galaxy-z-fold-8-ultra-review/",
+    "date": "2026-07-31",
+    "rating": "9/10",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Having tried the vast majority of folding phones released in Australia over the last 7 years, I can confidently say that the Samsung Galaxy Z Fold 8 Ultra is the best and most feature packed folding phone available.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Strong praise as the best foldable, but not for everyone due to price, ergonomics, and aspect ratio issues.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-z-fold-8-ultra",
+    "outletId": "toms-guide",
+    "critic": "Tom Pritchard",
+    "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-z-fold-8-ultra-review",
+    "date": "2026-07-30",
+    "rating": "4.5/5",
+    "score": 95,
+    "scoreSource": "rating",
+    "excerpt": "Overall the Z Fold 8 Ultra is a great addition to the Galaxy Foldable lineup, but that doesn't mean Samsung should get complacent and let the innovations stagnate ahead of 2027's inevitable Z Fold 9 Ultra.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 94,
+      "gemini": 95
+    },
+    "scoreReason": "Big upgrade with strong battery, screens and performance, but price, telephoto and missing S Pen hurt.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-xr",
+    "outletId": "sammobile",
+    "critic": "Max Jambor",
+    "url": "https://www.sammobile.com/samsung-galaxy-xr-review/",
+    "date": "2026-01-26",
+    "rating": null,
+    "score": 76,
+    "scoreSource": "text",
+    "excerpt": "The Galaxy XR is exactly what I want a first-gen product to be.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 76,
+      "gemini": 75
+    },
+    "scoreReason": "Impressive first-gen headset with strong fundamentals, but expensive and still niche for most consumers.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "samsung-galaxy-xr",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/samsung-galaxy-xr-review/",
+    "date": "2026-07-30",
+    "rating": "3/5",
+    "score": 53,
+    "scoreSource": "rating",
+    "excerpt": "It's a comfy, lightweight headset with excellent OLED displays and accurate tracking, but the Galaxy XR's limited software and high price make it a hard sell for anyone not already convinced by spatial computing.",
+    "scoreBand": [
+      51,
+      70
+    ],
+    "modelScores": {
+      "openai": 53,
+      "gemini": 52
+    },
+    "scoreReason": "Great hardware, but limited software, short battery life, and high price make most people skip or wait.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "stuff",
+    "critic": "Spencer Hart",
+    "url": "https://www.stuff.tv/review/pixel-watch-4-review/",
+    "date": "2025-10-24",
+    "rating": "5/5",
+    "score": 97,
+    "scoreSource": "rating",
+    "excerpt": "Ultimately, the Pixel Watch 4 is sleek and very smart – it’s the first Android smartwatch that truly feels like a rival to Apple.",
+    "scoreBand": [
+      91,
+      100
+    ],
+    "modelScores": {
+      "openai": 96,
+      "gemini": 98
+    },
+    "scoreReason": "Highly enthusiastic review with only minor design and app ecosystem complaints.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "pixel-watch-4",
+    "outletId": "techcrunch",
+    "critic": null,
+    "url": "https://techcrunch.com/2025/12/28/the-google-pixel-watch-4-made-me-like-smartwatches-again/",
+    "date": "2025-12-28",
+    "rating": null,
+    "score": 84,
+    "scoreSource": "text",
+    "excerpt": "All in all, the Pixel Watch 4 is one of the best Android smartwatches around.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 82,
+      "gemini": 85
+    },
+    "scoreReason": "Strong praise for design, battery, charging, and overall experience despite some fitness tracking limitations.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "lenovo-legion-go-2",
+    "outletId": "stuff",
+    "critic": "Tom Morgan-Freelander",
+    "url": "https://www.stuff.tv/review/lenovo-legion-go-2-review/",
+    "date": "2026-01-28",
+    "rating": "4/5",
+    "score": 82,
+    "scoreSource": "rating",
+    "excerpt": "If you can stomach the spend and want the best screen on a Windows-powered handheld, the Legion Go 2 is your best choice.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 84,
+      "gemini": 80
+    },
+    "scoreReason": "Excellent screen and comfort, but high price, size, and Windows issues temper the recommendation.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "lenovo-legion-go-2",
+    "outletId": "the-shortcut",
+    "critic": "Kevin Lee",
+    "url": "https://www.theshortcut.com/p/lenovo-legion-go-2-review",
+    "date": "2025-10-10",
+    "rating": "80/100",
+    "score": 83,
+    "scoreSource": "rating",
+    "excerpt": "This is the ultimate gaming handheld for an HDR gaming experience, even if it costs double, if not more, than most of its competitors.",
+    "scoreBand": [
+      71,
+      90
+    ],
+    "modelScores": {
+      "openai": 85,
+      "gemini": 80
+    },
+    "scoreReason": "Strong praise for display, power, and design, but sleep issues, price, and middling battery hurt it.",
+    "scoredFromFullText": true
+  },
+  {
+    "productId": "oura-ring-5",
+    "outletId": "purewow",
+    "critic": "Candace Davison",
+    "url": "https://www.purewow.com/wellness/oura-ring-5-review",
+    "date": "2026-11-27",
+    "rating": null,
+    "score": 91,
+    "scoreSource": "text",
+    "excerpt": "The Oura Ring 5 is truly impressive, and that level of technology and insights comes at a cost.",
+    "scoreBand": [
+      0,
+      100
+    ],
+    "modelScores": {
+      "openai": 86,
+      "gemini": 95
+    },
+    "scoreReason": "Highly praised for comfort, insights and battery, with price and subscription as main drawbacks.",
+    "scoredFromFullText": true
   }
 ]
